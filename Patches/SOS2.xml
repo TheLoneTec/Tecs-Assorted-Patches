@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Bay"]/defNames</xpath>
+				<value>
+					<li>ShipShuttleBayLarge</li>
+					<li>DropshipShuttle</li>
+				</value>
+			</li>
+
+			<!-- ========== DropshipShuttle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DropshipShuttle"]/costList</xpath>
+				<value>
+					<costList>
+						<Wire>160</Wire>
+						<ComponentSpacer>40</ComponentSpacer>
+						<ReinforcedGlass>100</ReinforcedGlass>
+						<ElectronicComponents>14</ElectronicComponents>
+						<Microchips>4</Microchips>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DropshipShuttle"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>800</costStuffCount>
+				</value>
+			</li>
+
+			<!-- ========== ShipShuttleBayLarge ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ShipShuttleBayLarge"]/costList</xpath>
+				<value>
+				<costList>
+						<ComponentSpacer>16</ComponentSpacer>
+						<Electronics>6</Electronics>
+				</costList>
+				</value>
+			</li>
+
+				<li Class="PatchOperationAdd">	
+					<xpath>Defs/ThingDef[defName="ShipShuttleBayLarge"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>450</costStuffCount>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

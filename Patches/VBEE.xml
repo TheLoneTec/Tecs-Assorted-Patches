@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Ben Lubar presents: Vanilla Books Expanded Expanded</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_VBE"]/defNames</xpath>
+				<value>
+					<li>VanillaBooksExpandedExpanded_PrintingPressManual</li>
+					<li>VanillaBooksExpandedExpanded_PrintingPressElectric</li>
+				</value>
+			</li>
+
+			<!-- =========== Manual Printing Press ============== -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressManual"]/costList</xpath>
+				<value>
+					<costList>
+						<Mechanism>2</Mechanism>
+						<ComponentMedieval>6</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressManual"]/stuffCategories</xpath>
+				<value>
+					<li>RuggedMetallic</li>
+				</value>
+			</li>
+			
+			<!-- =========== Electric Printing Press ============== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressElectric"]/costList/Steel</xpath>
+				<value>
+					<Mechanism>4</Mechanism>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressElectric"]/stuffCategories</xpath>
+				<value>
+					<li>SolidMetallic</li>
+				</value>
+			</li>
+			
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

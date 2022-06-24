@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Biomes</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Propane to Chemfuel ========== -->
+			<li Class="PatchOperationAttributeAdd">
+				<xpath>/Defs/RecipeDef[defName="AB_PropaneToChemfuel"]</xpath>
+				<attribute>Class</attribute>
+				<value>UniversalFermenterSK.RecipeDef_UF</value>
+			</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="AB_PropaneToChemfuel"]</xpath>
+					<value>
+						<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+						<usesTemperature>false</usesTemperature>
+						<processDays>0.8</processDays>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

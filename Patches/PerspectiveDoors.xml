@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Perspective: Doors</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Hardcore Renovations</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Door"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="MDoor"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Autodoor"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AutoDoorGlass" or defName="DoorGlass"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Other/DoorGlass_Mover</texPath>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AutoDoorGlass" or defName="DoorGlass"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Blastdoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+		
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

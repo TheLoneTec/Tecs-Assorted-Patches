@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--HSK-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<!-- ========== File Cabinate ========== -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="Misc_FileCabinet"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="Misc_FileCabinet"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Misc_FileCabinet"]</xpath>
+			</li>
+			
+			</operations>
+		</match>
+		
+	</Operation>
+</Patch>

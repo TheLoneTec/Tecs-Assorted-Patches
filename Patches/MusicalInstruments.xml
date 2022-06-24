@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Musical Instruments (Continued)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Music Spot ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Spots"]/defNames</xpath>
+				<value>
+					<li>MusicSpot</li>
+				</value>
+			</li>
+
+				<!-- ========== WorkBench ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Machining"]/defNames</xpath>
+				<value>
+					<li>TableMusicalInstruments</li>
+				</value>
+			</li>
+
+				<!-- ========== ElectricOrgan ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ElectronicOrgan"]/costList</xpath>
+				<value>
+				<costList>
+					<Mechanism>1</Mechanism>
+					<ComponentIndustrial>4</ComponentIndustrial>
+					<ElectronicComponents>3</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "ElectronicOrgan"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+						<li>Metallic</li>
+						<li>Stony</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="ElectronicOrgan"]/constructEffect</xpath>
+			</li>
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
