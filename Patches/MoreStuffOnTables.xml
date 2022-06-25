@@ -28,6 +28,25 @@
 					<canPlaceOverWall>false</canPlaceOverWall>				
 	        	</value>
 			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[LTS]Systems</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+				
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/ThingDef[defName="DMicrowave"]/placeWorkers</xpath>
+						<value>
+							<li>LTS_Systems.PlaceWorkers.PlaceWorker_Tabletop</li>
+						</value>
+					</li>
+
+				</operations>
+				</match>
+			</li>
+			
 		</operations>
 		</match>
 	</Operation>
