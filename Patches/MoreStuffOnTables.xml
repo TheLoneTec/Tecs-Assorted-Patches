@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Thermodynamics - Hot Meals (Forked)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="DMicrowave"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+			    <xpath>/Defs/ThingDef[defName="DMicrowave"]/altitudeLayer</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="DMicrowave"]/building</xpath>
+		        <value>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+</Patch>
