@@ -39,6 +39,42 @@
 				</match>
 			</li>
 	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Insulation (Continued)</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="INSDoorSimple_Biomass" or defName="INSDoor_Biomass" or defName="INSDoorSimple_Fibre" or defName="INSDoor_Fibre" or defName="INSDoorSimple_Polymer" or defName="INSDoor_Polymer" or defName="INSDoorSimple_Hyper" or defName="INSDoor_Hyper"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+
+					<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Save Our Ship 2</li>
+					</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+							
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[@Name="INSAirlockBase"]/graphicData/graphicClass</xpath>
+								<value>
+									<graphicClass>Graphic_Multi</graphicClass>
+								</value>
+							</li>
+							
+							</operations>
+						</match>
+					</li>
+							
+					</operations>
+				</match>
+			</li>
+	
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="AutoDoorGlass" or defName="DoorGlass"]/graphicData/texPath</xpath>
 				<value>
