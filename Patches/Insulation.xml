@@ -497,7 +497,7 @@
 									<li>INSShip_Beam_Hyper</li>
 									<li>INSShip_Beam_Underpowered_Hyper_Unpowered</li>
 								</defNames>
-								<designationCategory>Structure</designationCategory>
+								<designationCategory>Ship</designationCategory>
 								<debug>false</debug>
 							</ArchitectSense.DesignationSubCategoryDef>
 						</value>
