@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Note: Heat capacity in J/C, conductivity in W/C, volume in liters. Figures can be taken e.g. here: https://www.engineeringtoolbox.com/specific-heat-solids-d_154.html -->
+
+	<!-- Need to Add Minerals rocks 
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[thingClass="Mineable"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>250000</heatCapacity>
+				<conductivity>1</conductivity>
+				<volume>500</volume>
+			</li>
+		</value>
+	</Operation> Mods\Minerals\Defs\ThingDefs_Rocks -->
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Minerals</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[@Name="WeatheredRockBase"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>250000</heatCapacity>
+						<conductivity>1</conductivity>
+						<volume>500</volume>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[@Name="SolidRockBase"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>250000</heatCapacity>
+						<conductivity>1</conductivity>
+						<volume>500</volume>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[@Name="HewnRockBase"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>250000</heatCapacity>
+						<conductivity>1</conductivity>
+						<volume>500</volume>
+					</li>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Window"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>12000</heatCapacity>
+				<conductivity>0.5</conductivity>
+				<volume>10</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ClutterSilverWall"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>18000</heatCapacity>
+				<conductivity>0.5</conductivity>
+				<volume>18</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ClutterUWallLight"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>17000</heatCapacity>
+				<conductivity>0.8</conductivity>
+				<volume>15</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="Column"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>12000</heatCapacity>
+				<conductivity>0.5</conductivity>
+				<volume>10</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>2000</heatCapacity>
+				<conductivity>1</conductivity>
+				<volume>2</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vile's Hardcore Renovations</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LogWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>17000</heatCapacity>
+						<conductivity>0.8</conductivity>
+						<volume>10</volume>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ClapboardWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>14000</heatCapacity>
+						<conductivity>1.2</conductivity>
+						<volume>8</volume>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="BambooWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>14000</heatCapacity>
+						<conductivity>1.2</conductivity>
+						<volume>8</volume>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MudWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>22000</heatCapacity>
+						<conductivity>0.5</conductivity>
+						<volume>10</volume>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AdobeWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>22000</heatCapacity>
+						<conductivity>0.3</conductivity>
+						<volume>10</volume>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="WattleWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>22000</heatCapacity>
+						<conductivity>0.5</conductivity>
+						<volume>10</volume>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="InteriorWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>19000</heatCapacity>
+						<conductivity>1</conductivity>
+						<volume>10</volume>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="WoodPanelWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>18000</heatCapacity>
+						<conductivity>0.6</conductivity>
+						<volume>10</volume>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="CeramicTileWall"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>22000</heatCapacity>
+						<conductivity>0.3</conductivity>
+						<volume>10</volume>
+					</li>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RH_SmallCooler"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>15000</heatCapacity>
+				<conductivity>1.5</conductivity>
+				<ignoreStuff>true</ignoreStuff>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RedistHeat_IndustrialCooler"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>15000</heatCapacity>
+				<conductivity>1.5</conductivity>
+				<ignoreStuff>true</ignoreStuff>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Furniture Expanded SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AirConditioningUnit"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>15000</heatCapacity>
+						<conductivity>1.5</conductivity>
+						<ignoreStuff>true</ignoreStuff>
+					</li>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

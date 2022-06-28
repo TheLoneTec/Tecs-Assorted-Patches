@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Wood You Please</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[@Name="SoftwoodLogBase"]</xpath>
+				<value>
+					<statBases>
+						<IgnitionTemperature>300</IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<IgnitionTemperature>300</IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[@Name="HardwoodLogBase"]</xpath>
+				<value>
+					<statBases>
+						<IgnitionTemperature>350</IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<IgnitionTemperature>400</IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RedWoodLog"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>350</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>350</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoodPlank"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>300</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>300</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Bamboo"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>300</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>300</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="BambooPlank"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>300</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>300</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<!-- Textile -->
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RawCotton"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>210</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>210</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RawFlax"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>250</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>250</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RawDevilstrand"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>875</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>875</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolMegasloth"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>250</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>250</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolMuffalo"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>250</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>250</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolDromedary"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>250</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>250</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolAlpaca"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>250</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>250</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolBison"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>250</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>250</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolSheep"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>250</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>250</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="HempCloth"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>300</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>300</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Velour"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>600</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>600</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Flaxcloth"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>150</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>150</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="DevilstrandCloth"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>875</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>875</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Hyperweave"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>700</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>700</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Kevlar"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>550</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>550</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<!-- Leather -->
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[@Name="SK_LeatherBase"]</xpath>
+		<value>
+			<statBases>
+				<IgnitionTemperature>210</IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<IgnitionTemperature>210</IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<!-- Plants -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="SK_RoughPlantBase"]/statBases</xpath>
+		<value>
+			<IgnitionTemperature>150</IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_Mangrove" or defName="Plant_TreePalm" or defName="Plant_TreeDrago" or defName="Plant_TreeOak" or defName="Plant_TreePoplar" or defName="Plant_TreePine" or 
+		defName="Plant_TreeBirch" or defName="Plant_TreeTeak" or defName="Plant_TreeCecropia" or defName="Plant_TreeWillow" or defName="Plant_TreeCypress" or defName="Plant_TreeMaple" or defName="PlantTreeRedwood"]/statBases</xpath>
+		<value>
+			<IgnitionTemperature>300</IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<!-- Combustable Fuel or Extrcted -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Peat"]/statBases</xpath>
+		<value>
+			<IgnitionTemperature>177</IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Coal"]/statBases</xpath>
+		<value>
+			<IgnitionTemperature>450</IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Charcoal"]/statBases</xpath>
+		<value>
+			<IgnitionTemperature>450</IgnitionTemperature>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Tallow"]/statBases</xpath>
+		<value>
+			<IgnitionTemperature>340</IgnitionTemperature>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Powder"]/statBases</xpath>
+		<value>
+			<IgnitionTemperature>350</IgnitionTemperature>
+		</value>
+	</Operation>
+
+</Patch>

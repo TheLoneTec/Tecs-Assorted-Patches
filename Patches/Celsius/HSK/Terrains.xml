@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Note: Taking only 5 cm layer of water/ice => heat capacity for 0.05 of a cubic meter. Conductivity is increased x6 to account for RimWorld's shorter year. -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TerrainDef[@Name="SK_WaterDeepBase"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>105000</heatCapacity>
+				<conductivity>2</conductivity>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TerrainDef[@Name="SK_WaterShallowBase"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>105000</heatCapacity>
+				<conductivity>2</conductivity>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TerrainDef[defName="IceShallow"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>25000</heatCapacity>
+				<conductivity>1.7</conductivity>
+			</li>
+		</value>
+	</Operation>
+	
+</Patch>
