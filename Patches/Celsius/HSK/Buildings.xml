@@ -119,6 +119,22 @@
 		<xpath>Defs/ThingDef[@Name="DoorBase" or @Name="DoorGlassBase" or @Name="SK_DoorBase" or @Name="DoorBase2" or @Name="BlastDoorBase"]/modExtensions</xpath>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>HSK Fences And Floors - Vile's patch</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[@Name="FencesAFGateBase"]/modExtensions</xpath>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="Door" or defName="MDoor" or defName="Autodoor" or defName="Blastdoor" or defName="DU_Blastdoor"]</xpath>
 		<value>
