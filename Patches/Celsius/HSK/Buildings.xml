@@ -94,6 +94,17 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="TentWall"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>12000</heatCapacity>
+				<conductivity>0.8</conductivity>
+				<volume>10</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="Column"]</xpath>
 		<value>
 			<li Class="Celsius.ThingThermalProperties">
@@ -103,14 +114,62 @@
 			</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@Name="DoorBase" or @Name="DoorGlassBase" or @Name="SK_DoorBase" or @Name="DoorBase2" or @Name="BlastDoorBase"]/modExtensions</xpath>
+	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="FenceGate"]</xpath>
+		<xpath>Defs/ThingDef[defName="Door" or defName="MDoor" or defName="Autodoor" or defName="Blastdoor" or defName="DU_Blastdoor"]</xpath>
 		<value>
 			<li Class="Celsius.ThingThermalProperties">
-				<heatCapacity>2000</heatCapacity>
-				<conductivity>1</conductivity>
-				<volume>2</volume>
+				<heatCapacity>13500</heatCapacity>
+				<conductivity>1.5</conductivity>
+				<volume>7.5</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[@Name="DoorGlassBase"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>12000</heatCapacity>
+				<conductivity>0.5</conductivity>
+				<volume>5</volume>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="AnimalFlap" or defName="TentDoor"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>8000</heatCapacity>
+				<conductivity>0.8</conductivity>
+				<volume>5</volume>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="ClosedBlastDoor"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>18000</heatCapacity>
+				<conductivity>0.5</conductivity>
+				<volume>18</volume>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="JammedBlastDoor"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>12000</heatCapacity>
+				<conductivity>0.5</conductivity>
+				<volume>10</volume>
 			</li>
 		</value>
 	</Operation>

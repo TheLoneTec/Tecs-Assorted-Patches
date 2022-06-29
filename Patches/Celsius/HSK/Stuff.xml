@@ -501,7 +501,7 @@
 		</value>
 	</Operation>
 	
-	<li Class="PatchOperationFindMod">
+	<Operation Class="PatchOperationFindMod">
 	<mods>
 		<li>Wood You Please</li>
 	</mods>
@@ -758,7 +758,7 @@
 		
 			</operations>
 		</match>
-	</li>
+	</Operation>
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
