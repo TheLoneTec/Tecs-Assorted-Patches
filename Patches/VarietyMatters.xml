@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Variety Matters Improved</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationReplace"> 
+			    <xpath>/Defs/NeedDef[defName="FoodVariety"]/listPriority</xpath>
+		        <value>
+					<listPriority>480</listPriority>
+	        	</value>
+			</li>
+
+			</operations>
+		</match>
+		
+	</Operation>
+
+</Patch>
