@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Save Our Ship 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Insulation (Continued)</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/TerrainDef[defName="EmptySpace"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>0</heatCapacity>
+									<conductivity>0</conductivity>
+								</li>
+							</value>
+						</li>
+					
+					</operations>
+				</match>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+	<!-- Note: Taking only 5 cm layer of water/ice => heat capacity for 0.05 of a cubic meter. Conductivity is increased x6 to account for RimWorld's shorter year.
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TerrainDef[@Name="SK_WaterDeepBase"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>105000</heatCapacity>
+				<conductivity>2</conductivity>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/TerrainDef[@Name="SK_WaterShallowBase"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>105000</heatCapacity>
+				<conductivity>2</conductivity>
+			</li>
+		</value>
+	</Operation>
+	 -->
+
+</Patch>
