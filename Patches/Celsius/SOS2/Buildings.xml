@@ -22,297 +22,308 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Beam_Unpowered"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.5</conductivity>
-						<volume>15</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Beam"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
-						<volume>15</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[@Name="ShipCorner"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>16000</heatCapacity>
-						<conductivity>0.5</conductivity>
-						<volume>12</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipInside_SolarGenerator"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>14000</heatCapacity>
-						<conductivity>1</conductivity>
-						<volume>10</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipInside_PassiveCooler"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>14000</heatCapacity>
-						<conductivity>1.2</conductivity>
-						<volume>10</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerAdvanced"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>15000</heatCapacity>
-						<conductivity>1</conductivity>
-						<volume>10</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipInside_PassiveVent"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>14000</heatCapacity>
-						<conductivity>1.2</conductivity>
-						<volume>10</volume>
-					</li>
-				</value>
-			</li>
-			<!--
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipHullTile"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.6</conductivity>
-						<volume>12</volume>
-					</li>
-				</value>
-			</li>
-			-->
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Engine_Small"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>16000</heatCapacity>
-						<conductivity>0.6</conductivity>
-						<volume>12</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Engine"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
-						<volume>15</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Engine_Large"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>1</conductivity>
-						<volume>18</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Engine_Interplanetary"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
-						<volume>15</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Engine_Large"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>1</conductivity>
-						<volume>18</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_FakeBeam"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
-						<volume>15</volume>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="HullFoamWall"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>12000</heatCapacity>
-						<conductivity>1.4</conductivity>
-						<volume>10</volume>
-					</li>
-				</value>
-			</li>
-			<!--
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipHullfoamTile"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>12000</heatCapacity>
-						<conductivity>1</conductivity>
-						<volume>8</volume>
-					</li>
-				</value>
-			</li>
-			-->
-			<!-- Airlocks -->
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipAirlock"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>16000</heatCapacity>
-						<conductivity>1.2</conductivity>
-						<volume>7.5</volume>
-					</li>
-				</value>
-			</li>
 		
-			<!-- ====== Archotech ====== -->
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.5</conductivity>
-						<volume>15</volume>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Celsius</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Beam_Unpowered"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>18000</heatCapacity>
+								<conductivity>0.5</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_BeamArchotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
-						<volume>15</volume>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Beam"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>17000</heatCapacity>
+								<conductivity>0.8</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[@Name="ShipCornerArchotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>16000</heatCapacity>
-						<conductivity>0.5</conductivity>
-						<volume>12</volume>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[@Name="ShipCorner"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>16000</heatCapacity>
+								<conductivity>0.5</conductivity>
+								<volume>12</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipInside_SolarGeneratorArchotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>14000</heatCapacity>
-						<conductivity>1</conductivity>
-						<volume>10</volume>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipInside_SolarGenerator"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<conductivity>1</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerArchotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>14000</heatCapacity>
-						<conductivity>1.2</conductivity>
-						<volume>10</volume>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipInside_PassiveCooler"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<conductivity>1.2</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipInside_PassiveVentArchotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>14000</heatCapacity>
-						<conductivity>1.2</conductivity>
-						<volume>10</volume>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerAdvanced"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>15000</heatCapacity>
+								<conductivity>1</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			<!--
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipHullTileArchotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.6</conductivity>
-						<volume>12</volume>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipInside_PassiveVent"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<conductivity>1.2</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			-->
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="Ship_Engine_Archotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
-						<volume>15</volume>
+					<!--
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipHullTile"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>18000</heatCapacity>
+								<conductivity>0.6</conductivity>
+								<volume>12</volume>
+							</li>
+						</value>
 					</li>
-				</value>
-			</li>
-			
-			<!-- Airlocks -->
-			
-			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="ShipAirlockArchotech"]</xpath>
-				<value>
-					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>16000</heatCapacity>
-						<conductivity>1.2</conductivity>
-						<volume>7.5</volume>
+					-->
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Engine_Small"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>16000</heatCapacity>
+								<conductivity>0.6</conductivity>
+								<volume>12</volume>
+							</li>
+						</value>
 					</li>
-				</value>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Engine"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>17000</heatCapacity>
+								<conductivity>0.8</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Engine_Large"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>18000</heatCapacity>
+								<conductivity>1</conductivity>
+								<volume>18</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Engine_Interplanetary"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>17000</heatCapacity>
+								<conductivity>0.8</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Engine_Large"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>18000</heatCapacity>
+								<conductivity>1</conductivity>
+								<volume>18</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_FakeBeam"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>17000</heatCapacity>
+								<conductivity>0.8</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="HullFoamWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>12000</heatCapacity>
+								<conductivity>1.4</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
+					</li>
+					<!--
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipHullfoamTile"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>12000</heatCapacity>
+								<conductivity>1</conductivity>
+								<volume>8</volume>
+							</li>
+						</value>
+					</li>
+					-->
+					<!-- Airlocks -->
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipAirlock"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>16000</heatCapacity>
+								<conductivity>1.2</conductivity>
+								<volume>7.5</volume>
+							</li>
+						</value>
+					</li>
+				
+					<!-- ====== Archotech ====== -->
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_BeamArchotech_Unpowered"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>18000</heatCapacity>
+								<conductivity>0.5</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_BeamArchotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>17000</heatCapacity>
+								<conductivity>0.8</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[@Name="ShipCornerArchotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>16000</heatCapacity>
+								<conductivity>0.5</conductivity>
+								<volume>12</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipInside_SolarGeneratorArchotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<conductivity>1</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipInside_PassiveCoolerArchotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<conductivity>1.2</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipInside_PassiveVentArchotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<conductivity>1.2</conductivity>
+								<volume>10</volume>
+							</li>
+						</value>
+					</li>
+					<!--
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipHullTileArchotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>18000</heatCapacity>
+								<conductivity>0.6</conductivity>
+								<volume>12</volume>
+							</li>
+						</value>
+					</li>
+					-->
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="Ship_Engine_Archotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>17000</heatCapacity>
+								<conductivity>0.8</conductivity>
+								<volume>15</volume>
+							</li>
+						</value>
+					</li>
+					
+					<!-- Airlocks -->
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="ShipAirlockArchotech"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>16000</heatCapacity>
+								<conductivity>1.2</conductivity>
+								<volume>7.5</volume>
+							</li>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
 			</li>
 		
 			</operations>

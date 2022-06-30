@@ -14,17 +14,29 @@
 		<xpath>/Defs/ThingDef[defName="BurnPit"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPushMaxTemperature</xpath>
 	</Operation>
 -->
+
 	<Operation Class="PatchOperationFindMod">
 	<mods>
 		<li>Vanilla Furniture Expanded SK</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			
-			<li Class="XmlExtensions.PatchOperationSafeRemove">
-				<xpath>/Defs/ThingDef[defName="Stone_Campfire"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPushMaxTemperature</xpath>
+	
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Celsius</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="XmlExtensions.PatchOperationSafeRemove">
+						<xpath>/Defs/ThingDef[defName="Stone_Campfire"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPushMaxTemperature</xpath>
+					</li>
+					
+					</operations>
+				</match>
 			</li>
-			
+	
 			</operations>
 		</match>
 	</Operation>
