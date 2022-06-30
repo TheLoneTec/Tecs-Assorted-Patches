@@ -51,15 +51,57 @@
 				</value>
 			</li>
 
-				<li Class="PatchOperationAdd">	
-					<xpath>Defs/ThingDef[defName="ShipShuttleBayLarge"]</xpath>
-					<value>
-						<stuffCategories>
-							<li>RuggedMetallic</li>
-						</stuffCategories>
-						<costStuffCount>450</costStuffCount>
-					</value>
-				</li>
+			<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="ShipShuttleBayLarge"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>450</costStuffCount>
+				</value>
+			</li>
+
+			<!-- Allow Cooler/Heaters/Vents on ship hull -->
+
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="RH_MediumHeater"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>Ship_Beam_Unpowered</li>
+				<li>Ship_Beam</li>
+				<li>Ship_BeamArchotech_Unpowered</li>
+				<li>Ship_BeamArchotech</li>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="RH_SmallCooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>Ship_Beam_Unpowered</li>
+				<li>Ship_Beam</li>
+				<li>Ship_BeamArchotech_Unpowered</li>
+				<li>Ship_BeamArchotech</li>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="Cooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>Ship_Beam_Unpowered</li>
+				<li>Ship_Beam</li>
+				<li>Ship_BeamArchotech_Unpowered</li>
+				<li>Ship_BeamArchotech</li>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="Vent"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>Ship_Beam_Unpowered</li>
+				<li>Ship_Beam</li>
+				<li>Ship_BeamArchotech_Unpowered</li>
+				<li>Ship_BeamArchotech</li>
+			  </value>
+			</li>
 
 			</operations>
 		</match>
