@@ -21,7 +21,67 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>0</conductivity>
+									<conductivity>9999</conductivity>
+								</li>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/TerrainDef[defName="FakeFloorInsideShip"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>0</heatCapacity>
+									<conductivity>9999</conductivity>
+								</li>
+							</value>
+						</li>
+					
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/TerrainDef[defName="ShipWreckageTerrain"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>0</heatCapacity>
+									<conductivity>9999</conductivity>
+								</li>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/TerrainDef[defName="FakeFloorInsideShipMech"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>0</heatCapacity>
+									<conductivity>9999</conductivity>
+								</li>
+							</value>
+						</li>
+					
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/TerrainDef[defName="FakeFloorInsideShipArchotech"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>0</heatCapacity>
+									<conductivity>9999</conductivity>
+								</li>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/TerrainDef[defName="SoilShip"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>0</heatCapacity>
+									<conductivity>9999</conductivity>
+								</li>
+							</value>
+						</li>
+					
+						<li Class="PatchOperationAddModExtension">
+							<xpath>Defs/TerrainDef[defName="FakeFloorInsideShipFoam"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>0</heatCapacity>
+									<conductivity>9999</conductivity>
 								</li>
 							</value>
 						</li>
