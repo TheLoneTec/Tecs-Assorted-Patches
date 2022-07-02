@@ -392,9 +392,20 @@
 				<xpath>/Defs/ThingDef[defName="Blastdoor"]/comps</xpath>
 				<value>
 				  <li Class="Insulation.CompProperties_BuildInsulation">
-					<HeatTransferFactor>0.4</HeatTransferFactor>
+					<HeatTransferFactor>0.3</HeatTransferFactor>
 					<InsulationStuff>true</InsulationStuff>
-					<HitPointsNeed>0.25</HitPointsNeed>
+					<HitPointsNeed>0.4</HitPointsNeed>
+				  </li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="DU_Blastdoor"]/comps</xpath>
+				<value>
+				  <li Class="Insulation.CompProperties_BuildInsulation">
+					<HeatTransferFactor>0.3</HeatTransferFactor>
+					<InsulationStuff>true</InsulationStuff>
+					<HitPointsNeed>0.4</HitPointsNeed>
 				  </li>
 				</value>
 			</li>

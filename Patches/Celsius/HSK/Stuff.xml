@@ -815,20 +815,20 @@
 			
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/ThingDef[defName="ClayBrick"]</xpath>
-				<value>
+				<value><!-- 3400 0.2 -->
 					<li Class="Celsius.StuffThermalProperties">
-						<volumetricHeatCapacity>3400</volumetricHeatCapacity>
-						<conductivity>0.2</conductivity>
+						<volumetricHeatCapacity>3000</volumetricHeatCapacity>
+						<conductivity>0.3</conductivity>
 					</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/ThingDef[defName="Ceramics"]</xpath>
-				<value>
+				<value><!-- 3400 0.3 -->
 					<li Class="Celsius.StuffThermalProperties">
-						<volumetricHeatCapacity>3400</volumetricHeatCapacity>
-						<conductivity>0.3</conductivity>
+						<volumetricHeatCapacity>3000</volumetricHeatCapacity>
+						<conductivity>0.4</conductivity>
 					</li>
 				</value>
 			</li>
