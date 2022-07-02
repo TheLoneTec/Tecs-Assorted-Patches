@@ -215,6 +215,7 @@
 								<heatCapacity>16000</heatCapacity>
 								<conductivity>1.2</conductivity>
 								<volume>7.5</volume>
+								<airflowWhenOpen>0.2</airflowWhenOpen>
 							</li>
 						</value>
 					</li>
@@ -318,6 +319,7 @@
 								<heatCapacity>16000</heatCapacity>
 								<conductivity>1.2</conductivity>
 								<volume>7.5</volume>
+								<airflowWhenOpen>0.2</airflowWhenOpen>
 							</li>
 						</value>
 					</li>

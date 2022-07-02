@@ -124,6 +124,7 @@
 											<heatCapacity>17500</heatCapacity>
 											<conductivity>0.5</conductivity>
 											<volume>7.5</volume>
+											<airflowWhenOpen>0.2</airflowWhenOpen>
 										</li>
 									</value>
 								</li>
@@ -135,6 +136,7 @@
 											<heatCapacity>20000</heatCapacity>
 											<conductivity>0.38</conductivity>
 											<volume>7.5</volume>
+											<airflowWhenOpen>0.2</airflowWhenOpen>
 										</li>
 									</value>
 								</li>
@@ -146,6 +148,7 @@
 											<heatCapacity>22500</heatCapacity>
 											<conductivity>0.28</conductivity>
 											<volume>7.5</volume>
+											<airflowWhenOpen>0.2</airflowWhenOpen>
 										</li>
 									</value>
 								</li>
@@ -157,6 +160,7 @@
 											<heatCapacity>25000</heatCapacity>
 											<conductivity>0.21</conductivity>
 											<volume>7.5</volume>
+											<airflowWhenOpen>0.2</airflowWhenOpen>
 										</li>
 									</value>
 								</li>
