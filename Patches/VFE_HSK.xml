@@ -22,6 +22,65 @@
 				<xpath>/Defs/ThingDef[defName = "Misc_FileCabinet"]</xpath>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Bed_Kingsize"]/statBases</xpath>
+				<value>
+					<statBases>
+						<WorkToBuild>1700</WorkToBuild>
+						<Beauty>12</Beauty>
+						<Comfort>0.95</Comfort>
+						<BedRestEffectiveness>1.05</BedRestEffectiveness>
+						<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+						<SurgerySuccessChanceFactor>0.97</SurgerySuccessChanceFactor>
+						<Bulk>165</Bulk>
+						<Mass>55</Mass>
+					</statBases>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name = "SK_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+				  <li>Table_RoyalDresser</li>
+				  <li>Table_RoyalEndTable</li>
+				  <li>Table_Wardrobe</li>
+				  <li>Table_LightEndTable</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things</xpath>
+				<value>
+				  <li>Bed_Kingsize</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_Thing"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements</xpath>
+				<value>
+				<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				  <li>EndTable</li>
+				  <li>Table_RoyalEndTable</li>
+				</things>
+				</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements</xpath>
+				<value>
+				<li Class="RoomRequirement_ThingAnyOf">
+				<things>
+				  <li>Dresser</li>
+				  <li>Table_RoyalDresser</li>
+				</things>
+				</li>
+				</value>
+			</li>
+			
 			</operations>
 		</match>
 		

@@ -6,6 +6,15 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 		<operations>
+
+			<li Class="PatchOperationReplace"> 
+			    <xpath>/Defs/ThingDef[defName="INS_Burlap"]/thingCategories</xpath>
+		        <value>
+					<thingCategories>
+						<li>BTextiles</li>
+					</thingCategories>
+	        	</value>
+			</li>
 			
 			<li Class="PatchOperationReplace"> 
 			    <xpath>/Defs/ThingDef[defName="INSPolymerRefinery"]/researchPrerequisites</xpath>
