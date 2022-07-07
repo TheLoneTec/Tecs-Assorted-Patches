@@ -548,6 +548,24 @@
 			</li>
 		
 			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "LTS_LargeSimpleDoorOne"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>2</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "LTS_LargeSimpleDoorTwo"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>2</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[@Name = "LTS_FuturisticDoor"]/costList</xpath>
 				<value>
 					<costList>
@@ -652,6 +670,29 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "LTS_SingleDoor"]</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>1</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "LTS_SingleDoor"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "LTS_SingleDoor"]/stuffCategories</xpath>
+				<value>
+					<li>SolidMetallic</li>
+					<li>StrongMetallic</li>
+					<li>RuggedMetallic</li>
+				</value>
+			</li>			
+
 			<li Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
 				<value>
