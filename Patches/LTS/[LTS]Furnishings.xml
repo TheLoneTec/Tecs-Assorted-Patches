@@ -547,8 +547,8 @@
 				</value>
 			</li>
 		
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name = "LTS_LargeSimpleDoorOne"]/costList</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "LTS_LargeSimpleDoorOne"]</xpath>
 				<value>
 					<costList>
 						<ComponentMedieval>2</ComponentMedieval>
@@ -556,12 +556,50 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name = "LTS_LargeSimpleDoorTwo"]/costList</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorOne"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+						<li>Stony</li>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorOne"]</xpath>
+				<value>
+				<costStuffCount>35</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorTwo"]</xpath>
 				<value>
 					<costList>
 						<ComponentMedieval>2</ComponentMedieval>
 					</costList>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorTwo"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+						<li>Stony</li>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorTwo"]</xpath>
+				<value>
+				<costStuffCount>35</costStuffCount>
 				</value>
 			</li>
 		
