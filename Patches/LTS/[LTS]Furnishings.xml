@@ -599,7 +599,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorTwo"]</xpath>
 				<value>
-				<costStuffCount>35</costStuffCount>
+				<costStuffCount>30</costStuffCount>
 				</value>
 			</li>
 		
