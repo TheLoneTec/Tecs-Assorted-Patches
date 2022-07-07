@@ -548,7 +548,7 @@
 			</li>
 		
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[@Name = "LTS_LargeSimpleDoorOne"]</xpath>
+				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorOne"]</xpath>
 				<value>
 					<costList>
 						<ComponentMedieval>2</ComponentMedieval>
@@ -571,7 +571,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorOne"]</xpath>
 				<value>
-				<costStuffCount>35</costStuffCount>
+				<costStuffCount>30</costStuffCount>
 				</value>
 			</li>
 			
