@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Fortifications - Neolithic SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Fortifications</defName>
+						<label>Fortifications</label>
+						<description>Walls, Frames and Gate from Fortifications.</description>
+						<defNames>
+							<li>FT_Palisade</li>
+							<li>FT_Palisade_Frame</li>
+							<li>FT_Palisade_Frame_B</li>
+							<li>FT_Palisade_Corner</li>
+							<li>FT_Palisade_Embrasures</li>
+							<li>FT_PalisadeDoor</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

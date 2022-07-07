@@ -60,6 +60,37 @@
 				<li>CeramicTileWall</li>
 			  </value>
 			</li>
+			
+			<li Class="PatchOperationReplace">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
+				<value>
+				<defNames>
+					<li>WattleFence</li>
+					<li>Fence</li>
+					<li>DryStoneWall</li>
+					<li>PalisadeWall</li>
+					<li>ChainFence</li>
+					<li>TechFence</li>
+				</defNames>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Columns</defName>
+						<label>Columns</label>
+						<description>Various Columns.</description>
+						<defNames>
+							<li>Column</li>
+							<li>LTS_Pillar</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
 
 			</operations>
 		</match>

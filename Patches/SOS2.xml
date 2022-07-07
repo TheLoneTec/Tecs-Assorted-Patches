@@ -103,6 +103,24 @@
 			  </value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="HullFoamWall"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>HullFoam</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="ShipHullfoamTile"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>HullFoam</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
 			</operations>
 		</match>
     </Operation>

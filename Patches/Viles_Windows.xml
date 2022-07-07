@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>The Windows</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Windows</defName>
+						<label>Windows</label>
+						<description>All the standard windows.</description>
+						<defNames>
+							<li>SimpleOpenWindow</li>
+							<li>OpenWindow</li>
+							<li>LargeOpenWindow</li>
+							<li>HugeOpenWindow</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Reinforced_Windows</defName>
+						<label>Reinforced Windows</label>
+						<description>Reinforced Windows.</description>
+						<defNames>
+							<li>ReinforcedOpenWindow</li>
+							<li>LargeReinforcedOpenWindow</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

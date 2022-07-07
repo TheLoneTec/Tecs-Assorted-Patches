@@ -818,6 +818,334 @@
 						</value>
 					</li>
 					
+					<!-- =================== Archotech ===================== -->
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[@Name="INSShip_Beam_Archo_Base"]/designatorDropdown</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[@Name="INSShip_Beam_Powered_Archo_Base"]/designatorDropdown</xpath>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>SubCategory_InsulationShipHull_Archotech</defName>
+								<label>Insulated Archotech Ship Hull</label>
+								<description>For all your temperature control needs.</description>
+								<defNames>
+									<li>INSShip_BeamArchotech_Biomass</li>
+									<li>INSShip_BeamArchotech_Biomass_Unpowered</li>
+									<li>INSShip_BeamArchotech_Fibre</li>
+									<li>INSShip_BeamArchotech_Fibre_Unpowered</li>
+									<li>INSShip_BeamArchotech_Hyper</li>
+									<li>INSShip_BeamArchotech_Hyper_Unpowered</li>
+									<li>INSShip_BeamArchotech_Polymer</li>
+									<li>INSShip_BeamArchotech_Polymer_Unpowered</li>
+								</defNames>
+								<designationCategory>Ship</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>SubCategory_InsulationArchotechShipAirLock</defName>
+								<label>Insulated Archotech Ship Airlock</label>
+								<description>For all your temperature control needs.</description>
+								<defNames>
+									<li>ShipAirlockArchotechBiomass</li>
+									<li>ShipAirlockArchotechFibre</li>
+									<li>ShipAirlockArchotechHyper</li>
+									<li>ShipAirlockArchotechPolymer</li>
+								</defNames>
+								<designationCategory>Ship</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+					
+					<!-- ========== SOS Recipes ========== -->
+					
+					<!-- ==== Biomass ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Biomass"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Biomass>10</INSSlab_Biomass>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>30</Wire>
+								<MagneticMaterial>1</MagneticMaterial>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Biomass"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Biomass_Unpowered"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Biomass>10</INSSlab_Biomass>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>15</Wire>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Biomass_Unpowered"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<!-- ==== Fibre ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Fibre"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Fibre>10</INSSlab_Fibre>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>30</Wire>
+								<MagneticMaterial>1</MagneticMaterial>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Fibre"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Fibre_Unpowered"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Fibre>10</INSSlab_Fibre>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>15</Wire>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Fibre_Unpowered"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<!-- ==== Hyper ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Hyper"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Hyper>10</INSSlab_Hyper>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>30</Wire>
+								<MagneticMaterial>1</MagneticMaterial>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Hyper"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Hyper_Unpowered"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Hyper>10</INSSlab_Hyper>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>15</Wire>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Hyper_Unpowered"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<!-- ==== Polymer ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Polymer"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Polymer>10</INSSlab_Polymer>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>30</Wire>
+								<MagneticMaterial>1</MagneticMaterial>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Polymer"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Polymer_Unpowered"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Polymer>10</INSSlab_Polymer>
+								<ComponentUltra>4</ComponentUltra>
+								<Wire>15</Wire>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "INSShip_BeamArchotech_Polymer_Unpowered"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+						</value>
+					</li>
+					
+					<!-- ========== SOS Airlock Recipes ========== -->
+					
+					<!-- ==== Biomass ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechBiomass"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Biomass>10</INSSlab_Biomass>
+								<ComponentSpacer>15</ComponentSpacer>
+								<Electronics>2</Electronics>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechBiomass"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>50</costStuffCount>
+						</value>
+					</li>
+					
+					<!-- ==== Fibre ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechFibre"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Fibre>10</INSSlab_Fibre>
+								<ComponentSpacer>15</ComponentSpacer>
+								<Electronics>2</Electronics>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechFibre"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>50</costStuffCount>
+						</value>
+					</li>
+					
+					<!-- ==== Hyper ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechHyper"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Hyper>10</INSSlab_Hyper>
+								<ComponentSpacer>15</ComponentSpacer>
+								<Electronics>2</Electronics>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechHyper"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>50</costStuffCount>
+						</value>
+					</li>
+					
+					<!-- ==== Polymer ==== -->
+					
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechPolymer"]/costList</xpath>
+						<value>
+							<costList>
+								<INSSlab_Polymer>10</INSSlab_Polymer>
+								<ComponentSpacer>15</ComponentSpacer>
+								<Electronics>2</Electronics>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>/Defs/ThingDef[defName = "ShipAirlockArchotechPolymer"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+							</stuffCategories>
+							<costStuffCount>50</costStuffCount>
+						</value>
+					</li>
+					
 					</operations>
 				</match>
 			</li>

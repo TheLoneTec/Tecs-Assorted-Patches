@@ -22,6 +22,16 @@
 				<xpath>/Defs/ThingDef[defName = "Misc_FileCabinet"]</xpath>
 			</li>
 			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Light_ModernLamp"]</xpath>
+			</li>
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "Bed_Kingsize"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_ArtableBedBase</value>
+			</li>
+	
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "Bed_Kingsize"]/statBases</xpath>
 				<value>
@@ -49,38 +59,33 @@
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things</xpath>
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="DoubleBed"]]</xpath>
 				<value>
 				  <li>Bed_Kingsize</li>
 				</value>
 			</li>
 			
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_Thing"]</xpath>
-			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RoyalTitleDef/bedroomRequirements</xpath>
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="EndTable"]]</xpath>
 				<value>
-				<li Class="RoomRequirement_ThingAnyOf">
-				<things>
-				  <li>EndTable</li>
 				  <li>Table_RoyalEndTable</li>
-				</things>
-				</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RoyalTitleDef/bedroomRequirements</xpath>
-				<value>
-				<li Class="RoomRequirement_ThingAnyOf">
-				<things>
-				  <li>Dresser</li>
-				  <li>Table_RoyalDresser</li>
-				</things>
-				</li>
 				</value>
 			</li>
 			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="Dresser"]]</xpath>
+				<value>
+				  <li>Table_RoyalDresser</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Light_Streetlamp"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+
 			</operations>
 		</match>
 		

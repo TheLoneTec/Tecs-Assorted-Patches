@@ -118,6 +118,7 @@
 						<heatCapacity>12000</heatCapacity>
 						<conductivity>0.5</conductivity>
 						<volume>5</volume>
+						<airflow>0.5</airflow>
 					</li>
 				</value>
 			</li>
@@ -330,6 +331,72 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>MineralsFrozen_SK</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="SnowWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>10000</heatCapacity>
+								<volume>10</volume>
+								<conductivity>2</conductivity>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="IceWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>8000</heatCapacity>
+								<volume>10</volume>
+								<conductivity>3</conductivity>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="PykreteWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>12000</heatCapacity>
+								<volume>10</volume>
+								<conductivity>1.8</conductivity>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="BlueIceWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<volume>10</volume>
+								<conductivity>1.7</conductivity>
+							</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="GreenIceWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>16000</heatCapacity>
+								<volume>10</volume>
+								<conductivity>1.6</conductivity>
+							</li>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+			
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>Vanilla Furniture Expanded SK</li>

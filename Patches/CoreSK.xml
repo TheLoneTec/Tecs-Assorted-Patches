@@ -16,6 +16,61 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Walls</defName>
+						<label>Walls</label>
+						<description>All the main walls from HSK.</description>
+						<defNames>
+							<li>Wall</li>
+							<li>Window</li>
+							<li>ClutterSilverWall</li>
+							<li>ClutterUWallLight</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Doors</defName>
+						<label>Doors</label>
+						<description>All the main doors from HSK.</description>
+						<defNames>
+							<li>Door</li>
+							<li>MDoor</li>
+							<li>DoorGlass</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>AutoDoors</defName>
+						<label>AutoDoors</label>
+						<description>All the main autoDoors from HSK.</description>
+						<defNames>
+							<li>Autodoor</li>
+							<li>Blastdoor</li>
+							<li>AutoDoorGlass</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
 			</operations>
 		</match>
     </Operation>

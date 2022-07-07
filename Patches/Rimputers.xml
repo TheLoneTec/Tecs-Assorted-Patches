@@ -7,6 +7,28 @@
     </mods>
 	<match Class="PatchOperationSequence">
 		<operations>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_Rimputers</defName>
+						<label>rimputers</label>
+						<description>Machines to help you research.</description>
+						<defNames>
+							<li>RP_MechanicalCalculator</li>
+							<li>RP_DifferenceEngine</li>
+							<li>RP_TapeStorage</li>
+							<li>RP_Server</li>
+							<li>RP_SuperComputer</li>
+							<li>Rimputer_quantumcomputer</li>
+						</defNames>
+						<designationCategory>Misc</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "RP_MechanicalCalculator"]/costList</xpath>
 				<value>
