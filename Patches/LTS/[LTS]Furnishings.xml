@@ -1681,8 +1681,8 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>Interior_Lights</defName>
-						<label>Interior Lights</label>
+						<defName>Fancy_Interior_Lights</defName>
+						<label>Fancy Interior Lights</label>
 						<description>Various lights for indoors.</description>
 						<defNames>
 							<li>LTS_Astrid</li>
