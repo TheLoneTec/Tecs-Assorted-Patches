@@ -1704,7 +1704,7 @@
 					<!-- ========== Lamp Post ========== -->
 
 					<li Class="PatchOperationAdd">
-					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="LTS_Lights"]/defNames</xpath>
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Outdoor_Lights"]/defNames</xpath>
 						<value>
 							<li>Light_Streetlamp</li>
 						</value>
