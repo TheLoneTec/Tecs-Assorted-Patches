@@ -22,10 +22,20 @@
 							<li>FT_Palisade_Corner</li>
 							<li>FT_Palisade_Embrasures</li>
 							<li>FT_PalisadeDoor</li>
+							<li>FT_CavalrySpike</li>
+							<li>FT_Ditch</li>
 						</defNames>
-						<designationCategory>Structure</designationCategory>
+						<designationCategory>Security</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="FT_Palisade" or defName="FT_Palisade_Frame" or defName="FT_Palisade_Frame_B" or defName="FT_Palisade_Corner"
+				or defName="FT_Palisade_Embrasures" or defName="FT_PalisadeDoor" or defName="FT_CavalrySpike" or defName="FT_Ditch"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Security</designationCategory>
 				</value>
 			</li>
 

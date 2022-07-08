@@ -121,6 +121,34 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="ShipInside_PassiveCooler"]/researchPrerequisites/li[text()="AirConditioning"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="ShipInside_PassiveCooler"]/researchPrerequisites/li[text()="AirConditioning"]</xpath>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="ShipInside_PassiveVent"]/researchPrerequisites/li[text()="AirConditioning"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="ShipInside_PassiveVent"]/researchPrerequisites/li[text()="AirConditioning"]</xpath>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="ShipInside_SolarGenerator"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="ShipInside_SolarGenerator"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="ShipInside_SolarGenerator"]/researchPrerequisites/li[text()="SolarPanels"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="ShipInside_SolarGenerator"]/researchPrerequisites/li[text()="SolarPanels"]</xpath>
+				</match>
+			</li>
+			
 			</operations>
 		</match>
     </Operation>

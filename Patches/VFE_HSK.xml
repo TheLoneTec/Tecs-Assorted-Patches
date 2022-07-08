@@ -86,6 +86,22 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Seat_SquareChair"]/researchPrerequisites/li[text()="ComplexFurniture"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="Seat_SquareChair"]/researchPrerequisites/li[text()="ComplexFurniture"]</xpath>
+				</match>
+			</li>
+<!--
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[@ParentName="LampBase"]</xpath>
+				<match Class="PatchOperationAttributeSet">
+					<xpath>/Defs/ThingDef[@ParentName = "LampBase"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_LampBase</value>
+				</match>
+			</li>
+-->
 			</operations>
 		</match>
 		

@@ -122,10 +122,46 @@
 								<shaderType>CutoutComplex</shaderType>
 							</value>
 						</li>
+						<!--
+						<li Class="PatchOperationConditional">
+							<xpath>/Defs/ThingDef[@ParentName="BenchBase"]</xpath>
+							<match Class="PatchOperationAttributeSet">
+								<xpath>/Defs/ThingDef[@ParentName = "BenchBase"]</xpath>
+								<attribute>ParentName</attribute>
+								<value>SK_BenchBase</value>
+							</match>
+						</li>
+						-->
 					</operations>
 				</nomatch>
 			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName="VBE_WritersTable"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
 			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]</xpath>
+				<value>
+					<staticSunShadowHeight>0</staticSunShadowHeight>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName="VBE_TypewritersTable"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]</xpath>
+				<value>
+					<staticSunShadowHeight>0</staticSunShadowHeight>
+				</value>
+			</li>
+		
 			<!-- ============== add book storage ============== -->
 	<!--
 			<li Class="PatchOperationAdd">

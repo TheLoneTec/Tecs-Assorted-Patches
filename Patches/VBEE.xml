@@ -50,6 +50,41 @@
 					<li>SolidMetallic</li>
 				</value>
 			</li>
+			<!--
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[@ParentName="BenchBase"]</xpath>
+				<match Class="PatchOperationAttributeSet">
+					<xpath>/Defs/ThingDef[@ParentName = "BenchBase"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_BenchBase</value>
+				</match>
+			</li>
+			-->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressElectric"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressElectric"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressManual"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressElectric"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="VBE_TypewritersTable"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="VBE_TypewritersTable"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				</match>
+			</li>
 			
 		</operations>
 	</match>
