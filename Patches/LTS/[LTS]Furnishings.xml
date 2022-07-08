@@ -90,6 +90,7 @@
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
+					
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/TerrainDef[@Name = "LTS_WoodBase"]/costList</xpath>
 						<value>
@@ -104,15 +105,39 @@
 							<Beauty>4</Beauty>
 						</value>
 					</li>
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>Wooden_floor_B1</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+					
 					</operations>
 				</match>
-				<nomatch Class="PatchOperationReplace">
-					<value>
-						<costList>
-							<WoodPlank>4</WoodPlank>
-							<Plastic>2</Plastic>
-						</costList>
-					</value>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>Plastic_floor_C1</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/TerrainDef[@Name = "LTS_WoodBase"]/costList</xpath>
+						<value>
+							<costList>
+								<WoodPlank>4</WoodPlank>
+								<Plastic>2</Plastic>
+							</costList>
+						</value>
+					</li>
+					
+					</operations>
 				</nomatch>
 			</li>
 		
@@ -136,6 +161,7 @@
 				</value>
 			</li>
 			
+			
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>Wood You Please</li>
@@ -156,15 +182,40 @@
 							<Beauty>5</Beauty>
 						</value>
 					</li>
+					
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/TerrainDef[@Name="LTS_FineWoodBase"]</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>Wooden_floor_B2</li>
+							</researchPrerequisites>
+						</value>
+					</li>	
+					
 					</operations>
 				</match>
-				<nomatch Class="PatchOperationReplace">
-					<value>
-						<costList>
-							<WoodPlank>6</WoodPlank>
-							<Plastic>3</Plastic>
-						</costList>
-					</value>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/TerrainDef[@Name="LTS_FineWoodBase"]</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>Plastic_floor_C2</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/TerrainDef[@Name = "LTS_FineWoodBase"]/costList</xpath>
+						<value>
+							<costList>
+								<WoodPlank>6</WoodPlank>
+								<Plastic>3</Plastic>
+							</costList>
+						</value>
+					</li>
+					
+					</operations>
 				</nomatch>
 			</li>
 			
@@ -447,8 +498,17 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_ArchedDoor"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B3</li>
+					</researchPrerequisites>
+				</value>
+			</li>	
+		
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[@Name = "LTS_ArchedDoor"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_ArchedDoor"]</xpath>
 				<value>
 					<costList>
 						<Glass>1</Glass>
@@ -481,6 +541,10 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_MedievalDoor"]/researchPrerequisites</xpath>
+			</li>	
+		
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_ThickDoor"]</xpath>
 				<value>
@@ -489,6 +553,16 @@
 					</costList>
 				</value>
 			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_ThickDoor"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Fortification_A1</li>
+					</researchPrerequisites>
+				</value>
+			</li>	
+			
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_MedievalGate"]</xpath>
 				<value>
@@ -497,6 +571,16 @@
 					</costList>
 				</value>
 			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_MedievalGate"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Fortification_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>	
+			
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_GiantMedievalGate"]</xpath>
 				<value>
@@ -505,6 +589,15 @@
 					</costList>
 				</value>
 			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_GiantMedievalGate"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Fortification_B2</li>
+					</researchPrerequisites>
+				</value>
+			</li>	
 
 			<li Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
@@ -546,6 +639,17 @@
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
 			</li>
+		
+
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_LargeSimpleDoorOne" or defName="LTS_LargeSimpleDoorTwo"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B2</li>
+					</researchPrerequisites>
+				</value>
+			</li>	
 		
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_LargeSimpleDoorOne"]</xpath>
@@ -685,6 +789,15 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_SimpleDoorOne" or defName="LTS_SimpleDoorTwo" or defName="LTS_SimpleSingleDoorOne" or defName="LTS_SimpleSingleDoorTwo" or defName="LTS_SimpleSingleDoorThree"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>	
+		
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name = "LTS_SimpleDoor"]</xpath>
 				<value>
@@ -745,6 +858,15 @@
 						<designationCategory>Structure</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_FancyDoor"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Firefoam</li>
+					</researchPrerequisites>
 				</value>
 			</li>
 		
@@ -843,18 +965,46 @@
 				</match>
 			</li>			
 		
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_FenceBase"]/researchPrerequisites</xpath>
+			</li>
+		
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_Hedge"]</xpath>
 				<value>
 					<costStuffCount>3</costStuffCount>
 				</value>
 			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Hedge"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B3</li>
+					</researchPrerequisites>
+				</value>
+			</li>			
+
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_OrnateFence"]</xpath>
 				<value>
 					<costStuffCount>4</costStuffCount>
 				</value>
 			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_OrnateFenceGate" or defName="LTS_BarsGate"]/researchPrerequisites</xpath>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_OrnateFence" or defName="LTS_OrnateFenceGate" or defName="LTS_Bars" or defName="LTS_BarsGate"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Firefoam</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_OrnateFenceGate"]</xpath>
 				<value>
@@ -928,6 +1078,24 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_SimpleDoorFrame" or defName="LTS_SimpleLargeDoorFrame"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FuturisticDoorFrame" or defName="LTS_FuturisticLargeDoorFrame"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B3</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
 				<value>
@@ -944,7 +1112,16 @@
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
 			</li>
-			
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Pillar"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		
 			<li Class="PatchOperationRemove">
 			<xpath>Defs/ThingDef[defName="LTS_CobblestoneWall"]</xpath>
 			</li>
@@ -1204,6 +1381,10 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_SeatBase"]/researchPrerequisites</xpath>
+			</li>
+			
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/ThingDef[defName="LTS_Klimpfjall"]</xpath>
 				<value>
@@ -1229,6 +1410,10 @@
 						<li>Tables_C1</li>
 					</researchPrerequisites>
 				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Mullfjallet"]/researchPrerequisites</xpath>
 			</li>
 			
 			<li Class="PatchOperationAdd">
@@ -1334,8 +1519,12 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace"> 
+			<li Class="PatchOperationRemove"> 
 				<xpath>/Defs/ThingDef[@Name="LTS_TableBase"]/researchPrerequisites</xpath>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_IdanasN" or defName="LTS_IdanasD" or defName="LTS_KoppangD" or defName="LTS_Havsta"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Tables_B2</li>
@@ -1511,8 +1700,8 @@
 				
 			</li>
 	
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_B1</li>
@@ -1562,8 +1751,8 @@
 				</value>
 			</li>				
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C3</li>
@@ -1598,8 +1787,8 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>
@@ -1625,8 +1814,8 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>

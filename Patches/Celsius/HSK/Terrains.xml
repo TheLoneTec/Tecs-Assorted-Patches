@@ -15,8 +15,8 @@
 				<xpath>Defs/TerrainDef[@Name="SK_WaterDeepBase"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>105000</heatCapacity>
-						<conductivity>2</conductivity>
+						<heatCapacity>52500</heatCapacity>
+						<conductivity>60</conductivity>
 					</li>
 				</value>
 			</li>
@@ -25,8 +25,8 @@
 				<xpath>Defs/TerrainDef[@Name="SK_WaterShallowBase"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>105000</heatCapacity>
-						<conductivity>2</conductivity>
+						<heatCapacity>52500</heatCapacity>
+						<conductivity>60</conductivity>
 					</li>
 				</value>
 			</li>
@@ -36,7 +36,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>25000</heatCapacity>
-						<conductivity>1.7</conductivity>
+						<conductivity>30</conductivity>
 					</li>
 				</value>
 			</li>
