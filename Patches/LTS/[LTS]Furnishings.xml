@@ -485,9 +485,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_ArchedDoors</defName>
-						<label>LTS Arched Doors</label>
-						<description>Arched doors from LTS</description>
+						<defName>Small_ArchedDoors</defName>
+						<label>Small Arched Doors</label>
+						<description>Arched doors, they are weak but pretty.</description>
 						<defNames>
 							<li>LTS_ArchedDoor</li>
 							<li>LTS_SimpleArchedDoor</li>
@@ -527,9 +527,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_MedievalDoors</defName>
-						<label>LTS Medieval Doors</label>
-						<description>Medieval doors from LTS</description>
+						<defName>MedievalDoors</defName>
+						<label>Medieval Doors</label>
+						<description>Medieval doors of various sizes. They are quite sturdy.</description>
 						<defNames>
 							<li>LTS_ThickDoor</li>
 							<li>LTS_MedievalGate</li>
@@ -603,9 +603,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_FuturisticDoors_Single</defName>
-						<label>LTS Futuristic Single Doors</label>
-						<description>Futuristic single doors from LTS</description>
+						<defName>FuturisticDoors_Single</defName>
+						<label>Futuristic Single Doors</label>
+						<description>Futuristic single doors.</description>
 						<defNames>
 							<li>LTS_FuturisticDoorOne</li>
 							<li>LTS_FuturisticDoorTwo</li>
@@ -621,9 +621,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_Large_Doors</defName>
-						<label>LTS Large Doors</label>
-						<description>Futuristic large doors from LTS</description>
+						<defName>Large_Doors</defName>
+						<label>Large Doors</label>
+						<description>Double Doors or bigger.</description>
 						<defNames>
 							<!-- Simple large -->
 							<li>LTS_LargeSimpleDoorOne</li>
@@ -773,9 +773,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_SimpleDoors</defName>
-						<label>LTS Simple Doors</label>
-						<description>Simple doors from LTS</description>
+						<defName>SimpleDoors</defName>
+						<label>Simple Doors</label>
+						<description>Various styles of simple looking doors.</description>
 						<defNames>
 							<li>LTS_SimpleDoorOne</li>
 							<li>LTS_SimpleDoorTwo</li>
@@ -848,9 +848,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_FancyDoors</defName>
-						<label>LTS Fancy Doors</label>
-						<description>Fancy doors from LTS</description>
+						<defName>FancyDoors</defName>
+						<label>Fancy Doors</label>
+						<description>Fancy doors. Unusual, expensive and pretty Looking.</description>
 						<defNames>
 							<li>LTS_FancyDoorOne</li>
 							<li>LTS_FancyDoorTwo</li>
@@ -928,9 +928,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_Fences</defName>
-						<label>LTS Fences</label>
-						<description>Fences from LTS</description>
+						<defName>Ornate_Fences</defName>
+						<label>Ornate Fences</label>
+						<description>Ornate fences are artistic or detailed.</description>
 						<defNames>
 							<li>LTS_Hedge</li>
 							<li>LTS_OrnateFence</li>
@@ -1038,9 +1038,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_Archs</defName>
-						<label>LTS arches</label>
-						<description>Arches from LTS</description>
+						<defName>Arches</defName>
+						<label>Styled Arches</label>
+						<description>Various styled arches of different sizes.</description>
 						<defNames>
 							<li>LTS_ArchWood</li>
 							<li>LTS_ArchStone</li>
@@ -1063,9 +1063,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_DoorFrames</defName>
-						<label>LTS Door Frames</label>
-						<description>Door frames from LTS</description>
+						<defName>Door_Frames</defName>
+						<label>Door Frames</label>
+						<description>Door frames can be placed above doors for added decoration. Various Sizes.</description>
 						<defNames>
 							<li>LTS_SimpleDoorFrame</li>
 							<li>LTS_SimpleLargeDoorFrame</li>
@@ -1177,8 +1177,8 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_Deco</defName>
-						<label>LTS Deco</label>
+						<defName>Deco_Small</defName>
+						<label>Small Decorations</label>
 						<description>Various decoration items.</description>
 						<defNames>
 							<li>LTS_StoneBorderCorner</li>
@@ -1239,9 +1239,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_Carpets</defName>
-						<label>LTS Carpets</label>
-						<description>Various LTS carpets.</description>
+						<defName>LTS_Rugs</defName>
+						<label>LTS Rugs</label>
+						<description>Various LTS rugs.</description>
 						<defNames>
 							<li>LTS_BearRug</li>
 							<li>LTS_RugCarpet</li>
@@ -1547,9 +1547,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_Counters</defName>
-						<label>LTS Counters</label>
-						<description>Various LTS counters that can store utensils.</description>
+						<defName>Furniture_Counters</defName>
+						<label>Countertops</label>
+						<description>Various counters that can store utensils.</description>
 						<defNames>
 							<li>LTS_Counter</li>
 							<li>LTS_CounterB</li>
@@ -1664,12 +1664,27 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_Lights</defName>
-						<label>LTS Lights</label>
-						<description>Various LTS lights.</description>
+						<defName>Outdoor_Lights</defName>
+						<label>Outdoor Lights</label>
+						<description>Various lightposts for light a path.</description>
 						<defNames>
 							<li>LTS_Lanternpost</li>
 							<li>LTS_Lightpost</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Interior_Lights</defName>
+						<label>Interior Lights</label>
+						<description>Various lights for indoors.</description>
+						<defNames>
 							<li>LTS_Astrid</li>
 							<li>LTS_Vidja</li>
 						</defNames>
@@ -1854,9 +1869,9 @@
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>LTS_FireSource</defName>
-						<label>LTS Firepits and Fireplaces</label>
-						<description>Various LTS fire sources.</description>
+						<defName>FireSource</defName>
+						<label>Firepits and Fireplaces</label>
+						<description>Various fire sources.</description>
 						<defNames>
 							<li>LTS_Firepit</li>
 							<li>LTS_FirepitRound</li>
