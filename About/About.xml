@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Tec's Assorted Patched</name>
+	<name>Tec's Assorted Patches</name>
 	<author>TheLoneTec</author>
 	<packageId>TheLoneTec.TSAP</packageId>
 	<supportedVersions>
@@ -14,6 +14,12 @@
 			<packageId>skyarkhangel.HSK</packageId>
 			<displayName>Hardcore SK</displayName>
 			<downloadUrl>https://github.com/skyarkhangel/Hardcore-SK</downloadUrl>
+		</li>
+		<li>
+			<packageId>Imranfish.XMLExtensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 		<loadBefore>
