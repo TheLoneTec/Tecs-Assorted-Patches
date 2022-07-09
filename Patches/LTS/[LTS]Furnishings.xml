@@ -1155,8 +1155,8 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]/costStuffCount</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]</xpath>
 				<value>
 					<costStuffCount>8</costStuffCount>
 				</value>
@@ -1167,8 +1167,6 @@
 				<value>
 					<costList>
 						<Wire>3</Wire>
-						<Glass>5</Glass>
-						<ElectronicComponents>1</ElectronicComponents>
 						<ReinforcedConcrete>2</ReinforcedConcrete>
 					</costList>
 				</value>

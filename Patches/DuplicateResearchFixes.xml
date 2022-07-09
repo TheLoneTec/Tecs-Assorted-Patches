@@ -34,6 +34,13 @@
 				</match>
 			</li>
 
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="RGK_EndTableWithLampE"]/researchPrerequisites/li[text()="Light_C2"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="RGK_EndTableWithLampE"]/researchPrerequisites/li[text()="Light_C2"]</xpath>
+				</match>
+			</li>
+
 			</operations>
 		</match>
 		
