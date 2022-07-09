@@ -17,80 +17,54 @@
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
+				
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="RGK_Wall" or defName="GL_Wall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>17000</heatCapacity>
+								<volume>10</volume>
+								<conductivity>1</conductivity>
+							</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="RGK_VentWall" or defName="GL_VentWall" or defName="GL_FlowerWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>15000</heatCapacity>
+								<volume>8</volume>
+								<conductivity>1</conductivity>
+								<airflow>0.8</airflow>
+							</li>
+						</value>
+					</li>
 					
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName="RGK_WindowWall" or defName="GL_WindowWall"]</xpath>
+						<value>
+							<li Class="Celsius.ThingThermalProperties">
+								<heatCapacity>14000</heatCapacity>
+								<volume>8</volume>
+								<conductivity>1</conductivity>
+							</li>
+						</value>
+					</li>
+				<!--
 					<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vile's Hardcore Renovations</li>
 					</mods>
 						<nomatch Class="PatchOperationSequence">
 							<operations>
-<!-- Try this
-							<li Class="PatchOperationConditional">
-								<xpath>/Defs/ThingDef[defName="RGK_Wall"]</xpath>
-								<match Class="PatchOperationAddModExtension">
-									<xpath>Defs/ThingDef[defName="RGK_Wall"]</xpath>
-									<value>
-										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>17000</heatCapacity>
-											<volume>10</volume>
-											<conductivity>1</conductivity>
-										</li>
-									</value>
-								</match>
-							</li>
-							
-							<li Class="PatchOperationConditional">
-								<xpath>/Defs/ThingDef[defName="GL_Wall"]</xpath>
-								<match Class="PatchOperationAddModExtension">
-									<xpath>Defs/ThingDef[defName="GL_Wall"]</xpath>
-									<value>
-										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>17000</heatCapacity>
-											<volume>10</volume>
-											<conductivity>1</conductivity>
-										</li>
-									</value>
-								</match>
-							</li>
--->
-							<li Class="PatchOperationAddModExtension">
-								<xpath>Defs/ThingDef[defName="RGK_Wall" or defName="GL_Wall"]</xpath>
-								<value>
-									<li Class="Celsius.ThingThermalProperties">
-										<heatCapacity>17000</heatCapacity>
-										<volume>10</volume>
-										<conductivity>1</conductivity>
-									</li>
-								</value>
-							</li>
 
-							<li Class="PatchOperationAddModExtension">
-								<xpath>Defs/ThingDef[defName="RGK_VentWall" or defName="GL_VentWall" or defName="GL_FlowerWall"]</xpath>
-								<value>
-									<li Class="Celsius.ThingThermalProperties">
-										<heatCapacity>15000</heatCapacity>
-										<volume>8</volume>
-										<conductivity>1</conductivity>
-										<airflow>0.8</airflow>
-									</li>
-								</value>
-							</li>
-							
-							<li Class="PatchOperationAddModExtension">
-								<xpath>Defs/ThingDef[defName="RGK_WindowWall" or defName="GL_WindowWall"]</xpath>
-								<value>
-									<li Class="Celsius.ThingThermalProperties">
-										<heatCapacity>14000</heatCapacity>
-										<volume>8</volume>
-										<conductivity>1</conductivity>
-									</li>
-								</value>
-							</li>
+
 
 							</operations>
 						</nomatch>
 					</li>
-					
+					-->
 					</operations>
 				</match>
 			</li>
