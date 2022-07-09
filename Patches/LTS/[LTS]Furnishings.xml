@@ -1146,6 +1146,34 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]/stuffCategories</xpath>
+				<value>
+					<stuffCategories>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>8</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]/costList</xpath>
+				<value>
+					<costList>
+						<Wire>3</Wire>
+						<Glass>5</Glass>
+						<ElectronicComponents>1</ElectronicComponents>
+						<ReinforcedConcrete>2</ReinforcedConcrete>
+					</costList>
+				</value>
+			</li>
+			
 			<!-- ======== Deco ======== -->
 		
 			<li Class="PatchOperationReplace"> 
