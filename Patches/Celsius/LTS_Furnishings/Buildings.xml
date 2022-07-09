@@ -41,7 +41,7 @@
 						<heatCapacity>12000</heatCapacity>
 						<conductivity>0.5</conductivity>
 						<volume>5</volume>
-						<airflow>0.5</airflow>
+						<airflow>0.8</airflow>
 					</li>
 				</value>
 			</li>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>[LTS]Furnishing</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		
+			<!-- ======== Deco ======== -->
+		
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_PathBase"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_BorderBase"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_AtlasWoodCover"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_AtlasWoodCover"]/designatorDropdown</xpath>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Deco_Small</defName>
+						<label>Small Decorations</label>
+						<description>Various decoration items.</description>
+						<defNames>
+							<li>LTS_StoneBorderCorner</li>
+							<li>LTS_StoneBorderEdge</li>
+							<li>LTS_LumberBorderCorner</li>
+							<li>LTS_LumberBorderEdge</li>
+							<li>LTS_PathA</li>
+							<li>LTS_PathB</li>
+							<li>LTS_PathC</li>
+							<li>LTS_AtlasWoodCover</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "LTS_PathBase"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "LTS_PathB"]/stuffCategories</xpath>
+				<value>
+				<stuffCategories>
+					<li>Stony</li>
+				</stuffCategories>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>1</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+			
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
