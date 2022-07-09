@@ -27,18 +27,6 @@ Patches for:
 - Celsius (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch)
 - [LTS] Furnishings, requires [LTS] Systems 
 
-Updated: Fixed FenceGates and things like them from keeping heat like doors for Celsius. Made cloth tent door ,walls and animal flap more realistic for Celsius. Added large Gate to Celsius.
-
-Moved "Variety Matters" Variety Need below Recreation to match the style and size. As its the same size as the lower needs. 
- 
-Updated: Fixed Viles Fence Gates retaining heat like doors.
-
-Updated: SOS2 Support for Celsius. Also allowed Heaters/Cooler/Vents to be placed on certain Vile Walls
-
-Updated: Trying to make ships lose heat as quick as possible when exposed to space, when using Celsius.
-
-Update: VFE Royalty Adjustments & Insulation Burlap Fabric Category fix
-
 Updated Patches:
 - Fortifications SK (Architect Menus)
 - [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
@@ -54,7 +42,19 @@ Updated Patches:
 - Thermodynamics - Core (forked), Hot Meals (forked) & Rimfridge Patch (Updated microwave and heatlamp recipe)
 - Core SK (Moved more items into Architect categories, as well as items from other mods. Adjusted ideology slab bed stats.)
 
-- Core SK (Fishdustries fish no longer complain about not having ce verbs)
+Updated: Fixed FenceGates and things like them from keeping heat like doors for Celsius. Made cloth tent door ,walls and animal flap more realistic for Celsius. Added large Gate to Celsius.
+
+Updated: Moved "Variety Matters" Variety Need below Recreation to match the style and size. As its the same size as the lower needs. 
+ 
+Updated: Fixed Viles Fence Gates retaining heat like doors.
+
+Updated: SOS2 Support for Celsius. Also allowed Heaters/Cooler/Vents to be placed on certain Vile Walls
+
+Updated: Trying to make ships lose heat as quick as possible when exposed to space, when using Celsius.
+
+Updated: VFE Royalty Adjustments & Insulation Burlap Fabric Category fix
+
+Updated: Core SK (Fishdustries fish no longer complain about not having ce verbs)
 
 Updated: removed over 20 yellow duplicate research messages so far
 
