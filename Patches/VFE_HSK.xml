@@ -57,26 +57,54 @@
 				  <li>Table_LightEndTable</li>
 				</value>
 			</li>
-			
+		
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="DoubleBed"]]</xpath>
+				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="EndTable"]]</xpath>
 				<value>
 				  <li>Bed_Kingsize</li>
 				</value>
 			</li>
-			
-			<li Class="PatchOperationAdd">
+		
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="EndTable"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
+					<value>
+					<li @Class = "RoomRequirement_ThingAnyOf">
+						<things>
+							<li>EndTable</li>
+							<li>Table_RoyalEndTable</li>
+						</things>
+					</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="EndTable"]]</xpath>
 				<value>
-				  <li>Table_RoyalEndTable</li>
+					<li>Table_RoyalEndTable</li>
 				</value>
+				</nomatch>
 			</li>
 			
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="Dresser"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
+					<value>
+					<li @Class = "RoomRequirement_ThingAnyOf">
+						<things>
+							<li>EndTable</li>
+							<li>Table_RoyalDresser</li>
+						</things>
+					</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="Dresser"]]</xpath>
 				<value>
-				  <li>Table_RoyalDresser</li>
+					<li>Table_RoyalDresser</li>
 				</value>
+				</nomatch>
 			</li>
 
 			<li Class="PatchOperationReplace">
