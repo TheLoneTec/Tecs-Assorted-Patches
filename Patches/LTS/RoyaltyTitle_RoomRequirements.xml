@@ -13,7 +13,7 @@
 				<match Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
 					<value>
-					<li @Class = "RoomRequirement_ThingAnyOf">
+					<li Class = "RoomRequirement_ThingAnyOf">
 						<things>
 							<li>EndTable</li>
 							<li>LTS_IdanasN</li>
@@ -34,7 +34,7 @@
 				<match Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
 					<value>
-					<li @Class = "RoomRequirement_ThingAnyOf">
+					<li Class = "RoomRequirement_ThingAnyOf">
 						<things>
 							<li>EndTable</li>
 							<li>LTS_IdanasD</li>
@@ -50,6 +50,10 @@
 					<li>LTS_KoppangD</li>
 				</value>
 				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Royalty">
+				<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class='RoomRequirement_ThingAnyOf']/things/li[text()="LTS_HemnesDouble"]</xpath>
 			</li>
 
 			</operations>
