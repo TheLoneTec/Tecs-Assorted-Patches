@@ -66,7 +66,7 @@
 					<operations>
 			
 					<li Class="PatchOperationAdd">
-					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="LTS_Fences"]/defNames</xpath>
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
 						<value>
 							<li>LTS_CobblestoneFence</li>
 						</value>
@@ -163,6 +163,15 @@
 						<designationCategory>Structure</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_ArchWood"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B1</li>
+					</researchPrerequisites>
 				</value>
 			</li>
 		
