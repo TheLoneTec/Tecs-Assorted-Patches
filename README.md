@@ -23,7 +23,7 @@ Patches for:
 - Thermodynamics - Core (forked), Hot Meals (forked) & Rimfridge Patch (moved food into appropriate categories & Material Conversion)
 - PlaceStuffOnTables Patch (allow certain objects to be placed on tables, can run without workshop mod)
 - Insulation (Continued) (Material Conversion, Architect Menus, HSK insulation tweaks)
-- Preemptive Strike (Material Conversion, Architect Menus)
+- Preemptive Strike (fork) - (Material Conversion, Architect Menus)
 - Celsius (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch)
 - [LTS] Furnishings, requires [LTS] Systems
 - Gloomy Deco SK (Celsius Patches)
