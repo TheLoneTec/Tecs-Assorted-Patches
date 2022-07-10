@@ -7,8 +7,9 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<description>
-	Some HSK patches
+	A lot of HSK patches
 	</description>
+	<downloadUrl>https://github.com/TheLoneTec/Tecs-Assorted-Patches</downloadUrl>
 	<modDependencies>
 		<li>
 			<packageId>skyarkhangel.HSK</packageId>
