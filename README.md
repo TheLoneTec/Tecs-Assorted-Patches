@@ -26,7 +26,7 @@ Patches for:
 - Preemptive Strike (Material Conversion, Architect Menus)
 - Celsius (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch)
 - [LTS] Furnishings, requires [LTS] Systems
-- Gloomy Deco SK(Celsius Patches)
+- Gloomy Deco SK (Celsius Patches)
 
 Updated Patches:
 - Fortifications SK (Architect Menus)
