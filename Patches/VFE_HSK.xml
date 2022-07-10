@@ -70,7 +70,7 @@
 				<match Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
 					<value>
-					<li @Class = "RoomRequirement_ThingAnyOf">
+					<li Class = "RoomRequirement_ThingAnyOf">
 						<things>
 							<li>EndTable</li>
 							<li>Table_RoyalEndTable</li>
@@ -91,7 +91,7 @@
 				<match Class="PatchOperationReplace">
 					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
 					<value>
-					<li @Class = "RoomRequirement_ThingAnyOf">
+					<li Class = "RoomRequirement_ThingAnyOf">
 						<things>
 							<li>EndTable</li>
 							<li>Table_RoyalDresser</li>
