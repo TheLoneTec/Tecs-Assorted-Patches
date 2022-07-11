@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Note: Heat capacity in J/C, conductivity in W/C, volume in liters. Figures can be taken e.g. here: https://www.engineeringtoolbox.com/specific-heat-solids-d_154.html -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Gloomy Decor Pack</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>HMC Vile's Metallurgy</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="FueledSmithy"]/researchPrerequisites</xpath>
+						<value>
+						<researchPrerequisites>
+							<li>Metallurgy_B2</li>
+						</researchPrerequisites>
+						</value>
+					</li>
+			
+					</operations>
+				</match>
+			</li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="GL_TableButcher"]/researchPrerequisites/li[text()="Pemmican"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="GL_TableButcher"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Food_B1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GL_TableButcher"]/costStuffCount</xpath>
+				<value>
+				<costStuffCount>85</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GL_TableButcher"]/costList</xpath>
+				<value>
+				<costList>
+					<ComponentMedieval>8</ComponentMedieval>
+					<Mechanism>1</Mechanism>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="GL_Teddy"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GL_Teddy"]</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>ComplexClothing</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="RGK_Teaset"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="RGK_Teaset"]</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Art_B1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="RGK_Flower"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="RGK_Flower"]</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Art_B1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="WardrobeA"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="WardrobeA"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Storage_B2</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="WardrobeB"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="WardrobeB"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Storage_B2</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+				<ResearchProjectDef ParentName="MedievalBase">
+					<defName>Artistic_Furniture</defName>
+					<label>Artistic Furniture</label>
+					<description>Artistically Styled Furniture</description>
+					<baseCost>400</baseCost>
+					<techLevel>Medieval</techLevel>
+					<prerequisites>
+						<li>Tables_B2</li>
+						<li>Art_B1</li>
+					</prerequisites>
+					<researchViewX>6.00</researchViewX>
+					<researchViewY>7.00</researchViewY>
+					<tab>Buildings_SK</tab>
+				</ResearchProjectDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="RGK_TableB" or defName="RGK_TableD" or defName="RGK_TableA" or defName="RGK_TableC"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Artistic_Furniture</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RGK_TableE" or defName="RGK_TableF" or defName="RGK_TableG" or defName="RGK_TableH"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Artistic_Furniture</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[@Name="RGKTableBase"]/researchPrerequisites</xpath>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GloomyDeco_Tree" or defName="GloomyDeco_Tool" or defName="GloomyDeco_Sign" or defName="GloomyDeco_Scarecrow"
+				or defName="GloomyDeco_Rope" or defName="GloomyDeco_Lumberjack"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Art_A1</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/TerrainDef[defName="GloomyDeco_Grass"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Terraform_B1</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GloomyDeco_MailBox" or defName="GloomyDeco_Kennel" or defName="GloomyDeco_Cart" or defName="GloomyDeco_Bucket"
+				or defName="GloomyDeco_Boat" or defName="GloomyDeco_Board"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Art_B1</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RGK_Manger"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Storage_B3</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GL_Locker" or defName="GL_Shelf" or defName="GloomyDeco_Box"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Storage_B2</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="GL_DoorFrame"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationInsert">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Arches"]/defNames/li[text()="LTS_ArchWood"]</xpath>
+				<value>
+					<li>GL_DoorFrame</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="RGK_DoorOld"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Fortification_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Doors"]/defNames/li[text()="GL_DoorFrame"]</xpath>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[LTS]Furnishing</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ThingDef[defName="GraveColumnMod"]/researchPrerequisites/li[text()="ComplexFurniture"]</xpath>
+						<match Class="PatchOperationAdd">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Arches"]/defNames</xpath>
+							<value>
+								<li>RGK_DoorOld</li>
+							</value>
+						</match>
+					</li>
+					</operations>
+				</match>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RugA_Small" or defName="RugB_Small" or defName="RugC_Small"]/statBases/Beauty</xpath>
+				<value>
+				<Beauty>16</Beauty>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RugA"]/statBases/Beauty</xpath>
+				<value>
+				<Beauty>24</Beauty>
+				</value>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="GL_Shelf"]/comps</xpath>
+				<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="GL_Shelf"]</xpath>
+					<value>
+					<comps>
+						<li Class="LWM.DeepStorage.Properties">
+							<maxNumberStacks>4</maxNumberStacks>
+							<minTimeStoringTakes>15</minTimeStoringTakes>
+							<additionalTimeEachStack>15</additionalTimeEachStack>
+							<overlayType>SumOfItemsPerCell</overlayType>
+							<showContents>true</showContents>
+						</li>
+					</comps>
+					</value>
+				</match>
+			</li>
+
+			<!-- Windmill UF -->
+	
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="GloomyDeco_Windmill"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="GloomyDeco_Windmill"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Bakery_B2</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GloomyDeco_Windmill"]</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Bakery_B2</li>
+					</researchPrerequisites>
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "GloomyDeco_Windmill"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>UniversalFermenterBase</value>
+			</li>
+
+			<li Class="PatchOperationAttributeAdd">
+				<xpath>/Defs/ThingDef[defName = "GloomyDeco_Windmill"]</xpath>
+				<attribute>Class</attribute>
+				<value>UniversalFermenterSK.ThingDef_UF</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="GloomyDeco_Windmill"]</xpath>
+				<value>
+					<!-- ThingDef_UF fields -->
+					<showProductIcon>true</showProductIcon>
+					<barOffset>(0.0, 0.25)</barOffset>
+					<barScale>(1.0, 1.0)</barScale>
+					<slotsCount>4</slotsCount>
+					<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+					<comps>
+						<li Class="CompProperties_Forbiddable"/>
+					</comps>
+					<placeWorkers>
+						<li>PlaceWorker_NotUnderRoof</li>
+					</placeWorkers>
+					<!--
+					<hasInteractionCell>true</hasInteractionCell>
+					<interactionCellOffset>(-1,0,0)</interactionCellOffset>
+					-->
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GloomyDeco_Windmill"]/designationCategory</xpath>
+				<value>
+				<designationCategory>Production</designationCategory>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GloomyDeco_Windmill"]/passability</xpath>
+				<value>
+				<passability>PassThroughOnly</passability>
+				</value><!--Standable-->
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_PropsandDecor1"]/defNames/li[text()="GloomyDeco_Windmill"]</xpath>
+			</li>	
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="GloomyDeco_Windmill"]/soundImpactDefault</xpath>
+			</li>	
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Milling"]/defNames</xpath>
+				<value>
+					<li>GloomyDeco_Windmill</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs</xpath>
+				<value>
+					<RecipeDef Class="UniversalFermenterSK.RecipeDef_UF">
+						<defName>Grind_Flour</defName>
+						<label>make flour</label>
+						<description>Make flour from grain. Takes 0.8 days to make</description>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Rawwheat</li>
+										<li>RawCorn</li>
+										<li>RawRice</li>
+									</thingDefs>
+								</filter>
+								<count>100</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Rawwheat</li>
+								<li>RawCorn</li>
+								<li>RawRice</li>
+							</thingDefs>
+							<specialFiltersToDisallow>
+								<li>AllowRotten</li>
+							</specialFiltersToDisallow>
+						</fixedIngredientFilter>
+						<products>
+							<Flour>50</Flour>
+						</products>
+						<recipeUsers>
+							<li>GloomyDeco_Windmill</li>
+						</recipeUsers>
+						<usesTemperature>false</usesTemperature>
+						<!-- percent per degree per hour -->
+						<processDays>0.5</processDays>
+						<!-- in days, 60000 ticks is a day -->
+						<sunFactor>
+							<min>1</min>
+							<max>1</max>
+						</sunFactor>
+						<rainFactor>
+							<min>1</min>
+							<max>0.8</max>
+						</rainFactor>
+						<snowFactor>
+							<min>1</min>
+							<max>0.6</max>
+						</snowFactor>
+						<windFactor>
+							<min>0.1</min>
+							<max>1</max>
+						</windFactor>
+						<!--<graphicSuffix>_active</graphicSuffix>-->
+						<researchPrerequisite>Bakery_B2</researchPrerequisite>
+					</RecipeDef>
+					
+					<RecipeDef Class="UniversalFermenterSK.RecipeDef_UF">
+						<defName>Grind_Sugar</defName>
+						<label>make sugar</label>
+						<description>Make sugar from sugarcane. Takes 0.8 days to make</description>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Rawsugarcane</li>
+									</thingDefs>
+								</filter>
+								<count>20</count>
+							</li>
+						</ingredients>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Rawsugarcane</li>
+							</thingDefs>
+							<specialFiltersToDisallow>
+								<li>AllowRotten</li>
+							</specialFiltersToDisallow>
+						</fixedIngredientFilter>
+						<products>
+							<Sugar>20</Sugar>
+						</products>
+						<recipeUsers>
+							<li>GloomyDeco_Windmill</li>
+						</recipeUsers>
+						<usesTemperature>false</usesTemperature>
+						<!-- percent per degree per hour -->
+						<processDays>0.5</processDays>
+						<!-- in days, 60000 ticks is a day -->
+						<sunFactor>
+							<min>1</min>
+							<max>1</max>
+						</sunFactor>
+						<rainFactor>
+							<min>0.6</min>
+							<max>0.8</max>
+						</rainFactor>
+						<snowFactor>
+							<min>0.6</min>
+							<max>1.35</max>
+						</snowFactor>
+						<windFactor>
+							<min>0.1</min>
+							<max>1</max>
+						</windFactor>
+						<!--<graphicSuffix>_active</graphicSuffix>-->
+						<researchPrerequisite>Bakery_B2</researchPrerequisite>
+					</RecipeDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>The Windows</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+				
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="RGK_WindowWall" or defName="GL_WindowWall"]</xpath>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

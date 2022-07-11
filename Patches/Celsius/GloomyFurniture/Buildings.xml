@@ -18,15 +18,18 @@
 				<match Class="PatchOperationSequence">
 					<operations>
 				
-					<li Class="PatchOperationAddModExtension">
-						<xpath>Defs/ThingDef[defName="RGK_Wall" or defName="GL_Wall"]</xpath>
-						<value>
-							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>17000</heatCapacity>
-								<volume>10</volume>
-								<conductivity>1</conductivity>
-							</li>
-						</value>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ThingDef[defName="RGK_Wall" or defName="GL_Wall"]</xpath>
+						<match Class="PatchOperationAddModExtension">
+							<xpath>Defs/ThingDef[defName="RGK_Wall" or defName="GL_Wall"]</xpath>
+							<value>
+								<li Class="Celsius.ThingThermalProperties">
+									<heatCapacity>17000</heatCapacity>
+									<volume>10</volume>
+									<conductivity>1</conductivity>
+								</li>
+							</value>
+						</match>
 					</li>
 
 					<li Class="PatchOperationAddModExtension">

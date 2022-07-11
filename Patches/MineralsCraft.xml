@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MineralsCraft_SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_Flagstone"]/defNames</xpath>
+			  <value>
+					<li>FlagstoneAdamant</li>
+			  </value>
+			</li>
+	
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

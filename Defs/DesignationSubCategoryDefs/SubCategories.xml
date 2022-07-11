@@ -41,6 +41,16 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>Columns</defName>
+		<label>Columns</label>
+		<description>Various Columns.</description>
+		<defNames>
+			<li>Column</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
 
 </Defs>
 

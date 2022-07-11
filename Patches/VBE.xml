@@ -266,6 +266,57 @@
 					</operations>
 				</match>
 			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Gloomy Decor Pack</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
+							<value>
+							<comps>
+								<li Class="LWM.DeepStorage.Properties">
+									<minNumberStacks>1</minNumberStacks>
+									<maxNumberStacks>7</maxNumberStacks>
+									<timeStoringTakes>120</timeStoringTakes>
+									<showContents>false</showContents>
+									<overlayType>None</overlayType>
+								</li>
+							</comps>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAttributeSet">
+							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
+							<attribute>ParentName</attribute>
+							<value>LWM_DeepStorage</value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
+							<value>
+							<building>
+								<preventDeteriorationInside>true</preventDeteriorationInside>
+								<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+								<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+								<fixedStorageSettings>
+									<priority>Normal</priority>
+									<filter>
+										<categories>
+											<li>VBE_Books</li>
+										</categories>
+									</filter>
+								</fixedStorageSettings>
+							</building>
+							</value>
+						</li>
+						
+					</operations>
+				</match>
+			</li>
 	
 		</operations>
 	</match>

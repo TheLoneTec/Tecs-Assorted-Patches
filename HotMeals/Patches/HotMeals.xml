@@ -135,7 +135,9 @@
 				<xpath>/Defs/ThingDef[defName = "DMicrowave"]/costList</xpath>
 				<value>
 					<costList>
-						<ComponentIndustrial>1</ComponentIndustrial>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<Glass>5</Glass>
+						<ElectronicComponents>1</ElectronicComponents>
 					</costList>
 				</value>
 			</li>
@@ -160,7 +162,9 @@
 				<xpath>/Defs/ThingDef[defName = "DHeatLamp"]/costList</xpath>
 				<value>
 					<costList>
-						<ComponentIndustrial>1</ComponentIndustrial>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<Glass>5</Glass>
+						<ElectronicComponents>1</ElectronicComponents>
 					</costList>
 				</value>
 			</li>

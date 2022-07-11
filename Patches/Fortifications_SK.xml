@@ -39,6 +39,25 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="FT_CavalrySpike" or defName="FT_Ditch"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Fortification_A1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="FT_Palisade" or defName="FT_Palisade_Frame" or defName="FT_Palisade_Frame_B" or defName="FT_Palisade_Corner"
+				or defName="FT_Palisade_Embrasures" or defName="FT_PalisadeDoor"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Fortification_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
 			</operations>
 		</match>
     </Operation>

@@ -52,8 +52,11 @@
 				</nomatch>
 			</li>
 
-			<li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Royalty">
-				<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class='RoomRequirement_ThingAnyOf']/things/li[text()="LTS_HemnesDouble"]</xpath>
+			<li Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+				<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
+				</match>
 			</li>
 
 			</operations>

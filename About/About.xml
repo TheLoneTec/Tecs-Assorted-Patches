@@ -9,7 +9,7 @@
 	<description>
 	A lot of HSK patches
 	</description>
-	<downloadUrl>https://github.com/TheLoneTec/Tecs-Assorted-Patches</downloadUrl>
+	<url>https://github.com/TheLoneTec/Tecs-Assorted-Patches</url>
 	<modDependencies>
 		<li>
 			<packageId>skyarkhangel.HSK</packageId>

@@ -93,6 +93,30 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="ModernTent"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ModernTent"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Beds_C1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="FoldingTent"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="FoldingTent"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Beds_C1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+			
 			<!-- =========== CampingLuggages ============== -->
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/ThingDef[defName = "CampingLuggages"]/costList</xpath>
