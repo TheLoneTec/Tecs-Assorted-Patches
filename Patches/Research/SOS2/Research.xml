@@ -2578,6 +2578,69 @@
 				</nomatch>
 			</li>
 
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+                <value>
+				<ResearchProjectDef ParentName="HitechLabStationBase">
+					<defName>ShipBasics</defName>
+					<label>Starflight basics</label>
+					<description>Construct the structural and supportive elements of a starship. This is the first step in building a ship to leave this star system.</description>
+					<baseCost>4000</baseCost>
+					<techLevel>Spacer</techLevel>
+					<prerequisites>
+						<li>AdvancedFabrication</li>
+					</prerequisites>
+					<researchViewX>17.00</researchViewX>
+					<researchViewY>3.00</researchViewY>
+					<tab>Craft_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
+					<discoveredLetterTitle>About: Launching the ship</discoveredLetterTitle>
+					<discoveredLetterText>Escaping from this planet - it would be freedom at last, and maybe a return home.\n\nBut before you can even consider interstellar spaceflight, you'll need to reach orbit. The minimum requirements for a spaceworthy craft are a rocket engine, a ship bridge, basic sensors, and a shuttle bay. To survive in space, your colonists will also need either a life-support system or EVA suits.\n\nThe amount of chemfuel required to launch a ship into orbit depends on its size. Larger ships may need multiple rocket engines, one per 1,000 units of chemfuel.</discoveredLetterText>
+					<discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty>
+				</ResearchProjectDef>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>17.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+
 		</operations>
 		</match>
     </Operation>	

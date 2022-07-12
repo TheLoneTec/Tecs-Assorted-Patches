@@ -281,70 +281,6 @@
                 </value>
             </li>
 
-
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
-                <value>
-				<ResearchProjectDef ParentName="HitechLabStationBase">
-					<defName>ShipBasics</defName>
-					<label>Starflight basics</label>
-					<description>Construct the structural and supportive elements of a starship. This is the first step in building a ship to leave this star system.</description>
-					<baseCost>4000</baseCost>
-					<techLevel>Spacer</techLevel>
-					<prerequisites>
-						<li>AdvancedFabrication</li>
-					</prerequisites>
-					<researchViewX>17.00</researchViewX>
-					<researchViewY>3.00</researchViewY>
-					<tab>Craft_SK</tab>
-					<modExtensions>
-						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
-					</modExtensions>
-					<discoveredLetterTitle>About: Launching the ship</discoveredLetterTitle>
-					<discoveredLetterText>Escaping from this planet - it would be freedom at last, and maybe a return home.\n\nBut before you can even consider interstellar spaceflight, you'll need to reach orbit. The minimum requirements for a spaceworthy craft are a rocket engine, a ship bridge, basic sensors, and a shuttle bay. To survive in space, your colonists will also need either a life-support system or EVA suits.\n\nThe amount of chemfuel required to launch a ship into orbit depends on its size. Larger ships may need multiple rocket engines, one per 1,000 units of chemfuel.</discoveredLetterText>
-					<discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty>
-				</ResearchProjectDef>
-                </value>
-            </li><!--
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>17.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>3.00</researchViewY>
-                </value>
-            </li>
-			<li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/tab</xpath>
-                <value>
-                    <tab>Buildings_SK</tab>
-                </value>
-            </li>
-			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
-				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions</xpath>
-						<value>
-							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
-						<value>
-						<modExtensions>
-							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
-						</modExtensions>
-						</value>
-					</nomatch>
-				</nomatch>
-			</li>-->
-
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Metal_floor_D1"]/researchViewX</xpath>
                 <value>
@@ -1319,6 +1255,233 @@
                     <researchViewY>13.00</researchViewY>
                 </value>
             </li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Save Our Ship 2</li>
+				</mods>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+						<value>
+						<ResearchProjectDef ParentName="HitechLabStationBase">
+							<defName>ShipCryptosleep</defName>
+							<label>automatic ejection</label>
+							<description>Construct a specialized cryptosleep casket which does not need to be opened manually and can function as an escape pod. It would be a good idea to have at least one aboard a starship.</description>
+							<baseCost>800</baseCost>
+							<techLevel>Spacer</techLevel>
+							<prerequisites>
+							  <li>ShipBasics</li>
+							  <li>Cryptosleep</li>
+							</prerequisites>
+							<researchViewX>19.00</researchViewX>
+							<researchViewY>12.00</researchViewY>
+							<tab>Buildings_SK</tab>
+							<modExtensions>
+								<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+							</modExtensions>
+						</ResearchProjectDef>
+						</value>
+					</li>
+					-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewX</xpath>
+						<value>
+							<researchViewX>24.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewY</xpath>
+						<value>
+							<researchViewY>21.00</researchViewY>
+						</value>
+					</li>
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipEngine"]</xpath>
+						<value>
+						<ResearchProjectDef ParentName="HitechLabStationBase">
+							<defName>ShipEngine</defName>
+							<label>rocket propulsion</label>
+							<description>Construct chemical engines for a ship. These can reach orbit, but no further.</description>
+							<baseCost>1000</baseCost>
+							<techLevel>Industrial</techLevel>
+							<prerequisites>
+								<li>ShipBasics</li>
+							</prerequisites>
+							<researchViewX>18.00</researchViewX>
+							<researchViewY>7.00</researchViewY>
+							<tab>Buildings_SK</tab>
+							<modExtensions>
+								<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+							</modExtensions>
+						</ResearchProjectDef>
+						</value>
+					</li>
+					-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipEngine"]/researchViewX</xpath>
+						<value>
+							<researchViewX>25.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipEngine"]/researchViewY</xpath>
+						<value>
+							<researchViewY>19.00</researchViewY>
+						</value>
+					</li>
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipReactor"]</xpath>
+						<value>
+						<ResearchProjectDef ParentName="HitechLabStationBase">
+							<defName>ShipReactor</defName>
+							<label>ship fission reactor</label>
+							<description>Burn uranium fuel pods for long-term power.</description>
+							<baseCost>2000</baseCost>
+							<techLevel>Spacer</techLevel>
+							<prerequisites>
+								<li>ShipBasics</li>
+							</prerequisites>
+							<researchViewX>19.00</researchViewX>
+							<researchViewY>1.00</researchViewY>
+							<tab>Buildings_SK</tab>
+							<modExtensions>
+								<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+							</modExtensions>
+						</ResearchProjectDef>
+						</value>
+					</li>
+					-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipReactor"]/researchViewX</xpath>
+						<value>
+							<researchViewX>25.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipReactor"]/researchViewY</xpath>
+						<value>
+							<researchViewY>20.00</researchViewY>
+						</value>
+					</li>
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
+						<value>
+						<ResearchProjectDef ParentName="HitechLabStationBase">
+							<defName>ShipSensorCluster</defName>
+							<label>basic ship sensors</label>
+							<description>Construct sensors for a ship, capable of basic navigation and observing areas from orbit.</description>
+							<baseCost>1000</baseCost>
+							<techLevel>Spacer</techLevel>
+							<prerequisites>
+							  <li>ShipBasics</li>
+							  <li>GroundPenetratingScanner</li>
+							  <li>LongRangeMineralScanner</li>
+							</prerequisites>
+							<researchViewX>18.00</researchViewX>
+							<researchViewY>6.00</researchViewY>
+							<tab>Buildings_SK</tab>
+							<modExtensions>
+								<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+							</modExtensions>
+						</ResearchProjectDef>
+						</value>
+					</li>
+					-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewX</xpath>
+						<value>
+							<researchViewX>23.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewY</xpath>
+						<value>
+							<researchViewY>17.00</researchViewY>
+						</value>
+					</li>
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]</xpath>
+						<value>
+						<ResearchProjectDef ParentName="HitechLabStationBase">
+							<defName>ShipComputerCore</defName>
+							<label>ship computer core</label>
+							<description>Allows coercing an existing AI persona into a usable ship computer core for long-range guidance.</description>
+							<baseCost>3000</baseCost>
+							<techLevel>Spacer</techLevel>
+							<prerequisites>
+								<li>ShipBasics</li>
+								<li>ShipPilotSeat</li>
+							</prerequisites>
+							<researchViewX>20.00</researchViewX>
+							<researchViewY>7.00</researchViewY>
+							<tab>Buildings_SK</tab>
+							<modExtensions>
+								<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+							</modExtensions>
+						</ResearchProjectDef>
+						</value>
+					</li>
+					-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]/researchViewX</xpath>
+						<value>
+							<researchViewX>25.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]/researchViewY</xpath>
+						<value>
+							<researchViewY>18.00</researchViewY>
+						</value>
+					</li>
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+						<value>
+						<ResearchProjectDef ParentName="HitechLabStationBase">
+							<defName>ShipCryptosleep</defName>
+							<label>automatic ejection</label>
+							<description>Construct a specialized cryptosleep casket which does not need to be opened manually and can function as an escape pod. It would be a good idea to have at least one aboard a starship.</description>
+							<baseCost>800</baseCost>
+							<techLevel>Spacer</techLevel>
+							<prerequisites>
+							  <li>ShipBasics</li>
+							  <li>Cryptosleep</li>
+							</prerequisites>
+							<researchViewX>19.00</researchViewX>
+							<researchViewY>12.00</researchViewY>
+							<tab>Buildings_SK</tab>
+							<modExtensions>
+								<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+							</modExtensions>
+						</ResearchProjectDef>
+						</value>
+					</li>
+					-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]/researchViewX</xpath>
+						<value>
+							<researchViewX>25.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]/researchViewY</xpath>
+						<value>
+							<researchViewY>21.00</researchViewY>
+						</value>
+					</li>
+					
+					</operations>
+				</nomatch>
+			</li>
 			
 		</operations>
 		</match>
