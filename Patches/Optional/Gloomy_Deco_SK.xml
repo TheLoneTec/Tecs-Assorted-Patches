@@ -134,7 +134,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="RGK_TableE" or defName="RGK_TableF" or defName="RGK_TableG" or defName="RGK_TableH"]</xpath>
+				<xpath>/Defs/ThingDef[defName="RGK_TableE" or defName="RGK_TableF" or defName="RGK_TableG" or defName="RGK_TableH"]/researchPrerequisites</xpath>
 				<value>
 				<researchPrerequisites>
 					<li>Artistic_Furniture</li>
