@@ -7,7 +7,7 @@
     </mods>
 	<match Class="PatchOperationSequence">
 		<operations>
-
+			<!--
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="OrbitalTradeColumnMod"]/researchPrerequisites</xpath>
 				<value>
@@ -23,7 +23,7 @@
 					<techLevel>Industrial</techLevel>
 				</value>
 			</li>
-			<!--
+
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ResearchProjectDef[defName="OrbitalTradeColumnRes"]</xpath>
 			</li>

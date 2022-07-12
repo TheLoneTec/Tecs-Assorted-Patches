@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>PLA Steel Torrent</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ResearchProjectDef[@Name="PLA_VehicleResearchProjectBase"]/tab</xpath>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>15.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>32.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="CE_AdvancedAmmo"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>10.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>37.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="CE_Launchers"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="CE_Launchers"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="CE_Launchers"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="CE_Launchers"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>10.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>39.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>10.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>40.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>9.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>10.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>41.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>10.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>11.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>41.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

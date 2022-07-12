@@ -41,6 +41,104 @@
 				</value>
 			</li>
 			
+			<!-- Original water conductivity was 2 -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="WaterDeep"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>52500</heatCapacity>
+						<conductivity>60</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="WaterOceanDeep"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>55000</heatCapacity>
+						<conductivity>60</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="WaterMovingChestDeep"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>40000</heatCapacity>
+						<conductivity>60</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="WaterShallow"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>52500</heatCapacity>
+						<conductivity>60</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="WaterOceanShallow"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>50000</heatCapacity>
+						<conductivity>60</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="WaterMovingShallow"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>35000</heatCapacity>
+						<conductivity>60</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="Marsh"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>70000</heatCapacity>
+						<conductivity>45</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="Ice"]/modExtensions</xpath>
+				<value>
+				<modExtensions>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>30000</heatCapacity>
+						<conductivity>37</conductivity>
+					</li>
+				</modExtensions>
+				</value>
+			</li>
+			
 			</operations>
 		</match>
 	</Operation>

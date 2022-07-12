@@ -11,5 +11,6 @@
   <v1.3>
     <li>/</li>
     <li IfModActive="dame.hotmeals">HotMeals</li>
+    <li IfModActive="Gloomy.DecorPack.SK">ResearchFixes/GloomDecoPack</li>
   </v1.3>
 </loadFolders>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef ParentName="MedievalBase">
+		<defName>Artistic_Furniture</defName>
+		<label>Artisan Furniture</label>
+		<description>Artistically Styled Furniture</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Tables_B2</li>
+			<li>Art_B1</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>7.00</researchViewY>
+		<tab>Buildings_SK</tab>
+		<modExtensions>
+			<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+		</modExtensions>
+	</ResearchProjectDef>
+
+</Defs>

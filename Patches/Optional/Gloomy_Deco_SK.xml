@@ -19,7 +19,7 @@
 					<operations>
 			
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName="FueledSmithy"]/researchPrerequisites</xpath>
+						<xpath>/Defs/ThingDef[defName="GL_FueledSmithy"]/researchPrerequisites</xpath>
 						<value>
 						<researchPrerequisites>
 							<li>Metallurgy_B2</li>
@@ -121,36 +121,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
-				<value>
-				<ResearchProjectDef ParentName="MedievalBase">
-					<defName>Artistic_Furniture</defName>
-					<label>Artistic Furniture</label>
-					<description>Artistically Styled Furniture</description>
-					<baseCost>400</baseCost>
-					<techLevel>Medieval</techLevel>
-					<prerequisites>
-						<li>Tables_B2</li>
-						<li>Art_B1</li>
-					</prerequisites>
-					<researchViewX>6.00</researchViewX>
-					<researchViewY>7.00</researchViewY>
-					<tab>Buildings_SK</tab>
-				</ResearchProjectDef>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="RGK_TableB" or defName="RGK_TableD" or defName="RGK_TableA" or defName="RGK_TableC"]</xpath>
-				<value>
-				<researchPrerequisites>
-					<li>Artistic_Furniture</li>
-				</researchPrerequisites>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="RGK_TableE" or defName="RGK_TableF" or defName="RGK_TableG" or defName="RGK_TableH"]</xpath>
 				<value>
 				<researchPrerequisites>
 					<li>Artistic_Furniture</li>
@@ -162,6 +133,15 @@
 			<xpath>Defs/ThingDef[@Name="RGKTableBase"]/researchPrerequisites</xpath>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RGK_TableE" or defName="RGK_TableF" or defName="RGK_TableG" or defName="RGK_TableH"]</xpath>
+				<value>
+				<researchPrerequisites>
+					<li>Artistic_Furniture</li>
+				</researchPrerequisites>
+				</value>
+			</li>
+					
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="GloomyDeco_Tree" or defName="GloomyDeco_Tool" or defName="GloomyDeco_Sign" or defName="GloomyDeco_Scarecrow"
 				or defName="GloomyDeco_Rope" or defName="GloomyDeco_Lumberjack"]</xpath>
