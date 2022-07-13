@@ -1,7 +1,7 @@
 # Tecs-Assorted-Patches
 various workshop mod patches for HSK
 
-Patches for:
+# Patches for:
 - Alpha Biomes ("Fixed" a recipeDef error with UF, more to stop error)
 - Babies and Children ( Moved into Special Beds Architect Menu and Material Conversion)
 - Comigo's Bridges and Platforms ( Material Conversion)
@@ -28,7 +28,7 @@ Patches for:
 - [LTS] Furnishings, requires [LTS] Systems
 - Gloomy Deco SK (Celsius Patches)
 
-Updated Patches:
+# Updated Patches:
 - Fortifications SK (Architect Menus)
 - [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
 - Shield Generators Frontier Developments (Architect Menus)
@@ -62,9 +62,9 @@ Updated: removed over 20 yellow duplicate research messages so far
 
 Updated: Musical Instruments, changed most recipes to RecipeDefs to make recipes more "Realistic"
 
-Celsius Guide (Temp) :
+## Celsius Guide (Temp) :
 
-Recommended Settings
-https://imgur.com/a/8AFWi84
+### Recommended Settings
+![alt text](https://i.imgur.com/Km7iZtb.png)
 
-In order to stop production buildings from over heating you will need to remove the roof over them until the temperature stablises without the room losing heat.
+#### In order to stop production buildings from over heating you will need to remove the roof over them until the temperature stablises without the room losing heat.
