@@ -65,6 +65,6 @@ Updated: Musical Instruments, changed most recipes to RecipeDefs to make recipes
 Celsius Guide (Temp) :
 
 Recommended Settings
-https://media.discordapp.net/attachments/974790432791863327/996586709355593808/Screenshot_171.png
+https://imgur.com/a/8AFWi84
 
 In order to stop production buildings from over heating you will need to remove the roof over them until the temperature stablises without the room losing heat.
