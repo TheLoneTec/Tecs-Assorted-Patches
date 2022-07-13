@@ -42,6 +42,7 @@ Updated Patches:
 - Celsius (Requires Xml Extensions) - (Added compatibility for [LTS] Furnishings)
 - Thermodynamics - Core (forked), Hot Meals (forked) & Rimfridge Patch (Updated microwave and heatlamp recipe)
 - Core SK (Moved more items into Architect categories, as well as items from other mods. Adjusted ideology slab bed stats.)
+- Perspective: Trees
 
 Updated: Fixed FenceGates and things like them from keeping heat like doors for Celsius. Made cloth tent door ,walls and animal flap more realistic for Celsius. Added large Gate to Celsius.
 
@@ -60,3 +61,10 @@ Updated: Core SK (Fishdustries fish no longer complain about not having ce verbs
 Updated: removed over 20 yellow duplicate research messages so far
 
 Updated: Musical Instruments, changed most recipes to RecipeDefs to make recipes more "Realistic"
+
+Celsius Guide (Temp) :
+
+Recommended Settings
+https://media.discordapp.net/attachments/974790432791863327/996586709355593808/Screenshot_171.png
+
+In order to stop production buildings from over heating you will need to remove the roof over them until the temperature stablises without the room losing heat.
