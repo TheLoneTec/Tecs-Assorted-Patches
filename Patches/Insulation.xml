@@ -25,38 +25,6 @@
 	        	</value>
 			</li>
 			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Biomass"]/researchPrerequisites/li[text()="InsulationBiomass"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Biomass_Unpowered"]/researchPrerequisites/li[text()="InsulationBiomass"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Fibre"]/researchPrerequisites/li[text()="InsulationFibres"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Fibre_Unpowered"]/researchPrerequisites/li[text()="InsulationFibres"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Hyper"]/researchPrerequisites/li[text()="InsulationHyper"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Hyper_Unpowered"]/researchPrerequisites/li[text()="InsulationHyper"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Polymer"]/researchPrerequisites/li[text()="InsulationPolymers"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-			    <xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Polymer_Unpowered"]/researchPrerequisites/li[text()="InsulationPolymers"]</xpath>
-			</li>
-			
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Refinery"]/defNames</xpath>
 		        <value>
@@ -530,6 +498,38 @@
 					
 					<li Class="PatchOperationRemove"> 
 						<xpath>/Defs/ThingDef[@Name="INSShip_Beam_Base"]/designatorDropdown</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Biomass"]/researchPrerequisites/li[text()="InsulationBiomass"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Biomass_Unpowered"]/researchPrerequisites/li[text()="InsulationBiomass"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Fibre"]/researchPrerequisites/li[text()="InsulationFibres"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Fibre_Unpowered"]/researchPrerequisites/li[text()="InsulationFibres"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Hyper"]/researchPrerequisites/li[text()="InsulationHyper"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Hyper_Unpowered"]/researchPrerequisites/li[text()="InsulationHyper"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Polymer"]/researchPrerequisites/li[text()="InsulationPolymers"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="INSShip_Beam_Underpowered_Polymer_Unpowered"]/researchPrerequisites/li[text()="InsulationPolymers"]</xpath>
 					</li>
 					
 					<li Class="PatchOperationAdd">

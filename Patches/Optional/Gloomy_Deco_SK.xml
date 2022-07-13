@@ -198,10 +198,14 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationRemove">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Doors"]/defNames/li[text()="RGK_DoorOld"]</xpath>
+			</li>
+
 			<li Class="PatchOperationInsert">
-			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Arches"]/defNames/li[text()="LTS_ArchWood"]</xpath>
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Doors"]/defNames/li[text()="MDoor"]</xpath>
 				<value>
-					<li>GL_DoorFrame</li>
+					<li>RGK_DoorOld</li>
 				</value>
 			</li>
 
@@ -224,15 +228,14 @@
 				</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-					<li Class="PatchOperationConditional">
-						<xpath>/Defs/ThingDef[defName="GraveColumnMod"]/researchPrerequisites/li[text()="ComplexFurniture"]</xpath>
-						<match Class="PatchOperationAdd">
-						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Arches"]/defNames</xpath>
-							<value>
-								<li>RGK_DoorOld</li>
-							</value>
-						</match>
+
+					<li Class="PatchOperationInsert">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Arches"]/defNames/li[text()="LTS_ArchWood"]</xpath>
+						<value>
+							<li>GL_DoorFrame</li>
+						</value>
 					</li>
+
 					</operations>
 				</match>
 			</li>
