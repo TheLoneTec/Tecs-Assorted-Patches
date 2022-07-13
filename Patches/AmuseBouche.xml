@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Amuse Bouche</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Hearth"]/interactionCellOffset</xpath>
+			<value>
+				<interactionCellOffset>(0,0,1)</interactionCellOffset>
+			</value>
+		</li>
+
+		</operations>
+		</match>
+	</Operation>
+	
+</Patch>

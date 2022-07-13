@@ -6,11 +6,12 @@
   </v1.1>
   <v1.2>
     <li>/</li>
-    <li IfModActive="dame.hotmeals">HotMeals</li>
+    <li IfModActive="dame.hotmeals">LoadDefs/HotMeals</li>
   </v1.2>
   <v1.3>
     <li>/</li>
-    <li IfModActive="dame.hotmeals">HotMeals</li>
+    <li IfModActive="dame.hotmeals">LoadDefs/HotMeals</li>
+	<li IfModActive="dame.hotmeals">LoadDefs/Celsius</li>
     <li IfModActive="Gloomy.DecorPack.SK">ResearchFixes/GloomDecoPack</li>
   </v1.3>
 </loadFolders>

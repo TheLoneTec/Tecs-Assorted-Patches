@@ -35,12 +35,24 @@
 			</value>
 		</li>
 
-		<li Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[@Name="FruitTreeBase"]/altitudeLayer</xpath>
-			<value>
-				<altitudeLayer>Pawn</altitudeLayer>
-			</value>
+		<li Class="PatchOperationFindMod">
+		<mods>
+			<li>Vile's Biomes: From The Ground Up</li>
+		</mods>
+			<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Plant_TreeKapok"]/comps/li[@Class="RimFridge.CompProperties_SecondLayer"]/altitudeLayer</xpath>
+				<value>
+					<altitudeLayer>Pawn</altitudeLayer>
+				</value>
+			</li>
+
+			</operations>
+			</match>
 		</li>
+
 <!--
 		<li Class="PatchOperationReplace">
 			<xpath>Defs/ThingDef[defName="GL_DoorFrame"]/altitudeLayer</xpath>

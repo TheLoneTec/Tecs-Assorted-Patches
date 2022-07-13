@@ -62,38 +62,62 @@
 
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ThingDef[defName="GL_Teddy"]/researchPrerequisites</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GL_Teddy"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="GL_Teddy"]/researchPrerequisites</xpath>
 					<value>
 					<researchPrerequisites>
 						<li>ComplexClothing</li>
 					</researchPrerequisites>
 					</value>
 				</match>
+				<mnoatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GL_Teddy"]</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>ComplexClothing</li>
+					</researchPrerequisites>
+					</value>
+				</mnoatch>
 			</li>
 			
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ThingDef[defName="RGK_Teaset"]/researchPrerequisites</xpath>
-				<match Class="PatchOperationAdd">
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="RGK_Teaset"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Art_B1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+				<mnoatch Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="RGK_Teaset"]</xpath>
 					<value>
 					<researchPrerequisites>
 						<li>Art_B1</li>
 					</researchPrerequisites>
 					</value>
-				</match>
+				</mnoatch>
 			</li>
 
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ThingDef[defName="RGK_Flower"]/researchPrerequisites</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="RGK_Flower"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="RGK_Flower"]/researchPrerequisites</xpath>
 					<value>
 					<researchPrerequisites>
 						<li>Art_B1</li>
 					</researchPrerequisites>
 					</value>
 				</match>
+				<mnoatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="RGK_Flower"]</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Art_B1</li>
+					</researchPrerequisites>
+					</value>
+				</mnoatch>
 			</li>
 
 			<li Class="PatchOperationConditional">
@@ -115,6 +139,18 @@
 					<value>
 					<researchPrerequisites>
 						<li>Storage_B2</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="RKGWineRackB"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="RKGWineRackB"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Alcohol_B2</li>
 					</researchPrerequisites>
 					</value>
 				</match>

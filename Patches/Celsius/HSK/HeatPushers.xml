@@ -9,9 +9,21 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/ThingDef[defName="WallTorch"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]/heatPushMaxTemperature</xpath>
 	</Operation>
+-->
 
-	<Operation Class="XmlExtensions.PatchOperationSafeRemove">
-		<xpath>/Defs/ThingDef[defName="BurnPit"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPushMaxTemperature</xpath>
+<!-- 9.5 -->
+<!-- 75 --><!--
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="EAF"]/comps/li[@Class="CompProperties_HeatPusher"]</xpath>
+		<value>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				
+				<heatPerSecond>3.5</heatPerSecond>
+				
+				<heatPushMaxTemperature>20</heatPushMaxTemperature>
+			</li>
+		</value>
 	</Operation>
 -->
 
