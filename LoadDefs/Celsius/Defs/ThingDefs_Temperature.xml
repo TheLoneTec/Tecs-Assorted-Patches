@@ -10,7 +10,7 @@
 		\n\nConstantly leaks a small amount of heat, but not enough to stop a room from heating up.</description>
 		<category>Building</category>
 		<graphicData>
-			<texPath>CeilingVent_Primitive</texPath>
+			<texPath>CeilingVents/CeilingVent_Primitive</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -26,13 +26,13 @@
 		<holdsRoof>false</holdsRoof>
 		<castEdgeShadows>false</castEdgeShadows>
 		<rotatable>false</rotatable>
-		<uiIconPath>CeilingVent_Primitive</uiIconPath>
+		<uiIconPath>CeilingVent_Primitive_ico</uiIconPath>
 		<fillPercent>0</fillPercent>
 		<building>
 			<isEdifice>false</isEdifice>
 			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
 			<blueprintGraphicData>
-				<texPath>CeilingVent_Primitive</texPath>
+				<texPath>CeilingVent_Primitive_ico</texPath>
 			</blueprintGraphicData>
 		</building>
 		<statBases>
