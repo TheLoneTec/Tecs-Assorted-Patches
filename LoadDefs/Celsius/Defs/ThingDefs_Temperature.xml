@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--COOLING-->
+
+	<ThingDef ParentName="SK_BuildingBase">
+		<defName>Chimney_Primitive</defName>
+		<label>Primitive Chimney</label>
+		<description>A wooden frame, coated in a hardened dirt and clay mixture. Helps Release air outside from a specific spot. Can be placed over campfire, stoves and hearths. Low enough that it stops heat from leaving a room.
+		\n\nConstantly leaks a small amount of heat, but not enough to stop a room from heating up.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>CeilingVent_Primitive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<altitudeLayer>Weather</altitudeLayer>
+		<clearBuildingArea>false</clearBuildingArea>
+		<passability>Standable</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<blockWind>false</blockWind>
+		<blockLight>false</blockLight>
+		<holdsRoof>false</holdsRoof>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<uiIconPath>CeilingVent_Primitive</uiIconPath>
+		<fillPercent>0</fillPercent>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<blueprintGraphicData>
+				<texPath>CeilingVent_Primitive</texPath>
+			</blueprintGraphicData>
+		</building>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<costList>
+		<Hay>25</Hay>
+		<Dirt>30</Dirt>
+		<SoftClay>15</SoftClay>
+			<ComponentMedieval>1</ComponentMedieval>
+		</costList>	
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>-35</heatPerSecond>
+				<heatPushMinTemperature>20</heatPushMinTemperature>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>PassiveCooler</li>
+		</researchPrerequisites>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0.75</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_CoolerSimple</li>
+			<li>SK.PlaceWorker_OnlyUnderRoof</li>
+			<li>DubsBadHygiene.PlaceWorker_NotUnderEdiface</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<designationCategory>Temperature</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_BuildingBase">
+		<defName>Chimney_Capped</defName>
+		<label>Capped Chimney</label>
+		<description>Helps Release air outside from a specific spot. Can be placed over campfire, stoves and hearths. Low enough that it stops heat from leaving a room.
+		\n\nConstantly leaks a small amount of heat, but not enough to stop a room from heating up.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>CeilingVents/CeilingVent_Capped_Bricks</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<altitudeLayer>Weather</altitudeLayer>
+		<clearBuildingArea>false</clearBuildingArea>
+		<passability>Standable</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<blockWind>false</blockWind>
+		<blockLight>false</blockLight>
+		<holdsRoof>false</holdsRoof>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<uiIconPath>CeilingVent_Capped_Brick_ico</uiIconPath>
+		<fillPercent>0</fillPercent>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<blueprintGraphicData>
+				<texPath>CeilingVent_Capped_Brick_ico</texPath>
+			</blueprintGraphicData>
+		</building>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Bricks</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<ComponentMedieval>2</ComponentMedieval>
+		</costList>	
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusher</compClass>
+				<heatPerSecond>-45</heatPerSecond>
+				<heatPushMinTemperature>20</heatPushMinTemperature>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Temperature_control_B1</li>
+		</researchPrerequisites>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0.75</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_CoolerSimple</li>
+			<li>SK.PlaceWorker_OnlyUnderRoof</li>
+			<li>DubsBadHygiene.PlaceWorker_NotUnderEdiface</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<designationCategory>Temperature</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_BuildingBase">
+		<defName>AirVac</defName>
+		<label>Industrial Air Vac</label>
+		<description>Helps Release air outside from a specific spot. Can be useful for industrial machinary that produces a lot of heat.</description>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/Temperature/AirVac</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<tickerType>Normal</tickerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<altitudeLayer>Weather</altitudeLayer>
+		<clearBuildingArea>false</clearBuildingArea>
+		<passability>Standable</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<blockWind>false</blockWind>
+		<blockLight>false</blockLight>
+		<holdsRoof>false</holdsRoof>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<uiIconPath>Things/Building/Temperature/AirVac</uiIconPath>
+		<fillPercent>0</fillPercent>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Temperature/AirVac</texPath>
+			</blueprintGraphicData>
+		</building>
+		<statBases>
+			<WorkToBuild>700</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ElectronicComponents>6</ElectronicComponents>
+			<Mechanism>5</Mechanism>
+		</costList>	
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<basePowerConsumption>850</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>-120</heatPerSecond>
+				<heatPushMinTemperature>20</heatPushMinTemperature>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<researchPrerequisites>
+			<li>Temperature_control_C2</li>
+		</researchPrerequisites>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0.75</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_CoolerSimple</li>
+			<li>SK.PlaceWorker_OnlyUnderRoof</li>
+			<li>DubsBadHygiene.PlaceWorker_NotUnderEdiface</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<designationCategory>Temperature</designationCategory>
+	</ThingDef>
+
+</Defs>
