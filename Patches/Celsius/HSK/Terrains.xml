@@ -66,7 +66,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="IceShallow"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="IceShallow"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="IceShallow"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>25000</heatCapacity>
@@ -93,7 +93,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="WaterDeep"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="WaterDeep"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="WaterDeep"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>52500</heatCapacity>
@@ -118,7 +118,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="WaterOceanDeep"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="WaterOceanDeep"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="WaterOceanDeep"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>55000</heatCapacity>
@@ -143,7 +143,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="WaterMovingChestDeep"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="WaterMovingChestDeep"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="WaterMovingChestDeep"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>40000</heatCapacity>
@@ -168,7 +168,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="WaterShallow"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="WaterShallow"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="WaterShallow"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>52500</heatCapacity>
@@ -193,7 +193,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="WaterOceanShallow"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="WaterOceanShallow"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="WaterOceanShallow"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>50000</heatCapacity>
@@ -218,7 +218,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="WaterMovingShallow"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="WaterMovingShallow"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="WaterMovingShallow"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>35000</heatCapacity>
@@ -243,7 +243,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="Marsh"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="Marsh"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="Marsh"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>70000</heatCapacity>
@@ -268,7 +268,7 @@
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="Ice"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[@Name="Ice"]/modExtensions</xpath>
+						<xpath>/Defs/ResearchProjectDef[defName="Ice"]/modExtensions</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>30000</heatCapacity>
