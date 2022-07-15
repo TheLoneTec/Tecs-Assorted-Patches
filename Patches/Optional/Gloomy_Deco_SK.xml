@@ -70,14 +70,14 @@
 					</researchPrerequisites>
 					</value>
 				</match>
-				<mnoatch Class="PatchOperationAdd">
+				<nomatch Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="GL_Teddy"]</xpath>
 					<value>
 					<researchPrerequisites>
 						<li>ComplexClothing</li>
 					</researchPrerequisites>
 					</value>
-				</mnoatch>
+				</nomatch>
 			</li>
 			
 			<li Class="PatchOperationConditional">
@@ -90,14 +90,14 @@
 					</researchPrerequisites>
 					</value>
 				</match>
-				<mnoatch Class="PatchOperationAdd">
+				<nomatch Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="RGK_Teaset"]</xpath>
 					<value>
 					<researchPrerequisites>
 						<li>Art_B1</li>
 					</researchPrerequisites>
 					</value>
-				</mnoatch>
+				</nomatch>
 			</li>
 
 			<li Class="PatchOperationConditional">
@@ -110,14 +110,14 @@
 					</researchPrerequisites>
 					</value>
 				</match>
-				<mnoatch Class="PatchOperationAdd">
+				<nomatch Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="RGK_Flower"]</xpath>
 					<value>
 					<researchPrerequisites>
 						<li>Art_B1</li>
 					</researchPrerequisites>
 					</value>
-				</mnoatch>
+				</nomatch>
 			</li>
 
 			<li Class="PatchOperationConditional">
