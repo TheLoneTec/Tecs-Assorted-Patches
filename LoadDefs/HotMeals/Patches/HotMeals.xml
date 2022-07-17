@@ -13,7 +13,14 @@
 			<li Class="AssignMealTemp">
 				<Meals>
 					<!-- Raw Recource -->
-
+					<li>
+						<name>salmon roe</name>
+						<type>RawResource</type>
+					</li>
+					<li>
+						<name>caviar</name>
+						<type>RawResource</type>
+					</li>
 					<!-- Hot Meals -->
 					<li>
 						<name>nutrient paste meal</name>
@@ -22,6 +29,14 @@
 					<!-- Cold Meals -->
 					<li>
 						<name>oyster</name>
+						<type>ColdMeal</type>
+					</li>
+					<li>
+						<name>scallops</name>
+						<type>ColdMeal</type>
+					</li>
+					<li>
+						<name>mussels</name>
 						<type>ColdMeal</type>
 					</li>
 					<li>
@@ -58,6 +73,7 @@
 						<name>soy milk</name>
 						<type>ColdDrink</type>
 					</li>
+
 					<!-- Raw Tasty -->
 
 					<!-- Lukewarm Meals -->

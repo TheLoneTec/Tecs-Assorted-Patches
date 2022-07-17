@@ -13,14 +13,14 @@
 				<altitudeLayer>Pawn</altitudeLayer>
 			</value>
 		</li>
-
+<!--
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[@Name="SK_BushBase"]</xpath>
 			<value>
 				<altitudeLayer>Pawn</altitudeLayer>
 			</value>
 		</li>
-
+-->
 		<li Class="PatchOperationReplace">
 			<xpath>Defs/ThingDef[@Name="SK_TreeBase"]/altitudeLayer</xpath>
 			<value>

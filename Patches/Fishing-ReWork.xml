@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[RF] Fishing-ReWork</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Fish"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>40</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_FishB"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>40</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_FishTiny"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>15</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Arapaima"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>70</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Piranha"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>25</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Sturgeon"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>35</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_SturgeonCaviar"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>35</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Bass"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>30</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Clownfish"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>20</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Anchovies"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>20</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="RF_Sardines"]/butcherProducts/RawFishMeat</xpath>
+                <value>
+                    <Meat_ThingDefFishSduiggles>20</Meat_ThingDefFishSduiggles>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RawSalmonMeat" or defName="RawTunaMeat" or defName="RawEelMeat" or defName="JellyfishMeat"
+				or defName="PufferfishMeat" or defName="RawSquidMeat" or defName="RawOctopusMeat" or defName="RawCrabMeat"
+				or defName="RawShrimpMeat" or defName="RawShellfishMeat"]/thingCategories</xpath>
+                <value>
+					<li>FoodFreshFish</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RecipeDef[defName="CookMealGrilledFish"]/label</xpath>
+                <value>
+                    <label>grill tiny fish</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="CookMealGrilledFish"]/recipeUsers</xpath>
+                <value>
+                    <li>TableGrill</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RecipeDef[defName="CookMealGrilledFishBulk"]/label</xpath>
+                <value>
+                    <label>grill tiny fish x4</label>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="CookMealGrilledFishBulk"]/recipeUsers</xpath>
+                <value>
+                    <li>TableGrill</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="GrillFishCampfire"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+					<li>RF_Arapaima</li>
+					<li>RF_Salmon</li>
+					<li>RF_Tuna</li>
+					<li>RF_Catfish</li>
+					<li>RF_Lobster</li>
+					<li>RF_Kingcrab</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="GrillFishCampfire"]/ingredients/li/filter/categories</xpath>
+                <value>
+					<li>CorpsesFish</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="GrillFishCampfireBulk"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+					<li>RF_Arapaima</li>
+					<li>RF_Salmon</li>
+					<li>RF_Tuna</li>
+					<li>RF_Catfish</li>
+					<li>RF_Lobster</li>
+					<li>RF_Kingcrab</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="GrillFishCampfireBulk"]/ingredients/li/filter/categories</xpath>
+                <value>
+					<li>CorpsesFish</li>
+                </value>
+            </li>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Amuse Bouche</li>
+			</mods>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="CookMealLavish"]/ingredients/li/filter/thingDefs/li[text()="MetalCannedMeat_prime"]</xpath>
+						<value>
+							<li>SalmonRoe</li>
+							<li>Caviar</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="CookMealLavish"]/ingredients/li/filter/thingDefs/li[text()="Meat_ThingDefFishSduiggles"]</xpath>
+						<value>
+							<li>RawSalmonMeat</li>
+							<li>RawTunaMeat</li>
+							<li>RawEelMeat</li>
+							<li>JellyfishMeat</li>
+							<li>PufferfishMeat</li>
+							<li>RawSquidMeat</li>
+							<li>RawOctopusMeat</li>
+							<li>RawCrabMeat</li>
+							<li>RawShrimpMeat</li>
+							<li>RawShellfishMeat</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="CookMealLavish"]/fixedIngredientFilter/categories</xpath>
+						<value>
+							<li>RF_RawSeafood</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="CookMealLavishBulk"]/ingredients/li/filter/thingDefs/li[text()="MetalCannedMeat_prime"]</xpath>
+						<value>
+							<li>SalmonRoe</li>
+							<li>Caviar</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="CookMealLavishBulk"]/ingredients/li/filter/thingDefs/li[text()="Meat_ThingDefFishSduiggles"]</xpath>
+						<value>
+							<li>RawSalmonMeat</li>
+							<li>RawTunaMeat</li>
+							<li>RawEelMeat</li>
+							<li>JellyfishMeat</li>
+							<li>PufferfishMeat</li>
+							<li>RawSquidMeat</li>
+							<li>RawOctopusMeat</li>
+							<li>RawCrabMeat</li>
+							<li>RawShrimpMeat</li>
+							<li>RawShellfishMeat</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="CookMealLavishBulk"]/fixedIngredientFilter/categories</xpath>
+						<value>
+							<li>RF_RawSeafood</li>
+						</value>
+					</li>
+					
+					</operations>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="SalmonRoe" or defName="Caviar"]/thingCategories</xpath>
+                <value>
+					<li>LuxuryStuffs</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeMakiRolls" or defName="MakeMakiRollsBulk"]/ingredients/li/filter[thingDefs[li[text()="Meat_ThingDefFishSduiggles"]]]</xpath>
+                <value>
+				<categories>
+					<li>RF_RawSeafood</li>
+				</categories>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="MakeMakiRolls" or defName="MakeMakiRollsBulk"]/fixedIngredientFilter</xpath>
+                <value>
+				<categories>
+					<li>RF_RawSeafood</li>
+				</categories>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RecipeDef[defName="ShellfishTrap"]/costList</xpath>
+                <value>
+				<costList>
+					<ComponentMedieval>2</ComponentMedieval>
+				</costList>
+                </value>
+            </li>
+
+           <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef[defName="ShellfishTrap"]</xpath>
+                <value>
+				<stuffCategories>
+					<li>Woody</li>
+				</stuffCategories>
+				<costStuffCount>40</costStuffCount>
+                </value>
+            </li>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Amuse Bouche</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeFishRoll" or defName="MakeMakiRollsBulk"]/ingredients/li/filter/thingDefs[li[text()="Meat_ThingDefFishSduiggles"]]</xpath>
+						<value>
+						<categories>
+							<li>RF_RawSeafood</li>
+						</categories>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="MakeFishRoll" or defName="MakeMakiRollsBulk"]/fixedIngredientFilter</xpath>
+						<value>
+						<categories>
+							<li>RF_RawSeafood</li>
+						</categories>
+						</value>
+					</li>
+							
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeKippers"]/ingredients/li/filter/thingDefs/li[text()="Corpse_ThingDefFishTailteeth"]</xpath>
+						<value>
+							<li>SalmonRoe</li>
+							<li>Caviar</li>
+							<li>RF_Salmon</li>
+							<li>RF_Tuna</li>
+							<li>RF_Sardines</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeKippers"]/fixedIngredientFilter/thingDefs/li[text()="Corpse_ThingDefFishTailteeth"]</xpath>
+						<value>
+							<li>SalmonRoe</li>
+							<li>Caviar</li>
+							<li>RF_Salmon</li>
+							<li>RF_Tuna</li>
+							<li>RF_Sardines</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeOystersRimefeller"]/ingredients/li/filter/thingDefs/li[text()="Oyster"]</xpath>
+						<value>
+							<li>RF_Mussel</li>
+							<li>RF_Scallops</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeOystersRimefeller"]/fixedIngredientFilter/thingDefs/li[text()="Oyster"]</xpath>
+						<value>
+							<li>RF_Mussel</li>
+							<li>RF_Scallops</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeFishandChips"]/ingredients/li/filter/thingDefs/li[text()="Meat_ThingDefFishSduiggles"]</xpath>
+						<value>
+							<li>RawFishMeat</li>
+							<li>RawSalmonMeat</li>
+							<li>RawTunaMeat</li>
+							<li>RawCrabMeat</li>
+							<li>RawEelMeat</li>
+							<li>RawSquidMeat</li>
+							<li>RawOctopusMeat</li>
+							<li>RawShrimpMeat</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeFishandChips"]/fixedIngredientFilter/thingDefs/li[text()="Meat_ThingDefFishSduiggles"]</xpath>
+						<value>
+							<li>RawFishMeat</li>
+							<li>RawSalmonMeat</li>
+							<li>RawTunaMeat</li>
+							<li>RawCrabMeat</li>
+							<li>RawEelMeat</li>
+							<li>RawSquidMeat</li>
+							<li>RawOctopusMeat</li>
+							<li>RawShrimpMeat</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeTempura"]/ingredients/li/filter/thingDefs/li[text()="Meat_ThingDefFishSduiggles"]</xpath>
+						<value>
+							<li>RawFishMeat</li>
+							<li>RawSalmonMeat</li>
+							<li>RawTunaMeat</li>
+							<li>RawCrabMeat</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeTempura"]/fixedIngredientFilter/thingDefs/li[text()="Meat_ThingDefFishSduiggles"]</xpath>
+						<value>
+							<li>RawFishMeat</li>
+							<li>RawSalmonMeat</li>
+							<li>RawTunaMeat</li>
+							<li>RawCrabMeat</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="MakeSeafoodChowder"]/ingredients/li/filter/thingDefs[li[text()="Meat_ThingDefFishSduiggles"]]</xpath>
+						<value>
+						<categories>
+							<li>RF_RawSeafood</li>
+						</categories>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="MakeSeafoodChowder"]/fixedIngredientFilter</xpath>
+						<value>
+						<categories>
+							<li>RF_RawSeafood</li>
+						</categories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationInsert">
+						<xpath>Defs/RecipeDef[defName="CookMealLavish_MeatVile"]/ingredients/li/filter/thingDefs[li[text()="Meat_ThingDefFishSduiggles"]]</xpath>
+						<value>
+						<categories>
+							<li>RF_RawSeafood</li>
+						</categories>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="CookMealLavish_MeatVile"]/fixedIngredientFilter/categories</xpath>
+						<value>
+							<li>RF_RawSeafood</li>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>					
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Water Freezes</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="RBB_IceFishingSpot"]</xpath>
+						<value>
+						<ThingDef>
+							<defName>RBB_IceFishingSpot</defName>
+							<label>ice fishing spot</label>
+							<description>A spot from which pawns can catch fish through ice.</description>
+							<category>Building</category>
+							<thingClass>RBB_Code.Building_FishingSpot</thingClass>
+							<graphicData>
+								<texPath>Things/Buildings/IceFishingSpot2</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(1,1)</drawSize>
+							</graphicData>
+							<tickerType>Rare</tickerType>
+							<altitudeLayer>FloorEmplacement</altitudeLayer>
+							<statBases>
+								<WorkToBuild>250</WorkToBuild>
+								<SellPriceFactor>0.70</SellPriceFactor>
+							</statBases>
+							<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+							<selectable>true</selectable>
+							<drawerType>MapMeshAndRealTime</drawerType>
+							<repairEffect>Repair</repairEffect>
+							<scatterableOnMapGen>false</scatterableOnMapGen>
+							<useHitPoints>False</useHitPoints>
+							<size>(1,1)</size>
+							<designationCategory>Production</designationCategory>
+							<passability>Standable</passability>
+							<hasInteractionCell>True</hasInteractionCell>
+							<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+							<surfaceType>Item</surfaceType>
+							<comps>
+								<li Class="CompProperties_Forbiddable"/>
+							</comps>
+							<building>
+								<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+								<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+							</building>
+							<terrainAffordanceNeeded>IceFishable</terrainAffordanceNeeded>
+							<placeWorkers>
+								<li>RBB_Code.PlaceWorker_IceFishingSpot</li>
+							</placeWorkers>
+						</ThingDef>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/WorkGiverDef[defName="WorkGiver_IceFish"]</xpath>
+						<value>
+						<WorkGiverDef>
+							<defName>WorkGiver_IceFish</defName>
+							<label>catch fish</label>
+							<giverClass>RBB_Code.WorkGiver_IceFish</giverClass>
+							<workType>Fishing</workType>
+							<fixedBillGiverDefs>
+								<li>RBB_IceFishingSpot</li>
+							</fixedBillGiverDefs>
+							<verb>fish</verb>
+							<gerund>fishing</gerund>
+							<requiredCapacities>
+								<li>Manipulation</li>
+							</requiredCapacities>
+						</WorkGiverDef>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>			
+
+		</operations>
+		</match>
+    </Operation>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[RF] Fishing-ReWork</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<!-- ========== Architect Menu ========== -->
+		<li Class="PatchOperationInsert">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fishing"]/defNames/li[text()="FishingPierSpawner"]</xpath>
+			<value>
+				<li>RBB_FishingSpot</li>
+				<li>RBB_IceFishingSpot</li>
+				<li>ShellfishTrap</li>
+			</value>
+		</li>
+		
+		</operations>
+	</match>
+	</Operation>
+
+</Patch>	

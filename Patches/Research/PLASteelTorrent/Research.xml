@@ -54,7 +54,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>10.00</researchViewX>
+                    <researchViewX>11.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -91,9 +91,48 @@
 			</li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]/researchViewX</xpath>
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Basic"]/researchViewX</xpath>
                 <value>
                     <researchViewX>10.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Basic"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Basic"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Basic"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Basic"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Basic"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Basic"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Lynx"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>11.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -132,13 +171,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>10.00</researchViewX>
+                    <researchViewX>11.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_CSZ181OffRoad"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>40.00</researchViewY>
+                    <researchViewY>39.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
@@ -210,13 +249,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>10.00</researchViewX>
+                    <researchViewX>12.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTL11IFV"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>41.00</researchViewY>
+                    <researchViewY>34.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
@@ -249,13 +288,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>10.00</researchViewX>
+                    <researchViewX>12.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VP22Truck"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>38.00</researchViewY>
+                    <researchViewY>35.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
@@ -288,13 +327,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>11.00</researchViewX>
+                    <researchViewX>13.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_ZTZ99A"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>41.00</researchViewY>
+                    <researchViewY>34.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
