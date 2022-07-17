@@ -288,21 +288,25 @@
                 </value>
             </li>
 
-           <li Class="PatchOperationReplace">
-                <xpath>Defs/WorkGiverDef[defName="WorkGiver_CatchFish"]/workType</xpath>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/WorkTypeDef[defName="Fishing"]/relevantSkills</xpath>
                 <value>
-					<workType>Hunting</workType>
+				<relevantSkills>
+					<li>Shooting</li>
+					<li>Animals</li>
+				</relevantSkills>
                 </value>
             </li>
 			
-<!--
-			<li Class="PatchOperationAdd">
-                <xpath>Defs/WorkTypeDef[defName="Fishing"]/relevantSkills</xpath>
+           <li Class="PatchOperationReplace">
+                <xpath>Defs/WorkTypeDef[defName="Fishing"]/workTags</xpath>
                 <value>
-					<li>Shooting</li>
+				<workTags>
+				  <li>Violent</li>
+				  <li>Hunting</li>
+				 </workTags>
                 </value>
-            </li>
-			-->
+            </li>	
 
 			<li Class="PatchOperationFindMod">
 			<mods>
@@ -514,7 +518,7 @@
 							<defName>WorkGiver_IceFish</defName>
 							<label>catch fish</label>
 							<giverClass>RBB_Code.WorkGiver_IceFish</giverClass>
-							<workType>Hunting</workType>
+							<workType>Fishing</workType>
 							<fixedBillGiverDefs>
 								<li>RBB_IceFishingSpot</li>
 							</fixedBillGiverDefs>
@@ -558,11 +562,11 @@
 				<li>ShellfishTrap</li>
 			</value>
 		</li>
-		
+		<!--
 		<li Class="PatchOperationRemove">
 			<xpath>Defs/WorkTypeDef[defName="Fishing"]</xpath>
 		</li>
-		
+		-->
 		</operations>
 	</match>
 	</Operation>

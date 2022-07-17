@@ -11,7 +11,7 @@
   <v1.3>
     <li>/</li>
     <li IfModActive="dame.hotmeals">LoadDefs/HotMeals</li>
-	<li IfModActive="dame.hotmeals">LoadDefs/Celsius</li>
+	<li IfModActive="Garwel.Celsius">LoadDefs/Celsius</li>
     <li IfModActive="Gloomy.DecorPack.SK">ResearchFixes/GloomDecoPack</li>
   </v1.3>
 </loadFolders>
