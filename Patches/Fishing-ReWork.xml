@@ -258,8 +258,12 @@
                 </value>
             </li>
 
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="ShellfishTrap"]/constructEffect</xpath>
+            </li>
+
             <li Class="PatchOperationReplace">
-                <xpath>Defs/RecipeDef[defName="ShellfishTrap"]/costList</xpath>
+                <xpath>Defs/ThingDef[defName="ShellfishTrap"]/costList</xpath>
                 <value>
 				<costList>
 					<ComponentMedieval>2</ComponentMedieval>
@@ -268,7 +272,7 @@
             </li>
 
            <li Class="PatchOperationAdd">
-                <xpath>Defs/RecipeDef[defName="ShellfishTrap"]</xpath>
+                <xpath>Defs/ThingDef[defName="ShellfishTrap"]</xpath>
                 <value>
 				<stuffCategories>
 					<li>Woody</li>
