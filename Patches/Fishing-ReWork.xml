@@ -281,6 +281,29 @@
                 </value>
             </li>
 
+           <li Class="PatchOperationAdd">
+                <xpath>Defs/WorkGiverDef[defName="WorkGiver_CatchFish"]</xpath>
+                <value>
+					<tagToGive>Fieldwork</tagToGive>
+                </value>
+            </li>
+
+           <li Class="PatchOperationReplace">
+                <xpath>Defs/WorkGiverDef[defName="WorkGiver_CatchFish"]/workType</xpath>
+                <value>
+					<workType>Hunting</workType>
+                </value>
+            </li>
+			
+<!--
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/WorkTypeDef[defName="Fishing"]/relevantSkills</xpath>
+                <value>
+					<li>Shooting</li>
+                </value>
+            </li>
+			-->
+
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>Amuse Bouche</li>
@@ -491,7 +514,7 @@
 							<defName>WorkGiver_IceFish</defName>
 							<label>catch fish</label>
 							<giverClass>RBB_Code.WorkGiver_IceFish</giverClass>
-							<workType>Fishing</workType>
+							<workType>Hunting</workType>
 							<fixedBillGiverDefs>
 								<li>RBB_IceFishingSpot</li>
 							</fixedBillGiverDefs>
@@ -503,7 +526,14 @@
 						</WorkGiverDef>
 						</value>
 					</li>
-					
+					<!--
+				   <li Class="PatchOperationReplace">
+						<xpath>Defs/WorkGiverDef[defName="WorkGiver_IceFish"]/workType</xpath>
+						<value>
+							<workType>Hunting</workType>
+						</value>
+					</li>
+					-->
 					</operations>
 				</match>
 			</li>			
@@ -527,6 +557,10 @@
 				<li>RBB_IceFishingSpot</li>
 				<li>ShellfishTrap</li>
 			</value>
+		</li>
+		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/WorkTypeDef[defName="Fishing"]</xpath>
 		</li>
 		
 		</operations>
