@@ -27,6 +27,7 @@ various workshop mod patches for HSK
 - Celsius (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch)
 - [LTS] Furnishings, requires [LTS] Systems
 - Gloomy Deco SK (Celsius Patches)
+- Fishing Re-Worked
 
 # Updated Patches:
 - Fortifications SK (Architect Menus)
