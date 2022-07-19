@@ -26,7 +26,7 @@ various workshop mod patches for HSK
 - Preemptive Strike (fork) - (Material Conversion, Architect Menus)
 - Celsius (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch)
 - [LTS] Furnishings, requires [LTS] Systems
-- Gloomy Deco SK (Celsius Patches)
+- Gloomy Deco SK (Celsius Patches, research adjustments and material cost adjustments. Also made windmill a UF mill)
 - Fishing Re-Worked (Architect Menu, Material Conversion and Recipe Changes and Intergration with HSK and Viles Amuse Bouche, works well if you use SoS2,as pier is bugged with it currently, but made it work side by side with normal HSK fishing)
 
 # Updated Patches:
