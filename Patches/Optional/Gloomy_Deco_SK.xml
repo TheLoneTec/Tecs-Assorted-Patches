@@ -2,8 +2,6 @@
 
 <Patch>
 
-	<!-- Note: Heat capacity in J/C, conductivity in W/C, volume in liters. Figures can be taken e.g. here: https://www.engineeringtoolbox.com/specific-heat-solids-d_154.html -->
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Gloomy Decor Pack</li>
@@ -306,6 +304,10 @@
 					</comps>
 					</value>
 				</match>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/TerrainDef[@Name="WoodFloorBase_Gloomy"]/statBases/Beauty</xpath>
 			</li>
 
 			<!-- Windmill UF -->

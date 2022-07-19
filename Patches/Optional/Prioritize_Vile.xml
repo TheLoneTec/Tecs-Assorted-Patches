@@ -8,17 +8,11 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--
+	<!--
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames/li[text()="RGK_Wall" or text()="GL_Wall"
 				or text()="RGK_VentWall" or text()="GL_VentWall" or text()="GL_FlowerWall"]</xpath>
 			</li>	
-			
-
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames/li[text()="RGK_Wall" or text()="GL_Wall" or text()="RGK_VentWall"
-				or text()="GL_VentWall" or text()="GL_FlowerWall"]</xpath>
-			</li>
 
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames/li[text()="RGK_Door"]</xpath>
@@ -32,7 +26,7 @@
 					</operations>
 				</match>
 			</li>
-				-->
+			-->
 			<li Class="PatchOperationRemove"> 
 				<xpath>/Defs/ThingDef[defName="RGK_Wall"or defName="GL_Wall"]</xpath>
 			</li>
@@ -41,7 +35,7 @@
 				<xpath>/Defs/ThingDef[defName="RGK_VentWall" or defName="GL_VentWall" or defName="GL_FlowerWall"
 				or defName="RGK_Door" or defName="RGK_WoodFence"]</xpath>
 			</li>
-		<!--
+				<!--
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs</xpath>
 				<value>
@@ -69,9 +63,12 @@
 					<requiredResearchBuilding>Unknown</requiredResearchBuilding>
 					<baseCost>10000</baseCost>
 					<techLevel>Archotech</techLevel>
-					<researchViewX>20.00</researchViewX>
-					<researchViewY>7.00</researchViewY>
+					<researchViewX>27.00</researchViewX>
+					<researchViewY>20.00</researchViewY>
 					<tab>Buildings_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
 				</ResearchProjectDef>
 				</value>
 			</li>
@@ -93,7 +90,7 @@
 					</researchPrerequisites>
 				</value>
 			</li>
-			
+				
 			<li Class="PatchOperationRemove"> 
 				<xpath>/Defs/ThingDef[@Name="RKGFence"]/designationCategory</xpath>
 			</li>
