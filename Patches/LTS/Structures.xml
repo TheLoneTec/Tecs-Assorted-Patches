@@ -65,11 +65,31 @@
 				<nomatch Class="PatchOperationSequence">
 					<operations>
 			
-					<li Class="PatchOperationAdd">
-					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
-						<value>
-							<li>LTS_CobblestoneFence</li>
-						</value>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_Fences"]]</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>/Defs</xpath>
+							<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>SubCategory_Fences</defName>
+								<label>Fences</label>
+								<description>Fecnes that dont count as walls.</description>
+								<defNames>
+									<li>Fence</li>
+									<li>FenceGate</li>
+									<li>LTS_CobblestoneFence</li>
+								</defNames>
+								<designationCategory>Structure</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
+							<value>
+								<li>LTS_CobblestoneFence</li>
+							</value>
+						</nomatch>
 					</li>
 
 					</operations>
