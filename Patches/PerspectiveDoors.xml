@@ -173,6 +173,24 @@
 				</value>
 			</li>
 		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Gloomy Decor Pack</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="RGK_DoorOld"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+							
+					</operations>
+				</match>
+			</li>
+		
 			</operations>
 		</match>
 	</Operation>
