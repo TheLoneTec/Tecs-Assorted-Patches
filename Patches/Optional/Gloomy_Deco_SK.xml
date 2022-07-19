@@ -305,9 +305,16 @@
 					</value>
 				</match>
 			</li>
-
+<!--
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/TerrainDef[@Name="WoodFloorBase_Gloomy"]/statBases/Beauty</xpath>
+			</li>
+-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TerrainDef[@Name="WoodFloorBase_Gloomy"]/statBases/Beauty</xpath>
+				<value>
+				<Beauty>0</Beauty>
+				</value>
 			</li>
 
 			<!-- Windmill UF -->
