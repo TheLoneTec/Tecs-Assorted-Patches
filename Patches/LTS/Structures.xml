@@ -67,7 +67,7 @@
 			
 					<li Class="PatchOperationConditional">
 						<xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_Fences"]</xpath>
-						<match Class="PatchOperationAdd">
+						<nomatch Class="PatchOperationAdd">
 							<xpath>/Defs</xpath>
 							<value>
 							<ArchitectSense.DesignationSubCategoryDef>
@@ -83,13 +83,13 @@
 								<debug>false</debug>
 							</ArchitectSense.DesignationSubCategoryDef>
 							</value>
-						</match>
-						<nomatch Class="PatchOperationAdd">
+						</nomatch>
+						<match Class="PatchOperationAdd">
 						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
 							<value>
 								<li>LTS_CobblestoneFence</li>
 							</value>
-						</nomatch>
+						</match>
 					</li>
 
 					</operations>
