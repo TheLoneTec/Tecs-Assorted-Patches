@@ -28,7 +28,7 @@ various workshop mod patches for HSK
 - [LTS] Furnishings, requires [LTS] Systems
 - Gloomy Deco SK (Celsius Patches, research adjustments and material cost adjustments. Also made windmill a UF mill)
 - Fishing Re-Worked (Architect Menu, Material Conversion and Recipe Changes and Intergration with HSK and Viles Amuse Bouche, works well if you use SoS2,as pier is bugged with it currently, but made it work side by side with normal HSK fishing)
-- Ideology Work Site (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
+- Ideology - Work Site (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
 - Orassan Facial Animations Corrective patch (head size and skin colour)
 
 # Updated Patches:
