@@ -16,6 +16,24 @@
 			  </value>
 			</li>
 	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="MedBrickAdamant"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Stone_floor_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="HerrBrickAdamant"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Stone_floor_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
 			</operations>
 		</match>
 	</Operation>

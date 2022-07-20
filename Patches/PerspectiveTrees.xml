@@ -42,7 +42,7 @@
 			<match Class="PatchOperationSequence">
 			<operations>
 
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Plant_TreeKapok"]/comps/li[@Class="RimFridge.CompProperties_SecondLayer"]/altitudeLayer</xpath>
 				<value>
 					<altitudeLayer>Pawn</altitudeLayer>

@@ -73,6 +73,24 @@
 			</li>
 		
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DrugCabinet"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+					  <li>Storage_C1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DrugCabinetFridge"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Storage_C3</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="DrugCabinetFridge"]/costList</xpath>
 				<value>
 				<costList>
@@ -92,6 +110,32 @@
 					<ComponentIndustrial>2</ComponentIndustrial>
 				</costList>
 				</value>
+			</li>
+		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Dubs Bad Hygiene</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MS_DStand"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites Inherit="false">
+							<li>Hygiene_31</li>
+						</researchPrerequisites>
+					</value>
+					</li>
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MS_DStand"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>MedicineProduction</li>
+					</researchPrerequisites>
+				</value>
+			</nomatch>
 			</li>
 		
 			</operations>
