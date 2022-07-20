@@ -3,185 +3,34 @@
 <Patch>
 
 	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Wood You Please</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+	<mods>
+		<li>Ideology</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		
+		<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Wood You Please</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
 
-			<li Class="PatchOperationFindMod">
-				<mods>
-					<li>HMC Biomes</li>
-					<li>HSK more content</li>
-				</mods>
-				<match Class="PatchOperationSequence">
-					<operations>
-			
-					<li Class="PatchOperationFindMod">
-						<mods>
-							<li>Vile's Biomes: From The Ground Up</li>
-						</mods>
-						<match Class="PatchOperationSequence">
-							<operations>
-					
-							<li Class="PatchOperationReplace">
-								<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
-								<value>
-									<selectionWeight>6</selectionWeight>
-								</value>
-							</li>
-					
-							<li Class="PatchOperationReplace">
-								<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
-								<value>
-									<lootTable>
-									  <li>
-										<thing>WillowLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>CypressLog</thing>
-										<weight>0.6</weight>
-									  </li>
-									  <li>
-										<thing>PoplarLog</thing>
-										<weight>0.8</weight>
-									  </li>
-									  <li>
-										<thing>BirchLog</thing>
-										<weight>0.5</weight>
-									  </li>
-									  <li>
-										<thing>OakLog</thing>
-										<weight>0.5</weight>
-									  </li>
-									  <li>
-										<thing>MangroveLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>RedWoodLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>Bamboo</thing>
-										<weight>0.4</weight>
-									  </li>
-									  <li>
-										<thing>CecropiaLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>PineLog</thing>
-										<weight>0.4</weight>
-									  </li>
-									  <li>
-										<thing>MapleLog</thing>
-										<weight>0.4</weight>
-									  </li>
-									  <li>
-										<thing>TeakLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>DragonwoodLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>AcaciaLog</thing>
-										<weight>0.4</weight>
-									  </li>
-									  <li>
-										<thing>IronWoodLogHMC</thing>
-										<weight>0.2</weight>
-									  </li>
-									</lootTable>
-								</value>
-							</li>
-					
-							</operations>
-						</match>
-						<nomatch Class="PatchOperationSequence">
-							<operations>
-							<li Class="PatchOperationReplace">
-								<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
-								<value>
-									<selectionWeight>5</selectionWeight>
-								</value>
-							</li>
-					
-							<li Class="PatchOperationReplace">
-								<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
-								<value>
-									<lootTable>
-									  <li>
-										<thing>WillowLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>CypressLog</thing>
-										<weight>0.5</weight>
-									  </li>
-									  <li>
-										<thing>PoplarLog</thing>
-										<weight>0.8</weight>
-									  </li>
-									  <li>
-										<thing>BirchLog</thing>
-										<weight>0.5</weight>
-									  </li>
-									  <li>
-										<thing>OakLog</thing>
-										<weight>0.5</weight>
-									  </li>
-									  <li>
-										<thing>MangroveLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>RedWoodLog</thing>
-										<weight>0.2</weight>
-									  </li>
-									  <li>
-										<thing>Bamboo</thing>
-										<weight>0.4</weight>
-									  </li>
-									  <li>
-										<thing>CecropiaLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>PineLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>MapleLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>TeakLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>IronWoodLogHMC</thing>
-										<weight>0.3</weight>
-									  </li>
-									</lootTable>
-								</value>
-							</li>
-							</operations>
-						</nomatch>
-					</li>
-			
-					</operations>
-				</match>
-				<nomatch Class="PatchOperationFindMod">
-						<mods>
-							<li>Vile's Biomes: From The Ground Up</li>
-						</mods>
-						<match Class="PatchOperationSequence">
-							<operations>
-					
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>HMC Biomes</li>
+						<li>HSK more content</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+				
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Vile's Biomes: From The Ground Up</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<operations>
+						
 								<li Class="PatchOperationReplace">
 									<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
 									<value>
@@ -243,160 +92,322 @@
 										  </li>
 										  <li>
 											<thing>DragonwoodLog</thing>
-											<weight>0.2</weight>
+											<weight>0.3</weight>
 										  </li>
 										  <li>
 											<thing>AcaciaLog</thing>
+											<weight>0.4</weight>
+										  </li>
+										  <li>
+											<thing>IronWoodLogHMC</thing>
+											<weight>0.2</weight>
+										  </li>
+										</lootTable>
+									</value>
+								</li>
+						
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationSequence">
+								<operations>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
+									<value>
+										<selectionWeight>5</selectionWeight>
+									</value>
+								</li>
+						
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
+									<value>
+										<lootTable>
+										  <li>
+											<thing>WillowLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>CypressLog</thing>
+											<weight>0.5</weight>
+										  </li>
+										  <li>
+											<thing>PoplarLog</thing>
+											<weight>0.8</weight>
+										  </li>
+										  <li>
+											<thing>BirchLog</thing>
+											<weight>0.5</weight>
+										  </li>
+										  <li>
+											<thing>OakLog</thing>
+											<weight>0.5</weight>
+										  </li>
+										  <li>
+											<thing>MangroveLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>RedWoodLog</thing>
+											<weight>0.2</weight>
+										  </li>
+										  <li>
+											<thing>Bamboo</thing>
+											<weight>0.4</weight>
+										  </li>
+										  <li>
+											<thing>CecropiaLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>PineLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>MapleLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>TeakLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>IronWoodLogHMC</thing>
 											<weight>0.3</weight>
 										  </li>
 										</lootTable>
 									</value>
 								</li>
-					
-							</operations>
-						</match>
-						<nomatch Class="PatchOperationSequence">
-							<operations>
+								</operations>
+							</nomatch>
+						</li>
+				
+						</operations>
+					</match>
+					<nomatch Class="PatchOperationFindMod">
+							<mods>
+								<li>Vile's Biomes: From The Ground Up</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<operations>
+						
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
+										<value>
+											<selectionWeight>6</selectionWeight>
+										</value>
+									</li>
+							
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
+										<value>
+											<lootTable>
+											  <li>
+												<thing>WillowLog</thing>
+												<weight>0.3</weight>
+											  </li>
+											  <li>
+												<thing>CypressLog</thing>
+												<weight>0.6</weight>
+											  </li>
+											  <li>
+												<thing>PoplarLog</thing>
+												<weight>0.8</weight>
+											  </li>
+											  <li>
+												<thing>BirchLog</thing>
+												<weight>0.5</weight>
+											  </li>
+											  <li>
+												<thing>OakLog</thing>
+												<weight>0.5</weight>
+											  </li>
+											  <li>
+												<thing>MangroveLog</thing>
+												<weight>0.3</weight>
+											  </li>
+											  <li>
+												<thing>RedWoodLog</thing>
+												<weight>0.3</weight>
+											  </li>
+											  <li>
+												<thing>Bamboo</thing>
+												<weight>0.4</weight>
+											  </li>
+											  <li>
+												<thing>CecropiaLog</thing>
+												<weight>0.3</weight>
+											  </li>
+											  <li>
+												<thing>PineLog</thing>
+												<weight>0.4</weight>
+											  </li>
+											  <li>
+												<thing>MapleLog</thing>
+												<weight>0.4</weight>
+											  </li>
+											  <li>
+												<thing>TeakLog</thing>
+												<weight>0.3</weight>
+											  </li>
+											  <li>
+												<thing>DragonwoodLog</thing>
+												<weight>0.2</weight>
+											  </li>
+											  <li>
+												<thing>AcaciaLog</thing>
+												<weight>0.3</weight>
+											  </li>
+											</lootTable>
+										</value>
+									</li>
+						
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationSequence">
+								<operations>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
+									<value>
+										<selectionWeight>5</selectionWeight>
+									</value>
+								</li>
+						
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
+									<value>
+										<lootTable>
+										  <li>
+											<thing>WillowLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>CypressLog</thing>
+											<weight>0.6</weight>
+										  </li>
+										  <li>
+											<thing>PoplarLog</thing>
+											<weight>1</weight>
+										  </li>
+										  <li>
+											<thing>BirchLog</thing>
+											<weight>0.5</weight>
+										  </li>
+										  <li>
+											<thing>OakLog</thing>
+											<weight>0.5</weight>
+										  </li>
+										  <li>
+											<thing>MangroveLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>RedWoodLog</thing>
+											<weight>0.2</weight>
+										  </li>
+										  <li>
+											<thing>Bamboo</thing>
+											<weight>0.4</weight>
+										  </li>
+										  <li>
+											<thing>CecropiaLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>PineLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>MapleLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										  <li>
+											<thing>TeakLog</thing>
+											<weight>0.3</weight>
+										  </li>
+										</lootTable>
+									</value>
+								</li>
+								</operations>
+							</nomatch>
+					</nomatch>
+				</li>
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationFindMod">
+					<mods>
+						<li>HMC Biomes</li>
+						<li>HSK more content</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+				
 							<li Class="PatchOperationReplace">
 								<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
 								<value>
-									<selectionWeight>5</selectionWeight>
+									<selectionWeight>2</selectionWeight>
 								</value>
 							</li>
-					
+				
 							<li Class="PatchOperationReplace">
 								<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
 								<value>
 									<lootTable>
 									  <li>
-										<thing>WillowLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>CypressLog</thing>
-										<weight>0.6</weight>
-									  </li>
-									  <li>
-										<thing>PoplarLog</thing>
+										<thing>WoodLog</thing>
 										<weight>1</weight>
 									  </li>
 									  <li>
-										<thing>BirchLog</thing>
-										<weight>0.5</weight>
-									  </li>
-									  <li>
-										<thing>OakLog</thing>
-										<weight>0.5</weight>
-									  </li>
-									  <li>
-										<thing>MangroveLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
 										<thing>RedWoodLog</thing>
-										<weight>0.2</weight>
+										<weight>0.25</weight>
 									  </li>
 									  <li>
 										<thing>Bamboo</thing>
-										<weight>0.4</weight>
+										<weight>0.5</weight>
 									  </li>
 									  <li>
-										<thing>CecropiaLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>PineLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>MapleLog</thing>
-										<weight>0.3</weight>
-									  </li>
-									  <li>
-										<thing>TeakLog</thing>
-										<weight>0.3</weight>
+										<thing>IronWoodLogHMC</thing>
+										<weight>0.25</weight>
 									  </li>
 									</lootTable>
 								</value>
 							</li>
-							</operations>
-						</nomatch>
-				</nomatch>
-			</li>
-			</operations>
-		</match>
-		<nomatch Class="PatchOperationFindMod">
-				<mods>
-					<li>HMC Biomes</li>
-					<li>HSK more content</li>
-				</mods>
-				<match Class="PatchOperationSequence">
-					<operations>
-			
+				
+						</operations>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
 						<li Class="PatchOperationReplace">
 							<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
 							<value>
-								<selectionWeight>2</selectionWeight>
+								<selectionWeight>1</selectionWeight>
 							</value>
 						</li>
-			
+					
 						<li Class="PatchOperationReplace">
-							<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
-							<value>
-								<lootTable>
-								  <li>
-									<thing>WoodLog</thing>
-									<weight>1</weight>
-								  </li>
-								  <li>
-									<thing>RedWoodLog</thing>
-									<weight>0.25</weight>
-								  </li>
-								  <li>
-									<thing>Bamboo</thing>
-									<weight>0.5</weight>
-								  </li>
-								  <li>
-									<thing>IronWoodLogHMC</thing>
-									<weight>0.25</weight>
-								  </li>
-								</lootTable>
-							</value>
-						</li>
-			
-					</operations>
-				</match>
-				<nomatch Class="PatchOperationSequence">
-					<operations>
-					<li Class="PatchOperationReplace">
-						<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/selectionWeight</xpath>
+						<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
 						<value>
-							<selectionWeight>1</selectionWeight>
+							<lootTable>
+							  <li>
+								<thing>WoodLog</thing>
+								<weight>1.25</weight>
+							  </li>
+							  <li>
+								<thing>RedWoodLog</thing>
+								<weight>0.25</weight>
+							  </li>
+							  <li>
+								<thing>Bamboo</thing>
+								<weight>0.5</weight>
+							  </li>
+							</lootTable>
 						</value>
-					</li>
-				
-					<li Class="PatchOperationReplace">
-					<xpath>Defs/SitePartDef[defName="WorkSite_Logging"]/lootTable</xpath>
-					<value>
-						<lootTable>
-						  <li>
-							<thing>WoodLog</thing>
-							<weight>1.25</weight>
-						  </li>
-						  <li>
-							<thing>RedWoodLog</thing>
-							<weight>0.25</weight>
-						  </li>
-						  <li>
-							<thing>Bamboo</thing>
-							<weight>0.5</weight>
-						  </li>
-						</lootTable>
-					</value>
-					</li>
-					</operations>
-				</nomatch>
-		</nomatch>
+						</li>
+						</operations>
+					</nomatch>
+			</nomatch>
+		</li>
+		
+		</operations>
+	</match>
 	</Operation>
 
 </Patch>
