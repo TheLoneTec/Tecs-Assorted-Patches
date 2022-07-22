@@ -56,6 +56,17 @@
 				<value>False</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WindowBase"]/stuffCategories</xpath>
+				<value>
+				<stuffCategories>
+					<li>Metallic</li>
+					<li>Stony</li>
+					<li>Woody</li>
+				</stuffCategories>
+				</value>
+			</li>
+
 			</operations>
 		</match>
     </Operation>
