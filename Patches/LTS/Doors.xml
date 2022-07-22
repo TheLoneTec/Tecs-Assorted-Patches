@@ -153,6 +153,7 @@
 							<li>LTS_FuturisticDoorOne</li>
 							<li>LTS_FuturisticDoorTwo</li>
 							<li>LTS_AssymetricDoorOne</li>
+							<li>LTS_AssymetricReinforcedDoorOne</li>
 						</defNames>
 						<designationCategory>Structure</designationCategory>
 						<debug>false</debug>
@@ -173,6 +174,7 @@
 							<li>LTS_LargeSimpleDoorTwo</li>
 							<!-- Asym large -->
 							<li>LTS_AssymetricDoorTwo</li>
+							<li>LTS_AssymetricReinforcedDoorTwo</li>
 							<!-- Futuristic large -->
 							<li>LTS_LargeFuturisticDoor</li>
 							<li>LTS_HangarDoor</li>

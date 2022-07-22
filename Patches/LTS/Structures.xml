@@ -84,18 +84,41 @@
 							</ArchitectSense.DesignationSubCategoryDef>
 							</value>
 						</nomatch>
-						<match Class="PatchOperationAdd">
-						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
-							<value>
-								<li>LTS_CobblestoneFence</li>
-							</value>
+						<match Class="PatchOperationSequence">
+							<operations>
+							
+								<li Class="PatchOperationAdd">
+								<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
+								<value>
+									<li>LTS_CobblestoneFence</li>
+								</value>
+								</li>
+								
+								<li Class="PatchOperationInsert">
+								<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames/li[text()="Wall"]</xpath>
+								<value>
+									<li>LTS_RusticWall</li>
+								</value>
+								</li>
+								
+							</operations>
 						</match>
 					</li>
 
 					</operations>
 				</nomatch>
-				<match Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="LTS_CobblestoneFence"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="LTS_CobblestoneFence"]</xpath>
+						</li>
+						
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="LTS_RusticWall"]</xpath>
+						</li>
+						
+					</operations>
 				</match>
 			</li>			
 		

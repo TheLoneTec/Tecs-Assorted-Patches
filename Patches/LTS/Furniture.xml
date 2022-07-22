@@ -156,6 +156,7 @@
 							<li>LTS_KivikS</li>
 							<li>LTS_Mullfjallet</li>
 							<li>LTS_Kivik</li>
+							<li>LTS_StockholmSofa</li>
 						</defNames>
 						<designationCategory>Furniture</designationCategory>
 						<debug>false</debug>
@@ -218,6 +219,29 @@
 						<ComponentIndustrial>2</ComponentIndustrial>
 						<SyntheticFibers>2</SyntheticFibers>
 						<Rubber>4</Rubber>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "LTS_StockholmSofa"]/stuffCategories</xpath>
+				<value>
+					<li>HF</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "LTS_StockholmSofa"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>70</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "LTS_StockholmSofa"]</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>5</ComponentIndustrial>
+						<WoodPlank>55</WoodPlank>
 					</costList>
 				</value>
 			</li>
@@ -436,6 +460,40 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
 			</li>
+
+			<!-- ======== Storage ======== -->
+			
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Containers"]/defNames</xpath>
+				<value>
+					<li>LTS_Malsjo</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_StorageBase"]/designationCategory</xpath>
+				<value>
+					<designationCategory>LWM_DS_Storage</designationCategory>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]</xpath>
+				<value>
+					<costList>
+						<Glass>15</Glass>
+						<ComponentIndustrial>4</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			
 
 		</operations>
 	</match>
