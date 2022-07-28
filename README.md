@@ -30,6 +30,7 @@ various workshop mod patches for HSK
 - Fishing Re-Worked (Architect Menu, Material Conversion and Recipe Changes and Intergration with HSK and Viles Amuse Bouche, works well if you use SoS2,as pier is bugged with it currently, but made it work side by side with normal HSK fishing)
 - Ideology - Work Site (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
 - Orassan Facial Animations Corrective patch (head size and skin colour)(requires Facial Animations - WIP, Nals Facial Animation for HAR, Facial Animation HSK Patch (Optional))
+- Ratkin Facial Animation Dubs Apparel Tweaks patch
 
 # Updated Patches:
 - Fortifications SK (Architect Menus)
