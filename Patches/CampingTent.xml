@@ -43,8 +43,8 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "CampingLuggages"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Canopy"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>40</costStuffCount>
 				</value>
