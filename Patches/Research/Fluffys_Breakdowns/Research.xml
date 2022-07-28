@@ -50,13 +50,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="FluffyBreakdowns_ComponentLifetimeTwo"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>17.00</researchViewX>
+                    <researchViewX>19.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="FluffyBreakdowns_ComponentLifetimeTwo"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>10.00</researchViewY>
+                    <researchViewY>22.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">

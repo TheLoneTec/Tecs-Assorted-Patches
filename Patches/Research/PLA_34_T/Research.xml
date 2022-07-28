@@ -95,7 +95,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_Rocket"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>39.00</researchViewY>
+                    <researchViewY>37.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">

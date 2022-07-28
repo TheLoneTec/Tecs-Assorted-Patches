@@ -3,20 +3,20 @@
 
 	<Operation Class="PatchOperationSequence">
 		<operations>
-<!--
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Biosculpting"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>7.00</researchViewX>
+                    <researchViewX>13.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Biosculpting"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>16.00</researchViewY>
+                    <researchViewY>1.00</researchViewY>
                 </value>
             </li>
-			-->
+
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ResearchProjectDef[defName="Biosculpting"]</xpath>
                 <value>
@@ -43,19 +43,19 @@
 					</nomatch>
 				</nomatch>
 			</li>
-<!--
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>17.00</researchViewX>
+                    <researchViewX>13.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>16.00</researchViewY>
+                    <researchViewY>2.00</researchViewY>
                 </value>
-            </li>-->
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ResearchProjectDef[defName="NeuralSupercharger"]</xpath>
                 <value>
@@ -86,15 +86,15 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>17.00</researchViewX>
+                    <researchViewX>18.00</researchViewX>
                 </value>
-            </li><!--
+            </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>19.00</researchViewY>
+                    <researchViewY>1.00</researchViewY>
                 </value>
-            </li>-->
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ResearchProjectDef[defName="Bioregeneration"]</xpath>
                 <value>
