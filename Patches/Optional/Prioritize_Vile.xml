@@ -4,14 +4,14 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Vile's Hardcore Renovations</li>
+		<li>Gloomy Decor Pack</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 			
 			<li Class="PatchOperationFindMod">
 			<mods>
-				<li>Gloomy Decor Pack</li>
+				<li>Vile's Hardcore Renovations</li>
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
@@ -106,23 +106,23 @@
 				</match>
 			</li>
 			
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>The Windows</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationRemove"> 
+						<xpath>/Defs/ThingDef[defName="RGK_WindowWall"or defName="GL_WindowWall"]</xpath>
+					</li>
+
+					</operations>
+				</match>
+			</li>
+			
 			</operations>
 		</match>
 	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-	<mods>
-		<li>The Windows</li>
-	</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-			
-			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[defName="RGK_WindowWall"or defName="GL_WindowWall"]</xpath>
-			</li>
-
-			</operations>
-		</match>
-    </Operation>
 	
 </Patch>
