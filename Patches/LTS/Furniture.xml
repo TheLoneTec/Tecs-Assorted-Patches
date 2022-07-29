@@ -10,8 +10,16 @@
 
 			<!-- ======== Misc ======== -->
 		
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_CarpetBase"]/designationCategory</xpath>
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_Furniture"]/designationCategory</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_Furniture"]/researchPrerequisites</xpath>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_CarpetBase"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
@@ -37,10 +45,6 @@
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
-			</li>
-	
-			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_CarpetBase"]/researchPrerequisites</xpath>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
@@ -97,14 +101,14 @@
 				</value>
 			</li>
 			
-			<!-- ========= Furniture ======== -->
+			<!-- ========= Furniture ======== 
 			
 			<li Class="PatchOperationAttributeSet">
 				<xpath>/Defs/ThingDef[@Name = "LTS_SeatBase"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_FurnitureWithQualityBase</value>
 			</li>
-			
+			-->
 			<!-- ======= Chairs ====== -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name = "SK_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
@@ -115,29 +119,29 @@
 				</value>
 			</li>		
 
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_SeatBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_SeatBase"]</xpath>
 				<value>
 					<designationCategory>Furniture</designationCategory>
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_TableBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_TableBase"]</xpath>
 				<value>
 					<designationCategory>Furniture</designationCategory>
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_BedBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_BedBase"]</xpath>
 				<value>
 					<designationCategory>Furniture</designationCategory>
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_ArtBedBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_ArtBedBase"]</xpath>
 				<value>
 					<designationCategory>Furniture</designationCategory>
 				</value>
@@ -162,10 +166,6 @@
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_SeatBase"]/researchPrerequisites</xpath>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
@@ -193,10 +193,6 @@
 						<li>Tables_C1</li>
 					</researchPrerequisites>
 				</value>
-			</li>
-			
-			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Mullfjallet"]/researchPrerequisites</xpath>
 			</li>
 			
 			<li Class="PatchOperationAdd">
@@ -325,14 +321,10 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_TableBase"]/researchPrerequisites</xpath>
-			</li>
-			
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/ThingDef[defName="LTS_IdanasN" or defName="LTS_IdanasD" or defName="LTS_KoppangD" or defName="LTS_Havsta"]</xpath>
 				<value>
-					<researchPrerequisites>
+					<researchPrerequisites Inherit="False">
 						<li>Tables_B2</li>
 					</researchPrerequisites>
 				</value>
@@ -341,7 +333,7 @@
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/ThingDef[@Name="LTS_TableGatherBase"]</xpath>
 				<value>
-					<researchPrerequisites>
+					<researchPrerequisites Inherit="False">
 						<li>Tables_C1</li>
 					</researchPrerequisites>
 				</value>
@@ -477,8 +469,8 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_StorageBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_StorageBase"]</xpath>
 				<value>
 					<designationCategory>LWM_DS_Storage</designationCategory>
 				</value>

@@ -10,22 +10,22 @@
 		
 			<!-- ======== Deco ======== -->
 		
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_PathBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_PathBase"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
 			</li>
 		
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_BorderBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_BorderBase"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
 			</li>
 		
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_AtlasWoodCover"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_AtlasWoodCover"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>

@@ -10,8 +10,8 @@
 
 			<!-- ======== Planters ======== -->
 		
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_GrowingBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_GrowingBase"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>

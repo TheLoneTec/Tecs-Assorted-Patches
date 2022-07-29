@@ -10,29 +10,37 @@
 		
 			<!-- ======== Structures ======== -->
 			
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_FenceBase"]/designationCategory</xpath>
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_Buildings"]/designationCategory</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_Buildings"]/researchPrerequisites</xpath>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_FenceBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_ArchBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_ArchBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_PillarBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_PillarBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_WallBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_WallBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
@@ -121,10 +129,6 @@
 					</operations>
 				</match>
 			</li>			
-		
-			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_FenceBase"]/researchPrerequisites</xpath>
-			</li>
 		
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "LTS_Hedge"]</xpath>
@@ -218,8 +222,8 @@
 				</value>
 			</li>
 		
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_DoorFrameBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_DoorFrameBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>

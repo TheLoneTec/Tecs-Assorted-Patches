@@ -17,8 +17,8 @@
 				<value>SK_DoorBase</value>
 			</li>
 		-->
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_DoorBase"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_DoorBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
