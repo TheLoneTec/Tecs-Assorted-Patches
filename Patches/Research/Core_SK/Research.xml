@@ -191,19 +191,6 @@
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="Animal_D1"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>17.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="Animal_D1"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>51.00</researchViewY>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Medicine_D1"]/researchViewX</xpath>
                 <value>
                     <researchViewX>17.00</researchViewX>
