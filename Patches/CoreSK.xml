@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 		
-				<!-- ========== Laser Sculpting Table ========== -->
+				<!-- ========== Category ========== -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Stove"]/defNames</xpath>
 				<value>
@@ -421,6 +421,13 @@
 						</surpriseAttack>
 					</li>
 				</verbs>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="Make_ComponentAdvanced"]</xpath>
+				<value>
+					<researchPrerequisite>Components_D1</researchPrerequisite>
 				</value>
 			</li>
 
