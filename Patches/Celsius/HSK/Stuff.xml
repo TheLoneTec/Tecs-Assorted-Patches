@@ -779,7 +779,7 @@
 					<!-- ========== Ironwood ========== -->
 					
 					<li Class="XmlExtensions.PatchOperationSafeAdd">
-						<xpath>/Defs/MeditationFocusDef[defName="Archotech"]</xpath>
+						<xpath>Defs/ThingDef[defName="IronWoodLogHMC"]</xpath>
 						<safetyDepth>1</safetyDepth>
 						<value>
 							<modExtensions>
