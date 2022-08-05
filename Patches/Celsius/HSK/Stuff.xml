@@ -780,9 +780,9 @@
 					
 					
 					<li Class="PatchOperationConditional">
-						<xpath>/Defs/ThingDef[defName="IronWoodLogHMC"]</xpath>
+						<xpath>Defs/ThingDef[defName="IronWoodLogHMC"]</xpath>
 						<match Class="XmlExtensions.PatchOperationSafeAdd">
-							<xpath>/Defs/ThingDef[defName="IronWoodLogHMC"]</xpath>
+							<xpath>Defs/ThingDef[defName="IronWoodLogHMC"]</xpath>
 							<safetyDepth>1</safetyDepth>
 							<value>
 								<modExtensions>
