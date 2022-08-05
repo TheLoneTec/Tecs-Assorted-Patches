@@ -770,6 +770,7 @@
 
 			<li Class="PatchOperationFindMod">
 			<mods>
+				<li>HMC Biomes</li>
 				<li>HSK more content</li>
 			</mods>
 				<match Class="PatchOperationSequence">
@@ -777,16 +778,44 @@
 					
 					<!-- ========== Ironwood ========== -->
 					
-					<li Class="PatchOperationAddModExtension">
-						<xpath>Defs/ThingDef[defName="IronWoodLogHMC"]</xpath>
+					<li Class="XmlExtensions.PatchOperationSafeAdd">
+						<xpath>/Defs/MeditationFocusDef[defName="Archotech"]</xpath>
+						<safetyDepth>1</safetyDepth>
 						<value>
-							<li Class="Celsius.StuffThermalProperties">
-								<volumetricHeatCapacity>2400</volumetricHeatCapacity>
-								<conductivity>0.7</conductivity>
-							</li>
+							<modExtensions>
+								<li Class="Celsius.StuffThermalProperties">
+									<volumetricHeatCapacity>2400</volumetricHeatCapacity>
+									<conductivity>0.7</conductivity>
+								</li>
+							</modExtensions>
 						</value>
 					</li>
-					
+					<!--
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ThingDef[defName="ModernTent"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="ModernTent"]/researchPrerequisites</xpath>
+							<value>
+							<researchPrerequisites>
+								<li>Beds_C1</li>
+							</researchPrerequisites>
+							</value>
+						</match>
+						<nomatch>
+						
+							<li Class="PatchOperationAddModExtension">
+								<xpath>Defs/ThingDef[defName="IronWoodLogHMC"]</xpath>
+								<value>
+									<li Class="Celsius.StuffThermalProperties">
+										<volumetricHeatCapacity>2400</volumetricHeatCapacity>
+										<conductivity>0.7</conductivity>
+									</li>
+								</value>
+							</li>
+						
+						</nomatch>
+					</li>
+					-->
 					<li Class="PatchOperationAddModExtension">
 						<xpath>Defs/ThingDef[defName="IronWoodPlankHMC"]</xpath>
 						<value>
