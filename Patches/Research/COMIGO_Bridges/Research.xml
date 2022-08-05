@@ -11,7 +11,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>9.00</researchViewX>
+                    <researchViewX>10.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">

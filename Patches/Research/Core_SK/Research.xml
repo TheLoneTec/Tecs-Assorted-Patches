@@ -620,19 +620,6 @@
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="Ratkin_Armor_D1"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>19.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="Ratkin_Armor_D1"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>41.00</researchViewY>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Clinical_D2"]/researchViewX</xpath>
                 <value>
                     <researchViewX>19.00</researchViewX>
