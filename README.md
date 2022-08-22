@@ -31,6 +31,8 @@ various workshop mod patches for HSK
 - Ideology - Work Site (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
 - Orassan Facial Animations Corrective patch (head size and skin colour)(requires Facial Animations - WIP, Nals Facial Animation for HAR, Facial Animation HSK Patch (Optional))
 - Ratkin Facial Animation Dubs Apparel Tweaks patch
+- No Power Comms - Material Conversion + add to Trade Subcategory.
+- Vanilla Psycasts Expanded - Added CE patches from workshop CE
 
 # Updated Patches:
 - Fortifications SK (Architect Menus)
