@@ -41,7 +41,7 @@ various workshop mod patches for HSK
 - Celsius (Requires Xml Extensions) - (Added compatibility for [LTS] Furnishings)
 - Thermodynamics - Core (forked), Hot Meals (forked) & Rimfridge Patch (Updated microwave and heatlamp recipe)
 - Perspective: Trees - Added HSK Trees.
-- Vanilla Bases Expanded - Cleaned up base stockpile generation lists.
+- Vanilla Base Generation Expanded - Cleaned up base stockpile generation lists.
 
 
 # Update Log:
@@ -91,7 +91,7 @@ Updated:
 
 -- (Gloomy Deco) Added check for Viles Metallurgy, for Milling SubCategory.
 
--- (Vanilla Bases Expanded) Added Conditional Check for Third party Modifications
+-- (Vanilla Base Generation Expanded) Added Conditional Check for Third party Modifications
 
 ## Celsius Guide (Temp) :
 
