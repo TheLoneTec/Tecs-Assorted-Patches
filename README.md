@@ -70,7 +70,7 @@ Updated: Musical Instruments, changed most recipes to RecipeDefs to make recipes
 
 Updated:
 
--- (Gloomy Deco) Change research to Cooking II - Cupboard, Tableware Shelf.
+-- (Gloomy Deco) Changed research to Cooking II - Cupboard, Tableware Shelf.
 
 -- Added No Power Comms Patch - Material Conversion + add to Trade Subcategory.
 
