@@ -124,6 +124,13 @@
 			</li>				
 
 			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/initialFuelPercent</xpath>
+				<value>
+					<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
@@ -376,6 +383,24 @@
 				<xpath>/Defs/ThingDef[defName="LTS_Fireplace"]/description</xpath>
 				<value>
 					<description>A place to house a fire. Takes firewood as fuel.</description>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="FireSource"]/defNames</xpath>
+			<value>
+				<li>LTS_DarkFirepit</li>
+				<li>LTS_DarkFirepitRound</li>
+				<li>LTS_DarkFireplace</li>
+			</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_DarkFirepit" or defName="LTS_DarkFirepitRound" or defName="LTS_DarkFireplace"]</xpath>
+				<value>
+					<inspectorTabs Inherit="False">
+						<li>ITab_Bills</li>
+					</inspectorTabs>
 				</value>
 			</li>
 			

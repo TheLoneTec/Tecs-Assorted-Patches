@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Simple Utilities: Ceiling HSK</li>
+		<li>Simple Utilities: Ceiling</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Chimney_Primitive"]/modExtensions</xpath>
+				<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Chimney_Primitive"]/modExtensions</xpath>
+					<value>
+						<li Class="CeilingUtilities.CeilingFixture" />
+						<li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+							<mirror>False</mirror>
+							<offsetType>Eight</offsetType>
+							<offsets>
+								<li>(0.5, 0, 0.5)</li>
+							</offsets>
+						</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Chimney_Primitive"]</xpath>
+					<value>
+						<modExtensions>
+							<li Class="CeilingUtilities.CeilingFixture" />
+							<li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+								<mirror>False</mirror>
+								<offsetType>Eight</offsetType>
+								<offsets>
+									<li>(0.5, 0, 0.5)</li>
+								</offsets>
+							</li>
+						</modExtensions>
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Chimney_Capped"]/modExtensions</xpath>
+				<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Chimney_Capped"]/modExtensions</xpath>
+					<value>
+						<li Class="CeilingUtilities.CeilingFixture" />
+						<li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+							<mirror>False</mirror>
+							<offsetType>Eight</offsetType>
+							<offsets>
+								<li>(0.5, 0, 0.5)</li>
+							</offsets>
+						</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Chimney_Capped"]</xpath>
+					<value>
+						<modExtensions>
+							<li Class="CeilingUtilities.CeilingFixture" />
+							<li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+								<mirror>False</mirror>
+								<offsetType>Eight</offsetType>
+								<offsets>
+									<li>(0.5, 0, 0.5)</li>
+								</offsets>
+							</li>
+						</modExtensions>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="AirVac"]/modExtensions</xpath>
+				<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AirVac"]/modExtensions</xpath>
+					<value>
+						<li Class="CeilingUtilities.CeilingFixture" />
+						<li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+							<mirror>False</mirror>
+							<offsetType>Eight</offsetType>
+							<offsets>
+								<li>(0.5, 0, 0.5)</li>
+							</offsets>
+						</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AirVac"]</xpath>
+					<value>
+						<modExtensions>
+							<li Class="CeilingUtilities.CeilingFixture" />
+							<li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+								<mirror>False</mirror>
+								<offsetType>Eight</offsetType>
+								<offsets>
+									<li>(0.5, 0, 0.5)</li>
+								</offsets>
+							</li>
+						</modExtensions>
+					</value>
+				</nomatch>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

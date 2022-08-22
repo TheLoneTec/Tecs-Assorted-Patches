@@ -111,6 +111,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="WaterDeep"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>52500</heatCapacity>
+							<conductivity>60</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="PatchOperationConditional">
@@ -136,6 +145,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="WaterOceanDeep"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>55000</heatCapacity>
+							<conductivity>60</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="PatchOperationConditional">
@@ -161,6 +179,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="WaterMovingChestDeep"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>40000</heatCapacity>
+							<conductivity>60</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="PatchOperationConditional">
@@ -186,6 +213,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="WaterShallow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>52500</heatCapacity>
+							<conductivity>60</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 		
 			<li Class="PatchOperationConditional">
@@ -211,6 +247,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="WaterOceanShallow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>50000</heatCapacity>
+							<conductivity>60</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="PatchOperationConditional">
@@ -236,6 +281,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="WaterMovingShallow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>35000</heatCapacity>
+							<conductivity>60</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="PatchOperationConditional">
@@ -261,6 +315,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="Marsh"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>70000</heatCapacity>
+							<conductivity>45</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="PatchOperationConditional">
@@ -286,6 +349,15 @@
 						</value>
 					</nomatch>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ResearchProjectDef[defName="Ice"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>30000</heatCapacity>
+							<conductivity>37</conductivity>
+						</li>
+					</value>
+				</match>
 			</li>
 			
 			</operations>
