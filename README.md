@@ -40,7 +40,8 @@ various workshop mod patches for HSK
 - Insulation (Continued) (SOS2 fixes, added archo insulation walls and airlocks)
 - Celsius (Requires Xml Extensions) - (Added compatibility for [LTS] Furnishings)
 - Thermodynamics - Core (forked), Hot Meals (forked) & Rimfridge Patch (Updated microwave and heatlamp recipe)
-- Perspective: Trees
+- Perspective: Trees - Added HSK Trees.
+- Vanilla Bases Expanded - Cleaned up base stockpile generation lists.
 
 
 # Update Log:
