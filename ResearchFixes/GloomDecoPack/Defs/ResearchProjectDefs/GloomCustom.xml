@@ -14,9 +14,10 @@
 		<researchViewX>6.00</researchViewX>
 		<researchViewY>7.00</researchViewY>
 		<tab>Buildings_SK</tab>
+		<!--
 		<modExtensions>
 			<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
-		</modExtensions>
+		</modExtensions>-->
 	</ResearchProjectDef>
 
 </Defs>
