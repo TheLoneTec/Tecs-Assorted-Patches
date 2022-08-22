@@ -8,29 +8,73 @@
 		<match Class="PatchOperationSequence">
 		<operations>
 		
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationConditional">
 				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_EmpireDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_SmokeLauncher"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_EmpireDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_SmokeLauncher"]</xpath>
+						</li>
+					</operations>
+				</match>
+			</li>
+		
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_EmpireDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_EmpLauncher"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_EmpireDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_EmpLauncher"]</xpath>
+						</li>
+					</operations>
+				</match>
 			</li>
 			
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_EmpireDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_EmpLauncher"]</xpath>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_OutlanderDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_SmokeLauncher"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_OutlanderDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_SmokeLauncher"]</xpath>
+						</li>
+					</operations>
+				</match>
 			</li>
 	
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_OutlanderDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_SmokeLauncher"]</xpath>
-			</li>
-			
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationConditional">
 				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_OutlanderDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_EmpLauncher"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_OutlanderDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_EmpLauncher"]</xpath>
+						</li>
+					</operations>
+				</match>
 			</li>
 			
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationConditional">
 				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_PiratesDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_SmokeLauncher"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_PiratesDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_SmokeLauncher"]</xpath>
+						</li>
+					</operations>
+				</match>
 			</li>
 			
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationConditional">
 				<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_PiratesDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_EmpLauncher"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/KCSG.SettlementLayoutDef[defName = "VBGE_PiratesDefence"]/stockpileOptions/fillWithDefs/li[text()="Gun_EmpLauncher"]</xpath>
+						</li>
+					</operations>
+				</match>
 			</li>
+			
+
 	
 		</operations>
 		</match>
