@@ -82,8 +82,6 @@ Updated:
 
 -- Made Celsius Chimneys Transparent, and with Ceiling, Lights toggable.
 
--- Added missing modcheck for Architect SubCategory Milling
-
 -- (Vanilla Psycasts Expanded) Added CE patches from workshop CE
 
 -- (LTS Furniture) Lanternpost initial Fuel percent, set to 0.
