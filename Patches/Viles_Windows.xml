@@ -68,6 +68,96 @@
 				</value>
 			</li>
 
+			<!-- Atlas
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WindowBase"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Appearances</graphicClass>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="WindowBase"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+					<linkType>CornerFiller</linkType>
+					<linkFlags>
+						<li>Wall</li>
+						<li>Rock</li>
+					</linkFlags>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="SimpleOpenWindow"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Windows/SimpleWindow</texPath>
+				</value>
+			</li>
+			--><!--
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WindowBase"]/rotatable</xpath>
+				<value>
+					<rotatable>false</rotatable>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "SimpleOpenWindow"]</xpath>
+				<attribute>Name</attribute>
+				<value>SimpleOpenWindow</value>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "SimpleOpenWindow"]</xpath>
+				<attribute>Abstract</attribute>
+				<value>True</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="SimpleOpenWindow"]/defName</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="SimpleOpenWindow"]/texPath</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				<ThingDef ParentName="SimpleOpenWindow">
+					<defName>SimpleOpenWindow_Cladd</defName>
+					<label>cladd rustic window</label>
+					<description>A simple, low-tech window which is little more than a hole in the wall. Equip with with a shutter to control the light, but does almost nothing to keep the heat in or out.</description>
+					<graphicData>
+						<texPath>Things/Building/SimpleWindow</texPath>
+					</graphicData>
+					<uiIconPath>Things/Building/SimpleWindow_north</uiIconPath>
+					<statBases>
+						<WorkToBuild>270</WorkToBuild>
+						<MaxHitPoints>150</MaxHitPoints>
+					</statBases>
+					<stuffCategories>
+						<li>HardwoodLumber</li>
+						<li>SoftwoodLumber</li>
+						<li>UltrahardwoodLumber</li>
+						<li>EngineeredLumber</li>
+					</stuffCategories>
+					<costStuffCount>10</costStuffCount>
+					<comps Inherit="False">
+						<li Class="OpenTheWindows.CompProperties_Window">
+							<commandTexture>UI/OpenWindows</commandTexture>
+							<commandLabelKey>CommandDesignateOpenCloseWindowLabel</commandLabelKey>
+							<commandDescKey>CommandDesignateOpenCloseWindowDesc</commandDescKey>
+							<signal>both</signal>
+						</li>
+					</comps>
+					<researchPrerequisites Inherit="False" />
+				</ThingDef>
+				</value>
+			</li>
+-->
 			</operations>
 		</match>
     </Operation>

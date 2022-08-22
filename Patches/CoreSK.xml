@@ -16,67 +16,78 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/SitePartDef[defName="WorkSite_Mining"]/selectionWeight</xpath>
-				<value>
-					<selectionWeight>6</selectionWeight>
-				</value>
-			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Ideology</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/SitePartDef[defName="WorkSite_Mining"]/selectionWeight</xpath>
+						<value>
+							<selectionWeight>6</selectionWeight>
+						</value>
+					</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/SitePartDef[defName="WorkSite_Mining"]/lootTable</xpath>
-				<value>
-					<lootTable>
-					  <li>
-						<thing>Steel</thing>
-						<weight>1.4</weight>
-					  </li>
-					  <li>
-						<thing>Gold</thing>
-						<weight>0.6</weight>
-					  </li>
-					  <li>
-						<thing>Silver</thing>
-						<weight>0.6</weight>
-					  </li>
-					  <li>
-						<thing>Nickel</thing>
-						<weight>0.4</weight>
-					  </li>
-					  <li>
-						<thing>Copper</thing>
-						<weight>0.5</weight>
-					  </li>
-					  <li>
-						<thing>Tin</thing>
-						<weight>0.5</weight>
-					  </li>
-					  <li>
-						<thing>Anglesite</thing>
-						<weight>0.4</weight>
-					  </li>
-					  <li>
-						<thing>Aluminium</thing>
-						<weight>0.3</weight>
-					  </li>
-					  <li>
-						<thing>Wolframite</thing>
-						<weight>0.3</weight>
-					  </li>
-					  <li>
-						<thing>Jade</thing>
-						<weight>0.3</weight>
-					  </li>
-					  <li>
-						<thing>Uranium</thing>
-						<weight>0.2</weight>
-					  </li>
-					  <li>
-						<thing>ComponentIndustrial</thing>
-						<weight>0.5</weight>
-					  </li>
-					</lootTable>
-				</value>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/SitePartDef[defName="WorkSite_Mining"]/lootTable</xpath>
+						<value>
+							<lootTable>
+							  <li>
+								<thing>Steel</thing>
+								<weight>1.4</weight>
+							  </li>
+							  <li>
+								<thing>Gold</thing>
+								<weight>0.6</weight>
+							  </li>
+							  <li>
+								<thing>Silver</thing>
+								<weight>0.6</weight>
+							  </li>
+							  <li>
+								<thing>Nickel</thing>
+								<weight>0.4</weight>
+							  </li>
+							  <li>
+								<thing>Copper</thing>
+								<weight>0.5</weight>
+							  </li>
+							  <li>
+								<thing>Tin</thing>
+								<weight>0.5</weight>
+							  </li>
+							  <li>
+								<thing>Anglesite</thing>
+								<weight>0.4</weight>
+							  </li>
+							  <li>
+								<thing>Aluminium</thing>
+								<weight>0.3</weight>
+							  </li>
+							  <li>
+								<thing>Wolframite</thing>
+								<weight>0.3</weight>
+							  </li>
+							  <li>
+								<thing>Jade</thing>
+								<weight>0.3</weight>
+							  </li>
+							  <li>
+								<thing>Uranium</thing>
+								<weight>0.2</weight>
+							  </li>
+							  <li>
+								<thing>ComponentIndustrial</thing>
+								<weight>0.5</weight>
+							  </li>
+							</lootTable>
+						</value>
+					</li>
+			
+					</operations>
+				</match>
 			</li>
 
 			<!-- ========== ThingDefFishSduiggles CE ========== -->

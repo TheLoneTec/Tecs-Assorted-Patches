@@ -88,10 +88,10 @@
 									<Female>(-.1,-0.2)</Female>
 									<Thin>(-.1,-0.2)</Thin>
 									<Hulk>(-.1,-0.2)</Hulk>
-								</portraitBodyTypes>
+								</portraitBodyTypes><!--
 								<crownTypes>
 									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								</crownTypes>-->
 							</south>
 							<north>
 								<layerOffset>-1</layerOffset>
@@ -106,10 +106,10 @@
 									<Female>(-0.0225,-0.1177)</Female>
 									<Thin>(-0.0395,-0.0612)</Thin>
 									<Hulk>(-0.0338,-0.1742)</Hulk>
-								</portraitBodyTypes>
+								</portraitBodyTypes><!--
 								<crownTypes>
 									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								</crownTypes>-->
 							</north>
 							<east>
 								<bodyTypes>
@@ -123,10 +123,10 @@
 									<Female>(0.276,-0.36)</Female>
 									<Thin>(0.201,-0.366)</Thin>
 									<Hulk>(0.366,-0.515)</Hulk>
-								</portraitBodyTypes>
+								</portraitBodyTypes><!--
 								<crownTypes>
 									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								</crownTypes>-->
 							</east>
 						</offsets>
 					</li>

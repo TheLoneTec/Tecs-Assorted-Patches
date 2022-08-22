@@ -149,6 +149,30 @@
 				</match>
 			</li>
 			
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Psycasts Expanded</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+						<li Class="XmlExtensions.PatchOperationSafeAdd">
+							<xpath>/Defs/MeditationFocusDef[defName="Archotech"]</xpath>
+							<safetyDepth>1</safetyDepth>
+							<value>
+							    <modExtensions>
+								  <li Class="VanillaPsycastsExpanded.MeditationFocusExtension">
+									<icon>UI/PsyfocusIcons/PsyfocusArchotechnology</icon>
+									<pointsOnly>true</pointsOnly>
+								  </li>
+								</modExtensions>
+							</value>
+						</li>
+
+					</operations>
+				</match>
+			</li>
+			
 			</operations>
 		</match>
     </Operation>
