@@ -80,7 +80,7 @@ Updated:
 
 -- Made Nels Lazy Patching have to be loaded before
 
--- Made Celsius Chimneys Transparent and with Ceiling Lights toggable.
+-- Made Celsius Chimneys Transparent, and with Ceiling, Lights toggable.
 
 -- Added missing modcheck for Architect SubCategory Milling
 
