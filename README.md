@@ -86,6 +86,10 @@ Updated:
 
 -- (LTS Furniture) Lanternpost initial Fuel percent, set to 0.
 
+-- (Gloomy Deco) Added check for Viles Metallurgy, for Milling SubCategory.
+
+-- (Vanilla Bases Expanded) Added Conditional Check for Third party Modifications
+
 ## Celsius Guide (Temp) :
 
 Use Chimneys and the Industrial Air Vac in order to help keep production buildings at their full efficiency
