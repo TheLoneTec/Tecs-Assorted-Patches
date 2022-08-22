@@ -33,22 +33,24 @@ various workshop mod patches for HSK
 - Ratkin Facial Animation Dubs Apparel Tweaks patch
 - No Power Comms - Material Conversion + add to Trade Subcategory.
 - Vanilla Psycasts Expanded - Added CE patches from workshop CE
-
-# Updated Patches:
 - Fortifications SK (Architect Menus)
-- [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
 - Shield Generators Frontier Developments (Architect Menus)
 - Perspective: Doors (Merge Viles fence gate textures into one category, fixed missing palisade gate east perspective)
-- Vanilla Furniture Expanded SK (minor royalty adjustments and fixes, adjusted slab bed stats)
-- Viles Windows (Architect Menu)
-- Viles Renovations (Architect Menus, other mod compatibility)
 - Variety Matters (UI Fixes)
-- PlaceStuffOnTables Patch (Added Standing Lamps, glowstone lamps and candles to be put on tables (looks better on 1x1 tables using "perspective buildings" mod). Also other items like game of ur, marimba from musical instruments)
 - Insulation (Continued) (SOS2 fixes, added archo insulation walls and airlocks)
 - Celsius (Requires Xml Extensions) - (Added compatibility for [LTS] Furnishings)
 - Thermodynamics - Core (forked), Hot Meals (forked) & Rimfridge Patch (Updated microwave and heatlamp recipe)
-- Core SK (Moved more items into Architect categories, as well as items from other mods. Adjusted ideology slab bed stats.)
 - Perspective: Trees
+
+
+# Update Log:
+
+- [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
+- Vanilla Furniture Expanded SK (minor royalty adjustments and fixes, adjusted slab bed stats)
+- Viles Windows (Architect Menu)
+- Viles Renovations (Architect Menus, other mod compatibility)
+- PlaceStuffOnTables Patch (Added Standing Lamps, glowstone lamps and candles to be put on tables (looks better on 1x1 tables using "perspective buildings" mod). Also other items like game of ur, marimba from musical instruments)
+- Core SK (Moved more items into Architect categories, as well as items from other mods. Adjusted ideology slab bed stats.)
 
 Updated: Fixed FenceGates and things like them from keeping heat like doors for Celsius. Made cloth tent door ,walls and animal flap more realistic for Celsius. Added large Gate to Celsius.
 
