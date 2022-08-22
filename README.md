@@ -66,6 +66,26 @@ Updated: removed over 20 yellow duplicate research messages so far
 
 Updated: Musical Instruments, changed most recipes to RecipeDefs to make recipes more "Realistic"
 
+Updated:
+
+-- (Gloomy Deco) Change research to Cooking II - Cupboard, Tableware Shelf.
+
+-- Added No Power Comms Patch - Material Conversion + add to Trade Subcategory.
+
+-- (Gloomy Deco) BookShelf - Storage III research
+
+-- (LTS Furniture) Darklight Pits - to Firepits and Places Architect Subcategory
+
+-- Made Nels Lazy Patching have to be loaded before
+
+-- Made Celsius Chimneys Transparent and with Ceiling Lights toggable.
+
+-- Added missing modcheck for Architect SubCategory Milling
+
+-- (Vanilla Psycasts Expanded) Added CE patches from workshop CE
+
+-- (LTS Furniture) Lanternpost initial Fuel percent, set to 0.
+
 ## Celsius Guide (Temp) :
 
 Use Chimneys and the Industrial Air Vac in order to help keep production buildings at their full efficiency
