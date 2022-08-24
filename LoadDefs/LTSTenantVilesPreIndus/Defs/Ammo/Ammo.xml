@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- AmmoCategories -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>LeadBall</defName>
+		<label>round shot</label>
+		<labelShort>LB</labelShort>
+		<description>A heavy spherical bullet made of soft lead and wrapped in paper with a powder charge.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<!-- ThingCategories -->
+	<ThingCategoryDef>
+	  <defName>AmmoMusket</defName>
+	  <label>Lead Ball</label>
+	  <parent>Ammo</parent>
+	  <iconPath>UI/Icons/ThingCategories/AmmoRifles</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== Musket Ammo ========================== -->
+
+	<ThingCategoryDef>
+		<defName>MusketAmmo</defName>
+		<label>Musket Ammo</label>
+		<parent>AmmoMusket</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Musket</defName>
+		<label>Musket Ball</label>
+		<ammoTypes>
+			<Ammo_Musket_Lead>Bullet_Musket_Lead</Ammo_Musket_Lead>
+			<Ammo_SilverMusketBall>Bullet_SilverMusketBall</Ammo_SilverMusketBall>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="MusketBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Round bullet with powder, wrapped in paper.</description>
+		<statBases>
+			<Mass>0.012</Mass>
+			<Bulk>0.03</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>MusketAmmo</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.45</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="MusketBase">
+		<defName>Ammo_Musket_Lead</defName>
+		<label>Musket Ball</label>
+		<graphicData>
+			<texPath>Ammo/Musket</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.6</MarketValue>
+		</statBases>
+		<ammoClass>LeadBall</ammoClass>
+		<cookOffProjectile>Bullet_Musket_Lead</cookOffProjectile>
+	</ThingDef>
+
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseMusketBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>125</speed>
+			<dropsCasings>False</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseMusketBullet">
+		<defName>Bullet_Musket_Lead</defName>
+		<label>Musket Ball (Lead)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>22</damageAmountBase>
+			<!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
+			<armorPenetrationSharp>5.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>70</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_Musket_Lead</defName>
+		<label>make Musket Ball x25</label>
+		<description>Craft 25 Musket Ball rounds, and measure out powder charge.</description>
+		<jobString>Making Musket Ball rounds.</jobString>
+		<workAmount>450</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>LeadBar</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Musket_Lead>25</Ammo_Musket_Lead>
+		</products>
+		<skillRequirements>
+			<Crafting>1</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Gunsmithing</researchPrerequisite> <!-- Smithing -->
+	</RecipeDef>
+	
+	<!-- ==================== Silver Musket Ammo ========================== -->
+
+	<ThingCategoryDef>
+		<defName>SilverMusketBall</defName>
+		<label>Silver Musket Ball</label>
+		<parent>AmmoMusket</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="SilverMusketBallBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>A conical hollow tipped, soft lead bullet with rifled grooves, wrapped in paper with a powder charge.</description>
+		<statBases>
+			<Mass>0.012</Mass>
+			<Bulk>0.03</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>SilverMusketBall</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.45</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SilverMusketBallBase">
+		<defName>Ammo_SilverMusketBall</defName>
+		<label>Silver Musket Ball</label>
+		<graphicData>
+			<texPath>Ammo/SilverMusket</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.6</MarketValue>
+		</statBases>
+		<ammoClass>LeadBall</ammoClass>
+		<cookOffProjectile>Bullet_SilverMusketBall</cookOffProjectile>
+	</ThingDef>
+
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseSilverMusketBall" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>135</speed>
+			<dropsCasings>False</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseSilverMusketBall">
+		<defName>Bullet_SilverMusketBall</defName>
+		<label>Silver Musket Ball</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>28</damageAmountBase>
+			<!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
+			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<armorPenetrationBlunt>60</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_SilverMusketBall</defName>
+		<label>make Silver Musket Ball x25</label>
+		<description>Craft 25 Silver Musket Balls.</description>
+		<jobString>Making Silver Musket Balls.</jobString>
+		<workAmount>500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Powder</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_SilverMusketBall>25</Ammo_SilverMusketBall>
+		</products>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Gunsmithing</researchPrerequisite> <!-- Technology -->
+	</RecipeDef>
+	
+	<!-- ==================== Pressurised Projectile Ammo ========================== -->
+
+	<ThingCategoryDef>
+		<defName>AmmoPressurised</defName>
+		<label>Pressurised Bullet</label>
+		<parent>AmmoRifles</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_Pressurised</defName>
+		<label>Pressurised Bullet</label>
+		<ammoTypes>
+			<Ammo_Pressurised>Bullet_Pressurised</Ammo_Pressurised>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="PressurisedBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Lead bullet with the charge protected in a metal jacket.</description>
+		<statBases>
+			<Mass>0.028</Mass>
+			<Bulk>0.05</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoPressurised</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.45</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.01</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="PressurisedBase">
+		<defName>Ammo_Pressurised</defName>
+		<label>Pressurised Bullet</label>
+		<graphicData>
+			<texPath>Things/Ammo/Shotgun/Slug</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.6</MarketValue>
+		</statBases>
+		<ammoClass>LeadBall</ammoClass>
+		<cookOffProjectile>Bullet_PressurisedBullet</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BasePressurisedBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>145</speed>
+			<dropsCasings>True</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePressurisedBullet">
+		<defName>Bullet_PressurisedBullet</defName>
+		<label>Pressurised Bullet (Lead)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>25</damageAmountBase>
+			<!-- <armorPenetrationBase>0.53</armorPenetrationBase> -->
+			<armorPenetrationSharp>10</armorPenetrationSharp>
+			<armorPenetrationBlunt>50</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeShotgunShell">
+		<defName>MakeAmmo_PressurisedBullet</defName>
+		<label>make Pressurised Bullet x40</label>
+		<description>Craft 40 Pressurised Bullet rounds.</description>
+		<jobString>Making Pressurised Bullet rounds.</jobString>
+		<workAmount>650</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>LeadBar</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>LeadBar</li>
+				<li>Powder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Pressurised>40</Ammo_Pressurised>
+		</products>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>GasOperation</researchPrerequisite> <!-- Technology -->
+
+	</RecipeDef>
+
+
+</Defs>
