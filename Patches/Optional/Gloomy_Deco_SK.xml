@@ -619,6 +619,27 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GL_Wall_LampE"]</xpath>
+				<value>
+					<costList>
+						<Glass>5</Glass>
+						<ComponentIndustrial>2</ComponentIndustrial>
+						<ElectronicComponents>1</ElectronicComponents>
+						<Plasteel>30</Plasteel>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="GL_Wall_LampE"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
 			</operations>
 		</match>
 	</Operation>
