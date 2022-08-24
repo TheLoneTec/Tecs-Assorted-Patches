@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[LTS]Tenants</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[@Name="AmmunitionBase"]</xpath>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+				
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef Name="AmmunitionBase" Abstract="True">
+								<label>Empty Ammunition Base</label>
+								<description>Temporary Placeholder to prevent errors.</description>
+							</ThingDef>
+						</value>
+					</li>
+
+					</operations>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>HMC Vile's Pre-Industrial Overhaul</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+					<!-- ========== Revolver Musket =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_RevolverMusket</defName>
+						<statBases>
+							<SightsEfficiency>0.80</SightsEfficiency>
+							<ShotSpread>0.18</ShotSpread>
+							<SwayFactor>1.07</SwayFactor>
+							<Bulk>2.00</Bulk>
+							<Mass>1.20</Mass>
+							<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
+							<warmupTime>0.3</warmupTime>
+							<range>24.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>12</muzzleFlashScale>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>6</magazineSize>
+							<reloadOneAtATime>true</reloadOneAtATime>
+							<reloadTime>2</reloadTime>
+							<ammoSet>AmmoSet_69Musket</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<weaponTags>
+								<li>PT1</li>
+								<li>Gun</li>
+								<!--<li>Musket</li>-->
+								<li>TierOnePistol</li>
+								<li>CE_Sidearm</li>
+								<li>CE_AI_Pistol</li>
+								<li>CE_OneHandedWeapon</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>RangedLight</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Pistols</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>9</power>
+							  <cooldownTime>2</cooldownTime>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.25</MeleeParryChance>
+								 <MeleeDodgeChance>0.10</MeleeDodgeChance>
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]/costList</xpath>
+						<value>
+							<costList>
+								<Pistol_Component>1</Pistol_Component>
+								<Weapon_Parts>2</Weapon_Parts>
+								<ComponentIndustrial>4</ComponentIndustrial>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<stuffCategories>
+								<li>SolidMetallic</li>
+							</stuffCategories>
+							<costStuffCount>20</costStuffCount>
+						</value>
+					</li>	
+					-->
+			
+					<!-- ========== Quad Musket =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_QuadMusket</defName>
+						<statBases>
+							<SightsEfficiency>0.80</SightsEfficiency>
+							<ShotSpread>0.18</ShotSpread>
+							<SwayFactor>1.07</SwayFactor>
+							<Bulk>2.00</Bulk>
+							<Mass>1.20</Mass>
+							<RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
+							<warmupTime>0.35</warmupTime>
+							<range>19.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>12</muzzleFlashScale>
+							<burstShotCount>4</burstShotCount>
+							<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>4</magazineSize>
+							<reloadTime>2.5</reloadTime>
+							<ammoSet>AmmoSet_69Musket</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<weaponTags>
+								<li>PT1</li>
+								<li>Gun</li>
+								<li>TierOnePistol</li>
+								<li>CE_Sidearm</li>
+								<li>CE_AI_Pistol</li>
+								<li>CE_OneHandedWeapon</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>RangedLight</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Pistols</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>9</power>
+							  <cooldownTime>2</cooldownTime>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.15</MeleeParryChance>
+								 <MeleeDodgeChance>0.20</MeleeDodgeChance>
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
+					<!-- ========== Musket Rifle =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_MusketRifle</defName>
+						<statBases>
+							<SightsEfficiency>0.85</SightsEfficiency>
+							<ShotSpread>0.78</ShotSpread>
+							<SwayFactor>1.07</SwayFactor>
+							<Bulk>10.00</Bulk>
+							<Mass>3.20</Mass>
+							<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_69Musket_Lead</defaultProjectile>
+							<warmupTime>1.5</warmupTime>
+							<range>33.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>12</muzzleFlashScale>
+							<burstShotCount>4</burstShotCount>
+							<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>8</magazineSize>
+							<reloadTime>2.5</reloadTime>
+							<ammoSet>AmmoSet_69Musket</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<weaponTags>
+								<li>RF1</li>
+								<li>Gun</li>
+								<li>SniperRifle</li>
+								<li>TierOneRifle</li>
+								<li>TierOneSniper</li>
+								<li>CE_AI_Rifle</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>LongShots</li>
+							  <li>Ranged</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Rifles</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>10</power>
+							  <cooldownTime>2</cooldownTime>
+							  <armorPenetrationBlunt>10</armorPenetrationBlunt>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.2</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.35</MeleeParryChance>
+								 <!--<MeleeDodgeChance>0.10</MeleeDodgeChance>-->
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
+					<!-- ========== Pressure Gun =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_PressureGun</defName>
+						<statBases>
+							<SightsEfficiency>0.75</SightsEfficiency>
+							<ShotSpread>0.44</ShotSpread>
+							<SwayFactor>1.27</SwayFactor>
+							<Bulk>9.00</Bulk>
+							<Mass>4.20</Mass>
+							<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_5070Govt</defaultProjectile>
+							<warmupTime>1.0</warmupTime>
+							<range>33.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>6</muzzleFlashScale>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>8</magazineSize>
+							<reloadTime>2.5</reloadTime>
+							<ammoSet>AmmoSet_5070Govt</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<weaponTags>
+								<li>ST1</li>
+								<li>Gun</li>
+								<li>TierTwoSMG</li>
+								<li>CE_AI_AssaultWeapon</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>RangedHeavy</li>
+							  <li>Ranged</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Rifles</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>10</power>
+							  <cooldownTime>2</cooldownTime>
+							  <armorPenetrationBlunt>10</armorPenetrationBlunt>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.10</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.15</MeleeParryChance>
+								 <!--<MeleeDodgeChance>0.10</MeleeDodgeChance>-->
+							</equippedStatOffsets>
+						</value>
+					</li>
+			
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+			
+					<!-- ========== Revolver Musket =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_RevolverMusket</defName>
+						<statBases>
+							<SightsEfficiency>0.80</SightsEfficiency>
+							<ShotSpread>0.18</ShotSpread>
+							<SwayFactor>1.07</SwayFactor>
+							<Bulk>2.00</Bulk>
+							<Mass>1.20</Mass>
+							<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_Musket_Lead</defaultProjectile>
+							<warmupTime>0.3</warmupTime>
+							<range>24.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>12</muzzleFlashScale>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>6</magazineSize>
+							<reloadOneAtATime>true</reloadOneAtATime>
+							<reloadTime>2</reloadTime>
+							<ammoSet>AmmoSet_Musket</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<weaponTags>
+								<li>PT1</li>
+								<li>Gun</li>
+								<li>TierOnePistol</li>
+								<li>CE_Sidearm</li>
+								<li>CE_AI_Pistol</li>
+								<li>CE_OneHandedWeapon</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>RangedLight</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Pistols</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>9</power>
+							  <cooldownTime>2</cooldownTime>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.25</MeleeParryChance>
+								 <MeleeDodgeChance>0.10</MeleeDodgeChance>
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
+					<!--
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]/costList</xpath>
+						<value>
+							<costList>
+								<Pistol_Component>1</Pistol_Component>
+								<Weapon_Parts>2</Weapon_Parts>
+								<ComponentIndustrial>4</ComponentIndustrial>
+							</costList>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+						<value>
+							<stuffCategories>
+								<li>SolidMetallic</li>
+							</stuffCategories>
+							<costStuffCount>20</costStuffCount>
+						</value>
+					</li>	
+					-->
+					
+					<!-- ========== Quad Musket =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_QuadMusket</defName>
+						<statBases>
+							<SightsEfficiency>0.80</SightsEfficiency>
+							<ShotSpread>0.18</ShotSpread>
+							<SwayFactor>1.07</SwayFactor>
+							<Bulk>2.00</Bulk>
+							<Mass>1.20</Mass>
+							<RangedWeapon_Cooldown>0.86</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_Musket_Lead</defaultProjectile>
+							<warmupTime>0.35</warmupTime>
+							<range>19.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>12</muzzleFlashScale>
+							<burstShotCount>4</burstShotCount>
+							<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>4</magazineSize>
+							<reloadTime>2.5</reloadTime>
+							<ammoSet>AmmoSet_Musket</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<weaponTags>
+								<li>PT1</li>
+								<li>Gun</li>
+								<li>TierOnePistol</li>
+								<li>CE_Sidearm</li>
+								<li>CE_AI_Pistol</li>
+								<li>CE_OneHandedWeapon</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>RangedLight</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Pistols</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>9</power>
+							  <cooldownTime>2</cooldownTime>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.15</MeleeParryChance>
+								 <MeleeDodgeChance>0.20</MeleeDodgeChance>
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
+					<!-- ========== Musket Rifle =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_MusketRifle</defName>
+						<statBases>
+							<SightsEfficiency>0.85</SightsEfficiency>
+							<ShotSpread>0.78</ShotSpread>
+							<SwayFactor>1.07</SwayFactor>
+							<Bulk>10.00</Bulk>
+							<Mass>3.20</Mass>
+							<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_Musket_Lead</defaultProjectile>
+							<warmupTime>1.5</warmupTime>
+							<range>33.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>12</muzzleFlashScale>
+							<burstShotCount>4</burstShotCount>
+							<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>8</magazineSize>
+							<reloadTime>2.5</reloadTime>
+							<ammoSet>AmmoSet_Musket</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<weaponTags>
+								<li>RF1</li>
+								<li>Gun</li>
+								<li>SniperRifle</li>
+								<li>TierOneRifle</li>
+								<li>TierOneSniper</li>
+								<li>CE_AI_Rifle</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>LongShots</li>
+							  <li>Ranged</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Rifles</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>10</power>
+							  <cooldownTime>2</cooldownTime>
+							  <armorPenetrationBlunt>10</armorPenetrationBlunt>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.2</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.35</MeleeParryChance>
+								 <!--<MeleeDodgeChance>0.10</MeleeDodgeChance>-->
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
+					<!-- ========== Pressure Gun =========== -->
+
+					<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>LTS_PressureGun</defName>
+						<statBases>
+							<SightsEfficiency>0.75</SightsEfficiency>
+							<ShotSpread>0.44</ShotSpread>
+							<SwayFactor>1.27</SwayFactor>
+							<Bulk>9.00</Bulk>
+							<Mass>4.20</Mass>
+							<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+						</statBases>
+						<Properties>
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_Musket_Lead</defaultProjectile>
+							<warmupTime>1.0</warmupTime>
+							<range>33.9</range>
+							<soundCast>LTS_MusketFire</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>6</muzzleFlashScale>
+						</Properties>
+						<AmmoUser>
+							<magazineSize>8</magazineSize>
+							<reloadTime>2.5</reloadTime>
+							<ammoSet>AmmoSet_Pressurised</ammoSet>
+						</AmmoUser>
+						<FireModes>
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</FireModes>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<weaponTags>
+								<li>ST1</li>
+								<li>Gun</li>
+								<li>TierTwoSMG</li>
+								<li>CE_AI_AssaultWeapon</li>
+							</weaponTags>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<weaponClasses>
+							  <li>RangedHeavy</li>
+							  <li>Ranged</li>
+							</weaponClasses>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<thingCategories>
+								<li>Rifles</li>
+							</thingCategories>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]/tools</xpath>
+						<value>
+						  <tools>
+							<li Class="CombatExtended.ToolCE">
+							  <label>grip</label>
+							  <capacities>
+								<li>Blunt</li>
+							  </capacities>
+							  <power>6</power>
+							  <cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="CombatExtended.ToolCE">
+							  <label>barrel</label>
+							  <capacities>
+								<li>Blunt</li>
+								<li>Poke</li>
+							  </capacities>
+							  <power>10</power>
+							  <cooldownTime>2</cooldownTime>
+							  <armorPenetrationBlunt>10</armorPenetrationBlunt>
+							  <chanceFactor>1.5</chanceFactor>
+							</li>
+						  </tools>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]/statBases</xpath>
+						<value>
+							<MeleeCounterParryBonus>0.10</MeleeCounterParryBonus>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+						<value>
+							<equippedStatOffsets>
+								 <!--<MeleeCritChance>0.67</MeleeCritChance>-->
+								 <MeleeParryChance>0.15</MeleeParryChance>
+								 <!--<MeleeDodgeChance>0.10</MeleeDodgeChance>-->
+							</equippedStatOffsets>
+						</value>
+					</li>
+					
+					</operations>
+				</nomatch>
+			</li>	
+
+			<!-- ==========  Pressure Gun Texture =========== -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_PressureGun"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Weapons/PressureGun</texPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>45</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
+				<value>
+					<costList>
+						<Heavy_Component>1</Heavy_Component>
+						<Weapon_Parts>6</Weapon_Parts>
+					</costList>
+				</value>
+			</li>
+
+			<!-- ==========  Quad Musket Texture =========== -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Weapons/QuadMusket</texPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>25</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
+				<value>
+					<costList>
+						<Pistol_Component>1</Pistol_Component>
+						<Weapon_Parts>2</Weapon_Parts>
+					</costList>
+				</value>
+			</li>
+
+			<!-- ==========  LTS_MusketRifle =========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>55</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
+				<value>
+					<costList>
+						<AdvRifle_Component>1</AdvRifle_Component>
+						<Weapon_Parts>6</Weapon_Parts>
+					</costList>
+				</value>
+			</li>
+
+			<!-- ==========  LTS_RevolverMusket =========== -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>25</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
+				<value>
+					<costList>
+						<Pistol_Component>1</Pistol_Component>
+						<Weapon_Parts>2</Weapon_Parts>
+					</costList>
+				</value>
+			</li>
+
+
+
+			<!-- ==========  LTS_CourierSword =========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierSword"]/tools</xpath>
+				<value>
+				  <tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>handle</label>
+						<capacities>
+						  <li>Poke</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.01</cooldownTime>
+						<chanceFactor>0.4</chanceFactor>
+						<armorPenetrationBlunt>3.6</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>point</label>
+						<capacities>
+						  <li>Stab</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.26</cooldownTime>
+						<chanceFactor>1</chanceFactor>
+						<armorPenetrationBlunt>1.55</armorPenetrationBlunt>
+						<armorPenetrationSharp>4.67</armorPenetrationSharp>
+						<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>edge</label>
+						<capacities>
+						  <li>Cut</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>1.18</cooldownTime>
+						<chanceFactor>1</chanceFactor>
+						<armorPenetrationBlunt>7.36</armorPenetrationBlunt>
+						<armorPenetrationSharp>4.2</armorPenetrationSharp>
+						<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+					  </li>
+				  </tools>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierSword"]/statBases</xpath>
+				<value>
+					<MeleeCounterParryBonus>0.39</MeleeCounterParryBonus>
+					<Bulk>5.5</Bulk>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierSword"]</xpath>
+				<value>
+					<equippedStatOffsets>
+					  <MeleeCritChance>0.25</MeleeCritChance>
+					  <MeleeParryChance>0.55</MeleeParryChance>
+					  <MeleeDodgeChance>0.2</MeleeDodgeChance>
+					</equippedStatOffsets>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierSword"]</xpath>
+				<value>
+					<thingCategories>
+						<li>SharpMelee</li>
+					</thingCategories>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierSword"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>60</costStuffCount>
+				</value>
+			</li>
+
+			<!-- ==========  LTS_CourierMachete =========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierMachete"]/tools</xpath>
+				<value>
+				  <tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>handle</label>
+						<capacities>
+						  <li>Poke</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2.01</cooldownTime>
+						<chanceFactor>0.4</chanceFactor>
+						<armorPenetrationBlunt>3.6</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>point</label>
+						<capacities>
+						  <li>Stab</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>1.26</cooldownTime>
+						<chanceFactor>1</chanceFactor>
+						<armorPenetrationBlunt>2.55</armorPenetrationBlunt>
+						<armorPenetrationSharp>5.27</armorPenetrationSharp>
+						<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>edge</label>
+						<capacities>
+						  <li>Cut</li>
+						</capacities>
+						<power>24</power>
+						<cooldownTime>1.18</cooldownTime>
+						<chanceFactor>1</chanceFactor>
+						<armorPenetrationBlunt>8.46</armorPenetrationBlunt>
+						<armorPenetrationSharp>4.8</armorPenetrationSharp>
+						<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+					  </li>
+				  </tools>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierMachete"]/statBases</xpath>
+				<value>
+					<MeleeCounterParryBonus>0.26</MeleeCounterParryBonus>
+					<Bulk>4.5</Bulk>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierMachete"]</xpath>
+				<value>
+					<equippedStatOffsets>
+					  <MeleeCritChance>0.3</MeleeCritChance>
+					  <MeleeParryChance>0.35</MeleeParryChance>
+					  <MeleeDodgeChance>0.25</MeleeDodgeChance>
+					</equippedStatOffsets>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierMachete"]</xpath>
+				<value>
+					<thingCategories>
+						<li>SharpMelee</li>
+					</thingCategories>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierMachete"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Weapons/Mechete</texPath>
+				</value>
+			</li>
+
+			<!-- ==========  LTS_CourierCutlass =========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCutlass"]/tools</xpath>
+				<value>
+				  <tools>
+					  <li Class="CombatExtended.ToolCE">
+						<label>handle</label>
+						<capacities>
+						  <li>Poke</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>1.81</cooldownTime>
+						<chanceFactor>0.4</chanceFactor>
+						<armorPenetrationBlunt>2.6</armorPenetrationBlunt>
+						<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>point</label>
+						<capacities>
+						  <li>Stab</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>1.06</cooldownTime>
+						<chanceFactor>1</chanceFactor>
+						<armorPenetrationBlunt>1.55</armorPenetrationBlunt>
+						<armorPenetrationSharp>3.27</armorPenetrationSharp>
+						<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+					  </li>
+					  <li Class="CombatExtended.ToolCE">
+						<label>edge</label>
+						<capacities>
+						  <li>Cut</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>0.8</cooldownTime>
+						<chanceFactor>1</chanceFactor>
+						<armorPenetrationBlunt>1.46</armorPenetrationBlunt>
+						<armorPenetrationSharp>2.8</armorPenetrationSharp>
+						<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+					  </li>
+				  </tools>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCutlass"]/statBases</xpath>
+				<value>
+					<MeleeCounterParryBonus>0.15</MeleeCounterParryBonus>
+					<Bulk>3</Bulk>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCutlass"]</xpath>
+				<value>
+					<equippedStatOffsets>
+					  <MeleeCritChance>0.25</MeleeCritChance>
+					  <MeleeParryChance>0.15</MeleeParryChance>
+					  <MeleeDodgeChance>0.40</MeleeDodgeChance>
+					</equippedStatOffsets>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCutlass"]</xpath>
+				<value>
+					<thingCategories>
+						<li>SharpMelee</li>
+					</thingCategories>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCutlass"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Weapons/Cutlass</texPath>
+				</value>
+			</li>
+
+			<!-- Weapons-->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="LTS_CourierArms"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+
+			<!-- Apparel -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCoat"]/equippedStatOffsets</xpath>
+				<value>
+					<CarryBulk>15</CarryBulk>
+					<MoveSpeed>0.15</MoveSpeed>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>	
+					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+					<Suppressability>-0.25</Suppressability>
+					<GermResistance>0.05</GermResistance>
+					<GermContainment>0.05</GermContainment>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCoat"]/statBases</xpath>
+				<value>
+					<statBases>
+						<MarketValue>750</MarketValue>
+						<Mass>2</Mass>
+						<Bulk>3</Bulk>
+						<Insulation_Cold>20</Insulation_Cold>
+						<Insulation_Heat>10</Insulation_Heat>
+						<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+						<ArmorRating_Sharp>4.0</ArmorRating_Sharp>
+						<ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.07</ArmorRating_Heat>
+						<StuffEffectMultiplierInsulation_Cold>0.47</StuffEffectMultiplierInsulation_Cold>
+						<StuffEffectMultiplierInsulation_Heat>0.26</StuffEffectMultiplierInsulation_Heat>
+						<WornBulk>3</WornBulk>
+					</statBases>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCoat"]/apparel</xpath>
+				<value>
+					<useWornGraphicMask>true</useWornGraphicMask>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCoat"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>Fabric</li>
+					</stuffCategories>
+					<costStuffCount>55</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierHat"]/equippedStatOffsets</xpath>
+				<value>
+					<MoveSpeed>0.05</MoveSpeed>
+					<MentalBreakThreshold>-0.03</MentalBreakThreshold>
+					<Suppressability>-0.15</Suppressability>
+					<GermResistance>0.01</GermResistance>
+					<GermContainment>0.02</GermContainment>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierHat"]/statBases</xpath>
+				<value>
+					<statBases>
+						<MarketValue>500</MarketValue>
+						<Mass>1</Mass>
+						<Bulk>1</Bulk>
+						<Insulation_Cold>1</Insulation_Cold>
+						<Insulation_Heat>5</Insulation_Heat>
+						<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+						<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+						<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+						<ArmorRating_Heat>0.1</ArmorRating_Heat>
+						<StuffEffectMultiplierInsulation_Cold>0.47</StuffEffectMultiplierInsulation_Cold>
+						<StuffEffectMultiplierInsulation_Heat>0.26</StuffEffectMultiplierInsulation_Heat>
+					</statBases>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierHat"]/apparel</xpath>
+				<value>
+					<useWornGraphicMask>true</useWornGraphicMask>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_CourierHat"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>HF</li>
+						<li>Fabric</li>
+					</stuffCategories>
+					<costStuffCount>25</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="LTS_Courier"]/modExtensions</xpath>
+				<value>
+					<li Class="CombatExtended.LoadoutPropertiesExtension">
+						<primaryMagazineCount>
+							<min>2</min>
+							<max>6</max>
+						</primaryMagazineCount>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="LTS_Courier"]/apparelTags</xpath>
+				<value>
+					<li>Medieval</li>
+					<li>Outlander</li>
+					<li>BrotherhoodScout</li>
+					<li>SyndicateScout</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="LTS_Courier"]/apparelMoney</xpath>
+				<value>
+					<apparelMoney>1450~2200</apparelMoney>
+				</value>
+			</li>
+
+			<!-- Buildings -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_NoticeBoard"]</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>4</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
