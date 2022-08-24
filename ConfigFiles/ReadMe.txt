@@ -1,0 +1,1 @@
+Copy of my Holster config, which contains preset positions for many HSK weapons/tools. copy and replace with your own config to apply.
