@@ -42,7 +42,7 @@ various workshop mod patches for HSK
 - Thermodynamics - Core (forked), Hot Meals (forked) & Rimfridge Patch (Updated microwave and heatlamp recipe)
 - Perspective: Trees - Added HSK Trees.
 - Vanilla Base Generation Expanded - Cleaned up base stockpile generation lists.
-
+- [LTS] Tenants (HSK + CE Patch)
 
 # Update Log:
 
