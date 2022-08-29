@@ -55,8 +55,8 @@
 		<comps>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusher</compClass>
-				<heatPerSecond>-35</heatPerSecond>
-				<heatPushMinTemperature>20</heatPushMinTemperature>
+				<heatPerSecond>-15</heatPerSecond>
+				<heatPushMinTemperature>24</heatPushMinTemperature>
 			</li>
 		</comps>
 		<researchPrerequisites>
@@ -126,8 +126,8 @@
 		<comps>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusher</compClass>
-				<heatPerSecond>-45</heatPerSecond>
-				<heatPushMinTemperature>20</heatPushMinTemperature>
+				<heatPerSecond>-25</heatPerSecond>
+				<heatPushMinTemperature>24</heatPushMinTemperature>
 			</li>
 		</comps>
 		<researchPrerequisites>
