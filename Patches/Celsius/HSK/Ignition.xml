@@ -48,6 +48,31 @@
 				</match>
 			</li>
 
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Moyo-From the depth</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="XmlExtensions.PatchOperationSafeAdd">
+						<xpath>Defs/ThingDef[@Name="Moyo_Depthweave"]</xpath>
+						<value>
+							<statBases>
+								<IgnitionTemperature>900</IgnitionTemperature>
+							</statBases>
+							<stuffProps>
+								<statOffsets>
+									<IgnitionTemperature>900</IgnitionTemperature>
+								</statOffsets>
+							</stuffProps>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+
 			<li Class="XmlExtensions.PatchOperationSafeAdd">
 				<xpath>Defs/ThingDef[defName="RedWoodLog"]</xpath>
 				<value>
