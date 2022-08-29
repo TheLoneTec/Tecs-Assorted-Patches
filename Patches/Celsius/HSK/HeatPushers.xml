@@ -12,31 +12,152 @@
 -->
 
 <!-- 9.5 -->
-<!-- 75 --><!--
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="EAF"]/comps/li[@Class="CompProperties_HeatPusher"]</xpath>
-		<value>
-			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
-				
-				<heatPerSecond>3.5</heatPerSecond>
-				
-				<heatPushMaxTemperature>20</heatPushMaxTemperature>
-			</li>
-		</value>
-	</Operation>
--->
+<!-- 75 -->
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Vanilla Furniture Expanded SK</li>
+		<li>Celsius</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
 	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Campfire"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>6</heatPerSecond>
+						<heatPushMaxTemperature>27</heatPushMaxTemperature>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Building_Heater"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>12</heatPerSecond>
+						<heatPushMaxTemperature>40</heatPushMaxTemperature>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GH"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>30</heatPerSecond>
+						<heatPushMaxTemperature>25</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
+			<!-- =========== Production ============= -->
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="TableGrill"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>3</heatPerSecond>
+						<heatPushMaxTemperature>18</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="FueledStove"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>4</heatPerSecond>
+						<heatPushMaxTemperature>25</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="TableOven"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>4.5</heatPerSecond>
+						<heatPushMaxTemperature>24</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="ElectricOven"]/comps/li[@Class="CompProperties_HeatPusher"]</xpath>
+				<value>
+					<li Class="CompProperties_HeatPusher">
+						<compClass>CompHeatPusherPowered</compClass>
+						<heatPerSecond>1</heatPerSecond>
+						<heatPushMaxTemperature>35</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Brewery"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>5</heatPerSecond>
+						<heatPushMaxTemperature>28</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="TableFurnace"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>8</heatPerSecond>
+						<heatPushMaxTemperature>27</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Kiln"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>5.5</heatPerSecond>
+						<heatPushMaxTemperature>25</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="GlassworkTable"]/comps/li[@Class="CompProperties_HeatPusher"]</xpath>
+				<value>
+					<li Class="CompProperties_HeatPusher">
+						<compClass>CompHeatPusherPowered</compClass>
+						<heatPerSecond>4</heatPerSecond>
+						<heatPushMaxTemperature>38</heatPushMaxTemperature>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="FueledSmithy"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_HeatPusherAdvanced">
+						<compClass>SK.CompHeatPusherAdvanced</compClass>
+						<heatPerSecond>12</heatPerSecond>
+						<heatPushMaxTemperature>45</heatPushMaxTemperature>
+					</li>	
+				</value>
+			</li>
+	
 			<li Class="PatchOperationFindMod">
 				<mods>
-					<li>Celsius</li>
+					<li>Vanilla Furniture Expanded SK</li>
 				</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
@@ -45,6 +166,39 @@
 						<xpath>/Defs/ThingDef[defName="Stone_Campfire"]/comps/li[@Class="CompProperties_HeatPusher"]/heatPushMaxTemperature</xpath>
 					</li>
 					
+					</operations>
+				</match>
+			</li>
+	
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Amuse Bouche</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="Hearth"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+						<value>
+							<li Class="SK.CompProperties_HeatPusherAdvanced">
+								<compClass>SK.CompHeatPusherAdvanced</compClass>
+								<heatPerSecond>1.5</heatPerSecond>
+								<heatPushMaxTemperature>22</heatPushMaxTemperature>
+							</li>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName="OpenHearth"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
+						<value>
+							<li Class="SK.CompProperties_HeatPusherAdvanced">
+								<compClass>SK.CompHeatPusherAdvanced</compClass>
+								<heatPerSecond>3</heatPerSecond>
+								<heatPushMaxTemperature>27</heatPushMaxTemperature>
+							</li>
+						</value>
+					</li>
+	
 					</operations>
 				</match>
 			</li>

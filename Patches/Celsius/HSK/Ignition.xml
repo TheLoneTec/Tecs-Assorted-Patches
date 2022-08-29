@@ -56,7 +56,7 @@
 					<operations>
 					
 					<li Class="XmlExtensions.PatchOperationSafeAdd">
-						<xpath>Defs/ThingDef[@Name="Moyo_Depthweave"]</xpath>
+						<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]</xpath>
 						<value>
 							<statBases>
 								<IgnitionTemperature>900</IgnitionTemperature>
