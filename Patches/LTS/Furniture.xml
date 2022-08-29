@@ -462,6 +462,50 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]</xpath>
+				<value>
+					<uiIconPath>Surfaces/Malsjo_icon</uiIconPath>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_StorageBase"]/inspectorTabs</xpath>
+				<value>
+					<inspectorTabs>
+						<li>ITab_Storage</li>
+						<li>LWM.DeepStorage.ITab_DeepStorage_Inventory</li>
+					</inspectorTabs>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]/comps/li[@Class="LWM.DeepStorage.Properties"]</xpath>
+				<value>
+					<li Class="LWM.DeepStorage.Properties">
+						<maxNumberStacks>5</maxNumberStacks>
+						<minNumberStacks>5</minNumberStacks>
+						<timeStoringTakes>100</timeStoringTakes>
+						<additionalTimeEachStack>60</additionalTimeEachStack>
+						<showContents>false</showContents>
+						<overlayType>SumOfAllItems</overlayType>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Storage_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]/uiIconOffset</xpath>
+			</li>
+
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]/costStuffCount</xpath>
 				<value>
