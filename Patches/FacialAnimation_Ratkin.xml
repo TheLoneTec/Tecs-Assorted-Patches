@@ -19,8 +19,31 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
 						<value>
-							<customDrawSize>(0.85, 0.85)</customDrawSize>
+							<customDrawSize>(1.0, 1.0)</customDrawSize>
 						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
+						<value>
+							<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+						</value>
+					</li>
+
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/headOffset</xpath>
+						<nomatch Class="PatchOperationAdd">
+						  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator</xpath>
+						  <value>
+							<headOffset>(0.00,-0.00)</headOffset>
+						  </value>
+						</nomatch>
+						<match Class="PatchOperationReplace">
+						  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/headOffset</xpath>
+						  <value>
+							<headOffset>(0.00,-0.00)</headOffset>
+						  </value>
+						</match>
 					</li>
 
 					<li Class="PatchOperationReplace">
@@ -29,7 +52,14 @@
 							<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
 						</value>
 					</li>
-
+<!--
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
+						<value>
+							<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+						</value>
+					</li>
+-->
 					</operations>
 				</match>
 			</li>
