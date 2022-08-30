@@ -19,7 +19,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
 						<value>
-							<customDrawSize>(1.0, 1.0)</customDrawSize>
+							<customDrawSize>(0.85, 0.85)</customDrawSize>
 						</value>
 					</li>
 
