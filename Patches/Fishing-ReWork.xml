@@ -84,7 +84,7 @@
                     <Meat_ThingDefFishSduiggles>20</Meat_ThingDefFishSduiggles>
                 </value>
             </li>
-
+			<!--
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="RawSalmonMeat" or defName="RawTunaMeat" or defName="RawEelMeat" or defName="JellyfishMeat"
 				or defName="PufferfishMeat" or defName="RawSquidMeat" or defName="RawOctopusMeat" or defName="RawCrabMeat"
@@ -93,7 +93,7 @@
 					<li>FoodFreshFish</li>
                 </value>
             </li>
-
+			-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RecipeDef[defName="CookMealGrilledFish"]/label</xpath>
                 <value>

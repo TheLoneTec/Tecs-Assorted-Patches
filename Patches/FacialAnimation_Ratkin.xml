@@ -30,22 +30,6 @@
 						</value>
 					</li>
 
-					<li Class="PatchOperationConditional">
-						<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/headOffset</xpath>
-						<nomatch Class="PatchOperationAdd">
-						  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator</xpath>
-						  <value>
-							<headOffset>(0.00,-0.00)</headOffset>
-						  </value>
-						</nomatch>
-						<match Class="PatchOperationReplace">
-						  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/headOffset</xpath>
-						  <value>
-							<headOffset>(0.00,-0.00)</headOffset>
-						  </value>
-						</match>
-					</li>
-
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
 						<value>
