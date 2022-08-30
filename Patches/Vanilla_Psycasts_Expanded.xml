@@ -23,7 +23,7 @@
 				</li>
 	
 				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/PawnKindDef[@ParentName="TribalBase"]</xpath>
+					<xpath>Defs/PawnKindDef[defName="Tribal_Caster_Wildspeaker" or defName="Tribal_Caster_Conflagrator" or defName="Tribal_Caster_Frostshaper" or defName="Tribal_Caster_Staticlord"]</xpath>
 					<attribute>ParentName</attribute>
 					<value>SK_TribalBase</value>
 				</li>
