@@ -21,7 +21,13 @@
 						<useMeatFrom>Human</useMeatFrom>
 					</value>
 				</li>
-			
+	
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/PawnKindDef[@ParentName="TribalBase"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_TribalBase</value>
+				</li>
+	
 			</operations>
 		</match>
     </Operation>
