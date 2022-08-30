@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CustomCoordinateOffset.CoordinateOffsetModSettings">
+		<nlCoordinateOffset>
+			<keys>
+				<li>ChjAndroid</li>
+				<li>Hare</li>
+				<li>Lost_RustedSedan</li>
+				<li>Alien_Moyo</li>
+				<li>Cat</li>
+				<li>Alien_Asari</li>
+				<li>Alien_Dova</li>
+				<li>Crashbug</li>
+				<li>Human</li>
+				<li>Rat</li>
+				<li>Ratkin</li>
+				<li>Alien_Orassan</li>
+				<li>Alien_Nova</li>
+				<li>Norbal</li>
+				<li>Alien_RedMoyo</li>
+				<li>Chipmunk</li>
+				<li>Alpaca</li>
+				<li>Horse</li>
+				<li>Bear_Grizzly</li>
+				<li>Raccoon</li>
+				<li>Squirrel</li>
+				<li>Muffalo</li>
+				<li>Megasloth</li>
+				<li>Fox_Red</li>
+				<li>Emu</li>
+				<li>GuineaPig</li>
+				<li>Jackalope</li>
+				<li>AA_MeadowAve</li>
+				<li>AA_PedigreedRaptor</li>
+				<li>Boomrat</li>
+				<li>Mosquito</li>
+				<li>Duck</li>
+				<li>Turkey</li>
+			</keys>
+			<values>
+				<li>
+					<North>(0, 0, 20)</North>
+					<South>(0, 0, 20)</South>
+					<West>(0, 0, 20)</West>
+					<East>(0, 0, 20)</East>
+				</li>
+				<li />
+				<li />
+				<li>
+					<North>(0, 0, 15)</North>
+					<South>(0, 0, 15)</South>
+					<West>(0, 0, 15)</West>
+					<East>(0, 0, 15)</East>
+				</li>
+				<li />
+				<li>
+					<North>(0, 0, 20)</North>
+					<South>(0, 0, 20)</South>
+					<West>(0, 0, 20)</West>
+					<East>(0, 0, 20)</East>
+				</li>
+				<li>
+					<North>(0, 0, 20)</North>
+					<South>(0, 0, 20)</South>
+					<West>(0, 0, 20)</West>
+					<East>(0, 0, 20)</East>
+				</li>
+				<li />
+				<li>
+					<North>(0, 0, 25)</North>
+					<South>(0, 0, 25)</South>
+					<West>(-10, 0, 25)</West>
+					<East>(10, 0, 25)</East>
+				</li>
+				<li />
+				<li>
+					<North>(0, 0, 24)</North>
+					<South>(0, 0, 24)</South>
+					<West>(0, 0, 24)</West>
+					<East>(0, 0, 24)</East>
+				</li>
+				<li>
+					<North>(0, 0, 20)</North>
+					<South>(0, 0, 20)</South>
+					<West>(0, 0, 20)</West>
+					<East>(0, 0, 20)</East>
+				</li>
+				<li>
+					<North>(0, 0, 20)</North>
+					<South>(0, 0, 20)</South>
+					<West>(0, 0, 20)</West>
+					<East>(0, 0, 20)</East>
+				</li>
+				<li>
+					<North>(0, 0, 20)</North>
+					<South>(0, 0, 20)</South>
+					<West>(0, 0, 20)</West>
+					<East>(0, 0, 20)</East>
+				</li>
+				<li>
+					<North>(0, 0, 15)</North>
+					<South>(0, 0, 15)</South>
+					<West>(0, 0, 15)</West>
+					<East>(0, 0, 15)</East>
+				</li>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+			</values>
+		</nlCoordinateOffset>
+	</ModSettings>
+</SettingsBlock>

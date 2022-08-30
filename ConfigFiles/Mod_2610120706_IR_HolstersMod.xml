@@ -14,8 +14,8 @@
 					<values>
 						<li>(-0.5, 0.0, 1.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(-4.0, 0.0, 1.0)</li>
-						<li>(4.0, 0.0, 1.0)</li>
+						<li>(-3.5, 0.0, 1.0)</li>
+						<li>(3.5, 0.0, 1.0)</li>
 					</values>
 				</pos>
 				<angle>
@@ -100,7 +100,7 @@
 					<values>
 						<li>False</li>
 						<li>True</li>
-						<li>True</li>
+						<li>False</li>
 						<li>False</li>
 					</values>
 				</isFront>
@@ -497,6 +497,13 @@
 					<li>PLA_Enable35mmGrenade</li>
 					<li>PLA_Enable58mmAmmo</li>
 					<li>PLA_Gun88GPMGForVehicle</li>
+					<li>Moyo_ChargeRifle</li>
+					<li>Moyo_HeavyChargeRifle</li>
+					<li>Moyo_CryoRifle</li>
+					<li>RedMoyo_SMG</li>
+					<li>LTS_MusketRifle</li>
+					<li>LTS_PressureGun</li>
+					<li>RedMoyo_CivilAR</li>
 				</weapons>
 			</li>
 			<li>
@@ -702,9 +709,13 @@
 					<li>RF_Gun_EP</li>
 					<li>Gun_TT33_HMC</li>
 					<li>Laser_Pistol_HMC</li>
-					<li>Pa_SP</li>
 					<li>Pa_SR</li>
 					<li>Gun_Phalanx</li>
+					<li>Moyo_Pistol</li>
+					<li>RedMoyo_Pistol</li>
+					<li>RedMoyo_PistolPolice</li>
+					<li>LTS_RevolverMusket</li>
+					<li>LTS_QuadMusket</li>
 				</weapons>
 			</li>
 			<li>
@@ -1120,13 +1131,15 @@
 					<li>Pa_S8498III</li>
 					<li>HologramSword</li>
 					<li>HologramSwordArchotech</li>
-					<li>Dino_Doll</li>
-					<li>Girl_Doll</li>
-					<li>Teddybear_Doll</li>
-					<li>Toyrobot_Doll</li>
-					<li>Toyhorse_Doll</li>
 					<li>MeleeWeapon_RoyalKnife</li>
 					<li>MeleeWeapon_RoyalLongSword</li>
+					<li>VPE_MeleeWeapon_EltexSword</li>
+					<li>Moyo_Wrench</li>
+					<li>Moyo_Piledriver</li>
+					<li>LTS_CourierCutlass</li>
+					<li>LTS_CourierMachete</li>
+					<li>LTS_CourierSword</li>
+					<li>VPE_MeleeWeapon_EltexMace</li>
 				</weapons>
 			</li>
 			<li>
@@ -1736,6 +1749,13 @@
 					<li>Arak</li>
 					<li>Applejack</li>
 					<li>Patreonbrew</li>
+					<li>Toyhorse_Doll</li>
+					<li>Toyrobot_Doll</li>
+					<li>Teddybear_Doll</li>
+					<li>Girl_Doll</li>
+					<li>Dino_Doll</li>
+					<li>Moyo_PowerFist</li>
+					<li>Moyo_GDPowerFist</li>
 				</weapons>
 			</li>
 			<li>
@@ -1955,8 +1975,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>-140</li>
-						<li>-40</li>
+						<li>-190</li>
+						<li>15</li>
 						<li>-15</li>
 						<li>195</li>
 					</values>
@@ -2124,7 +2144,6 @@
 					<li>FireStartingKit</li>
 					<li>MSMedSupplyFlare</li>
 					<li>Gun_BinocularsRadio</li>
-					<li>ZF_MeleeWeapon_NeolithicSickle</li>
 					<li>ZF_MeleeWeapon_NeolithicHammerStone</li>
 				</weapons>
 			</li>
@@ -2154,8 +2173,8 @@
 					<values>
 						<li>0</li>
 						<li>0</li>
-						<li>-210</li>
-						<li>30</li>
+						<li>-215</li>
+						<li>35</li>
 					</values>
 				</angle>
 				<flip>
@@ -2530,12 +2549,18 @@
 					<li>MeleeWeapon_Axe</li>
 					<li>MeleeWeapon_Warhammer</li>
 					<li>MeleeWeapon_Pike_HMC</li>
-					<li>RK_TwoHanded</li>
 					<li>HMC_HighTechNorbal_PowerWolf</li>
 					<li>MeleeWeapon_TribalAxe</li>
 					<li>ZF_MeleeWeapon_NeolithicDiggingStick</li>
 					<li>ZF_MeleeWeapon_NeolithicSpear</li>
 					<li>MeleeWeapon_Macuahuitl</li>
+					<li>MeleeWeapon_PlasmaTachi</li>
+					<li>RK_TwoHanded</li>
+					<li>Moyo_Spear</li>
+					<li>Moyo_GDSpear</li>
+					<li>RedMoyo_KineticClamp</li>
+					<li>RedMoyo_AlloyHarpoon</li>
+					<li>RedMoyo_PlasmaHarpoon</li>
 				</weapons>
 			</li>
 			<li>
@@ -2772,6 +2797,16 @@
 					<li>Pa_BA5L</li>
 					<li>Pa_Tommy</li>
 					<li>Pa_MP18B</li>
+					<li>Moyo_PrecisionRifle</li>
+					<li>Moyo_ChargeSMG</li>
+					<li>Moyo_BoltCaster</li>
+					<li>Moyo_AutoCannon</li>
+					<li>Moyo_HeavyAutoCannon</li>
+					<li>Moyo_HeavyBoltCaster</li>
+					<li>Moyo_CryoBlaster</li>
+					<li>RedMoyo_MilitaryAR</li>
+					<li>RedMoyo_MilitarySR</li>
+					<li>RedMoyo_MilitaryHeavyRifle</li>
 				</weapons>
 			</li>
 			<li>
@@ -2966,6 +3001,7 @@
 					<li>Pa_SW50B</li>
 					<li>Pa_M712S</li>
 					<li>Pa_C96M</li>
+					<li>Pa_SP</li>
 				</weapons>
 			</li>
 			<li>
@@ -3351,10 +3387,14 @@
 				</isFrontSide>
 				<weapons>
 					<li>MeleeWeapon_Knife</li>
+					<li>VPE_MeleeWeapon_EltexDagger</li>
+					<li>RedMoyo_Knife</li>
+					<li>Moyo_Knife</li>
+					<li>ZF_MeleeWeapon_NeolithicSickle</li>
 				</weapons>
 			</li>
 			<li>
-				<name>Small Tools 2</name>
+				<name>Multitool</name>
 				<pos>
 					<keys>
 						<li>2</li>
@@ -3929,6 +3969,7 @@
 					<li>MeleeWeapon_Cleaver</li>
 					<li>MeleeWeapon_Shocker</li>
 					<li>Tool_ChefKnife</li>
+					<li>LTS_ThrowingKnife</li>
 				</weapons>
 			</li>
 			<li>
