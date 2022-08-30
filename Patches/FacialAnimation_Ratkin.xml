@@ -24,7 +24,7 @@
 					</li>
 -->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customHeadDrawSize</xpath>
 						<value>
 							<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
 						</value>
