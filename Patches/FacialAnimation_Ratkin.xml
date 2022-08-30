@@ -15,14 +15,14 @@
 				</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-			
+			<!--
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
 						<value>
 							<customDrawSize>(1.0, 1.0)</customDrawSize>
 						</value>
 					</li>
-
+-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
 						<value>
