@@ -32,7 +32,7 @@
 					<xpath>Defs/TerrainDef[defName="COMIGO_FloatingPlatform_Metal"]/costList</xpath>
 					<value>
 						<costList>
-							<SteelBar>10</SteelBar>
+							<Plasteel>10</Plasteel>
 							<Chemfuel>15</Chemfuel>
 						</costList>
 					</value>
