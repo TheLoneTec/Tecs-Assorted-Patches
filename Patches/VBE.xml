@@ -75,8 +75,11 @@
 				</nomatch>
 			</li>
 			
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]/constructEffect</xpath>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef_AlienRace[defName="VBE_WritersTable"]</xpath>
+				<match Class="PatchOperationRemove">
+						<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]/constructEffect</xpath>
+				</match>
 			</li>
 			
 			<!-- ========== TypeWriter Table =========== -->
@@ -166,8 +169,11 @@
 				</value>
 			</li>
 		
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]/constructEffect</xpath>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef_AlienRace[defName="VBE_TypewritersTable"]</xpath>
+				<match Class="PatchOperationRemove">
+						<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]/constructEffect</xpath>
+				</match>
 			</li>
 		
 			<!-- ============== add book storage ============== -->
