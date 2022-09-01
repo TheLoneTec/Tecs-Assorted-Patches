@@ -75,6 +75,10 @@
 				</nomatch>
 			</li>
 			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]/constructEffect</xpath>
+			</li>
+			
 			<!-- ========== TypeWriter Table =========== -->
 			
 			<li Class="PatchOperationReplace">
@@ -160,6 +164,10 @@
 				<value>
 					<staticSunShadowHeight>0</staticSunShadowHeight>
 				</value>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]/constructEffect</xpath>
 			</li>
 		
 			<!-- ============== add book storage ============== -->
