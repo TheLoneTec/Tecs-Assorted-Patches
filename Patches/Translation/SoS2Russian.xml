@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--to Stats_Basics_General-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Русификатор Save Our Ship 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>LanguageData/MechanoidMoonBase.label</xpath>
+				<value>
+					<MechanoidMoonBase.label>(НЕ ЗВЕЗДА СМЕРТИ)</MechanoidMoonBase.label>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>
