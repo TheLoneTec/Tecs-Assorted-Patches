@@ -8,66 +8,77 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
-					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>Windows</defName>
-						<label>Windows</label>
-						<description>All the standard windows.</description>
-						<defNames>
-							<li>SimpleOpenWindow</li>
-							<li>OpenWindow</li>
-							<li>LargeOpenWindow</li>
-							<li>HugeOpenWindow</li>
-						</defNames>
-						<designationCategory>Structure</designationCategory>
-						<debug>false</debug>
-					</ArchitectSense.DesignationSubCategoryDef>
-				</value>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>The Windows Renovation Retexture</li>
+				</mods>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>Windows</defName>
+								<label>Windows</label>
+								<description>All the standard windows.</description>
+								<defNames>
+									<li>SimpleOpenWindow</li>
+									<li>OpenWindow</li>
+									<li>LargeOpenWindow</li>
+									<li>HugeOpenWindow</li>
+								</defNames>
+								<designationCategory>Structure</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>Reinforced_Windows</defName>
+								<label>Reinforced Windows</label>
+								<description>Reinforced Windows.</description>
+								<defNames>
+									<li>ReinforcedOpenWindow</li>
+									<li>LargeReinforcedOpenWindow</li>
+								</defNames>
+								<designationCategory>Structure</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAttributeAdd">
+						<xpath>/Defs/ThingDef[defName="ReinforcedOpenWindow"]/researchPrerequisites</xpath>
+						<attribute>Inherit</attribute>
+						<value>False</value>
+					</li>
+					
+					<li Class="PatchOperationAttributeAdd">
+						<xpath>/Defs/ThingDef[defName="LargeReinforcedOpenWindow"]/researchPrerequisites</xpath>
+						<attribute>Inherit</attribute>
+						<value>False</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[@Name="WindowBase"]/stuffCategories</xpath>
+						<value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Stony</li>
+							<li>Bricks</li>
+							<li>Woody</li>
+						</stuffCategories>
+						</value>
+					</li>
+
+					<operations>
+				<nomatch>
 			</li>
 			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
-					<ArchitectSense.DesignationSubCategoryDef>
-						<defName>Reinforced_Windows</defName>
-						<label>Reinforced Windows</label>
-						<description>Reinforced Windows.</description>
-						<defNames>
-							<li>ReinforcedOpenWindow</li>
-							<li>LargeReinforcedOpenWindow</li>
-						</defNames>
-						<designationCategory>Structure</designationCategory>
-						<debug>false</debug>
-					</ArchitectSense.DesignationSubCategoryDef>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAttributeAdd">
-				<xpath>/Defs/ThingDef[defName="ReinforcedOpenWindow"]/researchPrerequisites</xpath>
-				<attribute>Inherit</attribute>
-				<value>False</value>
-			</li>
-			
-			<li Class="PatchOperationAttributeAdd">
-				<xpath>/Defs/ThingDef[defName="LargeReinforcedOpenWindow"]/researchPrerequisites</xpath>
-				<attribute>Inherit</attribute>
-				<value>False</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="WindowBase"]/stuffCategories</xpath>
-				<value>
-				<stuffCategories>
-					<li>Metallic</li>
-					<li>Stony</li>
-					<li>Bricks</li>
-					<li>Woody</li>
-				</stuffCategories>
-				</value>
-			</li>
-
 			<!-- Atlas
 
 			<li Class="PatchOperationReplace">
@@ -158,6 +169,7 @@
 				</value>
 			</li>
 -->
+			
 			</operations>
 		</match>
     </Operation>
