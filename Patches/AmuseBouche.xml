@@ -14,6 +14,20 @@
 			</value>
 		</li>
 
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[@Name="CookMealFineBulkBase"]/recipeUsers</xpath>
+			<match Class="PatchOperationRemove">
+			  <xpath>Defs/RecipeDef[@Name="CookMealFineBulkBase"]/recipeUsers</xpath>
+			</match>
+		</li>
+
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[@Name="CookMealLavishBase"]/recipeUsers</xpath>
+			<match Class="PatchOperationRemove">
+			  <xpath>Defs/RecipeDef[@Name="CookMealLavishBase"]/recipeUsers</xpath>
+			</match>
+		</li>
+
 		</operations>
 		</match>
 	</Operation>
