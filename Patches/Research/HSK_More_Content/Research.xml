@@ -21,6 +21,19 @@
                 </value>
             </li>
 
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Armor_F1_HMC"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>28.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Armor_F1_HMC"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>35.00</researchViewY>
+                </value>
+            </li>
+
 		</operations>
 		</match>
     </Operation>	
