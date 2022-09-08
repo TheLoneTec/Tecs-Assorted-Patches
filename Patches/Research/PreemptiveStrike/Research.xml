@@ -320,6 +320,10 @@
 				</nomatch>
 			</li>
 
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="PES_SentryArray"]/prerequisites/li[text()="PES_RADAR"]</xpath>
+			</li>
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PES_SentryArray"]/researchViewX</xpath>
                 <value>

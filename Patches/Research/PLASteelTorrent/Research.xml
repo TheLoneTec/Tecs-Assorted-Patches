@@ -54,13 +54,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>11.00</researchViewX>
+                    <researchViewX>10.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="CE_Launchers"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>37.00</researchViewY>
+                    <researchViewY>36.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">
@@ -210,13 +210,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>9.00</researchViewX>
+                    <researchViewX>11.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PLA_ResearchVehicle_VehicleModification"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>38.00</researchViewY>
+                    <researchViewY>37.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationAdd">

@@ -48,6 +48,34 @@
 			</li>
 
             <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MSMedicalMat"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MSMedicalMat"]</xpath>
+				<safetyDepth>1</safetyDepth>
+				<compare>Name</compare>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="MSMedicalMat"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+
+            <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="MSMercury"]/researchViewX</xpath>
                 <value>
                     <researchViewX>13.00</researchViewX>
@@ -435,6 +463,18 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="MSMedicalMatSpacer"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
 			</li>
 
             <li Class="PatchOperationReplace">

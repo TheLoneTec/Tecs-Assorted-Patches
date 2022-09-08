@@ -93,6 +93,18 @@
 						</nomatch>
 					</li>
 
+					<li Class="XmlExtensions.PatchOperationSafeAdd">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]</xpath>
+						<safetyDepth>2</safetyDepth>
+						<compare>Both</compare>
+						<value>
+							<requiredResearchFacilities>
+							  <li>LabTerminal</li>
+							  <li>MultiAnalyzer</li>
+							</requiredResearchFacilities>
+						</value>
+					</li>
+
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/researchViewX</xpath>
 						<value>

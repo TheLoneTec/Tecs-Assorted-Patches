@@ -18,6 +18,7 @@
 					<description>The best fridge, other than those from the glitterworlds.</description>
 					<baseCost>1000</baseCost>
 					<techLevel>Spacer</techLevel>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 					<prerequisites>
 						<li>Temperature_control_C3</li>
 						<li>Storage_C4</li>
@@ -28,6 +29,9 @@
 					<modExtensions>
 						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 					</modExtensions>
+					<requiredResearchFacilities>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
 				</ResearchProjectDef>
 				</value>
 			</li>

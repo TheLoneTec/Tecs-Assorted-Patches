@@ -21,6 +21,10 @@
                 </value>
             </li>
 
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="Animal_C1"]/prerequisites/li[text()="Animal_A2"]</xpath>
+			</li>
+
 		</operations>
 		</match>
     </Operation>	

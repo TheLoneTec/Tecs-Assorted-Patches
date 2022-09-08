@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Nopower Comms Simplified</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ProjectBirdPost"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>4.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ProjectBirdPost"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>33.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ProjectBirdPost"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ProjectBirdPost"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ProjectBirdPost"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ProjectBirdPost"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ProjectBirdPost"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ProjectBirdPost"]</xpath>
+                <value>
+					<prerequisites>
+						<li>ComplexFurniture</li>
+					</prerequisites>
+                </value>
+            </li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

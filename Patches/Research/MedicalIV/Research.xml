@@ -321,6 +321,34 @@
 			</li>
 
             <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="NutritionElectric"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[defName="NutritionElectric"]</xpath>
+				<safetyDepth>1</safetyDepth>
+				<compare>Name</compare>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="NutritionElectric"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+
+            <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PainkillerElectric"]/researchViewX</xpath>
                 <value>
                     <researchViewX>18.00</researchViewX>
@@ -360,6 +388,34 @@
 			</li>
 
             <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PainkillerElectric"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[defName="PainkillerElectric"]</xpath>
+				<safetyDepth>1</safetyDepth>
+				<compare>Name</compare>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="PainkillerElectric"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+
+            <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="AntibioticElectric"]/researchViewX</xpath>
                 <value>
                     <researchViewX>18.00</researchViewX>
@@ -396,6 +452,34 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AntibioticElectric"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[defName="AntibioticElectric"]</xpath>
+				<safetyDepth>1</safetyDepth>
+				<compare>Name</compare>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="AntibioticElectric"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
 			</li>
 
             <li Class="PatchOperationReplace">

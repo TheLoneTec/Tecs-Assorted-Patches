@@ -338,7 +338,7 @@
 					<techLevel>Spacer</techLevel>
 					<prerequisites>
 					  <li>ShipBasics</li>
-					  <li>GroundPenetratingScanner</li>
+					  <!--<li>GroundPenetratingScanner</li>-->
 					  <li>LongRangeMineralScanner</li>
 					</prerequisites>
 					<researchViewX>18.00</researchViewX>
@@ -426,6 +426,10 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipPilotSeat"]/prerequisites/li[text()="ShipBasics"]</xpath>
 			</li>
 
             <li Class="PatchOperationReplace">
@@ -543,6 +547,25 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttlePersonal"]/requiredResearchBuilding</xpath>
+                <value>
+                    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ShuttlePersonal"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
 			</li>
 
             <li Class="PatchOperationReplace">
@@ -984,7 +1007,7 @@
 					<baseCost>3000</baseCost>
 					<techLevel>Spacer</techLevel>
 					<prerequisites>
-						<li>ShipBasics</li>
+						<!--<li>ShipBasics</li>-->
 						<li>ShipPilotSeat</li>
 					</prerequisites>
 					<researchViewX>20.00</researchViewX>
@@ -1074,6 +1097,10 @@
 				</nomatch>
 			</li>
 
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipShuttleBay"]/prerequisites/li[text()="ShipBasics"]</xpath>
+			</li>
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ShipShuttleBay"]/researchViewX</xpath>
                 <value>
@@ -1150,6 +1177,10 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="ShuttleCargo"]/prerequisites/li[text()="ShipBasics"]</xpath>
 			</li>
 
             <li Class="PatchOperationReplace">
@@ -1267,6 +1298,19 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					  <li>LabStation</li>
+					</requiredResearchFacilities>
+				</value>
 			</li>
 
             <li Class="PatchOperationReplace">
@@ -2459,6 +2503,10 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="Holodeck_AI"]/prerequisites/li[text()="MultiAnalyzer"]</xpath>
 			</li>
 
             <li Class="PatchOperationReplace">

@@ -48,6 +48,32 @@
 			</li>
 
             <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Research_SRTSSuperpod"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Research_SRTSSuperpod"]/requiredResearchBuilding</xpath>
+                <value>
+                    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="Research_SRTSSuperpod"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+
+            <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Research_SRTSSkip"]/researchViewX</xpath>
                 <value>
                     <researchViewX>20.00</researchViewX>
@@ -84,6 +110,32 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Research_SRTSSkip"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Research_SRTSSkip"]/requiredResearchBuilding</xpath>
+                <value>
+                    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="Research_SRTSSkip"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
 			</li>
 
             <li Class="PatchOperationReplace">
@@ -162,6 +214,32 @@
 						</value>
 					</nomatch>
 				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Research_SRAF"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Research_SRAF"]/requiredResearchBuilding</xpath>
+                <value>
+                    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="Research_SRAF"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
 			</li>
 
             <li Class="PatchOperationReplace">

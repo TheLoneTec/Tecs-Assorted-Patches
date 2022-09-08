@@ -317,6 +317,14 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_BoundaryDeco"]/defNames/li[text()="RGK_Fireplace"]</xpath>
+			</li>	
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_BoundaryDeco"]/defNames/li[text()="RGK_FireplaceE"]</xpath>
+			</li>	
+
 			<!-- Windmill UF -->
 	
 			<li Class="PatchOperationConditional">

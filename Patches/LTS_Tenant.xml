@@ -996,10 +996,12 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="LTS_PressureGun"]</xpath>
 				<value>
 					<costList>
+						<WoodPlank>20</WoodPlank>
+						<ComponentIndustrial>3</ComponentIndustrial>
 						<Heavy_Component>1</Heavy_Component>
 						<Weapon_Parts>6</Weapon_Parts>
 					</costList>
@@ -1025,10 +1027,12 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="LTS_QuadMusket"]</xpath>
 				<value>
 					<costList>
+						<WoodPlank>15</WoodPlank>
+						<ComponentIndustrial>2</ComponentIndustrial>
 						<Pistol_Component>1</Pistol_Component>
 						<Weapon_Parts>2</Weapon_Parts>
 					</costList>
@@ -1047,10 +1051,12 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="LTS_MusketRifle"]</xpath>
 				<value>
 					<costList>
+						<WoodPlank>35</WoodPlank>
+						<ComponentIndustrial>4</ComponentIndustrial>
 						<AdvRifle_Component>1</AdvRifle_Component>
 						<Weapon_Parts>6</Weapon_Parts>
 					</costList>
@@ -1069,17 +1075,17 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="LTS_RevolverMusket"]</xpath>
 				<value>
 					<costList>
+						<WoodPlank>15</WoodPlank>
+						<ComponentIndustrial>1</ComponentIndustrial>
 						<Pistol_Component>1</Pistol_Component>
 						<Weapon_Parts>2</Weapon_Parts>
 					</costList>
 				</value>
 			</li>
-
-
 
 			<!-- ==========  LTS_CourierSword =========== -->
 			
@@ -1164,6 +1170,16 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierSword"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>8</ComponentMedieval>
+						<Mechanism>1</Mechanism>
+					</costList>
+				</value>
+			</li>
+
 			<!-- ==========  LTS_CourierMachete =========== -->
 			
 			<li Class="PatchOperationReplace">
@@ -1244,6 +1260,15 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierMachete"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>5</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+
 			<!-- ==========  LTS_CourierCutlass =========== -->
 			
 			<li Class="PatchOperationReplace">
@@ -1321,6 +1346,15 @@
 				<xpath>Defs/ThingDef[defName="LTS_CourierCutlass"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Weapons/Cutlass</texPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LTS_CourierCutlass"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>6</ComponentMedieval>
+					</costList>
 				</value>
 			</li>
 
