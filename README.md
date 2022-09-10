@@ -48,6 +48,8 @@ various workshop mod patches for HSK
 Other Additions:
 
 - Vanilla Beards Retextured Retexture for Facial Animation
+- Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
+- Facial Animation fixes when used with Dubs Apparel Tweaks
 
 # Update Log:
 
