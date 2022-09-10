@@ -43,6 +43,11 @@ various workshop mod patches for HSK
 - Perspective: Trees - Added HSK Trees.
 - Vanilla Base Generation Expanded - Cleaned up base stockpile generation lists.
 - [LTS] Tenants (HSK + CE Patch)
+- No Power Coms
+
+Other Additions:
+
+- Vanilla Beards Retextured Retexture for Facial Animation
 
 # Update Log:
 
