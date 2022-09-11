@@ -36,6 +36,9 @@
 				<li>Mosquito</li>
 				<li>Duck</li>
 				<li>Turkey</li>
+				<li>ReviaRaceAlien</li>
+				<li>Paniel_Race</li>
+				<li>Rabbie</li>
 			</keys>
 			<values>
 				<li>
@@ -74,16 +77,16 @@
 				</li>
 				<li />
 				<li>
-					<North>(0, 0, 24)</North>
-					<South>(0, 0, 24)</South>
-					<West>(0, 0, 24)</West>
-					<East>(0, 0, 24)</East>
+					<North>(0, 0, 14)</North>
+					<South>(0, 0, 14)</South>
+					<West>(0, 0, 14)</West>
+					<East>(0, 0, 14)</East>
 				</li>
 				<li>
-					<North>(0, 0, 20)</North>
-					<South>(0, 0, 20)</South>
-					<West>(0, 0, 20)</West>
-					<East>(0, 0, 20)</East>
+					<North>(0, 0, 17)</North>
+					<South>(0, 0, 17)</South>
+					<West>(0, 0, 17)</West>
+					<East>(0, 0, 17)</East>
 				</li>
 				<li>
 					<North>(0, 0, 20)</North>
@@ -119,6 +122,14 @@
 				<li />
 				<li />
 				<li />
+				<li />
+				<li />
+				<li>
+					<North>(0, 0, 13)</North>
+					<South>(0, 0, 13)</South>
+					<West>(0, 0, 13)</West>
+					<East>(0, 0, 13)</East>
+				</li>
 				<li />
 				<li />
 			</values>
