@@ -17,7 +17,7 @@
 				</li>
 	
 				<li Class="PatchOperationReplace">
-				  <xpath>Defs/ThingDef/apparel/tags/li[text()="Animal"]</xpath>
+				  <xpath>Defs/ThingDef[@ParentName="ApparelNeoliticBase"]/apparel/tags/li[text()="Animal"]</xpath>
 				  <value>
 					<li>PrimitiveClothing</li>
 				  </value>
