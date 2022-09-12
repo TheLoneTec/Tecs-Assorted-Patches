@@ -43,6 +43,7 @@ various workshop mod patches for HSK
 - Perspective: Trees - Added HSK Trees.
 - Vanilla Base Generation Expanded - Cleaned up base stockpile generation lists.
 - [LTS] Tenants (HSK + CE Patch)
+- Animal Gear
 
 Other Additions:
 
