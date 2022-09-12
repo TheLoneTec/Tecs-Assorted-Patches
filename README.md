@@ -43,7 +43,7 @@ various workshop mod patches for HSK
 - Perspective: Trees - Added HSK Trees.
 - Vanilla Base Generation Expanded - Cleaned up base stockpile generation lists.
 - [LTS] Tenants (HSK + CE Patch)
-- Animal Gear (stopped it from turning HSK apparel into animal gear)
+- Animal Gear (Stopped it from turning HSK apparel into animal gear)
 
 Other Additions:
 
