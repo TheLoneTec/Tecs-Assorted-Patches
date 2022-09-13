@@ -15,6 +15,7 @@
 	
 	<ThingDef Name="EyePatchBase" ParentName="ApparelNeoliticBase" Abstract="True">		
 		<stuffCategories>
+			<li>Leathery</li>
 			<li>Fabric</li>
 			<li>HF</li>
 		</stuffCategories>
