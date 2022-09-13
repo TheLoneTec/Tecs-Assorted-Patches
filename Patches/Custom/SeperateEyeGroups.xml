@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef/corePart/parts//li[def="Neck"]/parts/li[def="Head"]/parts/li[customLabel="left eye"]/groups</xpath>
+				<value>
+					<li>LeftEye</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BodyDef/corePart/parts//li[def="Neck"]/parts/li[def="Head"]/parts/li[customLabel="right eye"]/groups</xpath>
+				<value>
+					<li>RightEye</li>
+				</value>
+			</li>
+	
+		</operations>
+	</Operation>
+</Patch>

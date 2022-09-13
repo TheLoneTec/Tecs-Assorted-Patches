@@ -51,6 +51,7 @@ Other Additions:
 - Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
 - Facial Animation fixes when used with Dubs Apparel Tweaks
 - Ideology worksites now provide HSK ores and woods , including Viles)
+- Eye Patch Apparel for Left and Right Eyes
 
 # Update Log:
 

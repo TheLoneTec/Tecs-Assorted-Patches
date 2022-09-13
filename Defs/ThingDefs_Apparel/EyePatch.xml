@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<BodyPartGroupDef>
+		<defName>LeftEye</defName>
+		<label>left eye</label>
+		<listOrder>199</listOrder>
+	</BodyPartGroupDef>
+	
+	<BodyPartGroupDef>
+		<defName>RightEye</defName>
+		<label>right eye</label>
+		<listOrder>199</listOrder>
+	</BodyPartGroupDef>
+	
+	<ThingDef Name="EyePatchBase" ParentName="ApparelNeoliticBase" Abstract="True">		
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>HF</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<MaxHitPoints>38</MaxHitPoints>
+			<Flammability>1.4</Flammability>
+			<Mass>0.5</Mass>
+			<Bulk>1</Bulk>
+			<WornBulk>0</WornBulk>
+			<EquipDelay>0.5</EquipDelay>
+			<Insulation_Heat>1.0</Insulation_Heat>
+			<Insulation_Cold>1.0</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.88</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.02</MoveSpeed>
+			<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
+			<SocialImpact>0.1</SocialImpact>
+			<!--<SightsEfficiency>-0.1</SightsEfficiency>-->
+			<PsychicSensitivity>-0.1</PsychicSensitivity>
+			<GlobalLearningFactor>-0.02</GlobalLearningFactor>
+			<NegotiationAbility>0.04</NegotiationAbility>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<TrainAnimalChance>0.1</TrainAnimalChance>
+			<TameAnimalChance>0.04</TameAnimalChance>
+			<GermResistance>0.01</GermResistance>
+			<GermContainment>0.01</GermContainment>
+		</equippedStatOffsets>
+		<generateCommonality>1</generateCommonality>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>4</weight>
+					<min>(0.9,0.9,0.9,1)</min>
+					<max>(1,1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingCategories>
+			<li>AccessoriesCat</li>
+		</thingCategories>
+        <recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>LeatherworkerTable</li>
+			</recipeUsers>
+            <researchPrerequisite>Apparel_A2</researchPrerequisite>
+        </recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="EyePatchBase">
+		<defName>Apparel_EyePatchL</defName>
+		<label>Left Eye Patch</label>
+		<description>An eye patch that covers the left eye. if the person still has their eye, they flip it up when doing any important task.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EyePatch/EyePatch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Apparel/EyePatch/EyePatch_icon</uiIconPath>
+		<apparel>
+			<bodyPartGroups>
+				<li>LeftEye</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EyePatch/EyePatchLeft</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Tribal</li>
+				<li>PredatorsLight</li>
+				<li>PredatorsMedium</li>
+				<li>PredatorsScout</li>
+				<li>BrotherhoodLight</li>
+				<li>BrotherhoodScout</li>
+				<li>SectarianLight</li>
+				<li>Outlander</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>			
+	</ThingDef>
+	
+	<ThingDef ParentName="EyePatchBase">
+		<defName>Apparel_EyePatchR</defName>
+		<label>Right Eye Patch</label>
+		<description>An eye patch that covers the right eye. if the person still has their eye, they flip it up when doing any important task.</description>
+		<graphicData>
+			<texPath>Things/Apparel/EyePatch/EyePatch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Apparel/EyePatch/EyePatch_icon</uiIconPath>
+		<apparel>
+			<bodyPartGroups>
+				<li>RightEye</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/EyePatch/EyePatchRight</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Tribal</li>
+				<li>PredatorsLight</li>
+				<li>PredatorsMedium</li>
+				<li>PredatorsScout</li>
+				<li>BrotherhoodLight</li>
+				<li>BrotherhoodScout</li>
+				<li>SectarianLight</li>
+				<li>Outlander</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>			
+	</ThingDef>
+	
+</Defs>	
