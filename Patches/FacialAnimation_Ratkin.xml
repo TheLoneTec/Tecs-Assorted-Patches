@@ -4,117 +4,146 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>[NL] Facial Animation - WIP</li>
+			<li>NewRatkinPlus</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-	
+
 			<li Class="PatchOperationFindMod">
 				<mods>
-					<li>Dubs Apparel Tweaks</li>
+					<li>[NL] Facial Animation - WIP</li>
 				</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-			<!--
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
-						<value>
-							<customDrawSize>(1.0, 1.0)</customDrawSize>
-						</value>
-					</li>
--->
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customHeadDrawSize</xpath>
-						<value>
-							<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
-						</value>
+			
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Dubs Apparel Tweaks</li>
+						</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+					<!--
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
+								<value>
+									<customDrawSize>(1.0, 1.0)</customDrawSize>
+								</value>
+							</li>
+		-->
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customHeadDrawSize</xpath>
+								<nomatch Class="PatchOperationAdd">
+								  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator</xpath>
+								  <value>
+									<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+								  </value>
+								</nomatch>
+								<match Class="PatchOperationReplace">
+								  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customHeadDrawSize</xpath>
+								  <value>
+									<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+								  </value>
+								</match>
+							</li>
+							
+							<li Class="PatchOperationConditional">
+								<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customPortraitHeadDrawSize</xpath>
+								<nomatch Class="PatchOperationAdd">
+								  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator</xpath>
+								  <value>
+									<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+								  </value>
+								</nomatch>
+								<match Class="PatchOperationReplace">
+								  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customPortraitHeadDrawSize</xpath>
+								  <value>
+									<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+								  </value>
+								</match>
+							</li>
+		<!--
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
+								<value>
+									<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+								</value>
+							</li>
+		-->
+							</operations>
+						</match>
 					</li>
 
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
-						<value>
-							<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-						</value>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/comps/li/compClass[text()="FacialAnimation.DrawFaceGraphicsComp"]</xpath>
+						<nomatch Class="PatchOperationSequence">
+						<operations>
+						
+							<li Class="PatchOperationConditional">
+								<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/comps</xpath>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]</xpath>
+									<value>
+										<comps>
+											<li>
+												<compClass>FacialAnimation.DrawFaceGraphicsComp</compClass>
+											</li>
+											<li>
+												<compClass>FacialAnimation.HeadControllerComp</compClass>
+											</li>
+											<li>
+												<compClass>FacialAnimation.EyeballControllerComp</compClass>
+											</li>
+											<li>
+												<compClass>FacialAnimation.LidControllerComp</compClass>
+											</li>
+											<li>
+												<compClass>FacialAnimation.BrowControllerComp</compClass>
+											</li>
+											<li>
+												<compClass>FacialAnimation.MouthControllerComp</compClass>
+											</li>
+											<li>
+												<compClass>FacialAnimation.FacialAnimationControllerComp</compClass>
+											</li>
+										</comps>
+									</value>
+								</nomatch>
+								<match Class="PatchOperationAdd">
+									<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/comps</xpath>
+									<value>
+										<li>
+											<compClass>FacialAnimation.DrawFaceGraphicsComp</compClass>
+										</li>
+										<li>
+											<compClass>FacialAnimation.HeadControllerComp</compClass>
+										</li>
+										<li>
+											<compClass>FacialAnimation.EyeballControllerComp</compClass>
+										</li>
+										<li>
+											<compClass>FacialAnimation.LidControllerComp</compClass>
+										</li>
+										<li>
+											<compClass>FacialAnimation.BrowControllerComp</compClass>
+										</li>
+										<li>
+											<compClass>FacialAnimation.MouthControllerComp</compClass>
+										</li>
+										<li>
+											<compClass>FacialAnimation.FacialAnimationControllerComp</compClass>
+										</li>
+									</value>
+								</match>
+							</li>
+							
+						</operations>
+						</nomatch>
 					</li>
-<!--
-					<li Class="PatchOperationReplace">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
-						<value>
-							<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-						</value>
-					</li>
--->
+					
 					</operations>
 				</match>
 			</li>
 
-			<li Class="PatchOperationConditional">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/comps/li/compClass[text()="FacialAnimation.DrawFaceGraphicsComp"]</xpath>
-				<nomatch Class="PatchOperationSequence">
-				<operations>
-				
-					<li Class="PatchOperationConditional">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/comps</xpath>
-						<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]</xpath>
-							<value>
-								<comps>
-									<li>
-										<compClass>FacialAnimation.DrawFaceGraphicsComp</compClass>
-									</li>
-									<li>
-										<compClass>FacialAnimation.HeadControllerComp</compClass>
-									</li>
-									<li>
-										<compClass>FacialAnimation.EyeballControllerComp</compClass>
-									</li>
-									<li>
-										<compClass>FacialAnimation.LidControllerComp</compClass>
-									</li>
-									<li>
-										<compClass>FacialAnimation.BrowControllerComp</compClass>
-									</li>
-									<li>
-										<compClass>FacialAnimation.MouthControllerComp</compClass>
-									</li>
-									<li>
-										<compClass>FacialAnimation.FacialAnimationControllerComp</compClass>
-									</li>
-								</comps>
-							</value>
-						</nomatch>
-						<match Class="PatchOperationAdd">
-							<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/comps</xpath>
-							<value>
-								<li>
-									<compClass>FacialAnimation.DrawFaceGraphicsComp</compClass>
-								</li>
-								<li>
-									<compClass>FacialAnimation.HeadControllerComp</compClass>
-								</li>
-								<li>
-									<compClass>FacialAnimation.EyeballControllerComp</compClass>
-								</li>
-								<li>
-									<compClass>FacialAnimation.LidControllerComp</compClass>
-								</li>
-								<li>
-									<compClass>FacialAnimation.BrowControllerComp</compClass>
-								</li>
-								<li>
-									<compClass>FacialAnimation.MouthControllerComp</compClass>
-								</li>
-								<li>
-									<compClass>FacialAnimation.FacialAnimationControllerComp</compClass>
-								</li>
-							</value>
-						</match>
-					</li>
-					
-				</operations>
-				</nomatch>
-			</li>
-			
 			</operations>
 		</match>
 	</Operation>
