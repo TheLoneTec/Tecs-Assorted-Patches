@@ -44,6 +44,7 @@ various workshop mod patches for HSK
 - Vanilla Base Generation Expanded - Cleaned up base stockpile generation lists.
 - [LTS] Tenants (HSK + CE Patch)
 - Animal Gear (Stopped it from turning HSK apparel into animal gear)
+- Dreamers Dreams (Patch Fix for HSK Pawns)
 
 Other Additions:
 
