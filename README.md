@@ -45,6 +45,7 @@ various workshop mod patches for HSK
 - [LTS] Tenants (HSK + CE Patch)
 - Animal Gear (Stopped it from turning HSK apparel into animal gear)
 - Dreamers Dreams (Patch Fix for HSK Pawns)
+- Vanilla Psycasts Expanded (CE patch and material conversion)
 
 Other Additions:
 
