@@ -26,7 +26,9 @@
 						<description>Various lightposts for light a path.</description>
 						<defNames>
 							<li>LTS_Lanternpost</li>
+							<li>LTS_DarkLanternpost</li>
 							<li>LTS_Lightpost</li>
+							<li>LTS_DarkLightpost</li>
 						</defNames>
 						<designationCategory>Accessories</designationCategory>
 						<debug>false</debug>
@@ -43,11 +45,138 @@
 						<description>Various lights for indoors.</description>
 						<defNames>
 							<li>LTS_Astrid</li>
+							<li>LTS_DarkAstrid</li>
 							<li>LTS_Vidja</li>
+							<li>LTS_DarkVidja</li>
 						</defNames>
 						<designationCategory>Accessories</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Small_Lanterns</defName>
+						<label>Small Lanterns and Lamps</label>
+						<description>Various small lights.</description>
+						<defNames>
+							<li>LTS_OilLamp</li>
+							<li>LTS_DarkOilLamp</li>
+							<li>LTS_Lantern</li>
+							<li>LTS_DarkLantern</li>
+							<li>LTS_TableLantern</li>
+							<li>LTS_DarkTableLantern</li>
+							<li>LTS_ElectricLantern</li>
+							<li>LTS_DarkElectricLantern</li>
+							<li>LTS_ElectricTableLantern</li>
+							<li>LTS_DarkElectricTableLantern</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_OilLampBase"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>Light_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_OilLampBase"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>				
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternBase"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_B2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternBase"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>	
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_TableLanternBase"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_B2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_TableLanternBase"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_ElectricLanternBase"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_ElectricLanternBase"]</xpath>
+				<value>
+				<costList>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Glass>5</Glass>
+					<ElectronicComponents>1</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_ElectricTableLanternBase"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_ElectricTableLanternBase"]</xpath>
+				<value>
+				<costList>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Glass>5</Glass>
+					<ElectronicComponents>1</ElectronicComponents>
+				</costList>
 				</value>
 			</li>
 	
@@ -73,7 +202,7 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/researchPrerequisites</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternpostBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_B1</li>
@@ -82,21 +211,14 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/description</xpath>
-				<value>
-					<description>A place to house light. Takes Tallow as fuel.</description>
-				</value>
-			</li>
-	
-			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/costStuffCount</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternpostBase"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>15</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/costList</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternpostBase"]/costList</xpath>
 				<value>
 				<costList>
 					<ComponentMedieval>2</ComponentMedieval>
@@ -106,7 +228,7 @@
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternpostBase"]</xpath>
 				<value>
 				<placeWorkers>
 					<li>PlaceWorker_NotUnderRoof</li>
@@ -115,23 +237,41 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternpostBase"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 				<thingDefs>
 					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
 				</thingDefs>
 				</value>
 			</li>				
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/initialFuelPercent</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LanternpostBase"]/comps/li[@Class = "CompProperties_Refuelable"]/initialFuelPercent</xpath>
 				<value>
 					<initialFuelPercent>0</initialFuelPercent>
 				</value>
 			</li>	
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/researchPrerequisites</xpath>
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/description</xpath>
+				<value>
+					<description>A cute lanternpost made to brighten the roads ahead. Takes Tallow or Parraffin as fuel.</description>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/description</xpath>
+				<value>
+					<description>A cute lanternpost with specially treated darklight made to brighten the roads ahead. Takes Tallow or Parraffin as fuel.</description>
+				</value>
+			</li>
+			
+			<!-- =============== LightPost ====================== -->
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_LightpostBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C3</li>
@@ -140,7 +280,7 @@
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LightpostBase"]</xpath>
 				<value>
 				<placeWorkers>
 					<li>PlaceWorker_NotUnderRoof</li>
@@ -149,14 +289,14 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/costStuffCount</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LightpostBase"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>25</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_LightpostBase"]</xpath>
 				<value>
 				<costList>
 					<ComponentIndustrial>3</ComponentIndustrial>
@@ -167,7 +307,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]/researchPrerequisites</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_AstridBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>
@@ -176,14 +316,14 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]/costStuffCount</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_AstridBase"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>10</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_AstridBase"]</xpath>
 				<value>
 				<costList>
 					<ComponentIndustrial>3</ComponentIndustrial>
@@ -194,7 +334,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]/researchPrerequisites</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_VidjaBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>
@@ -203,14 +343,14 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]/costStuffCount</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_VidjaBase"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>10</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]</xpath>
+				<xpath>/Defs/ThingDef[@Name="LTS_VidjaBase"]</xpath>
 				<value>
 				<costList>
 					<ComponentIndustrial>3</ComponentIndustrial>

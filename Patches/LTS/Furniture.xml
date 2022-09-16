@@ -18,8 +18,8 @@
 				<xpath>/Defs/ThingDef[@Name="LTS_Furniture"]/researchPrerequisites</xpath>
 			</li>
 		
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_CarpetBase"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_CarpetBase"]/designationCategory</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
@@ -287,6 +287,27 @@
 					</costList>
 				</value>
 			</li>
+
+			<!-- ======= Tables ====== -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>LTS_Dressers</defName>
+						<label>LTS Dressers</label>
+						<description>Various LTS Dressers.</description>
+						<defNames>
+							<li>LTS_IdanasN</li>
+							<li>LTS_IdanasD</li>
+							<li>LTS_KoppangD</li>
+							<li>LTS_Havsta</li>
+						</defNames>
+						<designationCategory>Furniture</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
 			
 			<!-- ======= Tables ====== -->
 			
@@ -295,14 +316,15 @@
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
 						<defName>LTS_Tables</defName>
-						<label>LTS Tables and Dressers</label>
-						<description>Various LTS Tables and dressers.</description>
+						<label>LTS Tables</label>
+						<description>Various LTS Tables.</description>
 						<defNames>
-							<li>LTS_IdanasN</li>
-							<li>LTS_IdanasD</li>
-							<li>LTS_KoppangD</li>
-							<li>LTS_Havsta</li>
+							<li>LTS_Askholmen</li>
+							<li>LTS_Gamlared</li>
 							<li>LTS_Stockholm</li>
+							<li>LTS_NordvikenB</li>
+							<li>LTS_NordvikenW</li>
+							<li>LTS_Skogsta</li>
 							<li>LTS_Norraryd</li>
 							<li>LTS_Arkelstorp</li>
 						</defNames>
