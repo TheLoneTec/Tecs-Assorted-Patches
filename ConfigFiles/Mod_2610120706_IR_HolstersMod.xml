@@ -12,8 +12,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(-0.5, 0.0, 1.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.5, 0.0, 0.0)</li>
 						<li>(-3.5, 0.0, 1.0)</li>
 						<li>(3.5, 0.0, 1.0)</li>
 					</values>
@@ -504,6 +504,12 @@
 					<li>LTS_MusketRifle</li>
 					<li>LTS_PressureGun</li>
 					<li>RedMoyo_CivilAR</li>
+					<li>HMC_Gun_Totem</li>
+					<li>HMC_Gun_MicroTurretAMR</li>
+					<li>HMC_Gun_LaserRifle</li>
+					<li>HMC_Gun_LaserSniperRifle</li>
+					<li>HMC_Gun_ScatterLaser</li>
+					<li>HMC_Gun_HeavyLaser</li>
 				</weapons>
 			</li>
 			<li>
@@ -922,10 +928,10 @@
 						<li>3</li>
 					</keys>
 					<values>
+						<li>(-0.5, 0.0, 0.5)</li>
 						<li>(0.0, 0.0, 0.5)</li>
-						<li>(0.5, 0.0, -0.5)</li>
-						<li>(-2.0, 0.0, 0.0)</li>
-						<li>(2.0, 0.0, 0.5)</li>
+						<li>(-3.0, 0.0, 1.0)</li>
+						<li>(3.0, 0.0, 1.0)</li>
 					</values>
 				</pos>
 				<angle>
@@ -936,10 +942,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>65</li>
+						<li>70</li>
 						<li>120</li>
-						<li>99</li>
-						<li>90</li>
+						<li>95</li>
+						<li>85</li>
 					</values>
 				</angle>
 				<flip>
@@ -994,8 +1000,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>1</li>
-						<li>1</li>
+						<li>1.1</li>
+						<li>1.1</li>
 						<li>0.9999999</li>
 						<li>1</li>
 					</values>
@@ -1124,14 +1130,12 @@
 					<li>MeleeWeapon_Schiv</li>
 					<li>MeleeWeapon_BreachAxe</li>
 					<li>RK_MagicWand</li>
-					<li>RK_Dagger</li>
 					<li>RK_OneHanded</li>
 					<li>HMC_HighTechNorbal_ZeusHammer</li>
 					<li>HMC_HighTechNorbal_Monosword</li>
 					<li>Pa_S8498III</li>
 					<li>HologramSword</li>
 					<li>HologramSwordArchotech</li>
-					<li>MeleeWeapon_RoyalKnife</li>
 					<li>MeleeWeapon_RoyalLongSword</li>
 					<li>VPE_MeleeWeapon_EltexSword</li>
 					<li>Moyo_Wrench</li>
@@ -2158,9 +2162,9 @@
 					</keys>
 					<values>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(1.0, 0.0, 0.0)</li>
-						<li>(-3.5, 0.0, 0.0)</li>
-						<li>(3.5, 0.0, -0.5)</li>
+						<li>(0.0, 0.0, -0.5)</li>
+						<li>(-3.5, 0.0, 0.5)</li>
+						<li>(3.5, 0.0, 0.5)</li>
 					</values>
 				</pos>
 				<angle>
@@ -2171,10 +2175,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>0</li>
-						<li>0</li>
-						<li>-215</li>
-						<li>35</li>
+						<li>-200</li>
+						<li>20</li>
+						<li>-220</li>
+						<li>40</li>
 					</values>
 				</angle>
 				<flip>
@@ -2185,8 +2189,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>True</li>
 						<li>False</li>
+						<li>True</li>
 						<li>False</li>
 						<li>True</li>
 					</values>
@@ -2229,10 +2233,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>1</li>
-						<li>1</li>
 						<li>0.9999999</li>
-						<li>1</li>
+						<li>0.9999999</li>
+						<li>0.9999998</li>
+						<li>0.9999999</li>
 					</values>
 				</size>
 				<isFront>
@@ -2350,7 +2354,7 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(-0.5, 0.0, 1.5)</li>
+						<li>(-0.5, 0.0, 1.0)</li>
 						<li>(0.5, 0.0, 1.0)</li>
 						<li>(-3.0, 0.0, 2.5)</li>
 						<li>(3.0, 0.0, 2.0)</li>
@@ -2364,8 +2368,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>-85</li>
-						<li>-10</li>
+						<li>-75</li>
+						<li>-100</li>
 						<li>-140</li>
 						<li>-40</li>
 					</values>
@@ -2379,7 +2383,7 @@
 					</keys>
 					<values>
 						<li>False</li>
-						<li>False</li>
+						<li>True</li>
 						<li>True</li>
 						<li>False</li>
 					</values>
@@ -2529,35 +2533,19 @@
 					</values>
 				</isFrontSide>
 				<weapons>
-					<li>NorbalMeleeWeapon_ShortSwordtwo</li>
 					<li>MeleeWeapon_Partisan</li>
 					<li>MeleeWeapon_Glaive</li>
-					<li>MeleeWeapon_GreatSword</li>
-					<li>MeleeWeapon_Dagger</li>
-					<li>MeleeWeapon_WraithBlade</li>
-					<li>NorbalMeleeWeapon_Bigax</li>
 					<li>MeleeWeapon_Monkeywrench</li>
-					<li>MeleeWeapon_Tsurugi</li>
 					<li>MeleeWeapon_Sledgehammer</li>
 					<li>MeleeWeapon_Spear</li>
 					<li>MeleeWeapon_Club</li>
-					<li>Sunderer</li>
 					<li>MeleeWeapon_ElectricBaton</li>
-					<li>RK_LightLance</li>
-					<li>RK_HeavyLance</li>
 					<li>RK_Fork</li>
 					<li>MeleeWeapon_Axe</li>
 					<li>MeleeWeapon_Warhammer</li>
-					<li>MeleeWeapon_Pike_HMC</li>
-					<li>HMC_HighTechNorbal_PowerWolf</li>
 					<li>MeleeWeapon_TribalAxe</li>
 					<li>ZF_MeleeWeapon_NeolithicDiggingStick</li>
 					<li>ZF_MeleeWeapon_NeolithicSpear</li>
-					<li>MeleeWeapon_Macuahuitl</li>
-					<li>MeleeWeapon_PlasmaTachi</li>
-					<li>RK_TwoHanded</li>
-					<li>Moyo_Spear</li>
-					<li>Moyo_GDSpear</li>
 					<li>RedMoyo_KineticClamp</li>
 					<li>RedMoyo_AlloyHarpoon</li>
 					<li>RedMoyo_PlasmaHarpoon</li>
@@ -3002,6 +2990,8 @@
 					<li>Pa_M712S</li>
 					<li>Pa_C96M</li>
 					<li>Pa_SP</li>
+					<li>MeleeWeapon_TribalKnife</li>
+					<li>MeleeWeapon_Dagger</li>
 				</weapons>
 			</li>
 			<li>
@@ -3207,10 +3197,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(-3.0, 0.0, -1.5)</li>
-						<li>(3.0, 0.0, -1.5)</li>
-						<li>(0.0, 0.0, -0.5)</li>
-						<li>(0.0, 0.0, -1.5)</li>
+						<li>(-3.0, 0.0, -2.5)</li>
+						<li>(3.0, 0.0, -2.5)</li>
+						<li>(0.0, 0.0, -2.5)</li>
+						<li>(0.0, 0.0, -2.5)</li>
 					</values>
 				</pos>
 				<angle>
@@ -3223,8 +3213,8 @@
 					<values>
 						<li>80</li>
 						<li>100</li>
-						<li>140</li>
-						<li>55</li>
+						<li>135</li>
+						<li>60</li>
 					</values>
 				</angle>
 				<flip>
@@ -3391,6 +3381,8 @@
 					<li>RedMoyo_Knife</li>
 					<li>Moyo_Knife</li>
 					<li>ZF_MeleeWeapon_NeolithicSickle</li>
+					<li>RK_Dagger</li>
+					<li>MeleeWeapon_RoyalKnife</li>
 				</weapons>
 			</li>
 			<li>
@@ -3984,8 +3976,8 @@
 					<values>
 						<li>(0.0, 0.0, 1.5)</li>
 						<li>(0.5, 0.0, 1.0)</li>
-						<li>(-3.0, 0.0, 2.5)</li>
-						<li>(3.0, 0.0, 2.5)</li>
+						<li>(-3.5, 0.0, 1.5)</li>
+						<li>(3.5, 0.0, 1.5)</li>
 					</values>
 				</pos>
 				<angle>
@@ -3997,9 +3989,9 @@
 					</keys>
 					<values>
 						<li>0</li>
-						<li>90</li>
-						<li>40</li>
-						<li>45</li>
+						<li>85</li>
+						<li>60</li>
+						<li>25</li>
 					</values>
 				</angle>
 				<flip>
@@ -4027,7 +4019,7 @@
 					<values>
 						<li>0</li>
 						<li>0</li>
-						<li>1</li>
+						<li>0.9999999</li>
 						<li>0.5</li>
 						<li>-0.2</li>
 					</values>
@@ -4056,8 +4048,8 @@
 					<values>
 						<li>0.7499999</li>
 						<li>0.7499999</li>
-						<li>0.7499999</li>
-						<li>0.7499999</li>
+						<li>0.6499999</li>
+						<li>0.6499999</li>
 					</values>
 				</size>
 				<isFront>
@@ -4369,7 +4361,7 @@
 						<li>(0.0, 0.0, 0.5)</li>
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(-2.5, 0.0, 1.0)</li>
-						<li>(2.0, 0.0, 0.5)</li>
+						<li>(2.5, 0.0, 0.5)</li>
 					</values>
 				</pos>
 				<angle>
@@ -4455,7 +4447,7 @@
 						<li>False</li>
 						<li>True</li>
 						<li>False</li>
-						<li>True</li>
+						<li>False</li>
 					</values>
 				</isFront>
 				<posSide>
@@ -4546,7 +4538,7 @@
 				</isFrontSide>
 				<weapons>
 					<li>TFJ_Tool_Broom</li>
-					<li>MeleeWeapon_TribalKnife</li>
+					<li>RK_TwoHanded</li>
 				</weapons>
 			</li>
 			<li>
@@ -4559,8 +4551,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(0.5, 0.0, -0.5)</li>
-						<li>(-0.5, 0.0, -0.5)</li>
+						<li>(0.5, 0.0, 0.5)</li>
+						<li>(-0.5, 0.0, 0.5)</li>
 						<li>(-3.5, 0.0, 0.5)</li>
 						<li>(3.5, 0.0, 0.5)</li>
 					</values>
@@ -5123,6 +5115,593 @@
 				</isFrontSide>
 				<weapons>
 					<li>RK_LongSword</li>
+				</weapons>
+			</li>
+			<li>
+				<name>Pike</name>
+				<pos>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.5, 0.0, 2.0)</li>
+						<li>(0.0, 0.0, 2.0)</li>
+						<li>(-2.5, 0.0, 1.5)</li>
+						<li>(2.5, 0.0, 1.5)</li>
+					</values>
+				</pos>
+				<angle>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>-150</li>
+						<li>-30</li>
+						<li>-140</li>
+						<li>-40</li>
+					</values>
+				</angle>
+				<flip>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+					</values>
+				</flip>
+				<bodyOffsetModifs>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifs>
+				<bodyOffset>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</bodyOffset>
+				<size>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>1.3</li>
+						<li>1.35</li>
+						<li>1.35</li>
+						<li>1.35</li>
+					</values>
+				</size>
+				<isFront>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFront>
+				<posSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</posSide>
+				<angleSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+					</values>
+				</angleSide>
+				<flipSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</flipSide>
+				<bodyOffsetModifsSide>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifsSide>
+				<bodyOffsetSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</bodyOffsetSide>
+				<isFrontSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>False</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFrontSide>
+				<weapons>
+					<li>MeleeWeapon_Pike_HMC</li>
+				</weapons>
+			</li>
+			<li>
+				<name>Sunder</name>
+				<pos>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(-0.5, 0.0, 1.0)</li>
+						<li>(0.5, 0.0, 1.0)</li>
+						<li>(-4.0, 0.0, 1.0)</li>
+						<li>(4.0, 0.0, 1.0)</li>
+					</values>
+				</pos>
+				<angle>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>165</li>
+						<li>15</li>
+						<li>155</li>
+						<li>25</li>
+					</values>
+				</angle>
+				<flip>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</flip>
+				<bodyOffsetModifs>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifs>
+				<bodyOffset>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</bodyOffset>
+				<size>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+					</values>
+				</size>
+				<isFront>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFront>
+				<posSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</posSide>
+				<angleSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+					</values>
+				</angleSide>
+				<flipSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</flipSide>
+				<bodyOffsetModifsSide>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifsSide>
+				<bodyOffsetSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</bodyOffsetSide>
+				<isFrontSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>False</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFrontSide>
+				<weapons>
+					<li>Sunderer</li>
+				</weapons>
+			</li>
+			<li>
+				<name>Long Melee 2 Flipped</name>
+				<pos>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(-3.5, 0.0, 1.0)</li>
+						<li>(3.5, 0.0, 1.0)</li>
+					</values>
+				</pos>
+				<angle>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>80</li>
+						<li>100</li>
+						<li>145</li>
+						<li>35</li>
+					</values>
+				</angle>
+				<flip>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>False</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</flip>
+				<bodyOffsetModifs>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifs>
+				<bodyOffset>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</bodyOffset>
+				<size>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+						<li>1</li>
+					</values>
+				</size>
+				<isFront>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFront>
+				<posSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</posSide>
+				<angleSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+					</values>
+				</angleSide>
+				<flipSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</flipSide>
+				<bodyOffsetModifsSide>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifsSide>
+				<bodyOffsetSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</bodyOffsetSide>
+				<isFrontSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>False</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFrontSide>
+				<weapons>
+					<li>MeleeWeapon_WraithBlade</li>
+					<li>MeleeWeapon_GreatSword</li>
+					<li>NorbalMeleeWeapon_ShortSwordtwo</li>
+					<li>NorbalMeleeWeapon_Bigax</li>
+					<li>MeleeWeapon_Tsurugi</li>
+					<li>RK_LightLance</li>
+					<li>RK_HeavyLance</li>
+					<li>HMC_HighTechNorbal_PowerWolf</li>
+					<li>MeleeWeapon_Macuahuitl</li>
+					<li>Moyo_Spear</li>
+					<li>Moyo_GDSpear</li>
+					<li>MeleeWeapon_PlasmaTachi</li>
 				</weapons>
 			</li>
 		</groupsCordSettings3>

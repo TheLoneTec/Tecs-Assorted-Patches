@@ -12,7 +12,8 @@
 
 			<li Class="AssignMealTemp">
 				<Meals>
-					<!-- Raw Recource -->
+					<!-- RawResource -->
+
 					<li>
 						<name>salmon roe</name>
 						<type>RawResource</type>
@@ -20,13 +21,14 @@
 					<li>
 						<name>caviar</name>
 						<type>RawResource</type>
-					</li>
-					<!-- Hot Meals -->
+					</li>	
+
+					<!-- HotMeal -->
 					<li>
 						<name>nutrient paste meal</name>
 						<type>HotMeal</type>
 					</li>
-					<!-- Cold Meals -->
+					<!-- ColdMeal -->
 					<li>
 						<name>oyster</name>
 						<type>ColdMeal</type>
@@ -55,7 +57,7 @@
 						<name>flaxseed smoothie</name>
 						<type>ColdMeal</type>
 					</li>
-					<!-- Hot Drink -->
+					<!-- ColdMeal -->
 					<li>
 						<name>cup of coffee</name>
 						<type>HotDrink</type>
@@ -74,9 +76,9 @@
 						<type>ColdDrink</type>
 					</li>
 
-					<!-- Raw Tasty -->
+					<!-- RawTasty -->
 
-					<!-- Lukewarm Meals -->
+					<!-- RoomTempMeal (lukewarm meals) -->
 					<li>
 						<name>jerk meat</name>
 						<type>RoomTempMeal</type>
@@ -116,8 +118,9 @@
 					<li>
 						<name>matcha cupcake</name>
 						<type>RoomTempMeal</type>
-					</li>
-					<!-- Non Perishable -->
+					</li>	
+					
+					<!-- NonPerishable -->
 
 					<li>
 						<name>disgusting nutrient paste meal</name>
@@ -137,6 +140,10 @@
 						<name>fermented rotting mound</name>
 						<type>None</type>
 					</li>
+					<li>
+						<name>healroot tincture</name>
+						<type>None</type>
+					</li>	
 					
 				</Meals>
 			</li>

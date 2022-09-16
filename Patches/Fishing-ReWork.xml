@@ -402,8 +402,6 @@
 					<li Class="PatchOperationInsert">
 						<xpath>Defs/RecipeDef[defName="MakeKippers"]/ingredients/li/filter/thingDefs/li[text()="Corpse_ThingDefFishTailteeth"]</xpath>
 						<value>
-							<li>SalmonRoe</li>
-							<li>Caviar</li>
 							<li>RF_Salmon</li>
 							<li>RF_Tuna</li>
 							<li>RF_Sardines</li>
@@ -413,8 +411,6 @@
 					<li Class="PatchOperationInsert">
 						<xpath>Defs/RecipeDef[defName="MakeKippers"]/fixedIngredientFilter/thingDefs/li[text()="Corpse_ThingDefFishTailteeth"]</xpath>
 						<value>
-							<li>SalmonRoe</li>
-							<li>Caviar</li>
 							<li>RF_Salmon</li>
 							<li>RF_Tuna</li>
 							<li>RF_Sardines</li>
