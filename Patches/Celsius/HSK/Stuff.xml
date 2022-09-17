@@ -771,7 +771,6 @@
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>HMC Biomes</li>
-				<li>HSK more content</li>
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
@@ -831,7 +830,7 @@
 				<xpath>Defs/ThingDef[defName="ClayBrick"]</xpath>
 				<value><!-- 3400 0.2 -->
 					<li Class="Celsius.StuffThermalProperties">
-						<volumetricHeatCapacity>3000</volumetricHeatCapacity>
+						<volumetricHeatCapacity>2400</volumetricHeatCapacity>
 						<conductivity>0.3</conductivity>
 					</li>
 				</value>
@@ -841,7 +840,7 @@
 				<xpath>Defs/ThingDef[defName="Ceramics"]</xpath>
 				<value><!-- 3400 0.3 -->
 					<li Class="Celsius.StuffThermalProperties">
-						<volumetricHeatCapacity>3000</volumetricHeatCapacity>
+						<volumetricHeatCapacity>2400</volumetricHeatCapacity>
 						<conductivity>0.4</conductivity>
 					</li>
 				</value>

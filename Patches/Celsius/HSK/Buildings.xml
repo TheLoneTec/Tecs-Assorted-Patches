@@ -214,7 +214,7 @@
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>17000</heatCapacity>
 								<conductivity>0.8</conductivity>
-								<volume>10</volume>
+								<volume>8</volume>
 							</li>
 						</value>
 					</li>

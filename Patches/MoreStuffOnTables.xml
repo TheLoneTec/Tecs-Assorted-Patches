@@ -112,7 +112,7 @@
 		<match Class="PatchOperationSequence">
 		<operations>
 		
-			<li Class="PatchOperationAdd"> 
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
 			    <xpath>/Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
@@ -129,7 +129,7 @@
 				</nomatch>
 			</li>
 			
-			<li Class="PatchOperationAdd"> 
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
 			    <xpath>/Defs/ThingDef[defName="GameOfUrBoard"]/building</xpath>
 		        <value>
 	            	<isEdifice>false</isEdifice>
