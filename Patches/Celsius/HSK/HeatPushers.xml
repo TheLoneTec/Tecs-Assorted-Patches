@@ -155,6 +155,18 @@
 				</value>
 			</li>
 	
+			<!-- Cold Pushers -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="ColdstoneBattery"]/comps/li[@Class="SK.CompProperties_ColdPusher"]</xpath>
+				<value>
+					<li Class="SK.CompProperties_ColdPusher">
+						<ColdPerSecond>-120</ColdPerSecond>
+						<ColdPushMinTemperature>-6</ColdPushMinTemperature>
+					</li>	
+				</value>
+			</li>
+	
 			<li Class="PatchOperationFindMod">
 				<mods>
 					<li>Vanilla Furniture Expanded SK</li>
