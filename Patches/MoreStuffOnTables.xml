@@ -150,12 +150,21 @@
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
-			
+
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ThingDef[defName="Candle"]/building</xpath>
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Candle"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
 	        	</value>
 			</li>
 			
@@ -181,6 +190,15 @@
 	        	</value>
 			</li>
 			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
 		        <value>
@@ -200,6 +218,15 @@
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
 	        	</value>
 			</li>
 			
@@ -225,6 +252,15 @@
 	        	</value>
 			</li>
 			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp_Red"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ThingDef[defName="StandingLamp_Green"]</xpath>
 		        <value>
@@ -244,6 +280,15 @@
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp_Green"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
 	        	</value>
 			</li>
 			
@@ -269,6 +314,15 @@
 	        	</value>
 			</li>
 			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp_Blue"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
 		        <value>
@@ -293,6 +347,15 @@
 	        	</value>
 			</li>
 			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
 		        <value>
@@ -314,6 +377,15 @@
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>
 				</building>
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
 	        	</value>
 			</li>
 			
@@ -341,6 +413,15 @@
 	        	</value>
 			</li>
 	
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+	
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ThingDef[defName="StandingDarkLampLEDnormal"]</xpath>
 		        <value>
@@ -365,6 +446,15 @@
 	        	</value>
 			</li>
 	
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingDarkLampLEDnormal"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+	
 			<li Class="PatchOperationAdd"> 
 			    <xpath>/Defs/ThingDef[defName="Darklamp"]</xpath>
 		        <value>
@@ -386,6 +476,15 @@
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>
 				</building>
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Darklamp"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
 	        	</value>
 			</li>
 			
