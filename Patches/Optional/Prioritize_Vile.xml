@@ -33,16 +33,16 @@
 							</operations>
 						</match>
 					</li>
-
+<!--
 					<li Class="PatchOperationRemove"> 
 						<xpath>/Defs/ThingDef[defName="RGK_Wall"or defName="GL_Wall"]</xpath>
 					</li>
-					
+					-->
 					<li Class="PatchOperationRemove">
 						<xpath>/Defs/ThingDef[defName="RGK_VentWall" or defName="GL_VentWall" or defName="GL_FlowerWall"
 						or defName="RGK_Door" or defName="RGK_WoodFence"]</xpath>
 					</li>
-										<!--	
+							<!--			
 					<li Class="PatchOperationAdd"> 
 						<xpath>/Defs</xpath>
 						<value>
@@ -97,11 +97,18 @@
 							</researchPrerequisites>
 						</value>
 					</li>
-						
+			-->
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/ThingDef[defName="RGK_Wall" or defName="GL_Wall"]</xpath>
+						<value>
+							<designationCategory Inherit="False"/>
+						</value>
+					</li>
+			
 					<li Class="PatchOperationRemove"> 
 						<xpath>/Defs/ThingDef[@Name="RKGFence"]/designationCategory</xpath>
 					</li>
-				-->
+			
 					</operations>
 				</match>
 			</li>
