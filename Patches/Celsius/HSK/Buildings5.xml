@@ -24,51 +24,82 @@
 			<operations>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[thingClass="Mineable"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+				<xpath>/Defs/ThingDef[thingClass="Mineable"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
 				<value>
-					<conductivity>1</conductivity>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>1250</heatCapacity>
+						<volume>500</volume>
+						<conductivity>1.25</conductivity>
+					</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="Wall"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+				<xpath>/Defs/ThingDef[defName="Wall"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
 				<value>
-					<conductivity>1</conductivity>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>850</heatCapacity>
+						<volume>10</volume>
+						<conductivity>1.5</conductivity>
+					</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="Door"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+				<xpath>/Defs/ThingDef[defName="Door"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>675</heatCapacity>
+						<volume>7.5</volume>
+						<conductivity>1.5</conductivity>
+						<airflowWhenOpen>0.5</airflowWhenOpen>
+					</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="Autodoor"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+				<xpath>/Defs/ThingDef[defName="Autodoor"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>675</heatCapacity>
+						<volume>7.5</volume>
+						<conductivity>1.5</conductivity>
+						<airflowWhenOpen>0.5</airflowWhenOpen>
+					</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="AnimalFlap"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+				<xpath>/Defs/ThingDef[defName="AnimalFlap"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
 				<value>
-					<conductivity>2</conductivity>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>400</heatCapacity>
+						<conductivity>2</conductivity>
+						<airflow>0.2</airflow>
+						<airflowWhenOpen>0.5</airflowWhenOpen>
+					</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="Vent"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+				<xpath>/Defs/ThingDef[defName="Vent"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>750</heatCapacity>
+						<conductivity>1.5</conductivity>
+						<airflow>0.2</airflow>
+						<airflowWhenOpen>1.0</airflowWhenOpen>
+					</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="Cooler"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+				<xpath>/Defs/ThingDef[defName="Cooler"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>750</heatCapacity>
+						<conductivity>1.5</conductivity>
+					</li>
 				</value>
 			</li>
 
@@ -83,8 +114,8 @@
 						<xpath>Defs/ThingDef[@Name="WeatheredRockBase"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>250000</heatCapacity>
-								<conductivity>1</conductivity>
+								<heatCapacity>1250</heatCapacity>
+								<conductivity>1.5</conductivity>
 								<volume>500</volume>
 							</li>
 						</value>
@@ -94,8 +125,8 @@
 						<xpath>Defs/ThingDef[@Name="SolidRockBase"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>250000</heatCapacity>
-								<conductivity>1</conductivity>
+								<heatCapacity>1250</heatCapacity>
+								<conductivity>1.2</conductivity>
 								<volume>500</volume>
 							</li>
 						</value>
@@ -105,8 +136,8 @@
 						<xpath>Defs/ThingDef[@Name="HewnRockBase"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>250000</heatCapacity>
-								<conductivity>1</conductivity>
+								<heatCapacity>1250</heatCapacity>
+								<conductivity>1.25</conductivity>
 								<volume>500</volume>
 							</li>
 						</value>
@@ -120,8 +151,8 @@
 				<xpath>Defs/ThingDef[defName="Window"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<heatCapacity>600</heatCapacity>
+						<conductivity>1.8</conductivity>
 						<volume>10</volume>
 					</li>
 				</value>
@@ -131,8 +162,8 @@
 				<xpath>Defs/ThingDef[defName="ClutterSilverWall"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<heatCapacity>900</heatCapacity>
+						<conductivity>1.4</conductivity>
 						<volume>18</volume>
 					</li>
 				</value>
@@ -142,8 +173,8 @@
 				<xpath>Defs/ThingDef[defName="ClutterUWallLight"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
+						<heatCapacity>850</heatCapacity>
+						<conductivity>1.65</conductivity>
 						<volume>15</volume>
 					</li>
 				</value>
@@ -153,8 +184,8 @@
 				<xpath>Defs/ThingDef[defName="TentWall"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.8</conductivity>
+						<heatCapacity>600</heatCapacity>
+						<conductivity>1.5</conductivity>
 						<volume>5</volume>
 					</li>
 				</value>
@@ -164,8 +195,8 @@
 				<xpath>Defs/ThingDef[defName="Column"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<heatCapacity>600</heatCapacity>
+						<conductivity>1.5</conductivity>
 						<volume>5</volume>
 						<airflow>0.8</airflow>
 					</li>
@@ -196,7 +227,7 @@
 				<xpath>Defs/ThingDef[defName="MDoor" or defName="Blastdoor" or defName="DU_Blastdoor"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>13500</heatCapacity>
+						<heatCapacity>675</heatCapacity>
 						<conductivity>1.5</conductivity>
 						<volume>7.5</volume>
 						<airflowWhenOpen>0.5</airflowWhenOpen>
@@ -208,8 +239,8 @@
 				<xpath>Defs/ThingDef[@Name="DoorGlassBase"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<heatCapacity>600</heatCapacity>
+						<conductivity>1.85</conductivity>
 						<volume>5</volume>
 						<airflowWhenOpen>0.5</airflowWhenOpen>
 					</li>
@@ -220,8 +251,8 @@
 				<xpath>Defs/ThingDef[defName="TentDoor"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>8000</heatCapacity>
-						<conductivity>0.8</conductivity>
+						<heatCapacity>400</heatCapacity>
+						<conductivity>2</conductivity>
 						<airflow>0.2</airflow>
 						<airflowWhenOpen>0.5</airflowWhenOpen>
 					</li>
@@ -232,8 +263,8 @@
 				<xpath>Defs/ThingDef[defName="ClosedBlastDoor"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<heatCapacity>900</heatCapacity>
+						<conductivity>1.4</conductivity>
 						<volume>18</volume>
 					</li>
 				</value>
@@ -243,8 +274,8 @@
 				<xpath>Defs/ThingDef[defName="JammedBlastDoor"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<heatCapacity>600</heatCapacity>
+						<conductivity>1.8</conductivity>
 						<airflow>0.4</airflow>
 					</li>
 				</value>
@@ -261,9 +292,9 @@
 						<xpath>Defs/ThingDef[defName="LogWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>17000</heatCapacity>
-								<conductivity>0.8</conductivity>
-								<volume>10</volume>
+								<heatCapacity>850</heatCapacity>
+								<conductivity>3</conductivity>
+								<volume>8</volume>
 							</li>
 						</value>
 					</li>
@@ -272,8 +303,8 @@
 						<xpath>Defs/ThingDef[defName="ClapboardWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>14000</heatCapacity>
-								<conductivity>1.2</conductivity>
+								<heatCapacity>700</heatCapacity>
+								<conductivity>2.6</conductivity>
 								<volume>8</volume>
 							</li>
 						</value>
@@ -283,8 +314,8 @@
 						<xpath>Defs/ThingDef[defName="BambooWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>14000</heatCapacity>
-								<conductivity>1.2</conductivity>
+								<heatCapacity>700</heatCapacity>
+								<conductivity>2.4</conductivity>
 								<volume>8</volume>
 							</li>
 						</value>
@@ -294,8 +325,8 @@
 						<xpath>Defs/ThingDef[defName="MudWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.5</conductivity>
+								<heatCapacity>1100</heatCapacity>
+								<conductivity>1.7</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -305,8 +336,8 @@
 						<xpath>Defs/ThingDef[defName="AdobeWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.3</conductivity>
+								<heatCapacity>1100</heatCapacity>
+								<conductivity>1.5</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -316,8 +347,8 @@
 						<xpath>Defs/ThingDef[defName="WattleWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.5</conductivity>
+								<heatCapacity>1100</heatCapacity>
+								<conductivity>1.65</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -327,8 +358,8 @@
 						<xpath>Defs/ThingDef[defName="InteriorWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>19000</heatCapacity>
-								<conductivity>1</conductivity>
+								<heatCapacity>950</heatCapacity>
+								<conductivity>2.5</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -338,8 +369,8 @@
 						<xpath>Defs/ThingDef[defName="WoodPanelWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>18000</heatCapacity>
-								<conductivity>0.6</conductivity>
+								<heatCapacity>900</heatCapacity>
+								<conductivity>2.2</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -349,8 +380,8 @@
 						<xpath>Defs/ThingDef[defName="CeramicTileWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.3</conductivity>
+								<heatCapacity>1100</heatCapacity>
+								<conductivity>1.6</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -364,7 +395,7 @@
 				<xpath>Defs/ThingDef[defName="RH_SmallCooler"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>15000</heatCapacity>
+						<heatCapacity>750</heatCapacity>
 						<conductivity>1.5</conductivity>
 					</li>
 				</value>
@@ -374,7 +405,7 @@
 				<xpath>Defs/ThingDef[defName="RedistHeat_IndustrialCooler"]</xpath>
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
-						<heatCapacity>15000</heatCapacity>
+						<heatCapacity>750</heatCapacity>
 						<conductivity>1.5</conductivity>
 					</li>
 				</value>
@@ -391,9 +422,9 @@
 						<xpath>Defs/ThingDef[defName="SnowWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>10000</heatCapacity>
+								<heatCapacity>500</heatCapacity>
 								<volume>10</volume>
-								<conductivity>2</conductivity>
+								<conductivity>2.1</conductivity>
 							</li>
 						</value>
 					</li>
@@ -402,9 +433,9 @@
 						<xpath>Defs/ThingDef[defName="IceWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>8000</heatCapacity>
+								<heatCapacity>400</heatCapacity>
 								<volume>10</volume>
-								<conductivity>3</conductivity>
+								<conductivity>2.4</conductivity>
 							</li>
 						</value>
 					</li>
@@ -413,9 +444,9 @@
 						<xpath>Defs/ThingDef[defName="PykreteWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>12000</heatCapacity>
+								<heatCapacity>600</heatCapacity>
 								<volume>10</volume>
-								<conductivity>1.8</conductivity>
+								<conductivity>1.9</conductivity>
 							</li>
 						</value>
 					</li>
@@ -424,7 +455,7 @@
 						<xpath>Defs/ThingDef[defName="BlueIceWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>14000</heatCapacity>
+								<heatCapacity>700</heatCapacity>
 								<volume>10</volume>
 								<conductivity>1.7</conductivity>
 							</li>
@@ -435,9 +466,9 @@
 						<xpath>Defs/ThingDef[defName="GreenIceWall"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>16000</heatCapacity>
+								<heatCapacity>800</heatCapacity>
 								<volume>10</volume>
-								<conductivity>1.6</conductivity>
+								<conductivity>1.5</conductivity>
 							</li>
 						</value>
 					</li>
@@ -457,7 +488,7 @@
 						<xpath>Defs/ThingDef[defName="AirConditioningUnit"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>15000</heatCapacity>
+								<heatCapacity>750</heatCapacity>
 								<conductivity>1.5</conductivity>
 							</li>
 						</value>

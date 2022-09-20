@@ -15,6 +15,8 @@
 			</li>
 		</value>
 	</Operation> Mods\Minerals\Defs\ThingDefs_Rocks -->
+	
+	<!-- Ive times it by 10 and then by 5 * 0.6-->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -26,50 +28,103 @@
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[thingClass="Mineable"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
 				<value>
-					<conductivity>1</conductivity>
+					<conductivity>50</conductivity>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="Wall"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
 				<value>
-					<conductivity>1</conductivity>
+					<conductivity>50</conductivity>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="Door"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<conductivity>75</conductivity>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="Autodoor"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<conductivity>75</conductivity>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="AnimalFlap"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
 				<value>
-					<conductivity>2</conductivity>
+					<conductivity>100</conductivity>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="Vent"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<conductivity>75</conductivity>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
 				<xpath>/Defs/ThingDef[defName="Cooler"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
 				<value>
-					<conductivity>1.5</conductivity>
+					<conductivity>75</conductivity>
 				</value>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>The Windows</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace"> 
+						<xpath>/Defs/ThingDef[defName="SimpleOpenWindow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+						<value>
+							<conductivity>75</conductivity>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace"> 
+						<xpath>/Defs/ThingDef[defName="OpenWindow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+						<value>
+							<conductivity>75</conductivity>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace"> 
+						<xpath>/Defs/ThingDef[defName="LargeOpenWindow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+						<value>
+							<conductivity>80</conductivity>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace"> 
+						<xpath>/Defs/ThingDef[defName="HugeOpenWindow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+						<value>
+							<conductivity>85</conductivity>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace"> 
+						<xpath>/Defs/ThingDef[defName="ReinforcedOpenWindow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+						<value>
+							<conductivity>80</conductivity>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace"> 
+						<xpath>/Defs/ThingDef[defName="LargeReinforcedOpenWindow"]/modExtensions/li[@Class="Celsius.ThingThermalProperties"]/conductivity</xpath>
+						<value>
+							<conductivity>85</conductivity>
+						</value>
+					</li>
+	
+					</operations>
+				</match>
 			</li>
 
 			<li Class="PatchOperationFindMod">
@@ -84,7 +139,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>250000</heatCapacity>
-								<conductivity>1</conductivity>
+								<conductivity>50</conductivity>
 								<volume>500</volume>
 							</li>
 						</value>
@@ -95,7 +150,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>250000</heatCapacity>
-								<conductivity>1</conductivity>
+								<conductivity>50</conductivity>
 								<volume>500</volume>
 							</li>
 						</value>
@@ -106,7 +161,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>250000</heatCapacity>
-								<conductivity>1</conductivity>
+								<conductivity>50</conductivity>
 								<volume>500</volume>
 							</li>
 						</value>
@@ -121,7 +176,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<conductivity>25.0</conductivity>
 						<volume>10</volume>
 					</li>
 				</value>
@@ -132,7 +187,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<conductivity>25.0</conductivity>
 						<volume>18</volume>
 					</li>
 				</value>
@@ -143,7 +198,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>17000</heatCapacity>
-						<conductivity>0.8</conductivity>
+						<conductivity>40.0</conductivity>
 						<volume>15</volume>
 					</li>
 				</value>
@@ -154,7 +209,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.8</conductivity>
+						<conductivity>40.0</conductivity>
 						<volume>5</volume>
 					</li>
 				</value>
@@ -165,7 +220,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<conductivity>40.0</conductivity>
 						<volume>5</volume>
 						<airflow>0.8</airflow>
 					</li>
@@ -197,7 +252,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>13500</heatCapacity>
-						<conductivity>1.5</conductivity>
+						<conductivity>75.0</conductivity>
 						<volume>7.5</volume>
 						<airflowWhenOpen>0.5</airflowWhenOpen>
 					</li>
@@ -209,7 +264,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<conductivity>50.0</conductivity>
 						<volume>5</volume>
 						<airflowWhenOpen>0.5</airflowWhenOpen>
 					</li>
@@ -221,7 +276,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>8000</heatCapacity>
-						<conductivity>0.8</conductivity>
+						<conductivity>80.0</conductivity>
 						<airflow>0.2</airflow>
 						<airflowWhenOpen>0.5</airflowWhenOpen>
 					</li>
@@ -233,7 +288,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>18000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<conductivity>50.0</conductivity>
 						<volume>18</volume>
 					</li>
 				</value>
@@ -244,7 +299,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>12000</heatCapacity>
-						<conductivity>0.5</conductivity>
+						<conductivity>50.0</conductivity>
 						<airflow>0.4</airflow>
 					</li>
 				</value>
@@ -262,8 +317,8 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>17000</heatCapacity>
-								<conductivity>0.8</conductivity>
-								<volume>10</volume>
+								<conductivity>80.0</conductivity>
+								<volume>8</volume>
 							</li>
 						</value>
 					</li>
@@ -273,7 +328,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>14000</heatCapacity>
-								<conductivity>1.2</conductivity>
+								<conductivity>60.0</conductivity>
 								<volume>8</volume>
 							</li>
 						</value>
@@ -284,7 +339,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>14000</heatCapacity>
-								<conductivity>1.2</conductivity>
+								<conductivity>60.0</conductivity>
 								<volume>8</volume>
 							</li>
 						</value>
@@ -295,7 +350,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.5</conductivity>
+								<conductivity>25.0</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -306,7 +361,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.3</conductivity>
+								<conductivity>15.0</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -317,7 +372,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.5</conductivity>
+								<conductivity>25.0</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -328,7 +383,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>19000</heatCapacity>
-								<conductivity>1</conductivity>
+								<conductivity>50</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -339,7 +394,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>18000</heatCapacity>
-								<conductivity>0.6</conductivity>
+								<conductivity>30.0</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -350,7 +405,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>22000</heatCapacity>
-								<conductivity>0.3</conductivity>
+								<conductivity>15.0</conductivity>
 								<volume>10</volume>
 							</li>
 						</value>
@@ -365,7 +420,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>15000</heatCapacity>
-						<conductivity>1.5</conductivity>
+						<conductivity>75.0</conductivity>
 					</li>
 				</value>
 			</li>
@@ -375,7 +430,7 @@
 				<value>
 					<li Class="Celsius.ThingThermalProperties">
 						<heatCapacity>15000</heatCapacity>
-						<conductivity>1.5</conductivity>
+						<conductivity>75.0</conductivity>
 					</li>
 				</value>
 			</li>
@@ -393,7 +448,7 @@
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>10000</heatCapacity>
 								<volume>10</volume>
-								<conductivity>2</conductivity>
+								<conductivity>100</conductivity>
 							</li>
 						</value>
 					</li>
@@ -404,7 +459,7 @@
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>8000</heatCapacity>
 								<volume>10</volume>
-								<conductivity>3</conductivity>
+								<conductivity>150</conductivity>
 							</li>
 						</value>
 					</li>
@@ -415,7 +470,7 @@
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>12000</heatCapacity>
 								<volume>10</volume>
-								<conductivity>1.8</conductivity>
+								<conductivity>90.0</conductivity>
 							</li>
 						</value>
 					</li>
@@ -426,7 +481,7 @@
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>14000</heatCapacity>
 								<volume>10</volume>
-								<conductivity>1.7</conductivity>
+								<conductivity>85.0</conductivity>
 							</li>
 						</value>
 					</li>
@@ -437,7 +492,7 @@
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>16000</heatCapacity>
 								<volume>10</volume>
-								<conductivity>1.6</conductivity>
+								<conductivity>80.0</conductivity>
 							</li>
 						</value>
 					</li>
@@ -458,7 +513,7 @@
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
 								<heatCapacity>15000</heatCapacity>
-								<conductivity>1.5</conductivity>
+								<conductivity>75.0</conductivity>
 							</li>
 						</value>
 					</li>

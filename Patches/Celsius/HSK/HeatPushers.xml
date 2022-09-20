@@ -162,7 +162,7 @@
 				<value>
 					<li Class="SK.CompProperties_ColdPusher">
 						<ColdPerSecond>-120</ColdPerSecond>
-						<ColdPushMinTemperature>-6</ColdPushMinTemperature>
+						<ColdPushMinTemperature>-14</ColdPushMinTemperature>
 					</li>	
 				</value>
 			</li>

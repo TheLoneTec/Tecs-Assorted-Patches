@@ -22,8 +22,8 @@
 						<xpath>Defs/ThingDef[defName="LightColumnMod" or defName="OrbitalTradeColumnMod" or defName="SunColumnMod" or defName="IceColumnMod"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>12000</heatCapacity>
-								<conductivity>0.5</conductivity>
+								<heatCapacity>600</heatCapacity>
+								<conductivity>1.5</conductivity>
 								<volume>5</volume>
 								<airflow>0.8</airflow>
 							</li>
@@ -34,8 +34,8 @@
 						<xpath>Defs/ThingDef[defName="GraveColumnMod"]</xpath>
 						<value>
 							<li Class="Celsius.ThingThermalProperties">
-								<heatCapacity>14000</heatCapacity>
-								<conductivity>0.8</conductivity>
+								<heatCapacity>1200</heatCapacity>
+								<conductivity>1.5</conductivity>
 								<volume>8</volume>
 								<airflow>0.2</airflow>
 							</li>

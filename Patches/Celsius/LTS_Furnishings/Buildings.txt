@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Note: Heat capacity in J/C, conductivity in W/C, volume in liters. Figures can be taken e.g. here: https://www.engineeringtoolbox.com/specific-heat-solids-d_154.html -->
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Celsius</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+		<li Class="PatchOperationFindMod">
+			<mods>
+				<li>[LTS]Furnishing</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>17000</heatCapacity>
+							<conductivity>0.8</conductivity>
+							<volume>14</volume>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="LTS_Pillar"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>12000</heatCapacity>
+							<conductivity>0.5</conductivity>
+							<volume>5</volume>
+							<airflow>0.8</airflow>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="LTS_MedievalDoor"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>14500</heatCapacity>
+							<conductivity>1.5</conductivity>
+							<volume>10</volume>
+							<airflowWhenOpen>0.5</airflowWhenOpen>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="LTS_ArchedDoor"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>12500</heatCapacity>
+							<conductivity>1.2</conductivity>
+							<volume>5</volume>
+							<airflowWhenOpen>0.5</airflowWhenOpen>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="LTS_SingleDoor"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>13500</heatCapacity>
+							<volume>7.5</volume>
+							<conductivity>1.5</conductivity>
+							<airflowWhenOpen>0.5</airflowWhenOpen>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="LTS_SimpleDoor"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>13500</heatCapacity>
+							<volume>7.5</volume>
+							<conductivity>1.5</conductivity>
+							<airflowWhenOpen>0.5</airflowWhenOpen>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="LTS_FuturisticDoor"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>13500</heatCapacity>
+							<volume>7.5</volume>
+							<conductivity>1.5</conductivity>
+							<airflowWhenOpen>0.5</airflowWhenOpen>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="LTS_HangarDoor"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>14500</heatCapacity>
+							<volume>8.5</volume>
+							<conductivity>1.5</conductivity>
+							<airflowWhenOpen>0.5</airflowWhenOpen>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="LTS_FancyDoor"]</xpath>
+					<value>
+						<li Class="Celsius.ThingThermalProperties">
+							<heatCapacity>13500</heatCapacity>
+							<conductivity>1.2</conductivity>
+							<volume>7</volume>
+							<airflowWhenOpen>0.5</airflowWhenOpen>
+						</li>
+					</value>
+				</li>
+				
+				</operations>
+			</match>
+		</li>
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -59,7 +59,7 @@
 							<li>INSShip_Beam_Hyper</li>
 						  </value>
 						</li>
-					
+					<!--
 						<li Class="PatchOperationAdd">
 						  <xpath>Defs/ThingDef[defName="Vent"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
 						  <value>
@@ -73,7 +73,7 @@
 							<li>INSShip_Beam_Hyper</li>
 						  </value>
 						</li>
-					
+					-->
 					</operations>
 				</match>
 			</li>
