@@ -177,7 +177,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName="Stone_Campfire"]/comps/li[@Class="SK.CompProperties_HeatPusherAdvanced"]</xpath>
 						<value>
-							<li Class="CompProperties_HeatPusher">
+							<li Class="SK.CompProperties_HeatPusherAdvanced">
 								<compClass>SK.CompHeatPusherAdvanced</compClass>
 								<heatPerSecond>5</heatPerSecond>
 								<heatPushMaxTemperature>24</heatPushMaxTemperature>
