@@ -31,8 +31,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Biomass_Unpowered"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2100</heatCapacity>
-											<conductivity>0.6</conductivity>
+											<heatCapacity>10500</heatCapacity>
+											<conductivity>0.2</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -42,8 +42,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Biomass"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>1900</heatCapacity>
-											<conductivity>0.8</conductivity>
+											<heatCapacity>9500</heatCapacity>
+											<conductivity>0.4</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -53,8 +53,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Fibre_Unpowered"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2400</heatCapacity>
-											<conductivity>0.5</conductivity>
+											<heatCapacity>12000</heatCapacity>
+											<conductivity>0.15</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -64,8 +64,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Fibre"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2200</heatCapacity>
-											<conductivity>0.7</conductivity>
+											<heatCapacity>11000</heatCapacity>
+											<conductivity>0.3</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -75,8 +75,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Polymer_Unpowered"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2700</heatCapacity>
-											<conductivity>0.42</conductivity>
+											<heatCapacity>13500</heatCapacity>
+											<conductivity>0.1</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -86,8 +86,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Polymer"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2500</heatCapacity>
-											<conductivity>0.65</conductivity>
+											<heatCapacity>12500</heatCapacity>
+											<conductivity>0.25</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -97,8 +97,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Hyper_Unpowered"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>3000</heatCapacity>
-											<conductivity>0.36</conductivity>
+											<heatCapacity>15000</heatCapacity>
+											<conductivity>0.06</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -108,8 +108,8 @@
 									<xpath>Defs/ThingDef[defName="INSShip_Beam_Hyper"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2800</heatCapacity>
-											<conductivity>0.55</conductivity>
+											<heatCapacity>14000</heatCapacity>
+											<conductivity>0.15</conductivity>
 											<volume>15</volume>
 										</li>
 									</value>
@@ -121,8 +121,8 @@
 									<xpath>Defs/ThingDef[defName="ShipAirlockBiomass"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>1750</heatCapacity>
-											<conductivity>0.7</conductivity>
+											<heatCapacity>8750</heatCapacity>
+											<conductivity>0.3</conductivity>
 											<volume>7.5</volume>
 											<airflowWhenOpen>1.0</airflowWhenOpen>
 										</li>
@@ -133,8 +133,8 @@
 									<xpath>Defs/ThingDef[defName="ShipAirlockFibre"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2000</heatCapacity>
-											<conductivity>0.58</conductivity>
+											<heatCapacity>10000</heatCapacity>
+											<conductivity>0.18</conductivity>
 											<volume>7.5</volume>
 											<airflowWhenOpen>1.0</airflowWhenOpen>
 										</li>
@@ -145,8 +145,8 @@
 									<xpath>Defs/ThingDef[defName="ShipAirlockPolymer"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2250</heatCapacity>
-											<conductivity>0.48</conductivity>
+											<heatCapacity>11250</heatCapacity>
+											<conductivity>0.1</conductivity>
 											<volume>7.5</volume>
 											<airflowWhenOpen>1.0</airflowWhenOpen>
 										</li>
@@ -157,8 +157,8 @@
 									<xpath>Defs/ThingDef[defName="ShipAirlockHyper"]</xpath>
 									<value>
 										<li Class="Celsius.ThingThermalProperties">
-											<heatCapacity>2500</heatCapacity>
-											<conductivity>0.41</conductivity>
+											<heatCapacity>12500</heatCapacity>
+											<conductivity>0.05</conductivity>
 											<volume>7.5</volume>
 											<airflowWhenOpen>1.0</airflowWhenOpen>
 										</li>
