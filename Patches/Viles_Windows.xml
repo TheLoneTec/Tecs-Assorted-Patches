@@ -79,6 +79,12 @@
 				</nomatch>
 			</li>
 			
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[@Name = "WindowBase"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
 			<!-- Atlas
 
 			<li Class="PatchOperationReplace">
