@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Research Reinvented</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+	<!--
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef[defName = "RR_royal_EMP"]/originals/li[text()="Gun_EmpLauncher"]</xpath>
+		</li>
+-->
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			<ThingDef ParentName="ApparelNoQualityBase">
+				<defName>RR_FieldResearchKitPrimitive</defName>
+				<label>primitive field research kit</label>
+				<description>This primitive field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench.</description>
+				<techLevel>Neolithic</techLevel>
+				<equippedStatOffsets>
+				  <FieldResearchSpeedMultiplier>0.25</FieldResearchSpeedMultiplier>
+				</equippedStatOffsets>
+				<comps>
+				  <li Class="PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit">
+						<fieldworkEffect>SimpleResearchKitEffect</fieldworkEffect>
+						<substitutedResearchBench>PrimitiveResearchBench</substitutedResearchBench>
+				  </li>
+				</comps>
+				<recipeMaker>
+				  <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+				  <recipeUsers>
+					<li>CraftingSpot</li>
+				  </recipeUsers>
+				  <useIngredientsForColor>false</useIngredientsForColor>
+				  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+				  <workSkill>Crafting</workSkill>
+				  <effectWorking>Smith</effectWorking>
+				  <soundWorking>Recipe_Smith</soundWorking>
+				  <researchPrerequisite>Apparel_A1</researchPrerequisite>
+				</recipeMaker>    
+				<stuffCategories>
+				  <li>Leathery</li>
+				</stuffCategories>
+				<costStuffCount>10</costStuffCount>
+				<costList>
+				  <ComponentMedieval>2</ComponentMedieval>
+				</costList>
+				<graphicData>
+				  <texPath>Things/Items/PrimitiveResearchKit</texPath>
+				  <graphicClass>Graphic_Single</graphicClass>
+				  <drawSize>0.85</drawSize>
+				</graphicData>
+				<tickerType>Normal</tickerType>
+				<statBases>
+				  <WorkToMake>280</WorkToMake>
+				  <Mass>2</Mass>
+				  <Flammability>0.6</Flammability>
+				  <EquipDelay>2</EquipDelay>
+				</statBases>
+				<thingCategories>
+				  <li>ApparelUtility</li>
+				</thingCategories>
+				<apparel>
+				  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+				  <careIfWornByCorpse>false</careIfWornByCorpse>
+				  <careIfDamaged>false</careIfDamaged>
+				  <wearPerDay>0</wearPerDay>
+				  <bodyPartGroups>
+					<li>Waist</li>
+				  </bodyPartGroups>
+				  <layers>
+					<li>Satchel</li>
+				  </layers>
+				  <tags>
+					<li>ResearchKit</li>
+				  </tags>
+				</apparel>
+			</ThingDef>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/techLevel</xpath>
+			<value>
+				<techLevel>Medieval</techLevel>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/recipeMaker</xpath>
+			<value>
+				<researchPrerequisite>Research_table_B1</researchPrerequisite>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/costList</xpath>
+			<value>
+				<costList>
+					<Mechanism>2</Mechanism>
+					<ComponentMedieval>2</ComponentMedieval>
+				</costList>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			<ThingDef ParentName="ApparelNoQualityBase">
+				<defName>RR_FieldResearchKitTerminal</defName>
+				<label>field research terminal kit</label>
+				<description>This field research terminal kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. An expansion module contains a portable research terminal.</description>
+				<techLevel>Industrial</techLevel>
+				<equippedStatOffsets>
+				  <FieldResearchSpeedMultiplier>0.4</FieldResearchSpeedMultiplier>
+				</equippedStatOffsets>
+				<comps>
+				  <li Class="PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit">
+						<fieldworkEffect>SimpleResearchKitEffect</fieldworkEffect>
+						<substitutedResearchBench>SimpleResearchBench</substitutedResearchBench>
+						<substitutedFacilities>
+							<li>LabTerminal</li>
+						</substitutedFacilities>
+				  </li>
+				</comps>
+				<recipeMaker>
+				  <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+				  <recipeUsers>
+				    <li>FabricationBench</li>
+					<li>TableElectronics</li>
+				  </recipeUsers>
+				  <useIngredientsForColor>false</useIngredientsForColor>
+				  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+				  <workSkill>Crafting</workSkill>
+				  <effectWorking>Smith</effectWorking>
+				  <soundWorking>Recipe_Smith</soundWorking>
+				  <researchPrerequisite>Apparel_A2</researchPrerequisite>
+				</recipeMaker>    
+				<stuffCategories>
+				  <li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>20</costStuffCount>
+				<costList>
+					<Glass>15</Glass>
+					<ElectronicComponents>4</ElectronicComponents>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</costList>
+				<graphicData>
+				  <texPath>Things/Items/TerminalResearchKit</texPath>
+				  <graphicClass>Graphic_Single</graphicClass>
+				  <drawSize>0.85</drawSize>
+				</graphicData>
+				<tickerType>Normal</tickerType>
+				<statBases>
+				  <WorkToMake>280</WorkToMake>
+				  <Mass>2</Mass>
+				  <Flammability>0.6</Flammability>
+				  <EquipDelay>2</EquipDelay>
+				</statBases>
+				<thingCategories>
+				  <li>ApparelUtility</li>
+				</thingCategories>
+				<apparel>
+				  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+				  <careIfWornByCorpse>false</careIfWornByCorpse>
+				  <careIfDamaged>false</careIfDamaged>
+				  <wearPerDay>0</wearPerDay>
+				  <bodyPartGroups>
+					<li>Waist</li>
+				  </bodyPartGroups>
+				  <layers>
+					<li>Satchel</li>
+				  </layers>
+				  <tags>
+					<li>ResearchKit</li>
+				  </tags>
+				</apparel>
+			</ThingDef>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/costList</xpath>
+			<value>
+				<costList>
+					<Glass>10</Glass>
+					<Plastic>15</Plastic>
+					<Rubber>5</Rubber>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<ElectronicComponents>2</ElectronicComponents>
+					<Electronics>2</Electronics>
+				</costList>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/recipeMaker/recipeUsers</xpath>
+			<value>
+				<recipeUsers>
+					<li>TableElectronics</li>
+				</recipeUsers>
+			</value>
+		</li>
+
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/graphicData</xpath>
+			<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>25</costStuffCount>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/comps/li[@Class = "PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit"]</xpath>
+			<value>
+				<substitutedFacilities>
+					<li>LabTerminal</li>
+				</substitutedFacilities>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/recipeMaker</xpath>
+			<value>
+				<researchPrerequisite>Research_table_C2</researchPrerequisite>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/description</xpath>
+			<value>
+				<description>This advanced field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. The advanced tools in this kit allow researching technologies that would ordinarily require a hi-tech research bench. An expansion module contains a portable research terminal.</description>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/costList</xpath>
+			<value>
+				<costList>
+					<Plastic>5</Plastic>
+					<Glass>4</Glass>
+					<ComponentIndustrial>2</ComponentIndustrial>
+					<ElectronicComponents>2</ElectronicComponents>
+					<Electronics>2</Electronics>
+				</costList>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/recipeMaker/recipeUsers</xpath>
+			<value>
+				<recipeUsers>
+					<li>TableElectronics</li>
+				</recipeUsers>
+			</value>
+		</li>
+
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/graphicData</xpath>
+			<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>20</costStuffCount>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/recipeMaker</xpath>
+			<value>
+				<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/costList</xpath>
+			<value>
+				<costList>
+					<Plastic>20</Plastic>
+					<Rubber>10</Rubber>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<ElectronicComponents>2</ElectronicComponents>
+					<ComponentAdvanced>2</ComponentAdvanced>
+					<Electronics>3</Electronics>
+				</costList>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/recipeMaker/recipeUsers</xpath>
+			<value>
+				<recipeUsers>
+					<li>AdvToolBench</li>
+				</recipeUsers>
+			</value>
+		</li>
+
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/graphicData</xpath>
+			<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>30</costStuffCount>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/recipeMaker</xpath>
+			<value>
+				<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			<ThingDef ParentName="ApparelNoQualityBase">
+				<defName>RR_FieldResearchKitUltra</defName>
+				<label>ultra-tech field research kit</label>
+				<description>This ultra-advanced field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. The advanced tools in this kit allow researching technologies that would ordinarily require a hi-tech research bench. An expansion module contains a portable laboratory station.</description>
+				<techLevel>Ultra</techLevel>
+				<equippedStatOffsets>
+				  <FieldResearchSpeedMultiplier>0.5</FieldResearchSpeedMultiplier>
+				</equippedStatOffsets>
+				<comps>
+				  <li Class="PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit">
+						<fieldworkEffect>MultiAnalyzerResearchKitEffect</fieldworkEffect>
+						<substitutedResearchBench>HiTechResearchBench</substitutedResearchBench>
+						<substitutedFacilities>
+							<li>LabStation</li>
+						</substitutedFacilities>
+				  </li>
+				</comps>
+				<recipeMaker>
+				  <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+				  <recipeUsers>
+					<li>AdvToolBench</li>
+				  </recipeUsers>
+				  <useIngredientsForColor>false</useIngredientsForColor>
+				  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+				  <workSkill>Crafting</workSkill>
+				  <effectWorking>Smith</effectWorking>
+				  <soundWorking>Recipe_Smith</soundWorking>
+				  <skillRequirements>
+					<Crafting>5</Crafting>
+				  </skillRequirements>
+				  <researchPrerequisite>Research_table_D2</researchPrerequisite>
+				</recipeMaker>
+				<costList>
+					<Plastic>10</Plastic>
+					<Glass>8</Glass>
+					<ComponentIndustrial>2</ComponentIndustrial>
+					<ElectronicComponents>2</ElectronicComponents>
+					<Electronics>2</Electronics>
+					<ComponentUltra>1</ComponentUltra>
+				</costList>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>40</costStuffCount>
+				<graphicData>
+				  <texPath>Things/Items/UltraResearchKit</texPath>
+				  <graphicClass>Graphic_Single</graphicClass>
+				  <drawSize>0.85</drawSize>
+				</graphicData>
+				<tickerType>Normal</tickerType>
+				<statBases>
+				  <WorkToMake>500</WorkToMake>
+				  <Mass>3</Mass>
+				  <Flammability>0.4</Flammability>
+				  <EquipDelay>2</EquipDelay>
+				</statBases>
+				<thingCategories>
+				  <li>ApparelUtility</li>
+				</thingCategories>
+				<apparel>
+				  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+				  <careIfWornByCorpse>false</careIfWornByCorpse>
+				  <careIfDamaged>false</careIfDamaged>
+				  <wearPerDay>0</wearPerDay>
+				  <bodyPartGroups>
+					<li>Waist</li>
+				  </bodyPartGroups>
+				  <layers>
+					<li>Satchel</li>
+				  </layers>
+				  <tags>
+					<li>ResearchKit</li>
+				  </tags>
+				</apparel>
+			</ThingDef>
+			</value>
+		</li>
+
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>
