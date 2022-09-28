@@ -14,9 +14,43 @@
 -->
 
 		<li Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName="FieldResearchSpeedMultiplier"]</xpath>
+			<value>
+				<parts> 
+				  <li Class="StatPart_Quality">
+					<factorAwful>0.80</factorAwful>
+					<factorPoor>0.90</factorPoor>
+					<factorNormal>1.00</factorNormal>
+					<factorGood>1.10</factorGood>
+					<factorExcellent>1.20</factorExcellent>
+					<factorMasterwork>1.35</factorMasterwork>
+					<factorLegendary>1.40</factorLegendary>
+				  </li>
+				</parts>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
 			<xpath>/Defs</xpath>
 			<value>
-			<ThingDef ParentName="ApparelNoQualityBase">
+				<ThingDef Name="ResearchKitBase" ParentName="SK_ApparelBase" Abstract="True">
+					<statBases>
+						<MaxHitPoints>100</MaxHitPoints>
+						<Flammability>1.0</Flammability>
+						<DeteriorationRate>2</DeteriorationRate>
+						<SellPriceFactor>0.6</SellPriceFactor>
+						<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+						<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+						<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+					</statBases>
+				</ThingDef>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+			<ThingDef ParentName="ResearchKitBase">
 				<defName>RR_FieldResearchKitPrimitive</defName>
 				<label>primitive field research kit</label>
 				<description>This primitive field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench.</description>
@@ -104,10 +138,16 @@
 			</value>
 		</li>
 
+		<li Class="PatchOperationAttributeSet">
+			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitSimple"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>ResearchKitBase</value>
+		</li>
+
 		<li Class="PatchOperationAdd">
 			<xpath>/Defs</xpath>
 			<value>
-			<ThingDef ParentName="ApparelNoQualityBase">
+			<ThingDef ParentName="ResearchKitBase">
 				<defName>RR_FieldResearchKitTerminal</defName>
 				<label>field research terminal kit</label>
 				<description>This field research terminal kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. An expansion module contains a portable research terminal.</description>
@@ -243,6 +283,12 @@
 			</value>
 		</li>
 
+		<li Class="PatchOperationAttributeSet">
+			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitHiTech"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>ResearchKitBase</value>
+		</li>
+
 		<li Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/costList</xpath>
 			<value>
@@ -280,6 +326,12 @@
 			<value>
 				<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
 			</value>
+		</li>
+
+		<li Class="PatchOperationAttributeSet">
+			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitMultiAnalyzer"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>ResearchKitBase</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
@@ -322,10 +374,16 @@
 			</value>
 		</li>
 
+		<li Class="PatchOperationAttributeSet">
+			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitRemote"]</xpath>
+			<attribute>ParentName</attribute>
+			<value>ResearchKitBase</value>
+		</li>
+
 		<li Class="PatchOperationAdd">
 			<xpath>/Defs</xpath>
 			<value>
-			<ThingDef ParentName="ApparelNoQualityBase">
+			<ThingDef ParentName="ResearchKitBase">
 				<defName>RR_FieldResearchKitUltra</defName>
 				<label>ultra-tech field research kit</label>
 				<description>This ultra-advanced field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. The advanced tools in this kit allow researching technologies that would ordinarily require a hi-tech research bench. An expansion module contains a portable laboratory station.</description>
@@ -376,7 +434,7 @@
 				</graphicData>
 				<tickerType>Normal</tickerType>
 				<statBases>
-				  <WorkToMake>500</WorkToMake>
+				  <WorkToMake>1000</WorkToMake>
 				  <Mass>3</Mass>
 				  <Flammability>0.4</Flammability>
 				  <EquipDelay>2</EquipDelay>
