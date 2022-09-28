@@ -181,6 +181,13 @@
 		</li>
 
 		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/label</xpath>
+			<value>
+				<label>hi-tech field research kit</label>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/costList</xpath>
 			<value>
 				<costList>
