@@ -41,12 +41,9 @@
 				  <effectWorking>Smith</effectWorking>
 				  <soundWorking>Recipe_Smith</soundWorking>
 				  <researchPrerequisite>Apparel_A1</researchPrerequisite>
-				</recipeMaker>    
-				<stuffCategories>
-				  <li>Leathery</li>
-				</stuffCategories>
-				<costStuffCount>10</costStuffCount>
+				</recipeMaker>
 				<costList>
+				  <Hay>25</Hay>
 				  <ComponentMedieval>2</ComponentMedieval>
 				</costList>
 				<graphicData>
