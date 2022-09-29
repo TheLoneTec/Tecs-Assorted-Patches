@@ -11,7 +11,7 @@
 		<li Class="PatchOperationRemove">
 			<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef[defName = "RR_royal_EMP"]/originals/li[text()="Gun_EmpLauncher"]</xpath>
 		</li>
--->
+
 
 		<li Class="PatchOperationAdd">
 			<xpath>/Defs/StatDef[defName="FieldResearchSpeedMultiplier"]</xpath>
@@ -29,20 +29,30 @@
 				</parts>
 			</value>
 		</li>
-
+-->
 		<li Class="PatchOperationAdd">
 			<xpath>/Defs</xpath>
 			<value>
-				<ThingDef Name="ResearchKitBase" ParentName="SK_ApparelBase" Abstract="True">
+				<ThingDef Name="ResearchKitBase" ParentName="ApparelBase" Abstract="True">
 					<statBases>
 						<MaxHitPoints>100</MaxHitPoints>
 						<Flammability>1.0</Flammability>
 						<DeteriorationRate>2</DeteriorationRate>
-						<SellPriceFactor>0.6</SellPriceFactor>
+						<!--<SellPriceFactor>0.6</SellPriceFactor>-->
 						<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
 						<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
 						<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 					</statBases>
+					<comps>
+						<li Class="CompProperties_Forbiddable"/>
+						<li>
+							<compClass>CompColorable</compClass>
+						</li>
+						<li>
+							<compClass>CompQuality</compClass>
+						</li>
+						<li Class="CompProperties_Styleable"></li>
+					</comps>
 				</ThingDef>
 			</value>
 		</li>
@@ -87,7 +97,7 @@
 				</graphicData>
 				<tickerType>Normal</tickerType>
 				<statBases>
-				  <WorkToMake>280</WorkToMake>
+				  <WorkToMake>1000</WorkToMake>
 				  <Mass>2</Mass>
 				  <Flammability>0.6</Flammability>
 				  <EquipDelay>2</EquipDelay>
@@ -193,7 +203,7 @@
 				</graphicData>
 				<tickerType>Normal</tickerType>
 				<statBases>
-				  <WorkToMake>280</WorkToMake>
+				  <WorkToMake>2500</WorkToMake>
 				  <Mass>2</Mass>
 				  <Flammability>0.6</Flammability>
 				  <EquipDelay>2</EquipDelay>
@@ -455,7 +465,7 @@
 				</graphicData>
 				<tickerType>Normal</tickerType>
 				<statBases>
-				  <WorkToMake>1000</WorkToMake>
+				  <WorkToMake>3500</WorkToMake>
 				  <Mass>3</Mass>
 				  <Flammability>0.4</Flammability>
 				  <EquipDelay>2</EquipDelay>
