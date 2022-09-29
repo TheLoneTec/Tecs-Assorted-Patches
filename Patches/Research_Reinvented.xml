@@ -370,7 +370,7 @@
 		<li Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/recipeMaker</xpath>
 			<value>
-				<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
+				<researchPrerequisite>Research_table_C2</researchPrerequisite>
 			</value>
 		</li>
 
@@ -378,6 +378,27 @@
 			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitRemote"]</xpath>
 			<attribute>ParentName</attribute>
 			<value>ResearchKitBase</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/description</xpath>
+			<value>
+				<description>This advanced field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. The advanced tools in this kit allow researching technologies that would ordinarily require a hi-tech research bench. An expansion module contains an uplink system that allows remote usage of local research benches by connecting to their research terminal.</description>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/techLevel</xpath>
+			<value>
+				<techLevel>Industrial</techLevel>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/comps/li[@Class="PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit"]/remotesThrough</xpath>
+			<value>
+				<remotesThrough>LabTerminal</remotesThrough>
+			</value>
 		</li>
 
 		<li Class="PatchOperationAdd">
