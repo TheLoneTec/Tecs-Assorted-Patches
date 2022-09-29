@@ -46,7 +46,7 @@ various workshop mod patches for HSK
 - Animal Gear (Stopped it from turning HSK apparel into animal gear)
 - Dreamers Dreams (Patch Fix for HSK Pawns)
 - Vanilla Psycasts Expanded (CE patch and material conversion)
-- Research Reinvented (Material COnversion, Research Patch, New Research kits for HSK)
+- Research Reinvented (Material Conversion, Research Patch, New Research kits for HSK)
 
 Other Additions:
 
