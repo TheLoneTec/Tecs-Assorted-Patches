@@ -15,5 +15,6 @@
 	<li IfModActive="Nals.FacialAnimation">LoadDefs/FacialAnimation</li>
     <li IfModActive="Gloomy.DecorPack.SK">ResearchFixes/GloomDecoPack</li>
 	<li IfModActive="LimeTreeSnake.Tenants">LoadDefs/LTSTenant</li>
+	<li IfModActive="VanillaExpanded.Ideo.Dryads">LoadDefs/VIE_Dryads</li>
   </v1.3>
 </loadFolders>
