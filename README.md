@@ -36,7 +36,7 @@ various workshop mod patches for HSK
 - [Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990) - Added HSK Trees.
 - [Vanilla Base Generation Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2830358905) - Cleaned up base stockpile generation lists.
 - [[LTS] Furnishings](https://steamcommunity.com/sharedfiles/filedetails/?id=2567438519), requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
-- [[LTS] Tenants](https://steamcommunity.com/sharedfiles/filedetails/?id=2850306027) (HSK + CE Patch)
+- [[LTS] Tenants](https://steamcommunity.com/sharedfiles/filedetails/?id=2850306027) (HSK + CE Patch),  requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
 - [Animal Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907) (Stopped it from turning HSK apparel into animal gear) Recommend [Animal Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984)
 - [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
