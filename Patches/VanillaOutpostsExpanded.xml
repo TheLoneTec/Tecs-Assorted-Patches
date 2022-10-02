@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Outposts Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Amuse Bouche</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Farming"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>MealFine_VegVile</ProvidedFood>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>MealFine_VegVile</ProvidedFood>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Logging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>MealFine_VegVile</ProvidedFood>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Hunting"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>MealFine_MeatVile</ProvidedFood>
+							</value>
+						</li>
+
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+				
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Farming"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>FriedVegetables</ProvidedFood>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>FriedVegetables</ProvidedFood>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Logging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>FriedVegetables</ProvidedFood>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Hunting"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/ProvidedFood</xpath>
+							<value>
+								<ProvidedFood>RoastedMeat</ProvidedFood>
+							</value>
+						</li>
+
+					</operations>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Farming"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/RequiredSkills</xpath>
+				<value>
+					<Construction>5</Construction>
+					<Crafting>3</Crafting>
+					<Cooking>3</Cooking>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Farming"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>100</OutpostMaterials>
+						<Fertilizer>200</Fertilizer>
+						<SeedCultivator>1</SeedCultivator>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Defensive"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<RequiredSkills>
+					  <Construction>10</Construction>
+					  <Crafting>3</Crafting>
+					  <Shooting>10</Shooting>
+					  <Melee>3</Melee>
+					  <Cooking>3</Cooking>
+					</RequiredSkills>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Defensive"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>150</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ResultOptions</xpath>
+				<value>
+					<ResultOptions>
+					  <li>
+						<BaseAmount>500</BaseAmount>
+						<Thing>OilBarrel</Thing>
+					  </li>
+					</ResultOptions>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/description</xpath>
+				<value>
+					<description>Places a temporary, autonomously-led camp that specializes in locating and tapping underground crude oil reservoirs. Once an ample amount is collected, a delivery will be made at the outskirts of a faction's primary colony.</description>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/RequiredSkills</xpath>
+				<value>
+					<Crafting>3</Crafting>
+					<Cooking>3</Cooking>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>200</OutpostMaterials>
+						<ComponentIndustrial>15</ComponentIndustrial>
+						<Mechanism>8</Mechanism>
+						<ReinforcedConcrete>30</ReinforcedConcrete>
+					</CostToMake>
+					<TicksToSetUp>180000</TicksToSetUp>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Encampment"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<RequiredSkills>
+					  <Construction>10</Construction>
+					  <Shooting>6</Shooting>
+					  <Melee>5</Melee>
+					  <Cooking>3</Cooking>
+					</RequiredSkills>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Encampment"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>100</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Hunting"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]</xpath>
+				<value>
+					<RequiredSkills>
+						<Construction>5</Construction>
+						<Cooking>3</Cooking>
+					</RequiredSkills>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Hunting"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>100</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Wood You Please</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Logging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ResultOptions</xpath>
+							<value>
+								<ResultOptions>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>CecropiaLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>PineLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>WillowLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>CypressLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>PoplarLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>MapleLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>TeakLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>BirchLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>OakLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>AcaciaLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>DragonwoodLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>MangroveLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>Bamboo</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>325</AmountPerPawn>
+									<Thing>WoodLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>425</AmountPerPawn>
+									<Thing>Kindling</Thing>
+								  </li><!--
+								  <li>
+									<AmountPerPawn>125</AmountPerPawn>
+									<Thing>RedWoodLog</Thing>
+								  </li>-->
+								</ResultOptions>
+							</value>
+						</li>
+
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/WorldObjectDef[defName="Outpost_Logging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ResultOptions</xpath>
+							<value>
+								<ResultOptions>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>WoodLog</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>325</AmountPerPawn>
+									<Thing>Kindling</Thing>
+								  </li>
+								  <li>
+									<AmountPerPawn>225</AmountPerPawn>
+									<Thing>Bamboo</Thing>
+								  </li><!--
+								  <li>
+									<AmountPerPawn>125</AmountPerPawn>
+									<Thing>RedWoodLog</Thing>
+								  </li>-->
+								</ResultOptions>
+							</value>
+						</li>
+
+					</operations>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Logging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<RequiredSkills>
+						<Construction>5</Construction>
+						<Cooking>3</Cooking>
+					</RequiredSkills>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Logging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>100</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li[@Class="VOE.OutpostExtension_Mining"]/Resources</xpath>
+				<value>
+					<Resources>
+						<Steel>15</Steel>
+						<Jade>20</Jade>
+						<Uranium>25</Uranium>
+						<Silver>30</Silver>
+						<Gold>35</Gold>
+						<Nickel>18</Nickel>
+						<Copper>10</Copper>
+						<Tin>10</Tin>
+						<Anglesite>22</Anglesite>
+						<Aluminium>22</Aluminium>
+						<Ilmenite>35</Ilmenite>
+						<Wolframite>40</Wolframite>
+						<ComponentIndustrial>40</ComponentIndustrial>
+					</Resources>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li[@Class="VOE.OutpostExtension_Mining"]/RequiredSkills</xpath>
+				<value>
+					<Construction>10</Construction>
+					<Cooking>3</Cooking>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li[@Class="VOE.OutpostExtension_Mining"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>150</OutpostMaterials>
+					</CostToMake>
+					<TicksToSetUp>170000</TicksToSetUp>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Artillery"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<RequiredSkills>
+					  <Construction>20</Construction>
+					  <Crafting>10</Crafting>
+					  <Shooting>15</Shooting>
+					  <Cooking>3</Cooking>
+					</RequiredSkills>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Artillery"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>200</OutpostMaterials>
+						<ArtillaryOutpostSupplies>1</ArtillaryOutpostSupplies>
+					</CostToMake>
+					<TicksToSetUp>170000</TicksToSetUp>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Production"]</xpath>
+			</li>
+			
+<!--
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Production"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/RequiredSkills</xpath>
+				<value>
+					<Construction>10</Construction>
+					<Cooking>5</Cooking>
+				</value>
+			</li>
+-->
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Scavenging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<RequiredSkills>
+					  <Construction>10</Construction>
+					  <Cooking>3</Cooking>
+					</RequiredSkills>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Scavenging"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>100</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Science"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/RequiredSkills</xpath>
+				<value>
+					<Construction>5</Construction>
+					<Cooking>5</Cooking>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Science"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<HiTechResearchBench>1</HiTechResearchBench>
+						<OutpostMaterials>150</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Town"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<RequiredSkills>
+					  <Construction>10</Construction>
+					  <Crafting>5</Crafting>
+					  <Artistic>5</Artistic>
+					  <Cooking>6</Cooking>
+					</RequiredSkills>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Town"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>200</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Trading"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/RequiredSkills</xpath>
+				<value>
+					<Construction>10</Construction>
+					<Crafting>5</Crafting>
+					<Shooting>5</Shooting>
+					<Cooking>3</Cooking>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Outpost_Trading"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
+				<value>
+					<CostToMake>
+						<OutpostMaterials>150</OutpostMaterials>
+					</CostToMake>
+					<!--<TicksToSetUp>360000</TicksToSetUp>-->
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>
