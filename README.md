@@ -40,6 +40,7 @@ various workshop mod patches for HSK
 - [Animal Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907) (Stopped it from turning HSK apparel into animal gear) Recommend [Animal Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984) (Patch WIP)
 - [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
+- [Vanilla Outposts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2688941031) (Added material cost to create outposts. Also locked certain outposts behind research using this method. I have disabled the Production Outpost.. I cant see a way to justify it. Added additional skill requirements, if the outposts are to look after themselves, they NEED someone who can atleast cook a little, build and other skills that match the outposts needs)
 
 Other Additions:
 
