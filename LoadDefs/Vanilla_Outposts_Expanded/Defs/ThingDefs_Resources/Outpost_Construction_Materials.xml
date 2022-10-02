@@ -198,7 +198,15 @@
 						<li>Woody</li>
 					</categories>
 				</filter>
-				<count>200</count>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Stony</li>
+					</categories>
+				</filter>
+				<count>100</count>
 			</li>
 			<li>
 				<filter>
@@ -219,7 +227,8 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
-				<li>Wooden</li>
+				<li>Woody</li>
+				<li>Stony</li>
 				<li>Metallic</li>
 			</categories>
 			<thingDefs>
