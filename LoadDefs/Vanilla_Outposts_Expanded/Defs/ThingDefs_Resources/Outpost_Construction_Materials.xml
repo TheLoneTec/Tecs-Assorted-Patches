@@ -159,7 +159,7 @@
 		</graphicData>
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
-		<stackLimit>1</stackLimit>
+		<stackLimit>50</stackLimit>
 		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
