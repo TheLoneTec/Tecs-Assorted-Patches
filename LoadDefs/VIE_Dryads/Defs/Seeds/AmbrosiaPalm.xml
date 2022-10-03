@@ -3,7 +3,7 @@
 
 	<SeedsPlease.SeedDef ParentName="SeedBase">
 	  <defName>Seed_VDE_AmbrosiaPalm</defName>
-	  <label>vde_ambrosiapalm seeds</label>
+	  <label>ambrosia palm seeds</label>
 	  <sources>
 		<li>VDE_AmbrosiaPalm</li>
 	  </sources>
@@ -11,7 +11,7 @@
 
 	<RecipeDef ParentName="ExtractSeed">
 	  <defName>ExtractSeed_VDE_AmbrosiaPalm</defName>
-	  <label>extract vde_ambrosiapalm seeds</label>
+	  <label>extract ambrosia palm seeds</label>
 	  <description>Extract seeds from Ambrosia</description>
 	  <ingredients>
 		<li>
