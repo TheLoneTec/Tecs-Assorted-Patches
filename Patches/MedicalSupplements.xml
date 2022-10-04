@@ -111,6 +111,18 @@
 				</costList>
 				</value>
 			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Battery"]/costList</xpath>
+				<value>
+				<costList>
+					<MSSulphuricAcid>15</MSSulphuricAcid>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<ElectronicComponents>3</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+			
 		<!--
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName="MakeMSBandage"]/ingredients/li[filter[thingDefs[li[text()="Cloth"]]]]/count</xpath>

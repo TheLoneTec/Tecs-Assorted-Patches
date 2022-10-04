@@ -77,7 +77,7 @@
 						</nomatch>
 					  </nomatch>
 					</li>
-
+<!--
 					<li Class="PatchOperationConditional">
 					  <xpath>/Defs/RecipeDef[defName="AA_MakeRangedSpinneretImplant"]/recipeUsers/li[text()="VEF_AdvancedAnimalImplantsTable"]</xpath>
 					  <match Class="PatchOperationReplace">
@@ -89,7 +89,27 @@
 						</value>
 					  </match>
 					</li>
+					-->
 					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "VEF_AdvancedAnimalImplantsTable"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites>
+								<li>VEF_AdvancedAnimalImplants</li>
+							</researchPrerequisites>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName = "VEF_AdvancedAnimalImplants"]/prerequisites</xpath>
+						<value>
+							<prerequisites>
+								<li>Prosthesis_making_D1</li>
+								<li>Animal_D1</li>
+							</prerequisites>
+						</value>
+					</li>
+	
 					</operations>
 				</match>
 			</li>

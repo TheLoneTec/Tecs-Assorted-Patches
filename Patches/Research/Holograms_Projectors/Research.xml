@@ -48,13 +48,40 @@
 				</nomatch>
 			</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ResearchProjectDef[defName="Res_Projectors"]/prerequisites</xpath>
-				<value>
-					<prerequisites>
-						<li>Research_table_C2</li>
-					</prerequisites>
-				</value>
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Save Our Ship 2</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Res_Projectors"]/prerequisites</xpath>
+						<value>
+							<prerequisites>
+								<li>Holodeck_Basic</li>
+								<li>Research_table_C2</li>
+							</prerequisites>
+						</value>
+					</li>
+
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Res_Projectors"]/prerequisites</xpath>
+						<value>
+							<prerequisites>
+								<li>Light_C5</li>
+								<li>Research_table_C2</li>
+							</prerequisites>
+						</value>
+					</li>
+
+				</operations>
+			</nomatch>
 			</li>
 
 		</operations>

@@ -2093,6 +2093,34 @@
 				</nomatch>
 			</li>
 
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]</xpath>
+                <value>
+					<prerequisites>
+					  <li>FlatscreenTelevision</li>
+					  <li>Light_C5</li>
+					  <li>Research_table_C2</li>
+					</prerequisites>
+                </value>
+            </li>
+
+			<li Class="PatchOperationAttributeAdd"> 
+			    <xpath>/Defs/ResearchProjectDef[defName="Holodeck_Basic"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>HitechBase</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeRemove">
+				<xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/modExtensions/li[@Class="SK.AdvancedResearchExtension"]</xpath>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/requiredResearchBuilding</xpath>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                </value>
+            </li>
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
                 <value>
