@@ -84,6 +84,7 @@
 		</graphicData>
 		<uiIconPath>Things/Apparel/EyePatch/EyePatch_icon</uiIconPath>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>LeftEye</li>
 			</bodyPartGroups>
@@ -118,6 +119,7 @@
 		</graphicData>
 		<uiIconPath>Things/Apparel/EyePatch/EyePatch_icon</uiIconPath>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>RightEye</li>
 			</bodyPartGroups>
