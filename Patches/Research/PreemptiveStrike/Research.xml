@@ -11,7 +11,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PES_PrimitiveTower"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>3.00</researchViewX>
+                    <researchViewX>2.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
