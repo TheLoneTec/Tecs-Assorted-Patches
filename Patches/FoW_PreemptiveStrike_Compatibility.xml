@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>(NWN) Real Fog of War</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Adding FOV to the towers. -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="PES_PremitiveWatchtower_new"]/comps</xpath>
+					<value>
+					<li Class="RimWorldRealFoW.CompProperties_AffectVision">
+						<fovMultiplier>1.6</fovMultiplier>
+					</li>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="PES_MedievalWatchtower"]/comps</xpath>
+					<value>
+					<li Class="RimWorldRealFoW.CompProperties_AffectVision">
+						<fovMultiplier>1.8</fovMultiplier>
+					</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="PES_watchtower_new"]/comps</xpath>
+					<value>
+					<li Class="RimWorldRealFoW.CompProperties_AffectVision">
+						<fovMultiplier>2.2</fovMultiplier>
+					</li>
+					</value>
+				</li>
+
+				<!-- Removing Duplicate watchtowers/uneeded researches -->
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="WatchTower"]</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="WatchTelescope"]</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="WatchTowerRoofed"]</xpath>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

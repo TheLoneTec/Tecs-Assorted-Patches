@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Jewelry</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Gem Tiles ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[@Name="GemsMetalBase"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+					  <li>Gem_floor_C1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

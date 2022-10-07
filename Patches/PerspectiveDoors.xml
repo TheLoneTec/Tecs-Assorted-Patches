@@ -191,6 +191,24 @@
 				</match>
 			</li>
 		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Power Logic</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="SupesRemoteDoor"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+							
+					</operations>
+				</match>
+			</li>
+		
 			</operations>
 		</match>
 	</Operation>
