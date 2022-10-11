@@ -421,28 +421,28 @@
 				</value>
 			</li>
 		
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_StoneBase"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/TerrainDef[@Name="LTS_StoneBase"]/researchPrerequisites</xpath>
 				<value>
-					<researchPrerequisites>
+					<researchPrerequisites Inherit="False">
 						<li>Stone_floor_B4</li>
 					</researchPrerequisites>
 				</value>
 			</li>
 			
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughSquareBase"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/TerrainDef[@Name="LTS_RoughSquareBase"]/researchPrerequisites</xpath>
 				<value>
-					<researchPrerequisites>
+					<researchPrerequisites Inherit="False">
 						<li>Stone_floor_B2</li>
 					</researchPrerequisites>
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughTileBase"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/TerrainDef[@Name="LTS_RoughTileBase"]/researchPrerequisites</xpath>
 				<value>
-					<researchPrerequisites>
+					<researchPrerequisites Inherit="False">
 						<li>Stone_floor_B2</li>
 					</researchPrerequisites>
 				</value>

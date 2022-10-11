@@ -181,13 +181,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>17.00</researchViewX>
+                    <researchViewX>20.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>9.00</researchViewY>
+                    <researchViewY>48.00</researchViewY>
                 </value>
             </li>
 	
