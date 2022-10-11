@@ -34,6 +34,15 @@
 				</value>
 			</li>
 	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="TileAdamant"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Stone_floor_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
 			</operations>
 		</match>
 	</Operation>

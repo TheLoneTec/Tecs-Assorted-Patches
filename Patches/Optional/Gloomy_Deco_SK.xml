@@ -317,6 +317,30 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/TerrainDef[@Name="PebbleBase"]/designatorDropdown</xpath>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Gloomy_Pebble</defName>
+						<label>Gloomy Pebble</label>
+						<description>Pebble paths from gloomy deco.</description>
+						<defNames>
+							<li>PebbleSandstone</li>
+							<li>PebbleGranite</li>
+							<li>PebbleLimestone</li>
+							<li>PebbleSlate</li>
+							<li>PebbleMarble</li>
+						</defNames>
+						<designationCategory>NaturalFloors</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_BoundaryDeco"]/defNames/li[text()="RGK_Fireplace"]</xpath>
 			</li>	
