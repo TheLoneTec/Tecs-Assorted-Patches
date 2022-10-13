@@ -47,7 +47,7 @@ various workshop mod patches for HSK
 
 Other Additions:
 
-- Vanilla Beards Retextured Retexture for Facial Animation
+- Vanilla Beards Retextured Retexture for Facial Animation (WIP)
 - Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
 - Facial Animation fixes when used with Dubs Apparel Tweaks
 - Ideology worksites (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
