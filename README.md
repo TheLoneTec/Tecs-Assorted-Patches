@@ -4,7 +4,7 @@ various workshop mod patches for HSK
 # Patches for:
 - [Alpha Biomes](https://discord.com/channels/272340793174392832/875750742684749844/1013919396051308645) ("Fixed" a recipeDef error with UF, more to stop error)
 - [Babies and Children](https://steamcommunity.com/sharedfiles/filedetails/?id=2559574784) ( Moved into Special Beds Architect Menu and Material Conversion)
-- [Better Cribs & Children](https://steamcommunity.com/sharedfiles/filedetails/?id=2563638037)
+- [Better Cribs & Children](https://steamcommunity.com/sharedfiles/filedetails/?id=2563638037) (Patch to change additional crib into Primitive Crib for Neolithic)
 - [Comigo's Bridges and Platforms](https://steamcommunity.com/sharedfiles/filedetails/?id=2547909363) ( Material Conversion)
 - [Camping Tent](https://steamcommunity.com/sharedfiles/filedetails/?id=2407128339) (Architect Menus and Material Conversion)
 - Core SK (Optional, Moved some items into Architect Menus)
