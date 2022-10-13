@@ -42,7 +42,7 @@ various workshop mod patches for HSK
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
 - [Vanilla Outposts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2688941031) (Added material cost to create outposts. Also locked certain outposts behind research using this method. I have disabled the Production Outpost.. I cant see a way to justify it. Added additional skill requirements, if the outposts are to look after themselves, they NEED someone who can atleast cook a little, build and other skills that match the outposts needs)
 - [Power Logic](https://steamcommunity.com/sharedfiles/filedetails/?id=812653710) - (Material Conversion and research patch, disabled Laser systems by default, you can reable them in the config by renaming extensions of Laser_Content_Enabled.txt to .xml and Laser_Content_Disabled.xml to .txt) The laser system, while very cool, seemed redundent and is a noticeable tps hit when in use.
-- [Fog of War](https://discord.com/channels/272340793174392832/875750742684749844/985078245504467004) - Patched to work better with Preemptive Strike
+- [Fog of War](https://discord.com/channels/272340793174392832/875750742684749844/985078245504467004) - Patched to work better with Preemptive Strike (Thanks to @Ron)
 - [Minerals Craft](https://discord.com/channels/272340793174392832/875750742684749844/884483675658526722) - Fixed Terrain Reserach Slightly
 
 Other Additions:
@@ -93,7 +93,7 @@ Updated:
 
 -- Made Nels Lazy Patching have to be loaded before
 
--- Made Celsius Chimneys Transparent, and with Ceiling, Lights toggable.
+-- Made Celsius Chimneys Transparent, and with Simple Utilities: Ceiling mod, toggable.
 
 -- (Vanilla Psycasts Expanded) Added CE patches from workshop CE
 
