@@ -201,62 +201,15 @@
 				</value>
 			</li>
 			
-			<!-- ========== Fog of War Mod ========== -->
-			
-			<li Class="PatchOperationFindMod">
-			<mods>
-				<li>(NWN) Real Fog of War - SK</li>
-			</mods>
-				<match Class="PatchOperationSequence">
-					<operations>
-					
-					<li Class="XmlExtensions.PatchOperationSafeAdd">
-						<xpath>/Defs/ThingDef[defName = "PES_PremitiveWatchtower_new"]</xpath>
-						<safetyDepth>3</safetyDepth>
-						<compare>Name</compare>
-						<checkAttributes>True</checkAttributes>
-						<value>
-							<comps>
-								<li Class="RimWorldRealFoW.CompProperties_AffectVision">
-									<fovMultiplier>1.5</fovMultiplier>
-									<denyWeather>true</denyWeather>
-								</li>
-							</comps>
-						</value>
-					</li>
-					
-					<li Class="XmlExtensions.PatchOperationSafeAdd">
-						<xpath>/Defs/ThingDef[defName = "PES_MedievalWatchtower"]</xpath>
-						<safetyDepth>3</safetyDepth>
-						<compare>Name</compare>
-						<checkAttributes>True</checkAttributes>
-						<value>
-							<comps>
-								<li Class="RimWorldRealFoW.CompProperties_AffectVision">
-									<fovMultiplier>1.5</fovMultiplier>
-									<denyWeather>true</denyWeather>
-								</li>
-							</comps>
-						</value>
-					</li>
-					
-					<li Class="XmlExtensions.PatchOperationSafeAdd">
-						<xpath>/Defs/ThingDef[defName = "PES_watchtower_new"]</xpath>
-						<safetyDepth>3</safetyDepth>
-						<compare>Name</compare>
-						<checkAttributes>True</checkAttributes>
-						<value>
-							<comps>
-								<li Class="RimWorldRealFoW.CompProperties_AffectVision">
-									<fovMultiplier>1.5</fovMultiplier>
-									<denyWeather>true</denyWeather>
-								</li>
-							</comps>
-						</value>
-					</li>
-					
-					</operations>
-				</match>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName = "PES_ModernTower"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+					  <li>Medieval_Tower</li>
+					  <li>MicroelectronicsBasics</li>
+					  <li>Firefoam</li>
+					</prerequisites>
+				</value>
 			</li>
 			
 		</operations>

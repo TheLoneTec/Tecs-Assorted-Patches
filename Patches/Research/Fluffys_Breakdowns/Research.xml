@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Fluffy Breakdowns (1.3 Update)</li>
+		<li>Fluffy Breakdowns (1.4 Update)</li>
 	</mods>
 	<match Class="PatchOperationSequence">
 		<operations>
@@ -11,13 +11,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="FluffyBreakdowns_ComponentLifetimeOne"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>7.00</researchViewX>
+                    <researchViewX>8.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="FluffyBreakdowns_ComponentLifetimeOne"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>10.00</researchViewY>
+                    <researchViewY>12.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
