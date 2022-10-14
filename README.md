@@ -44,6 +44,7 @@ various workshop mod patches for HSK
 - [Power Logic](https://steamcommunity.com/sharedfiles/filedetails/?id=812653710) - (Material Conversion and research patch, disabled Laser systems by default, you can reable them in the config by renaming extensions of Laser_Content_Enabled.txt to .xml and Laser_Content_Disabled.xml to .txt) The laser system, while very cool, seemed redundent and is a noticeable tps hit when in use.
 - [Fog of War](https://discord.com/channels/272340793174392832/875750742684749844/985078245504467004) - Patched to work better with Preemptive Strike (Thanks to @Ron)
 - [Minerals Craft](https://discord.com/channels/272340793174392832/875750742684749844/884483675658526722) - Fixed Terrain Reserach Slightly
+- [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
 
 Other Additions:
 
