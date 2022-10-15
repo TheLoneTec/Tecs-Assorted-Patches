@@ -20,7 +20,7 @@
 					<value>
 						<!--<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>-->
 						<usesTemperature>false</usesTemperature>
-						<processDays>2.5</processDays>
+						<processDays>1.5</processDays>
 					</value>
 				</li>
 
