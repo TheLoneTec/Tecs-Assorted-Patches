@@ -45,6 +45,7 @@ various workshop mod patches for HSK
 - [Fog of War](https://discord.com/channels/272340793174392832/875750742684749844/985078245504467004) - Patched to work better with Preemptive Strike (Thanks to @Ron)
 - [Minerals Craft](https://discord.com/channels/272340793174392832/875750742684749844/884483675658526722) - Fixed Terrain Reserach Slightly
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
+- [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
 
 Other Additions:
 
