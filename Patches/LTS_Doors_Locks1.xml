@@ -7,43 +7,54 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Locks</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+						
+						<li Class="PatchOperationConditional">
+							<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/comps</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/comps</xpath>
+								<value>
+									<li Class="Locks.CompProperties_Lock"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]</xpath>
+								<value>
+									<comps>
+										<li Class="Locks.CompProperties_Lock"></li>
+									</comps>
+								</value>
+							</nomatch>
+						</li>
+
+						<li Class="PatchOperationConditional">
+							<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/inspectorTabs</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/inspectorTabs</xpath>
+								<value>
+									<li>Locks.ITab_Lock</li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]</xpath>
+								<value>
+									<inspectorTabs>
+										<li>Locks.ITab_Lock</li>
+									</inspectorTabs>
+								</value>
+							</nomatch>
+						</li>
+
+						</operations>
+					</match>
+				</li>
 			
-			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/comps</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/comps</xpath>
-					<value>
-						<li Class="Locks.CompProperties_Lock"></li>
-					</value>
-				</match>
-				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]</xpath>
-					<value>
-						<comps>
-							<li Class="Locks.CompProperties_Lock"></li>
-						</comps>
-					</value>
-				</nomatch>
-			</li>
-
-			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/inspectorTabs</xpath>
-				<match Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/inspectorTabs</xpath>
-					<value>
-						<li>Locks.ITab_Lock</li>
-					</value>
-				</match>
-				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]</xpath>
-					<value>
-						<inspectorTabs>
-							<li>Locks.ITab_Lock</li>
-						</inspectorTabs>
-					</value>
-				</nomatch>
-			</li>
-
 			</operations>
 		</match>
 	</Operation>
