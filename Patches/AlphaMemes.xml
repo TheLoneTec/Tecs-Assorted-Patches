@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Memes</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Hardcore Renovations</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/ThingDef[defName = "Wall"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+						</li>
+
+					</operations>
+				</match>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>
