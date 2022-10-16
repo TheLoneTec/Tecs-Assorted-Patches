@@ -24,8 +24,6 @@
 		</li>
 	</modDependencies>
 		<loadBefore>
-			<li>trinity.runtimegcupdated</li>
-			<li>dubwise.dubsperformanceanalyzer.dev</li>
 			<li>neronix17.wikirim</li>
 			<li>taranchuk.performanceoptimizer</li>
 			<li>krkr.rocketman</li>
