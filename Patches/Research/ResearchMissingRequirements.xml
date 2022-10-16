@@ -184,6 +184,25 @@
 				</value>
 			</li>
 	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Gloomy Decor Pack</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+						<li Class="XmlExtensions.PatchOperationSafeAdd">
+							<xpath>Defs/ResearchProjectDef/modExtensions/li[@Class="SK.AdvancedResearchExtension"]/requiredResearchBuildings[li[text()="SimpleResearchBench"]]</xpath>
+							<safetyDepth>1</safetyDepth>
+							<value>
+								<li>RGK_SimpleResearchBench</li>
+							</value>
+						</li>
+			
+					</operations>
+				</match>
+			</li>
+	
 			</operations>
 		</match>
 	</Operation>
