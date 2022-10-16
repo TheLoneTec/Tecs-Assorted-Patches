@@ -1,5 +1,5 @@
 # Tecs-Assorted-Patches
-various workshop mod patches for HSK
+various workshop mod patches for HSK. Trello Board Link. https://trello.com/b/Awq5abNv/tecs-assorted-patches
 
 # Patches for:
 - [Alpha Biomes](https://discord.com/channels/272340793174392832/875750742684749844/1013919396051308645) ("Fixed" a recipeDef error with UF, more to stop error)
