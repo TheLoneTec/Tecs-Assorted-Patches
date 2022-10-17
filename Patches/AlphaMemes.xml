@@ -19,6 +19,14 @@
 							<xpath>/Defs/ThingDef[defName = "Wall"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
 						</li>
 
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/ThingStyleDef[defName = "AM_Scavenger_Wall" or defName = "AM_Kemetic_Wall" or defName = "AM_SteampunkRevival_Wall"]</xpath>
+						</li>
+						
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/StyleCategoryDef[defName = "AM_Scavenger" or defName = "AM_SteampunkRevival" or defName = "AM_Kemetic"]/thingDefStyles/li[thingDef="Wall"]</xpath>
+						</li>
+						
 					</operations>
 				</match>
 			</li>

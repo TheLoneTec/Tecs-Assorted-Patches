@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!--COOLING-->
+	<!--COOLING
 
 	<ThingDef ParentName="SK_BuildingBase">
 		<defName>Chimney_Primitive</defName>
@@ -32,10 +32,10 @@
 		<fillPercent>0</fillPercent>
 		<building>
 			<isEdifice>false</isEdifice>
-			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder><!--
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>--><!--
 			<blueprintGraphicData>
 				<texPath>CeilingVents/CeilingVent_Primitive_blueprint</texPath>
-			</blueprintGraphicData>-->
+			</blueprintGraphicData>--><!--
 		</building>
 		<statBases>
 			<WorkToBuild>700</WorkToBuild>
@@ -74,7 +74,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<designationCategory>Temperature</designationCategory>
 	</ThingDef>
-
+--><!--
 	<ThingDef ParentName="SK_BuildingBase">
 		<defName>Chimney_Capped</defName>
 		<label>Capped Chimney</label>
@@ -104,10 +104,10 @@
 		<fillPercent>0</fillPercent>
 		<building>
 			<isEdifice>false</isEdifice>
-			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder><!--
+			<canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>--><!--
 			<blueprintGraphicData>
 				<texPath>CeilingVents/CeilingVent_Capped_Stone_blueprint</texPath>
-			</blueprintGraphicData>-->
+			</blueprintGraphicData>--><!--
 		</building>
 		<statBases>
 			<WorkToBuild>700</WorkToBuild>
@@ -145,7 +145,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<designationCategory>Temperature</designationCategory>
 	</ThingDef>
-
+-->
 	<ThingDef ParentName="SK_BuildingBase">
 		<defName>AirVac</defName>
 		<label>Industrial Air Vac</label>

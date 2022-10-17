@@ -16,7 +16,7 @@
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-					
+					<!--
 					<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="Chimney_Primitive"]/modExtensions</xpath>
 						<match Class="PatchOperationAdd">
@@ -80,7 +80,7 @@
 							</value>
 						</nomatch>
 					</li>
-					
+					-->
 					<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="AirVac"]/modExtensions</xpath>
 						<match Class="PatchOperationAdd">

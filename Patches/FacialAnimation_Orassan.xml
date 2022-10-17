@@ -45,7 +45,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/FacialAnimation.FaceAdjustmentDef[defName="OrassanFaceSizeAndPositionDef"]/Size</xpath>
 				<value>
-					<Size>(1.4,1.4)</Size>
+					<Size>(1.3,1.3)</Size>
 				</value>
 			</li>
 
