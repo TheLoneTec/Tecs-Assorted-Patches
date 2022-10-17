@@ -55,6 +55,7 @@ Other Additions:
 - Ideology worksites (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
 - Eye Patch Apparel for Left and Right Eyes
 - Ratkin Facial Animation Dubs Apparel Tweaks patch
+- Moyo Facial Animation Patch.
 
 # Update Log:
 
