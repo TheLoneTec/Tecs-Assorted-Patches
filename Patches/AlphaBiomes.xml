@@ -197,6 +197,98 @@
 						</li>
 	-->
 	
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Alpha Memes</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<operations>
+						
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_JewishTileMudstone"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksMudstone>4</ZF_BlocksMudstone>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_JewishTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_JewishFineTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_KemeticTileMudstone"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksMudstone>4</ZF_BlocksMudstone>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_KemeticTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_KemeticFineTileMudstone"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksMudstone>20</ZF_BlocksMudstone>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_KemeticFineTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_SteampunkTileMudstone"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksMudstone>4</ZF_BlocksMudstone>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_SteampunkTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								</operations>
+							</match>
+						</li>
+	
 					</operations>
 				</match>
 			</li>
