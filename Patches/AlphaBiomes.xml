@@ -299,59 +299,20 @@
 			</mods>
 				<nomatch Class="PatchOperationSequence">
 					<operations>
-				
-					<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Minerals</li>
-					</mods>
-						<match Class="PatchOperationSequence">
-							<operations>
-	
-							<li Class="PatchOperationReplace">
-							  <xpath>Defs/ThingDef[defName="ZF_WeatheredObsidianstone"]/building/mineableThing</xpath>
-							  <value>
-								<mineableThing>ZF_ChunkObsidian</mineableThing>
-							  </value>
-							</li>
 
-							<li Class="PatchOperationReplace">
-							  <xpath>Defs/ThingDef[defName="ZF_SolidObsidianstone"]/building/mineableThing</xpath>
-							  <value>
-								<mineableThing>ZF_ChunkObsidian</mineableThing>
-							  </value>
-							</li>
+						<li Class="PatchOperationReplace">
+						  <xpath>Defs/ThingDef[defName="ZF_HewnObsidianstone"]/building/mineableThing</xpath>
+						  <value>
+							<mineableThing>ZF_ChunkBasalt</mineableThing>
+						  </value>
+						</li>
 
-							<li Class="PatchOperationReplace">
-							  <xpath>Defs/ThingDef[defName="ZF_HewnObsidianstone"]/building/mineableThing</xpath>
-							  <value>
-								<mineableThing>ZF_ChunkBasalt</mineableThing>
-							  </value>
-							</li>
-
-							<li Class="PatchOperationReplace">
-							  <xpath>Defs/ThingDef[defName="ZF_SmoothedHewnObsidianstone"]/building/mineableThing</xpath>
-							  <value>
-								<mineableThing>ZF_ChunkBasalt</mineableThing>
-							  </value>
-							</li>
-
-							<li Class="PatchOperationReplace">
-							  <xpath>Defs/ThingDef[defName="ZF_BoulderObsidianstone"]/building/mineableThing</xpath>
-							  <value>
-								<mineableThing>ZF_ChunkObsidian</mineableThing>
-							  </value>
-							</li>
-
-							<li Class="PatchOperationReplace">
-							  <xpath>Defs/ThingDef[defName="ZF_PassableObsidianstone"]/building/mineableThing</xpath>
-							  <value>
-								<mineableThing>ZF_ChunkObsidian</mineableThing>
-							  </value>
-							</li>
-		
-							</operations>
-						</match>
-					</li>
+						<li Class="PatchOperationReplace">
+						  <xpath>Defs/ThingDef[defName="ZF_SmoothedHewnObsidianstone"]/building/mineableThing</xpath>
+						  <value>
+							<mineableThing>ZF_ChunkBasalt</mineableThing>
+						  </value>
+						</li>
 					
 					</operations>
 				</nomatch>
