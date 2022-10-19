@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Pure stuff: Basics -->
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Extinguish Refuelables</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	<!--
+				<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName="TorchLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+				<value>MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable</value>
+				<attribute>Class</attribute>
+				</li>
+-->
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Brazier"]/comps/li[@Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable"]</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.8</fireSize>
+							<offset>(0,0,0.23)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TorchLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.4</fireSize>
+							<offset>(0.01,0,0.32)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Campfire"]/comps/li[@Class="SK.CompFueled_Properties"]/fireDrawOffset</xpath>
+					<value>
+						<drawfirefuel>false</drawfirefuel>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="Campfire"]/comps</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.8</fireSize>
+							<offset>(0,0,0.2)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompFueled_Properties"]/fireDrawOffset</xpath>
+					<value>
+						<drawfirefuel>false</drawfirefuel>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompFueled_Properties"]/fireDrawScale</xpath>
+				</li>
+<!--
+				<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+				<value>MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable</value>
+				<attribute>Class</attribute>
+				</li>
+-->
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.5</fireSize>
+							<offset>(0,0,0.34)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="WallTorch"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_Flickable" />
+					</value>
+				</li>
+<!--
+				<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName="WallTorch"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+				<value>MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable</value>
+				<attribute>Class</attribute>
+				</li>
+	-->			
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WallTorch"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.0</fireSize>
+							<offset>(0.0,0,0.0)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="Candle"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_Flickable" />
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="Candle"]/comps</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.0</fireSize>
+							<offset>(0.0,0,0.0)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="DarklightBrazier" or defName="Darktorch" or defName="DarktorchFungus"]/comps</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.0</fireSize>
+							<offset>(0.0,0,0.0)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Simple Utilities: Ceiling HSK</li>
+						<li>Simple Utilities: Ceiling</li>
+					</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+
+								<li Class="PatchOperationAdd">
+								<order>Prepend</order>
+								<xpath>Defs/ThingDef[defName="Owl_Chandelier"]/comps</xpath>
+									<value>
+										<li Class="CompProperties_Flickable" />
+									</value>
+								</li>
+
+								<li Class="PatchOperationAdd">
+								<order>Prepend</order>
+								<xpath>Defs/ThingDef[defName="Owl_Chandelier"]/comps</xpath>
+									<value>
+										<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+											<fireSize>0.0</fireSize>
+											<offset>(0.0,0,0.0)</offset>
+										</li>
+									</value>
+								</li>
+
+							</operations>
+						</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
