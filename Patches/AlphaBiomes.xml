@@ -35,23 +35,9 @@
 												<ZF_BlocksMudstone>20</ZF_BlocksMudstone>
 											</value>
 										</li>
-
-										<li Class="PatchOperationReplace">
-											<xpath>/Defs/TerrainDef[defName = "AB_Tile_OcularObsidian"]/costList/AB_BlocksObsidian</xpath>
-											<value>
-												<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
-											</value>
-										</li>
 										
 										</operations>
 									</match>
-								</li>
-								
-								<li Class="PatchOperationReplace">
-									<xpath>/Defs/ThingDef[defName = "AA_CrystalMit"]/comps/li[@Class="AnimalBehaviours.CompProperties_EatWeirdFood"]/customThingToEat/li[text()="AB_ChunkObsidian"]</xpath>
-									<value>
-										<li>ZF_ChunkObsidian</li>
-									</value>
 								</li>
 								
 								<li Class="PatchOperationRemove">
@@ -79,23 +65,9 @@
 						</li>
 
 						<li Class="PatchOperationReplace">
-							<xpath>/Defs/TerrainDef[defName = "AB_TileObsidian"]/costList/AB_BlocksObsidian</xpath>
-							<value>
-								<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
-							</value>
-						</li>
-
-						<li Class="PatchOperationReplace">
 							<xpath>/Defs/TerrainDef[defName = "AB_FlagstoneMudstone"]/costList/AB_BlocksMudstone</xpath>
 							<value>
 								<ZF_BlocksMudstone>4</ZF_BlocksMudstone>
-							</value>
-						</li>
-
-						<li Class="PatchOperationReplace">
-							<xpath>/Defs/TerrainDef[defName = "AB_FlagstoneObsidian"]/costList/AB_BlocksObsidian</xpath>
-							<value>
-								<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
 							</value>
 						</li>
 						
@@ -124,34 +96,6 @@
 							<xpath>/Defs/RecipeDef[defName = "GU_MakeStoneBlocksMudstone"]/products/AB_BlocksMudstone</xpath>
 							<value>
 								<ZF_BlocksMudstone>20</ZF_BlocksMudstone>
-							</value>
-						</li>
-						
-						<li Class="PatchOperationReplace">
-							<xpath>/Defs/ThingDef[defName = "AB_Obsidianstone"]/building/mineableThing</xpath>
-							<value>
-								<mineableThing>ZF_ChunkObsidian</mineableThing>
-							</value>
-						</li>
-						
-						<li Class="PatchOperationReplace">
-							<xpath>/Defs/ThingDef[defName = "AB_ChunkObsidian"]/butcherProducts/AB_BlocksObsidian</xpath>
-							<value>
-								<ZF_ChunkObsidian>20</ZF_ChunkObsidian>
-							</value>
-						</li>
-						
-						<li Class="PatchOperationReplace">
-							<xpath>/Defs/ThingDef[defName = "AB_BlocksObsidian"]/stuffProps/stuffAdjective</xpath>
-							<value>
-								<stuffAdjective>ancient obsidian</stuffAdjective>
-							</value>
-						</li>
-						
-						<li Class="PatchOperationReplace">
-							<xpath>/Defs/RecipeDef[defName = "AB_MakeStoneBlocksObsidian"]/products/AB_BlocksObsidian</xpath>
-							<value>
-								<ZF_ChunkObsidian>20</ZF_ChunkObsidian>
 							</value>
 						</li>
 						
@@ -214,37 +158,10 @@
 								</li>
 
 								<li Class="PatchOperationReplace">
-									<xpath>/Defs/TerrainDef[defName="AM_JewishTileObsidian"]/costList</xpath>
-									<value>
-										<costList>
-											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
-										</costList>
-									</value>
-								</li>
-
-								<li Class="PatchOperationReplace">
-									<xpath>/Defs/TerrainDef[defName="AM_JewishFineTileObsidian"]/costList</xpath>
-									<value>
-										<costList>
-											<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
-										</costList>
-									</value>
-								</li>
-
-								<li Class="PatchOperationReplace">
 									<xpath>/Defs/TerrainDef[defName="AM_KemeticTileMudstone"]/costList</xpath>
 									<value>
 										<costList>
 											<ZF_BlocksMudstone>4</ZF_BlocksMudstone>
-										</costList>
-									</value>
-								</li>
-
-								<li Class="PatchOperationReplace">
-									<xpath>/Defs/TerrainDef[defName="AM_KemeticTileObsidian"]/costList</xpath>
-									<value>
-										<costList>
-											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
 										</costList>
 									</value>
 								</li>
@@ -259,28 +176,10 @@
 								</li>
 
 								<li Class="PatchOperationReplace">
-									<xpath>/Defs/TerrainDef[defName="AM_KemeticFineTileObsidian"]/costList</xpath>
-									<value>
-										<costList>
-											<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
-										</costList>
-									</value>
-								</li>
-
-								<li Class="PatchOperationReplace">
 									<xpath>/Defs/TerrainDef[defName="AM_SteampunkTileMudstone"]/costList</xpath>
 									<value>
 										<costList>
 											<ZF_BlocksMudstone>4</ZF_BlocksMudstone>
-										</costList>
-									</value>
-								</li>
-
-								<li Class="PatchOperationReplace">
-									<xpath>/Defs/TerrainDef[defName="AM_SteampunkTileObsidian"]/costList</xpath>
-									<value>
-										<costList>
-											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
 										</costList>
 									</value>
 								</li>
@@ -316,6 +215,145 @@
 					
 					</operations>
 				</nomatch>
+				<match Class="PatchOperationSequence">
+					<operations>
+				
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Alpha Animals</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<operations>
+					
+									<li Class="PatchOperationFindMod">
+										<mods>
+											<li>Ideology</li>
+										</mods>
+										<match Class="PatchOperationSequence">
+											<operations>
+
+											<li Class="PatchOperationReplace">
+												<xpath>/Defs/TerrainDef[defName = "AB_Tile_OcularObsidian"]/costList/AB_BlocksObsidian</xpath>
+												<value>
+													<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
+												</value>
+											</li>
+											
+											</operations>
+										</match>
+									</li>
+									
+									<li Class="PatchOperationReplace">
+										<xpath>/Defs/ThingDef[defName = "AA_CrystalMit"]/comps/li[@Class="AnimalBehaviours.CompProperties_EatWeirdFood"]/customThingToEat/li[text()="AB_ChunkObsidian"]</xpath>
+										<value>
+											<li>ZF_ChunkObsidian</li>
+										</value>
+									</li>
+								
+								</operations>
+							</match>
+						</li>
+					
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/TerrainDef[defName = "AB_TileObsidian"]/costList/AB_BlocksObsidian</xpath>
+							<value>
+								<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/TerrainDef[defName = "AB_FlagstoneObsidian"]/costList/AB_BlocksObsidian</xpath>
+							<value>
+								<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+							</value>
+						</li>
+					
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName = "AB_Obsidianstone"]/building/mineableThing</xpath>
+							<value>
+								<mineableThing>ZF_ChunkObsidian</mineableThing>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName = "AB_ChunkObsidian"]/butcherProducts/AB_BlocksObsidian</xpath>
+							<value>
+								<ZF_ChunkObsidian>20</ZF_ChunkObsidian>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName = "AB_BlocksObsidian"]/stuffProps/stuffAdjective</xpath>
+							<value>
+								<stuffAdjective>ancient obsidian</stuffAdjective>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/RecipeDef[defName = "AB_MakeStoneBlocksObsidian"]/products/AB_BlocksObsidian</xpath>
+							<value>
+								<ZF_ChunkObsidian>20</ZF_ChunkObsidian>
+							</value>
+						</li>
+					
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Alpha Memes</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<operations>
+						
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_JewishTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_JewishFineTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_KemeticTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_KemeticFineTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>20</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								<li Class="PatchOperationReplace">
+									<xpath>/Defs/TerrainDef[defName="AM_SteampunkTileObsidian"]/costList</xpath>
+									<value>
+										<costList>
+											<ZF_BlocksObsidian>4</ZF_BlocksObsidian>
+										</costList>
+									</value>
+								</li>
+
+								</operations>
+							</match>
+						</li>
+					
+					</operations>
+				</match>
 			</li>
 
 			<li Class="PatchOperationFindMod">
