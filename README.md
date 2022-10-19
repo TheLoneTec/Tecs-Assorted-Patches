@@ -46,6 +46,7 @@ various workshop mod patches for HSK. [Trello Board](https://trello.com/b/Awq5ab
 - [Minerals Craft](https://discord.com/channels/272340793174392832/875750742684749844/884483675658526722) - Fixed Terrain Reserach Slightly
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
 - [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
+- [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
 
 Other Additions:
 
