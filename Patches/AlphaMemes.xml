@@ -31,6 +31,23 @@
 				</match>
 			</li>
 
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<DiggingSpeed>0.8</DiggingSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
 			</operations>
 		</match>
     </Operation>

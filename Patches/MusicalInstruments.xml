@@ -7,7 +7,88 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+	
+				<!-- ========== Trader Stock and Trade Tag ========== -->
+				
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingCategoryDef/defName[text()="MusicalInstruments"]</xpath>
+				<value>
+					<defName>SmallMusicalInstruments</defName>
+				</value>
+			</li>
 		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TraderKindDef[defName="Base_Neolithic_Standard" or defName="Base_Outlander_Standard" or defName="Caravan_Neolithic_ShamanMerchant"
+				or defName="Caravan_Outlander_Exotic" or defName="Orbital_Exotic" or defName="Empire_Caravan_TraderGeneral"
+				 or defName="Orbital_Empire"]/stockGenerators/li[@Class="StockGenerator_Category"]/categoryDef[text()="MusicalInstruments"]</xpath>
+				<value>
+					<categoryDef>SmallMusicalInstruments</categoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="MusicalInstrumentBuildingBase"]/tradeTags</xpath>
+				<value>
+					<tradeTags>
+						<li>SmallMusicalInstrument</li>
+					</tradeTags>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="MusicalInstrumentBuildingBase"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>SmallMusicalInstruments</li>
+					</thingCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="HeldMusicalInstrumentBase"]/tradeTags</xpath>
+				<value>
+					<tradeTags>
+						<li>SmallMusicalInstrument</li>
+					</tradeTags>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="HeldMusicalInstrumentBase"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>SmallMusicalInstruments</li>
+					</thingCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="BurnMusicalInstrument"]/ingredients</xpath>
+				<value>
+					<ingredients>
+					  <li>
+						<filter>
+						  <categories>
+							<li>SmallMusicalInstruments</li>
+						  </categories>
+						</filter>
+						<count>1</count>
+					  </li>
+					</ingredients>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="BurnMusicalInstrument"]/fixedIngredientFilter</xpath>
+				<value>
+					<fixedIngredientFilter>
+					  <categories>
+						<li>SmallMusicalInstruments</li>
+					  </categories>
+					</fixedIngredientFilter>
+				</value>
+			</li>
+	
 				<!-- ========== Music Spot ========== -->
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Spots"]/defNames</xpath>

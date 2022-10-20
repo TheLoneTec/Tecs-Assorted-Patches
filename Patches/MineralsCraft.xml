@@ -43,6 +43,57 @@
 				</value>
 			</li>
 	
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksFlint"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantSowingSpeed>0.85</PlantSowingSpeed>
+							<DiggingSpeed>0.7</DiggingSpeed>
+							<MiningYieldDigging>0.75</MiningYieldDigging>
+							<ConstructionSpeed>0.7</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksObsidian"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.85</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantSowingSpeed>0.85</PlantSowingSpeed>
+							<DiggingSpeed>0.8</DiggingSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="BlocksAdamant"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<DiggingSpeed>0.8</DiggingSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+	
 			</operations>
 		</match>
 	</Operation>
