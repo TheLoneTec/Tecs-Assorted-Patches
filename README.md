@@ -58,6 +58,10 @@ Other Additions:
 - Ratkin Facial Animation Dubs Apparel Tweaks patch
 - Moyo Facial Animation Patch.
 
+## Celsius Guide (Temp) :
+
+Use the Industrial Air Vac in order to help keep certain production buildings at their full efficiency
+
 # Old Update Log (Check github forum for full update history):
 
 Updated: [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
@@ -104,7 +108,3 @@ Updated: (LTS Furniture) Lanternpost initial Fuel percent, set to 0.
 Updated: (Gloomy Deco) Added check for Viles Metallurgy, for Milling SubCategory.
 
 Updated: (Vanilla Base Generation Expanded) Added Conditional Check for Third party Modifications
-
-## Celsius Guide (Temp) :
-
-Use Chimneys and the Industrial Air Vac in order to help keep production buildings at their full efficiency
