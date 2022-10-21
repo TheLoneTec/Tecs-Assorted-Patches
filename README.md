@@ -57,6 +57,7 @@ Other Additions:
 - Eye Patch Apparel for Left and Right Eyes
 - Ratkin Facial Animation Dubs Apparel Tweaks patch
 - Moyo Facial Animation Patch.
+- Survival Tools - added missing stuffProps for various mods.
 
 ## Celsius Guide (Temp) :
 
