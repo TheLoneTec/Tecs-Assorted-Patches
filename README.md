@@ -58,14 +58,14 @@ Other Additions:
 - Ratkin Facial Animation Dubs Apparel Tweaks patch
 - Moyo Facial Animation Patch.
 
-# Update Log:
+# Old Update Log (Check github forum for full update history):
 
-- [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
-- Vanilla Furniture Expanded SK (minor royalty adjustments and fixes, adjusted slab bed stats)
-- Viles Windows (Architect Menu)
-- Viles Renovations (Architect Menus, other mod compatibility)
-- PlaceStuffOnTables Patch (Added Standing Lamps, glowstone lamps and candles to be put on tables (looks better on 1x1 tables using "perspective buildings" mod). Also other items like game of ur, marimba from musical instruments)
-- Core SK (Moved more items into Architect categories, as well as items from other mods. Adjusted ideology slab bed stats.)
+Updated: [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
+Updated: Vanilla Furniture Expanded SK (minor royalty adjustments and fixes, adjusted slab bed stats)
+Updated: Viles Windows (Architect Menu)
+Updated: Viles Renovations (Architect Menus, other mod compatibility)
+Updated: PlaceStuffOnTables Patch (Added Standing Lamps, glowstone lamps and candles to be put on tables (looks better on 1x1 tables using "perspective buildings" mod). Also other items like game of ur, marimba from musical instruments)
+Updated: Core SK (Moved more items into Architect categories, as well as items from other mods. Adjusted ideology slab bed stats.)
 
 Updated: Fixed FenceGates and things like them from keeping heat like doors for Celsius. Made cloth tent door ,walls and animal flap more realistic for Celsius. Added large Gate to Celsius.
 
@@ -85,27 +85,25 @@ Updated: removed over 20 yellow duplicate research messages so far
 
 Updated: Musical Instruments, changed most recipes to RecipeDefs to make recipes more "Realistic"
 
-Updated:
+Updated: (Gloomy Deco) Changed research to Cooking II - Cupboard, Tableware Shelf.
 
--- (Gloomy Deco) Changed research to Cooking II - Cupboard, Tableware Shelf.
+Updated: Added No Power Comms Patch - Material Conversion + add to Trade Subcategory.
 
--- Added No Power Comms Patch - Material Conversion + add to Trade Subcategory.
+Updated: (Gloomy Deco) BookShelf - Storage III research
 
--- (Gloomy Deco) BookShelf - Storage III research
+Updated: (LTS Furniture) Darklight Pits - to Firepits and Places Architect Subcategory
 
--- (LTS Furniture) Darklight Pits - to Firepits and Places Architect Subcategory
+Updated: Made Nels Lazy Patching have to be loaded before
 
--- Made Nels Lazy Patching have to be loaded before
+Updated: Made Celsius Chimneys Transparent, and with Simple Utilities: Ceiling mod, toggable.
 
--- Made Celsius Chimneys Transparent, and with Simple Utilities: Ceiling mod, toggable.
+Updated: (Vanilla Psycasts Expanded) Added CE patches from workshop CE
 
--- (Vanilla Psycasts Expanded) Added CE patches from workshop CE
+Updated: (LTS Furniture) Lanternpost initial Fuel percent, set to 0.
 
--- (LTS Furniture) Lanternpost initial Fuel percent, set to 0.
+Updated: (Gloomy Deco) Added check for Viles Metallurgy, for Milling SubCategory.
 
--- (Gloomy Deco) Added check for Viles Metallurgy, for Milling SubCategory.
-
--- (Vanilla Base Generation Expanded) Added Conditional Check for Third party Modifications
+Updated: (Vanilla Base Generation Expanded) Added Conditional Check for Third party Modifications
 
 ## Celsius Guide (Temp) :
 
