@@ -198,6 +198,39 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="FueledSmithy"]/comps</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.0</fireSize>
+							<offset>(0.0,0,0.0)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="TableFurnace"]/comps</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.0</fireSize>
+							<offset>(0.0,0,0.0)</offset>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+				<order>Prepend</order>
+				<xpath>Defs/ThingDef[defName="Kiln"]/comps</xpath>
+					<value>
+						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+							<fireSize>0.0</fireSize>
+							<offset>(0.0,0,0.0)</offset>
+						</li>
+					</value>
+				</li>
+
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>HMC Vile's Metallurgy</li>
@@ -227,6 +260,17 @@
 							<li Class="PatchOperationAdd">
 							<order>Prepend</order>
 							<xpath>Defs/ThingDef[defName="Bloomery"]/comps</xpath>
+								<value>
+									<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+										<fireSize>0.0</fireSize>
+										<offset>(0.0,0,0.0)</offset>
+									</li>
+								</value>
+							</li>
+
+							<li Class="PatchOperationAdd">
+							<order>Prepend</order>
+							<xpath>Defs/ThingDef[label='blast furnace']/comps</xpath>
 								<value>
 									<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
 										<fireSize>0.0</fireSize>
@@ -433,7 +477,18 @@
 									</li>
 								</value>
 							</li>
-							
+	
+							<li Class="PatchOperationAdd">
+							<order>Prepend</order>
+							<xpath>Defs/ThingDef[defName="GL_FueledSmithy"]/comps</xpath>
+								<value>
+									<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+										<fireSize>0.0</fireSize>
+										<offset>(0.0,0,0.0)</offset>
+									</li>
+								</value>
+							</li>
+	
 						</operations>
 					</match>
 				</li>
@@ -615,22 +670,12 @@
 				</li>
 				
 <!--
-				<li Class="XmlExtensions.PatchOperationSafeAdd">
-					<xpath>Defs/ThingDef[@ParentName="BuildingFueled" or @ParentName="WorkTableFueled"
-					and not(defName='FueledSmithy' or defName='GL_FueledSmithy' or defName='TableFurnace' or label='blast furnace')]</xpath>
-					<safetyDepth>2</safetyDepth>
-					<compare>Both</compare>
-					<checkAttributes>True</checkAttributes>
-					<value>
-						<comps>
-							<li Class="CompProperties_Flickable" />
-						</comps>
-					</value>
+				<li Class="XmlExtensions.PatchOperationSafeRemove">
+					<xpath>Defs/ThingDef[defName='FueledSmithy' or defName='GL_FueledSmithy' or defName='TableFurnace' or label='blast furnace'/comps/li[@Class="CompProperties_Flickable"]</xpath>
 				</li>
 
 				<li Class="XmlExtensions.PatchOperationSafeAdd">
-				<xpath>Defs/ThingDef[@ParentName="BuildingFueled" or @ParentName="WorkTableFueled"
-				and not(defName='FueledSmithy' or defName='GL_FueledSmithy' or defName='TableFurnace' or label='blast furnace')]</xpath>
+				<xpath>Defs/ThingDef[defName='FueledSmithy' or defName='GL_FueledSmithy' or defName='TableFurnace' or label='blast furnace']</xpath>
 					<safetyDepth>3</safetyDepth>
 					<compare>Name</compare>
 					<checkAttributes>True</checkAttributes>
