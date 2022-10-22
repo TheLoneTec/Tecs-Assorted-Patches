@@ -19,5 +19,6 @@
 	<li IfModActive="vanillaexpanded.outposts">LoadDefs/Vanilla_Outposts_Expanded</li>
 	<li IfModActive="kikohi.jewelry">LoadDefs/Jewelery</li>
 	<li IfModActive="LtBob.PreemptiveStrike.Rimworld">LoadDefs/Preemptive_Strike</li>
+	<li IfModNotActive="TheLoneTec.PaperP.CB2.HSK">LoadDefs/Skynet_No_PaperPattern</li>
   </v1.3>
 </loadFolders>
