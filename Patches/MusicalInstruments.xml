@@ -9,11 +9,34 @@
 			<operations>
 	
 				<!-- ========== Trader Stock and Trade Tag ========== -->
-				
+				<!--
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingCategoryDef/defName[text()="MusicalInstruments"]</xpath>
 				<value>
 					<defName>SmallMusicalInstruments</defName>
+				</value>
+			</li>
+		-->
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <ThingCategoryDef>
+					<defName>StationaryMusicalInstruments</defName>
+					<label>stationary musical instruments</label>
+					<parent>Items</parent>
+				  </ThingCategoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <ThingCategoryDef>
+					<defName>PortableMusicalInstruments</defName>
+					<label>portable musical instruments</label>
+					<parent>Items</parent>
+				  </ThingCategoryDef>
 				</value>
 			</li>
 		
@@ -22,43 +45,57 @@
 				or defName="Caravan_Outlander_Exotic" or defName="Orbital_Exotic" or defName="Empire_Caravan_TraderGeneral"
 				 or defName="Orbital_Empire"]/stockGenerators/li[@Class="StockGenerator_Category"]/categoryDef[text()="MusicalInstruments"]</xpath>
 				<value>
-					<categoryDef>SmallMusicalInstruments</categoryDef>
+					<categoryDef>PortableMusicalInstruments</categoryDef>
 				</value>
 			</li>
-		
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="MusicalInstrumentBase"]/tradeTags</xpath>
+				<value>
+					<li>StationaryMusicalInstrument</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="MusicalInstrumentBase"]/thingCategories</xpath>
+				<value>
+					<li>StationaryMusicalInstruments</li>
+				</value>
+			</li>
+	
+			<!-- ===== Replace all existing instrument tags with royalty specific tags ===== -->
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/TraderKindDef/stockGenerators/li[@Class="StockGenerator_BuyTradeTag"]/tag[text()="MusicalInstrument"]</xpath>
+				<value>
+					<tag>StationaryMusicalInstrument</tag>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="MusicalInstrumentBuildingBase"]/tradeTags</xpath>
 				<value>
-					<tradeTags>
-						<li>SmallMusicalInstrument</li>
-					</tradeTags>
+					<li>StationaryMusicalInstrument</li>
 				</value>
 			</li>
 	
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="MusicalInstrumentBuildingBase"]/thingCategories</xpath>
 				<value>
-					<thingCategories>
-						<li>SmallMusicalInstruments</li>
-					</thingCategories>
+					<li>StationaryMusicalInstruments</li>
 				</value>
 			</li>
 	
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="HeldMusicalInstrumentBase"]/tradeTags</xpath>
 				<value>
-					<tradeTags>
-						<li>SmallMusicalInstrument</li>
-					</tradeTags>
+					<li>PortableMusicalInstrument</li>
 				</value>
 			</li>
 	
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="HeldMusicalInstrumentBase"]/thingCategories</xpath>
 				<value>
-					<thingCategories>
-						<li>SmallMusicalInstruments</li>
-					</thingCategories>
+					<li>PortableMusicalInstruments</li>
 				</value>
 			</li>
 	
@@ -69,7 +106,7 @@
 					  <li>
 						<filter>
 						  <categories>
-							<li>SmallMusicalInstruments</li>
+							<li>PortableMusicalInstruments</li>
 						  </categories>
 						</filter>
 						<count>1</count>
@@ -83,7 +120,7 @@
 				<value>
 					<fixedIngredientFilter>
 					  <categories>
-						<li>SmallMusicalInstruments</li>
+						<li>PortableMusicalInstruments</li>
 					  </categories>
 					</fixedIngredientFilter>
 				</value>
