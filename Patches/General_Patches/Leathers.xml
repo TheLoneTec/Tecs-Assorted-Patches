@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-	<Operation Class="XmlExtensions.PatchOperationSafeReplace">
-		<xpath>Defs/ThingDef/race/leatherDef[text()="Leather_Bear"]</xpath>
-		<value>
-			<leatherDef>Leather_Heavy</leatherDef>
-		</value>
+	<Operation Class="PatchOperationConditional">
+	<xpath>/Defs/ThingDef/race/leatherDef[text()="Leather_Bear"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef/race/leatherDef[text()="Leather_Bear"]</xpath>
+			<value>
+				<leatherDef>Leather_Heavy</leatherDef>
+			</value>
+		</match>
 	</Operation>
+
 
 </Patch>
