@@ -63,7 +63,7 @@ Other Additions:
 
 Use the Industrial Air Vac in order to help keep certain production buildings at their full efficiency
 
-# Old Update Log (Check github forum for full update history):
+# Old Update Log (Check discord thread for full update history):
 
 Updated: [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
 
