@@ -66,10 +66,15 @@ Use the Industrial Air Vac in order to help keep certain production buildings at
 # Old Update Log (Check github forum for full update history):
 
 Updated: [LTS] Furnishings (Architect Menus, removals and balances + compatibility with other mods, research fixes, added compatibility for Locks2, Includes performance and pathing friendly 1x2, 1x3 and 1x4 doors and door frames)
+
 Updated: Vanilla Furniture Expanded SK (minor royalty adjustments and fixes, adjusted slab bed stats)
+
 Updated: Viles Windows (Architect Menu)
+
 Updated: Viles Renovations (Architect Menus, other mod compatibility)
+
 Updated: PlaceStuffOnTables Patch (Added Standing Lamps, glowstone lamps and candles to be put on tables (looks better on 1x1 tables using "perspective buildings" mod). Also other items like game of ur, marimba from musical instruments)
+
 Updated: Core SK (Moved more items into Architect categories, as well as items from other mods. Adjusted ideology slab bed stats.)
 
 Updated: Fixed FenceGates and things like them from keeping heat like doors for Celsius. Made cloth tent door ,walls and animal flap more realistic for Celsius. Added large Gate to Celsius.
