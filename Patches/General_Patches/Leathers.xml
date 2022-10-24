@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef/race/leatherDef[text()="Leather_Bear"]</xpath>
+		<value>
+			<leatherDef>Leather_Heavy</leatherDef>
+		</value>
+	</Operation>
+
+</Patch>
