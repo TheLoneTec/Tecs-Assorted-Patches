@@ -528,7 +528,7 @@
 							</categories>
 						</value>
 					</li>
-	
+	<!--
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/RecipeDef[defName="MakeSeafoodChowder"]/defaultIngredientFilter</xpath>
 						<value>
@@ -538,7 +538,7 @@
 							</disallowedThingDefs>
 						</value>
 					</li>
-	
+	-->
 					<li Class="PatchOperationInsert">
 						<xpath>Defs/RecipeDef[defName="MakeOystersRimefeller"]/ingredients/li/filter/thingDefs/li[text()="Oyster"]</xpath>
 						<value>

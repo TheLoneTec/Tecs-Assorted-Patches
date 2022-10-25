@@ -14,15 +14,6 @@
 				<Meals>
 					<!-- RawResource -->
 
-					<li>
-						<name>salmon roe</name>
-						<type>RawResource</type>
-					</li>
-					<li>
-						<name>caviar</name>
-						<type>RawResource</type>
-					</li>	
-
 					<!-- HotMeal -->
 					<li>
 						<name>nutrient paste meal</name>
@@ -77,6 +68,16 @@
 					</li>
 
 					<!-- RawTasty -->
+
+					<li>
+						<name>salmon roe</name>
+						<type>RawTasty</type>
+					</li>
+					<li>
+						<name>caviar</name>
+						<type>RawTasty</type>
+					</li>	
+
 
 					<!-- RoomTempMeal (lukewarm meals) -->
 					<li>

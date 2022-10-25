@@ -1725,18 +1725,49 @@
 				</nomatch>
 			</li>
 
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="MSCerebrax"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>19.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="MSCerebrax"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>60.00</researchViewY>
-                </value>
-            </li>
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Harvest Organs Post Mortem SK</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="MSCerebrax"]/researchViewX</xpath>
+						<value>
+							<researchViewX>19.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="MSCerebrax"]/researchViewY</xpath>
+						<value>
+							<researchViewY>61.00</researchViewY>
+						</value>
+					</li>
+					
+				</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+				<operations>
+				
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="MSCerebrax"]/researchViewX</xpath>
+						<value>
+							<researchViewX>19.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="MSCerebrax"]/researchViewY</xpath>
+						<value>
+							<researchViewY>60.00</researchViewY>
+						</value>
+					</li>
+					
+				</operations>
+				</nomatch>
+			</li>
+
+
 			<li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="MSCerebrax"]/tab</xpath>
                 <value>

@@ -2719,5 +2719,23 @@
 
 		</operations>
 		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+			
+			</operations>
+		</nomatch>
     </Operation>	
 </Patch>	

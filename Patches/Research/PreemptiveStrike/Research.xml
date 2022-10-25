@@ -414,16 +414,16 @@
 				<nomatch Class="PatchOperationSequence">
 					<operations>
 					
-				   <li Class="PatchOperationReplace">
+					<li Class="PatchOperationReplace">
 						<xpath>Defs/ResearchProjectDef[defName="PES_Satellite"]/researchViewX</xpath>
 						<value>
-							<researchViewX>16.00</researchViewX>
+							<researchViewX>26.00</researchViewX>
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ResearchProjectDef[defName="PES_Satellite"]/researchViewY</xpath>
 						<value>
-							<researchViewY>23.00</researchViewY>
+							<researchViewY>24.00</researchViewY>
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">

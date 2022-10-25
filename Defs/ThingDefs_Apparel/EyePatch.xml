@@ -40,14 +40,14 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.02</MoveSpeed>
 			<WorkSpeedGlobal>-0.04</WorkSpeedGlobal>
-			<SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.05</SocialImpact>
 			<!--<SightsEfficiency>-0.1</SightsEfficiency>-->
 			<PsychicSensitivity>-0.1</PsychicSensitivity>
 			<GlobalLearningFactor>-0.02</GlobalLearningFactor>
 			<NegotiationAbility>0.04</NegotiationAbility>
-			<TradePriceImprovement>0.05</TradePriceImprovement>
-			<TrainAnimalChance>0.1</TrainAnimalChance>
-			<TameAnimalChance>0.04</TameAnimalChance>
+			<TradePriceImprovement>0.025</TradePriceImprovement>
+			<TrainAnimalChance>0.05</TrainAnimalChance>
+			<TameAnimalChance>0.02</TameAnimalChance>
 			<GermResistance>0.01</GermResistance>
 			<GermContainment>0.01</GermContainment>
 		</equippedStatOffsets>

@@ -1788,8 +1788,8 @@
 					<values>
 						<li>20</li>
 						<li>25</li>
-						<li>175</li>
-						<li>10</li>
+						<li>185</li>
+						<li>-5</li>
 					</values>
 				</angle>
 				<flip>
@@ -1832,8 +1832,8 @@
 					<values>
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
+						<li>(-1.5, 0.0, 0.0)</li>
+						<li>(1.5, 0.0, 0.0)</li>
 					</values>
 				</bodyOffset>
 				<size>

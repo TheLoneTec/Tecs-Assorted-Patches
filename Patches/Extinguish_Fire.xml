@@ -77,7 +77,7 @@
 					<value>
 						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
 							<fireSize>0.5</fireSize>
-							<offset>(0,0,0.34)</offset>
+							<offset>(0,0,0.35)</offset>
 						</li>
 					</value>
 				</li>
@@ -111,7 +111,23 @@
 				<fireSize>0.4</fireSize>
 				<offset>(0,0,0.0)</offset>
 			</li>
-				
+			
+				<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WallTorch"]/comps</xpath>
+					<value>
+						<li MayRequire="loomy.DecorPack.SK" Class="Gloomylynx.CompProperties_FireOverlayRotatable">
+							<compClass>Gloomylynx.CompFireOverlayRotatable</compClass>
+							<fireSize>0.5</fireSize>
+							<offset>(0,0,0.4)</offset>
+							<showRotateList>
+								<li>South</li>
+								<li>North</li>
+								<li>East</li>
+								<li>West</li>
+							</showRotateList>
+						</li>
+					</value>
+				</li>
 					-->	
 
 				<li Class="PatchOperationAdd">
