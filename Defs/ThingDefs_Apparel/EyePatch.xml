@@ -4,13 +4,13 @@
 	<BodyPartGroupDef>
 		<defName>LeftEye</defName>
 		<label>left eye</label>
-		<listOrder>199</listOrder>
+		<listOrder>197</listOrder>
 	</BodyPartGroupDef>
 	
 	<BodyPartGroupDef>
 		<defName>RightEye</defName>
 		<label>right eye</label>
-		<listOrder>199</listOrder>
+		<listOrder>197</listOrder>
 	</BodyPartGroupDef>
 	
 	<ThingDef Name="EyePatchBase" ParentName="ApparelNeoliticBase" Abstract="True">		
