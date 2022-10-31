@@ -9,7 +9,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-			<Operation Class="PatchOperationFindMod">
+			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>Nopower Comms Simplified</li>
 			</mods>
@@ -25,7 +25,7 @@
 	
 					</operations>
 				</match>
-			</Operation>
+			</li>
 	
 			</operations>
 		</match>
