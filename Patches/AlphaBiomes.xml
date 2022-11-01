@@ -53,8 +53,15 @@
 						</li>
 
 						<li Class="PatchOperationRemove">
-							<xpath>/Defs/ThingDef[defName="Stone-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above/li[text()="AB_Mudstone_Smooth"
-							or text()="AB_Mudstone_Rough" or text()="AB_Mudstone_RoughHewn"]</xpath>
+							<xpath>/Defs/ThingDef[defName="Stone-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above/li[text()="AB_Mudstone_Smooth"]</xpath>
+						</li>
+						
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/ThingDef[defName="Stone-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above/li[text()="AB_Mudstone_Rough"]</xpath>
+						</li>
+						
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/ThingDef[defName="Stone-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above/li[text()="AB_Mudstone_RoughHewn"]</xpath>
 						</li>
 
 						<li Class="PatchOperationReplace">

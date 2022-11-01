@@ -158,7 +158,7 @@
 
 						<li Class="XmlExtensions.PatchOperationSafeAdd">
 							<xpath>/Defs/MeditationFocusDef[defName="Archotech"]</xpath>
-							<safetyDepth>1</safetyDepth>
+							<safetyDepth>2</safetyDepth>
 							<value>
 							    <modExtensions>
 								  <li Class="VanillaPsycastsExpanded.MeditationFocusExtension">
