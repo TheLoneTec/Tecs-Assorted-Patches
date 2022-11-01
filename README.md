@@ -47,6 +47,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
 - [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
+- [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
 
 Other Additions:
 
