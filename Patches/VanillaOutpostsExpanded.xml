@@ -445,7 +445,8 @@
 				<xpath>/Defs/WorldObjectDef[defName="Outpost_Science"]/modExtensions/li[@Class="Outposts.OutpostExtension"]</xpath>
 				<value>
 					<CostToMake>
-						<HiTechResearchBench>1</HiTechResearchBench>
+						<BatteryGeneratorAssemblyKit>1</BatteryGeneratorAssemblyKit>
+						<HiTechResearchBenchAssemblyKit>1</HiTechResearchBenchAssemblyKit>
 						<OutpostMaterials>150</OutpostMaterials>
 					</CostToMake>
 					<!--<TicksToSetUp>360000</TicksToSetUp>-->
