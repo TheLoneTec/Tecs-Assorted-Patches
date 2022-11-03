@@ -333,7 +333,7 @@
 			<li>
 				<filter>
 					<categories>
-						<li>HeavyMetallic</li>
+						<li>HeavyBar</li>
 					</categories>
 				</filter>
 				<count>25</count>
@@ -341,7 +341,7 @@
 			<li>
 				<filter>
 					<categories>
-						<li>StrongMetallic</li>
+						<li>USLDBar</li>
 					</categories>
 				</filter>
 				<count>55</count>
