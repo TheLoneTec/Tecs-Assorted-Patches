@@ -241,8 +241,8 @@
 			<MarketValue>300</MarketValue>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>1</DeteriorationRate>
-			<Mass>50.0</Mass>
-			<Bulk>5.0</Bulk>
+			<Mass>1.0</Mass>
+			<Bulk>1.0</Bulk>
 		</statBases>
 		<intricate>true</intricate>
 		<thingCategories>
