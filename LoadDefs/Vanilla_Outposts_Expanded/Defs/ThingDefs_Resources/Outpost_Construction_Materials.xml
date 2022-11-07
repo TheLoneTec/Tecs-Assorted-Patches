@@ -373,8 +373,8 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<categories>
-				<li>HeavyMetallic</li>
-				<li>StrongMetallic</li>
+				<li>HeavyBar</li>
+				<li>USLDBar</li>
 			</categories>
 			<thingDefs>
 				<li>Glass</li>
