@@ -849,7 +849,7 @@
 								<MarketValue>0.6</MarketValue>
 							</statBases>
 							<ammoClass>LeadBall</ammoClass>
-							<cookOffProjectile>Bullet_PressurisedBullet</cookOffProjectile>
+							<cookOffProjectile>Bullet_Pressurised</cookOffProjectile>
 						</ThingDef>
 						
 						<!-- ================== Projectiles ================== -->
@@ -868,7 +868,7 @@
 
 
 						<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePressurisedBullet">
-							<defName>Bullet_PressurisedBullet</defName>
+							<defName>Bullet_Pressurised</defName>
 							<label>Pressurised Bullet (Lead)</label>
 							<projectile Class="CombatExtended.ProjectilePropertiesCE">
 								<damageAmountBase>25</damageAmountBase>
