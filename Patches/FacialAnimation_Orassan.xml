@@ -61,7 +61,7 @@
 			<operations>
 	
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Tail"]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Tail"]</xpath>
 				<value>
 					<li>
 						<drawSize>.9</drawSize>
@@ -134,7 +134,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="left ear"]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="left ear"]</xpath>
 				<value>
 					<li>
 						<drawnDesiccated>false</drawnDesiccated>
@@ -210,7 +210,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="right ear"]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="right ear"]</xpath>
 				<value>
 					<li>
 						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
@@ -306,7 +306,7 @@
 					</li>
 -->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
 						<value>
 							<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
 						</value>
@@ -363,7 +363,7 @@
 	
 			<!-- Add more cat colours -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator/colorChannels</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/colorChannels</xpath>
 					<value>
 					<colorChannels>
 						<li>
