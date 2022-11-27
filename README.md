@@ -1,7 +1,25 @@
 # Tecs-Assorted-Patches
 various workshop mod patches for HSK. I play with all of these mods enabled and can all be used together. [Trello Board](https://trello.com/b/Awq5abNv/tecs-assorted-patches). (Ideas/Progress/Issues/Completed) 
 
-# Patches for:
+# 1.4 Patches for:
+- Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Recommended))
+- [Perspective: Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=2567126933) (Added Textures for Viles Doors, corrective patches for base HSK + missing textures. Merge Viles fence gate textures into one category, fixed missing palisade gate east perspective)
+- [Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990) - Added HSK Trees.
+- [[LTS] Furnishings](https://steamcommunity.com/sharedfiles/filedetails/?id=2567438519), requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
+- [[LTS] Tenants](https://steamcommunity.com/sharedfiles/filedetails/?id=2850306027) (HSK + CE Patch),  requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
+- [Minerals Craft](https://discord.com/channels/272340793174392832/875750742684749844/884483675658526722) - Fixed Terrain Reserach Slightly
+- [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
+- [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
+
+Other 1.4 Additions:
+
+- Vanilla Beards Retextured Retexture for Facial Animation (WIP)
+- Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
+- Ideology worksites (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
+
+------------------------------------------------------------------
+
+# 1.3 Patches for:
 - [Alpha Biomes](https://discord.com/channels/272340793174392832/875750742684749844/1013919396051308645) ("Fixed" a recipeDef error with UF, more to stop error)
 - [Babies and Children](https://steamcommunity.com/sharedfiles/filedetails/?id=2559574784) ( Moved into Special Beds Architect Menu and Material Conversion)
 - [Better Cribs & Children](https://steamcommunity.com/sharedfiles/filedetails/?id=2563638037) (Patch to change additional crib into Primitive Crib for Neolithic)
@@ -49,7 +67,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
 - [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
 
-Other Additions:
+Other 1.3 Additions:
 
 - Vanilla Beards Retextured Retexture for Facial Animation (WIP)
 - Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
