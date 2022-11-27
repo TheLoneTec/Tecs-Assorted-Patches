@@ -14,7 +14,6 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 Other 1.4 Additions:
 
 - Vanilla Beards Retextured Retexture for Facial Animation (WIP)
-- Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
 - Ideology worksites (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
 
 ------------------------------------------------------------------
