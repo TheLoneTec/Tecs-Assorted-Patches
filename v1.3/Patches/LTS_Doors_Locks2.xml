@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Locks 2: Lock Them Out!</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/comps</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/comps</xpath>
+					<value>
+						<li Class="Locks2.Core.LockProperties"></li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]</xpath>
+					<value>
+						<comps>
+							<li Class="Locks2.Core.LockProperties"></li>
+						</comps>
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/inspectorTabs</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]/inspectorTabs</xpath>
+					<value>
+						<li>Locks2.Core.ITab_Lock</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[thingClass="LTS_Systems.Buildings.Door"]</xpath>
+					<value>
+						<inspectorTabs>
+							<li>Locks2.Core.ITab_Lock</li>
+						</inspectorTabs>
+					</value>
+				</nomatch>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

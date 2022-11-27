@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Jewelry</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Laser Sculpting Table ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Machining"]/defNames</xpath>
+				<value>
+					<li>LaserTableSculpting</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Sapphire"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.85</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantSowingSpeed>0.85</PlantSowingSpeed>
+							<MiningYieldDigging>0.85</MiningYieldDigging>
+							<DiggingSpeed>1.0</DiggingSpeed>
+							<SmithingSpeed>0.85</SmithingSpeed>
+						</toolStatFactors>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Ruby"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.85</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantSowingSpeed>0.85</PlantSowingSpeed>
+							<MiningYieldDigging>0.85</MiningYieldDigging>
+							<DiggingSpeed>1.0</DiggingSpeed>
+							<SmithingSpeed>0.85</SmithingSpeed>
+						</toolStatFactors>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Diamond"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>1.0</TreeFellingSpeed>
+							<PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
+							<PlantSowingSpeed>1.0</PlantSowingSpeed>
+							<MiningYieldDigging>1.0</MiningYieldDigging>
+							<DiggingSpeed>1.2</DiggingSpeed>
+							<SmithingSpeed>1.0</SmithingSpeed>
+						</toolStatFactors>
+					</li>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

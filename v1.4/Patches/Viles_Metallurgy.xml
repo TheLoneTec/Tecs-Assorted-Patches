@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Core SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>HMC Vile's Metallurgy</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "Cast_CannonParts"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>CastBar</li>
+							</categories>
+							<thingDefs>
+								<li>SandResource</li>
+								<li>SoftClay</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+
+				</operations>
+				</match>
+			</li>
+	
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

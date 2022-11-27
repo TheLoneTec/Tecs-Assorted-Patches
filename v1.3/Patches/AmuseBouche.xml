@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Amuse Bouche</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Hearth"]/interactionCellOffset</xpath>
+			<value>
+				<interactionCellOffset>(0,0,1)</interactionCellOffset>
+			</value>
+		</li>
+
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[@Name="CookMealFineBulkBase"]/recipeUsers</xpath>
+			<match Class="PatchOperationRemove">
+			  <xpath>Defs/RecipeDef[@Name="CookMealFineBulkBase"]/recipeUsers</xpath>
+			</match>
+		</li>
+
+		<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[@Name="CookMealLavishBase"]/recipeUsers</xpath>
+			<match Class="PatchOperationRemove">
+			  <xpath>Defs/RecipeDef[@Name="CookMealLavishBase"]/recipeUsers</xpath>
+			</match>
+		</li>
+
+		</operations>
+		</match>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>[LTS]Furnishing</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		
+			<!-- ======== Lights ======== -->
+		
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_LightBase"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Outdoor_Lights</defName>
+						<label>Outdoor Lights</label>
+						<description>Various lightposts for light a path.</description>
+						<defNames>
+							<li>LTS_Lanternpost</li>
+							<li>LTS_DarkLanternpost</li>
+							<li>LTS_Lightpost</li>
+							<li>LTS_DarkLightpost</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Fancy_Interior_Lights</defName>
+						<label>Fancy Interior Lights</label>
+						<description>Various lights for indoors.</description>
+						<defNames>
+							<li>LTS_Astrid</li>
+							<li>LTS_DarkAstrid</li>
+							<li>LTS_Vidja</li>
+							<li>LTS_DarkVidja</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Small_Lanterns</defName>
+						<label>Small Lanterns and Lamps</label>
+						<description>Various small lights.</description>
+						<defNames>
+							<li>LTS_OilLamp</li>
+							<li>LTS_DarkOilLamp</li>
+							<li>LTS_Lantern</li>
+							<li>LTS_DarkLantern</li>
+							<li>LTS_TableLantern</li>
+							<li>LTS_DarkTableLantern</li>
+							<li>LTS_ElectricLantern</li>
+							<li>LTS_DarkElectricLantern</li>
+							<li>LTS_ElectricTableLantern</li>
+							<li>LTS_DarkElectricTableLantern</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_OilLamp"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>Light_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_OilLamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>				
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lantern"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>Light_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>			
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>Light_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>Light_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_B2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_ElectricTableLantern"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_ElectricTableLantern"]</xpath>
+				<value>
+				<costList>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Glass>5</Glass>
+					<ElectronicComponents>1</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Furniture Expanded SK</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<!-- ========== Lamp Post ========== -->
+
+					<li Class="PatchOperationAdd">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Outdoor_Lights"]/defNames</xpath>
+						<value>
+							<li>Light_Streetlamp</li>
+						</value>
+					</li>
+
+					</operations>
+				</match>
+				
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/costList</xpath>
+				<value>
+				<costList>
+					<ComponentMedieval>2</ComponentMedieval>
+					<WoodPlank>20</WoodPlank>
+				</costList>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]</xpath>
+				<value>
+				<placeWorkers>
+					<li>PlaceWorker_NotUnderRoof</li>
+				</placeWorkers>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<value>
+				<thingDefs>
+					<li>Tallow</li>
+					<li>Paraffins</li>
+					<li MayRequire="LimeTreeSnake.Maintenance">LTSGrease</li>
+				</thingDefs>
+				</value>
+			</li>				
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/initialFuelPercent</xpath>
+				<value>
+					<initialFuelPercent>0</initialFuelPercent>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/description</xpath>
+				<value>
+					<description>A cute lanternpost made to brighten the roads ahead. Takes Tallow or Parraffin as fuel.</description>
+				</value>
+			</li>
+			
+			<!-- =============== LightPost ====================== -->
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C3</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
+				<value>
+				<placeWorkers>
+					<li>PlaceWorker_NotUnderRoof</li>
+				</placeWorkers>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>25</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
+				<value>
+				<costList>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Glass>5</Glass>
+					<ElectronicComponents>1</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]</xpath>
+				<value>
+				<costList>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Glass>5</Glass>
+					<ElectronicComponents>1</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]</xpath>
+				<value>
+				<costList>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Glass>5</Glass>
+					<ElectronicComponents>1</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+
+			<!-- ======== Fire Pits and Fireplace ======== -->
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_FireSourceBase"]</xpath>
+				<value>
+					<designationCategory>Temperature</designationCategory>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>FireSource</defName>
+						<label>Firepits and Fireplaces</label>
+						<description>Various fire sources.</description>
+						<defNames>
+							<li>LTS_Firepit</li>
+							<li>LTS_FirepitRound</li>
+							<li>LTS_Fireplace</li>
+						</defNames>
+						<designationCategory>Temperature</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/comps/li[@Class = "CompProperties_HeatPusher"]</xpath>
+				<value>
+				<li Class="SK.CompProperties_HeatPusherAdvanced">
+					<compClass>SK.CompHeatPusherAdvanced</compClass>
+					<heatPerSecond>21</heatPerSecond>
+                    <heatPushMaxTemperature>28</heatPushMaxTemperature>
+				</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]</xpath>
+				<value>
+				<inspectorTabs>
+					<li>SK.ITab_Fuel</li>
+				</inspectorTabs>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/comps</xpath>
+				<value>
+				<li Class="SK.CompProperties_FireOverlayMod">
+					<fireSize>1.1</fireSize>
+					<offset>(0,0,0)</offset>
+				</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/costList</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+				<value>
+				<li Class="SK.CompFueled_Properties">
+					<operatingTemp>300</operatingTemp>
+					<fireDrawOffset>(0,0.15,0.1)</fireDrawOffset>
+					<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+					<fuelDrawOffset>(0,0.1,0.01)</fuelDrawOffset>
+					<fuelDrawScale>0.7</fuelDrawScale>
+					<fuelCapacity>10</fuelCapacity>
+					<burnFuelMultiplier>1</burnFuelMultiplier>
+					<smokesize>0.3</smokesize>
+					<canAutoBurn>true</canAutoBurn>
+					<effectOnWeather>true</effectOnWeather>
+					<smokeDensity>2</smokeDensity>
+					<fuelFilter>
+						<thingDefs>
+							<li>Charcoal</li>
+							<li>Coal</li>
+							<li>Kindling</li>
+						</thingDefs>
+						<categories>
+							<li>Wooden</li>
+							<li>Woody</li>
+						</categories>  
+					</fuelFilter>
+				</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/comps/li[@Class = "CompProperties_HeatPusher"]</xpath>
+				<value>
+				<li Class="SK.CompProperties_HeatPusherAdvanced">
+					<compClass>SK.CompHeatPusherAdvanced</compClass>
+					<heatPerSecond>21</heatPerSecond>
+                    <heatPushMaxTemperature>28</heatPushMaxTemperature>
+				</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]</xpath>
+				<value>
+				<inspectorTabs>
+					<li>SK.ITab_Fuel</li>
+				</inspectorTabs>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/comps</xpath>
+				<value>
+				<li Class="SK.CompProperties_FireOverlayMod">
+					<fireSize>1.1</fireSize>
+					<offset>(0,0,0)</offset>
+				</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/costList</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+				<value>
+				<li Class="SK.CompFueled_Properties">
+					<operatingTemp>300</operatingTemp>
+					<fireDrawOffset>(0,0.15,0.1)</fireDrawOffset>
+					<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+					<fuelDrawOffset>(0,0.1,0.01)</fuelDrawOffset>
+					<fuelDrawScale>0.7</fuelDrawScale>
+					<fuelCapacity>10</fuelCapacity>
+					<burnFuelMultiplier>1</burnFuelMultiplier>
+					<smokesize>0.3</smokesize>
+					<canAutoBurn>true</canAutoBurn>
+					<effectOnWeather>true</effectOnWeather>
+					<smokeDensity>2</smokeDensity>
+					<fuelFilter>
+						<thingDefs>
+							<li>Charcoal</li>
+							<li>Coal</li>
+							<li>Kindling</li>
+						</thingDefs>
+						<categories>
+							<li>Wooden</li>
+							<li>Woody</li>
+						</categories>  
+					</fuelFilter>
+				</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Fireplace"]/costList</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Fireplace"]/description</xpath>
+				<value>
+					<description>A place to house a fire. Takes firewood as fuel.</description>
+				</value>
+			</li>
+			
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

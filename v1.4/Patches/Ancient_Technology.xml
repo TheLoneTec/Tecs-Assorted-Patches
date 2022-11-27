@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[D] Arcane Technology</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="DArcaneTechnology.OverrideResearch">
+				<Overrides>
+					<!-- None does what it sounds like - no research project will be associated. Club included just for example. -->
+					<li>
+						<thingDef>CryptosleepBodysuit</thingDef>
+						<researchDefName>None</researchDefName>
+					</li>
+					<li>
+						<thingDef>CryptosleepHat</thingDef>
+						<researchDefName>None</researchDefName>
+					</li>
+					<li>
+						<thingDef>Gun_BoltActionRifle</thingDef>
+						<researchDefName>None</researchDefName>
+					</li>
+					<li>
+						<thingDef>Gun_Revolver</thingDef>
+						<researchDefName>None</researchDefName>
+					</li>
+					<li>
+						<thingDef>MeleeWeapon_Knife</thingDef>
+						<researchDefName>None</researchDefName>
+					</li>
+				</Overrides>
+			</li>
+			
+			<li Class="DArcaneTechnology.ExemptResearch">
+				<Exemptions>
+					<li>Craft_0</li>
+				</Exemptions>
+			</li>
+			
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

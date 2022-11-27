@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>RimBees</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- ========== Propane to Chemfuel ========== -->
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/RecipeDef[defName="RB_WaxToChemfuel"]</xpath>
+				<attribute>Class</attribute>
+				<value>UniversalFermenterSK.RecipeDef_UF</value>
+			</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="RB_WaxToChemfuel"]</xpath>
+					<value>
+						<!--<ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>5</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>-->
+						<usesTemperature>false</usesTemperature>
+						<processDays>1.5</processDays>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>

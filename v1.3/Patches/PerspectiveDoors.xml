@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Perspective: Doors</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>HSK Fences And Floors - Vile's patch</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+	
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="WoodFenceGateB"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="FenceGate"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="ChainFenceGateB"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="ChainFenceGate"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="TechFenceGateB"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="TechFenceGate"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Hardcore Renovations</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FenceGatesV"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FenceGatesH"]/label</xpath>
+						<value>
+							<label>Gates</label>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="WattleFenceGateB"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="WattleFenceGate"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="PalisadeGateB"]</xpath>
+					</li>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="PalisadeGate"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Door"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MDoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Autodoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Insulation (Continued)</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="INSDoorSimple_Biomass" or defName="INSDoor_Biomass" or defName="INSDoorSimple_Fibre" or defName="INSDoor_Fibre" or defName="INSDoorSimple_Polymer" or defName="INSDoor_Polymer" or defName="INSDoorSimple_Hyper" or defName="INSDoor_Hyper"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+
+					<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Save Our Ship 2</li>
+					</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+							
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[@Name="INSAirlockBase"]/graphicData/graphicClass</xpath>
+								<value>
+									<graphicClass>Graphic_Multi</graphicClass>
+								</value>
+							</li>
+							
+							</operations>
+						</match>
+					</li>
+							
+					</operations>
+				</match>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AutoDoorGlass" or defName="DoorGlass"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Other/DoorGlass_Mover</texPath>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AutoDoorGlass" or defName="DoorGlass"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Blastdoor"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Multi</graphicClass>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Gloomy Decor Pack</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="RGK_DoorOld"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+							
+					</operations>
+				</match>
+			</li>
+		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Power Logic</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="SupesRemoteDoor"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+							
+					</operations>
+				</match>
+			</li>
+		
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

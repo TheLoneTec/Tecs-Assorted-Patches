@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>The Windows</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>The Windows Renovation Retexture</li>
+				</mods>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>Windows</defName>
+								<label>Windows</label>
+								<description>All the standard windows.</description>
+								<defNames>
+									<li>SimpleOpenWindow</li>
+									<li>OpenWindow</li>
+									<li>LargeOpenWindow</li>
+									<li>HugeOpenWindow</li>
+								</defNames>
+								<designationCategory>Structure</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>Reinforced_Windows</defName>
+								<label>Reinforced Windows</label>
+								<description>Reinforced Windows.</description>
+								<defNames>
+									<li>ReinforcedOpenWindow</li>
+									<li>LargeReinforcedOpenWindow</li>
+								</defNames>
+								<designationCategory>Structure</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAttributeAdd">
+						<xpath>/Defs/ThingDef[defName="ReinforcedOpenWindow"]/researchPrerequisites</xpath>
+						<attribute>Inherit</attribute>
+						<value>False</value>
+					</li>
+					
+					<li Class="PatchOperationAttributeAdd">
+						<xpath>/Defs/ThingDef[defName="LargeReinforcedOpenWindow"]/researchPrerequisites</xpath>
+						<attribute>Inherit</attribute>
+						<value>False</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[@Name="WindowBase"]/stuffCategories</xpath>
+						<value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Stony</li>
+							<li>Bricks</li>
+							<li>Woody</li>
+						</stuffCategories>
+						</value>
+					</li>
+
+					</operations>
+				</nomatch>
+			</li>
+			
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[@Name = "WindowBase"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
+			<!-- Atlas
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WindowBase"]/graphicData/graphicClass</xpath>
+				<value>
+					<graphicClass>Graphic_Appearances</graphicClass>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="WindowBase"]/graphicData</xpath>
+				<value>
+					<shaderType>CutoutComplex</shaderType>
+					<linkType>CornerFiller</linkType>
+					<linkFlags>
+						<li>Wall</li>
+						<li>Rock</li>
+					</linkFlags>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="SimpleOpenWindow"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Windows/SimpleWindow</texPath>
+				</value>
+			</li>
+			--><!--
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="WindowBase"]/rotatable</xpath>
+				<value>
+					<rotatable>false</rotatable>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "SimpleOpenWindow"]</xpath>
+				<attribute>Name</attribute>
+				<value>SimpleOpenWindow</value>
+			</li>
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "SimpleOpenWindow"]</xpath>
+				<attribute>Abstract</attribute>
+				<value>True</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="SimpleOpenWindow"]/defName</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="SimpleOpenWindow"]/texPath</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				<ThingDef ParentName="SimpleOpenWindow">
+					<defName>SimpleOpenWindow_Cladd</defName>
+					<label>cladd rustic window</label>
+					<description>A simple, low-tech window which is little more than a hole in the wall. Equip with with a shutter to control the light, but does almost nothing to keep the heat in or out.</description>
+					<graphicData>
+						<texPath>Things/Building/SimpleWindow</texPath>
+					</graphicData>
+					<uiIconPath>Things/Building/SimpleWindow_north</uiIconPath>
+					<statBases>
+						<WorkToBuild>270</WorkToBuild>
+						<MaxHitPoints>150</MaxHitPoints>
+					</statBases>
+					<stuffCategories>
+						<li>HardwoodLumber</li>
+						<li>SoftwoodLumber</li>
+						<li>UltrahardwoodLumber</li>
+						<li>EngineeredLumber</li>
+					</stuffCategories>
+					<costStuffCount>10</costStuffCount>
+					<comps Inherit="False">
+						<li Class="OpenTheWindows.CompProperties_Window">
+							<commandTexture>UI/OpenWindows</commandTexture>
+							<commandLabelKey>CommandDesignateOpenCloseWindowLabel</commandLabelKey>
+							<commandDescKey>CommandDesignateOpenCloseWindowDesc</commandDescKey>
+							<signal>both</signal>
+						</li>
+					</comps>
+					<researchPrerequisites Inherit="False" />
+				</ThingDef>
+				</value>
+			</li>
+-->
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

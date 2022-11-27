@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Medical Supplements (Continued)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<!-- ========== Hoppers ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_Hoppers</defName>
+						<label>Hoppers</label>
+						<description>Hoppers connect to certain building, for automatically delivering items to buildings</description>
+						<defNames>
+							<li>Hopper</li>
+							<li>MSDrugMixInput</li>
+							<li>MSDrugMixOutput</li>
+						</defNames>
+						<designationCategory>Production</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<!-- ========== Medical Mat ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_MedicalMat</defName>
+						<label>Medical Mats</label>
+						<description>Used to treat pawns in the field.</description>
+						<defNames>
+							<li>MSMedicalMatEarly</li>
+							<li>MSMedicalMat</li>
+							<li>MSMedicalMatSpacer</li>
+							<li>MSMedicalMatUltra</li>
+						</defNames>
+						<designationCategory>Misc</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
+			<!-- ========== Stim Lab ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_CookingStuff"]/defNames</xpath>
+				<value>
+					<li>MSStimLab</li>
+				</value>
+			</li>
+
+			<!-- ========== Drug Mixer ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Medicine"]/defNames</xpath>
+				<value>
+					<li>MSDrugMixer</li>
+				</value>
+			</li>
+			
+			<!-- ========== Drug Cabinates ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FoodContainers"]/defNames</xpath>
+				<value>
+					<li>DrugCabinet</li>
+					<li>DrugCabinetFridge</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DrugCabinet"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+					  <li>Storage_C1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DrugCabinetFridge"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Storage_C3</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="DrugCabinetFridge"]/costList</xpath>
+				<value>
+				<costList>
+					<Rubber>15</Rubber>
+					<Plastic>10</Plastic>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<ElectronicComponents>3</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DrugCabinet"]</xpath>
+				<value>
+				<costList>
+					<Glass>15</Glass>
+					<ComponentIndustrial>2</ComponentIndustrial>
+				</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Battery"]/costList</xpath>
+				<value>
+				<costList>
+					<MSSulphuricAcid>15</MSSulphuricAcid>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<ElectronicComponents>3</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
+			
+		<!--
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeMSBandage"]/ingredients/li[filter[thingDefs[li[text()="Cloth"]]]]/count</xpath>
+				<value>
+					<count>25</count>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeMSBandage"]/ingredients</xpath>
+				<value>
+				<li>
+					<filter>
+					  <thingDefs>
+						<li>Salt</li>
+					  </thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Amuse Bouche</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="MakeMSBandage"]/recipeUsers</xpath>
+						<value>
+							<recipeUsers>
+								<li>FueledStove</li>
+								<li>ElectricStove</li>
+								<li>DrugLab</li>
+								<li>Hearth</li>
+								<li>OpenHearth</li>
+							</recipeUsers>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="MakeMSBandage"]/recipeUsers</xpath>
+						<value>
+							<recipeUsers>
+								<li>FueledStove</li>
+								<li>ElectricStove</li>
+								<li>DrugLab</li>
+							</recipeUsers>
+						</value>
+					</li>
+					
+					</operations>
+				</nomatch>
+			</li>
+-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName="MakeMSBandage"]</xpath>
+				<value>
+					<researchPrerequisite>Medicine_B1</researchPrerequisite>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Dubs Bad Hygiene</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MS_DStand"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites Inherit="false">
+							<li>Hygiene_31</li>
+						</researchPrerequisites>
+					</value>
+					</li>
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MS_DStand"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>MedicineProduction</li>
+					</researchPrerequisites>
+				</value>
+			</nomatch>
+			</li>
+		
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

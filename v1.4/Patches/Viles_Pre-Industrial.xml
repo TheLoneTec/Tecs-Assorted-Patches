@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>HMC Vile's Pre-Industrial Overhaul</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "MakeAmmo_3inCannon_Canister"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>Field_Guns</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
