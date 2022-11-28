@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- INSULATION -->
+
+	<!-- Buildings (walls & doors) -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Save Our Ship 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Celsius</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Insulation (Continued)</li>
+						</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Biomass_Unpowered"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>10500</heatCapacity>
+											<conductivity>0.2</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Biomass"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>9500</heatCapacity>
+											<conductivity>0.4</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Fibre_Unpowered"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>12000</heatCapacity>
+											<conductivity>0.15</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+								
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Fibre"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>11000</heatCapacity>
+											<conductivity>0.3</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Polymer_Unpowered"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>13500</heatCapacity>
+											<conductivity>0.1</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+								
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Polymer"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>12500</heatCapacity>
+											<conductivity>0.25</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Underpowered_Hyper_Unpowered"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>15000</heatCapacity>
+											<conductivity>0.06</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+								
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="INSShip_Beam_Hyper"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>14000</heatCapacity>
+											<conductivity>0.15</conductivity>
+											<volume>15</volume>
+										</li>
+									</value>
+								</li>
+
+								<!-- Airlocks -->
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="ShipAirlockBiomass"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>8750</heatCapacity>
+											<conductivity>0.3</conductivity>
+											<volume>7.5</volume>
+											<airflowWhenOpen>1.0</airflowWhenOpen>
+										</li>
+									</value>
+								</li>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="ShipAirlockFibre"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>10000</heatCapacity>
+											<conductivity>0.18</conductivity>
+											<volume>7.5</volume>
+											<airflowWhenOpen>1.0</airflowWhenOpen>
+										</li>
+									</value>
+								</li>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="ShipAirlockPolymer"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>11250</heatCapacity>
+											<conductivity>0.1</conductivity>
+											<volume>7.5</volume>
+											<airflowWhenOpen>1.0</airflowWhenOpen>
+										</li>
+									</value>
+								</li>
+
+								<li Class="PatchOperationAddModExtension">
+									<xpath>Defs/ThingDef[defName="ShipAirlockHyper"]</xpath>
+									<value>
+										<li Class="Celsius.ThingThermalProperties">
+											<heatCapacity>12500</heatCapacity>
+											<conductivity>0.05</conductivity>
+											<volume>7.5</volume>
+											<airflowWhenOpen>1.0</airflowWhenOpen>
+										</li>
+									</value>
+								</li>
+							
+							</operations>
+						</match>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
