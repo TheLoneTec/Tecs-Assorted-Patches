@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[NL] Facial Animation - WIP</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="RK_RatTail"]</xpath>
+				<value>
+					<li>
+						<drawSize>1</drawSize>
+						<path>Body/RK_Tail</path>
+						<bodyPart>RK_RatTail</bodyPart>
+						<!--<bodyPartLabel>rat tail</bodyPartLabel>-->
+						<defaultOffset>Tail</defaultOffset>
+						<inFrontOfBody>false</inFrontOfBody>
+						<!--<colorChannel>skin</colorChannel>-->
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Tail_Ratkin</geneRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Thin>(-0.01,-0.5)</Thin>
+									<Baby>(-0.01,-0.5)</Baby>
+									<Child>(-0.01,-0.5)</Child>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Thin>(-0.01,0.05)</Thin>
+									<Baby>(-0.01,0.14)</Baby>
+									<Child>(-0.01,0.05)</Child>
+								</bodyTypes>
+								<layerOffset>-0.28</layerOffset>
+							</north>
+							<east>
+								<bodyTypes>
+									<Thin>(0.02,-0.16)</Thin>
+									<Baby>(-0.016,-0.062)</Baby>
+									<Child>(-0.028,-0.12)</Child>
+								</bodyTypes>
+							</east>
+						</offsets>
+						<drawnInBed>false</drawnInBed>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="left ear"]</xpath>
+				<value>
+					<li>
+						<drawSize>1</drawSize>
+						<path>Body/RK_EarLeft</path>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+						<inFrontOfBody>true</inFrontOfBody>
+						<colorChannel>skin</colorChannel>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<layerInvert>false</layerInvert>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</geneRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Thin>(-0.015,0.4)</Thin>
+									<Baby>(-0.015,0.4)</Baby>
+									<Child>(-0.015,0.4)</Child>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Thin>(-0.015,0.4)</Thin>
+									<Baby>(-0.015,0.4)</Baby>
+									<Child>(-0.015,0.4)</Child>
+								</portraitBodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Thin>(0.03,0.39)</Thin>
+									<Baby>(0.03,0.39)</Baby>
+									<Child>(0.03,0.39)</Child>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Thin>(0.03,0.39)</Thin>
+									<Baby>(0.03,0.39)</Baby>
+									<Child>(0.03,0.39)</Child>
+								</portraitBodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Thin>(0.012,0.5)</Thin>
+									<Baby>(0.012,0.5)</Baby>
+									<Child>(0.012,0.5)</Child>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Thin>(0.012,0.5)</Thin>
+									<Baby>(0.012,0.5)</Baby>
+									<Child>(0.012,0.5)</Child>
+								</portraitBodyTypes>
+							</east>
+						</offsets>
+						<drawnInBed>True</drawnInBed>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="right ear"]</xpath>
+				<value>
+					<li>
+						<drawSize>1</drawSize>
+						<path>Body/RK_EarRight</path>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+						<inFrontOfBody>true</inFrontOfBody>
+						<colorChannel>skin</colorChannel>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<layerInvert>false</layerInvert>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</geneRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Thin>(0.015,0.4)</Thin>
+									<Baby>(0.015,0.4)</Baby>
+									<Child>(0.015,0.4)</Child>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Thin>(0.015,0.4)</Thin>
+									<Baby>(0.015,0.4)</Baby>
+									<Child>(0.015,0.4)</Child>
+								</portraitBodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Thin>(-0.01,0.39)</Thin>
+									<Baby>(-0.01,0.39)</Baby>
+									<Child>(-0.01,0.39)</Child>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Thin>(-0.01,0.39)</Thin>
+									<Baby>(-0.01,0.39)</Baby>
+									<Child>(-0.01,0.39)</Child>
+								</portraitBodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Thin>(0.012,0.5)</Thin>
+									<Baby>(0.012,0.5)</Baby>
+									<Child>(0.012,0.5)</Child>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Thin>(0.012,0.5)</Thin>
+									<Baby>(0.012,0.5)</Baby>
+									<Child>(0.012,0.5)</Child>
+								</portraitBodyTypes>
+							</east>
+						</offsets>
+						<drawnInBed>True</drawnInBed>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

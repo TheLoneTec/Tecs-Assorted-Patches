@@ -16,21 +16,17 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationRemove">
-				<xpath>/Defs/FacialAnimation.HeadTypeDef[defName="OrassanHeadPointy" or defName="OrassanHeadSquare"]</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<FacialAnimation.FaceAdjustmentDef>
+						<defName>OrassanFaceSizeAndPositionDef</defName>
+						<RaceName>Alien_Orassan</RaceName>
+						<Size>(1.2,1.2)</Size>    
+					</FacialAnimation.FaceAdjustmentDef>
+				</value>
 			</li>
 
-			</operations>
-		</match>
-	</Operation>
-
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Facial Animation Orassans Patch</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-	
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/FacialAnimation.HeadTypeDef[defName="OrassanHeadPointy" or defName="OrassanHeadSquare"]</xpath>
 			</li>
@@ -63,12 +59,12 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-	<!--
+	
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Tail"]</xpath>
 				<value>
 					<li>
-						<drawSize>.9</drawSize>
+						<drawSize>.75</drawSize>
 						<path>Things/Pawn/Humanlike/OrassanTails/OTail</path>
 						<bodyPart>Tail</bodyPart>
 						<defaultOffset>Tail</defaultOffset>
@@ -76,9 +72,10 @@
 							<Orassan_GeneWarrior>Things/Pawn/Humanlike/OrassanTails/OTailG</Orassan_GeneWarrior>
 						</backstoryGraphics>
 						<inFrontOfBody>true</inFrontOfBody>
-						<colorChannel>hair</colorChannel>
+						<colorChannel>skin</colorChannel>
+						<!--<colorChannel>skin</colorChannel>-->
 						<drawnInBed>false</drawnInBed>
-						<drawnDesiccated>false</drawnDesiccated>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Tail_Orassan</geneRequirement>
 						<offsets>
 							<south>
 								<bodyTypes>
@@ -86,42 +83,58 @@
 									<Female>(-.1,-0.2)</Female>
 									<Thin>(-.1,-0.2)</Thin>
 									<Hulk>(-.1,-0.2)</Hulk>
+									<Child>(-.1,-0.2)</Child>
+									<Baby>(-.1,-0.2)</Baby>
 								</bodyTypes>
-								<portraitBodyTypes>
-									<Male>(-0.25,-0.2)</Male>
-									<Female>(-.1,-0.2)</Female>
-									<Thin>(-.1,-0.2)</Thin>
-									<Hulk>(-.1,-0.2)</Hulk>
-								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
 							</south>
 							<north>
-								<layerOffset>-1</layerOffset>
 								<bodyTypes>
-									<Male>(-0.0282,-0.0895)</Male>
-									<Female>(-0.0225,-0.1177)</Female>
-									<Thin>(-0.0395,-0.0612)</Thin>
-									<Hulk>(-0.0338,-0.1742)</Hulk>
+									<Male>(0,-0.05)</Male>
+									<Female>(0,-0.05)</Female>
+									<Thin>(0,-0.05)</Thin>
+									<Hulk>(0,-0.05)</Hulk>
+									<Child>(0,-0.05)</Child>
+									<Baby>(0,0.064)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
-									<Male>(-0.0282,-0.0895)</Male>
-									<Female>(-0.0225,-0.1177)</Female>
-									<Thin>(-0.0395,-0.0612)</Thin>
-									<Hulk>(-0.0338,-0.1742)</Hulk>
+									<Male>(-0.0286,0.0571)</Male>
+									<Female>(-0.0429,0.1286)</Female>
+									<Thin>(-0.0286,0.0571)</Thin>
+									<Hulk>(-0.0286,-0.0286)</Hulk>
+									<Child>(-0.0286,0.0571)</Child>
+									<Baby>(-0.0286,0.0571)</Baby>
 								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+								<layerOffset>-0.35</layerOffset>
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(0.186,-0.385)</Male>
-									<Female>(0.276,-0.36)</Female>
-									<Thin>(0.201,-0.366)</Thin>
-									<Hulk>(0.366,-0.515)</Hulk>
+									<Male>(0.1,-0.2)</Male>
+									<Female>(0.1,-0.2)</Female>
+									<Thin>(0.05,-0.2)</Thin>
+									<Hulk>(0.2,-0.25)</Hulk>
+									<Child>(0.098,-0.2)</Child>
+									<Baby>(0.1,-0.14)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
-									<Male>(0.186,-0.385)</Male>
-									<Female>(0.276,-0.36)</Female>
-									<Thin>(0.201,-0.366)</Thin>
-									<Hulk>(0.366,-0.515)</Hulk>
+									<Male>(0.0571,-0.1857)</Male>
+									<Female>(0.0429,-0.1429)</Female>
+									<Thin>(0.0143,-0.1429)</Thin>
+									<Hulk>(0.1429,-0.2714)</Hulk>
+									<Child>(0.01,-0.2)</Child>
+									<Baby>(0.01,-0.14)</Baby>
 								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
 							</east>
 						</offsets>
 					</li>
@@ -129,16 +142,18 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="left ear"]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="left ear"]</xpath>
 				<value>
 					<li>
 						<drawnDesiccated>false</drawnDesiccated>
 						<drawSize>0.9</drawSize>
 						<path>Things/Pawn/Humanlike/OrassanEars/EarLeft</path>
-						<bodyPart>left ear</bodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
 						<inFrontOfBody>true</inFrontOfBody>
-						<colorChannel>hair</colorChannel>
+						<colorChannel>skin</colorChannel>
 						<defaultOffset>Tail</defaultOffset>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Orassan</geneRequirement>
 						<offsets>
 							<south>
 								<bodyTypes>
@@ -146,55 +161,66 @@
 									<Female>(-0.475,.67)</Female>
 									<Thin>(-0.475,.67)</Thin>
 									<Hulk>(-0.475,.67)</Hulk>
+									<Child>(-0.45,0.67)</Child>
+									<Baby>(-0.45,0.67)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
 									<Male>(-0.45,.67)</Male>
 									<Female>(-0.45,.67)</Female>
 									<Thin>(-0.45,.67)</Thin>
 									<Hulk>(-0.45,.67)</Hulk>
+									<Child>(-0.45,0.67)</Child>
+									<Baby>(-0.45,0.67)</Baby>
 								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0.05,.98)</Male>
-									<Female>(0.05,.98)</Female>
-									<Thin>(0.05,.98)</Thin>
-									<Hulk>(0.05,.98)</Hulk>
+									<Male>(0.05,1)</Male>
+									<Female>(0.05,1)</Female>
+									<Thin>(0.05,1)</Thin>
+									<Hulk>(0.05,1)</Hulk>
+									<Child>(0.01,1)</Child>
+									<Baby>(0.01,1)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
-									<Male>(0.01,1)</Male>
-									<Female>(0.01,1)</Female>
-									<Thin>(0.01,1)</Thin>
-									<Hulk>(0.01,1)</Hulk>
+									<Male>(-0.04,.89)</Male>
+									<Female>(-0.04,.89)</Female>
+									<Thin>(-0.04,.89)</Thin>
+									<Hulk>(-0.04,.89)</Hulk>
+									<Child>(-0.04,0.89)</Child>
+									<Baby>(-0.04,0.89)</Baby>
 								</portraitBodyTypes>
-								<crownTypes>
-									<Average_Normal>(0,0.057)</Average_Normal>
-									<Average_Wide>(0,0.057)</Average_Wide>
-									<Average_Pointy>(0,0.057)</Average_Pointy>
-									<Narrow_Normal>(0,0.057)</Narrow_Normal>
-									<Narrow_Wide>((0,0.057)</Narrow_Wide>
-									<Narrow_Pointy>(0,0.057)</Narrow_Pointy>
-								</crownTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+								<layerOffset>-0.35</layerOffset>
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(-0.529,.75)</Male>
-									<Female>(-0.593,.75)</Female>
-									<Thin>(-0.593,.75)</Thin>
-									<Hulk>(-0.593,.75)</Hulk>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
-									<Male>(-0.529,.75)</Male>
-									<Female>(-0.593,.75)</Female>
-									<Thin>(-0.593,.75)</Thin>
-									<Hulk>(-0.593,.75)</Hulk>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
 								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
 							</east>
 						</offsets>
 						<hiddenUnderApparelFor>
@@ -205,69 +231,86 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="right ear"]</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="right ear"]</xpath>
 				<value>
 					<li>
 						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
 						<drawnDesiccated>false</drawnDesiccated>
 						<drawSize>0.9</drawSize>
 						<path>Things/Pawn/Humanlike/OrassanEars/EarRight</path>
-						<bodyPart>right ear</bodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
 						<inFrontOfBody>true</inFrontOfBody>
-						<colorChannel>hair</colorChannel>
+						<colorChannel>skin</colorChannel>
 						<defaultOffset>Tail</defaultOffset>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Orassan</geneRequirement>
 						<offsets>
 							<south>
 								<bodyTypes>
-									<Male>(-0.375,.67)</Male>
-									<Female>(-0.375,.67)</Female>
-									<Thin>(-0.375,.67)</Thin>
-									<Hulk>(-0.375,.67)</Hulk>
+									<Male>(-0.4,.67)</Male>
+									<Female>(-0.4,.67)</Female>
+									<Thin>(-0.4,.67)</Thin>
+									<Hulk>(-0.4,.67)</Hulk>
+									<Child>(-0.4,0.67)</Child>
+									<Baby>(-0.4,0.67)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
 									<Male>(-0.4,.67)</Male>
 									<Female>(-0.4,.67)</Female>
 									<Thin>(-0.4,.67)</Thin>
 									<Hulk>(-0.4,.67)</Hulk>
+									<Child>(-0.4,0.67)</Child>
+									<Baby>(-0.4,0.67)</Baby>
 								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(-0.038,1.1)</Male>
-									<Female>(-0.038,1.1)</Female>
-									<Thin>(-0.038,1.1)</Thin>
-									<Hulk>(-0.038,1.1)</Hulk>
+									<Male>(-0.038,.98)</Male>
+									<Female>(-0.038,.98)</Female>
+									<Thin>(-0.038,.98)</Thin>
+									<Hulk>(-0.038,.98)</Hulk>
+									<Child>(-0.038,0.98)</Child>
+									<Baby>(-0.038,0.98)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
 									<Male>(-0.01,1)</Male>
 									<Female>(-0.01,1)</Female>
 									<Thin>(-0.01,1)</Thin>
 									<Hulk>(-0.01,1)</Hulk>
+									<Child>(-0.03,1)</Child>
+									<Baby>(-0.03,1)</Baby>
 								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+								<layerOffset>-0.35</layerOffset>
 							</north>
 							<east>
-								<layerOffset>-0.5</layerOffset>
 								<bodyTypes>
-									<Male>(-0.573,.75)</Male>
-									<Female>(-0.631,.75)</Female>
-									<Thin>(-0.631,.75)</Thin>
-									<Hulk>(-0.631,.75)</Hulk>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
 								</bodyTypes>
 								<portraitBodyTypes>
-									<Male>(-0.573,.75)</Male>
-									<Female>(-0.631,.75)</Female>
-									<Thin>(-0.631,.75)</Thin>
-									<Hulk>(-0.631,.75)</Hulk>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
 								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-								</crownTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
 							</east>
 						</offsets>
 						<hiddenUnderApparelFor>
@@ -276,7 +319,7 @@
 					</li>
 				</value>
 			</li>
--->
+
 					<!--<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>--><!--
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator</xpath>
