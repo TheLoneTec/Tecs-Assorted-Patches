@@ -52,7 +52,7 @@
 			</operations>
 		</match>
 	</Operation>
-
+<!--
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>[NL] Facial Animation - WIP</li>
@@ -73,7 +73,6 @@
 						</backstoryGraphics>
 						<inFrontOfBody>true</inFrontOfBody>
 						<colorChannel>skin</colorChannel>
-						<!--<colorChannel>skin</colorChannel>-->
 						<drawnInBed>false</drawnInBed>
 						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Tail_Orassan</geneRequirement>
 						<offsets>
@@ -319,7 +318,7 @@
 					</li>
 				</value>
 			</li>
-
+-->
 					<!--<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>--><!--
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator</xpath>
@@ -387,11 +386,11 @@
 					</comps>
 				</value>
 			</li>
--->
+
 			</operations>
 		</match>
 	</Operation>
-
+-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Core SK</li>

@@ -468,18 +468,18 @@
 			</li>
 
 			<!-- ======== Storage ======== -->
-			
+			<!-- ======== Malsjo ======== -->
+	
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef/building/maxItemsInCell</xpath>
+			</li>
+	
 			<li Class="PatchOperationAdd">
 			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Containers"]/defNames</xpath>
 				<value>
 					<li>LTS_Malsjo</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]</xpath>
-				<value>
-					<uiIconPath>Surfaces/Malsjo_icon</uiIconPath>
+					<li>LTS_HyllisS</li>
+					<li>LTS_HyllisL</li>
 				</value>
 			</li>
 			
@@ -493,11 +493,25 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[@Name="LTS_StorageBase"]</xpath>
+				<value>
+					<designationCategory>LWM_DS_Storage</designationCategory>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]</xpath>
+				<value>
+					<uiIconPath>Storage/Malsjo_icon</uiIconPath>
+				</value>
+			</li>
+			
 			<li Class="PatchOperationConditional">
 			<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]/comps</xpath>
 				<match Class="PatchOperationConditional">
 				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]/comps/li[@Class="LWM.DeepStorage.Properties"]</xpath>
-					<match Class="PatchOperationAdd">
+					<match Class="PatchOperationReplace">
 						<value>
 							<li Class="LWM.DeepStorage.Properties">
 								<maxNumberStacks>5</maxNumberStacks>
@@ -561,13 +575,6 @@
 			</li>
 
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_StorageBase"]</xpath>
-				<value>
-					<designationCategory>LWM_DS_Storage</designationCategory>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/ThingDef[defName="LTS_Malsjo"]</xpath>
 				<value>
 					<costList>
@@ -577,6 +584,171 @@
 				</value>
 			</li>
 			
+			<!-- ======== LTS_HyllisS ======== -->
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]</xpath>
+				<value>
+					<uiIconPath>Storage/Hyllis_icon</uiIconPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationConditional">
+			<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]/comps</xpath>
+				<match Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]/comps/li[@Class="LWM.DeepStorage.Properties"]</xpath>
+					<match Class="PatchOperationReplace">
+						<value>
+							<li Class="LWM.DeepStorage.Properties">
+								<maxNumberStacks>5</maxNumberStacks>
+								<minNumberStacks>5</minNumberStacks>
+								<timeStoringTakes>100</timeStoringTakes>
+								<additionalTimeEachStack>60</additionalTimeEachStack>
+								<showContents>false</showContents>
+								<overlayType>SumOfAllItems</overlayType>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]/comps</xpath>
+						<value>
+							<li Class="LWM.DeepStorage.Properties">
+								<maxNumberStacks>4</maxNumberStacks>
+								<minNumberStacks>4</minNumberStacks>
+								<timeStoringTakes>80</timeStoringTakes>
+								<additionalTimeEachStack>40</additionalTimeEachStack>
+								<showContents>false</showContents>
+								<overlayType>SumOfAllItems</overlayType>
+							</li>
+						</value>
+					</nomatch>					
+				</match>
+				<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]</xpath>
+					<value>
+						<comps>
+							<li Class="LWM.DeepStorage.Properties">
+								<maxNumberStacks>4</maxNumberStacks>
+								<minNumberStacks>4</minNumberStacks>
+								<timeStoringTakes>80</timeStoringTakes>
+								<additionalTimeEachStack>40</additionalTimeEachStack>
+								<showContents>false</showContents>
+								<overlayType>SumOfAllItems</overlayType>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Storage_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]/uiIconOffset</xpath>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisS"]</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>2</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+
+			<!-- ======== LTS_HyllisL ======== -->
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]</xpath>
+				<value>
+					<uiIconPath>Storage/Hyllis_icon</uiIconPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationConditional">
+			<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]/comps</xpath>
+				<match Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]/comps/li[@Class="LWM.DeepStorage.Properties"]</xpath>
+					<match Class="PatchOperationReplace">
+						<value>
+							<li Class="LWM.DeepStorage.Properties">
+								<maxNumberStacks>5</maxNumberStacks>
+								<minNumberStacks>5</minNumberStacks>
+								<timeStoringTakes>100</timeStoringTakes>
+								<additionalTimeEachStack>60</additionalTimeEachStack>
+								<showContents>false</showContents>
+								<overlayType>SumOfAllItems</overlayType>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]/comps</xpath>
+						<value>
+							<li Class="LWM.DeepStorage.Properties">
+								<maxNumberStacks>4</maxNumberStacks>
+								<minNumberStacks>4</minNumberStacks>
+								<timeStoringTakes>80</timeStoringTakes>
+								<additionalTimeEachStack>40</additionalTimeEachStack>
+								<showContents>false</showContents>
+								<overlayType>SumOfAllItems</overlayType>
+							</li>
+						</value>
+					</nomatch>					
+				</match>
+				<nomatch Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]</xpath>
+					<value>
+						<comps>
+							<li Class="LWM.DeepStorage.Properties">
+								<maxNumberStacks>4</maxNumberStacks>
+								<minNumberStacks>4</minNumberStacks>
+								<timeStoringTakes>80</timeStoringTakes>
+								<additionalTimeEachStack>40</additionalTimeEachStack>
+								<showContents>false</showContents>
+								<overlayType>SumOfAllItems</overlayType>
+							</li>
+						</comps>
+					</value>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Storage_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/ThingDef[defName="LTS_HyllisL"]</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>2</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
 
 		</operations>
 	</match>

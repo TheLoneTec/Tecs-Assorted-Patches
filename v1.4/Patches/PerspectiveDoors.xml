@@ -13,7 +13,7 @@
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-	
+	<!--
 					<li Class="PatchOperationRemove">
 						<xpath>Defs/ThingDef[defName="WoodFenceGateB"]</xpath>
 					</li>
@@ -24,7 +24,7 @@
 							<graphicClass>Graphic_Multi</graphicClass>
 						</value>
 					</li>
-					
+					-->
 					<li Class="PatchOperationRemove">
 						<xpath>Defs/ThingDef[defName="ChainFenceGateB"]</xpath>
 					</li>
@@ -57,33 +57,33 @@
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-					
+					<!--
 					<li Class="PatchOperationRemove">
 						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FenceGatesV"]</xpath>
 					</li>
-					
+					-->
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FenceGatesH"]/label</xpath>
 						<value>
 							<label>Gates</label>
 						</value>
 					</li>
-					
+					<!--
 					<li Class="PatchOperationRemove">
 						<xpath>Defs/ThingDef[defName="WattleFenceGateB"]</xpath>
 					</li>
-					
+					-->
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName="WattleFenceGate"]/graphicData/graphicClass</xpath>
 						<value>
 							<graphicClass>Graphic_Multi</graphicClass>
 						</value>
 					</li>
-					
+					<!--
 					<li Class="PatchOperationRemove">
 						<xpath>Defs/ThingDef[defName="PalisadeGateB"]</xpath>
 					</li>
-					
+					-->
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName="PalisadeGate"]/graphicData/graphicClass</xpath>
 						<value>

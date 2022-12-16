@@ -26,9 +26,7 @@
 						<description>Various lightposts for light a path.</description>
 						<defNames>
 							<li>LTS_Lanternpost</li>
-							<li>LTS_DarkLanternpost</li>
 							<li>LTS_Lightpost</li>
-							<li>LTS_DarkLightpost</li>
 						</defNames>
 						<designationCategory>Accessories</designationCategory>
 						<debug>false</debug>
@@ -45,9 +43,7 @@
 						<description>Various lights for indoors.</description>
 						<defNames>
 							<li>LTS_Astrid</li>
-							<li>LTS_DarkAstrid</li>
 							<li>LTS_Vidja</li>
-							<li>LTS_DarkVidja</li>
 						</defNames>
 						<designationCategory>Accessories</designationCategory>
 						<debug>false</debug>
@@ -64,15 +60,10 @@
 						<description>Various small lights.</description>
 						<defNames>
 							<li>LTS_OilLamp</li>
-							<li>LTS_DarkOilLamp</li>
 							<li>LTS_Lantern</li>
-							<li>LTS_DarkLantern</li>
 							<li>LTS_TableLantern</li>
-							<li>LTS_DarkTableLantern</li>
 							<li>LTS_ElectricLantern</li>
-							<li>LTS_DarkElectricLantern</li>
 							<li>LTS_ElectricTableLantern</li>
-							<li>LTS_DarkElectricTableLantern</li>
 						</defNames>
 						<designationCategory>Accessories</designationCategory>
 						<debug>false</debug>

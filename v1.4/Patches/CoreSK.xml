@@ -435,11 +435,20 @@
 				</value>
 			</li>
 
-			<li Class="PatchOperationAdd">
+			<li Class="PatchOperationConditional">
+			  <xpath>Defs/RecipeDef[defName="Make_ComponentAdvanced"]/researchPrerequisite</xpath>
+			  <match Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_ComponentAdvanced"]/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Components_D1</researchPrerequisite>
+				</value>
+			  </match>
+			  <nomatch Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName="Make_ComponentAdvanced"]</xpath>
 				<value>
 					<researchPrerequisite>Components_D1</researchPrerequisite>
 				</value>
+			  </nomatch>
 			</li>
 
 			</operations>
