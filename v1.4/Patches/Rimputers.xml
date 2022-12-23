@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Rimputers</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_Rimputers</defName>
+						<label>rimputers</label>
+						<description>Machines to help you research.</description>
+						<defNames>
+							<li>RP_MechanicalCalculator</li>
+							<li>RP_DifferenceEngine</li>
+							<li>RP_TapeStorage</li>
+							<li>RP_Server</li>
+							<li>RP_SuperComputer</li>
+							<li>Rimputer_quantumcomputer</li>
+						</defNames>
+						<designationCategory>Misc</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_MechanicalCalculator"]/costList</xpath>
+				<value>
+					<costList>
+					<Mechanism>2</Mechanism>
+					<ComponentIndustrial>6</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_DifferenceEngine"]/costList</xpath>
+				<value>
+					<costList>
+					<Mechanism>6</Mechanism>
+					<ComponentIndustrial>30</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_TapeStorage"]/costList</xpath>
+				<value>
+					<costList>
+					<Glass>5</Glass>
+					<Plastic>10</Plastic>
+					<Steel>5</Steel>
+					<ElectronicComponents>1</ElectronicComponents>
+					<ComponentIndustrial>4</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_Server"]/costList</xpath>
+				<value>
+					<costList>
+					<Wire>5</Wire>
+					<Plastic>25</Plastic>
+					<Electronics>4</Electronics>
+					<ElectronicComponents>2</ElectronicComponents>
+					<ComponentIndustrial>4</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_SuperComputer"]/costList</xpath>
+				<value>
+					<costList>
+					<Wire>10</Wire>
+					<Plastic>45</Plastic>
+					<Electronics>8</Electronics>
+					<ElectronicComponents>4</ElectronicComponents>
+					<Microchips>2</Microchips>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<ComponentSpacer>3</ComponentSpacer>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Rimputer_quantumcomputer"]/costList</xpath>
+				<value>
+					<costList>
+					<Plastic>65</Plastic>
+					<Electronics>12</Electronics>
+					<ElectronicComponents>8</ElectronicComponents>
+					<Microchips>4</Microchips>
+					<ComponentSpacer>15</ComponentSpacer>
+					<ComponentIndustrial>20</ComponentIndustrial>
+					<AluminiumBar>150</AluminiumBar>
+					<Silicon>50</Silicon>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Rimputer_quantumcomputer"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>SolidMetallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Rimputer_quantumcomputer"]</xpath>
+				<value>
+				<costStuffCount>300</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

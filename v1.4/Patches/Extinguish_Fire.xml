@@ -21,7 +21,7 @@
 				<xpath>Defs/ThingDef[defName="Brazier"]/comps/li[@Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable"]</xpath>
 					<value>
 						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
-							<fireSize>0.8</fireSize>
+							<fireSize>0.7</fireSize>
 							<offset>(0,0,0.23)</offset>
 						</li>
 					</value>
@@ -31,8 +31,8 @@
 				<xpath>Defs/ThingDef[defName="TorchLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
 					<value>
 						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
-							<fireSize>0.4</fireSize>
-							<offset>(0.01,0,0.32)</offset>
+							<fireSize>0.3</fireSize>
+							<offset>(0.0,0,0.35)</offset>
 						</li>
 					</value>
 				</li>
@@ -76,7 +76,7 @@
 				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
 					<value>
 						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
-							<fireSize>0.5</fireSize>
+							<fireSize>0.4</fireSize>
 							<offset>(0,0,0.35)</offset>
 						</li>
 					</value>

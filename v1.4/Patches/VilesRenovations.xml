@@ -80,7 +80,7 @@
 				<li>CeramicTileWall</li>
 			  </value>
 			</li>
-			
+		
 			<li Class="PatchOperationReplace">
 			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
 			<value>
@@ -93,6 +93,39 @@
 				<li>TechFence</li>
 			</defNames>
 			</value>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>The Windows</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vile's Hardcore Renovations</li>
+					</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+					
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FenceGatesH"]/designationCategory</xpath>
+									<value>
+										<designationCategory>DoorsWindows</designationCategory>
+									</value>
+								</li>
+				
+							</operations>
+						</match>
+					</li>
+				
+					</operations>
+				</match>
+			</li>
+
+			<li Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName="PalisadeGate"]/graphicData/linkFlags</xpath>
 			</li>
 
 			<li Class="PatchOperationFindMod">

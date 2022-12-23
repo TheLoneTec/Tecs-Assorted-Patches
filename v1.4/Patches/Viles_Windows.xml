@@ -7,7 +7,7 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			
+			<!--
 			<li Class="PatchOperationFindMod">
 				<mods>
 					<li>The Windows Renovation Retexture</li>
@@ -83,6 +83,21 @@
 				<xpath>/Defs/ThingDef[@Name = "WindowBase"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BuildingBase</value>
+			</li>
+	-->
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Doors"]/designationCategory</xpath>
+				<value>
+					<designationCategory>DoorsWindows</designationCategory>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="AutoDoors"]/designationCategory</xpath>
+				<value>
+					<designationCategory>DoorsWindows</designationCategory>
+				</value>
 			</li>
 	
 			<!-- Atlas

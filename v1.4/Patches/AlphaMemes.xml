@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Memes</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Hardcore Renovations</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/ThingDef[defName = "Wall"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+						</li>
+
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/ThingStyleDef[defName = "AM_Scavenger_Wall" or defName = "AM_Kemetic_Wall" or defName = "AM_SteampunkRevival_Wall"]</xpath>
+						</li>
+						
+						<li Class="PatchOperationRemove">
+							<xpath>/Defs/StyleCategoryDef[defName = "AM_Scavenger" or defName = "AM_SteampunkRevival" or defName = "AM_Kemetic"]/thingDefStyles/li[thingDef="Wall"]</xpath>
+						</li>
+						
+					</operations>
+				</match>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<DiggingSpeed>0.8</DiggingSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>
