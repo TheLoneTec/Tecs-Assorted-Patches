@@ -11,11 +11,15 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Minerals Craft](https://discord.com/channels/272340793174392832/875750742684749844/884483675658526722) - Fixed Terrain Reserach Slightly
 - [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
 - [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
+- [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
+- [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Architect Menu and Material Conversion)
+- [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
 
 Other 1.4 Additions:
 
 - Vanilla Beards Retextured Retexture for Facial Animation (WIP)
 - Ideology worksites (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
+- Adjustments for Viles Mods
 
 ------------------------------------------------------------------
 
