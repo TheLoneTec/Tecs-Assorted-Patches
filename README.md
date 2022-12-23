@@ -14,9 +14,9 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
 - [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Architect Menu and Material Conversion)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
-- Alpha Memes
-- Vanilla Ideology Expanded - Dyrads
-- Vanilla Ideology Expanded - Memes and Structures
+- Alpha Memes (untested)
+- Vanilla Ideology Expanded - Dyrads (untested)
+- Vanilla Ideology Expanded - Memes and Structures (untested)
 - Vanilla Psycasts Expanded
 - Vanilla Trading Expanded
 
