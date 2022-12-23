@@ -14,6 +14,11 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
 - [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Architect Menu and Material Conversion)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
+- Alpha Memes
+- Vanilla Ideology Expanded - Dyrads
+- Vanilla Ideology Expanded - Memes and Structures
+- Vanilla Psycasts Expanded
+- Vanilla Trading Expanded
 
 Other 1.4 Additions:
 
@@ -70,6 +75,11 @@ Other 1.4 Additions:
 - [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
 - [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
+- Alpha Memes
+- Vanilla Ideology Expanded - Dyrads
+- Vanilla Ideology Expanded - Memes and Structures
+- Vanilla Psycasts Expanded
+- Vanilla Trading Expanded
 
 Other 1.3 Additions:
 
