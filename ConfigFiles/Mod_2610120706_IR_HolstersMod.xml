@@ -354,8 +354,6 @@
 					<li>HMC_Gun_MicroTurretCharged</li>
 					<li>HMC_Gun_MicroTurretMagnetic</li>
 					<li>HMC_Gun_MicroTurretBlaster</li>
-					<li>Gun_ColtPeacemaker</li>
-					<li>Gun_Pistolet</li>
 					<li>Norbal_Scorpion</li>
 					<li>Crossbow</li>
 					<li>Arbalest</li>
@@ -510,6 +508,16 @@
 					<li>HMC_Gun_LaserSniperRifle</li>
 					<li>HMC_Gun_ScatterLaser</li>
 					<li>HMC_Gun_HeavyLaser</li>
+					<li>Gun_HellsphereCannon</li>
+					<li>Gun_MiniShotgun</li>
+					<li>Gun_Slugthrower</li>
+					<li>Gun_Spiner</li>
+					<li>Gun_MiniFlameblaster</li>
+					<li>Gun_BeamGraser</li>
+					<li>Gun_ToxicNeedle</li>
+					<li>Gun_ChargeBlasterTurret</li>
+					<li>Gun_BoltActionRifle</li>
+					<li>Gun_AK47Gun</li>
 				</weapons>
 			</li>
 			<li>
@@ -1541,6 +1549,7 @@
 					<li>Weapon_GrenadeEdritThor</li>
 					<li>Weapon_GrenadeMechanite</li>
 					<li>Norbhammar</li>
+					<li>Weapon_GrenadeTox</li>
 				</weapons>
 			</li>
 			<li>
@@ -1816,7 +1825,7 @@
 					</keys>
 					<values>
 						<li>0</li>
-						<li>0</li>
+						<li>0.25</li>
 						<li>1</li>
 						<li>0.5</li>
 						<li>-0.2</li>
@@ -1844,10 +1853,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>1</li>
-						<li>1</li>
-						<li>1</li>
-						<li>1</li>
+						<li>0.6999999</li>
+						<li>0.6999999</li>
+						<li>0.6999999</li>
+						<li>0.6999999</li>
 					</values>
 				</size>
 				<isFront>
@@ -1966,9 +1975,9 @@
 					</keys>
 					<values>
 						<li>(2.0, 0.0, -2.0)</li>
-						<li>(-2.0, 0.0, -2.0)</li>
-						<li>(-0.5, 0.0, -1.5)</li>
-						<li>(0.0, 0.0, -2.5)</li>
+						<li>(-2.0, 0.0, -1.5)</li>
+						<li>(-0.5, 0.0, -1.0)</li>
+						<li>(0.0, 0.0, -2.0)</li>
 					</values>
 				</pos>
 				<angle>
@@ -2144,11 +2153,11 @@
 					</values>
 				</isFrontSide>
 				<weapons>
-					<li>TFJ_Tool_Building_Hammer</li>
 					<li>FireStartingKit</li>
 					<li>MSMedSupplyFlare</li>
 					<li>Gun_BinocularsRadio</li>
 					<li>ZF_MeleeWeapon_NeolithicHammerStone</li>
+					<li>TFJ_Tool_Building_Hammer</li>
 				</weapons>
 			</li>
 			<li>
@@ -2341,7 +2350,6 @@
 				</isFrontSide>
 				<weapons>
 					<li>TFJ_Tool_Sickle</li>
-					<li>TFJ_Tool_Hoe</li>
 				</weapons>
 			</li>
 			<li>
@@ -2357,7 +2365,7 @@
 						<li>(-0.5, 0.0, 1.0)</li>
 						<li>(0.5, 0.0, 1.0)</li>
 						<li>(-3.0, 0.0, 2.5)</li>
-						<li>(3.0, 0.0, 2.0)</li>
+						<li>(3.5, 0.0, 2.0)</li>
 					</values>
 				</pos>
 				<angle>
@@ -2370,8 +2378,8 @@
 					<values>
 						<li>-75</li>
 						<li>-100</li>
-						<li>-140</li>
-						<li>-40</li>
+						<li>-125</li>
+						<li>-55</li>
 					</values>
 				</angle>
 				<flip>
@@ -2398,9 +2406,9 @@
 					</keys>
 					<values>
 						<li>0</li>
-						<li>0</li>
+						<li>0.2</li>
 						<li>1</li>
-						<li>0.5</li>
+						<li>0.6</li>
 						<li>-0.2</li>
 					</values>
 				</bodyOffsetModifs>
@@ -2414,8 +2422,8 @@
 					<values>
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
+						<li>(-1.0, 0.0, -1.0)</li>
+						<li>(0.5, 0.0, -0.5)</li>
 					</values>
 				</bodyOffset>
 				<size>
@@ -2743,9 +2751,7 @@
 					<li>Pa_K98S</li>
 					<li>Pa_Mk1250SPR</li>
 					<li>Pa_Mk12SPR</li>
-					<li>Gun_BoltActionRifle</li>
 					<li>Pila</li>
-					<li>Gun_AK47Gun</li>
 					<li>RK_Rifle</li>
 					<li>RK_SniperRifle</li>
 					<li>RK_BFR</li>
@@ -2992,6 +2998,8 @@
 					<li>Pa_SP</li>
 					<li>MeleeWeapon_TribalKnife</li>
 					<li>MeleeWeapon_Dagger</li>
+					<li>Gun_ColtPeacemaker</li>
+					<li>Gun_Pistolet</li>
 				</weapons>
 			</li>
 			<li>
@@ -3974,10 +3982,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(0.0, 0.0, 1.5)</li>
-						<li>(0.5, 0.0, 1.0)</li>
-						<li>(-3.5, 0.0, 1.5)</li>
-						<li>(3.5, 0.0, 1.5)</li>
+						<li>(0.0, 0.0, 0.5)</li>
+						<li>(0.5, 0.0, 0.5)</li>
+						<li>(-3.0, 0.0, 1.5)</li>
+						<li>(3.0, 0.0, 1.5)</li>
 					</values>
 				</pos>
 				<angle>
@@ -3990,8 +3998,8 @@
 					<values>
 						<li>0</li>
 						<li>85</li>
-						<li>60</li>
-						<li>25</li>
+						<li>50</li>
+						<li>40</li>
 					</values>
 				</angle>
 				<flip>
@@ -4046,10 +4054,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>0.7499999</li>
-						<li>0.7499999</li>
 						<li>0.6499999</li>
 						<li>0.6499999</li>
+						<li>0.5999999</li>
+						<li>0.5999999</li>
 					</values>
 				</size>
 				<isFront>
@@ -4154,6 +4162,7 @@
 				</isFrontSide>
 				<weapons>
 					<li>NorbalMeleeWeapon_ShortSword</li>
+					<li>TFJ_Tool_Hoe</li>
 				</weapons>
 			</li>
 			<li>
@@ -4360,8 +4369,8 @@
 					<values>
 						<li>(0.0, 0.0, 0.5)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(-2.5, 0.0, 1.0)</li>
-						<li>(2.5, 0.0, 0.5)</li>
+						<li>(-3.0, 0.0, 1.0)</li>
+						<li>(3.0, 0.0, 1.0)</li>
 					</values>
 				</pos>
 				<angle>
@@ -4374,8 +4383,8 @@
 					<values>
 						<li>0</li>
 						<li>0</li>
-						<li>55</li>
-						<li>125</li>
+						<li>50</li>
+						<li>130</li>
 					</values>
 				</angle>
 				<flip>
@@ -4432,8 +4441,8 @@
 					<values>
 						<li>1</li>
 						<li>1</li>
-						<li>1</li>
-						<li>1</li>
+						<li>0.9</li>
+						<li>0.9</li>
 					</values>
 				</size>
 				<isFront>
@@ -4745,8 +4754,8 @@
 					<values>
 						<li>(0.0, 0.0, 0.5)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(-3.5, 0.0, 1.5)</li>
-						<li>(3.5, 0.0, 1.5)</li>
+						<li>(-3.5, 0.0, 1.0)</li>
+						<li>(3.5, 0.0, 1.0)</li>
 					</values>
 				</pos>
 				<angle>
@@ -4817,8 +4826,8 @@
 					<values>
 						<li>0.5999999</li>
 						<li>0.5999999</li>
-						<li>0.5999999</li>
-						<li>0.5999999</li>
+						<li>0.4999999</li>
+						<li>0.4999999</li>
 					</values>
 				</size>
 				<isFront>
