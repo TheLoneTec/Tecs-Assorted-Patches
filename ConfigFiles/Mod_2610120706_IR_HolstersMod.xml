@@ -532,7 +532,7 @@
 					<values>
 						<li>(2.5, 0.0, -2.0)</li>
 						<li>(-2.5, 0.0, -2.0)</li>
-						<li>(1.0, 0.0, -1.5)</li>
+						<li>(1.0, 0.0, -2.5)</li>
 						<li>(-0.5, 0.0, -2.0)</li>
 					</values>
 				</pos>
@@ -546,8 +546,8 @@
 					<values>
 						<li>95</li>
 						<li>80</li>
+						<li>120</li>
 						<li>75</li>
-						<li>110</li>
 					</values>
 				</angle>
 				<flip>
@@ -573,11 +573,11 @@
 						<li>thin</li>
 					</keys>
 					<values>
-						<li>0</li>
-						<li>0</li>
+						<li>0.35</li>
+						<li>0.5000001</li>
 						<li>1</li>
 						<li>0.8</li>
-						<li>-0.2</li>
+						<li>0.6</li>
 					</values>
 				</bodyOffsetModifs>
 				<bodyOffset>
@@ -591,7 +591,7 @@
 						<li>(2.0, 0.0, -0.5)</li>
 						<li>(-2.0, 0.0, -0.5)</li>
 						<li>(-2.0, 0.0, 0.0)</li>
-						<li>(2.0, 0.0, 0.0)</li>
+						<li>(2.0, 0.0, -1.0)</li>
 					</values>
 				</bodyOffset>
 				<size>
@@ -1135,7 +1135,6 @@
 					<li>MeleeWeapon_Katana</li>
 					<li>MeleeWeapon_Ikwa</li>
 					<li>MeleeWeapon_Mace</li>
-					<li>MeleeWeapon_Schiv</li>
 					<li>MeleeWeapon_BreachAxe</li>
 					<li>RK_MagicWand</li>
 					<li>RK_OneHanded</li>
@@ -2018,10 +2017,10 @@
 					</keys>
 					<values>
 						<li>0</li>
-						<li>0</li>
+						<li>0.4</li>
 						<li>1</li>
-						<li>0.5</li>
-						<li>-0.2</li>
+						<li>0.6</li>
+						<li>0.2</li>
 					</values>
 				</bodyOffsetModifs>
 				<bodyOffset>
@@ -2035,7 +2034,7 @@
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
+						<li>(1.0, 0.0, -0.5)</li>
 					</values>
 				</bodyOffset>
 				<size>
@@ -2157,7 +2156,6 @@
 					<li>MSMedSupplyFlare</li>
 					<li>Gun_BinocularsRadio</li>
 					<li>ZF_MeleeWeapon_NeolithicHammerStone</li>
-					<li>TFJ_Tool_Building_Hammer</li>
 				</weapons>
 			</li>
 			<li>
@@ -2362,8 +2360,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(-0.5, 0.0, 1.0)</li>
-						<li>(0.5, 0.0, 1.0)</li>
+						<li>(-0.5, 0.0, 0.5)</li>
+						<li>(1.0, 0.0, 0.5)</li>
 						<li>(-3.0, 0.0, 2.5)</li>
 						<li>(3.5, 0.0, 2.0)</li>
 					</values>
@@ -2376,9 +2374,9 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>-75</li>
-						<li>-100</li>
-						<li>-125</li>
+						<li>-90</li>
+						<li>-95</li>
+						<li>-120</li>
 						<li>-55</li>
 					</values>
 				</angle>
@@ -2405,11 +2403,11 @@
 						<li>thin</li>
 					</keys>
 					<values>
-						<li>0</li>
 						<li>0.2</li>
-						<li>1</li>
-						<li>0.6</li>
-						<li>-0.2</li>
+						<li>0.4</li>
+						<li>0.1999998</li>
+						<li>0.5</li>
+						<li>0.5</li>
 					</values>
 				</bodyOffsetModifs>
 				<bodyOffset>
@@ -2421,9 +2419,9 @@
 					</keys>
 					<values>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
-						<li>(-1.0, 0.0, -1.0)</li>
-						<li>(0.5, 0.0, -0.5)</li>
+						<li>(0.0, 0.0, -1.5)</li>
+						<li>(0.0, 0.0, -1.0)</li>
+						<li>(-2.0, 0.0, -0.5)</li>
 					</values>
 				</bodyOffset>
 				<size>
@@ -2462,10 +2460,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
+						<li>(-0.5, 0.0, 0.0)</li>
+						<li>(0.5, 0.0, 0.0)</li>
+						<li>(-4.5, 0.0, 0.5)</li>
+						<li>(4.5, 0.0, 1.0)</li>
 					</values>
 				</posSide>
 				<angleSide>
@@ -2476,10 +2474,10 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>0</li>
-						<li>0</li>
-						<li>0</li>
-						<li>0</li>
+						<li>-85</li>
+						<li>-105</li>
+						<li>-35</li>
+						<li>-150</li>
 					</values>
 				</angleSide>
 				<flipSide>
@@ -2505,11 +2503,11 @@
 						<li>thin</li>
 					</keys>
 					<values>
-						<li>0</li>
-						<li>0</li>
+						<li>0.4</li>
+						<li>0.6000001</li>
 						<li>1</li>
 						<li>0.5</li>
-						<li>-0.2</li>
+						<li>-0.4</li>
 					</values>
 				</bodyOffsetModifsSide>
 				<bodyOffsetSide>
@@ -2523,7 +2521,7 @@
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
+						<li>(-0.5, 0.0, 0.0)</li>
 					</values>
 				</bodyOffsetSide>
 				<isFrontSide>
@@ -2534,8 +2532,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>True</li>
 						<li>False</li>
+						<li>True</li>
 						<li>False</li>
 						<li>True</li>
 					</values>
@@ -3029,7 +3027,7 @@
 						<li>155</li>
 						<li>30</li>
 						<li>-195</li>
-						<li>10</li>
+						<li>0</li>
 					</values>
 				</angle>
 				<flip>
@@ -3056,7 +3054,7 @@
 					</keys>
 					<values>
 						<li>0</li>
-						<li>0</li>
+						<li>0.3</li>
 						<li>1</li>
 						<li>0.5</li>
 						<li>-0.2</li>
@@ -3073,7 +3071,7 @@
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.5, 0.0, 0.0)</li>
 					</values>
 				</bodyOffset>
 				<size>
@@ -3391,6 +3389,7 @@
 					<li>ZF_MeleeWeapon_NeolithicSickle</li>
 					<li>RK_Dagger</li>
 					<li>MeleeWeapon_RoyalKnife</li>
+					<li>MeleeWeapon_Schiv</li>
 				</weapons>
 			</li>
 			<li>
@@ -5711,6 +5710,198 @@
 					<li>Moyo_Spear</li>
 					<li>Moyo_GDSpear</li>
 					<li>MeleeWeapon_PlasmaTachi</li>
+				</weapons>
+			</li>
+			<li>
+				<name>Hammer</name>
+				<pos>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(1.5, 0.0, -2.0)</li>
+						<li>(-1.5, 0.0, -2.0)</li>
+						<li>(-0.5, 0.0, -2.0)</li>
+						<li>(0.5, 0.0, -2.0)</li>
+					</values>
+				</pos>
+				<angle>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>10</li>
+						<li>-10</li>
+					</values>
+				</angle>
+				<flip>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+						<li>True</li>
+					</values>
+				</flip>
+				<bodyOffsetModifs>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0.3</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifs>
+				<bodyOffset>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.5, 0.0, -1.0)</li>
+					</values>
+				</bodyOffset>
+				<size>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>0.8</li>
+						<li>0.8</li>
+						<li>0.8</li>
+						<li>0.8</li>
+					</values>
+				</size>
+				<isFront>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFront>
+				<posSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</posSide>
+				<angleSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+						<li>0</li>
+					</values>
+				</angleSide>
+				<flipSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>False</li>
+						<li>True</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</flipSide>
+				<bodyOffsetModifsSide>
+					<keys>
+						<li>male</li>
+						<li>female</li>
+						<li>fat</li>
+						<li>hulk</li>
+						<li>thin</li>
+					</keys>
+					<values>
+						<li>0</li>
+						<li>0</li>
+						<li>1</li>
+						<li>0.5</li>
+						<li>-0.2</li>
+					</values>
+				</bodyOffsetModifsSide>
+				<bodyOffsetSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+						<li>(0.0, 0.0, 0.0)</li>
+					</values>
+				</bodyOffsetSide>
+				<isFrontSide>
+					<keys>
+						<li>2</li>
+						<li>0</li>
+						<li>1</li>
+						<li>3</li>
+					</keys>
+					<values>
+						<li>True</li>
+						<li>False</li>
+						<li>False</li>
+						<li>True</li>
+					</values>
+				</isFrontSide>
+				<weapons>
+					<li>TFJ_Tool_Building_Hammer</li>
 				</weapons>
 			</li>
 		</groupsCordSettings3>
