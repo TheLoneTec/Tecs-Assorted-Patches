@@ -56,7 +56,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="TranquAnalgetProduction"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>63.00</researchViewY>
+                    <researchViewY>65.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
