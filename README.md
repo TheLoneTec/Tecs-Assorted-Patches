@@ -2,7 +2,7 @@
 various workshop mod patches for HSK. I play with all of these mods enabled and can all be used together. [Trello Board](https://trello.com/b/Awq5abNv/tecs-assorted-patches). (Ideas/Progress/Issues/Completed) 
 
 # 1.4 Patches for:
-- [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings)
+- [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i am planning on making a HSK version of Celsius)
 - Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Recommended))
 - [Perspective: Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=2567126933) (Added Textures for Viles Doors, corrective patches for base HSK + missing textures. Merge Viles fence gate textures into one category, fixed missing palisade gate east perspective)
 - [Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990) - Added HSK Trees.
@@ -12,19 +12,37 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
 - [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
-- [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Architect Menu and Material Conversion)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
 - Alpha Memes (untested)
 - Vanilla Ideology Expanded - Dyrads (untested)
 - Vanilla Ideology Expanded - Memes and Structures (untested)
 - Vanilla Psycasts Expanded
-- Vanilla Trading Expanded
+- Vanilla Trading Expanded (Unfixable error on load currently, reported to dev)
+- Jewelery - (Moved Laser Sculpting Table into machinary Architect Menu) - (Patched HSK Version, Not Yet Available)
+- Medical Supplements (Continued) (Architect Menus) - (Patched HSK Version, Not Yet Available)
+- [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
+- [Roads Of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2280318231) ( Material Conversion, removed AISR2G from architect menu, should only be buildable at worktable)
+- [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
+- Rimputers (Architect Menu and Material Conversion) - (1.4 or Patched HSK Version, Not Yet Available)
+- [Thermodynamics - Core (forked)](https://steamcommunity.com/sharedfiles/filedetails/?id=2909103255) (moved food into appropriate categories & Material Conversion)
+- [PlaceStuffOnTables](https://steamcommunity.com/sharedfiles/filedetails/?id=2590908441) Patch (allow certain objects to be placed on tables, can run without workshop mod)
+- [No Power Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2019297016) - Material Conversion + add to Trade Subcategory. (recommend [No Quests Without Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2557302879))
+- [Vanilla Base Generation Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2830358905) - Cleaned up base stockpile generation lists. (still has errors that need resolving)
+- [Vanilla Outposts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2688941031) (Added material cost to create outposts. Also locked certain outposts behind research using this method. I have disabled the Production Outpost.. I cant see a way to justify it. Added additional skill requirements, if the outposts are to look after themselves, they NEED someone who can atleast cook a little, build and other skills that match the outposts needs) (UNTESTED)
+- [Power Logic](https://steamcommunity.com/sharedfiles/filedetails/?id=812653710) - (Material Conversion and research patch, disabled Laser systems by default, you can reable them in the config by renaming extensions of Laser_Content_Enabled.txt to .xml and Laser_Content_Disabled.xml to .txt) The laser system, while very cool, seemed redundent and is a noticeable tps hit when in use.
+- [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
+- [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
+- Dynamic Economy - (Material Conversion and Architect Menus Assignment) - (1.4 or Patched HSK Version, Not Yet Available)
+- Comigo's Bridges and Platforms (Material Conversion) - (1.4 or Patched HSK Version, Not Yet Available)
+- Bridgello (Terrain Affordance Correction) - (1.4 or Patched HSK Version, Not Yet Available)
 
 Other 1.4 Additions:
 
 - Vanilla Beards Retextured Retexture for Facial Animation (WIP)
 - Ideology worksites (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
 - Adjustments for Viles Mods
+- Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
+- Eye Patch Apparel for Left and Right Eyes
 
 ------------------------------------------------------------------
 
@@ -80,6 +98,9 @@ Other 1.4 Additions:
 - Vanilla Ideology Expanded - Memes and Structures
 - Vanilla Psycasts Expanded
 - Vanilla Trading Expanded
+- [Dynamic Economy](https://steamcommunity.com/sharedfiles/filedetails/?id=2736917779) - (Material Conversion and Architect Menus Assignment)
+- [Comigo's Bridges and Platforms](https://steamcommunity.com/sharedfiles/filedetails/?id=2547909363) ( Material Conversion) - (1.4 or Patched HSK Version, Not Yet Available)
+- [Bridgello](https://github.com/Elldar112/Bridgello-HSK) (Terrain Affordance Correction)
 
 Other 1.3 Additions:
 
