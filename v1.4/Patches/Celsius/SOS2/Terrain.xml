@@ -21,7 +21,7 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>9999</conductivity>
+									<insulation>9999</insulation>
 								</li>
 							</value>
 						</li>
@@ -31,7 +31,7 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>9999</conductivity>
+									<insulation>9999</insulation>
 								</li>
 							</value>
 						</li>
@@ -41,7 +41,7 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>9999</conductivity>
+									<insulation>9999</insulation>
 								</li>
 							</value>
 						</li>
@@ -51,7 +51,7 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>9999</conductivity>
+									<insulation>9999</insulation>
 								</li>
 							</value>
 						</li>
@@ -61,7 +61,7 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>9999</conductivity>
+									<insulation>9999</insulation>
 								</li>
 							</value>
 						</li>
@@ -71,7 +71,7 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>9999</conductivity>
+									<insulation>9999</insulation>
 								</li>
 							</value>
 						</li>
@@ -81,7 +81,7 @@
 							<value>
 								<li Class="Celsius.ThingThermalProperties">
 									<heatCapacity>0</heatCapacity>
-									<conductivity>9999</conductivity>
+									<insulation>9999</insulation>
 								</li>
 							</value>
 						</li>
@@ -100,7 +100,7 @@
 		<value>
 			<li Class="Celsius.ThingThermalProperties">
 				<heatCapacity>105000</heatCapacity>
-				<conductivity>2</conductivity>
+				<insulation>2</insulation>
 			</li>
 		</value>
 	</Operation>
@@ -110,7 +110,7 @@
 		<value>
 			<li Class="Celsius.ThingThermalProperties">
 				<heatCapacity>105000</heatCapacity>
-				<conductivity>2</conductivity>
+				<insulation>2</insulation>
 			</li>
 		</value>
 	</Operation>

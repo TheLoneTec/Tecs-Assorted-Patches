@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Power Logic</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName = "SupesLaserEmitter" or defName="SupesLaserMirror" or defName="SupesLaserSplitter" or defName="SupesLaserMerger"
+			or defName="SupesLaserWindow" or defName="SupesLaserPower" or defName="SupesLaserSwitch"]</xpath>
+		</li>
+
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[@Name = "PowerLogicMirrorBase"]</xpath>
+		</li>
+
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[@Name = "PowerLogicLaserBase"]</xpath>
+		</li>
+
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/RecipeDef[defName = "SupesMake_Glass"]</xpath>
+		</li>
+	
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[defName = "SupesOpticalResonator"]</xpath>
+		</li>
+	
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]</xpath>
+		</li>
+	
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Comigo's Bridges and Platforms</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>10.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>5.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="COMIGO_FloatingPlatforms"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+			
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

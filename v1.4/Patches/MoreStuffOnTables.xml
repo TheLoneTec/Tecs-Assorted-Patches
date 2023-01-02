@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Thermodynamics - Hot Meals (Forked)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="DMicrowave"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+			    <xpath>/Defs/ThingDef[defName="DMicrowave"]/altitudeLayer</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="DMicrowave"]/building</xpath>
+		        <value>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[LTS]Systems</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+				
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/ThingDef[defName="DMicrowave"]/placeWorkers</xpath>
+						<value>
+							<li>LTS_Systems.PlaceWorkers.PlaceWorker_Tabletop</li>
+						</value>
+					</li>
+
+				</operations>
+				</match>
+			</li>
+			
+		</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Musical Instruments (Continued)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+		        <value>
+				<building>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>
+				</building>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[LTS]Systems</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+				
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+						<value>
+						<placeWorkers>
+							<li>LTS_Systems.PlaceWorkers.PlaceWorker_Tabletop</li>
+						</placeWorkers>
+						</value>
+					</li>
+
+				</operations>
+				</match>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Core SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="GameOfUrBoard"]/altitudeLayer</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+					<value>
+						<altitudeLayer>BuildingOnTop</altitudeLayer>
+					</value>
+				</nomatch>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="GameOfUrBoard"]/building</xpath>
+		        <value>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Candle"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Candle"]</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Candle"]/building</xpath>
+		        <value>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="Candle"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]/building</xpath>
+		        <value>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp"]/building</xpath>
+		        <value>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>				
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+		        <value>
+				<building>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>
+				</building>
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+		        <value>
+				<building>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>
+				</building>
+	        	</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+		        <value>
+				    <clearBuildingArea>false</clearBuildingArea>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+		        <value>
+					<altitudeLayer>BuildingOnTop</altitudeLayer>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+		        <value>
+				<building>
+	            	<isEdifice>false</isEdifice>
+					<canPlaceOverWall>false</canPlaceOverWall>
+				</building>
+	        	</value>
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
+			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+		        <value>
+					<placeWorkers>
+						<li>SK.PlaceWorker_NotOnWall</li>
+					</placeWorkers>
+	        	</value>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[LTS]Systems</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+				
+					<li Class="PatchOperationAdd"> 
+						<xpath>/Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+						<value>
+						<placeWorkers>
+							<li>LTS_Systems.PlaceWorkers.PlaceWorker_Tabletop</li>
+						</placeWorkers>
+						</value>
+					</li>
+
+				</operations>
+				</match>
+			</li>
+			
+		</operations>
+		</match>
+	</Operation>
+	
+</Patch>
