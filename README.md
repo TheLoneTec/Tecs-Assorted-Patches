@@ -12,19 +12,35 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
 - [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
-- [Rimputers](https://steamcommunity.com/sharedfiles/filedetails/?id=2795070262) (Architect Menu and Material Conversion)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
 - Alpha Memes (untested)
 - Vanilla Ideology Expanded - Dyrads (untested)
 - Vanilla Ideology Expanded - Memes and Structures (untested)
 - Vanilla Psycasts Expanded
 - Vanilla Trading Expanded
+- Jewelery - (Moved Laser Sculpting Table into machinary Architect Menu) - (Patched HSK Version, Not Yet Available)
+- Medical Supplements (Continued) (Architect Menus) - (Patched HSK Version, Not Yet Available)
+- [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
+- [Roads Of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2280318231) ( Material Conversion, removed AISR2G from architect menu, should only be buildable at worktable)
+- [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
+- Rimputers (Architect Menu and Material Conversion) - (1.4 or Patched HSK Version, Not Yet Available)
+- [Thermodynamics - Core (forked)](https://steamcommunity.com/sharedfiles/filedetails/?id=2909103255) (moved food into appropriate categories & Material Conversion)
+- [PlaceStuffOnTables](https://steamcommunity.com/sharedfiles/filedetails/?id=2590908441) Patch (allow certain objects to be placed on tables, can run without workshop mod)
+- [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i am planning on making a HSK version of Celsius)
+- [No Power Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2019297016) - Material Conversion + add to Trade Subcategory. (recommend [No Quests Without Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2557302879))
+- [Vanilla Base Generation Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2830358905) - Cleaned up base stockpile generation lists. (still has errors that need resolving)
+- [Vanilla Outposts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2688941031) (Added material cost to create outposts. Also locked certain outposts behind research using this method. I have disabled the Production Outpost.. I cant see a way to justify it. Added additional skill requirements, if the outposts are to look after themselves, they NEED someone who can atleast cook a little, build and other skills that match the outposts needs) (UNTESTED)
+- [Power Logic](https://steamcommunity.com/sharedfiles/filedetails/?id=812653710) - (Material Conversion and research patch, disabled Laser systems by default, you can reable them in the config by renaming extensions of Laser_Content_Enabled.txt to .xml and Laser_Content_Disabled.xml to .txt) The laser system, while very cool, seemed redundent and is a noticeable tps hit when in use.
+- [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
+- [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
 
 Other 1.4 Additions:
 
 - Vanilla Beards Retextured Retexture for Facial Animation (WIP)
 - Ideology worksites (Added HSK, Viles, HSK More Content and HSC Biomes logs, added HSK Ores to mining sites)
 - Adjustments for Viles Mods
+- Research Auto patcher (help stops research projects being unlocked when they shouldnt be)
+- Eye Patch Apparel for Left and Right Eyes
 
 ------------------------------------------------------------------
 
