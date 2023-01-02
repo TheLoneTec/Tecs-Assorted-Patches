@@ -17,7 +17,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - Vanilla Ideology Expanded - Dyrads (untested)
 - Vanilla Ideology Expanded - Memes and Structures (untested)
 - Vanilla Psycasts Expanded
-- Vanilla Trading Expanded
+- Vanilla Trading Expanded (Unfixable error on load currently, reported to dev)
 - Jewelery - (Moved Laser Sculpting Table into machinary Architect Menu) - (Patched HSK Version, Not Yet Available)
 - Medical Supplements (Continued) (Architect Menus) - (Patched HSK Version, Not Yet Available)
 - [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
