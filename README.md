@@ -34,6 +34,8 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
 - [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
 - Dynamic Economy - (Material Conversion and Architect Menus Assignment) - (1.4 or Patched HSK Version, Not Yet Available)
+- Comigo's Bridges and Platforms ( Material Conversion) - (1.4 or Patched HSK Version, Not Yet Available)
+- Bridgello (Terrain Affordance Correction) - (1.4 or Patched HSK Version, Not Yet Available)
 
 Other 1.4 Additions:
 
