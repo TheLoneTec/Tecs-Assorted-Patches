@@ -17,7 +17,7 @@
   <v1.4>
     <li>/</li>
 	<li>v1.4</li>
-    <li IfModActive="dame.hotmeals">LoadDefs/v1.4/HotMeals</li>
+    <li IfModActive="Mlie.DThermodynamicsHotMeals">LoadDefs/v1.4/HotMeals</li>
 	<li IfModActive="Garwel.Celsius">LoadDefs/v1.4/Celsius</li>
 	<li IfModActive="Nals.FacialAnimation">LoadDefs/v1.4/FacialAnimation</li>
     <!--<li IfModActive="Gloomy.DecorPack.SK">ResearchFixes/v1.4/GloomDecoPack</li>-->

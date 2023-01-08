@@ -182,6 +182,12 @@
                     <tab>Buildings_SK</tab>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Rimputer_supercomputer"]/techLevel</xpath>
+                <value>
+                    <techLevel>Spacer</techLevel>
+                </value>
+            </li>
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ResearchProjectDef[defName="Rimputer_supercomputer"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">

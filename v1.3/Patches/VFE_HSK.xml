@@ -100,7 +100,7 @@
 							<value>
 							<li Class = "RoomRequirement_ThingAnyOf">
 								<things>
-									<li>EndTable</li>
+									<li>Dresser</li>
 									<li>Table_RoyalDresser</li>
 								</things>
 							</li>

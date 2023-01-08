@@ -44,7 +44,7 @@
 						<value>
 						<li Class = "RoomRequirement_ThingAnyOf">
 							<things>
-								<li>EndTable</li>
+								<li>Dresser</li>
 								<li>LTS_IdanasD</li>
 								<li>LTS_KoppangD</li>
 							</things>

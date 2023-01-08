@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Thermodynamics - Hot Meals (Forked)</li>
+			<li>[D] Thermodynamics - Hot Meals (Continued)</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
