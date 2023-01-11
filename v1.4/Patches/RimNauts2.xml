@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>RimNauts 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>RimNauts2_Buildings</defName>
+						<label>RimNauts</label>
+						<description>Everything you need to go to space.</description>
+						<defNames>
+							<li>RimNauts2_PodLauncher</li>
+							<li>RimNauts2_SatelliteDish</li>
+							<li>RimNauts2_TransportPod_Cargo</li>
+							<li>RimNauts2_TransportPod_Satellite</li>
+							<li>RimNauts2_TransportPod_SpaceStation</li>
+						</defNames>
+						<designationCategory>Ship</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<!-- ====== RimNauts2_PodLauncher ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "RimNauts2_PodLauncher"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_PodLauncher"]</xpath>
+				<value>
+					<costStuffCount>350</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_PodLauncher"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>RuggedMetallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_PodLauncher"]</xpath>
+			   <value>
+					<costList>
+						<Plastic>80</Plastic>
+						<Electronics>6</Electronics>
+						<ComponentSpacer>3</ComponentSpacer>
+						<AdvMechanism>6</AdvMechanism>
+						<Microchips>1</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_PodLauncher"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+			   <value>
+					<li Class="CompProperties_Refuelable">
+						<fuelCapacity>1000.0</fuelCapacity>
+						<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+						<initialConfigurableTargetFuelLevel>75</initialConfigurableTargetFuelLevel>
+						<fuelFilter>
+							<thingDefs>
+								<li>Chemfuel</li>
+							</thingDefs>
+						</fuelFilter>
+						<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+						<autoRefuelPercent>1</autoRefuelPercent>
+						<showFuelGizmo>false</showFuelGizmo>
+						<initialFuelPercent>0</initialFuelPercent>
+						<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+						<drawFuelGaugeInMap>true</drawFuelGaugeInMap>
+						<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+					</li>
+			   </value>
+			</li>
+
+			<!-- ====== RimNauts2_SatelliteDish ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "RimNauts2_SatelliteDish"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_SatelliteDish"]</xpath>
+				<value>
+					<costStuffCount>200</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_SatelliteDish"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>RuggedMetallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_SatelliteDish"]</xpath>
+			   <value>
+					<costList>
+						<Plastic>40</Plastic>
+						<Rubber>20</Rubber>
+						<Glass>40</Glass>
+						<Electronics>4</Electronics>
+						<ComponentSpacer>2</ComponentSpacer>
+						<AdvMechanism>4</AdvMechanism>
+						<Microchips>1</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<!-- ====== RimNauts2_TransportPod_Cargo ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[@Name = "RimNauts2_TransportPod"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Cargo"]</xpath>
+				<value>
+					<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Cargo"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>RuggedMetallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Cargo"]</xpath>
+			   <value>
+					<costList>
+						<Plastic>30</Plastic>
+						<Rubber>20</Rubber>
+						<ReinforcedGlass>5</ReinforcedGlass>
+						<Electronics>4</Electronics>
+						<ComponentSpacer>1</ComponentSpacer>
+						<AdvMechanism>2</AdvMechanism>
+						<Microchips>2</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<!-- ====== RimNauts2_TransportPod_Cargo ====== -->
+
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Satellite"]</xpath>
+				<value>
+					<costStuffCount>80</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Satellite"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>RuggedMetallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Satellite"]</xpath>
+			   <value>
+					<costList>
+						<Plastic>15</Plastic>
+						<Rubber>8</Rubber>
+						<ReinforcedGlass>4</ReinforcedGlass>
+						<Electronics>2</Electronics>
+						<ComponentSpacer>1</ComponentSpacer>
+						<AdvMechanism>1</AdvMechanism>
+						<Microchips>1</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<!-- ====== RimNauts2_TransportPod_SpaceStation ====== -->
+
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_SpaceStation"]</xpath>
+				<value>
+					<costStuffCount>600</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_SpaceStation"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>RuggedMetallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_SpaceStation"]</xpath>
+			   <value>
+					<costList>
+						<Plastic>100</Plastic>
+						<Rubber>50</Rubber>
+						<ReinforcedGlass>50</ReinforcedGlass>
+						<Electronics>15</Electronics>
+						<ComponentSpacer>6</ComponentSpacer>
+						<AdvMechanism>8</AdvMechanism>
+						<Microchips>4</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
