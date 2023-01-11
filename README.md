@@ -32,9 +32,9 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Power Logic](https://steamcommunity.com/sharedfiles/filedetails/?id=812653710) - (Material Conversion and research patch, disabled Laser systems by default, you can reable them in the config by renaming extensions of Laser_Content_Enabled.txt to .xml and Laser_Content_Disabled.xml to .txt) The laser system, while very cool, seemed redundent and is a noticeable tps hit when in use.
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
 - [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
-- Dynamic Economy - (Material Conversion and Architect Menus Assignment) - (1.4 or Patched HSK Version, Not Yet Available)
-- Comigo's Bridges and Platforms (Material Conversion) - (1.4 or Patched HSK Version, Not Yet Available)
 - Bridgello (Terrain Affordance Correction) - (1.4 or Patched HSK Version, Not Yet Available)
+- [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
+- [RimNauts 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2880599514) (Architect Menu and Material Conversion)
 
 Other 1.4 Additions:
 
