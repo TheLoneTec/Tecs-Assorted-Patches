@@ -43,6 +43,10 @@
 						<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
 						<researchDefName>None</researchDefName>
 					</li>
+					<li>
+						<thingDef>TFJ_Tool_Sickle</thingDef>
+						<researchDefName>None</researchDefName>
+					</li>
 				</Overrides>
 			</li>
 			

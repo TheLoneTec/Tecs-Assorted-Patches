@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>HologramsAndProjectors</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Subcategory_HologramsAndProjectors</defName>
+						<label>Holograms and projectors</label>
+						<description>Holograms for that sci-fi look and are of effect benefits.</description>
+						<defNames>
+							<li>SmallProjector</li>
+							<li>LargeProjector</li>
+							<li>GrandProjector</li>
+						</defNames>
+						<designationCategory>Misc</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			<!-- ====== SmallProjector ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "SmallProjector"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="SmallProjector"]</xpath>
+				<value>
+					<costStuffCount>25</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="SmallProjector"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>Metallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="SmallProjector"]/costList</xpath>
+			   <value>
+					<costList>
+						<Glass>10</Glass>
+						<Plastic>20</Plastic>
+						<ComponentIndustrial>5</ComponentIndustrial>
+						<ElectronicComponents>3</ElectronicComponents>
+						<Mechanism>2</Mechanism>
+						<Electronics>1</Electronics>
+					</costList>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="SmallProjector"]/comps/li[@Class="HologramsAndProjectors.CompProperties_DynamicGlower"]</xpath>
+				<value>
+					<darklightToggle>true</darklightToggle>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="SmallProjector"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<li>AdvToolBench</li>
+				</value>
+			</li>
+
+			<!-- ====== LargeProjector ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "LargeProjector"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LargeProjector"]</xpath>
+				<value>
+					<costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LargeProjector"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>Metallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="LargeProjector"]/costList</xpath>
+			   <value>
+					<costList>
+						<Glass>15</Glass>
+						<Plastic>25</Plastic>
+						<ComponentIndustrial>8</ComponentIndustrial>
+						<ElectronicComponents>5</ElectronicComponents>
+						<Mechanism>3</Mechanism>
+						<Microchips>1</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LargeProjector"]/comps/li[@Class="HologramsAndProjectors.CompProperties_DynamicGlower"]</xpath>
+				<value>
+					<darklightToggle>true</darklightToggle>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="LargeProjector"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+				</value>
+			</li>
+
+			<!-- ====== GrandProjector ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "GrandProjector"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BuildingBase</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="GrandProjector"]</xpath>
+				<value>
+					<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="GrandProjector"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>Metallic</li>
+				</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="GrandProjector"]/costList</xpath>
+			   <value>
+					<costList>
+						<Glass>30</Glass>
+						<Plastic>45</Plastic>
+						<ComponentSpacer>2</ComponentSpacer>
+						<ElectronicComponents>7</ElectronicComponents>
+						<AdvMechanism>2</AdvMechanism>
+						<Microchips>2</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="GrandProjector"]/comps/li[@Class="HologramsAndProjectors.CompProperties_DynamicGlower"]</xpath>
+				<value>
+					<darklightToggle>true</darklightToggle>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="GrandProjector"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>AdvToolBench</li>
+					</recipeUsers>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
