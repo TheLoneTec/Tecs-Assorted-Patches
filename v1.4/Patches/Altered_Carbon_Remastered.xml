@@ -327,6 +327,15 @@
 			   </value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VFEU_DecryptionBench"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>VFEU_Hacking</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>Biotech</li>
