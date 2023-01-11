@@ -91,8 +91,8 @@
 				</value>
 			</li>				
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lantern"]</xpath>
+			<li Class="PatchOperationReplace"> 
+				<xpath>/Defs/ThingDef[defName="LTS_Lantern"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Light_B1</li>

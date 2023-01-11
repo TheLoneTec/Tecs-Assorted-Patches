@@ -100,7 +100,7 @@
 					<li Class="PatchOperationAdd"> 
 						<xpath>/Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
 						<value>
-							<researchPrerequisites>
+							<researchPrerequisites Inherit="False">
 								<li>Wooden_floor_B1</li>
 							</researchPrerequisites>
 						</value>
@@ -114,7 +114,7 @@
 					<li Class="PatchOperationAdd"> 
 						<xpath>/Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
 						<value>
-							<researchPrerequisites>
+							<researchPrerequisites Inherit="False">
 								<li>Plastic_floor_C1</li>
 							</researchPrerequisites>
 						</value>

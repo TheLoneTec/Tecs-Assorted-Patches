@@ -20,7 +20,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ThingDef[@Name="WeaponRack_BaseRack"]/researchPrerequisites</xpath>
                 <value>
-					<researchPrerequisites>
+					<researchPrerequisites Inherit="False">
 					  <li>Storage_C4</li>
 					</researchPrerequisites>
                 </value>
