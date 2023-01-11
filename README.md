@@ -37,6 +37,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [RimNauts 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2880599514) (Architect Menu and Material Conversion)
 - [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
 - [Camping Tent](https://steamcommunity.com/sharedfiles/filedetails/?id=2407128339) (Architect Menus and Material Conversion)
+- [Holograms And Projectors](https://steamcommunity.com/sharedfiles/filedetails/?id=2847321165) (Architect Menus, Research and Material Conversion)
 
 Other 1.4 Additions:
 
