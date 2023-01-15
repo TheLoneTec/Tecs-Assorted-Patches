@@ -36,7 +36,7 @@
             </li>
 	
             <li Class="PatchOperationRemove">
-                <xpath>Defs/ThingDef[defName="WeaponRacks_4Rack"]/researchPrerequisites</xpath>
+                <xpath>Defs/ThingDef[defName="WeaponRacks_4Rack" or defName="WeaponRacks_3Rack" or defName="WeaponRacks_2Rack"]/researchPrerequisites</xpath>
             </li>
 	
 		</operations>
