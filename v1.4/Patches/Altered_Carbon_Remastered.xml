@@ -495,6 +495,28 @@
 			<!-- ====== Protectorate Armor ====== -->
 
 			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ResearchProjectDef ParentName="HitechLabStationBase">
+						<defName>ProtectorateArmor</defName>
+						<label>protectorate armor</label>
+						<description>Craft protectorate armor, offered by molecular plasteel integration thoughout the suit as well as on-board processors to assist movement and dampen pain receptors.</description>
+						<baseCost>2500</baseCost>
+						<techLevel>Ultra</techLevel>
+						<prerequisites>
+							<li>Armor_E3</li>
+						</prerequisites>
+						<researchViewX>24.00</researchViewX>
+						<researchViewY>38.00</researchViewY>
+						<tab>Apparel_SK</tab>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+					</ResearchProjectDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="VFEU_HuntersArmourBase"]</xpath>
 				<value>
 					<costStuffCount>80</costStuffCount>
@@ -590,6 +612,7 @@
 						<li>FabricationBench</li>
 						<li>AdvToolBench</li>
 					</recipeUsers>
+					<researchPrerequisite>ProtectorateArmor</researchPrerequisite>
 				</recipeMaker>
 			   </value>
 			</li>
@@ -690,6 +713,7 @@
 							<li>FabricationBench</li>
 							<li>AdvToolBench</li>
 						</recipeUsers>
+						<researchPrerequisite>ProtectorateArmor</researchPrerequisite>
 					</recipeMaker>
 			   </value>
 			</li>
