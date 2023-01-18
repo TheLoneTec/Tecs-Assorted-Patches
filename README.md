@@ -33,9 +33,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
 - [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
 - Bridgello (Terrain Affordance Correction) - (1.4 or Patched HSK Version, Not Yet Available)
-- [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
 - [RimNauts 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2880599514) (Architect Menu and Material Conversion)
-- [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
 - [Camping Tent](https://steamcommunity.com/sharedfiles/filedetails/?id=2407128339) (Architect Menus and Material Conversion)
 - [Holograms And Projectors](https://steamcommunity.com/sharedfiles/filedetails/?id=2847321165) (Architect Menus, Research and Material Conversion)
 
