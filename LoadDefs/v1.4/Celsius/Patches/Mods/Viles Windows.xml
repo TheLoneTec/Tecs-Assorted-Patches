@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- WINDOWS -->
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>The Windows</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationAddModExtension">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="SimpleOpenWindow"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>4</heatCapacity>
+						<volume>0.005</volume>
+						<insulation>4</insulation>
+						<airflow>0.1</airflow>
+						<airflowWhenOpen>0.75</airflowWhenOpen>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[@Name="BasicWindowBase"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>4</heatCapacity>
+						<volume>0.005</volume>
+						<insulation>4</insulation>
+						<airflowWhenOpen>0.75</airflowWhenOpen>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="WindowWall1x"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>2</heatCapacity>
+						<volume>0.002</volume>
+						<insulation>5</insulation>
+						<airflowWhenOpen>0.75</airflowWhenOpen>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="WindowWall3x"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>6</heatCapacity>
+						<volume>0.006</volume>
+						<insulation>5</insulation>
+						<airflowWhenOpen>0.75</airflowWhenOpen>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="WindowWall5x"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>10</heatCapacity>
+						<volume>0.01</volume>
+						<insulation>5</insulation>
+						<airflowWhenOpen>0.75</airflowWhenOpen>
+					</li>
+				</value>
+			</li>
+<!--
+			<li Class="PatchOperationAddModExtension">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="ReinforcedOpenWindow"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>1100</heatCapacity>
+						<volume>6</volume>
+						<conductivity>1.6</conductivity>
+						<airflowWhenOpen>0.5</airflowWhenOpen>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="LargeReinforcedOpenWindow"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>1200</heatCapacity>
+						<volume>7</volume>
+						<conductivity>1.7</conductivity>
+						<airflow>0.1</airflow>
+						<airflowWhenOpen>0.5</airflowWhenOpen>
+					</li>
+				</value>
+			</li>
+-->
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

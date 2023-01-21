@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoodLog"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Cloth"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Synthread"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>575</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>575</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[@Name="WoolBase"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>600</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>600</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[@Name="LeatherBase"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>200</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>200</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="PlantBaseNonEdible"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Hay"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>100</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PsychoidLeaves"]/statBases | Defs/ThingDef[defName="SmokeleafLeaves"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Chemfuel"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="ShellBase"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="TrapIEDBase"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<!-- ROYALTY -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UnstablePowerCell"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>225</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<!-- IDEOLOGY -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AncientFuelNode"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>225</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+
+	<!-- HSK -->
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RedWoodLog"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>350</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>350</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoodPlank"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Bamboo"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="BambooPlank"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<!-- Textile -->
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RawCotton"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>210</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>210</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RawFlax"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="RawDevilstrand"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>875</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>875</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolMegasloth"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolMuffalo"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolDromedary"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolAlpaca"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolBison"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="WoolSheep"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="HempCloth"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Velour"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>600</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>600</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Flaxcloth"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>150</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>150</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="DevilstrandCloth"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>875</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>875</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Hyperweave"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>700</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>700</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+	
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[defName="Kevlar"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>550</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>550</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<!-- Leather -->
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<xpath>Defs/ThingDef[@Name="SK_LeatherBase"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>210</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>210</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<!-- Plants -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="SK_RoughPlantBase"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>150</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Plant_Mangrove" or defName="Plant_TreePalm" or defName="Plant_TreeDrago" or defName="Plant_TreeOak" or defName="Plant_TreePoplar" or defName="Plant_TreePine" or 
+		defName="Plant_TreeBirch" or defName="Plant_TreeTeak" or defName="Plant_TreeCecropia" or defName="Plant_TreeWillow" or defName="Plant_TreeCypress" or defName="Plant_TreeMaple" or defName="PlantTreeRedwood"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<!-- Combustable Fuel or Extrcted -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Peat"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>177</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Coal"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>450</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Charcoal"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>450</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Tallow"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>340</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Powder"]/statBases</xpath>
+		<value>
+			<Celsius_IgnitionTemperature>350</Celsius_IgnitionTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Wood You Please</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[@Name="SoftwoodLogBase"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[@Name="HardwoodLogBase"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>350</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>400</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Moyo-From the depth</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>900</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>900</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

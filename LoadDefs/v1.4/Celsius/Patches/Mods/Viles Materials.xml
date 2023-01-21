@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vile's Materials Science</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!-- Ultra Tech -->
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Yautjavium"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>800</volumetricHeatCapacity>
+						<insulationFactor>0.17</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<!-- High Tech -->
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="MaxametSteel"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1829</volumetricHeatCapacity>
+						<insulationFactor>0.5</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AerMet"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1829</volumetricHeatCapacity>
+						<insulationFactor>0.5</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Pyromet"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1250</volumetricHeatCapacity>
+						<insulationFactor>0.85</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Nimonic"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>2300</volumetricHeatCapacity>
+						<insulationFactor>1.15</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Carborundum"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1520</volumetricHeatCapacity>
+						<insulationFactor>1.8</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Tennalum"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1000</volumetricHeatCapacity>
+						<insulationFactor>0.6</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<!-- High Tech Composite -->
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Aerographene"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>6000</volumetricHeatCapacity>
+						<insulationFactor>1.35</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<!-- Industrial Composite -->
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Plastic"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>700</volumetricHeatCapacity>
+						<insulationFactor>0.8</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="PPPlastic"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>900</volumetricHeatCapacity>
+						<insulationFactor>0.85</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="PVCPlastic"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1200</volumetricHeatCapacity>
+						<insulationFactor>0.9</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Plexiglass"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1200</volumetricHeatCapacity>
+						<insulationFactor>0.9</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ABS"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1400</volumetricHeatCapacity>
+						<insulationFactor>1.0</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Polycarbonate"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1800</volumetricHeatCapacity>
+						<insulationFactor>0.85</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="Fiberglass"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>2400</volumetricHeatCapacity>
+						<insulationFactor>1.3</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<!-- Industrial Ferrous -->
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="CarbonSteel"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1844</volumetricHeatCapacity>
+						<insulationFactor>1.05</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="SpringSteel"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>2040</volumetricHeatCapacity>
+						<insulationFactor>1.0</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<!-- Industrial Non-Ferrous -->
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AnodizedAluminiumRed"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1150</volumetricHeatCapacity>
+						<insulationFactor>0.37</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AnodizedAluminiumBlue"]</xpath>
+				<value>
+					<li Class="Celsius.StuffThermalProperties">
+						<volumetricHeatCapacity>1350</volumetricHeatCapacity>
+						<insulationFactor>0.37</insulationFactor>
+					</li>
+				</value>
+			</li>
+
+			<!-- Textile -->
+			
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[defName="Rayon"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>180</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>180</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[defName="Modacrylic"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>350</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>350</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[defName="Fleece"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>190</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>190</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[defName="Nomex"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>800</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>800</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[defName="Micropel"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+
+			<!-- Leather -->
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ThingDef[defName="PVCLeather"]</xpath>
+				<value>
+					<statBases>
+						<Celsius_IgnitionTemperature>210</Celsius_IgnitionTemperature>
+					</statBases>
+					<stuffProps>
+						<statOffsets>
+							<Celsius_IgnitionTemperature>210</Celsius_IgnitionTemperature>
+						</statOffsets>
+					</stuffProps>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

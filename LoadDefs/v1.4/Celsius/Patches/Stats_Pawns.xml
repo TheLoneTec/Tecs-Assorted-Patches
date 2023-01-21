@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+		<value>
+			<li Class="Celsius.StatPart_Wetness">
+				<offset>5</offset>
+			</li>
+			<li Class="Celsius.StatPart_WindSpeed">
+				<offset>
+					<points>
+						<li>(0.1, 0)</li>
+						<li>(0.5, 4)</li>
+						<li>(1, 6)</li>
+						<li>(2, 8)</li>
+					</points>
+				</offset>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
+		<value>
+			<li Class="Celsius.StatPart_Wetness">
+				<offset>5</offset>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

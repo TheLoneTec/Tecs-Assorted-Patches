@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- VANILLA FURNITURE EXPANDED - MEDICAL MODULE -->
+
+	<!-- Thermal data -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="SterileWallBase"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>13</heatCapacity>
+				<volume>0.010</volume>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
