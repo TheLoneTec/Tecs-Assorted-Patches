@@ -237,12 +237,21 @@
 			<!-- Steel Bridge -->
 
 			<li Class="PatchOperationReplace">
-			   <xpath>Defs/ThingDef[defName="RimNauts2_SteelBridge"]/costList</xpath>
+			   <xpath>Defs/TerrainDef[defName="RimNauts2_SteelBridge"]/costList</xpath>
 			   <value>
 					<costList>
 						<Plasteel>12</Plasteel>
 					</costList>
 			   </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="RimNauts2_SteelBridge"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Metals_C1</li>
+					</researchPrerequisites>
+				</value>
 			</li>
 
 			</operations>
