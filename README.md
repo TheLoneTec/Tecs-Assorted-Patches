@@ -1,7 +1,7 @@
 # Tecs-Assorted-Patches
 various workshop mod patches for HSK. I play with all of these mods enabled and can all be used together. [Trello Board](https://trello.com/b/Awq5abNv/tecs-assorted-patches). (Ideas/Progress/Issues/Completed) 
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'N4N0IDAUM');kofiwidget2.draw();</script> 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N0IDAUM)
 
 # 1.4 Patches for:
 - [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i am planning on making a HSK version of Celsius)
