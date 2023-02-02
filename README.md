@@ -1,6 +1,8 @@
 # Tecs-Assorted-Patches
 various workshop mod patches for HSK. I play with all of these mods enabled and can all be used together. [Trello Board](https://trello.com/b/Awq5abNv/tecs-assorted-patches). (Ideas/Progress/Issues/Completed) 
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N0IDAUM)
+
 # 1.4 Patches for:
 - [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i am planning on making a HSK version of Celsius)
 - Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Recommended))

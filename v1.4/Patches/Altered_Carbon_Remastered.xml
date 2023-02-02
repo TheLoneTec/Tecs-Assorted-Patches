@@ -327,8 +327,8 @@
 			   </value>
 			</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="VFEU_DecryptionBench"]</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VFEU_DecryptionBench"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>VFEU_Hacking</li>

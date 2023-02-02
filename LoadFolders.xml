@@ -26,5 +26,6 @@
 	<li IfModActive="vanillaexpanded.outposts">LoadDefs/v1.4/Vanilla_Outposts_Expanded</li>
 	<li IfModActive="kikohi.jewelry">LoadDefs/v1.4/Jewelery</li>
 	<li IfModActive="LtBob.PreemptiveStrike.Rimworld">LoadDefs/v1.4/Preemptive_Strike</li>
+	<li IfModActive="PeteTimesSix.ResearchReinvented">LoadDefs/v1.4/Research_Reinvented</li>
   </v1.4>
 </loadFolders>
