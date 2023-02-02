@@ -27,5 +27,6 @@
 	<li IfModActive="kikohi.jewelry">LoadDefs/v1.4/Jewelery</li>
 	<li IfModActive="LtBob.PreemptiveStrike.Rimworld">LoadDefs/v1.4/Preemptive_Strike</li>
 	<li IfModActive="PeteTimesSix.ResearchReinvented">LoadDefs/v1.4/Research_Reinvented</li>
+	<li IfModActive="dame.arcanetechnology">LoadDefs/v1.4/Arcane_Technology</li>
   </v1.4>
 </loadFolders>
