@@ -38,6 +38,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [RimNauts 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2880599514) (Architect Menu and Material Conversion)
 - [Camping Tent](https://steamcommunity.com/sharedfiles/filedetails/?id=2407128339) (Architect Menus and Material Conversion)
 - [Holograms And Projectors](https://steamcommunity.com/sharedfiles/filedetails/?id=2847321165) (Architect Menus, Research and Material Conversion)
+- [Preemptive Strike (1.4 fork)](https://steamcommunity.com/sharedfiles/filedetails/?id=2884952468)
 
 Other 1.4 Additions:
 
