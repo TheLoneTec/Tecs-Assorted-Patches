@@ -446,7 +446,7 @@
 				<wildClusterWeight>5</wildClusterWeight>
 			  </value>
 			</li>
-
+<!--
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_ABCrystalFlower"]</xpath>
 			</li>
@@ -458,7 +458,7 @@
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/RecipeDef[defName="ExtractSeed_AB_GlowingAgarilux"]</xpath>
 			</li>
-
+-->
 			</operations>
 		</match>
     </Operation>
