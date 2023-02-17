@@ -289,17 +289,15 @@
 					<operations>
 						
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
+							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]/comps</xpath>
 							<value>
-							<comps>
-								<li Class="LWM.DeepStorage.Properties">
-									<minNumberStacks>1</minNumberStacks>
-									<maxNumberStacks>7</maxNumberStacks>
-									<timeStoringTakes>120</timeStoringTakes>
-									<showContents>false</showContents>
-									<overlayType>None</overlayType>
-								</li>
-							</comps>
+							<li Class="LWM.DeepStorage.Properties">
+								<minNumberStacks>1</minNumberStacks>
+								<maxNumberStacks>7</maxNumberStacks>
+								<timeStoringTakes>120</timeStoringTakes>
+								<showContents>false</showContents>
+								<overlayType>None</overlayType>
+							</li>
 							</value>
 						</li>
 						
