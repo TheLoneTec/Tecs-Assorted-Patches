@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Giddy-Up 2 (temporary beta)</li>
+		<li>Giddy-Up 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		<!--
+			<li Class="PatchOperationAdd">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="Horse_Wooly"][not(comps)]</xpath>
+				<value>
+					<comps />
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Horse_Wooly"]/comps</xpath>
+				<value>
+					<li Class="GiddyUp.CompProperties_Overlay">
+						<overlayFront>
+						
+							GraphicData graphicDataDefault;
+							GraphicData graphicDataFemale;
+							GraphicData graphicDataMale;
+							Vector3 offsetDefault = Vector3.zero;
+							Vector3 offsetFemale = Vector3.zero;
+							Vector3 offsetMale = Vector3.zero;
+							List<GraphicData> allVariants;
+							string stringDelimiter = "_";
+	
+							<graphicDataDefault>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.1</drawSize>
+								<drawRotated>false</drawRotated>
+							</graphicDataDefault>
+							<allVariants>
+								<li><texPath>Things/Pawn/Animal/WoolyHorse/WoolyHorse_overlay_south</texPath></li>
+								<li><texPath>Things/Pawn/Horse1_overlay_south</texPath></li>							
+								<li><texPath>Things/Pawn/Horse2_overlay_south</texPath></li>							
+								<li><texPath>Things/Pawn/Horse3_overlay_south</texPath></li>							
+								<li><texPath>Things/Pawn/Horse4_overlay_south</texPath></li>							
+								<li><texPath>Things/Pawn/Horse5_overlay_south</texPath></li>						
+								<li><texPath>Things/Pawn/Horse6_overlay_south</texPath></li>			
+							</allVariants>
+						</overlayFront>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Paper Pattern and Compatible Body 2 HSK Patch</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef/comps/li[@Class="GiddyUp.CompProperties_Overlay"]/overlayFront/graphicDataDefault[not(drawOffset)]</xpath>
+						<value>
+							<drawOffset>(0,0,0.25)</drawOffset>
+						</value>
+					</li>
+
+					</operations>
+				</match>
+			</li>		-->
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>
