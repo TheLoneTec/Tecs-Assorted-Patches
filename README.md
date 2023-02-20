@@ -4,7 +4,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N0IDAUM)
 
 # 1.4 Patches for:
-- [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i am planning on making a HSK version of Celsius)
+- [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i have my own version for HSK in addons)
 - Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Recommended))
 - [Perspective: Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=2567126933) (Added Textures for Viles Doors, corrective patches for base HSK + missing textures. Merge Viles fence gate textures into one category, fixed missing palisade gate east perspective)
 - [Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990) - Added HSK Trees.
@@ -21,11 +21,9 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - Vanilla Psycasts Expanded
 - Vanilla Trading Expanded (Unfixable error on load currently, reported to dev)
 - Jewelery - (Moved Laser Sculpting Table into machinary Architect Menu) - (Patched HSK Version, Not Yet Available)
-- Medical Supplements (Continued) (Architect Menus) - (Patched HSK Version, Not Yet Available)
 - [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
 - [Roads Of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2280318231) ( Material Conversion, removed AISR2G from architect menu, should only be buildable at worktable)
 - [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
-- Rimputers (Architect Menu and Material Conversion) - (1.4 or Patched HSK Version, Not Yet Available)
 - [Thermodynamics - Core (forked)](https://steamcommunity.com/sharedfiles/filedetails/?id=2909103255) (moved food into appropriate categories & Material Conversion)
 - [PlaceStuffOnTables](https://steamcommunity.com/sharedfiles/filedetails/?id=2590908441) Patch (allow certain objects to be placed on tables, can run without workshop mod)
 - [No Power Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2019297016) - Material Conversion + add to Trade Subcategory. (recommend [No Quests Without Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2557302879))
@@ -34,11 +32,11 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Power Logic](https://steamcommunity.com/sharedfiles/filedetails/?id=812653710) - (Material Conversion and research patch, disabled Laser systems by default, you can reable them in the config by renaming extensions of Laser_Content_Enabled.txt to .xml and Laser_Content_Disabled.xml to .txt) The laser system, while very cool, seemed redundent and is a noticeable tps hit when in use.
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
 - [Altered Carbon: Remastered](https://steamcommunity.com/sharedfiles/filedetails/?id=2196278117) - (Material Conversion & HSK Research, removed duplicate organ vat and organs, and merged recipes with HSK organ vat.)
-- Bridgello (Terrain Affordance Correction) - (1.4 or Patched HSK Version, Not Yet Available)
 - [RimNauts 2](https://steamcommunity.com/sharedfiles/filedetails/?id=2880599514) (Architect Menu and Material Conversion)
 - [Camping Tent](https://steamcommunity.com/sharedfiles/filedetails/?id=2407128339) (Architect Menus and Material Conversion)
 - [Holograms And Projectors](https://steamcommunity.com/sharedfiles/filedetails/?id=2847321165) (Architect Menus, Research and Material Conversion)
 - [Preemptive Strike (1.4 fork)](https://steamcommunity.com/sharedfiles/filedetails/?id=2884952468)
+- [Animal Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907) (Stopped it from turning HSK apparel into animal gear) Recommend [Animal Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984) (Patch WIP)
 
 Other 1.4 Additions:
 
