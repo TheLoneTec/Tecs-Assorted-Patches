@@ -53,118 +53,134 @@
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="left ear"]</xpath>
 				<value>
-					<li>
-						<drawSize>1</drawSize>
-						<path>Body/RK_EarLeft</path>
-						<bodyPart>Ear</bodyPart>
-						<bodyPartLabel>left ear</bodyPartLabel>
-						<inFrontOfBody>true</inFrontOfBody>
-						<colorChannel>skin</colorChannel>
-						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-						<layerInvert>false</layerInvert>
-						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</geneRequirement>
-						<offsets>
-							<south>
-								<bodyTypes>
-									<Thin>(-0.015,0.4)</Thin>
-									<Baby>(-0.015,0.4)</Baby>
-									<Child>(-0.015,0.4)</Child>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<Thin>(-0.015,0.4)</Thin>
-									<Baby>(-0.015,0.4)</Baby>
-									<Child>(-0.015,0.4)</Child>
-								</portraitBodyTypes>
-							</south>
-							<north>
-								<bodyTypes>
-									<Thin>(0.03,0.39)</Thin>
-									<Baby>(0.03,0.39)</Baby>
-									<Child>(0.03,0.39)</Child>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<Thin>(0.03,0.39)</Thin>
-									<Baby>(0.03,0.39)</Baby>
-									<Child>(0.03,0.39)</Child>
-								</portraitBodyTypes>
-							</north>
-							<east>
-								<bodyTypes>
-									<Thin>(0.012,0.5)</Thin>
-									<Baby>(0.012,0.5)</Baby>
-									<Child>(0.012,0.5)</Child>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<Thin>(0.012,0.5)</Thin>
-									<Baby>(0.012,0.5)</Baby>
-									<Child>(0.012,0.5)</Child>
-								</portraitBodyTypes>
-							</east>
-						</offsets>
-						<drawnInBed>True</drawnInBed>
-						<hiddenUnderApparelFor>
-							<li>FullHead</li>
-						</hiddenUnderApparelFor>
-					</li>
+						<li>
+							<drawSize>1</drawSize>
+							<path>Body/RK_EarLeft</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<layerInvert>false</layerInvert>
+							<defaultOffset>Head</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</geneRequirement>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Thin>(-0.035,-0.4)</Thin>
+										<Female>(-0.035,-0.4)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.035,-0.4)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.035,-0.4)</Child>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.035,-0.4)</Thin>
+										<Female>(-0.035,-0.4)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.035,-0.4)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.035,-0.4)</Child>
+									</portraitBodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Thin>(0.03,-0.27)</Thin>
+										<Female>(0.03,-0.27)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.03,-0.27)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.03,-0.27)</Child>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(0.03,-0.27)</Thin>
+										<Female>(0.03,-0.27)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.03,-0.27)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.03,-0.27)</Child>
+									</portraitBodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Thin>(0.125,-0.3)</Thin>
+										<Female>(0.112,-0.3)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.125,-0.3)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.125,-0.3)</Child>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(0.125,-0.3)</Thin>
+										<Female>(0.112,-0.3)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.125,-0.3)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.125,-0.3)</Child>
+									</portraitBodyTypes>
+								</east>
+							</offsets>
+							<drawnInBed>True</drawnInBed>
+ 							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Ratkin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="right ear"]</xpath>
 				<value>
-					<li>
-						<drawSize>1</drawSize>
-						<path>Body/RK_EarRight</path>
-						<bodyPart>Ear</bodyPart>
-						<bodyPartLabel>right ear</bodyPartLabel>
-						<inFrontOfBody>true</inFrontOfBody>
-						<colorChannel>skin</colorChannel>
-						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-						<layerInvert>false</layerInvert>
-						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</geneRequirement>
-						<offsets>
-							<south>
-								<bodyTypes>
-									<Thin>(0.015,0.4)</Thin>
-									<Baby>(0.015,0.4)</Baby>
-									<Child>(0.015,0.4)</Child>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<Thin>(0.015,0.4)</Thin>
-									<Baby>(0.015,0.4)</Baby>
-									<Child>(0.015,0.4)</Child>
-								</portraitBodyTypes>
-							</south>
-							<north>
-								<bodyTypes>
-									<Thin>(-0.01,0.39)</Thin>
-									<Baby>(-0.01,0.39)</Baby>
-									<Child>(-0.01,0.39)</Child>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<Thin>(-0.01,0.39)</Thin>
-									<Baby>(-0.01,0.39)</Baby>
-									<Child>(-0.01,0.39)</Child>
-								</portraitBodyTypes>
-							</north>
-							<east>
-								<bodyTypes>
-									<Thin>(0.012,0.5)</Thin>
-									<Baby>(0.012,0.5)</Baby>
-									<Child>(0.012,0.5)</Child>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<Thin>(0.012,0.5)</Thin>
-									<Baby>(0.012,0.5)</Baby>
-									<Child>(0.012,0.5)</Child>
-								</portraitBodyTypes>
-							</east>
-						</offsets>
-						<drawnInBed>True</drawnInBed>
-						<hiddenUnderApparelFor>
-							<li>FullHead</li>
-						</hiddenUnderApparelFor>
-					</li>
+						<li>
+							<drawSize>1</drawSize>
+							<path>Body/RK_EarRight</path>
+							<bodyPart>Ear</bodyPart>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<layerInvert>false</layerInvert>
+							<defaultOffset>Head</defaultOffset>
+							<alignWithHead>true</alignWithHead>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Ratkin</geneRequirement>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Thin>(0.035,-0.4)</Thin>
+										<Female>(0.035,-0.4)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.035,-0.4)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.035,-0.4)</Child>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(0.035,-0.4)</Thin>
+										<Female>(0.035,-0.4)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.035,-0.4)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.035,-0.4)</Child>
+									</portraitBodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Thin>(-0.01,-0.25)</Thin>
+										<Female>(-0.01,-0.25)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.01,-0.25)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.01,-0.25)</Child>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(-0.01,-0.25)</Thin>
+										<Female>(-0.01,-0.25)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.01,-0.25)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.01,-0.25)</Child>
+									</portraitBodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Thin>(0.118,-0.3)</Thin>
+										<Female>(0.112,-0.3)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.118,-0.3)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.118,-0.3)</Child>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<Thin>(0.118,-0.3)</Thin>
+										<Female>(0.112,-0.3)</Female>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.118,-0.3)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.118,-0.3)</Child>
+									</portraitBodyTypes>
+								</east>
+							</offsets>
+							<drawnInBed>True</drawnInBed>
+ 							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+						</li>
 				</value>
 			</li>
 

@@ -134,7 +134,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Blood_Research_Normal"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>70.00</researchViewY>
+                    <researchViewY>71.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -173,7 +173,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Anesthetic_Research_Normal"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>69.00</researchViewY>
+                    <researchViewY>70.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -251,7 +251,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Electrical_Research"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>71.00</researchViewY>
+                    <researchViewY>72.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -290,7 +290,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Nutrition_Research_Electric"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>70.00</researchViewY>
+                    <researchViewY>71.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -357,7 +357,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Painkiller_Research_Electric"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>71.00</researchViewY>
+                    <researchViewY>72.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -424,7 +424,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Antibiotic_Research_Electric"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>72.00</researchViewY>
+                    <researchViewY>73.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -491,7 +491,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Blood_Research_Electric"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>73.00</researchViewY>
+                    <researchViewY>74.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -530,7 +530,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="IV_Anesthetic_Research_Electric"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>69.00</researchViewY>
+                    <researchViewY>70.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
