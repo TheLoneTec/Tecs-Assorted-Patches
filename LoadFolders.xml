@@ -17,15 +17,15 @@
   <v1.4>
     <li>/</li>
 	<li>v1.4</li>
-    <li IfModActive="Mlie.DThermodynamicsHotMeals">LoadDefs/v1.4/HotMeals</li>
-	<li IfModActive="Garwel.Celsius">LoadDefs/v1.4/Celsius</li>
-	<li IfModActive="Nals.FacialAnimation">LoadDefs/v1.4/FacialAnimation</li>
+    <li IfModActive="mlie.dthermodynamicshotmeals">LoadDefs/v1.4/HotMeals</li>
+	<li IfModActive="garwel.celsius">LoadDefs/v1.4/Celsius</li>
+	<li IfModActive="nals.facialanimation">LoadDefs/v1.4/FacialAnimation</li>
     <!--<li IfModActive="Gloomy.DecorPack.SK">ResearchFixes/v1.4/GloomDecoPack</li>-->
-	<li IfModActive="LimeTreeSnake.Tenants">LoadDefs/v1.4/LTSTenant</li>
-	<li IfModActive="VanillaExpanded.Ideo.Dryads">LoadDefs/v1.4/VIE_Dryads</li>
+	<li IfModActive="limetreesnake.tenants">LoadDefs/v1.4/LTSTenant</li>
+	<li IfModActive="vanillaexpanded.ideo.dryads">LoadDefs/v1.4/VIE_Dryads</li>
 	<li IfModActive="vanillaexpanded.outposts">LoadDefs/v1.4/Vanilla_Outposts_Expanded</li>
 	<li IfModActive="kikohi.jewelry">LoadDefs/v1.4/Jewelery</li>
-	<li IfModActive="LtBob.PreemptiveStrike.Rimworld">LoadDefs/v1.4/Preemptive_Strike</li>
-	<li IfModActive="PeteTimesSix.ResearchReinvented">LoadDefs/v1.4/Research_Reinvented</li>
+	<li IfModActive="ltbob.preemptivestrike.Rimworld">LoadDefs/v1.4/Preemptive_Strike</li>
+	<li IfModActive="petetimessix.researchreinvented">LoadDefs/v1.4/Research_Reinvented</li>
   </v1.4>
 </loadFolders>
