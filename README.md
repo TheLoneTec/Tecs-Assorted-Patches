@@ -37,6 +37,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Preemptive Strike (1.4 fork)](https://steamcommunity.com/sharedfiles/filedetails/?id=2884952468)
 - [Animal Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907) (Stopped it from turning HSK apparel into animal gear) Recommend [Animal Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984) (Patch WIP)
 - [Portraits of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2937991425) - Additional patches to make it work with more hsk stuff (WIP)
+- [Hospitality: Casino](https://steamcommunity.com/sharedfiles/filedetails/?id=2939292644) - Architect Menu, Material Conversion, Research Adjustment
 
 Other 1.4 Additions:
 
