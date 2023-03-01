@@ -33,7 +33,7 @@
 				<value>
 					<costList>
 						<ComponentIndustrial>2</ComponentIndustrial>
-						<ElectronicComponent>1</ElectronicComponent>
+						<ElectronicComponents>1</ElectronicComponents>
 						<Mechanism>1</Mechanism>
 						<Glass>5</Glass>
 						<Plastic>5</Plastic>
