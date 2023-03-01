@@ -91,6 +91,20 @@
 						</value>
 					</li>
 					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DoorBarn"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+	
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DoorOrnate"]/graphicData/graphicClass</xpath>
+						<value>
+							<graphicClass>Graphic_Multi</graphicClass>
+						</value>
+					</li>
+	
 					</operations>
 				</match>
 			</li>
