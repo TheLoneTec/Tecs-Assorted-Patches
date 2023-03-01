@@ -42,7 +42,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "HC_SlotMachineBase"]</xpath>
+				<xpath>/Defs/ThingDef[@Name = "HC_SlotMachineBase"]</xpath>
 				<value>
 					<stuffCategories>
 						<li>Metallic</li>
