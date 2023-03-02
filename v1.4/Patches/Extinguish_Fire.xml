@@ -54,7 +54,7 @@
 						</li>
 					</value>
 				</li>
-
+<!--
 				<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompFueled_Properties"]/fireDrawOffset</xpath>
 					<value>
@@ -65,7 +65,7 @@
 				<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompFueled_Properties"]/fireDrawScale</xpath>
 				</li>
-<!--
+
 				<li Class="PatchOperationAttributeSet">
 				<xpath>Defs/ThingDef[defName="BowlLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
 				<value>MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable</value>

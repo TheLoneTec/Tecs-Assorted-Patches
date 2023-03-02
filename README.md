@@ -20,7 +20,6 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - Vanilla Ideology Expanded - Memes and Structures (untested)
 - Vanilla Psycasts Expanded
 - Vanilla Trading Expanded (Unfixable error on load currently, reported to dev)
-- Jewelery - (Moved Laser Sculpting Table into machinary Architect Menu) - (Patched HSK Version, Not Yet Available)
 - [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
 - [Roads Of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2280318231) ( Material Conversion, removed AISR2G from architect menu, should only be buildable at worktable)
 - [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
@@ -37,6 +36,8 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Holograms And Projectors](https://steamcommunity.com/sharedfiles/filedetails/?id=2847321165) (Architect Menus, Research and Material Conversion)
 - [Preemptive Strike (1.4 fork)](https://steamcommunity.com/sharedfiles/filedetails/?id=2884952468)
 - [Animal Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907) (Stopped it from turning HSK apparel into animal gear) Recommend [Animal Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984) (Patch WIP)
+- [Portraits of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2937991425) - Additional patches to make it work with more hsk stuff (WIP)
+- [Hospitality: Casino](https://steamcommunity.com/sharedfiles/filedetails/?id=2939292644) - Architect Menu, Material Conversion, Research Adjustment
 
 Other 1.4 Additions:
 

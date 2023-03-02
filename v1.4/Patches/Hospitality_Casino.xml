@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Hospitality: Casino</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_Slots</defName>
+						<label>Slot machines</label>
+						<description>Every casino needs slot machines.</description>
+						<defNames>
+							<li>HC_SlotMachineRed</li>
+							<li>HC_SlotMachineGreen</li>
+							<li>HC_SlotMachineBlue</li>
+						</defNames>
+						<designationCategory>Joy</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			<!-- ========== Writer Table =========== -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="HC_SlotMachineBase"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>2</ComponentIndustrial>
+						<ElectronicComponents>1</ElectronicComponents>
+						<Mechanism>1</Mechanism>
+						<Glass>5</Glass>
+						<Plastic>5</Plastic>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name = "HC_SlotMachineBase"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>80</costStuffCount>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="HC_SlotMachineBase"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Electronics_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
