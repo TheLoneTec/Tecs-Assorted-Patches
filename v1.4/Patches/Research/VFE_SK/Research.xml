@@ -50,13 +50,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>3.00</researchViewX>
+                    <researchViewX>5.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>8.00</researchViewY>
+                    <researchViewY>9.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationReplace">
