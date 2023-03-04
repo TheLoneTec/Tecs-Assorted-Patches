@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>CAI 5000 - Advance Combat AI Mod</li>
+		<li>CAI 5000 - Advanced AI + Fog Of War</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
