@@ -34,18 +34,29 @@
                 </value>
             </li>
 
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="Hygiene_31"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>17.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="Hygiene_31"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>10.00</researchViewY>
-                </value>
-            </li>
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Dubs Bad Hygiene</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Hygiene_31"]/researchViewX</xpath>
+						<value>
+							<researchViewX>17.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Hygiene_31"]/researchViewY</xpath>
+						<value>
+							<researchViewY>10.00</researchViewY>
+						</value>
+					</li>
+
+					</operations>
+				</match>
+			</li>
 
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Storage_D1"]/researchViewX</xpath>
