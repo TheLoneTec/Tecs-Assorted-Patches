@@ -49,6 +49,16 @@
 					</value>
 				</li>
 
+				<!-- Piercing expertise 
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/VSE.Expertise.ExpertiseDef[defName="Blunt"]/statOffsets</xpath>
+					<value>
+						<statOffsets>
+							<MeleeParryChance>0.05</MeleeParryChance>
+						</statOffsets>
+					</value>
+				</li>-->
+
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/VSE.Expertise.ExpertiseDef[defName="Tailor"]/statOffsets</xpath>
 					<value>
