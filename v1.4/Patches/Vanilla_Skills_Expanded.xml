@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Skills Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Sharpshooting expertise -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/VSE.Expertise.ExpertiseDef[defName="Precision"]/statOffsets</xpath>
+					<value>
+						<statOffsets>
+							<ShootingAccuracyPawn>0.075</ShootingAccuracyPawn>
+							<AimingAccuracy>0.025</AimingAccuracy>
+						</statOffsets>
+					</value>
+				</li>
+
+				<!-- Aiming expertise -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/VSE.Expertise.ExpertiseDef[defName="CloseQuarters"]/statOffsets</xpath>
+					<value>
+						<statOffsets>
+							<AimingDelayFactor>-0.025</AimingDelayFactor>
+						</statOffsets>
+					</value>
+				</li>
+
+				<!-- Reloading expertise -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/VSE.Expertise.ExpertiseDef[defName="Gunner"]/statOffsets</xpath>
+					<value>
+						<statOffsets>
+							<ReloadSpeed>0.025</ReloadSpeed>
+						</statOffsets>
+					</value>
+				</li>
+
+				<!-- Piercing expertise -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/VSE.Expertise.ExpertiseDef[defName="Sharp"]/statOffsets</xpath>
+					<value>
+						<statOffsets>
+							<MeleeCritChance>0.05</MeleeCritChance>
+						</statOffsets>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/VSE.Expertise.ExpertiseDef[defName="Tailor"]/statOffsets</xpath>
+					<value>
+						<statOffsets>
+						  <TailoringSpeed>0.05</TailoringSpeed>
+						</statOffsets>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/StatDef[defName="VSE_TailoringSpeed"]</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="SK_SculptureBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ArtSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="PaintingBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ArtSpeed</workSpeedStat></value>
+				</li>
+		
+		
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/StatDef[defName="VSE_WeaponCreationSpeed"]/statOffsets</xpath>
+					<value>
+						<statFactors>
+							<li>SmithingSpeed</li>
+						</statFactors>
+					</value>
+				</li>		
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="WeaponNeoliticBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_WeaponCreationSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="WeaponMedievalBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_WeaponCreationSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="WeaponIndustrialBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_WeaponCreationSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="WeaponSpacerBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_WeaponCreationSpeed</workSpeedStat></value>
+				</li>
+				
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/StatDef[defName="VSE_ComponentCraftingSpeed"]/statOffsets</xpath>
+					<value>
+						<statFactors>
+							<li>SmithingSpeed</li>
+						</statFactors>
+					</value>
+				</li>		
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="Make_ComponentMedieval"]/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="WeaponMedievalBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="WeaponIndustrialBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="WeaponSpacerBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
