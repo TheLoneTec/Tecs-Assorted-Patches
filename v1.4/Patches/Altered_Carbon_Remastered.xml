@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Altered Carbon</li>
+		<li>Altered Carbon: Ultratech Unleashed</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
@@ -359,6 +359,142 @@
 						</nomatch>
 					</li>
 					
+					<!-- ====== AC_GeneCentrifuge ====== -->
+			
+					<li Class="PatchOperationAttributeSet">
+						<xpath>/Defs/ThingDef[defName = "AC_GeneCentrifuge"]</xpath>
+						<attribute>ParentName</attribute>
+						<value>SK_BenchBase</value>
+					</li>
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]</xpath>
+						<value>
+							<costStuffCount>100</costStuffCount>
+						</value>
+					</li>
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]</xpath>
+						<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						</value>
+					</li>
+			
+					<li Class="PatchOperationReplace">
+					   <xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]/costList</xpath>
+					   <value>
+							<costList>
+								<Rubber>25</Rubber>
+								<SyntheticFibers>8</SyntheticFibers>
+								<Glass>20</Glass>
+								<Electronics>4</Electronics>
+								<ComponentUltra>4</ComponentUltra>
+								<AdvMechanism>4</AdvMechanism>
+								<Microchips>1</Microchips>
+							</costList>
+					   </value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
+						<value>
+							<li>AC_GeneCentrifuge</li>
+						</value>
+					</li>
+
+					<!-- ====== AC_GeneVault ====== -->
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="AC_GeneVault"]</xpath>
+						<value>
+							<costStuffCount>200</costStuffCount>
+						</value>
+					</li>
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="AC_GeneVault"]</xpath>
+						<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						</value>
+					</li>
+			
+					<li Class="PatchOperationReplace">
+					   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/costList</xpath>
+					   <value>
+							<costList>
+								<Plastic>35</Plastic>
+								<Electronics>8</Electronics>
+								<ElectronicComponents>6</ElectronicComponents>
+								<Microchips>2</Microchips>
+								<BioMicrochips>4</BioMicrochips>
+								<ComponentSpacer>8</ComponentSpacer>
+								<ComponentUltra>4</ComponentUltra>
+								<AluminiumBar>60</AluminiumBar>
+								<Silicon>25</Silicon>
+							</costList>
+					   </value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
+						<value>
+							<li>AC_GeneVault</li>
+						</value>
+					</li>
+
+					<!-- ====== AC_XenoGermDuplicator ====== -->
+			
+					<li Class="PatchOperationAttributeSet">
+						<xpath>/Defs/ThingDef[defName = "AC_XenoGermDuplicator"]</xpath>
+						<attribute>ParentName</attribute>
+						<value>SK_BenchBase</value>
+					</li>
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]</xpath>
+						<value>
+							<costStuffCount>120</costStuffCount>
+						</value>
+					</li>
+			
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]</xpath>
+						<value>
+						<stuffCategories>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						</value>
+					</li>
+			
+					<li Class="PatchOperationReplace">
+					   <xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]/costList</xpath>
+					   <value>
+							<costList>
+								<Plastic>30</Plastic>
+								<Electronics>6</Electronics>
+								<ElectronicComponents>4</ElectronicComponents>
+								<Microchips>2</Microchips>
+								<BioMicrochips>3</BioMicrochips>
+								<ComponentSpacer>6</ComponentSpacer>
+								<ComponentUltra>4</ComponentUltra>
+								<AluminiumBar>40</AluminiumBar>
+								<Silicon>20</Silicon>
+							</costList>
+					   </value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
+						<value>
+							<li>AC_XenoGermDuplicator</li>
+						</value>
+					</li>
+
 					</operations>
 				</nomatch>
 				<match Class="PatchOperationSequence">
@@ -384,13 +520,174 @@
 				</match>
 			</li>
 
+			<!-- ====== Revolver ====== -->
+			
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>BaseGun_ShortBarreled</value>
+			</li>
+	
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]/costList</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]/recipeMaker</xpath>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]/statBases</xpath>
+				<value>
+					<statBases>
+						<MarketValue>290</MarketValue>
+						<SightsEfficiency>1.05</SightsEfficiency>
+						<ShotSpread>0.11</ShotSpread>
+						<SwayFactor>1.3</SwayFactor>
+						<RangedWeapon_Cooldown>0.21</RangedWeapon_Cooldown>
+						<DeteriorationRate>0.33</DeteriorationRate>
+						<Bulk>2.2</Bulk>
+						<Mass>1.2</Mass>
+					</statBases>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]/verbs</xpath>
+				<value>
+					<verbs>
+						<li Class="CombatExtended.VerbPropertiesCE">
+							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+							<hasStandardCommand>true</hasStandardCommand>
+							<defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+							<warmupTime>0.2</warmupTime>
+							<range>31</range>
+							<soundCast>RF_ShotDeringer</soundCast>
+							<soundCastTail>GunTail_Light</soundCastTail>
+							<muzzleFlashScale>9</muzzleFlashScale>
+						</li>
+					</verbs>
+					<comps>
+						<li Class="CombatExtended.CompProperties_FireModes">
+							<aiUseBurstMode>FALSE</aiUseBurstMode>
+							<aiAimMode>AimedShot</aiAimMode>
+						</li>
+						<li Class="CombatExtended.CompProperties_AmmoUser">
+							<magazineSize>6</magazineSize>
+							<reloadOneAtATime>true</reloadOneAtATime>
+							<reloadTime>0.5</reloadTime>
+							<ammoSet>AmmoSet_45ACP</ammoSet>
+						</li>
+					</comps>
+					<smeltProducts>
+						<Pistol_Component>1</Pistol_Component>
+						<Weapon_Parts>1</Weapon_Parts>
+					</smeltProducts>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="AC_Gun_Autorevolver"]</xpath>
+				<value>
+					<li Class="CombatExtended.GunDrawExtension">
+						<DrawSize>0.8</DrawSize>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RecipeDef ParentName="RangedWeaponRecipeBase">
+						<defName>Build_AC_AutoRevolver</defName>
+						<label>Build AutoRevolver</label>
+						<description>An ancient pattern automatic revolver. It combines the strengths of a normal pistol and a classic revolver. It is quick on the draw.\nCaliber: .45 ACP</description>
+						<jobString>Building AutoRevolver.</jobString>
+						<workAmount>8500</workAmount>
+						<skillRequirements>
+							<Crafting>3</Crafting>
+						</skillRequirements>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Pistol_Component</li>
+									</thingDefs>
+								</filter>
+								<count>1</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Weapon_Parts</li>
+									</thingDefs>
+								</filter>
+								<count>4</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>ComponentIndustrial</li>
+									</thingDefs>
+								</filter>
+								<count>9</count>
+							</li>
+							<li>
+								<filter>
+									<categories>
+										<li>Metallic</li>
+									</categories>
+								</filter>
+								<count>25</count>
+							</li>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Plastic</li>
+									</thingDefs>
+								</filter>
+								<count>15</count>
+							</li>
+							<li>
+								<filter>
+									<categories>
+										<li>Leathers</li>
+									</categories>
+								</filter>
+								<count>10</count>
+							</li>
+						</ingredients>
+						<products>
+							<RF_Gun_Deringer>1</RF_Gun_Deringer>
+						</products>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Pistol_Component</li>
+								<li>Weapon_Parts</li>
+								<li>ComponentIndustrial</li>
+								<li>Plastic</li>
+							</thingDefs>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+								<li>Leathers</li>
+							</categories>
+						</fixedIngredientFilter>
+						<recipeUsers>
+							<li>WeaponCraftingWorkTable</li>
+						</recipeUsers>
+						<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+					</RecipeDef>
+				</value>
+			</li>
+
 			<!-- ====== Hacking Recipe ====== -->
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName="AC_HackBiocodedThings"]</xpath>
+				<xpath>Defs/RecipeDef[defName="VFEU_HackBiocodedThings"]</xpath>
 				<value>
 					<RecipeDef ParentName="VFEU_RecipeHacking">
-						<defName>AC_HackBiocodedThings</defName>
+						<defName>VFEU_HackBiocodedThings</defName>
 						<label>hack biocoded things</label>
 						<description>Attempt to hack and remove biocoding from weapons and equipment to make them usable. If unsuccessful, the item will break.</description>
 						<jobString>hacking biocoded things.</jobString>
