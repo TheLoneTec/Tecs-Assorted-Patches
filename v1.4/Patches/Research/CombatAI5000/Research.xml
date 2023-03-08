@@ -27,7 +27,7 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
 					<xpath>/Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
@@ -50,7 +50,7 @@
                 <xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]</xpath>
                 <value>
                     <prerequisites>
-						<li>Craft_01</li>
+						<li>Craft_0</li>
 						<li>Animal_A1</li>
 					</prerequisites>
                 </value>
@@ -124,17 +124,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="SpacerCCTV"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
