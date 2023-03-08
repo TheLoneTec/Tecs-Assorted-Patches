@@ -25,7 +25,7 @@
 							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
 							<PlantSowingSpeed>0.85</PlantSowingSpeed>
 							<MiningYieldDigging>0.85</MiningYieldDigging>
-							<DiggingSpeed>1.0</DiggingSpeed>
+							<MiningSpeed>1.0</MiningSpeed>
 							<SmithingSpeed>0.85</SmithingSpeed>
 						</toolStatFactors>
 					</li>
@@ -41,7 +41,7 @@
 							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
 							<PlantSowingSpeed>0.85</PlantSowingSpeed>
 							<MiningYieldDigging>0.85</MiningYieldDigging>
-							<DiggingSpeed>1.0</DiggingSpeed>
+							<MiningSpeed>1.0</MiningSpeed>
 							<SmithingSpeed>0.85</SmithingSpeed>
 						</toolStatFactors>
 					</li>
@@ -57,7 +57,7 @@
 							<PlantHarvestingSpeed>1.0</PlantHarvestingSpeed>
 							<PlantSowingSpeed>1.0</PlantSowingSpeed>
 							<MiningYieldDigging>1.0</MiningYieldDigging>
-							<DiggingSpeed>1.2</DiggingSpeed>
+							<MiningSpeed>1.2</MiningSpeed>
 							<SmithingSpeed>1.0</SmithingSpeed>
 						</toolStatFactors>
 					</li>
