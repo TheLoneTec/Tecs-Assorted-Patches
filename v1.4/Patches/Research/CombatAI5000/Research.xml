@@ -50,7 +50,7 @@
                 <xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]</xpath>
                 <value>
                     <prerequisites>
-						<li>Craft_01</li>
+						<li>Craft_0</li>
 						<li>Animal_A1</li>
 					</prerequisites>
                 </value>
