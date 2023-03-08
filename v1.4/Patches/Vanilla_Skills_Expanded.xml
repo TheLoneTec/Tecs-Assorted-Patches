@@ -68,6 +68,11 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@Name="ApparelMakeableBase"]/recipeMaker/workSpeedStat</xpath>
+					<value><workSpeedStat>TailoringSpeed</workSpeedStat></value>
+				</li>
+
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/StatDef[defName="VSE_TailoringSpeed"]</xpath>
 				</li>
@@ -83,7 +88,7 @@
 		
 		
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/StatDef[defName="VSE_WeaponCreationSpeed"]/statOffsets</xpath>
+					<xpath>Defs/StatDef[defName="VSE_WeaponCreationSpeed"]/statFactors</xpath>
 					<value>
 						<statFactors>
 							<li>SmithingSpeed</li>
@@ -109,7 +114,7 @@
 				
 				
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/StatDef[defName="VSE_ComponentCraftingSpeed"]/statOffsets</xpath>
+					<xpath>Defs/StatDef[defName="VSE_ComponentCraftingSpeed"]/statFactors</xpath>
 					<value>
 						<statFactors>
 							<li>SmithingSpeed</li>
@@ -121,15 +126,23 @@
 					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName="WeaponMedievalBase"]/recipeMaker/workSpeedStat</xpath>
+					<xpath>Defs/RecipeDef[defName="Make_ComponentMedievalBronze"]/workSpeedStat</xpath>
 					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName="WeaponIndustrialBase"]/recipeMaker/workSpeedStat</xpath>
+					<xpath>Defs/RecipeDef[defName="Make_ComponentIndustrial"]/workSpeedStat</xpath>
 					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/RecipeDef[defName="WeaponSpacerBase"]/recipeMaker/workSpeedStat</xpath>
+					<xpath>Defs/RecipeDef[defName="Make_ComponentAdvanced"]/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="Make_ComponentSpacer"]/workSpeedStat</xpath>
+					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="Make_ComponentUltra"]/workSpeedStat</xpath>
 					<value><workSpeedStat>VSE_ComponentCraftingSpeed</workSpeedStat></value>
 				</li>
 

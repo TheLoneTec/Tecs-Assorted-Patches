@@ -65,7 +65,7 @@
 			<!-- ====== Sleeve Incubator ====== -->
 	
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName = "VFEU_SleeveIncubator"]</xpath>
+				<xpath>Defs/ThingDef[defName = "VFEU_SleeveIncubator"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BuildingBase</value>
 			</li>
@@ -153,7 +153,7 @@
 			<!-- ====== Sleeve Casket ====== -->
 	
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName = "VFEU_SleeveCasket"]</xpath>
+				<xpath>Defs/ThingDef[defName = "VFEU_SleeveCasket"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BuildingBase</value>
 			</li>
@@ -219,7 +219,7 @@
 			<!-- ====== Cortial Stack Storage ====== -->
 	
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName = "AC_StackArray"]</xpath>
+				<xpath>Defs/ThingDef[defName = "AC_StackArray"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BuildingBase</value>
 			</li>
@@ -291,7 +291,7 @@
 			<!-- ====== Decryption Bench ====== -->
 	
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName = "VFEU_DecryptionBench"]</xpath>
+				<xpath>Defs/ThingDef[defName = "VFEU_DecryptionBench"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BenchBase</value>
 			</li>
@@ -362,7 +362,7 @@
 					<!-- ====== AC_GeneCentrifuge ====== -->
 			
 					<li Class="PatchOperationAttributeSet">
-						<xpath>/Defs/ThingDef[defName = "AC_GeneCentrifuge"]</xpath>
+						<xpath>Defs/ThingDef[defName = "AC_GeneCentrifuge"]</xpath>
 						<attribute>ParentName</attribute>
 						<value>SK_BenchBase</value>
 					</li>
@@ -440,6 +440,15 @@
 					   </value>
 					</li>
 
+					<li Class="PatchOperationReplace">
+					   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/researchPrerequisites</xpath>
+					   <value>
+							<researchPrerequisites Inherit="False">
+								<li>GeneProcessor</li>
+							</researchPrerequisites>
+					   </value>
+					</li>
+
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
 						<value>
@@ -450,7 +459,7 @@
 					<!-- ====== AC_XenoGermDuplicator ====== -->
 			
 					<li Class="PatchOperationAttributeSet">
-						<xpath>/Defs/ThingDef[defName = "AC_XenoGermDuplicator"]</xpath>
+						<xpath>Defs/ThingDef[defName = "AC_XenoGermDuplicator"]</xpath>
 						<attribute>ParentName</attribute>
 						<value>SK_BenchBase</value>
 					</li>
@@ -726,7 +735,7 @@
 			<!-- ====== Ancient Cortial Stack ====== -->
 
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName = "VFEU_AncientStack"]</xpath>
+				<xpath>Defs/ThingDef[defName = "VFEU_AncientStack"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_ResourceBase</value>
 			</li>
