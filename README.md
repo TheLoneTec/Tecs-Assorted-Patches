@@ -15,18 +15,17 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
-- Alpha Memes (untested)
-- Vanilla Ideology Expanded - Dyrads (untested)
-- Vanilla Ideology Expanded - Memes and Structures (untested)
-- Vanilla Psycasts Expanded
-- Vanilla Trading Expanded (Unfixable error on load currently, reported to dev)
+- [Alpha Memes (untested)](https://steamcommunity.com/sharedfiles/filedetails/?id=2661356814)
+- [Vanilla Ideology Expanded - Dyrads](https://steamcommunity.com/sharedfiles/filedetails/?id=2720631512) - (untested)
+- [Vanilla Ideology Expanded - Memes and Structures](https://steamcommunity.com/sharedfiles/filedetails/?id=2636329500) - (untested)
+- [Vanilla Psycasts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659)
+- [Vanilla Trading Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2785616901) - (Unfixable error on load currently, reported to dev)
 - [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
 - [Roads Of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2280318231) ( Material Conversion, removed AISR2G from architect menu, should only be buildable at worktable)
 - [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
 - [Thermodynamics - Core (forked)](https://steamcommunity.com/sharedfiles/filedetails/?id=2909103255) (moved food into appropriate categories & Material Conversion)
 - [PlaceStuffOnTables](https://steamcommunity.com/sharedfiles/filedetails/?id=2590908441) Patch (allow certain objects to be placed on tables, can run without workshop mod)
 - [No Power Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2019297016) - Material Conversion + add to Trade Subcategory. (recommend [No Quests Without Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2557302879))
-- [Vanilla Base Generation Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2830358905) - Cleaned up base stockpile generation lists. (still has errors that need resolving)
 - [Vanilla Outposts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2688941031) (Added material cost to create outposts. Also locked certain outposts behind research using this method. I have disabled the Production Outpost.. I cant see a way to justify it. Added additional skill requirements, if the outposts are to look after themselves, they NEED someone who can atleast cook a little, build and other skills that match the outposts needs) (UNTESTED)
 - [Power Logic](https://steamcommunity.com/sharedfiles/filedetails/?id=812653710) - (Material Conversion and research patch, disabled Laser systems by default, you can reable them in the config by renaming extensions of Laser_Content_Enabled.txt to .xml and Laser_Content_Disabled.xml to .txt) The laser system, while very cool, seemed redundent and is a noticeable tps hit when in use.
 - [Rimsential: Spaceports](https://steamcommunity.com/sharedfiles/filedetails/?id=2663999215) - (Material Conversion & HSK Research)
@@ -38,6 +37,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Animal Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907) (Stopped it from turning HSK apparel into animal gear) Recommend [Animal Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984) (Patch WIP)
 - [Portraits of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2937991425) - Additional patches to make it work with more hsk stuff (WIP)
 - [Hospitality: Casino](https://steamcommunity.com/sharedfiles/filedetails/?id=2939292644) - Architect Menu, Material Conversion, Research Adjustment
+- [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
 
 Other 1.4 Additions:
 
