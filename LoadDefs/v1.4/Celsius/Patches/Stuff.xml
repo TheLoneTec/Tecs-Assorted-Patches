@@ -555,7 +555,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>HMC Vile's Metallurgy</li>
+		<li>Vile's Metallurgy</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>

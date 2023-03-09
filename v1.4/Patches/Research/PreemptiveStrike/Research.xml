@@ -417,13 +417,13 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ResearchProjectDef[defName="PES_Satellite"]/researchViewX</xpath>
 						<value>
-							<researchViewX>26.00</researchViewX>
+							<researchViewX>24.00</researchViewX>
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ResearchProjectDef[defName="PES_Satellite"]/researchViewY</xpath>
 						<value>
-							<researchViewY>24.00</researchViewY>
+							<researchViewY>22.00</researchViewY>
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">

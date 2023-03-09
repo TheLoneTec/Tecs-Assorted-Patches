@@ -167,7 +167,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>25.00</researchViewX>
+                    <researchViewX>23.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">

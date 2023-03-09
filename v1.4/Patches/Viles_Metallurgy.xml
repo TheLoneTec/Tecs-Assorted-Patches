@@ -10,7 +10,7 @@
 	
 			<li Class="PatchOperationFindMod">
 			<mods>
-				<li>HMC Vile's Metallurgy</li>
+				<li>Vile's Metallurgy</li>
 			</mods>
 				<match Class="PatchOperationSequence">
 				<operations>
@@ -30,8 +30,36 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Milling"]/defNames</xpath>
+					<value>
+						<li>SK_Windmill</li>
+					</value>
+				</li>
+
 				</operations>
 				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>SubCategory_Milling</defName>
+								<label>Milling</label>
+								<description>Grinding and smashing stuff into smaller bits.</description>
+								<defNames>
+									<li>SK_Windmill</li>
+								</defNames>
+								<designationCategory>Production</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+				
+					</operations>
+				</nomatch>
 			</li>
 	
 		</operations>
