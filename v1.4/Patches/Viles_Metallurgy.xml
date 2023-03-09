@@ -33,7 +33,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Milling"]/defNames</xpath>
 					<value>
-						<li>StampMill</li>
+						<li>SK_Windmill</li>
 					</value>
 				</li>
 
