@@ -75,7 +75,7 @@
 
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/StatDef[defName="VSE_TailoringSpeed"]</xpath>
-				</li> -->
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[@Name="SK_SculptureBase"]/recipeMaker/workSpeedStat</xpath>
