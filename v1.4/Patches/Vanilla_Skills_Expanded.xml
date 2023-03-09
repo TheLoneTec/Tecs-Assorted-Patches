@@ -81,10 +81,10 @@
 					<xpath>Defs/ThingDef[@Name="SK_SculptureBase"]/recipeMaker/workSpeedStat</xpath>
 					<value><workSpeedStat>VSE_ArtSpeed</workSpeedStat></value>
 				</li>
-				<!-- <li Class="PatchOperationReplace">
+				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[@Name="PaintingBase"]/recipeMaker/workSpeedStat</xpath>
 					<value><workSpeedStat>VSE_ArtSpeed</workSpeedStat></value>
-				</li> -->
+				</li>
 		
 		
 				<li Class="PatchOperationReplace">
