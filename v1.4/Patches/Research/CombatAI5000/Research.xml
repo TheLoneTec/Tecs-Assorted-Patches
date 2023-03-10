@@ -29,15 +29,15 @@
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="TribalCCTV"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -76,17 +76,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="IndustrialCCTV"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>

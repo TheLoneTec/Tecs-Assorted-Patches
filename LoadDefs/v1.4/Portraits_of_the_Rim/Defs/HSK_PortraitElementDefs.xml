@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-BraidedKnot</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/VEHair-cn-firekeeper</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>3~999</ageRange>
+			<hair>Braidbunny</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
 
 </Defs>

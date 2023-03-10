@@ -109,56 +109,6 @@
             </li>
 
             <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>23.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>53.00</researchViewY>
-                </value>
-            </li>
-
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]</xpath>
-                <value>
-                    <tab>Buildings_SK</tab>
-                </value>
-            </li>
-
-			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
-				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions</xpath>
-						<value>
-							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]</xpath>
-						<value>
-						<modExtensions>
-							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
-						</modExtensions>
-						</value>
-					</nomatch>
-				</nomatch>
-			</li>
-
-			<li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]/prerequisites</xpath>
-                <value>
-                    <prerequisites>
-						<li>Components_E1</li>
-					</prerequisites>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]/researchViewX</xpath>
                 <value>
                     <researchViewX>24.00</researchViewX>
@@ -276,7 +226,7 @@
 			<li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]/prerequisites</xpath>
                 <value>
-                    <prerequisites>
+                    <prerequisites Inherit="False">
 						<li>Prosthesis_making_D2</li>
 						<li>Components_E1</li>
 					</prerequisites>
