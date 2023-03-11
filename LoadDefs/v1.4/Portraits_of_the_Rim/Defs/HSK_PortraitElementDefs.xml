@@ -8,8 +8,91 @@
 			<texPath>OuterHair/VEHair-cn-firekeeper</texPath>
 		</graphicData>
 		<requirements>
-			<ageRange>3~999</ageRange>
+			<ageRange>7~999</ageRange>
 			<hair>Braidbunny</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleHair_Vanilla-JaffaShaved</defName>
+		<portraitLayer>PR_MiddleHair</portraitLayer>
+		<graphicData>
+			<texPath>MiddleHair/Vanilla-shaved</texPath>
+		</graphicData>
+		<requirements>
+			<hair>JaffaShaved</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-Rika</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/VEHair-cn-sad</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>Rika</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-Moriko</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/ERNHairs2-an-ERNtwintails</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>Moriko</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-Sora</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/ERNHairs2-an-ERNaveesbangs</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>Sora</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-Ren</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/VEHair-an-twisted</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>Ren</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-Ren</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/VEHair-an-twisted</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>Ren</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-Fudji</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/ERNHairs2-an-ERNsimplestyle</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>Fudji</hair>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 
