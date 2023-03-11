@@ -73,18 +73,6 @@
 	</PortraitsOfTheRim.PortraitElementDef>
 
 	<PortraitsOfTheRim.PortraitElementDef>
-		<defName>PR_OuterHair_HSKHair-Ren</defName>
-		<portraitLayer>PR_OuterHair</portraitLayer>
-		<graphicData>
-			<texPath>OuterHair/VEHair-an-twisted</texPath>
-		</graphicData>
-		<requirements>
-			<ageRange>7~999</ageRange>
-			<hair>Ren</hair>
-		</requirements>
-	</PortraitsOfTheRim.PortraitElementDef>
-
-	<PortraitsOfTheRim.PortraitElementDef>
 		<defName>PR_OuterHair_HSKHair-Fudji</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
