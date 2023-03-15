@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Monkeywrench",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.292585164,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.196392789,
+  "BladeEnd": 0.7174349,
+  "MeleeWeaponType": 8
+}

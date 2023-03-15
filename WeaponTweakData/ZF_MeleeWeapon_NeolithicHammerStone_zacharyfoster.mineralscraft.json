@@ -1,0 +1,13 @@
+{
+  "TextureModID": "zacharyfoster.mineralscraft",
+  "ItemDefName": "ZF_MeleeWeapon_NeolithicHammerStone",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": -0.0232945085,
+  "OffY": 0.0565723777,
+  "Rotation": -50.0,
+  "ScaleX": 0.8,
+  "ScaleY": 0.8,
+  "HandsMode": 1,
+  "MeleeWeaponType": 8
+}

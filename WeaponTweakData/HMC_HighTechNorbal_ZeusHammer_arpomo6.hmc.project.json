@@ -1,0 +1,11 @@
+{
+  "TextureModID": "arpomo6.hmc.project",
+  "ItemDefName": "HMC_HighTechNorbal_ZeusHammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.1763727,
+  "HandsMode": 1,
+  "BladeStart": 0.262895167,
+  "BladeEnd": 0.5557404,
+  "MeleeWeaponType": 8
+}

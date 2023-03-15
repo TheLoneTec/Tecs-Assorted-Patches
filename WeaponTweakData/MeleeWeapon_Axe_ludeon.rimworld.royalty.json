@@ -1,0 +1,11 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "MeleeWeapon_Axe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.228187919,
+  "OffY": -0.0178972278,
+  "BladeStart": 0.3579421,
+  "BladeEnd": 0.644295335,
+  "MeleeWeaponType": 2
+}

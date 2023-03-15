@@ -1,0 +1,12 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "Sunderer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.284569144,
+  "OffY": -0.14028056,
+  "Rotation": 45.0,
+  "BladeStart": -0.260521054,
+  "BladeEnd": 0.9659319,
+  "MeleeWeaponType": 6
+}

@@ -1,0 +1,13 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_Cleaver",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.196392789,
+  "OffY": -0.0360721461,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.1482966,
+  "BladeEnd": 0.6533066,
+  "MeleeWeaponType": 16
+}

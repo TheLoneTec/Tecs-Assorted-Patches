@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "ThrumboHorn",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.116472542,
+  "OffY": 0.08319467,
+  "Rotation": 15.0,
+  "BladeStart": -0.4359401,
+  "BladeEnd": 0.6821963,
+  "MeleeWeaponType": 6
+}

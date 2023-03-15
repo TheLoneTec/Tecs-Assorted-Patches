@@ -1,0 +1,12 @@
+{
+  "TextureModID": "zacharyfoster.mineralscraft",
+  "ItemDefName": "ZF_MeleeWeapon_NeolithicSpear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2762063,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.6688852,
+  "BladeEnd": 0.921797,
+  "MeleeWeaponType": 6
+}

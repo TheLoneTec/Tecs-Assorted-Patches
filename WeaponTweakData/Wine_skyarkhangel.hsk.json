@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "Wine",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2562396,
+  "Rotation": -90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.103161395,
+  "BladeEnd": 0.6622296,
+  "MeleeWeaponType": 40
+}

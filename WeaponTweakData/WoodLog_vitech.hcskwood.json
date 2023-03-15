@@ -1,0 +1,11 @@
+{
+  "TextureModID": "vitech.hcskwood",
+  "ItemDefName": "WoodLog",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.209650576,
+  "Rotation": 40.0,
+  "BladeStart": 0.169717133,
+  "BladeEnd": 0.64891845,
+  "MeleeWeaponType": 1
+}

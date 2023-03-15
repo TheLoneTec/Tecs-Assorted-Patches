@@ -1,0 +1,12 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "NorbalMeleeWeapon_Bigax",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.220440879,
+  "OffY": -0.05210421,
+  "Rotation": 55.0,
+  "BladeStart": 0.340681374,
+  "BladeEnd": 0.829659343,
+  "MeleeWeaponType": 6
+}

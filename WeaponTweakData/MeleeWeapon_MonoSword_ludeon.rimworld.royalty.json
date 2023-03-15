@@ -1,0 +1,10 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "MeleeWeapon_MonoSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.308724821,
+  "BladeStart": 0.0894857347,
+  "BladeEnd": 0.765100658,
+  "MeleeWeaponType": 6
+}

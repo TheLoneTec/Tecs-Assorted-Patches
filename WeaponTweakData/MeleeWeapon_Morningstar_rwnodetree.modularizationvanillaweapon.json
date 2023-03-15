@@ -1,0 +1,11 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_Morningstar",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.236472949,
+  "HandsMode": 1,
+  "BladeStart": 0.380761534,
+  "BladeEnd": 0.6773547,
+  "MeleeWeaponType": 3
+}

@@ -1,0 +1,13 @@
+{
+  "TextureModID": "vitech.metallurgy",
+  "ItemDefName": "MeleeWeapon_Scimitar",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.5024958,
+  "OffY": 0.143094838,
+  "Rotation": 30.0,
+  "HandsMode": 1,
+  "BladeStart": 0.08985025,
+  "BladeEnd": 1.08153081,
+  "MeleeWeaponType": 48
+}

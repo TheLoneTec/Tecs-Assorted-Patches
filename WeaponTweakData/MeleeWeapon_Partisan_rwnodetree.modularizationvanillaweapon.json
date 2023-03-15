@@ -1,0 +1,12 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_Partisan",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.292585164,
+  "OffY": -0.004008016,
+  "Rotation": 45.0,
+  "BladeStart": 0.484969944,
+  "BladeEnd": 0.941883743,
+  "MeleeWeaponType": 6
+}

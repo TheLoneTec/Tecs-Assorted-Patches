@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_ElectricBaton",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3006012,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.4288577,
+  "BladeEnd": 0.765531063,
+  "MeleeWeaponType": 8
+}

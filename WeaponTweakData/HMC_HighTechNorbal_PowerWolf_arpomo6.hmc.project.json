@@ -1,0 +1,12 @@
+{
+  "TextureModID": "arpomo6.hmc.project",
+  "ItemDefName": "HMC_HighTechNorbal_PowerWolf",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.415973365,
+  "OffY": -0.0166389346,
+  "Rotation": 45.0,
+  "BladeStart": 0.12978369,
+  "BladeEnd": 1.04159737,
+  "MeleeWeaponType": 6
+}

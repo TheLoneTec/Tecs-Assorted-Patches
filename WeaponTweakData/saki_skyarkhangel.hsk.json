@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "saki",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2562396,
+  "Rotation": -90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.242928445,
+  "BladeEnd": 0.675540745,
+  "MeleeWeaponType": 40
+}

@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "TFJ_Tool_Multitool",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.149750412,
+  "OffY": 0.0698835254,
+  "HandsMode": 1,
+  "BladeStart": 0.249584019,
+  "BladeEnd": 0.4359401,
+  "MeleeWeaponType": 40
+}

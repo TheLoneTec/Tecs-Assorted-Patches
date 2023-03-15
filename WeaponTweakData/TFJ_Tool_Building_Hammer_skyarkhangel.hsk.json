@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "TFJ_Tool_Building_Hammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.08985025,
+  "Rotation": 90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.08319467,
+  "BladeEnd": 0.269550741,
+  "MeleeWeaponType": 8
+}

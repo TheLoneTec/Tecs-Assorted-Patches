@@ -1,0 +1,11 @@
+{
+  "TextureModID": "vitech.hcskwood",
+  "ItemDefName": "Kindling",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.143094838,
+  "OffY": 0.08985025,
+  "BladeStart": 0.169717133,
+  "BladeEnd": 0.595673859,
+  "MeleeWeaponType": 8
+}

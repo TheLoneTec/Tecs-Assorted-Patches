@@ -1,0 +1,12 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_Schiv",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.1242485,
+  "OffY": 0.004008016,
+  "HandsMode": 1,
+  "BladeStart": 0.08416834,
+  "BladeEnd": 0.396793574,
+  "MeleeWeaponType": 48
+}

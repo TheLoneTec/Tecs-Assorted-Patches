@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_WraithBlade",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.309484184,
+  "OffY": 0.09650582,
+  "Rotation": 30.0,
+  "BladeStart": 0.0765391,
+  "BladeEnd": 0.8951747,
+  "MeleeWeaponType": 6
+}

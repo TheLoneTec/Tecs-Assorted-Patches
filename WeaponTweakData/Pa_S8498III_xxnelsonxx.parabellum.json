@@ -1,0 +1,13 @@
+{
+  "TextureModID": "xxnelsonxx.parabellum",
+  "ItemDefName": "Pa_S8498III",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.236272871,
+  "ScaleX": 0.8,
+  "ScaleY": 0.8,
+  "HandsMode": 1,
+  "BladeStart": 0.109816968,
+  "BladeEnd": 0.6156406,
+  "MeleeWeaponType": 48
+}

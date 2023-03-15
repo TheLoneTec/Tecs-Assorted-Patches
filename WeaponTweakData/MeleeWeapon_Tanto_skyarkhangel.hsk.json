@@ -1,0 +1,11 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Tanto",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.228456914,
+  "HandsMode": 1,
+  "BladeStart": 0.0761523,
+  "BladeEnd": 0.5971944,
+  "MeleeWeaponType": 48
+}

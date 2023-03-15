@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "Patreonbrew",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2828619,
+  "Rotation": -90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.12978369,
+  "BladeEnd": 0.702163041,
+  "MeleeWeaponType": 40
+}

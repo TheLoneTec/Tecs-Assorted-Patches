@@ -1,0 +1,10 @@
+{
+  "TextureModID": "vitech.metallurgy",
+  "ItemDefName": "NorbalMeleeWeapon_ShortSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.47587353,
+  "OffY": -0.009983361,
+  "Rotation": 46.0,
+  "MeleeWeaponType": 6
+}

@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Gladius",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.212424845,
+  "OffY": -0.028056113,
+  "HandsMode": 1,
+  "BladeStart": 0.09218437,
+  "BladeEnd": 0.5891784,
+  "MeleeWeaponType": 48
+}

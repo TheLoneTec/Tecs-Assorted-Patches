@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Katana",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3567134,
+  "OffY": 0.028056113,
+  "HandsMode": 1,
+  "BladeStart": 0.14028056,
+  "BladeEnd": 0.837675333,
+  "MeleeWeaponType": 48
+}

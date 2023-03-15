@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "TFJ_Tool_Woodcutting_Handaxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.156405985,
+  "Rotation": 90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.2762063,
+  "BladeEnd": 0.562396,
+  "MeleeWeaponType": 48
+}

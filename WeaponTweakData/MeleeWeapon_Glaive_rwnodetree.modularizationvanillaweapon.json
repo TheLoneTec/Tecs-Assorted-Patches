@@ -1,0 +1,11 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_Glaive",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.268537074,
+  "Rotation": 45.0,
+  "BladeStart": 0.4288577,
+  "BladeEnd": 0.9258517,
+  "MeleeWeaponType": 6
+}

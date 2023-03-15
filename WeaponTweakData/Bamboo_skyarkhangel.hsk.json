@@ -1,0 +1,11 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "Bamboo",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.196339428,
+  "Rotation": 40.0,
+  "BladeStart": 0.21630615,
+  "BladeEnd": 0.7354409,
+  "MeleeWeaponType": 1
+}

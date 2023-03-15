@@ -1,0 +1,11 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_PoweredShortsword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.349417627,
+  "HandsMode": 1,
+  "BladeStart": 0.0565723777,
+  "BladeEnd": 0.6622296,
+  "MeleeWeaponType": 48
+}

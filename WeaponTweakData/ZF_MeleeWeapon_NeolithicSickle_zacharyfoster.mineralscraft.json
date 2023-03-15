@@ -1,0 +1,13 @@
+{
+  "TextureModID": "zacharyfoster.mineralscraft",
+  "ItemDefName": "ZF_MeleeWeapon_NeolithicSickle",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.236272871,
+  "OffY": 0.0499168038,
+  "Rotation": 15.0,
+  "HandsMode": 1,
+  "BladeStart": 0.116472542,
+  "BladeEnd": 0.562396,
+  "MeleeWeaponType": 24
+}

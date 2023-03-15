@@ -1,0 +1,11 @@
+{
+  "TextureModID": "arpomo6.hmc.biomes",
+  "ItemDefName": "IronWoodLogHMC",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.149750412,
+  "Rotation": 45.0,
+  "BladeStart": 0.136439264,
+  "BladeEnd": 0.4825291,
+  "MeleeWeaponType": 1
+}

@@ -1,0 +1,12 @@
+{
+  "TextureModID": "zacharyfoster.mineralscraft",
+  "ItemDefName": "ZF_MeleeWeapon_NeolithicDiggingStick",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.349417627,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.1763727,
+  "BladeEnd": 0.5557404,
+  "MeleeWeaponType": 8
+}

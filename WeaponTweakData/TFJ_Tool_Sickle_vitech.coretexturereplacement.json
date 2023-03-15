@@ -1,0 +1,13 @@
+{
+  "TextureModID": "vitech.coretexturereplacement",
+  "ItemDefName": "TFJ_Tool_Sickle",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.342762053,
+  "OffY": -0.003327787,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.163061559,
+  "BladeEnd": 0.608985,
+  "MeleeWeaponType": 48
+}

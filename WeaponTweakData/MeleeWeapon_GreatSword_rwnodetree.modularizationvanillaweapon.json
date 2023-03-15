@@ -1,0 +1,12 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_GreatSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.4288577,
+  "OffY": -0.004008016,
+  "Rotation": 45.0,
+  "BladeStart": 0.14028056,
+  "BladeEnd": 1.11022043,
+  "MeleeWeaponType": 6
+}

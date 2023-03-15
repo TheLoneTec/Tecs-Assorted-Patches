@@ -1,0 +1,10 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_PsyfocusStaff",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.103161395,
+  "BladeStart": 0.269550741,
+  "BladeEnd": 0.602329433,
+  "MeleeWeaponType": 1
+}

@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "TFJ_Tool_Broom",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.169717133,
+  "Rotation": -45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.349417627,
+  "BladeEnd": 0.695507467,
+  "MeleeWeaponType": 8
+}

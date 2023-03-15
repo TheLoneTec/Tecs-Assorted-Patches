@@ -1,0 +1,11 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Zeushammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.209650576,
+  "HandsMode": 1,
+  "BladeStart": 0.322795331,
+  "BladeEnd": 0.7088186,
+  "MeleeWeaponType": 8
+}

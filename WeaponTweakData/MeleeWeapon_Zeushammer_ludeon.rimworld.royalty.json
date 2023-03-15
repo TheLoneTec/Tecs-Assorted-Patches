@@ -1,0 +1,13 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "MeleeWeapon_Zeushammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.241610765,
+  "OffY": -0.0223716386,
+  "ScaleX": 1.2,
+  "ScaleY": 1.2,
+  "BladeStart": 0.4250562,
+  "BladeEnd": 0.8411636,
+  "MeleeWeaponType": 1
+}

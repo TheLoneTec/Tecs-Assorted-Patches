@@ -1,0 +1,12 @@
+{
+  "TextureModID": "zacharyfoster.mineralscraft",
+  "ItemDefName": "MeleeWeapon_RoyalKnife",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.249584019,
+  "OffY": 0.0299500823,
+  "HandsMode": 1,
+  "BladeStart": 0.116472542,
+  "BladeEnd": 0.4825291,
+  "MeleeWeaponType": 48
+}

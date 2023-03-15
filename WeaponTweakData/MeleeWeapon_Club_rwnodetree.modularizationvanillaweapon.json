@@ -1,0 +1,11 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_Club",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2765531,
+  "HandsMode": 1,
+  "BladeStart": 0.212424845,
+  "BladeEnd": 0.7334669,
+  "MeleeWeaponType": 8
+}

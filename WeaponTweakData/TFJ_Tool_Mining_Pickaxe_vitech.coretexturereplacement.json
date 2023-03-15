@@ -1,0 +1,13 @@
+{
+  "TextureModID": "vitech.coretexturereplacement",
+  "ItemDefName": "TFJ_Tool_Mining_Pickaxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.143094838,
+  "OffY": -0.0166389346,
+  "Rotation": 90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.422628939,
+  "BladeEnd": 0.5823627,
+  "MeleeWeaponType": 48
+}

@@ -1,0 +1,13 @@
+{
+  "TextureModID": "vanillaexpanded.vpsycastse",
+  "ItemDefName": "VPE_MeleeWeapon_EltexMace",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.271061838,
+  "OffY": -0.0073258956,
+  "ScaleX": 1.2,
+  "ScaleY": 1.2,
+  "BladeStart": 0.170329675,
+  "BladeEnd": 0.6831504,
+  "MeleeWeaponType": 9
+}

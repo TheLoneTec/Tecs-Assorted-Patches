@@ -1,0 +1,10 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "MeleeWeapon_PsyfocusStaff",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2102911,
+  "BladeStart": 0.0939597338,
+  "BladeEnd": 0.693512559,
+  "MeleeWeaponType": 9
+}

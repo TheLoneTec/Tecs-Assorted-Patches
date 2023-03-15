@@ -1,0 +1,13 @@
+{
+  "TextureModID": "arpomo6.hmc.project",
+  "ItemDefName": "HMC_HighTechNorbal_Axe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2296173,
+  "OffY": -0.103161395,
+  "Rotation": 90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.109816968,
+  "BladeEnd": 0.6821963,
+  "MeleeWeaponType": 6
+}

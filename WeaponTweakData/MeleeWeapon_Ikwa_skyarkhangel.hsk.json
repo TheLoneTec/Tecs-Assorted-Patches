@@ -1,0 +1,11 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Ikwa",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.212424845,
+  "HandsMode": 1,
+  "BladeStart": 0.284569144,
+  "BladeEnd": 0.6693387,
+  "MeleeWeaponType": 6
+}

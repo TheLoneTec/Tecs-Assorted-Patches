@@ -1,0 +1,13 @@
+{
+  "TextureModID": "vitech.coretexturereplacement",
+  "ItemDefName": "TFJ_Tool_Woodcutting_Handaxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.163061559,
+  "OffY": -0.0166389346,
+  "Rotation": 90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.362728775,
+  "BladeEnd": 0.608985,
+  "MeleeWeaponType": 48
+}

@@ -1,0 +1,11 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_LongSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3006012,
+  "OffY": -0.028056113,
+  "BladeStart": 0.05210421,
+  "BladeEnd": 0.7174349,
+  "MeleeWeaponType": 6
+}

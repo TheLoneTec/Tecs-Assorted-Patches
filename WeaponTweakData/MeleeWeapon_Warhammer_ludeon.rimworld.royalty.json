@@ -1,0 +1,13 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "MeleeWeapon_Warhammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.210291117,
+  "OffY": -0.0178972278,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "BladeStart": 0.4966443,
+  "BladeEnd": 0.7561527,
+  "MeleeWeaponType": 1
+}

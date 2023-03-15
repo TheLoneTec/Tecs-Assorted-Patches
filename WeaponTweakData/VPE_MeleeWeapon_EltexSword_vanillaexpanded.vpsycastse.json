@@ -1,0 +1,18 @@
+{
+  "TextureModID": "vanillaexpanded.vpsycastse",
+  "ItemDefName": "VPE_MeleeWeapon_EltexSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2637356,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "BladeStart": 0.144688874,
+  "BladeEnd": 0.716117442,
+  "MeleeWeaponType": 6,
+  "TrailTint": {
+    "r": 0.0719999745,
+    "g": 0.978,
+    "b": 0.7122394,
+    "a": 0.993
+  }
+}

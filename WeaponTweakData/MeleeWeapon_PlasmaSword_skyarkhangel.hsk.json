@@ -1,0 +1,10 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_PlasmaSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2762063,
+  "BladeStart": 0.163061559,
+  "BladeEnd": 0.6888519,
+  "MeleeWeaponType": 6
+}

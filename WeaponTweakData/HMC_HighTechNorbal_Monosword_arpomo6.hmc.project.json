@@ -1,0 +1,12 @@
+{
+  "TextureModID": "arpomo6.hmc.project",
+  "ItemDefName": "HMC_HighTechNorbal_Monosword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.322795331,
+  "OffY": -0.0232945085,
+  "HandsMode": 1,
+  "BladeStart": 0.242928445,
+  "BladeEnd": 0.8086522,
+  "MeleeWeaponType": 48
+}

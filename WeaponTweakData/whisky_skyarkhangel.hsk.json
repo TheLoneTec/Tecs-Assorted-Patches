@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "whisky",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2762063,
+  "Rotation": -90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.149750412,
+  "BladeEnd": 0.602329433,
+  "MeleeWeaponType": 40
+}

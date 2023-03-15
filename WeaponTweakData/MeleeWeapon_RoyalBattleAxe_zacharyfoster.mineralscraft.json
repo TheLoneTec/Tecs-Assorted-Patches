@@ -1,0 +1,11 @@
+{
+  "TextureModID": "zacharyfoster.mineralscraft",
+  "ItemDefName": "MeleeWeapon_RoyalBattleAxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.262895167,
+  "Rotation": 45.0,
+  "BladeStart": 0.449251235,
+  "BladeEnd": 0.7820299,
+  "MeleeWeaponType": 6
+}

@@ -1,0 +1,11 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_MonoSwordBladelink",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.342762053,
+  "HandsMode": 1,
+  "BladeStart": 0.0765391,
+  "BladeEnd": 0.82196337,
+  "MeleeWeaponType": 48
+}

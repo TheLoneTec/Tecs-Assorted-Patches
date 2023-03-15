@@ -1,0 +1,13 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Dagger",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.236472949,
+  "OffY": -0.0120240478,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.0681362748,
+  "BladeEnd": 0.565130234,
+  "MeleeWeaponType": 48
+}

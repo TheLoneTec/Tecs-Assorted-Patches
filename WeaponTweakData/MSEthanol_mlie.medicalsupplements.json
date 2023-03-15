@@ -1,0 +1,12 @@
+{
+  "TextureModID": "mlie.medicalsupplements",
+  "ItemDefName": "MSEthanol",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.156405985,
+  "Rotation": -90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.103161395,
+  "BladeEnd": 0.469217956,
+  "MeleeWeaponType": 40
+}

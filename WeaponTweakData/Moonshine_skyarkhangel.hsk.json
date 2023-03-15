@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "Moonshine",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.289517462,
+  "Rotation": -90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.08985025,
+  "BladeEnd": 0.622296154,
+  "MeleeWeaponType": 40
+}

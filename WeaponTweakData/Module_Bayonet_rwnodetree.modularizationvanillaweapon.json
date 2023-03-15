@@ -1,0 +1,13 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "Module_Bayonet",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.18036072,
+  "ScaleX": 1.2,
+  "ScaleY": 1.2,
+  "HandsMode": 1,
+  "BladeStart": 0.1002004,
+  "BladeEnd": 0.468937874,
+  "MeleeWeaponType": 48
+}

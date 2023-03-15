@@ -1,0 +1,10 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "MeleeWeapon_Spear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.188376755,
+  "BladeStart": 0.388777554,
+  "BladeEnd": 0.6693387,
+  "MeleeWeaponType": 6
+}

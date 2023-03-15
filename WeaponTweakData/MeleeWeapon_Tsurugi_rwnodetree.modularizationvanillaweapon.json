@@ -1,0 +1,11 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "MeleeWeapon_Tsurugi",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.4529058,
+  "Rotation": 45.0,
+  "BladeStart": 0.14028056,
+  "BladeEnd": 1.01402807,
+  "MeleeWeaponType": 6
+}

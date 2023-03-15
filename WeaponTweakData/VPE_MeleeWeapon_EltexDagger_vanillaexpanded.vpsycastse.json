@@ -1,0 +1,17 @@
+{
+  "TextureModID": "vanillaexpanded.vpsycastse",
+  "ItemDefName": "VPE_MeleeWeapon_EltexDagger",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.179487616,
+  "HandsMode": 1,
+  "BladeStart": 0.115384616,
+  "BladeEnd": 0.4597074,
+  "MeleeWeaponType": 48,
+  "TrailTint": {
+    "r": 0.0719999745,
+    "g": 0.978,
+    "b": 0.7122394,
+    "a": 0.993
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "TextureModID": "rwnodetree.modularizationvanillaweapon",
+  "ItemDefName": "NorbalMeleeWeapon_ShortSwordtwo",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3246493,
+  "Rotation": 45.0,
+  "HandsMode": 1,
+  "BladeStart": 0.164328665,
+  "BladeEnd": 0.837675333,
+  "MeleeWeaponType": 6
+}

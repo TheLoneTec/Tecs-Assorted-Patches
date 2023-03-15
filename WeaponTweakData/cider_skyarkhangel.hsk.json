@@ -1,0 +1,12 @@
+{
+  "TextureModID": "skyarkhangel.hsk",
+  "ItemDefName": "cider",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.21630615,
+  "Rotation": -90.0,
+  "HandsMode": 1,
+  "BladeStart": 0.103161395,
+  "BladeEnd": 0.5823627,
+  "MeleeWeaponType": 40
+}
