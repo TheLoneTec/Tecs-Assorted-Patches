@@ -4,7 +4,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N0IDAUM)
 
 # 1.4 Patches for:
-- [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i have my own version for HSK in addons)
+- [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i have my own version for HSK in [addons (Celsius SK)](https://discord.com/channels/272340793174392832/1065298517284892743))
 - Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Recommended))
 - [Perspective: Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=2567126933) (Added Textures for Viles Doors, corrective patches for base HSK + missing textures. Merge Viles fence gate textures into one category, fixed missing palisade gate east perspective)
 - [Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990) - Added HSK Trees.
@@ -38,6 +38,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Portraits of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2937991425) - Additional patches to make it work with more hsk stuff (WIP)
 - [Hospitality: Casino](https://steamcommunity.com/sharedfiles/filedetails/?id=2939292644) - Architect Menu, Material Conversion, Research Adjustment
 - [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
+- [Melee Animation](hhttps://steamcommunity.com/sharedfiles/filedetails/?id=2944488802) (Patch for many melee weapons for HSK mods)
 
 Other 1.4 Additions:
 
