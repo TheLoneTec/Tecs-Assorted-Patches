@@ -38,7 +38,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Portraits of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2937991425) - Additional patches to make it work with more hsk stuff (WIP)
 - [Hospitality: Casino](https://steamcommunity.com/sharedfiles/filedetails/?id=2939292644) - Architect Menu, Material Conversion, Research Adjustment
 - [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
-- [Melee Animation](hhttps://steamcommunity.com/sharedfiles/filedetails/?id=2944488802) (Patch for many melee weapons for HSK mods)
+- [Melee Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2944488802) (Patch for many melee weapons for HSK mods)
 
 Other 1.4 Additions:
 
