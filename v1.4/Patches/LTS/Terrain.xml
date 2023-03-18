@@ -11,50 +11,50 @@
 			<!-- ======== Terrain ======== -->
 <!--
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_FloorBase"]</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_FloorBase"]</xpath>
 				<value>
 				<designationCategory></designationCategory>
 				</value>
 			</li>
 		-->
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_WoodBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_WoodBase"]/designatorDropdown</xpath>
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_FineWoodBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_FineWoodBase"]/designatorDropdown</xpath>
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_GravelBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_GravelBase"]/designatorDropdown</xpath>
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughSquareDiagonalBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_RoughSquareDiagonalBase"]/designatorDropdown</xpath>
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughSquareStraightBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_RoughSquareStraightBase"]/designatorDropdown</xpath>
 			</li>
 	
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughTileBase_H"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_RoughTileBase_H"]/designatorDropdown</xpath>
 			</li>
 	
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughTileBase_V"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_RoughTileBase_V"]/designatorDropdown</xpath>
 			</li>
 		
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_EvenBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_EvenBase"]/designatorDropdown</xpath>
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_UnevenBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_UnevenBase"]/designatorDropdown</xpath>
 			</li>
 		
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_FuturisticBase"]/designatorDropdown</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_FuturisticBase"]/designatorDropdown</xpath>
 			</li>
 		
 			<li Class="PatchOperationAdd">
@@ -78,13 +78,13 @@
 		
 			<li Class="PatchOperationFindMod">
 			<mods>
-				<li>Wood You Please</li>
+				<li>Vile's Wood You Please</li>
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
 					
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/TerrainDef[@Name = "LTS_WoodBase"]/costList</xpath>
+						<xpath>Defs/TerrainDef[@Name = "LTS_WoodBase"]/costList</xpath>
 						<value>
 							<costList>
 								<TeakPlank>3</TeakPlank>
@@ -92,13 +92,13 @@
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/TerrainDef[@Name = "LTS_WoodBase"]/statBases/Beauty</xpath>
+						<xpath>Defs/TerrainDef[@Name = "LTS_WoodBase"]/statBases/Beauty</xpath>
 						<value>
 							<Beauty>4</Beauty>
 						</value>
 					</li>
 					<li Class="PatchOperationAdd"> 
-						<xpath>/Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
+						<xpath>Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
 						<value>
 							<researchPrerequisites Inherit="False">
 								<li>Wooden_floor_B1</li>
@@ -112,7 +112,7 @@
 					<operations>
 					
 					<li Class="PatchOperationAdd"> 
-						<xpath>/Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
+						<xpath>Defs/TerrainDef[@Name="LTS_WoodBase"]</xpath>
 						<value>
 							<researchPrerequisites Inherit="False">
 								<li>Plastic_floor_C1</li>
@@ -120,7 +120,7 @@
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/TerrainDef[@Name = "LTS_WoodBase"]/costList</xpath>
+						<xpath>Defs/TerrainDef[@Name = "LTS_WoodBase"]/costList</xpath>
 						<value>
 							<costList>
 								<WoodPlank>4</WoodPlank>
@@ -156,12 +156,12 @@
 			
 			<li Class="PatchOperationFindMod">
 			<mods>
-				<li>Wood You Please</li>
+				<li>Vile's Wood You Please</li>
 			</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/TerrainDef[@Name = "LTS_FineWoodBase"]/costList</xpath>
+						<xpath>Defs/TerrainDef[@Name = "LTS_FineWoodBase"]/costList</xpath>
 						<value>
 							<costList>
 								<TeakPlank>4</TeakPlank>
@@ -169,14 +169,14 @@
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/TerrainDef[@Name = "LTS_FineWoodBase"]/statBases/Beauty</xpath>
+						<xpath>Defs/TerrainDef[@Name = "LTS_FineWoodBase"]/statBases/Beauty</xpath>
 						<value>
 							<Beauty>5</Beauty>
 						</value>
 					</li>
 					
 					<li Class="PatchOperationAdd"> 
-						<xpath>/Defs/TerrainDef[@Name="LTS_FineWoodBase"]</xpath>
+						<xpath>Defs/TerrainDef[@Name="LTS_FineWoodBase"]</xpath>
 						<value>
 							<researchPrerequisites>
 								<li>Wooden_floor_B2</li>
@@ -190,7 +190,7 @@
 					<operations>
 					
 					<li Class="PatchOperationAdd"> 
-						<xpath>/Defs/TerrainDef[@Name="LTS_FineWoodBase"]</xpath>
+						<xpath>Defs/TerrainDef[@Name="LTS_FineWoodBase"]</xpath>
 						<value>
 							<researchPrerequisites Inherit="False">
 								<li>Plastic_floor_C2</li>
@@ -198,7 +198,7 @@
 						</value>
 					</li>
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/TerrainDef[@Name = "LTS_FineWoodBase"]/costList</xpath>
+						<xpath>Defs/TerrainDef[@Name = "LTS_FineWoodBase"]/costList</xpath>
 						<value>
 							<costList>
 								<WoodPlank>6</WoodPlank>
@@ -422,7 +422,7 @@
 			</li>
 		
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_FineStoneBase"]/researchPrerequisites</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_FineStoneBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Stone_floor_B4</li>
@@ -431,7 +431,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughSquareBase"]/researchPrerequisites</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_RoughSquareBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Stone_floor_B2</li>
@@ -440,7 +440,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_RoughTileBase"]/researchPrerequisites</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_RoughTileBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Stone_floor_B2</li>
@@ -449,7 +449,7 @@
 			</li>
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/TerrainDef[@Name="LTS_FuturisticBase"]</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_FuturisticBase"]</xpath>
 				<value>
 					<designationCategory>OutsideFloors</designationCategory>
 				</value>
@@ -474,7 +474,7 @@
 			</li>
 		
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/TerrainDef[@Name = "LTS_FuturisticBase"]/costList</xpath>
+				<xpath>Defs/TerrainDef[@Name = "LTS_FuturisticBase"]/costList</xpath>
 				<value>
 					<costList>
 						<Plasteel>2</Plasteel>

@@ -762,7 +762,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Wood You Please</li>
+		<li>Vile's Wood You Please</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
