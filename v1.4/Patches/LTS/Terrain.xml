@@ -178,7 +178,7 @@
 					<li Class="PatchOperationAdd"> 
 						<xpath>Defs/TerrainDef[@Name="LTS_FineWoodBase"]</xpath>
 						<value>
-							<researchPrerequisites>
+							<researchPrerequisites Inherit="False">
 								<li>Wooden_floor_B2</li>
 							</researchPrerequisites>
 						</value>
