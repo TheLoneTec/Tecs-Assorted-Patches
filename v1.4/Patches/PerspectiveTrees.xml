@@ -22,6 +22,13 @@
 		</li>
 -->
 		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@ParentName="CactusBase"]/altitudeLayer</xpath>
+			<value>
+				<altitudeLayer>Pawn</altitudeLayer>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
 			<xpath>Defs/ThingDef[@Name="SK_TreeBase"]/altitudeLayer</xpath>
 			<value>
 				<altitudeLayer>Pawn</altitudeLayer>
