@@ -45,6 +45,23 @@
 				<li>SkynetCovert</li>
 				<li>SkynetInfiltrator</li>
 				<li>SkynetPrototypeTX</li>
+				<li>YorkshireTerrier</li>
+				<li>Horse_Wooly</li>
+				<li>GermanShepherd</li>
+				<li>SnowLeopard</li>
+				<li>Ibex</li>
+				<li>Tortoise</li>
+				<li>Tiger</li>
+				<li>Animal_Desiri_Urban</li>
+				<li>Fishercat</li>
+				<li>Caribou</li>
+				<li>Sheep</li>
+				<li>Donkey</li>
+				<li>Cougar</li>
+				<li>Deer</li>
+				<li>Buffalo</li>
+				<li>Fly</li>
+				<li>Yak</li>
 			</keys>
 			<values>
 				<li>
@@ -114,7 +131,12 @@
 				</li>
 				<li />
 				<li />
-				<li />
+				<li>
+					<North>(0, 0, 25)</North>
+					<South>(0, 0, 25)</South>
+					<West>(0, 0, 25)</West>
+					<East>(0, 0, 25)</East>
+				</li>
 				<li />
 				<li />
 				<li />
@@ -164,6 +186,28 @@
 					<West>(0, 0, 25)</West>
 					<East>(0, 0, 25)</East>
 				</li>
+				<li />
+				<li>
+					<North>(0, 0, 25)</North>
+					<South>(0, 0, 25)</South>
+					<West>(0, 0, 25)</West>
+					<East>(0, 0, 25)</East>
+				</li>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
 			</values>
 		</nlCoordinateOffset>
 	</ModSettings>
