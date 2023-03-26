@@ -93,7 +93,7 @@
 			<!-- ========== ThingDefFishSduiggles CE ========== -->
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSduiggles"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSduiggles"]</xpath>
 				<value>
 					<li Class="CombatExtended.RacePropertiesExtensionCE">
 						<bodyShape>Birdlike</bodyShape>
@@ -102,7 +102,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSduiggles"]/statBases</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSduiggles"]/statBases</xpath>
 				<value>
 					<MeleeDodgeChance>0.2</MeleeDodgeChance>
 					<MeleeCritChance>0.04</MeleeCritChance>
@@ -111,7 +111,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSduiggles"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSduiggles"]</xpath>
 				<value>
 					<tools>
 						<li Class="CombatExtended.ToolCE">
@@ -137,7 +137,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSduiggles"]/verbs</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSduiggles"]/verbs</xpath>
 				<value>
 				<verbs>
 					<li>
@@ -162,7 +162,7 @@
 			<!-- ========== ThingDefFishSeasnake CE ========== -->
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSeasnake"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSeasnake"]</xpath>
 				<value>
 					<li Class="CombatExtended.RacePropertiesExtensionCE">
 						<bodyShape>Birdlike</bodyShape>
@@ -171,7 +171,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSeasnake"]/statBases</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSeasnake"]/statBases</xpath>
 				<value>
 					<MeleeDodgeChance>0.2</MeleeDodgeChance>
 					<MeleeCritChance>0.04</MeleeCritChance>
@@ -180,7 +180,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSeasnake"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSeasnake"]</xpath>
 				<value>
 					<tools>
 						<li Class="CombatExtended.ToolCE">
@@ -206,7 +206,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishSeasnake"]/verbs</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishSeasnake"]/verbs</xpath>
 				<value>
 				<verbs>
 					<li>
@@ -231,7 +231,7 @@
 			<!-- ========== ThingDefFishMashgon CE ========== -->
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishMashgon"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishMashgon"]</xpath>
 				<value>
 					<li Class="CombatExtended.RacePropertiesExtensionCE">
 						<bodyShape>Birdlike</bodyShape>
@@ -240,7 +240,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishMashgon"]/statBases</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishMashgon"]/statBases</xpath>
 				<value>
 					<MeleeDodgeChance>0.2</MeleeDodgeChance>
 					<MeleeCritChance>0.04</MeleeCritChance>
@@ -249,7 +249,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishMashgon"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishMashgon"]</xpath>
 				<value>
 					<tools>
 						<li Class="CombatExtended.ToolCE">
@@ -275,7 +275,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishMashgon"]/verbs</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishMashgon"]/verbs</xpath>
 				<value>
 				<verbs>
 					<li>
@@ -300,7 +300,7 @@
 			<!-- ========== ThingDefFishBlueblade CE ========== -->
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishBlueblade"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishBlueblade"]</xpath>
 				<value>
 					<li Class="CombatExtended.RacePropertiesExtensionCE">
 						<bodyShape>Birdlike</bodyShape>
@@ -309,7 +309,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishBlueblade"]/statBases</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishBlueblade"]/statBases</xpath>
 				<value>
 					<MeleeDodgeChance>0.2</MeleeDodgeChance>
 					<MeleeCritChance>0.04</MeleeCritChance>
@@ -318,7 +318,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishBlueblade"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishBlueblade"]</xpath>
 				<value>
 					<tools>
 						<li Class="CombatExtended.ToolCE">
@@ -344,7 +344,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishBlueblade"]/verbs</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishBlueblade"]/verbs</xpath>
 				<value>
 				<verbs>
 					<li>
@@ -369,7 +369,7 @@
 			<!-- ========== ThingDefFishTailteeth CE ========== -->
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishTailteeth"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishTailteeth"]</xpath>
 				<value>
 					<li Class="CombatExtended.RacePropertiesExtensionCE">
 						<bodyShape>Birdlike</bodyShape>
@@ -378,7 +378,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishTailteeth"]/statBases</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishTailteeth"]/statBases</xpath>
 				<value>
 					<MeleeDodgeChance>0.2</MeleeDodgeChance>
 					<MeleeCritChance>0.04</MeleeCritChance>
@@ -387,7 +387,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishTailteeth"]</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishTailteeth"]</xpath>
 				<value>
 					<tools>
 						<li Class="CombatExtended.ToolCE">
@@ -413,7 +413,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="ThingDefFishTailteeth"]/verbs</xpath>
+				<xpath>Defs/ThingDef[defName="ThingDefFishTailteeth"]/verbs</xpath>
 				<value>
 				<verbs>
 					<li>

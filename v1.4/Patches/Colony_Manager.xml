@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Colony Manager</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="FM_BasicManagerStation"]</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>4</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FM_ManagerStation"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>4</ComponentMedieval>
+						<Mechanism>2</Mechanism>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FM_AIManager"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>6</ComponentIndustrial>
+						<Mechanism>2</Mechanism>
+						<ElectronicComponents>4</ElectronicComponents>
+						<Electronics>4</Electronics>
+						<AIPersonaCore>1</AIPersonaCore>
+					</costList>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
