@@ -17,7 +17,7 @@
 			<!-- not(@ParentName) and  -->
 
 			<li Class="XmlExtensions.PatchOperationSafeAdd">
-				<xpath>Defs/ResearchProjectDef[techLevel/text()='Neolithic' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Neolithic' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
 				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
 				<safetyDepth>3</safetyDepth>
 				<compare>Both</compare>
@@ -39,7 +39,7 @@
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd">
-				<xpath>Defs/ResearchProjectDef[techLevel/text()='Medieval' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Medieval' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
 				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
 				<safetyDepth>3</safetyDepth>
 				<compare>Both</compare>
@@ -57,7 +57,7 @@
 			</li>
 	
 			<li Class="XmlExtensions.PatchOperationSafeAdd">
-				<xpath>Defs/ResearchProjectDef[techLevel/text()='Industrial' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Industrial' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
 				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
 				<safetyDepth>3</safetyDepth>
 				<compare>Both</compare>
