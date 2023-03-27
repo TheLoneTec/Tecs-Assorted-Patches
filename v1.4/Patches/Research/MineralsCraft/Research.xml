@@ -19,7 +19,7 @@
                 <value>
                     <researchViewY>26.00</researchViewY>
                 </value>
-            </li>
+            </li><!--
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/tab</xpath>
                 <value>
@@ -55,7 +55,7 @@
 					</prerequisites>
                 </value>
             </li>
-
+-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewX</xpath>
                 <value>
@@ -67,7 +67,7 @@
                 <value>
                     <researchViewY>26.00</researchViewY>
                 </value>
-            </li>
+            </li><!--
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/tab</xpath>
                 <value>
@@ -104,7 +104,7 @@
 					</prerequisites>
                 </value>
             </li>
-
+-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/researchViewX</xpath>
                 <value>
@@ -116,7 +116,7 @@
                 <value>
                     <researchViewY>26.00</researchViewY>
                 </value>
-            </li>
+            </li><!--
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/tab</xpath>
                 <value>
@@ -142,7 +142,7 @@
 						</value>
 					</nomatch>
 				</nomatch>
-			</li>
+			</li>-->
 
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/researchViewX</xpath>
@@ -155,7 +155,7 @@
                 <value>
                     <researchViewY>29.00</researchViewY>
                 </value>
-            </li>
+            </li><!--
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/tab</xpath>
                 <value>
@@ -182,7 +182,7 @@
 					</nomatch>
 				</nomatch>
 			</li>
-
+-->
 		</operations>
 		</match>
     </Operation>	
