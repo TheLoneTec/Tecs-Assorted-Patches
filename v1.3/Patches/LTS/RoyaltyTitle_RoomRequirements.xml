@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--HSK-->
+	
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>[LTS]Furnishing</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+		<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Furniture Expanded SK</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+			
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="EndTable"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
+						<value>
+						<li Class = "RoomRequirement_ThingAnyOf">
+							<things>
+								<li>EndTable</li>
+								<li>LTS_IdanasN</li>
+							</things>
+						</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="EndTable"]]</xpath>
+					<value>
+						<li>LTS_IdanasN</li>
+					</value>
+					</nomatch>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="Dresser"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
+						<value>
+						<li Class = "RoomRequirement_ThingAnyOf">
+							<things>
+								<li>EndTable</li>
+								<li>LTS_IdanasD</li>
+								<li>LTS_KoppangD</li>
+							</things>
+						</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="Dresser"]]</xpath>
+					<value>
+						<li>LTS_IdanasD</li>
+						<li>LTS_KoppangD</li>
+					</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
+					</match>
+				</li>
+
+				</operations>
+			</match>
+			
+		</li>
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

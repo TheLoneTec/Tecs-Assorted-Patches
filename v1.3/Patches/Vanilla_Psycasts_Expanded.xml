@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Psycasts Expanded</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "VPE_ConstructBase"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Human</useMeatFrom>
+					</value>
+				</li>
+					
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "VPE_UndeadBase"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Human</useMeatFrom>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Caster_Wildspeaker" or defName="Tribal_Caster_Conflagrator" or defName="Tribal_Caster_Frostshaper" or defName="Tribal_Caster_Staticlord"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_TribalBase</value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/stuffCategories</xpath>
+				   <value>
+						<stuffCategories>
+							<li>StrongMetallic</li>
+						</stuffCategories>
+				   </value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/costList</xpath>
+				   <value>
+						<costList>
+						  <VPE_Eltex>1</VPE_Eltex>
+						  <ComponentIndustrial>4</ComponentIndustrial>
+						  <GoldBar>6</GoldBar>
+						</costList>
+				   </value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/recipeMaker/researchPrerequisite</xpath>
+				   <value>
+						<researchPrerequisite>Armor_B2</researchPrerequisite>
+				   </value>
+				</li>
+	
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

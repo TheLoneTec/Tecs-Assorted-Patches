@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Comigo's Bridges and Platforms</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Log & Floating Bridge ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/TerrainDef[defName="COMIGO_LogBridge_Base"]/costList</xpath>
+					<value>
+						<costList>
+							<WoodPlank>7</WoodPlank>
+						</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/TerrainDef[defName="COMIGO_FloatingPlatform_Wooden"]/costList</xpath>
+					<value>
+						<costList>
+							<WoodPlank>10</WoodPlank>
+							<Chemfuel>15</Chemfuel>
+						</costList>
+					</value>
+				</li>
+			
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/TerrainDef[defName="COMIGO_FloatingPlatform_Metal"]/costList</xpath>
+					<value>
+						<costList>
+							<Plasteel>10</Plasteel>
+							<Chemfuel>15</Chemfuel>
+						</costList>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Core SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Bridge ========== -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/TerrainDef[defName="Bridge"]/costList</xpath>
+					<value>
+						<costList>
+							<WoodPlank>12</WoodPlank>
+						</costList>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

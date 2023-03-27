@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Power Logic</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>12.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSwitches"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+					  <li>Electrical_engineering_C2</li>
+					  <li>Electronics_C2</li>
+					  <li>Temperature_control_C2</li>
+					</prerequisites>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSwitches"]/baseCost</xpath>
+                <value>
+                    <baseCost>1000</baseCost>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSensors"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>13.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSensors"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSensors"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSensors"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSensors"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSensors"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicSensors"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSensors"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+					  <li>PowerLogicSwitches</li>
+					  <li>Ergonomics_C2</li>
+					</prerequisites>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicSensors"]/baseCost</xpath>
+                <value>
+                    <baseCost>800</baseCost>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotes"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>14.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotes"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotes"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotes"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotes"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotes"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotes"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotes"]/prerequisites</xpath>
+                <value>
+					<prerequisites>
+					  <li>Telecommunications_C1</li>
+					  <li>PowerLogicSensors</li>
+					</prerequisites>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotesAdvanced"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>15.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotesAdvanced"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotesAdvanced"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesAdvanced"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesAdvanced"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesAdvanced"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesAdvanced"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRadarWifi"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>15.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRadarWifi"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>18.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRadarWifi"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRadarWifi"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRadarWifi"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRadarWifi"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRadarWifi"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]/researchViewX</xpath>
+							<value>
+								<researchViewX>14.00</researchViewX>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]/researchViewY</xpath>
+							<value>
+								<researchViewY>18.00</researchViewY>
+							</value>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]/tab</xpath>
+							<value>
+								<tab>Buildings_SK</tab>
+							</value>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+							<nomatch Class="PatchOperationConditional">
+								<xpath>/Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]/modExtensions</xpath>
+								<match Class="PatchOperationAdd">
+									<xpath>/Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]/modExtensions</xpath>
+									<value>
+										<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+									</value>
+								</match>
+								<nomatch Class="PatchOperationAdd">
+									<xpath>/Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]</xpath>
+									<value>
+									<modExtensions>
+										<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+									</modExtensions>
+									</value>
+								</nomatch>
+							</nomatch>
+						</li>
+
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="PowerLogicLaserTech"]/prerequisites</xpath>
+							<value>
+								<prerequisites>
+								  <li>Light_C5</li>
+								  <li>PowerLogicSensors</li>
+								</prerequisites>
+							</value>
+						</li>
+					</operations>
+				</match>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotesMultiChannel"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>16.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotesMultiChannel"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerLogicRemotesMultiChannel"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesMultiChannel"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesMultiChannel"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesMultiChannel"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerLogicRemotesMultiChannel"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

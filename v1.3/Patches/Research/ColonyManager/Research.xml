@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Colony Manager</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ManagingSoftware"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>7.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ManagingSoftware"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>16.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ManagingSoftware"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ManagingSoftware"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ManagingSoftware"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ManagingSoftware"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ManagingSoftware"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AdvancedManagingSoftware"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>17.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AdvancedManagingSoftware"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>16.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AdvancedManagingSoftware"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="AdvancedManagingSoftware"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="AdvancedManagingSoftware"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="AdvancedManagingSoftware"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="AdvancedManagingSoftware"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerManagement"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>9.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerManagement"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>19.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PowerManagement"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PowerManagement"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PowerManagement"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerManagement"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PowerManagement"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

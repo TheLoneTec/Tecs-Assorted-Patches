@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Cosmos+</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Save Our Ship 2</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/researchViewX</xpath>
+						<value>
+							<researchViewX>19.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/researchViewY</xpath>
+						<value>
+							<researchViewY>25.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/tab</xpath>
+						<value>
+							<tab>Buildings_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/researchViewX</xpath>
+						<value>
+							<researchViewX>20.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/researchViewY</xpath>
+						<value>
+							<researchViewY>28.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="XmlExtensions.PatchOperationSafeAdd">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]</xpath>
+						<safetyDepth>2</safetyDepth>
+						<compare>Both</compare>
+						<value>
+							<requiredResearchFacilities>
+							  <li>LabTerminal</li>
+							  <li>MultiAnalyzer</li>
+							</requiredResearchFacilities>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/researchViewX</xpath>
+						<value>
+							<researchViewX>20.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/researchViewY</xpath>
+						<value>
+							<researchViewY>29.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/researchViewX</xpath>
+						<value>
+							<researchViewX>20.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/researchViewX</xpath>
+						<value>
+							<researchViewX>20.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/researchViewY</xpath>
+						<value>
+							<researchViewY>30.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/researchViewX</xpath>
+						<value>
+							<researchViewX>20.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/researchViewY</xpath>
+						<value>
+							<researchViewY>27.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/researchViewX</xpath>
+						<value>
+							<researchViewX>20.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/researchViewY</xpath>
+						<value>
+							<researchViewY>31.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/researchViewX</xpath>
+						<value>
+							<researchViewX>20.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/researchViewY</xpath>
+						<value>
+							<researchViewY>25.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/researchViewX</xpath>
+						<value>
+							<researchViewX>21.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/researchViewX</xpath>
+						<value>
+							<researchViewX>21.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/researchViewY</xpath>
+						<value>
+							<researchViewY>25.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+					
+					</operations>
+				</match> <!-- ============= If no SOS2 ============== -->
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/researchViewX</xpath>
+						<value>
+							<researchViewX>25.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/researchViewY</xpath>
+						<value>
+							<researchViewY>23.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/tab</xpath>
+						<value>
+							<tab>Buildings_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitesManagement"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/researchViewX</xpath>
+						<value>
+							<researchViewX>26.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/researchViewY</xpath>
+						<value>
+							<researchViewY>28.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteLoyalist"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/researchViewX</xpath>
+						<value>
+							<researchViewX>26.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/researchViewY</xpath>
+						<value>
+							<researchViewY>29.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatellitePercival"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/researchViewX</xpath>
+						<value>
+							<researchViewX>26.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMegalith"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/researchViewX</xpath>
+						<value>
+							<researchViewX>26.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/researchViewY</xpath>
+						<value>
+							<researchViewY>30.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteTitan"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/researchViewX</xpath>
+						<value>
+							<researchViewX>26.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/researchViewY</xpath>
+						<value>
+							<researchViewY>27.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteSalem"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/researchViewX</xpath>
+						<value>
+							<researchViewX>26.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/researchViewY</xpath>
+						<value>
+							<researchViewY>31.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_SatelliteMonkeylord"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/researchViewX</xpath>
+						<value>
+							<researchViewX>26.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/researchViewY</xpath>
+						<value>
+							<researchViewY>25.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationManagement"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/researchViewX</xpath>
+						<value>
+							<researchViewX>27.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationContinental"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/researchViewX</xpath>
+						<value>
+							<researchViewX>27.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/researchViewY</xpath>
+						<value>
+							<researchViewY>25.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/tab</xpath>
+						<value>
+							<tab>Craft_SK</tab>
+						</value>
+					</li>
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+						<nomatch Class="PatchOperationConditional">
+							<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/modExtensions</xpath>
+							<match Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]/modExtensions</xpath>
+								<value>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>/Defs/ResearchProjectDef[defName="Cosmos_StationScathis"]</xpath>
+								<value>
+								<modExtensions>
+									<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+								</modExtensions>
+								</value>
+							</nomatch>
+						</nomatch>
+					</li>
+					
+					</operations>
+				</nomatch>
+			</li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

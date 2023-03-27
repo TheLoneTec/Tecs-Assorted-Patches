@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--HSK-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<!-- ========== File Cabinate ========== -->
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="Misc_FileCabinet"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "HiTechResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="Misc_FileCabinet"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Misc_FileCabinet"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "Light_ModernLamp"]</xpath>
+			</li>
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName = "Bed_Kingsize"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_ArtableBedBase</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Bed_Kingsize"]/statBases</xpath>
+				<value>
+					<statBases>
+						<WorkToBuild>1700</WorkToBuild>
+						<Beauty>12</Beauty>
+						<Comfort>0.95</Comfort>
+						<BedRestEffectiveness>1.05</BedRestEffectiveness>
+						<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+						<SurgerySuccessChanceFactor>0.97</SurgerySuccessChanceFactor>
+						<Bulk>165</Bulk>
+						<Mass>55</Mass>
+					</statBases>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name = "SK_BedBase"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+				  <li>Table_RoyalDresser</li>
+				  <li>Table_RoyalEndTable</li>
+				  <li>Table_Wardrobe</li>
+				  <li>Table_LightEndTable</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Royalty</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="DoubleBed"]]</xpath>
+						<value>
+						  <li>Bed_Kingsize</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="EndTable"]</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
+							<value>
+							<li Class = "RoomRequirement_ThingAnyOf">
+								<things>
+									<li>EndTable</li>
+									<li>Table_RoyalEndTable</li>
+								</things>
+							</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="EndTable"]]</xpath>
+						<value>
+							<li>Table_RoyalEndTable</li>
+						</value>
+						</nomatch>
+					</li>
+					
+					<li Class="PatchOperationConditional">
+						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="Dresser"]</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
+							<value>
+							<li Class = "RoomRequirement_ThingAnyOf">
+								<things>
+									<li>Dresser</li>
+									<li>Table_RoyalDresser</li>
+								</things>
+							</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things[li[text()="Dresser"]]</xpath>
+						<value>
+							<li>Table_RoyalDresser</li>
+						</value>
+						</nomatch>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Light_Streetlamp"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+<!--
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Seat_SquareChair"]/researchPrerequisites/li[text()="MF_ComplexFurniture"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="Seat_SquareChair"]/researchPrerequisites/li[text()="MF_ComplexFurniture"]</xpath>
+				</match>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[@ParentName="LampBase"]</xpath>
+				<match Class="PatchOperationAttributeSet">
+					<xpath>/Defs/ThingDef[@ParentName = "LampBase"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_LampBase</value>
+				</match>
+			</li>
+-->
+				<!-- ========== End Table ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Table_LightEndTable"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Beds_C2</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+				<!-- ========== Street Light ========== -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Light_Streetlamp"]</xpath>
+					<value>
+						<researchPrerequisites Inherit="false">
+							<li>Light_C3</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<!-- ========== Square Chair ========== -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Seat_SquareChair"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Tables_B2</li>
+					</researchPrerequisites>
+					</value>
+				</li>
+
+				<!-- ========== Stone Campfire ========== -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Stone_Campfire"]/inspectorTabs</xpath>			
+					<value>
+						<li>SK.ITab_Fuel</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Stone_Campfire"]/comps</xpath>			
+					<value>
+					<comps>
+						<li>
+							<compClass>CompGatherSpot</compClass>
+						</li>
+						<li Class="CompProperties_Glower">
+							<glowRadius>12</glowRadius>
+							<glowColor>(252,187,113,0)</glowColor>
+						</li>
+						<li Class="SK.CompProperties_HeatPusherAdvanced">
+							<compClass>SK.CompHeatPusherAdvanced</compClass>
+							<heatPerSecond>15</heatPerSecond>
+							<heatPushMaxTemperature>24</heatPushMaxTemperature>
+						</li>
+						<li Class="SK.CompFueled_Properties">
+							<operatingTemp>300</operatingTemp>
+							<fireDrawOffset>(0,0.15,0.1)</fireDrawOffset>
+							<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+							<fuelDrawOffset>(0,0.1,0.01)</fuelDrawOffset>
+							<fuelDrawScale>0.7</fuelDrawScale>
+							<fuelCapacity>30</fuelCapacity>
+							<burnFuelMultiplier>0.6</burnFuelMultiplier>
+							<smokesize>0.3</smokesize>
+							<canAutoBurn>true</canAutoBurn>
+							<effectOnWeather>true</effectOnWeather>
+							<smokeDensity>2</smokeDensity>
+							<fuelFilter>
+								<thingDefs>
+									<li>Charcoal</li>
+									<li>Coal</li>
+									<li>Kindling</li>
+								</thingDefs>
+								<categories>
+									<li>Wooden</li>
+									<li>Woody</li>
+								</categories> 
+							</fuelFilter>
+						</li>
+						<li Class="CompProperties_MeditationFocus">
+							<statDef>MeditationFocusStrength</statDef>
+							<focusTypes>
+								<li>Flame</li>
+							</focusTypes>
+							<offsets>
+								<li Class="FocusStrengthOffset_Lit">
+									<offset>0.12</offset>
+								</li>
+								<li Class="FocusStrengthOffset_BuildingDefsLit">
+									<defs>
+										<li>Campfire</li>
+										<li>BowlLamp</li>
+										<li>Candle</li>
+										<li>TorchLamp</li>
+										<li MayRequire="Ludeon.RimWorld.Royalty">Brazier</li>
+										<li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+										<li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+										<li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+									</defs>
+									<radius>9.9</radius>
+									<maxBuildings>8</maxBuildings>
+									<offsetPerBuilding>0.02</offsetPerBuilding>
+									<explanationKey>MeditationFocusPerFlame</explanationKey>
+									<explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+								</li>
+							</offsets>
+						</li>
+					</comps>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+		
+	</Operation>
+</Patch>

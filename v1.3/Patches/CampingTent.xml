@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Camping Tent</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<!-- ========== Architect ========== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_CampingTent</defName>
+						<label>Camping Gear</label>
+						<description>For all your caravaning needs.</description>
+						<defNames>
+							<li>Canopy</li>
+							<li>WoodenCanopy</li>
+							<li>Teepee</li>
+							<li>Tent</li>
+							<li>VikingTent</li>
+							<li>ModernTent</li>
+							<li>FoldingTent</li>
+							<li>CampingLuggages</li>
+							<li>WoodPile</li>
+						</defNames>
+						<designationCategory>Furniture</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			<!-- =========== Canopy ============== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Canopy"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodPlank>10</WoodPlank>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Canopy"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			
+			<!-- =========== WoodenCanopy ============== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodPlank>50</WoodPlank>
+					</costList>
+				</value>
+			</li>
+			
+			<!-- =========== Teepee ============== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Teepee"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodPlank>20</WoodPlank>
+					</costList>
+				</value>
+			</li>
+			
+			<!-- =========== Tent ============== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Tent"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodPlank>20</WoodPlank>
+					</costList>
+				</value>
+			</li>
+
+			<!-- =========== VikingTent ============== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VikingTent"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodPlank>30</WoodPlank>
+					</costList>
+				</value>
+			</li>
+
+			<!-- =========== ModernTent ============== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "ModernTent"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodPlank>30</WoodPlank>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="ModernTent"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="ModernTent"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Beds_C1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="FoldingTent"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="FoldingTent"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Beds_C1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+			
+			<!-- =========== CampingLuggages ============== -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName = "CampingLuggages"]/costList</xpath>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "CampingLuggages"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Fabric</li>
+						<li>Leathery</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

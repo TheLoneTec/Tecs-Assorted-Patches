@@ -1,0 +1,2741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Save Our Ship 2</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ResearchProjectDef[@Name="ArchotechResearchProjectBase"]/tab</xpath>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipEngine"]</xpath>
+                <value>
+				<ResearchProjectDef ParentName="HitechLabStationBase">
+					<defName>ShipEngine</defName>
+					<label>rocket propulsion</label>
+					<description>Construct chemical engines for a ship. These can reach orbit, but no further.</description>
+					<baseCost>1000</baseCost>
+					<techLevel>Industrial</techLevel>
+					<prerequisites>
+						<li>ShipBasics</li>
+					</prerequisites>
+					<researchViewX>18.00</researchViewX>
+					<researchViewY>7.00</researchViewY>
+					<tab>Buildings_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
+				</ResearchProjectDef>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipEngine"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipEngine"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipEngine"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipEngine"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipEngine"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipEngine"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipEngine"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechMechanites"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>24.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechMechanites"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechMechanites"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechanites"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechanites"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechanites"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechanites"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipReactor"]</xpath>
+                <value>
+				<ResearchProjectDef ParentName="HitechLabStationBase">
+					<defName>ShipReactor</defName>
+					<label>ship fission reactor</label>
+					<description>Burn uranium fuel pods for long-term power.</description>
+					<baseCost>2000</baseCost>
+					<techLevel>Spacer</techLevel>
+					<prerequisites>
+						<li>ShipBasics</li>
+					</prerequisites>
+					<researchViewX>19.00</researchViewX>
+					<researchViewY>1.00</researchViewY>
+					<tab>Buildings_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
+				</ResearchProjectDef>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipReactor"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipReactor"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>1.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipReactor"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipReactor"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipReactor"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipReactor"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipReactor"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+			
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipLifeSupport"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipLifeSupport"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipLifeSupport"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipLifeSupport"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipLifeSupport"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipLifeSupport"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipLifeSupport"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicField"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>23.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicField"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>5.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicField"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicField"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicField"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicField"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicField"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCapacitor"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCapacitor"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>4.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCapacitor"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipCapacitor"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipCapacitor"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipCapacitor"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipCapacitor"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSalvageBay"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSalvageBay"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>5.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSalvageBay"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipSalvageBay"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipSalvageBay"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSalvageBay"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSalvageBay"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
+                <value>
+				<ResearchProjectDef ParentName="HitechLabStationBase">
+					<defName>ShipSensorCluster</defName>
+					<label>basic ship sensors</label>
+					<description>Construct sensors for a ship, capable of basic navigation and observing areas from orbit.</description>
+					<baseCost>1000</baseCost>
+					<techLevel>Spacer</techLevel>
+					<prerequisites>
+					  <li>ShipBasics</li>
+					  <!--<li>GroundPenetratingScanner</li>-->
+					  <li>LongRangeMineralScanner</li>
+					</prerequisites>
+					<researchViewX>18.00</researchViewX>
+					<researchViewY>6.00</researchViewY>
+					<tab>Buildings_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
+				</ResearchProjectDef>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>6.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipSensorCluster"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipSensorCluster"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSensorCluster"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSensorCluster"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorClusterAdv"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorClusterAdv"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>6.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorClusterAdv"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipSensorClusterAdv"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipSensorClusterAdv"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSensorClusterAdv"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSensorClusterAdv"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipPilotSeat"]/prerequisites/li[text()="ShipBasics"]</xpath>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipPilotSeat"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipPilotSeat"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipPilotSeat"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipPilotSeat"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipPilotSeat"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipPilotSeat"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipPilotSeat"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanites"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttlePersonal"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttlePersonal"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>11.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttlePersonal"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShuttlePersonal"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShuttlePersonal"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttlePersonal"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttlePersonal"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttlePersonal"]/requiredResearchBuilding</xpath>
+                <value>
+                    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                </value>
+            </li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ShuttlePersonal"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>1.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechMechaniteWeapon"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicEffectors"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicEffectors"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>4.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicEffectors"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicEffectors"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicEffectors"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicEffectors"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicEffectors"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuits"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuits"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>4.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuits"]/tab</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuits"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuits"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuits"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuits"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>24.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicManipulation"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretLaser"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretLaser"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>8.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretLaser"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLaser"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLaser"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLaser"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLaser"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechVanometrics"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechVanometrics"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechVanometrics"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechVanometrics"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechVanometrics"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechVanometrics"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechVanometrics"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretPlasma"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretPlasma"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>10.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretPlasma"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipTurretPlasma"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipTurretPlasma"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretPlasma"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretPlasma"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechShields"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechShields"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>6.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechShields"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechShields"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechShields"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechShields"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechShields"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretKinetic"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretKinetic"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretKinetic"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipTurretKinetic"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipTurretKinetic"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretKinetic"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretKinetic"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechAntimatter"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechAntimatter"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>5.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechAntimatter"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechAntimatter"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechAntimatter"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechAntimatter"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechAntimatter"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechBioMechanitesTwo"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]</xpath>
+                <value>
+				<ResearchProjectDef ParentName="HitechLabStationBase">
+					<defName>ShipComputerCore</defName>
+					<label>ship computer core</label>
+					<description>Allows coercing an existing AI persona into a usable ship computer core for long-range guidance.</description>
+					<baseCost>3000</baseCost>
+					<techLevel>Spacer</techLevel>
+					<prerequisites>
+						<!--<li>ShipBasics</li>-->
+						<li>ShipPilotSeat</li>
+					</prerequisites>
+					<researchViewX>20.00</researchViewX>
+					<researchViewY>7.00</researchViewY>
+					<tab>Buildings_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
+				</ResearchProjectDef>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipComputerCore"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipComputerCore"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipComputerCore"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipComputerCore"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipComputerCore"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SoSArchotechOrgans"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SoSArchotechOrgans"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>8.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="SoSArchotechOrgans"]</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="SoSArchotechOrgans"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="SoSArchotechOrgans"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="SoSArchotechOrgans"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="SoSArchotechOrgans"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipShuttleBay"]/prerequisites/li[text()="ShipBasics"]</xpath>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipShuttleBay"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipShuttleBay"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>10.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipShuttleBay"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipShuttleBay"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipShuttleBay"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipShuttleBay"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipShuttleBay"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechHullConversion"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechHullConversion"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>2.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechHullConversion"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechHullConversion"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechHullConversion"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechHullConversion"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechHullConversion"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="ShuttleCargo"]/prerequisites/li[text()="ShipBasics"]</xpath>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleCargo"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleCargo"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>11.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleCargo"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShuttleCargo"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShuttleCargo"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttleCargo"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttleCargo"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>4.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsychicWeapon"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ShipSpaceSuitsHeavy"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabTerminal</li>
+					  <li>MultiAnalyzer</li>
+					  <li>LabStation</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>8.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechBroadManipulation"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHeatsink"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHeatsink"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>2.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHeatsink"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipHeatsink"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipHeatsink"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipHeatsink"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipHeatsink"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsylink"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsylink"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPsylink"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsylink"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsylink"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsylink"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPsylink"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretMedium"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretMedium"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretMedium"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipTurretMedium"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipTurretMedium"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretMedium"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretMedium"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechHeatsink"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechHeatsink"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>6.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechHeatsink"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechHeatsink"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechHeatsink"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechHeatsink"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechHeatsink"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipShields"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipShields"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipShields"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipShields"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipShields"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipShields"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipShields"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechAnimals"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>27.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechAnimals"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>8.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechAnimals"]</xpath>
+                <value>
+                    <tab>Animal_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechAnimals"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechAnimals"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechAnimals"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechAnimals"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPlants"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>27.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPlants"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPlants"]</xpath>
+                <value>
+                    <tab>Plants_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPlants"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPlants"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPlants"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPlants"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretAC"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretAC"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>10.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretAC"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipTurretAC"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipTurretAC"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretAC"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretAC"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCloaking"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCloaking"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>5.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCloaking"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipCloaking"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipCloaking"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipCloaking"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipCloaking"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretLarge"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>21.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretLarge"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTurretLarge"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLarge"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLarge"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLarge"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTurretLarge"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechReactor"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechReactor"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechReactor"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechReactor"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechReactor"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechReactor"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechReactor"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTorpedoes"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTorpedoes"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>11.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipTorpedoes"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipTorpedoes"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipTorpedoes"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTorpedoes"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipTorpedoes"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechEngine"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechEngine"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>5.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechEngine"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechEngine"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechEngine"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechEngine"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechEngine"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Crittersleep"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Crittersleep"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>8.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Crittersleep"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="Crittersleep"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="Crittersleep"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Crittersleep"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Crittersleep"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="HullFoam"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="HullFoam"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="HullFoam"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="HullFoam"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="HullFoam"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="HullFoam"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="HullFoam"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleHeavy"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>21.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleHeavy"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>11.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleHeavy"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShuttleHeavy"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShuttleHeavy"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttleHeavy"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttleHeavy"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHeatManifold"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>22.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHeatManifold"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>9.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHeatManifold"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipHeatManifold"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipHeatManifold"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipHeatManifold"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipHeatManifold"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAdvRadiator"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>22.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAdvRadiator"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>10.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAdvRadiator"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipAdvRadiator"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipAdvRadiator"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipAdvRadiator"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipAdvRadiator"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>14.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>19.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Basic"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Basic"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Basic"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Basic"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]</xpath>
+                <value>
+					<prerequisites>
+					  <li>FlatscreenTelevision</li>
+					  <li>Light_C5</li>
+					  <li>Research_table_C2</li>
+					</prerequisites>
+                </value>
+            </li>
+
+			<li Class="PatchOperationAttributeAdd"> 
+			    <xpath>/Defs/ResearchProjectDef[defName="Holodeck_Basic"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>HitechBase</value>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeRemove">
+				<xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/modExtensions/li[@Class="SK.AdvancedResearchExtension"]</xpath>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Basic"]/requiredResearchBuilding</xpath>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+                <value>
+				<ResearchProjectDef ParentName="HitechLabStationBase">
+					<defName>ShipCryptosleep</defName>
+					<label>automatic ejection</label>
+					<description>Construct a specialized cryptosleep casket which does not need to be opened manually and can function as an escape pod. It would be a good idea to have at least one aboard a starship.</description>
+					<baseCost>800</baseCost>
+					<techLevel>Spacer</techLevel>
+					<prerequisites>
+					  <li>ShipBasics</li>
+					  <li>Cryptosleep</li>
+					</prerequisites>
+					<researchViewX>19.00</researchViewX>
+					<researchViewY>12.00</researchViewY>
+					<tab>Buildings_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
+				</ResearchProjectDef>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>12.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipCryptosleep"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipCryptosleep"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipCryptosleep"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipCryptosleep"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipCryptosleep"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarA"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarA"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>14.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarA"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarA"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarA"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarA"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarA"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarB"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarB"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>15.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarB"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarB"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarB"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarB"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarB"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleDropship"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>22.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleDropship"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>11.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShuttleDropship"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShuttleDropship"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShuttleDropship"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttleDropship"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShuttleDropship"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarC"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarC"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarC"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarC"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarC"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarC"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarC"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarD"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarD"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>16.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechPillarD"]</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarD"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarD"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarD"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechPillarD"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAIHologram"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>21.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAIHologram"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAIHologram"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipAIHologram"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipAIHologram"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipAIHologram"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipAIHologram"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Standard"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Standard"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>19.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_Standard"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Standard"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Standard"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Standard"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Holodeck_Standard"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHologramRepeater"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>22.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHologramRepeater"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>7.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipHologramRepeater"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipHologramRepeater"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipHologramRepeater"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipHologramRepeater"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipHologramRepeater"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAvatarCasket"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>22.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAvatarCasket"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>6.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipAvatarCasket"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipAvatarCasket"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipAvatarCasket"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipAvatarCasket"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipAvatarCasket"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ResearchProjectDef[defName="Holodeck_AI"]/prerequisites/li[text()="MultiAnalyzer"]</xpath>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_AI"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_AI"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Holodeck_AI"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="Holodeck_AI"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="Holodeck_AI"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Holodeck_AI"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="Holodeck_AI"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SoSJTDrive"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SoSJTDrive"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>2.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SoSJTDrive"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="SoSJTDrive"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="SoSJTDrive"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="SoSJTDrive"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="SoSJTDrive"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechExotics"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>24.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechExotics"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>6.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ArchotechExotics"]</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ArchotechExotics"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ArchotechExotics"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechExotics"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ArchotechExotics"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+                <value>
+				<ResearchProjectDef ParentName="HitechLabStationBase">
+					<defName>ShipBasics</defName>
+					<label>Starflight basics</label>
+					<description>Construct the structural and supportive elements of a starship. This is the first step in building a ship to leave this star system.</description>
+					<baseCost>4000</baseCost>
+					<techLevel>Spacer</techLevel>
+					<prerequisites>
+						<li>AdvancedFabrication</li>
+					</prerequisites>
+					<researchViewX>17.00</researchViewX>
+					<researchViewY>3.00</researchViewY>
+					<tab>Craft_SK</tab>
+					<modExtensions>
+						<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+					</modExtensions>
+					<discoveredLetterTitle>About: Launching the ship</discoveredLetterTitle>
+					<discoveredLetterText>Escaping from this planet - it would be freedom at last, and maybe a return home.\n\nBut before you can even consider interstellar spaceflight, you'll need to reach orbit. The minimum requirements for a spaceworthy craft are a rocket engine, a ship bridge, basic sensors, and a shuttle bay. To survive in space, your colonists will also need either a life-support system or EVA suits.\n\nThe amount of chemfuel required to launch a ship into orbit depends on its size. Larger ships may need multiple rocket engines, one per 1,000 units of chemfuel.</discoveredLetterText>
+					<discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty>
+				</ResearchProjectDef>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>17.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>3.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipBasics"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ShipBasics"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+
+		</operations>
+		</match>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShipSensorCluster"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>17.00</researchViewY>
+                </value>
+            </li>
+			
+			</operations>
+		</nomatch>
+    </Operation>	
+</Patch>	

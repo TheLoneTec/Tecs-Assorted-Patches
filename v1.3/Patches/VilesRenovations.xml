@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vile's Hardcore Renovations</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="RH_MediumHeater"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>InteriorWall</li>
+				<li>InteriorWall_Stripe</li>
+				<li>InteriorWall_Floral</li>
+				<li>InteriorWall_Leafy</li>
+				<li>LogWall</li>
+				<li>ClapboardWall</li>
+				<li>BambooWall</li>
+				<li>MudWall</li>
+				<li>AdobeWall</li>
+				<li>WattleWall</li>
+				<li>WoodPanelWall</li>
+				<li>CeramicTileWall</li>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="RH_SmallCooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>InteriorWall</li>
+				<li>InteriorWall_Stripe</li>
+				<li>InteriorWall_Floral</li>
+				<li>InteriorWall_Leafy</li>
+				<li>LogWall</li>
+				<li>ClapboardWall</li>
+				<li>BambooWall</li>
+				<li>MudWall</li>
+				<li>AdobeWall</li>
+				<li>WattleWall</li>
+				<li>WoodPanelWall</li>
+				<li>CeramicTileWall</li>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="Cooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>InteriorWall</li>
+				<li>InteriorWall_Stripe</li>
+				<li>InteriorWall_Floral</li>
+				<li>InteriorWall_Leafy</li>
+				<li>LogWall</li>
+				<li>ClapboardWall</li>
+				<li>BambooWall</li>
+				<li>MudWall</li>
+				<li>AdobeWall</li>
+				<li>WattleWall</li>
+				<li>WoodPanelWall</li>
+				<li>CeramicTileWall</li>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="Vent"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+			  <value>
+				<li>InteriorWall</li>
+				<li>InteriorWall_Stripe</li>
+				<li>InteriorWall_Floral</li>
+				<li>InteriorWall_Leafy</li>
+				<li>LogWall</li>
+				<li>ClapboardWall</li>
+				<li>BambooWall</li>
+				<li>MudWall</li>
+				<li>AdobeWall</li>
+				<li>WattleWall</li>
+				<li>WoodPanelWall</li>
+				<li>CeramicTileWall</li>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
+			<value>
+			<defNames>
+				<li>WattleFence</li>
+				<li>Fence</li>
+				<li>DryStoneWall</li>
+				<li>PalisadeWall</li>
+				<li>ChainFence</li>
+				<li>TechFence</li>
+			</defNames>
+			</value>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Save Our Ship 2</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName="RH_MediumHeater"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				  <value>
+					<li>Ship_BeamArchotech</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName="RH_SmallCooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				  <value>
+					<li>Ship_BeamArchotech</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName="Cooler"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				  <value>
+					<li>Ship_BeamArchotech</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName="Vent"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+				  <value>
+					<li>Ship_BeamArchotech</li>
+				  </value>
+				</li>
+
+				</operations>
+				</match>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

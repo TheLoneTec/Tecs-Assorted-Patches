@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Animal Equipment</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AnimalRidingGear"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>2.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AnimalRidingGear"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AnimalRidingGear"]/tab</xpath>
+                <value>
+                    <tab>Animal_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="AnimalRidingGear"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="AnimalRidingGear"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="AnimalRidingGear"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="AnimalRidingGear"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ComplexAnimalClothing"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>6.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ComplexAnimalClothing"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ComplexAnimalClothing"]/tab</xpath>
+                <value>
+                    <tab>Animal_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ComplexAnimalClothing"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ComplexAnimalClothing"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ComplexAnimalClothing"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ComplexAnimalClothing"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PlateAnimalArmor"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>7.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PlateAnimalArmor"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PlateAnimalArmor"]/tab</xpath>
+                <value>
+                    <tab>Animal_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PlateAnimalArmor"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PlateAnimalArmor"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PlateAnimalArmor"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PlateAnimalArmor"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="FlakAnimalArmor"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>14.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="FlakAnimalArmor"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>41.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="FlakAnimalArmor"]/tab</xpath>
+                <value>
+                    <tab>Animal_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="FlakAnimalArmor"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="FlakAnimalArmor"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="FlakAnimalArmor"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="FlakAnimalArmor"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>40.00</researchViewY>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]/tab</xpath>
+                <value>
+                    <tab>Animal_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="PoweredAnimalArmor"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabStation</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	
