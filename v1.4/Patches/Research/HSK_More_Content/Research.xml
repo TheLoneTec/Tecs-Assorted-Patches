@@ -7,7 +7,7 @@
 	</mods>
 	<match Class="PatchOperationSequence">
 		<operations>
-
+<!--
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="MicroTurretsThree_HMC"]/researchViewX</xpath>
                 <value>
@@ -20,7 +20,7 @@
                     <researchViewY>35.00</researchViewY>
                 </value>
             </li>
-
+-->
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Armor_F1_HMC"]/researchViewX</xpath>
                 <value>
