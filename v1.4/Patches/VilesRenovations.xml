@@ -8,6 +8,24 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="wall_angle" or defName="wall_angle_north"]</xpath>
+			  <value>
+				<researchPrerequisites>
+					<li>Construction_B1</li>
+				</researchPrerequisites>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="wallCabin_angle" or defName="wallCabin_angle_north"]</xpath>
+			  <value>
+				<researchPrerequisites>
+					<li>Fortification_A1</li>
+				</researchPrerequisites>
+			  </value>
+			</li>
 	
 			<li Class="PatchOperationAdd">
 			  <xpath>Defs/ThingDef[defName="RH_MediumHeater"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>

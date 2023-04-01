@@ -17,6 +17,13 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "Norballo_Loincloth"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite Inherit="False" IsNull="True"/>
+				</value>
+			</li>
+
 			</operations>
 		</match>
     </Operation>

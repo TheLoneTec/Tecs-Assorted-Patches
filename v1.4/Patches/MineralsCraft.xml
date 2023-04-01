@@ -8,6 +8,60 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Woodcutting_Handaxe"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Mining_Pickaxe"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Building_Hammer"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Sickle"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Hoe"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ZF_NeolithicToolsI"]</xpath>
+				<value>
+					<tags>
+						<li>TribalStart</li>
+					</tags>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa" or defName="MeleeWeapon_Spear" or defName="MeleeWeapon_Mace" or defName="MeleeWeapon_BreachAxe"]</xpath>
+				<value>
+					<recipeMaker>
+						<researchPrerequisite>Craft_B1</researchPrerequisite>
+					</recipeMaker>
+				</value>
+			</li>
+	
 <!--
 			<li Class="PatchOperationAdd">
 			  <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_Flagstone"]/defNames</xpath>

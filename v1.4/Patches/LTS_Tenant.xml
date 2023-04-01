@@ -1943,6 +1943,15 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="LTS_NoticeBoard"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>ComplexFurniture</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
 			</operations>
 		</match>
 	</Operation>
