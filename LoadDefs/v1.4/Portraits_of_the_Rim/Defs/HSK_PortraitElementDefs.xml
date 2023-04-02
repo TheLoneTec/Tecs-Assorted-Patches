@@ -84,4 +84,16 @@
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-AHSpjmw</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/ERNHairs2-an-ERNsideswept</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>AHSpjmw</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
 </Defs>
