@@ -80,6 +80,18 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Tent"]/researchPrerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Tent"]/researchPrerequisites</xpath>
+					<value>
+					<researchPrerequisites>
+						<li>Beds_A1</li>
+					</researchPrerequisites>
+					</value>
+				</match>
+			</li>
+
 			<!-- =========== VikingTent ============== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "VikingTent"]/costList</xpath>
