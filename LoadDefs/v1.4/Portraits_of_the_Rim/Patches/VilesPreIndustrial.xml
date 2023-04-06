@@ -70,41 +70,60 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-l-tribalwear"]/requirements/apparels</xpath>
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-l-tribalwear"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
 				<value>
-					<apparels>
-						<li>Norballo_Loincloth</li>
-					</apparels>
+					<li>Norballo_Loincloth</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-m-tribalwear"]/requirements/apparels</xpath>
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-l-tribalwear-styleimpid"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
 				<value>
-					<apparels>
-						<li>Norballo_Loincloth</li>
-					</apparels>
+					<li>Norballo_Loincloth</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-s-tribalwear"]/requirements/apparels</xpath>
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-m-tribalwear"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
 				<value>
-					<apparels>
-						<li>Norballo_Loincloth</li>
-					</apparels>
+					<li>Norballo_Loincloth</li>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-xl-tribalwear"]/requirements/apparels</xpath>
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-m-tribalwear-styleimpid"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
 				<value>
-					<apparels>
-						<li>Norballo_Loincloth</li>
-					</apparels>
+					<li>Norballo_Loincloth</li>
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-s-tribalwear"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
+				<value>
+					<li>Norballo_Loincloth</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-s-tribalwear-styleimpid"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
+				<value>
+					<li>Norballo_Loincloth</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-xl-tribalwear"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
+				<value>
+					<li>Norballo_Loincloth</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-xl-tribalwear-styleimpid"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
+				<value>
+					<li>Norballo_Loincloth</li>
+				</value>
+			</li>
 
 			</operations>
 		</match>

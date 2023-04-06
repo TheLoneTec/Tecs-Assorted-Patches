@@ -116,7 +116,7 @@
 					<xpath>Defs/ThingDef[defName="VikingTent"]/researchPrerequisites</xpath>
 					<value>
 					<researchPrerequisites>
-						<li>Beds_A1</li>
+						<li>Beds_B1</li>
 					</researchPrerequisites>
 					</value>
 				</match>
@@ -124,7 +124,7 @@
 					<xpath>Defs/ThingDef[defName="VikingTent"]</xpath>
 					<value>
 					<researchPrerequisites>
-						<li>Beds_A1</li>
+						<li>Beds_B1</li>
 					</researchPrerequisites>
 					</value>
 				</nomatch>
