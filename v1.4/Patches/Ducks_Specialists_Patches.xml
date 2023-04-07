@@ -9,7 +9,7 @@
 		<operations>
 	
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/PreceptDef[contains(defName,"IdeoRole_")]/roleDisabledWorkTags[contains(li)]</xpath>
+				<xpath>Defs/PreceptDef[contains(defName,"IdeoRole_")]/roleDisabledWorkTags[li]</xpath>
 				<value>
 					<roleDisabledWorkTags></roleDisabledWorkTags>
 				</value>
