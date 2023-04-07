@@ -41,6 +41,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Hospitality: Casino](https://steamcommunity.com/sharedfiles/filedetails/?id=2939292644) - Architect Menu, Material Conversion, Research Adjustment
 - [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
 - [Melee Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2944488802) (Patch for many melee weapons for HSK mods)
+- [Specialists Can Work!](https://steamcommunity.com/sharedfiles/filedetails/?id=2553525357) (Universal Specialists Patch)
 
 Other 1.4 Additions:
 
