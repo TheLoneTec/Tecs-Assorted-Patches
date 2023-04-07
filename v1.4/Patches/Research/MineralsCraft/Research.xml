@@ -11,7 +11,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>2.00</researchViewX>
+                    <researchViewX>4.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -59,7 +59,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>4.00</researchViewX>
+                    <researchViewX>6.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
