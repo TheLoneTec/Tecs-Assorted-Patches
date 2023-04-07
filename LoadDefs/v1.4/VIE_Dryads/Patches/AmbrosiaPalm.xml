@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class ="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+						  <defName>Seed_VDE_AmbrosiaPalm</defName>
+						  <label>ambrosia palm seeds</label>
+						  <sources>
+							<li>VDE_AmbrosiaPalm</li>
+						  </sources>
+						</SeedsPlease.SeedDef>
+
+						<RecipeDef ParentName="ExtractSeed">
+						  <defName>ExtractSeed_VDE_AmbrosiaPalm</defName>
+						  <label>extract ambrosia palm seeds</label>
+						  <description>Extract seeds from Ambrosia</description>
+						  <ingredients>
+							<li>
+							  <filter>
+								<thingDefs>
+								  <li>Ambrosia</li>
+								</thingDefs>
+							  </filter>
+							  <count>25</count>
+							</li>
+						  </ingredients>
+						  <fixedIngredientFilter>
+							<thingDefs>
+							  <li>Ambrosia</li>
+							</thingDefs>
+						  </fixedIngredientFilter>
+						  <products>
+							<Seed_VDE_AmbrosiaPalm>3</Seed_VDE_AmbrosiaPalm>
+						  </products>
+						</RecipeDef>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
