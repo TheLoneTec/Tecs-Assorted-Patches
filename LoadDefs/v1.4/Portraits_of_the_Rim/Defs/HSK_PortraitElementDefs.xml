@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<PortraitsOfTheRim.PortraitLayerDef>
+		<defName>PR_UnderClothingTorso</defName>
+		<layer>6.5</layer>
+	</PortraitsOfTheRim.PortraitLayerDef>
+
+	<!-- HSK Hairs -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-MA</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/MA</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>MA</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
 	<PortraitsOfTheRim.PortraitElementDef>
 		<defName>PR_OuterHair_HSKHair-BraidedKnot</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
@@ -93,6 +112,218 @@
 		<requirements>
 			<ageRange>7~999</ageRange>
 			<hair>AHSpjmw</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<!-- SPS Hairs -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-SPSAda</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/SPSAda</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSAda</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-SPSUsagi</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/ERNHairs2-cn-ERNcroppedbuns</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSUsagi</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSK-cn-SPSCurly</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-cn-curly</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<hair>SPSCurly</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSK-an-SPSCurly</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-an-curly</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<hair>SPSCurly</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSK-SPSFlora</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/SPSFlora</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSFlora</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSK-SPSLeon</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-an-mop</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSLeon</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSK-SPSRasta</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-an-locks</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSRasta</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSK-SPSLei</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/SPSLei</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSLei</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSK-SPSBetty</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/SPSBetty</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSBetty</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-SPSKat</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/VEHair-cn-sad</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSKat</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<!-- Apparel -->
+	
+	<!-- Inner Clothing -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingTorso_HSK-l-rags</defName>
+		<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingTorso/VEhatsandrags-l-rags</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Large</bodyType>
+			<apparels>
+				<li>Apparel_RagDressB</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingTorso_HSK-m-rags</defName>
+		<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingTorso/VEhatsandrags-m-rags</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Medium</bodyType>
+			<apparels>
+				<li>Apparel_RagDressB</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingTorso_HSK-s-rags</defName>
+		<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingTorso/VEhatsandrags-s-rags</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Small</bodyType>
+			<apparels>
+				<li>Apparel_RagDressB</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingTorso_HSK-xl-rags</defName>
+		<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingTorso/VEhatsandrags-xl-rags</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>ExtraLarge</bodyType>
+			<apparels>
+				<li>Apparel_RagDressB</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<!-- Head -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHeadgear_HSK_BearHeaddress</defName>
+		<portraitLayer>PR_OuterHeadgear</portraitLayer>
+		<graphicData>
+			<texPath>OuterHeadgear/VEVikings-an-VFEV_BearHeaddress</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<apparels>
+				<li>Apparell_ArcticWolfHood</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHeadgear_HSK_Bandana</defName>
+		<portraitLayer>PR_OuterHeadgear</portraitLayer>
+		<graphicData>
+			<texPath>OuterHeadgear/Bandana</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<apparels>
+				<li>Apparello_pieband</li>
+			</apparels>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Biotech</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>Biotech_HSK-l-sash</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Biotech-Sash-l</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>Apparel_Sash</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>Biotech_HSK-m-sash</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Biotech-Sash-m</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>Apparel_Sash</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>Biotech_HSK-s-sash</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Biotech-Sash-s</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>Apparel_Sash</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>Biotech_HSK-xl-sash</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Biotech-Sash-xl</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>Apparel_Sash</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

@@ -66,6 +66,65 @@
 							</apparels>
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<!-- Middle Clothing Shoulder -->
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-l-packBasket</defName>
+						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/HSK-l-Basket</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>CE_Apparel_TribalBackpack</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-m-packBasket</defName>
+						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/HSK-m-Basket</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>CE_Apparel_TribalBackpack</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-s-packBasket</defName>
+						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/HSK-s-Basket</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>CE_Apparel_TribalBackpack</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-xl-packBasket</defName>
+						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/HSK-xl-Basket</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>CE_Apparel_TribalBackpack</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
 				</value>
 			</li>
 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>UnderWhere</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-l-Tanktop-styleimpid</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingShoulder/VEApparel-l-Tanktop-styleimpid</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+							<style>impid</style>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-l-Tanktop</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingShoulder/VEApparel-l-Tanktop</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+				</value>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

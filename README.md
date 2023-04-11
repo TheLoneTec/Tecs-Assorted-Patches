@@ -3,8 +3,6 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N0IDAUM)
 
-[![paypal](https://i.imgur.com/TUeOTx8.png)](https://www.paypal.com/donate/?hosted_button_id=BP26RP8BC6AWJ)
-
 # 1.4 Patches for:
 - [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i have my own version for HSK in [addons (Celsius SK)](https://discord.com/channels/272340793174392832/1065298517284892743))
 - Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Recommended))
@@ -41,7 +39,6 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Hospitality: Casino](https://steamcommunity.com/sharedfiles/filedetails/?id=2939292644) - Architect Menu, Material Conversion, Research Adjustment
 - [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
 - [Melee Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2944488802) (Patch for many melee weapons for HSK mods)
-- [Specialists Can Work!](https://steamcommunity.com/sharedfiles/filedetails/?id=2553525357) (Universal Specialists Patch)
 
 Other 1.4 Additions:
 
