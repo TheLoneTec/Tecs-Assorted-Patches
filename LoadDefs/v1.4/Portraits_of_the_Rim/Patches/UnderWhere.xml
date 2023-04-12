@@ -16,7 +16,7 @@
 						<defName>PR_UnderClothingTorso_UnderWhere-l-Tanktop-styleimpid</defName>
 						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
 						<graphicData>
-							<texPath>UnderClothingShoulder/VEApparel-l-Tanktop-styleimpid</texPath>
+							<texPath>UnderClothingTorso/VEApparel-l-Tanktop-styleimpid</texPath>
 						</graphicData>
 						<requirements>
 							<bodyType>Large</bodyType>
@@ -31,7 +31,7 @@
 						<defName>PR_UnderClothingTorso_UnderWhere-l-Tanktop</defName>
 						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
 						<graphicData>
-							<texPath>UnderClothingShoulder/VEApparel-l-Tanktop</texPath>
+							<texPath>UnderClothingTorso/VEApparel-l-Tanktop</texPath>
 						</graphicData>
 						<requirements>
 							<bodyType>Large</bodyType>
