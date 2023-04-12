@@ -237,6 +237,126 @@
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-cn-SPSLulu</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-cn-ponytails</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<hair>SPSLulu</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-an-SPSLulu</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-an-ponytails</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<hair>SPSLulu</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-cn-SPSHeidi</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/VEHair-cn-festive</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<hair>SPSHeidi</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-an-SPSHeidi</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/VEHair-an-festive</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<hair>SPSHeidi</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-cn-SPSJay</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-cn-wavy</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<hair>SPSJay</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-an-SPSJay</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-an-wavy</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<hair>SPSJay</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-cn-SPSFrat</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-cn-warden</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<hair>SPSFrat</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-an-SPSFrat</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/Vanilla-an-warden</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<hair>SPSFrat</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+<!--
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-an-SPSBrona</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/SPSBrona</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<hair>SPSBrona</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+-->
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-cn-SPSBrona</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/SPSBrona</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>SPSBrona</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
 	<!-- Apparel -->
 	
 	<!-- Inner Clothing -->
