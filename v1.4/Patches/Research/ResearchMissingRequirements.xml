@@ -109,17 +109,22 @@
 				<!-- HitechBase -->
 			</li>
 	
-			<li Class="XmlExtensions.PatchOperationSafeAdd">
+			<li Class="PatchOperationConditional">
 				<xpath>Defs/ResearchProjectDef[techLevel/text()='Ultra' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
 				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
-				<safetyDepth>3</safetyDepth>
-				<compare>Both</compare>
-				<checkAttributes>True</checkAttributes>
-                <value>
-					<requiredResearchFacilities>
-					  <li>LabStation</li>
-					</requiredResearchFacilities>
-				</value>
+				<match Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/ResearchProjectDef[techLevel/text()='Ultra' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+					or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+					<safetyDepth>3</safetyDepth>
+					<compare>Both</compare>
+					<checkAttributes>True</checkAttributes>
+					<value>
+						<requiredResearchFacilities>
+						  <li>LabStation</li>
+						</requiredResearchFacilities>
+					</value>
+					<!-- HitechMultiBase -->
+				</match>
 			</li>
 	
 			<!-- requiredResearchBuilding -->
