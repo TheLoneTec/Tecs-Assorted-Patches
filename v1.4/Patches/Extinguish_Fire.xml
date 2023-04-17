@@ -338,6 +338,73 @@
 				</li>
 
 				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vile's Wood You Please</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+
+							<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="Rushlight"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+								<value>
+									<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+										<fireSize>0.2</fireSize>
+										<offset>(-0.4,0,0.75)</offset>
+									</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+							<order>Prepend</order>
+							<xpath>Defs/ThingDef[defName="Rushlight"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Flickable" />
+								</value>
+							</li>
+
+							<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="FireBasket"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+								<value>
+									<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+										<fireSize>0.7</fireSize>
+										<offset>(0,1,0.1)</offset>
+									</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="OilStreetLamp"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+								<value>
+									<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+										<fireSize>0.2</fireSize>
+										<offset>(0,1,1.55)</offset>
+									</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="WallCandle"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
+								<value>
+									<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
+										<fireSize>0.15</fireSize>
+										<offset>(-0.48,0,0.2)</offset>
+									</li>
+								</value>
+							</li>
+							
+							<li Class="PatchOperationAdd">
+							<order>Prepend</order>
+							<xpath>Defs/ThingDef[defName="WallCandle"]/comps</xpath>
+								<value>
+									<li Class="CompProperties_Flickable" />
+								</value>
+							</li>
+							
+						</operations>
+					</match>
+				</li>
+
+				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Simple Utilities: Ceiling HSK</li>
 						<li>Simple Utilities: Ceiling</li>
