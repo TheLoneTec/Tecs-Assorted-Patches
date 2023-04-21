@@ -49,6 +49,16 @@
 				</li>
 	
 				<li Class="PatchOperationReplace">
+				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/thingCategories</xpath>
+				   <value>
+						<thingCategories>
+							<li>ShellFullArmorCat</li>
+							<li>SetMedieval</li>
+						</thingCategories>
+				   </value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
 				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/recipeMaker/researchPrerequisite</xpath>
 				   <value>
 						<researchPrerequisite>Armor_B2</researchPrerequisite>

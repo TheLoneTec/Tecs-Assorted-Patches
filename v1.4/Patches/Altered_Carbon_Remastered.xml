@@ -955,6 +955,16 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[@Name="VFEU_HuntersHelmet"]/thingCategories</xpath>
+			   <value>
+					<thingCategories Inherit="False">
+						<li>HeavyHelmetsCat</li>
+						<li>Setpowerarmor</li>
+					</thingCategories>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
 			   <xpath>Defs/ThingDef[defName="VFEU_Apparel_ProtectorHelmet"]/statBases</xpath>
 			   <value>
 					<statBases>

@@ -254,6 +254,199 @@
 				</value>
 			</li>
 
+			<!-- ====== Space Suit ====== -->
+			
+				<!-- ========== Apparel_SpaceSuitBody ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Body"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>HF</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+						<costList>
+							<ElectronicComponents>8</ElectronicComponents>
+							<Carbon>30</Carbon>
+							<SyntheticFibers>24</SyntheticFibers>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Body"]/thingCategories</xpath>
+					<value>
+						<thingCategories>
+							<li>MediumFullArmorCat</li>
+						</thingCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Body"]/statBases</xpath>
+					 <value>
+						<statBases>
+							<WorkToMake>45000</WorkToMake>
+							<MaxHitPoints>280</MaxHitPoints>
+							<EquipDelay>11</EquipDelay>
+							<Flammability>0.5</Flammability>
+							<Mass>10</Mass>
+							<Bulk>30</Bulk>
+							<WornBulk>10</WornBulk>
+							<EquipDelay>22</EquipDelay>
+							<Insulation_Cold>80</Insulation_Cold>
+							<Insulation_Heat>80</Insulation_Heat>
+							<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+							<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+							<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+							<ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+							<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+							<ArmorRating_Heat>1.00</ArmorRating_Heat>
+							<JumpRange MayRequire="Ludeon.RimWorld.Royalty">20.0</JumpRange>
+						</statBases>
+					 </value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Body"]/equippedStatOffsets</xpath>
+					<value>
+						<equippedStatOffsets>
+							<CarryWeight>10</CarryWeight>
+							<CarryBulk>20</CarryBulk>
+							<MoveSpeed>-0.4</MoveSpeed>
+							<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+							<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+							<PsychicSensitivity>-0.1</PsychicSensitivity>
+							<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+							<AimingDelayFactor>0.1</AimingDelayFactor>
+							<MeleeHitChance>-0.2</MeleeHitChance>
+							<MeleeWeapon_CooldownMultiplier>0.2</MeleeWeapon_CooldownMultiplier>
+							<ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+							<Suppressability>-0.1</Suppressability>
+							<ArmorRating_Toxin>0.5</ArmorRating_Toxin>
+							<Radiation>-0.5</Radiation>
+							<GermResistance>0.35</GermResistance>
+							<GermContainment>0.25</GermContainment>
+							<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+							<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.3</SlaveSuppressionOffset>
+						</equippedStatOffsets>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Body"]/recipeMaker</xpath>
+					<value>
+						<recipeMaker>
+							<workSpeedStat>TailoringSpeed</workSpeedStat>
+							<workSkill>Crafting</workSkill>
+							<effectWorking>Tailor</effectWorking>
+							<soundWorking>Recipe_Tailor</soundWorking>
+							<recipeUsers Inherit="False">
+								<li>HyperTailoringBench</li>
+							</recipeUsers>
+							<skillRequirements>
+								<Crafting>15</Crafting>
+							</skillRequirements>
+							<researchPrerequisites>
+								<li>TransportPod</li>
+							</researchPrerequisites>
+							<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+						</recipeMaker>
+					</value>
+				</li>
+
+				<!-- ========== Apparel_SpaceSuitHelmet ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Head"]/costList</xpath>
+					<value>
+						<stuffCategories>
+							<li>HF</li>
+						</stuffCategories>
+						<costStuffCount>35</costStuffCount>
+						<costList>
+							<Microchips>1</Microchips>
+							<ElectronicComponents>2</ElectronicComponents>
+							<Carbon>10</Carbon>
+							<SyntheticFibers>6</SyntheticFibers>
+						    <ReinforcedGlass>10</ReinforcedGlass>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Head"]</xpath>
+					<value>
+						<thingCategories Inherit="False">
+							<li>SpecialHelmetsCat</li>
+						</thingCategories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Head"]/statBases</xpath>
+					<value>
+						<statBases>
+							<WorkToMake>15750</WorkToMake>
+							<MaxHitPoints>120</MaxHitPoints>
+							<Flammability>0.1</Flammability>
+							<Mass>1</Mass>
+							<Bulk>4</Bulk>
+							<WornBulk>2</WornBulk>
+							<EquipDelay>2</EquipDelay>
+							<Insulation_Heat>40</Insulation_Heat>
+							<Insulation_Cold>40</Insulation_Cold>
+							<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+							<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+							<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+							<ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+							<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+							<ArmorRating_Heat>1.00</ArmorRating_Heat>
+						</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Head"]/equippedStatOffsets</xpath>
+					<value>
+						<equippedStatOffsets>
+							<MoveSpeed>-0.04</MoveSpeed>
+							<WorkSpeedGlobal>-0.02</WorkSpeedGlobal>
+							<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+							<PsychicSensitivity>-0.1</PsychicSensitivity>
+							<ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+							<Suppressability>-0.04</Suppressability>
+							<ShootingAccuracyPawn>-0.1</ShootingAccuracyPawn>
+							<ArmorRating_Toxin>0.6</ArmorRating_Toxin>
+							<ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+							<SmokeSensitivity>-1</SmokeSensitivity>
+							<Radiation>-0.8</Radiation>
+							<GermResistance>0.70</GermResistance>
+							<GermContainment>0.80</GermContainment>
+						</equippedStatOffsets>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RimNauts2_Apparel_SpaceSuit_Head"]/recipeMaker</xpath>
+					<value>
+						<recipeMaker>
+							<workSpeedStat>TailoringSpeed</workSpeedStat>
+							<workSkill>Crafting</workSkill>
+							<effectWorking>Tailor</effectWorking>
+							<soundWorking>Recipe_Tailor</soundWorking>
+							<recipeUsers Inherit="False">
+								<li>HyperTailoringBench</li>
+							</recipeUsers>
+							<skillRequirements>
+								<Crafting>15</Crafting>
+							</skillRequirements>
+							<researchPrerequisites>
+								<li>TransportPod</li>
+							</researchPrerequisites>
+							<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+						</recipeMaker>
+					</value>
+				</li>
+
 			</operations>
 		</match>
     </Operation>
