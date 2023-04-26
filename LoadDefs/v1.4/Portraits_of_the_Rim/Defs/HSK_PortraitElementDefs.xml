@@ -115,6 +115,18 @@
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-Xeva</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/HSK_Xeva</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~999</ageRange>
+			<hair>Xeva</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
 	<!-- SPS Hairs -->
 	
 	<PortraitsOfTheRim.PortraitElementDef>
@@ -429,6 +441,7 @@
 			<ageRange>13~999</ageRange>
 			<apparels>
 				<li>Apparell_ArcticWolfHood</li>
+				<li>Apparello_Furxhood</li>
 			</apparels>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
