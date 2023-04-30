@@ -41,6 +41,92 @@
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
 
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-xl-Tanktop-styleimpid</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingTorso/VEApparel-xl-Tanktop-styleimpid</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+							<style>impid</style>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-xl-Tanktop</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingTorso/VEApparel-xl-Tanktop</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-m-Tanktop-styleimpid</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingTorso/VEApparel-m-Tanktop-styleimpid</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+							<style>impid</style>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-m-Tanktop</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingTorso/VEApparel-m-Tanktop</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-s-Tanktop-styleimpid</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingTorso/VEApparel-s-Tanktop-styleimpid</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+							<style>impid</style>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_UnderClothingTorso_UnderWhere-s-Tanktop</defName>
+						<portraitLayer>PR_UnderClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>UnderClothingTorso/VEApparel-s-Tanktop</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>UnderWhere_Tanktop</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
 				</value>
 			</li>
 

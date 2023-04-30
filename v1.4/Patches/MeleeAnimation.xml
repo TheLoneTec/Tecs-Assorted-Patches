@@ -17,7 +17,14 @@
 			  </li>
 			</value>
 		  </li>
-		  
+	
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="AM_LassoBase"]/statBases/DeteriorationRate</xpath>
+			<value>
+				<DeteriorationRate>0.5</DeteriorationRate>
+			</value>
+		  </li>
+	
 		</operations>
 	</match>
 	</Operation>

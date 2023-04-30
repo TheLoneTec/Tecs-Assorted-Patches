@@ -460,4 +460,20 @@
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 
+	<!-- Outer Headgear -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHeadgear_HSK-Coif</defName>
+		<portraitLayer>PR_OuterHeadgear</portraitLayer>
+		<graphicData>
+			<texPath>OuterHeadgear/HSK-Coif</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<apparels>
+				<li>Apparello_Vandal</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
 </Defs>
