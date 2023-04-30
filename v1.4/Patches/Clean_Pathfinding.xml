@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Clean Pathfinding 2</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="Bridge"]/tags</xpath>
+					<value>
+						<li>Road</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Comigo's Bridges and Platforms</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/TerrainDef[defName="COMIGO_LogBridge_Base" or defName="COMIGO_FloatingPlatform_Base"]/tags</xpath>
+							<value>
+								<li>Road</li>
+							</value>
+						</li>
+					
+						</operations>
+					</match>
+				</li>
+	
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Alpha Biomes</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/TerrainDef[defName="AB_AsphaltBridge"]/tags</xpath>
+							<value>
+								<li>Road</li>
+							</value>
+						</li>
+					
+						</operations>
+					</match>
+				</li>
+	
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Bridgello</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/TerrainDef[@Name="FloorioBase" or @Name="JeffBridgesBase"]</xpath>
+							<value>
+								<tags>
+									<li>Road</li>
+								</tags>
+							</value>
+						</li>
+					
+						</operations>
+					</match>
+				</li>
+	
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>RimNauts 2</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/TerrainDef[defName="RimNauts2_SteelBridge"]/tags</xpath>
+							<value>
+								<li>Road</li>
+							</value>
+						</li>
+					
+						</operations>
+					</match>
+				</li>
+	
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Roads of the Rim (Continued)</li>
+					<li>Rails and Roads of the Rim</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/TerrainDef[defName="ConcreteBridge"]</xpath>
+							<value>
+								<tags>
+									<li>Road</li>
+								</tags>
+							</value>
+						</li>
+					
+						</operations>
+					</match>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

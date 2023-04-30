@@ -460,7 +460,7 @@
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 
-	<!-- Outer Headgear -->
+	<!-- Outer Headgear 
 	
 	<PortraitsOfTheRim.PortraitElementDef>
 		<defName>PR_OuterHeadgear_HSK-Coif</defName>
@@ -475,5 +475,5 @@
 			</apparels>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
-
+-->
 </Defs>
