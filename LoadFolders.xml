@@ -28,5 +28,6 @@
 	<li IfModActive="ltbob.preemptivestrike.Rimworld">LoadDefs/v1.4/Preemptive_Strike</li>
 	<li IfModActive="petetimessix.researchreinvented">LoadDefs/v1.4/Research_Reinvented</li>
 	<li IfModActive="twopenny.portraitsoftherim">LoadDefs/v1.4/Portraits_of_the_Rim</li>
+	<li IfModActive="xenomacabre.HCSKwallsandfloorsreduxeno">LoadDefs/v1.4/Viles_Hardcore_Renovation</li>
   </v1.4>
 </loadFolders>
