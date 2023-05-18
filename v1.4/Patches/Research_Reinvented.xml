@@ -14,7 +14,7 @@
 
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/StatDef[defName="FieldResearchSpeedMultiplier"]</xpath>
+			<xpath>Defs/StatDef[defName="FieldResearchSpeedMultiplier"]</xpath>
 			<value>
 				<parts> 
 				  <li Class="StatPart_Quality">
@@ -31,7 +31,7 @@
 		</li>
 -->
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 			<value>
 				<ThingDef Name="ResearchKitBase" ParentName="ApparelBase" Abstract="True">
 					<statBases>
@@ -48,7 +48,7 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 			<value>
 			<ThingDef ParentName="ResearchKitBase">
 				<defName>RR_FieldResearchKitPrimitive</defName>
@@ -115,21 +115,21 @@
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/techLevel</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/techLevel</xpath>
 			<value>
 				<techLevel>Medieval</techLevel>
 			</value>
 		</li>
 		
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/recipeMaker</xpath>
 			<value>
 				<researchPrerequisite>Research_table_B1</researchPrerequisite>
 			</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/costList</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitSimple"]/costList</xpath>
 			<value>
 				<costList>
 					<Mechanism>2</Mechanism>
@@ -139,13 +139,13 @@
 		</li>
 
 		<li Class="PatchOperationAttributeSet">
-			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitSimple"]</xpath>
+			<xpath>Defs/ThingDef[defName="RR_FieldResearchKitSimple"]</xpath>
 			<attribute>ParentName</attribute>
 			<value>ResearchKitBase</value>
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 			<value>
 			<ThingDef ParentName="ResearchKitBase">
 				<defName>RR_FieldResearchKitTerminal</defName>
@@ -221,14 +221,14 @@
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/label</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/label</xpath>
 			<value>
 				<label>hi-tech field research kit</label>
 			</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/costList</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/costList</xpath>
 			<value>
 				<costList>
 					<Glass>10</Glass>
@@ -242,7 +242,7 @@
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/recipeMaker/recipeUsers</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/recipeMaker/recipeUsers</xpath>
 			<value>
 				<recipeUsers>
 					<li>TableElectronics</li>
@@ -251,7 +251,7 @@
 		</li>
 
 		<li Class="PatchOperationInsert">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/graphicData</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/graphicData</xpath>
 			<value>
 				<stuffCategories>
 					<li>StrongMetallic</li>
@@ -261,7 +261,7 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/comps/li[@Class = "PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit"]</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/comps/li[@Class = "PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit"]</xpath>
 			<value>
 				<substitutedFacilities>
 					<li>LabTerminal</li>
@@ -270,27 +270,27 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/recipeMaker</xpath>
 			<value>
 				<researchPrerequisite>Research_table_C2</researchPrerequisite>
 			</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/description</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitHiTech"]/description</xpath>
 			<value>
 				<description>This advanced field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. The advanced tools in this kit allow researching technologies that would ordinarily require a hi-tech research bench. An expansion module contains a portable research terminal.</description>
 			</value>
 		</li>
 
 		<li Class="PatchOperationAttributeSet">
-			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitHiTech"]</xpath>
+			<xpath>Defs/ThingDef[defName="RR_FieldResearchKitHiTech"]</xpath>
 			<attribute>ParentName</attribute>
 			<value>ResearchKitBase</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/costList</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/costList</xpath>
 			<value>
 				<costList>
 					<Plastic>5</Plastic>
@@ -303,7 +303,7 @@
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/recipeMaker/recipeUsers</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/recipeMaker/recipeUsers</xpath>
 			<value>
 				<recipeUsers>
 					<li>TableElectronics</li>
@@ -312,7 +312,7 @@
 		</li>
 
 		<li Class="PatchOperationInsert">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/graphicData</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/graphicData</xpath>
 			<value>
 				<stuffCategories>
 					<li>StrongMetallic</li>
@@ -322,20 +322,20 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitMultiAnalyzer"]/recipeMaker</xpath>
 			<value>
 				<researchPrerequisite>MultiAnalyzer</researchPrerequisite>
 			</value>
 		</li>
 
 		<li Class="PatchOperationAttributeSet">
-			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitMultiAnalyzer"]</xpath>
+			<xpath>Defs/ThingDef[defName="RR_FieldResearchKitMultiAnalyzer"]</xpath>
 			<attribute>ParentName</attribute>
 			<value>ResearchKitBase</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/costList</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/costList</xpath>
 			<value>
 				<costList>
 					<Plastic>20</Plastic>
@@ -349,7 +349,7 @@
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/recipeMaker/recipeUsers</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/recipeMaker/recipeUsers</xpath>
 			<value>
 				<recipeUsers>
 					<li>AdvToolBench</li>
@@ -358,7 +358,7 @@
 		</li>
 
 		<li Class="PatchOperationInsert">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/graphicData</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/graphicData</xpath>
 			<value>
 				<stuffCategories>
 					<li>StrongMetallic</li>
@@ -368,41 +368,41 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/recipeMaker</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/recipeMaker</xpath>
 			<value>
 				<researchPrerequisite>Research_table_C2</researchPrerequisite>
 			</value>
 		</li>
 
 		<li Class="PatchOperationAttributeSet">
-			<xpath>/Defs/ThingDef[defName="RR_FieldResearchKitRemote"]</xpath>
+			<xpath>Defs/ThingDef[defName="RR_FieldResearchKitRemote"]</xpath>
 			<attribute>ParentName</attribute>
 			<value>ResearchKitBase</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/description</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/description</xpath>
 			<value>
-				<description>This advanced field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. The advanced tools in this kit allow researching technologies that would ordinarily require a hi-tech research bench. An expansion module contains an uplink system that allows remote usage of local research benches by connecting to their research terminal.</description>
+				<description>This remote field research kit contains the tools necessary to perform research in the field, where a researcher does not have access to a full-sized research bench. The advanced tools in this kit allow researching technologies that would ordinarily require a hi-tech research bench. An expansion module contains an uplink system that allows remote usage of local research benches by connecting to their research terminal.</description>
 			</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/techLevel</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/techLevel</xpath>
 			<value>
 				<techLevel>Industrial</techLevel>
 			</value>
 		</li>
 
 		<li Class="PatchOperationReplace">
-			<xpath>/Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/comps/li[@Class="PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit"]/remotesThrough</xpath>
+			<xpath>Defs/ThingDef[defName = "RR_FieldResearchKitRemote"]/comps/li[@Class="PeteTimesSix.ResearchReinvented.Rimworld.Comps.CompProperties.CompProperties_ResearchKit"]/remotesThrough</xpath>
 			<value>
 				<remotesThrough>LabTerminal</remotesThrough>
 			</value>
 		</li>
 
 		<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 			<value>
 			<ThingDef ParentName="ResearchKitBase">
 				<defName>RR_FieldResearchKitUltra</defName>
