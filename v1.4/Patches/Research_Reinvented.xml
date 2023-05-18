@@ -43,6 +43,13 @@
 						<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
 						<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 					</statBases>
+					<thingCategories>
+					  <li>ApparelUtility</li>
+					</thingCategories>  
+					<tradeTags>
+					  <li>Artifact</li>
+					</tradeTags>
+					<tickerType>Never</tickerType>
 				</ThingDef>
 			</value>
 		</li>
@@ -92,14 +99,37 @@
 				  <Flammability>0.6</Flammability>
 				  <EquipDelay>2</EquipDelay>
 				</statBases>
-				<thingCategories>
-				  <li>ApparelUtility</li>
-				</thingCategories>
 				<apparel>
 				  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 				  <careIfWornByCorpse>false</careIfWornByCorpse>
 				  <careIfDamaged>false</careIfDamaged>
 				  <wearPerDay>0</wearPerDay>
+				  <wornGraphicData>
+					<renderUtilityAsPack>true</renderUtilityAsPack>
+					<north>
+					  <male>  <offset>(-0.3, -0.25)</offset> </male>
+					  <female><offset>(-0.3,-0.25)</offset> </female>
+					  <thin>  <offset>(-0.2,-0.25)</offset> </thin>
+					  <hulk>  <offset>(-0.3,-0.3)</offset> </hulk>
+					  <fat>   <offset>(-0.5,-0.25)</offset> </fat>
+					</north>
+					<south>
+					  <male>  <offset>(0.25, -0.25)</offset> </male>
+					  <female><offset>(0.25,-0.25)</offset> </female>
+					  <thin>  <offset>(0.15,-0.25)</offset> </thin>
+					  <hulk>  <offset>(0.25,-0.3)</offset> </hulk>
+					  <fat>   <offset>(0.45,-0.25)</offset> </fat>
+					</south>
+					<west>
+					  <offset>(0.05,-0.3)</offset>
+					</west>
+
+					<male>  <scale>(0.5,0.5)</scale> </male>
+					<female><scale>(0.5,0.5)</scale> </female>
+					<thin>  <scale>(0.5,0.5)</scale> </thin>
+					<hulk>  <scale>(0.5,0.5)</scale> </hulk>
+					<fat>   <scale>(0.5,0.5)</scale> </fat>
+				  </wornGraphicData>
 				  <bodyPartGroups>
 					<li>Waist</li>
 				  </bodyPartGroups>
@@ -198,14 +228,37 @@
 				  <Flammability>0.6</Flammability>
 				  <EquipDelay>2</EquipDelay>
 				</statBases>
-				<thingCategories>
-				  <li>ApparelUtility</li>
-				</thingCategories>
 				<apparel>
 				  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 				  <careIfWornByCorpse>false</careIfWornByCorpse>
 				  <careIfDamaged>false</careIfDamaged>
 				  <wearPerDay>0</wearPerDay>
+				  <wornGraphicData>
+					<renderUtilityAsPack>true</renderUtilityAsPack>
+					<north>
+					  <male>  <offset>(-0.3, -0.25)</offset> </male>
+					  <female><offset>(-0.3,-0.25)</offset> </female>
+					  <thin>  <offset>(-0.2,-0.25)</offset> </thin>
+					  <hulk>  <offset>(-0.3,-0.3)</offset> </hulk>
+					  <fat>   <offset>(-0.5,-0.25)</offset> </fat>
+					</north>
+					<south>
+					  <male>  <offset>(0.25, -0.25)</offset> </male>
+					  <female><offset>(0.25,-0.25)</offset> </female>
+					  <thin>  <offset>(0.15,-0.25)</offset> </thin>
+					  <hulk>  <offset>(0.25,-0.3)</offset> </hulk>
+					  <fat>   <offset>(0.45,-0.25)</offset> </fat>
+					</south>
+					<west>
+					  <offset>(0.05,-0.3)</offset>
+					</west>
+
+					<male>  <scale>(0.5,0.5)</scale> </male>
+					<female><scale>(0.5,0.5)</scale> </female>
+					<thin>  <scale>(0.5,0.5)</scale> </thin>
+					<hulk>  <scale>(0.5,0.5)</scale> </hulk>
+					<fat>   <scale>(0.5,0.5)</scale> </fat>
+				  </wornGraphicData>
 				  <bodyPartGroups>
 					<li>Waist</li>
 				  </bodyPartGroups>
@@ -460,14 +513,37 @@
 				  <Flammability>0.4</Flammability>
 				  <EquipDelay>2</EquipDelay>
 				</statBases>
-				<thingCategories>
-				  <li>ApparelUtility</li>
-				</thingCategories>
 				<apparel>
 				  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 				  <careIfWornByCorpse>false</careIfWornByCorpse>
 				  <careIfDamaged>false</careIfDamaged>
 				  <wearPerDay>0</wearPerDay>
+				  <wornGraphicData>
+					<renderUtilityAsPack>true</renderUtilityAsPack>
+					<north>
+					  <male>  <offset>(-0.3, -0.25)</offset> </male>
+					  <female><offset>(-0.3,-0.25)</offset> </female>
+					  <thin>  <offset>(-0.2,-0.25)</offset> </thin>
+					  <hulk>  <offset>(-0.3,-0.3)</offset> </hulk>
+					  <fat>   <offset>(-0.5,-0.25)</offset> </fat>
+					</north>
+					<south>
+					  <male>  <offset>(0.25, -0.25)</offset> </male>
+					  <female><offset>(0.25,-0.25)</offset> </female>
+					  <thin>  <offset>(0.15,-0.25)</offset> </thin>
+					  <hulk>  <offset>(0.25,-0.3)</offset> </hulk>
+					  <fat>   <offset>(0.45,-0.25)</offset> </fat>
+					</south>
+					<west>
+					  <offset>(0.05,-0.3)</offset>
+					</west>
+
+					<male>  <scale>(0.5,0.5)</scale> </male>
+					<female><scale>(0.5,0.5)</scale> </female>
+					<thin>  <scale>(0.5,0.5)</scale> </thin>
+					<hulk>  <scale>(0.5,0.5)</scale> </hulk>
+					<fat>   <scale>(0.5,0.5)</scale> </fat>
+				  </wornGraphicData>
 				  <bodyPartGroups>
 					<li>Waist</li>
 				  </bodyPartGroups>
