@@ -545,53 +545,16 @@
 				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]/recipeMaker</xpath>
 			</li>
 	
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]/statBases</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]</xpath>
 				<value>
-					<statBases>
-						<MarketValue>290</MarketValue>
-						<SightsEfficiency>1.05</SightsEfficiency>
-						<ShotSpread>0.11</ShotSpread>
-						<SwayFactor>1.3</SwayFactor>
-						<RangedWeapon_Cooldown>0.21</RangedWeapon_Cooldown>
-						<DeteriorationRate>0.33</DeteriorationRate>
-						<Bulk>2.2</Bulk>
-						<Mass>1.2</Mass>
-					</statBases>
-				</value>
-			</li>
-	
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "AC_Gun_Autorevolver"]/verbs</xpath>
-				<value>
-					<verbs>
-						<li Class="CombatExtended.VerbPropertiesCE">
-							<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-							<hasStandardCommand>true</hasStandardCommand>
-							<defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
-							<warmupTime>0.2</warmupTime>
-							<range>31</range>
-							<soundCast>RF_ShotDeringer</soundCast>
-							<soundCastTail>GunTail_Light</soundCastTail>
-							<muzzleFlashScale>9</muzzleFlashScale>
-						</li>
-					</verbs>
-					<comps>
-						<li Class="CombatExtended.CompProperties_FireModes">
-							<aiUseBurstMode>FALSE</aiUseBurstMode>
-							<aiAimMode>AimedShot</aiAimMode>
-						</li>
-						<li Class="CombatExtended.CompProperties_AmmoUser">
-							<magazineSize>6</magazineSize>
-							<reloadOneAtATime>true</reloadOneAtATime>
-							<reloadTime>0.5</reloadTime>
-							<ammoSet>AmmoSet_45ACP</ammoSet>
-						</li>
-					</comps>
 					<smeltProducts>
 						<Pistol_Component>1</Pistol_Component>
 						<Weapon_Parts>1</Weapon_Parts>
 					</smeltProducts>
+					<thingCategories>
+						<li>Pistols</li>
+					</thingCategories>
 				</value>
 			</li>
 	
