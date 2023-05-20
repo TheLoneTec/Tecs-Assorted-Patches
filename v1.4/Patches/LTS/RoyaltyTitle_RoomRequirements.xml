@@ -17,9 +17,9 @@
 				<operations>
 			
 				<li Class="PatchOperationConditional">
-					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="EndTable"]</xpath>
+					<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="EndTable"]</xpath>
 					<match Class="PatchOperationReplace">
-						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
+						<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
 						<value>
 						<li Class = "RoomRequirement_ThingAnyOf">
 							<things>
@@ -38,9 +38,9 @@
 				</li>
 				
 				<li Class="PatchOperationConditional">
-					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="Dresser"]</xpath>
+					<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"]/thingDef[text()="Dresser"]</xpath>
 					<match Class="PatchOperationReplace">
-						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
+						<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
 						<value>
 						<li Class = "RoomRequirement_ThingAnyOf">
 							<things>
@@ -61,9 +61,9 @@
 				</li>
 
 				<li Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
-					<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
+					<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
 					<match Class="PatchOperationRemove">
-						<xpath>/Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
+						<xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class = "RoomRequirement_ThingAnyOf"]/things/li[text()="LTS_HemnesDouble"]</xpath>
 					</match>
 				</li>
 

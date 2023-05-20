@@ -11,7 +11,7 @@
 			<!-- ======== Lights ======== -->
 		
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_LightBase"]/designationCategory</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_LightBase"]/designationCategory</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
@@ -72,7 +72,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_OilLamp"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_OilLamp"]</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Light_B1</li>
@@ -81,7 +81,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_OilLamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_OilLamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 				<thingDefs>
 					<li>Tallow</li>
@@ -92,7 +92,7 @@
 			</li>				
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lantern"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lantern"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Light_B1</li>
@@ -101,7 +101,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 				<thingDefs>
 					<li>Tallow</li>
@@ -112,7 +112,7 @@
 			</li>			
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_TableLantern"]</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Light_B1</li>
@@ -121,7 +121,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 				<thingDefs>
 					<li>Tallow</li>
@@ -132,7 +132,7 @@
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_TableLantern"]</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Light_B1</li>
@@ -141,7 +141,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 				<thingDefs>
 					<li>Tallow</li>
@@ -152,7 +152,7 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_TableLantern"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_B2</li>
@@ -161,7 +161,7 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_TableLantern"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 				<thingDefs>
 					<li>Tallow</li>
@@ -172,7 +172,7 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_ElectricTableLantern"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_ElectricTableLantern"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>
@@ -181,7 +181,7 @@
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_ElectricTableLantern"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_ElectricTableLantern"]</xpath>
 				<value>
 				<costList>
 					<ComponentIndustrial>3</ComponentIndustrial>
@@ -213,7 +213,7 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lanternpost"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_B1</li>
@@ -222,14 +222,14 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lanternpost"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>15</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lanternpost"]/costList</xpath>
 				<value>
 				<costList>
 					<ComponentMedieval>2</ComponentMedieval>
@@ -239,7 +239,7 @@
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lanternpost"]</xpath>
 				<value>
 				<placeWorkers>
 					<li>PlaceWorker_NotUnderRoof</li>
@@ -248,7 +248,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 				<value>
 				<thingDefs>
 					<li>Tallow</li>
@@ -259,14 +259,14 @@
 			</li>				
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/initialFuelPercent</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lanternpost"]/comps/li[@Class = "CompProperties_Refuelable"]/initialFuelPercent</xpath>
 				<value>
 					<initialFuelPercent>0</initialFuelPercent>
 				</value>
 			</li>	
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lanternpost"]/description</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lanternpost"]/description</xpath>
 				<value>
 					<description>A cute lanternpost made to brighten the roads ahead. Takes Tallow or Parraffin as fuel.</description>
 				</value>
@@ -275,7 +275,7 @@
 			<!-- =============== LightPost ====================== -->
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lightpost"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C3</li>
@@ -284,7 +284,7 @@
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
 				<value>
 				<placeWorkers>
 					<li>PlaceWorker_NotUnderRoof</li>
@@ -293,14 +293,14 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lightpost"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>25</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Lightpost"]</xpath>
 				<value>
 				<costList>
 					<ComponentIndustrial>3</ComponentIndustrial>
@@ -311,7 +311,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Astrid"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>
@@ -320,14 +320,14 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Astrid"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>10</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Astrid"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Astrid"]</xpath>
 				<value>
 				<costList>
 					<ComponentIndustrial>3</ComponentIndustrial>
@@ -338,7 +338,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Vidja"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>
@@ -347,14 +347,14 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Vidja"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>10</costStuffCount>
 				</value>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Vidja"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Vidja"]</xpath>
 				<value>
 				<costList>
 					<ComponentIndustrial>3</ComponentIndustrial>
@@ -367,7 +367,7 @@
 			<!-- ======== Fire Pits and Fireplace ======== -->
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_FireSourceBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_FireSourceBase"]</xpath>
 				<value>
 					<designationCategory>Temperature</designationCategory>
 				</value>
@@ -392,7 +392,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/comps/li[@Class = "CompProperties_HeatPusher"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Firepit"]/comps/li[@Class = "CompProperties_HeatPusher"]</xpath>
 				<value>
 				<li Class="SK.CompProperties_HeatPusherAdvanced">
 					<compClass>SK.CompHeatPusherAdvanced</compClass>
@@ -403,7 +403,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Firepit"]</xpath>
 				<value>
 				<inspectorTabs>
 					<li>SK.ITab_Fuel</li>
@@ -412,7 +412,7 @@
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Firepit"]/comps</xpath>
 				<value>
 				<li Class="SK.CompProperties_FireOverlayMod">
 					<fireSize>1.1</fireSize>
@@ -422,11 +422,11 @@
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Firepit"]/costList</xpath>
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Firepit"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Firepit"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
 				<value>
 				<li Class="SK.CompFueled_Properties">
 					<operatingTemp>300</operatingTemp>
@@ -456,7 +456,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/comps/li[@Class = "CompProperties_HeatPusher"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FirepitRound"]/comps/li[@Class = "CompProperties_HeatPusher"]</xpath>
 				<value>
 				<li Class="SK.CompProperties_HeatPusherAdvanced">
 					<compClass>SK.CompHeatPusherAdvanced</compClass>
@@ -467,7 +467,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FirepitRound"]</xpath>
 				<value>
 				<inspectorTabs>
 					<li>SK.ITab_Fuel</li>
@@ -476,7 +476,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FirepitRound"]/comps</xpath>
 				<value>
 				<li Class="SK.CompProperties_FireOverlayMod">
 					<fireSize>1.1</fireSize>
@@ -486,11 +486,11 @@
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FirepitRound"]/costList</xpath>
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FirepitRound"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FirepitRound"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
 				<value>
 				<li Class="SK.CompFueled_Properties">
 					<operatingTemp>300</operatingTemp>
@@ -520,11 +520,11 @@
 			</li>
 
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Fireplace"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Fireplace"]/costList</xpath>
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Fireplace"]/description</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Fireplace"]/description</xpath>
 				<value>
 					<description>A place to house a fire. Takes firewood as fuel.</description>
 				</value>

@@ -11,7 +11,7 @@
 			<!-- ======== Planters ======== -->
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_GrowingBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_GrowingBase"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
@@ -26,7 +26,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Growingpit"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Growingpit"]/costList</xpath>
 				<value>
 				<costList>
 					<Fertilizer>24</Fertilizer>
@@ -36,7 +36,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_GrowingpitRound"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_GrowingpitRound"]/costList</xpath>
 				<value>
 				<costList>
 					<Fertilizer>7</Fertilizer>

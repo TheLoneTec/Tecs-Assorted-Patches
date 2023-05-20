@@ -11,28 +11,28 @@
 			<!-- ======== Deco ======== -->
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_PathBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_PathBase"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
 			</li>
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_BorderBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_BorderBase"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
 			</li>
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_AtlasWoodCover"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_AtlasWoodCover"]</xpath>
 				<value>
 					<designationCategory>Accessories</designationCategory>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[defName="LTS_AtlasWoodCover"]/designatorDropdown</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_AtlasWoodCover"]/designatorDropdown</xpath>
 			</li>
 		
 			<li Class="PatchOperationAdd">
@@ -59,13 +59,13 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name = "LTS_PathBase"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[@Name = "LTS_PathBase"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>3</costStuffCount>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "LTS_PathB"]/stuffCategories</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_PathB"]/stuffCategories</xpath>
 				<value>
 				<stuffCategories>
 					<li>Stony</li>
@@ -74,13 +74,13 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costStuffCount</xpath>
 				<value>
 					<costStuffCount>3</costStuffCount>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costList</xpath>
 				<value>
 					<costList>
 						<ComponentMedieval>1</ComponentMedieval>

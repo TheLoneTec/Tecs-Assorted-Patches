@@ -9,45 +9,45 @@
 		<operations>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name="LTS_Furniture"]/designationCategory</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_Furniture"]/designationCategory</xpath>
 				<value>
 					<designationCategory>Furniture</designationCategory>
 				</value>
 			</li>
 		
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_Furniture"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_Furniture"]/researchPrerequisites</xpath>
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[@Name="LTS_Buildings"]/designationCategory</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_Buildings"]/designationCategory</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
 			</li>
 
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_Buildings"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_Buildings"]/researchPrerequisites</xpath>
 			</li>
 <!--
 			<li Class="PatchOperationAttributeAdd">
-				<xpath>/Defs/DesignationCategoryDef[defName="LTSFurniture"]</xpath>
+				<xpath>Defs/DesignationCategoryDef[defName="LTSFurniture"]</xpath>
 				<attribute>Abstract</attribute>
 				<value>True</value>
 			</li>
 
 			<li Class="PatchOperationAttributeAdd">
-				<xpath>/Defs/DesignationCategoryDef[defName="LTSStructure"]</xpath>
+				<xpath>Defs/DesignationCategoryDef[defName="LTSStructure"]</xpath>
 				<attribute>Abstract</attribute>
 				<value>True</value>
 			</li>
 
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/DesignationCategoryDef[defName="LTSFurniture"]</xpath>
+				<xpath>Defs/DesignationCategoryDef[defName="LTSFurniture"]</xpath>
 			</li>
 
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/DesignationCategoryDef[defName="LTSStructure"]</xpath>
+				<xpath>Defs/DesignationCategoryDef[defName="LTSStructure"]</xpath>
 			</li>
 -->
 		</operations>

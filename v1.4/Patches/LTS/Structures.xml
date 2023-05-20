@@ -11,28 +11,28 @@
 			<!-- ======== Structures ======== -->
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_FenceBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_FenceBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_ArchBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_ArchBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_PillarBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_PillarBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_WallBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_WallBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
@@ -66,7 +66,7 @@
 					<operations>
 			
 					<li Class="PatchOperationConditional">
-						<xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_Fences"]</xpath>
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_Fences"]</xpath>
 						<nomatch Class="PatchOperationAdd">
 							<xpath>/Defs</xpath>
 							<value>
@@ -123,14 +123,14 @@
 			</li>			
 		
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "LTS_Hedge"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_Hedge"]</xpath>
 				<value>
 					<costStuffCount>3</costStuffCount>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Hedge"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Hedge"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Construction_B3</li>
@@ -139,18 +139,18 @@
 			</li>			
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "LTS_OrnateFence"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_OrnateFence"]</xpath>
 				<value>
 					<costStuffCount>4</costStuffCount>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>/Defs/ThingDef[defName="LTS_OrnateFenceGate" or defName="LTS_BarsGate"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_OrnateFenceGate" or defName="LTS_BarsGate"]/researchPrerequisites</xpath>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_OrnateFence" or defName="LTS_OrnateFenceGate" or defName="LTS_Bars" or defName="LTS_BarsGate"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_OrnateFence" or defName="LTS_OrnateFenceGate" or defName="LTS_Bars" or defName="LTS_BarsGate"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Firefoam</li>
@@ -159,7 +159,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "LTS_OrnateFenceGate"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_OrnateFenceGate"]</xpath>
 				<value>
 					<costList>
 						<ComponentMedieval>1</ComponentMedieval>
@@ -167,19 +167,19 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "LTS_Bars"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_Bars"]</xpath>
 				<value>
 					<costStuffCount>5</costStuffCount>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "LTS_BarsGate"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_BarsGate"]</xpath>
 				<value>
 					<costStuffCount>3</costStuffCount>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "LTS_BarsGate"]</xpath>
+				<xpath>Defs/ThingDef[defName = "LTS_BarsGate"]</xpath>
 				<value>
 					<costList>
 						<ComponentIndustrial>1</ComponentIndustrial>
@@ -206,7 +206,7 @@
 			</li>
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_ArchWood"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_ArchWood"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Construction_B1</li>
@@ -215,7 +215,7 @@
 			</li>
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[@Name="LTS_DoorFrameBase"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_DoorFrameBase"]</xpath>
 				<value>
 					<designationCategory>Structure</designationCategory>
 				</value>
@@ -241,7 +241,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_SimpleDoorFrame" or defName="LTS_SimpleLargeDoorFrame"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_SimpleDoorFrame" or defName="LTS_SimpleLargeDoorFrame"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Construction_B1</li>
@@ -250,7 +250,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FuturisticDoorFrame" or defName="LTS_FuturisticLargeDoorFrame"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FuturisticDoorFrame" or defName="LTS_FuturisticLargeDoorFrame"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Construction_B3</li>
@@ -266,7 +266,7 @@
 			</li>
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_Pillar"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Pillar"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Construction_B1</li>
@@ -290,7 +290,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Fortification_C2</li>
@@ -299,7 +299,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]/stuffCategories</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]/stuffCategories</xpath>
 				<value>
 					<stuffCategories>
 						<li>StrongMetallic</li>
@@ -308,14 +308,14 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]</xpath>
 				<value>
 					<costStuffCount>8</costStuffCount>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>/Defs/ThingDef[defName="LTS_FuturisticWall"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]/costList</xpath>
 				<value>
 					<costList>
 						<Wire>3</Wire>
