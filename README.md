@@ -20,7 +20,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Vanilla Ideology Expanded - Memes and Structures](https://steamcommunity.com/sharedfiles/filedetails/?id=2636329500) - (untested)
 - [Vanilla Psycasts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659)
 - [Vanilla Trading Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2785616901) - (Unfixable error on load currently, reported to dev)
-- [Vanilla Skills Expanded] (https://steamcommunity.com/workshop/filedetails/?id=2854967442) - (Corrections for HSK skills)
+- [Vanilla Skills Expanded](https://steamcommunity.com/workshop/filedetails/?id=2854967442) - (Corrections for HSK skills)
 - [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
 - [Roads Of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2280318231) ( Material Conversion, removed AISR2G from architect menu, should only be buildable at worktable)
 - [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
