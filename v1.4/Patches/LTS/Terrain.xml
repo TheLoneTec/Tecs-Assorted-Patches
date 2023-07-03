@@ -431,16 +431,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>Defs/TerrainDef[@Name="LTS_RoughSquareBase"]/researchPrerequisites</xpath>
-				<value>
-					<researchPrerequisites Inherit="False">
-						<li>Stone_floor_B2</li>
-					</researchPrerequisites>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace"> 
-				<xpath>Defs/TerrainDef[@Name="LTS_RoughTileBase"]/researchPrerequisites</xpath>
+				<xpath>Defs/TerrainDef[@Name="LTS_StoneBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
 						<li>Stone_floor_B2</li>
