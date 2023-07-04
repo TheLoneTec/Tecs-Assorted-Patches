@@ -182,7 +182,7 @@
 
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
+				<xpath>Defs</xpath>
 				<value>
 				<RecipeDef>
 					<defName>Make_Guitar</defName>
