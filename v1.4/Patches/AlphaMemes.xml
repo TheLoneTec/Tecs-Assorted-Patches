@@ -16,15 +16,15 @@
 					<operations>
 					
 						<li Class="PatchOperationRemove">
-							<xpath>/Defs/ThingDef[defName = "Wall"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+							<xpath>Defs/ThingDef[defName = "Wall"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
 						</li>
 
 						<li Class="PatchOperationRemove">
-							<xpath>/Defs/ThingStyleDef[defName = "AM_Scavenger_Wall" or defName = "AM_Kemetic_Wall" or defName = "AM_SteampunkRevival_Wall"]</xpath>
+							<xpath>Defs/ThingStyleDef[defName = "AM_Scavenger_Wall" or defName = "AM_Kemetic_Wall" or defName = "AM_SteampunkRevival_Wall"]</xpath>
 						</li>
 						
 						<li Class="PatchOperationRemove">
-							<xpath>/Defs/StyleCategoryDef[defName = "AM_Scavenger" or defName = "AM_SteampunkRevival" or defName = "AM_Kemetic"]/thingDefStyles/li[thingDef="Wall"]</xpath>
+							<xpath>Defs/StyleCategoryDef[defName = "AM_Scavenger" or defName = "AM_SteampunkRevival" or defName = "AM_Kemetic"]/thingDefStyles/li[thingDef="Wall"]</xpath>
 						</li>
 						
 					</operations>
@@ -38,7 +38,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.8</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
 							<MiningSpeed>0.8</MiningSpeed>
 							<MiningYieldDigging>0.9</MiningYieldDigging>
 							<ConstructionSpeed>0.8</ConstructionSpeed>

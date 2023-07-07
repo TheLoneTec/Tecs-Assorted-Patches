@@ -16,7 +16,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.8</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
 							<MiningSpeed>0.8</MiningSpeed>
 							<MiningYieldDigging>0.9</MiningYieldDigging>
 							<ConstructionSpeed>0.8</ConstructionSpeed>
@@ -33,7 +33,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.4</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.6</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.6</PlantSowingSpeed>
+							<PlantWorkSpeed>0.6</PlantWorkSpeed>
 							<MiningSpeed>0.6</MiningSpeed>
 							<MiningYieldDigging>0.6</MiningYieldDigging>
 							<ConstructionSpeed>0.6</ConstructionSpeed>
@@ -50,7 +50,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.7</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.7</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.7</PlantSowingSpeed>
+							<PlantWorkSpeed>0.7</PlantWorkSpeed>
 							<MiningSpeed>0.7</MiningSpeed>
 							<MiningYieldDigging>0.85</MiningYieldDigging>
 							<ConstructionSpeed>0.7</ConstructionSpeed>
@@ -67,7 +67,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.8</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
 							<MiningSpeed>0.8</MiningSpeed>
 							<MiningYieldDigging>0.9</MiningYieldDigging>
 							<ConstructionSpeed>0.8</ConstructionSpeed>
@@ -84,7 +84,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.75</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.75</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.7</PlantSowingSpeed>
+							<PlantWorkSpeed>0.7</PlantWorkSpeed>
 							<MiningSpeed>0.75</MiningSpeed>
 							<MiningYieldDigging>0.85</MiningYieldDigging>
 							<ConstructionSpeed>0.75</ConstructionSpeed>
@@ -101,7 +101,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.75</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
 							<MiningSpeed>0.7</MiningSpeed>
 							<MiningYieldDigging>0.8</MiningYieldDigging>
 							<ConstructionSpeed>0.7</ConstructionSpeed>
@@ -118,7 +118,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.85</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.85</PlantSowingSpeed>
+							<PlantWorkSpeed>0.85</PlantWorkSpeed>
 							<MiningSpeed>0.8</MiningSpeed>
 							<MiningYieldDigging>0.9</MiningYieldDigging>
 							<ConstructionSpeed>0.8</ConstructionSpeed>
@@ -135,7 +135,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.85</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
 							<MiningSpeed>0.85</MiningSpeed>
 							<MiningYieldDigging>0.9</MiningYieldDigging>
 							<ConstructionSpeed>0.85</ConstructionSpeed>
@@ -152,7 +152,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.3</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.4</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.4</PlantSowingSpeed>
+							<PlantWorkSpeed>0.4</PlantWorkSpeed>
 							<MiningSpeed>0.4</MiningSpeed>
 							<MiningYieldDigging>0.4</MiningYieldDigging>
 							<ConstructionSpeed>0.4</ConstructionSpeed>
@@ -169,7 +169,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.8</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.8</PlantSowingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
 							<MiningSpeed>0.8</MiningSpeed>
 							<MiningYieldDigging>0.9</MiningYieldDigging>
 							<ConstructionSpeed>0.8</ConstructionSpeed>
@@ -186,7 +186,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.4</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.6</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.55</PlantSowingSpeed>
+							<PlantWorkSpeed>0.55</PlantWorkSpeed>
 							<MiningSpeed>0.5</MiningSpeed>
 							<MiningYieldDigging>0.7</MiningYieldDigging>
 							<ConstructionSpeed>0.6</ConstructionSpeed>
@@ -203,7 +203,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.8</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.85</PlantSowingSpeed>
+							<PlantWorkSpeed>0.85</PlantWorkSpeed>
 							<MiningSpeed>0.7</MiningSpeed>
 							<MiningYieldDigging>0.9</MiningYieldDigging>
 							<ConstructionSpeed>0.7</ConstructionSpeed>
@@ -220,7 +220,7 @@
 						<toolStatFactors>
 							<TreeFellingSpeed>0.3</TreeFellingSpeed>
 							<PlantHarvestingSpeed>0.4</PlantHarvestingSpeed>
-							<PlantSowingSpeed>0.4</PlantSowingSpeed>
+							<PlantWorkSpeed>0.4</PlantWorkSpeed>
 							<MiningSpeed>0.4</MiningSpeed>
 							<MiningYieldDigging>0.4</MiningYieldDigging>
 							<ConstructionSpeed>0.4</ConstructionSpeed>
