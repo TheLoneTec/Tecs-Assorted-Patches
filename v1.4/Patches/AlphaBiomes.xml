@@ -369,9 +369,33 @@
 								</operations>
 							</match>
 						</li>
-					
+										
 					</operations>
 				</match>
+			</li>
+
+			<!-- Expanded Roof -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>GU_RoseQuartzThickStoneRoof</defName>
+						<label>rose quartz thick stone roof</label>
+						<description>rose quartz thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>AB_CragstoneThickStoneRoof</defName>
+						<label>cragstone thick stone roof</label>
+						<description>cragstone thick stone roof</description>
+					</RoofDef>
+				</value>	
 			</li>
 
 			<li Class="PatchOperationFindMod">

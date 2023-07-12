@@ -155,6 +155,39 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_FlintThickStoneRoof</defName>
+						<label>flint thick stone roof</label>
+						<description>flint thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>AdamantThickStoneRoof</defName>
+						<label>adamant thick stone roof</label>
+						<description>adamant thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_ObsidianThickStoneRoof</defName>
+						<label>obsidian thick stone roof</label>
+						<description>obsidian thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
 			</operations>
 		</match>
 	</Operation>

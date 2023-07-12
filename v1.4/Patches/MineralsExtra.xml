@@ -230,6 +230,182 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_AnorthositeThickStoneRoof</defName>
+						<label>anorthosite thick stone roof</label>
+						<description>anorthosite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_ChalkThickStoneRoof</defName>
+						<label>chalk thick stone roof</label>
+						<description>chalk thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_BlueMarbleThickStoneRoof</defName>
+						<label>blue marble thick stone roof</label>
+						<description>blue marble thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_DioriteThickStoneRoof</defName>
+						<label>diorite thick stone roof</label>
+						<description>diorite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_AndesiteThickStoneRoof</defName>
+						<label>andesite thick stone roof</label>
+						<description>andesite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_BrownMarbleThickStoneRoof</defName>
+						<label>brown marble thick stone roof</label>
+						<description>brown marble thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_PinkMarbleThickStoneRoof</defName>
+						<label>pink marble thick stone roof</label>
+						<description>pink marble thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_GabbroThickStoneRoof</defName>
+						<label>gabbro thick stone roof</label>
+						<description>gabbro thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_SchistThickStoneRoof</defName>
+						<label>schist thick stone roof</label>
+						<description>schist thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_GneissThickStoneRoof</defName>
+						<label>gneiss thick stone roof</label>
+						<description>gneiss thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_PeridotiteThickStoneRoof</defName>
+						<label>peridote thick stone roof</label>
+						<description>peridote thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_LigniteThickStoneRoof</defName>
+						<label>lignite thick stone roof</label>
+						<description>lignite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_RhyoliteThickStoneRoof</defName>
+						<label>rhyolite thick stone roof</label>
+						<description>rhyolite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_ScoriaThickStoneRoof</defName>
+						<label>scoria thick stone roof</label>
+						<description>scoria thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_SerpentiniteThickStoneRoof</defName>
+						<label>serpentinite thick stone roof</label>
+						<description>serpentinite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_TuffThickStoneRoof</defName>
+						<label>tuff thick stone roof</label>
+						<description>tuff thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
 			</operations>
 		</match>
 	</Operation>
