@@ -16,7 +16,7 @@
 					</value>
 				</li>
 
-				<li Class="PatchOpeartionRemove">
+				<li Class="PatchOperationRemove">
 					<xpath>Defs/CombatAI.RaidTargetCollectionDef[defName="CombatAI_RT_Rimefeller"]/targets/li[text()="SynthyleneRefiner" or text()="SynthamideRefiner"]</xpath>
 				</li>
 
