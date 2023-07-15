@@ -15,7 +15,22 @@
 						<li Class="CombatAI.Comps.CompProperties_Statistics"/>
 					</value>
 				</li>
-	
+
+				<li Class="PatchOpeartionRemove">
+					<xpath>Defs/CombatAI.RaidTargetCollectionDef[defName="CombatAI_RT_Rimefeller"]/targets/li[text()="SynthyleneRefiner" or text()="SynthamideRefiner"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatAI.RaidTargetCollectionDef[defName="CombatAI_RT_Rimefeller"]/targets</xpath>
+					<value>
+						<li>PolymerRefiner</li>
+						<li>HyperweaveRefiner</li>
+						<li>NeutroamineRefiner</li>
+						<li>ParaffinRefiner</li>
+						<li>SulphateRefiner</li>
+						<li>SyntheticAmmoniaRefiner</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
