@@ -7,6 +7,13 @@
 	</mods>
 		<match Class="PatchOperationSequence">
 		<operations>
+
+        <li Class="PatchOperationConditional">
+			<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef[defName = "RR_royal_EMP"]/originals/li[text()="Gun_EmpLauncher"]</xpath>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef[defName = "RR_royal_EMP"]/originals/li[text()="Gun_EmpLauncher"]</xpath>
+			</match>
+        </li>
 	<!--
 		<li Class="PatchOperationRemove">
 			<xpath>Defs/PeteTimesSix.ResearchReinvented.Defs.SpecialResearchOpportunityDef[defName = "RR_royal_EMP"]/originals/li[text()="Gun_EmpLauncher"]</xpath>
