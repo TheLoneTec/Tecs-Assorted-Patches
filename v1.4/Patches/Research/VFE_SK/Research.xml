@@ -27,17 +27,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_BasicFurniture"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_BasicFurniture"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_BasicFurniture"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -66,17 +66,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_ComplexFurniture"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -111,17 +111,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_RoyalFurniture"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -150,17 +150,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_WasteDisposal"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -189,17 +189,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_ModernFurniture"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="MF_ModernFurniture"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="MF_ModernFurniture"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
