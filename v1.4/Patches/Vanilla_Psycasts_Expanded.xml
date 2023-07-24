@@ -48,14 +48,39 @@
 				   </value>
 				</li>
 	
-				<li Class="PatchOperationReplace">
-				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/thingCategories</xpath>
-				   <value>
-						<thingCategories>
-							<li>ShellFullArmorCat</li>
-							<li>SetMedieval</li>
-						</thingCategories>
-				   </value>
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>HMC Vile's Pre-Industrial Overhaul</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+	
+						<li Class="PatchOperationReplace">
+						   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/thingCategories</xpath>
+						   <value>
+								<thingCategories>
+									<li>ShellFullArmorCat</li>
+									<li>SetMedieval</li>
+								</thingCategories>
+						   </value>
+						</li>
+				
+						</operations>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+	
+						<li Class="PatchOperationReplace">
+						   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/thingCategories</xpath>
+						   <value>
+								<thingCategories>
+									<li>SetMedieval</li>
+								</thingCategories>
+						   </value>
+						</li>
+				
+						</operations>
+					</nomatch>
 				</li>
 	
 				<li Class="PatchOperationReplace">
