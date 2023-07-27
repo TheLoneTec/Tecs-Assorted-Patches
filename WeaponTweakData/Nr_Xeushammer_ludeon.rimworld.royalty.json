@@ -1,0 +1,10 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "Nr_Xeushammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.1844505,
+  "BladeStart": 0.3560323,
+  "BladeEnd": 0.6906169,
+  "MeleeWeaponType": 1
+}

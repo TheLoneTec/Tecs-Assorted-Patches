@@ -1,0 +1,12 @@
+{
+  "TextureModID": "vitech.metallurgy",
+  "ItemDefName": "MeleeWeapon_Axe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2122905,
+  "OffY": -0.00670391042,
+  "Rotation": 45.0,
+  "BladeStart": 0.319553077,
+  "BladeEnd": 0.8513966,
+  "MeleeWeaponType": 5
+}

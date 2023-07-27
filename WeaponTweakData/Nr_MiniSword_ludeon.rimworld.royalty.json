@@ -1,0 +1,10 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "Nr_MiniSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.291689128,
+  "BladeStart": 0.08579089,
+  "BladeEnd": 0.7463811,
+  "MeleeWeaponType": 6
+}

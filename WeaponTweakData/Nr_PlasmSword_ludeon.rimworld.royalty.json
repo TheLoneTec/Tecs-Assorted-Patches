@@ -1,0 +1,16 @@
+{
+  "TextureModID": "ludeon.rimworld.royalty",
+  "ItemDefName": "Nr_PlasmSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2745306,
+  "BladeStart": 0.102949455,
+  "BladeEnd": 0.7249334,
+  "MeleeWeaponType": 6,
+  "TrailTint": {
+    "r": 0.998,
+    "g": 0.496,
+    "b": 0.213,
+    "a": 1.0
+  }
+}

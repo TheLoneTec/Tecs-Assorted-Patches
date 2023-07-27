@@ -1,0 +1,11 @@
+{
+  "TextureModID": "vitech.metallurgy",
+  "ItemDefName": "MeleeWeapon_Warhammer",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.216759771,
+  "Rotation": 45.0,
+  "BladeStart": 0.43575418,
+  "BladeEnd": 0.820111752,
+  "MeleeWeaponType": 6
+}
