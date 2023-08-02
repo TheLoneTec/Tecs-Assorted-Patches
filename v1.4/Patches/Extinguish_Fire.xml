@@ -104,17 +104,18 @@
 							</value>
 						</li>
 
+						<li Class="PatchOperationAdd">
+						<order>Prepend</order>
+						<xpath>Defs/ThingDef[defName="WallTorch"]/comps</xpath>
+							<value>
+								<li Class="CompProperties_Flickable" />
+							</value>
+						</li>
+
 						</operations>
 					</nomatch>
 				</li>
 
-				<li Class="PatchOperationAdd">
-				<order>Prepend</order>
-				<xpath>Defs/ThingDef[defName="WallTorch"]/comps</xpath>
-					<value>
-						<li Class="CompProperties_Flickable" />
-					</value>
-				</li>
 <!--
 				<li Class="PatchOperationAttributeSet">
 				<xpath>Defs/ThingDef[defName="WallTorch"]/comps/li[@Class="SK.CompProperties_FireOverlayMod"]</xpath>
