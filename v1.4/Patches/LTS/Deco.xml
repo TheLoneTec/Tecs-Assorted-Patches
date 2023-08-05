@@ -40,13 +40,9 @@
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
 						<defName>Deco_Small</defName>
-						<label>Small Decorations</label>
-						<description>Various decoration items.</description>
+						<label>Path Decorations</label>
+						<description>Various path decoration items.</description>
 						<defNames>
-							<li>LTS_StoneBorderCorner</li>
-							<li>LTS_StoneBorderEdge</li>
-							<li>LTS_LumberBorderCorner</li>
-							<li>LTS_LumberBorderEdge</li>
 							<li>LTS_PathA</li>
 							<li>LTS_PathB</li>
 							<li>LTS_PathC</li>
@@ -57,7 +53,32 @@
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
 			</li>
-			
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Deco_Border</defName>
+						<label>Border Decorations</label>
+						<description>Various border decoration items.</description>
+						<defNames>
+							<li>LTS_StoneBorderCorner</li>
+							<li>LTS_StoneBorderEdge</li>
+							<li>LTS_LumberBorderCorner</li>
+							<li>LTS_LumberBorderEdge</li>
+							<li>LTS_WarningBorderCorner</li>
+							<li>LTS_WarningBorderEdge</li>
+							<li>FloorAddonA</li>
+							<li>LTS_TilesBorderCorner</li>
+							<li>LTS_TilesBorderEdge</li>
+							<li>LTS_TilesBorderInvertedEdge</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+	
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name = "LTS_PathBase"]/costStuffCount</xpath>
 				<value>

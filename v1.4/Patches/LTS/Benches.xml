@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>[LTS]Furnishing</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="LTS_StoneStove" or defName="LTS_StoneOven" or defName="LTS_GrainMill"]</xpath>
+			</li>
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs/li[text()="LTS_StoneStove" or text()="LTS_StoneOven" or text()="LTS_GrainMill"]</xpath>
+            </li>
+		
+			<li Class="PatchOperationAttributeSet">
+			<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]</xpath>
+				<value>WorkTable</value>
+				<attribute>ParentName</attribute>
+			</li>
+		
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]/recipes/li[text()="CookMealFine_Veg"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]/recipes/li[text()="CookMealFine_Veg" or 
+					text()="CookMealFine_Meat" or text()="CookMealLavish_Veg" or text()="CookMealLavish_Meat" or 
+					text()="CookMealFineBulk_Veg" or text()="CookMealFineBulk_Meat" or text()="CookMealLavishBulk_Veg" or 
+					text()="CookMealLavishBulk_Meat"]</xpath>
+				</match>
+			</li>
+	
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "LTS_ElectricStove"]/constructEffect</xpath>
+            </li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName = "LTS_ElectricStove"]/costList</xpath>
+                <value>
+					<costList>
+						<ComponentIndustrial>8</ComponentIndustrial>
+						<ElectronicComponents>4</ElectronicComponents>
+						<Rubber>10</Rubber>
+						<Electronics>2</Electronics>
+						<Mechanism>4</Mechanism>
+					</costList>
+					<stuffCategories Inherit="False">
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>35</costStuffCount>
+                </value>
+            </li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName = "LTS_ElectricStove"]/researchPrerequisites</xpath>
+                <value>
+					<researchPrerequisites>
+						<li>PackagedSurvivalMeal</li>
+					</researchPrerequisites>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/RecipeDef[skillRequirements/cooking and not(skillRequirements/cooking > 10)]/recipeUsers/li[text()="ElectricStove"]</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[skillRequirements/cooking and not(skillRequirements/cooking > 10)]/recipeUsers/li[text()="ElectricStove"]</xpath>
+					<value>
+						<li>LTS_ElectricStove</li>
+					</value>
+				</match>
+			</li>
+	
+			<li Class="PatchOperationAttributeSet">
+			<xpath>Defs/ThingDef[defName="LTS_Sink"]</xpath>
+				<value>DubsDirtyBasinBase</value>
+				<attribute>ParentName</attribute>
+			</li>
+	
+			<li Class="PatchOperationAttributeAdd">
+			<xpath>Defs/ThingDef[defName="LTS_Sink"]</xpath>
+				<value>true</value>
+				<attribute>DBHThirstAddon</attribute>
+			</li>
+	
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "LTS_Sink"]</xpath>
+                <value>
+					<costList>
+						<ComponentIndustrial>6</ComponentIndustrial>
+						<Mechanism>1</Mechanism>
+					</costList>
+                </value>
+            </li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName = "LTS_Sink"]/researchPrerequisites</xpath>
+                <value>
+					<researchPrerequisites>
+						<li MayRequire="dbhlitemode">CentralHeating</li>
+					</researchPrerequisites>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef/comps/li[text()="CompProperties_AffectedByFacilities"]/linkableFacilities[li/text()="CookingTools" and not(li/text()="LTS_Sink")]</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/comps/li[text()="CompProperties_AffectedByFacilities"]/linkableFacilities[li/text()="CookingTools" and not(li/text()="LTS_Sink")]</xpath>
+					<value>
+						<li>LTS_Sink</li>
+					</value>
+				</match>
+			</li>
+	
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

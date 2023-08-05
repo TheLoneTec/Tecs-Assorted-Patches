@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Loft Bed</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>[JPT] Soft Warm Beds HSK</li>
+			</mods>
+				<nomatch Class="PatchOperationSequence">
+				<operations>
+				
+				<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName = "LoftBed"]</xpath>
+					<value>SK_BedBase</value>
+					<attribute>ParentName</attribute>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_StandartBeds"]/defNames/li[text()="industrial_single_bed"]</xpath>
+					<value>
+						<li>LoftBed</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "LoftBed"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MaxHitPoints>110</MaxHitPoints>
+							<Beauty>7</Beauty>
+							<WorkToBuild>800</WorkToBuild>
+							<Comfort>0.75</Comfort>
+							<ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+							<BedRestEffectiveness>0.95</BedRestEffectiveness>
+							<SurgerySuccessChanceFactor>0.84</SurgerySuccessChanceFactor>
+							<Bulk>70</Bulk>
+							<Mass>28</Mass>
+						</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "LoftBed"]</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>4</ComponentMedieval>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "LoftBed"]</xpath>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>Beds_B1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<!-- Double Loft Bed -->
+				
+				<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>SK_BedBase</value>
+					<attribute>ParentName</attribute>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_DoubleBeds"]/defNames/li[text()="industrial_double_bed"]</xpath>
+					<value>
+						<li>DoubleLoftBed</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "LoftBed"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MaxHitPoints>170</MaxHitPoints>
+							<WorkToBuild>1540</WorkToBuild>
+							<Comfort>0.85</Comfort>
+							<Beauty>12</Beauty>
+							<ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+							<BedRestEffectiveness>0.95</BedRestEffectiveness>
+							<SurgerySuccessChanceFactor>0.87</SurgerySuccessChanceFactor>
+							<Bulk>160</Bulk>
+							<Mass>65</Mass>
+						</statBases>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>8</ComponentMedieval>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>Beds_B1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				</operations>
+				</nomatch>
+			</li>
+
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

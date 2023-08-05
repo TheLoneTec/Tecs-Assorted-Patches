@@ -26,6 +26,15 @@
 					</value>
 				</li>
 	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="STF_Net"]</xpath>
+					<value>
+						<costList>
+							<Wire>4</Wire>
+						</costList>
+					</value>
+				</li>
+	
 			</operations>
 		</match>
 	</Operation>

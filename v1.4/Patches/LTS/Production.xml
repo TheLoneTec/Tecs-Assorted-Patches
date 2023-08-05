@@ -22,26 +22,37 @@
 				<value>
 					<li>LTS_Growingpit</li>
 					<li>LTS_GrowingpitRound</li>
+					<li>LTS_GrowingPlot</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/ThingDef[defName="LTS_Growingpit"]/costList</xpath>
 				<value>
-				<costList>
-					<Fertilizer>24</Fertilizer>
-					<Dirt>10</Dirt>
-				</costList>
+					<costList>
+						<Fertilizer>24</Fertilizer>
+						<Dirt>10</Dirt>
+					</costList>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/ThingDef[defName="LTS_GrowingpitRound"]/costList</xpath>
 				<value>
-				<costList>
-					<Fertilizer>7</Fertilizer>
-					<Dirt>2</Dirt>
-				</costList>
+					<costList>
+						<Fertilizer>7</Fertilizer>
+						<Dirt>2</Dirt>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_GrowingPlot"]/costList</xpath>
+				<value>
+					<costList>
+						<Fertilizer>7</Fertilizer>
+						<Dirt>2</Dirt>
+					</costList>
 				</value>
 			</li>
 

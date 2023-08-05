@@ -29,6 +29,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_AmmoContainers"]/defNames</xpath>
                 <value>
+					<li>WeaponRacks_1Rack</li>
 					<li>WeaponRacks_2Rack</li>
 					<li>WeaponRacks_3Rack</li>
 					<li>WeaponRacks_4Rack</li>
@@ -36,7 +37,7 @@
             </li>
 	
             <li Class="PatchOperationRemove">
-                <xpath>Defs/ThingDef[defName="WeaponRacks_4Rack" or defName="WeaponRacks_3Rack" or defName="WeaponRacks_2Rack"]/researchPrerequisites</xpath>
+                <xpath>Defs/ThingDef[defName="WeaponRacks_4Rack" or defName="WeaponRacks_3Rack" or defName="WeaponRacks_2Rack" or defName="WeaponRacks_1Rack"]/researchPrerequisites</xpath>
             </li>
 	
 		</operations>

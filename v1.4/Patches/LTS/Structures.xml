@@ -118,6 +118,14 @@
 							<xpath>Defs/ThingDef[defName="LTS_RusticWall"]</xpath>
 						</li>
 						
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="LTS_StoneBrickWall"]</xpath>
+						</li>
+						
+						<li Class="PatchOperationRemove">
+							<xpath>Defs/ThingDef[defName="LTS_BrickWall"]</xpath>
+						</li>
+						
 					</operations>
 				</match>
 			</li>			
@@ -198,6 +206,7 @@
 							<li>LTS_ArchWood</li>
 							<li>LTS_ArchStone</li>
 							<li>LTS_LargeArchStone</li>
+							<li>LTS_LargestArchStone</li>
 						</defNames>
 						<designationCategory>Structure</designationCategory>
 						<debug>false</debug>
@@ -231,6 +240,8 @@
 						<defNames>
 							<li>LTS_SimpleDoorFrame</li>
 							<li>LTS_SimpleLargeDoorFrame</li>
+							<li>LTS_SimpleDoorFrameL</li>
+							<li>LTS_MetalFrameL</li>
 							<li>LTS_FuturisticDoorFrame</li>
 							<li>LTS_FuturisticLargeDoorFrame</li>
 						</defNames>
@@ -241,10 +252,19 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-				<xpath>Defs/ThingDef[defName="LTS_SimpleDoorFrame" or defName="LTS_SimpleLargeDoorFrame"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_SimpleDoorFrame" or defName="LTS_SimpleLargeDoorFrame" or defName="LTS_SimpleDoorFrameL"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Construction_B1</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_MetalFrameL"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Construction_B2</li>
 					</researchPrerequisites>
 				</value>
 			</li>

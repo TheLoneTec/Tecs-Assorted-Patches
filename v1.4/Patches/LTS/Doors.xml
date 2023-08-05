@@ -54,7 +54,7 @@
 				<xpath>Defs/ThingDef[@Name="LTS_ArchedDoor"]</xpath>
 				<value>
 					<costList>
-						<Glass>1</Glass>
+						<Glass>2</Glass>
 						<ComponentMedieval>1</ComponentMedieval>
 					</costList>
 				</value>
@@ -172,6 +172,7 @@
 							<!-- Simple large -->
 							<li>LTS_LargeSimpleDoorOne</li>
 							<li>LTS_LargeSimpleDoorTwo</li>
+							<li>LTS_SimpleDoorL</li>
 							<!-- Asym large -->
 							<li>LTS_AssymetricDoorTwo</li>
 							<li>LTS_AssymetricReinforcedDoorTwo</li>
@@ -188,7 +189,7 @@
 
 		
 			<li Class="PatchOperationAdd"> 
-				<xpath>Defs/ThingDef[defName="LTS_LargeSimpleDoorOne" or defName="LTS_LargeSimpleDoorTwo"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_LargeSimpleDoorOne" or defName="LTS_LargeSimpleDoorTwo" or defName="LTS_SimpleDoorL"]</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Construction_B2</li>
@@ -249,6 +250,34 @@
 				<xpath>Defs/ThingDef[defName = "LTS_LargeSimpleDoorTwo"]</xpath>
 				<value>
 				<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LTS_SimpleDoorL"]</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>4</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LTS_SimpleDoorL"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+						<li>Stony</li>
+						<li>Metallic</li>
+						<li>SolidMetallic</li>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LTS_SimpleDoorL"]</xpath>
+				<value>
+				<costStuffCount>50</costStuffCount>
 				</value>
 			</li>
 		
@@ -410,7 +439,7 @@
 				<xpath>Defs/ThingDef[@Name="LTS_FancyDoor"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
-						<li>Firefoam</li>
+						<li>Construction_B3</li>
 					</researchPrerequisites>
 				</value>
 			</li>
@@ -419,15 +448,15 @@
 				<xpath>Defs/ThingDef[@Name = "LTS_FancyDoor"]</xpath>
 				<value>
 					<costList>
-						<Glass>1</Glass>
-						<ComponentIndustrial>1</ComponentIndustrial>
+						<Glass>5</Glass>
+						<ComponentIndustrial>2</ComponentIndustrial>
 					</costList>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name = "LTS_FancyDoor"]/costStuffCount</xpath>
 				<value>
-					<costStuffCount>10</costStuffCount>
+					<costStuffCount>15</costStuffCount>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -436,6 +465,175 @@
 					<li>SolidMetallic</li>
 					<li>StrongMetallic</li>
 					<li>RuggedMetallic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>LTS_GlassDoors</defName>
+						<label>Glass Doors</label>
+						<description>A fancier door with hardened bullet-proof see-through glass. Great for your umbrella corporation needs.</description>
+						<defNames>
+							<li>LTS_GlassDoorS</li>
+							<li>LTS_GlassDoorM</li>
+							<li>LTS_GlassDoorL</li>
+							<li>LTS_GlassDoorSingle</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[@Name="LTS_GlassDoor"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Firefoam</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "LTS_GlassDoor"]/costList</xpath>
+				<value>
+					<costList>
+						<Glass>4</Glass>
+						<ComponentIndustrial>2</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "LTS_GlassDoor"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name = "LTS_GlassDoor"]/stuffCategories</xpath>
+				<value>
+					<li>SolidMetallic</li>
+					<li>StrongMetallic</li>
+					<li>RuggedMetallic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LTS_GlassDoorM"]</xpath>
+				<value>
+					<costList>
+						<Glass>8</Glass>
+						<ComponentIndustrial>3</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_GlassDoorM"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>40</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LTS_GlassDoorL"]</xpath>
+				<value>
+					<costList>
+						<Glass>12</Glass>
+						<ComponentIndustrial>4</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_GlassDoorL"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>65</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "LTS_GlassDoorSingle"]</xpath>
+				<value>
+					<costList>
+						<Glass>6</Glass>
+						<ComponentIndustrial>2</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_GlassDoorSingle"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>10</costStuffCount>
+				</value>
+			</li>
+			
+			<!-- Reinforced Doors -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>LTS_ReinforcedDoors</defName>
+						<label>Reinforced Doors</label>
+						<description>A reinforced door for your protective needs.</description>
+						<defNames>
+							<li>LTS_ReinforcedDoorL</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[@Name="LTS_ReinforcedDoor"]</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Firefoam</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "LTS_ReinforcedDoor"]/costList</xpath>
+				<value>
+					<costList>
+						<ReinforcedConcrete>6</ReinforcedConcrete>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<!--<ElectronicComponents>1</ElectronicComponents>-->
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "LTS_ReinforcedDoor"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>90</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name = "LTS_ReinforcedDoor"]/stuffCategories</xpath>
+				<value>
+					<li>SolidMetallic</li>
+					<li>StrongMetallic</li>
+					<li>RuggedMetallic</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_ReinforcedDoorL"]/costList</xpath>
+				<value>
+					<costList>
+						<ReinforcedConcrete>14</ReinforcedConcrete>
+						<ComponentIndustrial>9</ComponentIndustrial>
+						<!--<ElectronicComponents>1</ElectronicComponents>-->
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_ReinforcedDoorL"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>220</costStuffCount>
 				</value>
 			</li>
 			
@@ -483,6 +681,20 @@
 				
 						<li Class="PatchOperationReplace">
 							<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="FancyDoors"]/designationCategory</xpath>
+							<value>
+								<designationCategory>DoorsWindows</designationCategory>
+							</value>
+						</li>
+				
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="LTS_GlassDoors"]/designationCategory</xpath>
+							<value>
+								<designationCategory>DoorsWindows</designationCategory>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="LTS_ReinforcedDoors"]/designationCategory</xpath>
 							<value>
 								<designationCategory>DoorsWindows</designationCategory>
 							</value>

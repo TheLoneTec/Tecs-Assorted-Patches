@@ -52,7 +52,19 @@
 			<li Class="PatchOperationRemove"> 
 				<xpath>Defs/TerrainDef[@Name="LTS_UnevenBase"]/designatorDropdown</xpath>
 			</li>
-		
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/TerrainDef[@Name="LTS_RuralBase"]/designatorDropdown</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/TerrainDef[@Name="LTS_Vinyl"]/designatorDropdown</xpath>
+			</li>
+	
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/TerrainDef[@Name="LTS_IndustrialBase"]/designatorDropdown</xpath>
+			</li>
+	
 			<li Class="PatchOperationRemove"> 
 				<xpath>Defs/TerrainDef[@Name="LTS_FuturisticBase"]/designatorDropdown</xpath>
 			</li>
@@ -265,7 +277,7 @@
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughSquareDiagonalDunite</li>
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughSquareDiagonalPegmatite</li>
 						</defNames>
-						<designationCategory>OutsideFloors</designationCategory>
+						<designationCategory>NaturalFloors</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
@@ -295,7 +307,7 @@
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughSquareStraightDunite</li>
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughSquareStraightPegmatite</li>
 						</defNames>
-						<designationCategory>OutsideFloors</designationCategory>
+						<designationCategory>NaturalFloors</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
@@ -325,7 +337,7 @@
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughTileBaseHDunite</li>
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughTileBaseHPegmatite</li>
 						</defNames>
-						<designationCategory>OutsideFloors</designationCategory>
+						<designationCategory>NaturalFloors</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
@@ -355,7 +367,7 @@
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughTileBaseVDunite</li>
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RoughTileBaseVPegmatite</li>
 						</defNames>
-						<designationCategory>OutsideFloors</designationCategory>
+						<designationCategory>NaturalFloors</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
@@ -385,7 +397,7 @@
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_PatternEvenDunite</li>
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_PatternEvenPegmatite</li>
 						</defNames>
-						<designationCategory>OutsideFloors</designationCategory>
+						<designationCategory>NaturalFloors</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
@@ -415,12 +427,91 @@
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_PatternUnEvenDunite</li>
 							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_PatternUnEvenPegmatite</li>
 						</defNames>
-						<designationCategory>OutsideFloors</designationCategory>
+						<designationCategory>NaturalFloors</designationCategory>
 						<debug>false</debug>
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
 			</li>
 		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>LTS_RuralBases</defName>
+						<label>LTS Rural</label>
+						<description>Rural from LTS</description>
+						<defNames>
+							<li>LTS_RuralSandstone</li>
+							<li>LTS_RuralGranite</li>
+							<li>LTS_RuralLimestone</li>
+							<li>LTS_RuralSlate</li>
+							<li>LTS_RuralMarble</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralClaystone</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralAndesite</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralSyenite</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralGneiss</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralQuartzite</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralSchist</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralGabbro</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralDiorite</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralDunite</li>
+							<li MayRequire="Ogliss.Cupro.CuprosStones">LTS_RuralPegmatite</li>
+						</defNames>
+						<designationCategory>NaturalFloors</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>LTS_VinylFloor</defName>
+						<label>LTS Vinyl</label>
+						<description>Vinyl from LTS</description>
+						<defNames>
+							<li>LTS_VinylFloor</li>
+							<li>LTS_VinylFloorTinted</li>
+							<li>LTS_VinylFloorDiamond</li>
+							<li>LTS_VinylFloorSquare</li>
+						</defNames>
+						<designationCategory>Floors</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>LTS_IndustrialFloor</defName>
+						<label>LTS Industrial</label>
+						<description>Industrial from LTS</description>
+						<defNames>
+							<li>LTS_IndustrialFloor</li>
+							<li>LTS_IndustrialTileFloor</li>
+							<li>LTS_IndustrailDirtyFloor</li>
+							<li>LTS_GratingHFloor</li>
+							<li>LTS_GratingVFloor</li>
+						</defNames>
+						<designationCategory>OutsideFloors</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[@Name = "LTS_IndustrialBase"]/costList</xpath>
+				<value>
+					<costList>
+						<Plasteel>3</Plasteel>
+						<ComponentIndustrial>1</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+	
 			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/TerrainDef[@Name="LTS_FineStoneBase"]/researchPrerequisites</xpath>
 				<value>

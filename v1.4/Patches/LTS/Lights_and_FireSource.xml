@@ -18,6 +18,24 @@
 			</li>
 		
 			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Lamps"]/defNames</xpath>
+				<value>
+					<li>LTS_FloorLight</li>
+					<li>LTS_WallLightOne</li>
+					<li>LTS_WallLightTwo</li>
+					<li>LTS_WallLightThree</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs/li[text()="LTS_WallTorch"]</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="LTS_WallTorch"]</xpath>
+			</li>
+		
+			<li Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
@@ -27,6 +45,8 @@
 						<defNames>
 							<li>LTS_Lanternpost</li>
 							<li>LTS_Lightpost</li>
+							<li>LTS_GardenLightOne</li>
+							<li>LTS_GardenLightTwo</li>
 						</defNames>
 						<designationCategory>Accessories</designationCategory>
 						<debug>false</debug>
@@ -361,6 +381,177 @@
 					<Glass>5</Glass>
 					<ElectronicComponents>1</ElectronicComponents>
 				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_FloorLight"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_FloorLight"]/costStuffCount</xpath>
+			</li>
+	
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_FloorLight"]/stuffCategories</xpath>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_FloorLight"]</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>2</ComponentIndustrial>
+						<Plastic>6</Plastic>
+						<Glass>4</Glass>
+						<ElectronicComponents>1</ElectronicComponents>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_FloorLight"]</xpath>
+				<value>
+					<filthLeaving>Filth_BrokenGlass</filthLeaving>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightOne"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightOne"]/costStuffCount</xpath>
+			</li>
+	
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightOne"]/stuffCategories</xpath>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightOne"]</xpath>
+				<value>
+					<costList>
+						<Glass>5</Glass>
+						<Plastic>2</Plastic>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<ElectronicComponents>1</ElectronicComponents>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightOne"]</xpath>
+				<value>
+					<filthLeaving>Filth_BrokenGlass</filthLeaving>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightTwo"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightTwo"]/costStuffCount</xpath>
+			</li>
+	
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightTwo"]/stuffCategories</xpath>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightTwo"]</xpath>
+				<value>
+					<costList>
+						<Glass>5</Glass>
+						<Plastic>2</Plastic>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<ElectronicComponents>1</ElectronicComponents>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightTwo"]</xpath>
+				<value>
+					<filthLeaving>Filth_BrokenGlass</filthLeaving>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]/costStuffCount</xpath>
+			</li>
+	
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]/stuffCategories</xpath>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]</xpath>
+				<value>
+					<costList>
+						<Glass>5</Glass>
+						<Plastic>2</Plastic>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<ElectronicComponents>1</ElectronicComponents>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]</xpath>
+				<value>
+					<filthLeaving>Filth_BrokenGlass</filthLeaving>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[@Name="LTS_GardenLights"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[@Name="LTS_GardenLights"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[@Name="LTS_GardenLights"]</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<Glass>5</Glass>
+						<ElectronicComponents>1</ElectronicComponents>
+					</costList>
 				</value>
 			</li>
 

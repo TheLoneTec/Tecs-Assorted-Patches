@@ -21,6 +21,8 @@
 							<li>RimNauts2_TransportPod_Cargo</li>
 							<li>RimNauts2_TransportPod_Satellite</li>
 							<li>RimNauts2_TransportPod_SpaceStation</li>
+							<li>RimNauts2_DeliveryCannon</li>
+							<li>RimNauts2_Vacuum_Glass</li>
 						</defNames>
 						<designationCategory>Ship</designationCategory>
 						<debug>false</debug>
@@ -55,7 +57,7 @@
 			<li Class="PatchOperationAdd">
 			   <xpath>Defs/ThingDef[defName="RimNauts2_PodLauncher"]</xpath>
 			   <value>
-					<costList>
+					<costList Inherit="False">
 						<Plastic>80</Plastic>
 						<Electronics>6</Electronics>
 						<ComponentSpacer>3</ComponentSpacer>
@@ -115,7 +117,7 @@
 			<li Class="PatchOperationAdd">
 			   <xpath>Defs/ThingDef[defName="RimNauts2_SatelliteDish"]</xpath>
 			   <value>
-					<costList>
+					<costList Inherit="False">
 						<Plastic>40</Plastic>
 						<Rubber>20</Rubber>
 						<Glass>40</Glass>
@@ -154,7 +156,7 @@
 			<li Class="PatchOperationAdd">
 			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Cargo"]</xpath>
 			   <value>
-					<costList>
+					<costList Inherit="False">
 						<Plastic>30</Plastic>
 						<Rubber>20</Rubber>
 						<ReinforcedGlass>5</ReinforcedGlass>
@@ -188,7 +190,7 @@
 			<li Class="PatchOperationAdd">
 			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Satellite"]</xpath>
 			   <value>
-					<costList>
+					<costList Inherit="False">
 						<Plastic>15</Plastic>
 						<Rubber>8</Rubber>
 						<ReinforcedGlass>4</ReinforcedGlass>
@@ -222,7 +224,7 @@
 			<li Class="PatchOperationAdd">
 			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_SpaceStation"]</xpath>
 			   <value>
-					<costList>
+					<costList Inherit="False">
 						<Plastic>100</Plastic>
 						<Rubber>50</Rubber>
 						<ReinforcedGlass>50</ReinforcedGlass>
@@ -230,6 +232,51 @@
 						<ComponentSpacer>6</ComponentSpacer>
 						<AdvMechanism>8</AdvMechanism>
 						<Microchips>4</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<!-- Delivery Cannon -->
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="RimNauts2_DeliveryCannon"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ship</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RimNauts2_DeliveryCannon"]</xpath>
+				<value>
+					<costStuffCount>350</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_DeliveryCannon"]/costList</xpath>
+			   <value>
+					<costList Inherit="False">
+						<Plastic>80</Plastic>
+						<Electronics>6</Electronics>
+						<ComponentSpacer>3</ComponentSpacer>
+						<AdvMechanism>6</AdvMechanism>
+						<Microchips>1</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<!-- Vacuum Sealed Glass Floor -->
+			
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/TerrainDef[defName="RimNauts2_Vacuum_Glass"]/costList</xpath>
+			   <value>
+					<costList Inherit="False">
+						<Plastic>2</Plastic>
+						<Rubber>2</Rubber>
+						<ReinforcedGlass>2</ReinforcedGlass>
 					</costList>
 			   </value>
 			</li>
@@ -264,7 +311,7 @@
 							<li>HF</li>
 						</stuffCategories>
 						<costStuffCount>120</costStuffCount>
-						<costList>
+						<costList Inherit="False">
 							<ElectronicComponents>8</ElectronicComponents>
 							<Carbon>30</Carbon>
 							<SyntheticFibers>24</SyntheticFibers>
@@ -362,7 +409,7 @@
 							<li>HF</li>
 						</stuffCategories>
 						<costStuffCount>35</costStuffCount>
-						<costList>
+						<costList Inherit="False">
 							<Microchips>1</Microchips>
 							<ElectronicComponents>2</ElectronicComponents>
 							<Carbon>10</Carbon>
