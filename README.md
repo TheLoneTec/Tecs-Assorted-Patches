@@ -3,7 +3,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N0IDAUM)
 
-<a href="https://www.paypal.com/donate/?hosted_button_id=BP26RP8BC6AWJ"><img src="blue.svg" height="40"></a>  
+<a href="https://www.paypal.com/donate/?hosted_button_id=BP26RP8BC6AWJ"><img src="GithubTextures/blue.svg" height="40"></a>  
 
 # 1.4 Patches for:
 - [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i have my own version for HSK in [addons (Celsius SK)](https://discord.com/channels/272340793174392832/1065298517284892743))
