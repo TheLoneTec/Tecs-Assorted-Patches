@@ -8,6 +8,13 @@
 	<match Class="PatchOperationSequence">
 		<operations>
 
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[@Name="LTS_BenchBase"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Production</designationCategory>
+				</value>
+			</li>
+
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="LTS_StoneStove" or defName="LTS_StoneOven" or defName="LTS_GrainMill"]</xpath>
 			</li>
@@ -72,18 +79,6 @@
 				</match>
 			</li>
 	
-			<li Class="PatchOperationAttributeSet">
-			<xpath>Defs/ThingDef[defName="LTS_Sink"]</xpath>
-				<value>DubsDirtyBasinBase</value>
-				<attribute>ParentName</attribute>
-			</li>
-	
-			<li Class="PatchOperationAttributeAdd">
-			<xpath>Defs/ThingDef[defName="LTS_Sink"]</xpath>
-				<value>true</value>
-				<attribute>DBHThirstAddon</attribute>
-			</li>
-	
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName = "LTS_Sink"]</xpath>
                 <value>
@@ -113,6 +108,65 @@
 				</match>
 			</li>
 	
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Dubs Bad Hygiene</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+						<li Class="PatchOperationInsert">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_HygieneMisc"]/defNames/li[text()="KitchenSink"]</xpath>
+						<order>Append</order>
+							<value>
+								<li>LTS_Sink</li>
+							</value>
+						</li>
+					
+						<li Class="PatchOperationAttributeSet">
+						<xpath>Defs/ThingDef[defName="LTS_Sink"]</xpath>
+							<value>DubsDirtyBasinBase</value>
+							<attribute>ParentName</attribute>
+						</li>
+				
+						<li Class="PatchOperationAttributeAdd">
+						<xpath>Defs/ThingDef[defName="LTS_Sink"]</xpath>
+							<value>true</value>
+							<attribute>DBHThirstAddon</attribute>
+						</li>
+					
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName = "LTS_Sink"]/designationCategory</xpath>
+							<value>
+								<designationCategory>Hygiene</designationCategory>
+							</value>
+						</li>
+					
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+						<li Class="PatchOperationInsert">
+						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Facilities"]/defNames/li[text()="CookingTools"]</xpath>
+						<order>Append</order>
+							<value>
+								<li>LTS_Sink</li>
+							</value>
+						</li>
+					
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName = "LTS_Sink"]/designationCategory</xpath>
+							<value>
+								<designationCategory>Misc</designationCategory>
+							</value>
+						</li>
+
+					
+					</operations>
+				</nomatch>
+			</li>
+
 		</operations>
 	</match>
 </Operation>
