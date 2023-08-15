@@ -5,6 +5,8 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=BP26RP8BC6AWJ"><img src="GithubTextures/blue.svg" height="40"></a>  
 
+<a href="https://www.donationalerts.com/r/thelonetec"><img src="DonationAlerts.png" height="40"></a>  
+
 # 1.4 Patches for:
 - [Celsius](https://steamcommunity.com/sharedfiles/filedetails/?id=2725863762) (Requires Xml Extensions) - (Added compatibility for all HSK, Viles and other addon mods, also included Save our Ship 2 patch. Added compatibility for [LTS] Furnishings) (While it works currently with the workshop mod, i have my own version for HSK in [addons (Celsius SK)](https://discord.com/channels/272340793174392832/1065298517284892743))
 - Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Might not be needed anymore))
