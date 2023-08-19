@@ -789,11 +789,11 @@
 					</costList>
 				</value>
 			</li>
-
+<!--
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="LTS_Fridge"]</xpath>
 			</li>
-
+-->
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="LTS_Fridge"]</xpath>
 			</li>

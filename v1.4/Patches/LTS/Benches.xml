@@ -22,7 +22,10 @@
             <li Class="PatchOperationRemove">
                 <xpath>Defs/WorkGiverDef[defName = "DoBillsCook"]/fixedBillGiverDefs/li[text()="LTS_StoneStove" or text()="LTS_StoneOven" or text()="LTS_GrainMill"]</xpath>
             </li>
-		
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "PsychiteTea"]/recipeMaker/recipeUsers/li[text()="LTS_StoneStove"]</xpath>
+            </li>
+
 			<li Class="PatchOperationAttributeSet">
 			<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]</xpath>
 				<value>WorkTable</value>
