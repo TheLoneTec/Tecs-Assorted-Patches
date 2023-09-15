@@ -105,6 +105,13 @@
 						</match>
 					</li>
 
+					<li Class="PatchOperationAdd"> 
+						<xpath>Defs/ThingDef[defName="LTS_StoneBrickWall" or defName="LTS_BrickWall"]/stuffCategories</xpath>
+						<value>
+							<li>Bricks</li>
+						</value>
+					</li>
+
 					</operations>
 				</nomatch>
 				<match Class="PatchOperationSequence">
