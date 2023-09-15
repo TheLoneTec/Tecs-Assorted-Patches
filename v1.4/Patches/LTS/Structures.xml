@@ -213,6 +213,13 @@
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
 			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_ArchStone" or defName="LTS_LargeArchStone" or defName="LTS_LargestArchStone"]/stuffCategories</xpath>
+				<value>
+					<li>Bricks</li>
+				</value>
+			</li>
 		
 			<li Class="PatchOperationAdd"> 
 				<xpath>Defs/ThingDef[defName="LTS_ArchWood"]</xpath>
