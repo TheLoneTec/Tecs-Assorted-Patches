@@ -695,7 +695,7 @@
 				</value>
 			</li>
 
-			<!-- ====== Ancient Cortial Stack ====== 
+			<!-- ====== Ancient Cortial Stack ====== -->
 
 			<li Class="PatchOperationAttributeSet">
 				<xpath>Defs/ThingDef[defName = "VFEU_AncientStack"]</xpath>
@@ -730,7 +730,7 @@
 					</costList>
 			   </value>
 			</li>
--->
+
 			<!-- ====== Empty Cortial Stack ====== -->
 
 			<li Class="PatchOperationAdd">
