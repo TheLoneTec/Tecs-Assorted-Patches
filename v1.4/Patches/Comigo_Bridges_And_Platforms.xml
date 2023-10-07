@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Comigo's Bridges and Platforms</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/TerrainDef[@Name="COMIGO_FloatingPlatform_Base"]/designatorDropdown</xpath>
+			</li>		
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/TerrainDef[@Name="COMIGO_LogBridge_Base"]/designatorDropdown</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/DesignatorDropdownGroupDef[defName="COMIGO_QuickBridge_Menu"]</xpath>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Bridges"]/defNames</xpath>
+				<value>
+					<li>COMIGO_LogBridge_Water</li>
+					<li>COMIGO_LogBridge_Mud</li>
+					<li>COMIGO_LogBridge_Marsh</li>
+					<li>COMIGO_FloatingPlatform_Wooden</li>
+					<li>COMIGO_FloatingPlatform_Metal</li>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>

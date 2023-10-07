@@ -301,6 +301,13 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Bridges"]/defNames</xpath>
+				<value>
+					<li>RimNauts2_SteelBridge</li>
+				</value>
+			</li>
+
 			<!-- ====== Space Suit ====== -->
 			
 				<!-- ========== Apparel_SpaceSuitBody ========== -->

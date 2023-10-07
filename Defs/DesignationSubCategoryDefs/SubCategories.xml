@@ -23,6 +23,7 @@
 			<li>Door</li>
 			<li>MDoor</li>
 			<li>DoorGlass</li>
+			<li>AnimalFlap</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>

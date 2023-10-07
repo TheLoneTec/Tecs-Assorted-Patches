@@ -113,6 +113,42 @@
 			</value>
 			</li>
 
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames</xpath>
+				<value>
+					<li>LogWall</li>
+					<li>WoodPanelWall</li>
+					<li>CeramicTileWall</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Doors"]/defNames</xpath>
+				<value>
+					<li>DoorBarn</li>
+					<li>DoorOrnate</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Diagonal_Walls</defName>
+						<label>Diagonal Walls</label>
+						<description>diagonal walls that can be facing inwards or outwards, depending on oreientation.</description>
+						<defNames>
+							<li>wall_angle</li>
+							<li>wallCabin_angle</li>
+							<li>wall_angle_north</li>
+							<li>wallCabin_angle_north</li>
+						</defNames>
+						<designationCategory>Structure</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>The Windows</li>

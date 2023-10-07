@@ -494,6 +494,14 @@
 				<xpath>Defs/RecipeDef[defName="ExtractSeed_AB_GlowingAgarilux"]</xpath>
 			</li>
 -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Bridges"]/defNames</xpath>
+				<value>
+					<li>AB_AsphaltBridge</li>
+				</value>
+			</li>
+			
 			</operations>
 		</match>
     </Operation>
