@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vile's Hardcore Renovations</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>xenomacabre.HCSKwallsandfloorsreduxeno</modId>
+				<key>VilesFencesAndFloorsPassableWattle</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<Operation Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="WattleFence"]/passability</xpath>
+						<value>
+							<passability>PassThroughOnly</passability>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="WattleFence"]/building</xpath>
+						<value>
+							<isFence>True</isFence>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="WattleFence"]</xpath>
+						<value>
+							<pathCost>35</pathCost>
+						</value>
+					</Operation>
+				</caseTrue>
+			</li>
+		
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>xenomacabre.HCSKwallsandfloorsreduxeno</modId>
+				<key>VilesFencesAndFloorsPassableDryStone</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<Operation Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DryStoneWall"]/passability</xpath>
+						<value>
+							<passability>PassThroughOnly</passability>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="DryStoneWall"]/building</xpath>
+						<value>
+							<isFence>True</isFence>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="DryStoneWall"]</xpath>
+						<value>
+							<pathCost>80</pathCost>
+						</value>
+					</Operation>
+				</caseTrue>
+			</li>
+		
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>xenomacabre.HCSKwallsandfloorsreduxeno</modId>
+				<key>VilesFencesAndFloorsPassableFence</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<Operation Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Fence"]/passability</xpath>
+						<value>
+							<passability>PassThroughOnly</passability>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Fence"]/building</xpath>
+						<value>
+							<isFence>True</isFence>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Fence"]</xpath>
+						<value>
+							<pathCost>60</pathCost>
+						</value>
+					</Operation>
+				</caseTrue>
+			</li>
+			
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>

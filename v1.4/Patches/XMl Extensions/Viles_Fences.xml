@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>VileRequisite-Fences And Floors by HSK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>skyarkhangel.FencesAndFloorsVileUpdate</modId>
+				<key>VilesFencesAndFloorsPassableChain</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<Operation Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="ChainFence"]/passability</xpath>
+						<value>
+							<passability>PassThroughOnly</passability>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ChainFence"]/building</xpath>
+						<value>
+							<isFence>True</isFence>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ChainFence"]</xpath>
+						<value>
+							<pathCost>135</pathCost>
+						</value>
+					</Operation>
+				</caseTrue>
+			</li>
+		
+			<li Class="XmlExtensions.OptionalPatch">
+				<modId>skyarkhangel.FencesAndFloorsVileUpdate</modId>
+				<key>VilesFencesAndFloorsPassableHS</key>
+				<defaultValue>false</defaultValue>
+				<caseTrue>
+					<Operation Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="TechFence"]/passability</xpath>
+						<value>
+							<passability>PassThroughOnly</passability>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="TechFence"]/building</xpath>
+						<value>
+							<isFence>True</isFence>
+						</value>
+					</Operation>
+					
+					<Operation Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="ChainFence"]</xpath>
+						<value>
+							<pathCost>200</pathCost>
+						</value>
+					</Operation>
+				</caseTrue>
+			</li>
+		
+			</operations>
+		</match>
+    </Operation>
+
+</Patch>

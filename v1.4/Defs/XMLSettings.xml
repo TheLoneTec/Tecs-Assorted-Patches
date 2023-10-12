@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<XmlExtensions.SettingsMenuDef>
+		<defName>VilesFencesAndFloors</defName> <!--Can be anything unique with no periods-->
+		<modId>skyarkhangel.FencesAndFloorsVileUpdate</modId> <!--MUST be the same as the one entered earlier-->    
+		<label>Viles Fences and Floors</label> <!-- This is what displays as your mod's name-->    
+		<settings> <!--This is where you define what settings are in the settings menu-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>Passable Fences (Chainlink)</label>
+				<key>VilesFencesAndFloorsPassableChain</key>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>Passable Fences (High Security Fence)</label>
+				<key>VilesFencesAndFloorsPassableHS</key>
+				<defaultValue>false</defaultValue>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+	<XmlExtensions.SettingsMenuDef>
+		<defName>VilesHardcoreRenovation</defName> <!--Can be anything unique with no periods-->
+		<modId>xenomacabre.HCSKwallsandfloorsreduxeno</modId> <!--MUST be the same as the one entered earlier-->    
+		<label>Viles Hardcore Renovation</label> <!-- This is what displays as your mod's name-->    
+		<settings> <!--This is where you define what settings are in the settings menu-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>Passable Fences (Wattle)</label>
+				<key>VilesFencesAndFloorsPassableWattle</key>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>Passable Fences (DryStone)</label>
+				<key>VilesFencesAndFloorsPassableDryStone</key>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<label>Passable Fences (Fence)</label>
+				<key>VilesFencesAndFloorsPassableFence</key>
+				<defaultValue>false</defaultValue>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+
+</Defs>
