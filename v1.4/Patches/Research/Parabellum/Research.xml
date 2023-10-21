@@ -34,18 +34,29 @@
                 </value>
             </li>
 
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ToxGas"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>10.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ToxGas"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>30.00</researchViewY>
-                </value>
-            </li>
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Biotech</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ToxGas"]/researchViewX</xpath>
+						<value>
+							<researchViewX>10.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ToxGas"]/researchViewY</xpath>
+						<value>
+							<researchViewY>30.00</researchViewY>
+						</value>
+					</li>
+				
+				</operations>
+			</match>
+			</li>
 
 		</operations>
 		</match>
