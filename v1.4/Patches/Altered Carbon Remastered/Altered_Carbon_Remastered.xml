@@ -71,24 +71,12 @@
 			</li>
 	
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="VFEU_SleeveIncubator"]</xpath>
-				<value>
-					<costStuffCount>250</costStuffCount>
-				</value>
-			</li>
-	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="VFEU_SleeveIncubator"]</xpath>
-				<value>
-				<stuffCategories>
-					<li>RuggedMetallic</li>
-				</stuffCategories>
-				</value>
-			</li>
-	
-			<li Class="PatchOperationAdd">
 			   <xpath>Defs/ThingDef[defName="VFEU_SleeveIncubator"]</xpath>
 			   <value>
+					<costStuffCount>250</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
 					<costList>
 						<Rubber>25</Rubber>
 						<SyntheticFibers>15</SyntheticFibers>
@@ -158,25 +146,13 @@
 				<value>SK_BuildingBase</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="VFEU_SleeveCasket"]</xpath>
-				<value>
-					<costStuffCount>80</costStuffCount>
-				</value>
-			</li>
-	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="VFEU_SleeveCasket"]</xpath>
-				<value>
-				<stuffCategories>
-					<li>RuggedMetallic</li>
-				</stuffCategories>
-				</value>
-			</li>
-	
 			<li Class="PatchOperationReplace">
 			   <xpath>Defs/ThingDef[defName="VFEU_SleeveCasket"]/costList</xpath>
 			   <value>
+					<costStuffCount>80</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
 					<costList>
 						<Rubber>25</Rubber>
 						<SyntheticFibers>20</SyntheticFibers>
@@ -224,25 +200,13 @@
 				<value>SK_BuildingBase</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AC_StackArray"]</xpath>
-				<value>
-					<costStuffCount>250</costStuffCount>
-				</value>
-			</li>
-	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AC_StackArray"]</xpath>
-				<value>
-				<stuffCategories>
-					<li>RuggedMetallic</li>
-				</stuffCategories>
-				</value>
-			</li>
-	
 			<li Class="PatchOperationReplace">
 			   <xpath>Defs/ThingDef[defName="AC_StackArray"]/costList</xpath>
 			   <value>
+					<costStuffCount>250</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
 					<costList>
 						<Plastic>55</Plastic>
 						<Electronics>10</Electronics>
@@ -296,25 +260,13 @@
 				<value>SK_BenchBase</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="VFEU_DecryptionBench"]</xpath>
-				<value>
-					<costStuffCount>200</costStuffCount>
-				</value>
-			</li>
-	
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="VFEU_DecryptionBench"]</xpath>
-				<value>
-				<stuffCategories>
-					<li>RuggedMetallic</li>
-				</stuffCategories>
-				</value>
-			</li>
-	
 			<li Class="PatchOperationReplace">
 			   <xpath>Defs/ThingDef[defName="VFEU_DecryptionBench"]/costList</xpath>
 			   <value>
+					<costStuffCount>200</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
 					<costList>
 						<Plastic>35</Plastic>
 						<Electronics>8</Electronics>
@@ -358,151 +310,6 @@
 							</value>
 						</nomatch>
 					</li>
-					
-					<!-- ====== AC_GeneCentrifuge ====== -->
-			
-					<li Class="PatchOperationAttributeSet">
-						<xpath>Defs/ThingDef[defName = "AC_GeneCentrifuge"]</xpath>
-						<attribute>ParentName</attribute>
-						<value>SK_BenchBase</value>
-					</li>
-			
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]</xpath>
-						<value>
-							<costStuffCount>100</costStuffCount>
-						</value>
-					</li>
-			
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]</xpath>
-						<value>
-						<stuffCategories>
-							<li>RuggedMetallic</li>
-						</stuffCategories>
-						</value>
-					</li>
-			
-					<li Class="PatchOperationReplace">
-					   <xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]/costList</xpath>
-					   <value>
-							<costList>
-								<Rubber>25</Rubber>
-								<SyntheticFibers>8</SyntheticFibers>
-								<Glass>20</Glass>
-								<Electronics>4</Electronics>
-								<ComponentUltra>4</ComponentUltra>
-								<AdvMechanism>4</AdvMechanism>
-								<Microchips>1</Microchips>
-							</costList>
-					   </value>
-					</li>
-
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
-						<value>
-							<li>AC_GeneCentrifuge</li>
-						</value>
-					</li>
-
-					<!-- ====== AC_GeneVault ====== -->
-			
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="AC_GeneVault"]</xpath>
-						<value>
-							<costStuffCount>200</costStuffCount>
-						</value>
-					</li>
-			
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="AC_GeneVault"]</xpath>
-						<value>
-						<stuffCategories>
-							<li>RuggedMetallic</li>
-						</stuffCategories>
-						</value>
-					</li>
-			
-					<li Class="PatchOperationReplace">
-					   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/costList</xpath>
-					   <value>
-							<costList>
-								<Plastic>35</Plastic>
-								<Electronics>8</Electronics>
-								<ElectronicComponents>6</ElectronicComponents>
-								<Microchips>2</Microchips>
-								<BioMicrochips>4</BioMicrochips>
-								<ComponentSpacer>8</ComponentSpacer>
-								<ComponentUltra>4</ComponentUltra>
-								<AluminiumBar>60</AluminiumBar>
-								<Silicon>25</Silicon>
-							</costList>
-					   </value>
-					</li>
-
-					<li Class="PatchOperationReplace">
-					   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/researchPrerequisites</xpath>
-					   <value>
-							<researchPrerequisites Inherit="False">
-								<li>GeneProcessor</li>
-							</researchPrerequisites>
-					   </value>
-					</li>
-
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
-						<value>
-							<li>AC_GeneVault</li>
-						</value>
-					</li>
-
-					<!-- ====== AC_XenoGermDuplicator ====== -->
-			
-					<li Class="PatchOperationAttributeSet">
-						<xpath>Defs/ThingDef[defName = "AC_XenoGermDuplicator"]</xpath>
-						<attribute>ParentName</attribute>
-						<value>SK_BenchBase</value>
-					</li>
-			
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]</xpath>
-						<value>
-							<costStuffCount>120</costStuffCount>
-						</value>
-					</li>
-			
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]</xpath>
-						<value>
-						<stuffCategories>
-							<li>RuggedMetallic</li>
-						</stuffCategories>
-						</value>
-					</li>
-			
-					<li Class="PatchOperationReplace">
-					   <xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]/costList</xpath>
-					   <value>
-							<costList>
-								<Plastic>30</Plastic>
-								<Electronics>6</Electronics>
-								<ElectronicComponents>4</ElectronicComponents>
-								<Microchips>2</Microchips>
-								<BioMicrochips>3</BioMicrochips>
-								<ComponentSpacer>6</ComponentSpacer>
-								<ComponentUltra>4</ComponentUltra>
-								<AluminiumBar>40</AluminiumBar>
-								<Silicon>20</Silicon>
-							</costList>
-					   </value>
-					</li>
-
-					<li Class="PatchOperationAdd">
-						<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
-						<value>
-							<li>AC_XenoGermDuplicator</li>
-						</value>
-					</li>
 
 					</operations>
 				</nomatch>
@@ -527,6 +334,115 @@
 					
 					</operations>
 				</match>
+			</li>
+
+			<!-- ====== AC_GeneCentrifuge ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName = "AC_GeneCentrifuge"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]/costList</xpath>
+			   <value>
+					<costStuffCount>100</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costList>
+						<Rubber>25</Rubber>
+						<SyntheticFibers>8</SyntheticFibers>
+						<Glass>20</Glass>
+						<Electronics>4</Electronics>
+						<ComponentUltra>4</ComponentUltra>
+						<AdvMechanism>4</AdvMechanism>
+						<Microchips>1</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
+				<value>
+					<li>AC_GeneCentrifuge</li>
+				</value>
+			</li>
+
+			<!-- ====== AC_GeneVault ====== -->
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/costList</xpath>
+			   <value>
+					<costStuffCount>200</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costList>
+						<Plastic>35</Plastic>
+						<Electronics>8</Electronics>
+						<ElectronicComponents>6</ElectronicComponents>
+						<Microchips>2</Microchips>
+						<BioMicrochips>4</BioMicrochips>
+						<ComponentSpacer>8</ComponentSpacer>
+						<ComponentUltra>4</ComponentUltra>
+						<AluminiumBar>60</AluminiumBar>
+						<Silicon>25</Silicon>
+					</costList>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/researchPrerequisites</xpath>
+			   <value>
+					<researchPrerequisites Inherit="False">
+						<li>GeneProcessor</li>
+					</researchPrerequisites>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
+				<value>
+					<li>AC_GeneVault</li>
+				</value>
+			</li>
+
+			<!-- ====== AC_XenoGermDuplicator ====== -->
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName = "AC_XenoGermDuplicator"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]/costList</xpath>
+			   <value>
+					<costStuffCount>120</costStuffCount>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costList>
+						<Plastic>30</Plastic>
+						<Electronics>6</Electronics>
+						<ElectronicComponents>4</ElectronicComponents>
+						<Microchips>2</Microchips>
+						<BioMicrochips>3</BioMicrochips>
+						<ComponentSpacer>6</ComponentSpacer>
+						<ComponentUltra>4</ComponentUltra>
+						<AluminiumBar>40</AluminiumBar>
+						<Silicon>20</Silicon>
+					</costList>
+			   </value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
+				<value>
+					<li>AC_XenoGermDuplicator</li>
+				</value>
 			</li>
 
 			<!-- ====== Revolver ====== -->
