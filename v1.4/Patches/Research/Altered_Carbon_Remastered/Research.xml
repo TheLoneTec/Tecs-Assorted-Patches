@@ -29,17 +29,17 @@
             </li>
 
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="VFEU_Hacking"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="VFEU_Hacking"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="VFEU_Hacking"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFEU_Hacking"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="VFEU_Hacking"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="VFEU_Hacking"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="VFEU_Hacking"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="VFEU_Hacking"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -57,6 +57,47 @@
 					</prerequisites>
                 </value>
             </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AC_AdvancedPoweredArmor"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>23.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="AC_AdvancedPoweredArmor"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>38.00</researchViewY>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="AC_AdvancedPoweredArmor"]</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="AC_AdvancedPoweredArmor"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="AC_AdvancedPoweredArmor"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="AC_AdvancedPoweredArmor"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="AC_AdvancedPoweredArmor"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
 
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]/researchViewX</xpath>
@@ -79,17 +120,17 @@
             </li>
 
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="AC_CorticalCrafting"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -129,17 +170,17 @@
             </li>
 
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="AC_RewriteCorticalStack"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
@@ -203,17 +244,17 @@
             </li>
 
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="AC_Sleeving"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="AC_Sleeving"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>

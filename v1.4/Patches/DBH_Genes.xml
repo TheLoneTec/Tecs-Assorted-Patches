@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>DBHGenes</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/GeneCategoryDef[defName="DBHGenes"]/displayPriorityInXenotype</xpath>
+					<value>
+						<displayPriorityInXenotype>503</displayPriorityInXenotype>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+</Patch>

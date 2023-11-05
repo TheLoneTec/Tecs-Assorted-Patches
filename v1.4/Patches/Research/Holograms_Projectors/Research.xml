@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>HologramsAndProjectors</li>
+		<li>Holograms And Projectors</li>
 	</mods>
 	<match Class="PatchOperationSequence">
 		<operations>
@@ -28,17 +28,17 @@
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ResearchProjectDef[defName="Res_Projectors"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<xpath>Defs/ResearchProjectDef[defName="Res_Projectors"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
-					<xpath>/Defs/ResearchProjectDef[defName="Res_Projectors"]/modExtensions</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="Res_Projectors"]/modExtensions</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="Res_Projectors"]/modExtensions</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="Res_Projectors"]/modExtensions</xpath>
 						<value>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
 						</value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
-						<xpath>/Defs/ResearchProjectDef[defName="Res_Projectors"]</xpath>
+						<xpath>Defs/ResearchProjectDef[defName="Res_Projectors"]</xpath>
 						<value>
 						<modExtensions>
 							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
