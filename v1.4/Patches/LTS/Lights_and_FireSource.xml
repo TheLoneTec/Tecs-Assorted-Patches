@@ -190,6 +190,26 @@
 				</thingDefs>
 				</value>
 			</li>
+
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_ElectricLantern"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Light_C2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_ElectricLantern"]</xpath>
+				<value>
+				<costList>
+					<ComponentIndustrial>3</ComponentIndustrial>
+					<Glass>5</Glass>
+					<ElectronicComponents>1</ElectronicComponents>
+				</costList>
+				</value>
+			</li>
 	
 			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/ThingDef[defName="LTS_ElectricTableLantern"]/researchPrerequisites</xpath>
