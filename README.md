@@ -47,7 +47,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 
 Hotfixes:
 
-- CAI 5000 (made patch for HSK BasePawn.
+- CAI 5000 (made patch for HSK BasePawn)
 
 Other 1.4 Additions:
 
