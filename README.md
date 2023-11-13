@@ -45,6 +45,10 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Dreamers Dreams](https://steamcommunity.com/sharedfiles/filedetails/?id=2514986353) (Patch Fix for HSK Pawns)
 - [Melee Animation](https://steamcommunity.com/sharedfiles/filedetails/?id=2944488802) (Patch for many melee weapons for HSK mods)
 
+Hotfixes:
+
+- CAI 5000 (made patch for HSK BasePawn.
+
 Other 1.4 Additions:
 
 - Vanilla Beards Retextured Retexture for Facial Animation (WIP)
