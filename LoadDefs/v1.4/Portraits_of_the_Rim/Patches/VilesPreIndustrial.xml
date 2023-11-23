@@ -79,6 +79,7 @@
 							<bodyType>Large</bodyType>
 							<apparels>
 								<li>CE_Apparel_TribalBackpack</li>
+								<li>Rucksack</li>
 							</apparels>
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
@@ -93,6 +94,7 @@
 							<bodyType>Medium</bodyType>
 							<apparels>
 								<li>CE_Apparel_TribalBackpack</li>
+								<li>Rucksack</li>
 							</apparels>
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
@@ -107,6 +109,7 @@
 							<bodyType>Small</bodyType>
 							<apparels>
 								<li>CE_Apparel_TribalBackpack</li>
+								<li>Rucksack</li>
 							</apparels>
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
@@ -121,10 +124,25 @@
 							<bodyType>ExtraLarge</bodyType>
 							<apparels>
 								<li>CE_Apparel_TribalBackpack</li>
+								<li>Rucksack</li>
 							</apparels>
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
-					
+				
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_OuterHeadgear_Pre_Industrial-Coif</defName>
+						<portraitLayer>PR_OuterHeadgear</portraitLayer>
+						<graphicData>
+							<texPath>OuterHeadgear/Pre-Industrial-Coif</texPath>
+						</graphicData>
+						<requirements>
+							<ageRange>7~999</ageRange>
+							<apparels>
+								<li>Apparello_Vandal</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+				
 				</value>
 			</li>
 

@@ -344,6 +344,30 @@
 			<hair>SPSFrat</hair>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-cn-Shikinami</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/HSK-Shikinami</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<hair>Shikinami</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHair_HSKHair-an-Shikinami</defName>
+		<portraitLayer>PR_OuterHair</portraitLayer>
+		<graphicData>
+			<texPath>OuterHair/HSK-Shikinami</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<hair>Shikinami</hair>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
 <!--
 	<PortraitsOfTheRim.PortraitElementDef>
 		<defName>PR_OuterHair_HSKHair-an-SPSBrona</defName>

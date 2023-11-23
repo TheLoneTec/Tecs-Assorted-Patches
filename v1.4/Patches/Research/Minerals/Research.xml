@@ -56,6 +56,31 @@
                 </value>
             </li>
 -->
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>HMC Vile's Pre-Industrial Overhaul</li>
+			</mods>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewX</xpath>
+							<value>
+								<researchViewX>6.00</researchViewX>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewY</xpath>
+							<value>
+								<researchViewY>27.00</researchViewY>
+							</value>
+						</li>
+
+					</operations>
+				</nomatch>
+			</li>
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewX</xpath>
                 <value>
