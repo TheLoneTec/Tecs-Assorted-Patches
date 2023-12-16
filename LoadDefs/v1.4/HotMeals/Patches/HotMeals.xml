@@ -130,14 +130,6 @@
 
 					<!-- None -->
 					<li>
-						<name>metasis injection</name>
-						<type>None</type>
-					</li>
-					<li>
-						<name>antinites injection</name>
-						<type>None</type>
-					</li>
-					<li>
 						<name>fermented rotting mound</name>
 						<type>None</type>
 					</li>
@@ -152,11 +144,11 @@
 			<!-- ========== Microwave ========== -->
 
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "DMicrowave"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "DMicrowave"]/constructEffect</xpath>
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "DMicrowave"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "DMicrowave"]/costList</xpath>
 				<value>
 					<costList>
 						<ComponentIndustrial>3</ComponentIndustrial>
@@ -167,7 +159,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "DMicrowave"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "DMicrowave"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>Metallic</li>
@@ -179,11 +171,11 @@
 			<!-- ========== HeatLamp ========== -->
 			
 			<li Class="PatchOperationRemove">
-				<xpath>/Defs/ThingDef[defName = "DHeatLamp"]/constructEffect</xpath>
+				<xpath>Defs/ThingDef[defName = "DHeatLamp"]/constructEffect</xpath>
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "DHeatLamp"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "DHeatLamp"]/costList</xpath>
 				<value>
 					<costList>
 						<ComponentIndustrial>3</ComponentIndustrial>
@@ -194,7 +186,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName = "DHeatLamp"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName = "DHeatLamp"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>AirConditioning</li>
@@ -203,7 +195,7 @@
 			</li>
 			
 			<li Class="PatchOperationInsert">
-				<xpath>/Defs/ThingDef[defName = "DHeatLamp"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "DHeatLamp"]/costList</xpath>
 				<value>
 					<stuffCategories>
 						<li>Metallic</li>
