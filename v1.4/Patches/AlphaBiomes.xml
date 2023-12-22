@@ -502,6 +502,35 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Hardcore Renovations</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/TerrainDef[@Name="AB_AlienWoodFloorsBase"]</xpath>
+							<value>
+								<researchPrerequisites>
+									<li>Wooden_floor_A3</li>
+								</researchPrerequisites>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/TerrainDef[defName="AB_TarmacFloor"]</xpath>
+							<value>
+								<researchPrerequisites Inherit="False">
+									<li>Concrete_C2</li>
+								</researchPrerequisites>
+							</value>
+						</li>
+						
+					</operations>
+				</match>
+			</li>
+			
 			</operations>
 		</match>
     </Operation>

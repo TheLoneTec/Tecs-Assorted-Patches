@@ -149,6 +149,15 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName = "BambooFloorB"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Wooden_floor_A3</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>The Windows</li>
