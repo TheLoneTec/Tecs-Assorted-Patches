@@ -31,14 +31,14 @@
 							</li>
 		-->
 							<li Class="PatchOperationReplace">
-								<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Rabbie"]/alienRace/generalSettings/alienPartGenerator/customHeadDrawSize</xpath>
+								<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Rabbie"]/alienRace/generalSettings/alienPartGenerator/customHeadDrawSize</xpath>
 								<value>
 									<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
 								</value>
 							</li>
 
 							<li Class="PatchOperationReplace">
-								<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Rabbie"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
+								<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Rabbie"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
 								<value>
 									<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
 								</value>
@@ -55,6 +55,28 @@
 						</match>
 					</li>
 			
+					</operations>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Facial Animation HSK Patch</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<FacialAnimation.FaceAdjustmentDef>
+								<defName>RabbieFaceSizeAndPositionDef</defName>
+								<RaceName>Rabbie</RaceName>
+								<Size>(1.2,1.2)</Size>    
+							</FacialAnimation.FaceAdjustmentDef>
+						</value>
+					</li>
+
 					</operations>
 				</match>
 			</li>

@@ -119,7 +119,7 @@
 						  <FacialAnimation.FaceAdjustmentDef>
 							<defName>MoyoFaceSizeAndPositionDef</defName>
 							<RaceName>Alien_Moyo</RaceName>
-							<Size>(1.25,1.25)</Size>
+							<Size>(1.15,1.15)</Size>
 							<OffsetNorth>(0,.05)</OffsetNorth>
 							<OffsetEast>(-.05,.06)</OffsetEast>
 							<OffsetSouth>(0,.05)</OffsetSouth>

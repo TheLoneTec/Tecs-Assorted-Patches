@@ -120,7 +120,7 @@
 						  <FacialAnimation.FaceAdjustmentDef>
 							<defName>RedMoyoFaceSizeAndPositionDef</defName>
 							<RaceName>Alien_RedMoyo</RaceName>
-							<Size>(1.27,1.27)</Size>
+							<Size>(1.17,1.17)</Size>
 							<OffsetNorth>(0,.05)</OffsetNorth>
 							<OffsetEast>(-.05,.07)</OffsetEast>
 							<OffsetSouth>(0,.05)</OffsetSouth>
