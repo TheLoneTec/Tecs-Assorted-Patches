@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>	
-	
+	<!--
+	<BodyPartGroupDef>
+		<defName>EyeCover</defName>
+		<label>eye cover</label>
+		<listOrder>196</listOrder>
+	</BodyPartGroupDef>
+	-->
 	<BodyPartGroupDef>
 		<defName>LeftEye</defName>
 		<label>left eye</label>
@@ -51,7 +57,7 @@
 			<GermResistance>0.01</GermResistance>
 			<GermContainment>0.01</GermContainment>
 		</equippedStatOffsets>
-		<generateCommonality>1</generateCommonality>
+		<generateCommonality>0.2</generateCommonality>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
 				<li>
@@ -87,6 +93,7 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>LeftEye</li>
+				<!--<li>EyeCover</li>-->
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/EyePatch/EyePatchLeft</wornGraphicPath>
 			<layers>
@@ -122,6 +129,7 @@
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>RightEye</li>
+				<!--<li>EyeCover</li>-->
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/EyePatch/EyePatchRight</wornGraphicPath>
 			<layers>
