@@ -31,6 +31,10 @@
 				</match>
 			</li>
 
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/StyleCategoryDef/thingDefStyles/li[thingDef="Flamebow" or thingDef="Gun_EmpLauncher" or thingDef="Gun_SmokeLauncher" or thingDef="Gun_ToxbombLauncher"]</xpath>
+			</li>
+
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/ThingDef[defName="AM_BlocksPristineLimestone"]</xpath>
 				<value>
