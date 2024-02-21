@@ -36,7 +36,7 @@
 		<defName>PR_MiddleHair_Vanilla-JaffaShaved</defName>
 		<portraitLayer>PR_MiddleHair</portraitLayer>
 		<graphicData>
-			<texPath>MiddleHair/Vanilla-shaved</texPath>
+			<texPath>MiddleHair/Vanilla-an-shaved</texPath>
 		</graphicData>
 		<requirements>
 			<hair>JaffaShaved</hair>
@@ -169,7 +169,7 @@
 		<defName>PR_OuterHair_HSK-an-SPSCurly</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-an-curly</texPath>
+			<texPath>OuterHair/Vanilla-an-Curly1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>13~999</ageRange>
@@ -193,7 +193,7 @@
 		<defName>PR_OuterHair_HSK-SPSLeon</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-an-mop</texPath>
+			<texPath>OuterHair/Vanilla-an-Mop1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>7~999</ageRange>
@@ -205,7 +205,7 @@
 		<defName>PR_OuterHair_HSK-SPSRasta</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-an-locks</texPath>
+			<texPath>OuterHair/Vanilla-an-Locks</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>7~999</ageRange>
@@ -253,7 +253,7 @@
 		<defName>PR_OuterHair_HSKHair-cn-SPSLulu</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-cn-ponytails</texPath>
+			<texPath>OuterHair/Vanilla-cn-Ponytails1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>7~13</ageRange>
@@ -265,7 +265,7 @@
 		<defName>PR_OuterHair_HSKHair-an-SPSLulu</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-an-ponytails</texPath>
+			<texPath>OuterHair/Vanilla-an-Ponytails1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>13~999</ageRange>
@@ -301,7 +301,7 @@
 		<defName>PR_OuterHair_HSKHair-cn-SPSJay</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-cn-wavy</texPath>
+			<texPath>OuterHair/Vanilla-cn-Wavy1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>7~13</ageRange>
@@ -313,7 +313,7 @@
 		<defName>PR_OuterHair_HSKHair-an-SPSJay</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-an-wavy</texPath>
+			<texPath>OuterHair/Vanilla-an-Wavy1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>13~999</ageRange>
@@ -325,7 +325,7 @@
 		<defName>PR_OuterHair_HSKHair-cn-SPSFrat</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-cn-warden</texPath>
+			<texPath>OuterHair/Vanilla-cn-Warden1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>7~13</ageRange>
@@ -337,7 +337,7 @@
 		<defName>PR_OuterHair_HSKHair-an-SPSFrat</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-an-warden</texPath>
+			<texPath>OuterHair/Vanilla-an-Warden1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>13~999</ageRange>
