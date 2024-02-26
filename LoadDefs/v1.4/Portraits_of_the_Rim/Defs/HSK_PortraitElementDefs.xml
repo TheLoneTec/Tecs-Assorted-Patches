@@ -205,7 +205,7 @@
 		<defName>PR_OuterHair_HSK-SPSRasta</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-an-Locks</texPath>
+			<texPath>OuterHair/Vanilla-an-Locks1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>7~999</ageRange>
