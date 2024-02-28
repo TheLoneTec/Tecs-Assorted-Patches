@@ -36,7 +36,7 @@
 		<defName>PR_MiddleHair_Vanilla-JaffaShaved</defName>
 		<portraitLayer>PR_MiddleHair</portraitLayer>
 		<graphicData>
-			<texPath>MiddleHair/Vanilla-an-shaved</texPath>
+			<texPath>MiddleHair/Vanilla-an-Shaved1</texPath>
 		</graphicData>
 		<requirements>
 			<hair>JaffaShaved</hair>
@@ -157,7 +157,7 @@
 		<defName>PR_OuterHair_HSK-cn-SPSCurly</defName>
 		<portraitLayer>PR_OuterHair</portraitLayer>
 		<graphicData>
-			<texPath>OuterHair/Vanilla-cn-curly</texPath>
+			<texPath>OuterHair/Vanilla-cn-Curly1</texPath>
 		</graphicData>
 		<requirements>
 			<ageRange>7~13</ageRange>
