@@ -28,6 +28,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Musical Instruments (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2274558815) (Moved Instrument Table and Music Spot into Architect Menus + some material conversion)
 - [Roads Of the Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2280318231) ( Material Conversion, removed AISR2G from architect menu, should only be buildable at worktable)
 - [Vanilla Books Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410) (Architect Menu and Material Conversion)
+- [Vanilla Books Expanded Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2894816192) (Architect Menu and Material Conversion)
 - [Thermodynamics - Core (forked)](https://steamcommunity.com/sharedfiles/filedetails/?id=2909103255) (moved food into appropriate categories & Material Conversion)
 - [PlaceStuffOnTables](https://steamcommunity.com/sharedfiles/filedetails/?id=2590908441) Patch (allow certain objects to be placed on tables, can run without workshop mod)
 - [No Power Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2019297016) - Material Conversion + add to Trade Subcategory. (recommend [No Quests Without Comms](https://steamcommunity.com/sharedfiles/filedetails/?id=2557302879))
