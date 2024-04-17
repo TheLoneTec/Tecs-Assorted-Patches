@@ -3244,8 +3244,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(-3.0, 0.0, -2.5)</li>
-						<li>(3.0, 0.0, -2.5)</li>
+						<li>(-2.5, 0.0, -2.5)</li>
+						<li>(2.5, 0.0, -3.0)</li>
 						<li>(0.0, 0.0, -2.5)</li>
 						<li>(0.5, 0.0, -2.5)</li>
 					</values>
@@ -3287,11 +3287,11 @@
 						<li>thin</li>
 					</keys>
 					<values>
-						<li>-0.2</li>
-						<li>0</li>
-						<li>0.2999998</li>
-						<li>1</li>
-						<li>-0.2</li>
+						<li>0.2</li>
+						<li>7.450581E-09</li>
+						<li>-1.266599E-07</li>
+						<li>0.3</li>
+						<li>0.3</li>
 					</values>
 				</bodyOffsetModifs>
 				<bodyOffset>
@@ -3302,8 +3302,8 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>(0.0, 0.0, 0.0)</li>
-						<li>(0.0, 0.0, 0.0)</li>
+						<li>(1.5, 0.0, -1.0)</li>
+						<li>(-1.0, 0.0, 1.0)</li>
 						<li>(0.0, 0.0, 0.0)</li>
 						<li>(0.5, 0.0, -1.5)</li>
 					</values>
@@ -3316,9 +3316,9 @@
 						<li>3</li>
 					</keys>
 					<values>
-						<li>1</li>
-						<li>1</li>
-						<li>1</li>
+						<li>0.8</li>
+						<li>0.8</li>
+						<li>0.8</li>
 						<li>0.8</li>
 					</values>
 				</size>
