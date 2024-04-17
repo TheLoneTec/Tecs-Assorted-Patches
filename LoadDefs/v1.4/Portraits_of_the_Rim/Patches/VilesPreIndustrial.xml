@@ -143,6 +143,178 @@
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
 				
+					<!-- Middle Clothing -->
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_InnerClothingTorso_HSK-l-Tunic</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>InnerClothingTorso/VEApparel-l-Tunic</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>Apparel_TunicFine</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_InnerClothingTorso_HSK-m-Tunic</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>InnerClothingTorso/VEApparel-m-Tunic</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>Apparel_TunicFine</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_InnerClothingTorso_HSK-s-Tunic</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>InnerClothingTorso/VEApparel-s-Tunic</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>Apparel_TunicFine</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_InnerClothingTorso_HSK-xl-Tunic</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>InnerClothingTorso/VEApparel-xl-Tunic</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>Apparel_TunicFine</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+				
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_HSK-l-Doublet</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Royalty-l-eltexvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>ViTech_Doublet</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_HSK-m-Doublet</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Royalty-m-eltexvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>ViTech_Doublet</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_HSK-s-Doublet</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Royalty-s-eltexvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>ViTech_Doublet</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_HSK-xl-Doublet</defName>
+						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/Royalty-xl-eltexvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>ViTech_Doublet</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+				
+					<!-- Cloak -->
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-l-RHApparel_DFCloak_Poncho</defName>
+						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/RH2FactionVOID-l-RHApparel_DFCloak_Poncho</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>MedievalTimes_Cloak</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-m-RHApparel_DFCloak_Poncho</defName>
+						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/RH2FactionVOID-m-RHApparel_DFCloak_Poncho</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>MedievalTimes_Cloak</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-s-RHApparel_DFCloak_Poncho</defName>
+						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/RH2FactionVOID-s-RHApparel_DFCloak_Poncho</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>MedievalTimes_Cloak</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingShoulder_HSK-xl-RHApparel_DFCloak_Poncho</defName>
+						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingShoulder/RH2FactionVOID-xl-RHApparel_DFCloak_Poncho</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>MedievalTimes_Cloak</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+				
 				</value>
 			</li>
 
@@ -199,6 +371,36 @@
 				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_InnerClothingTorso_Vanilla-xl-tribalwear-styleimpid"]/requirements/apparels/li[text()="Apparel_TribalA"]</xpath>
 				<value>
 					<li>Norballo_Loincloth</li>
+				</value>
+			</li>
+
+			<!-- Apparello_MedicalApron -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_MiddleClothingTorso_Vanilla-l-flakvest"]/requirements/apparels</xpath>
+				<value>
+					<li>Apparel_RagDress</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_MiddleClothingTorso_Vanilla-m-flakvest"]/requirements/apparels</xpath>
+				<value>
+					<li>Apparel_RagDress</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_MiddleClothingTorso_Vanilla-s-flakvest"]/requirements/apparels</xpath>
+				<value>
+					<li>Apparel_RagDress</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_MiddleClothingTorso_Vanilla-xl-flakvest"]/requirements/apparels</xpath>
+				<value>
+					<li>Apparel_RagDress</li>
 				</value>
 			</li>
 

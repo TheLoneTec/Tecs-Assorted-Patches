@@ -465,6 +465,7 @@
 			<bodyType>Large</bodyType>
 			<apparels>
 				<li>CryptosleepBodysuit</li>
+				<li>Apparel_Scrubs</li>
 			</apparels>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
@@ -479,6 +480,7 @@
 			<bodyType>ExtraLarge</bodyType>
 			<apparels>
 				<li>CryptosleepBodysuit</li>
+				<li>Apparel_Scrubs</li>
 			</apparels>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
@@ -493,6 +495,7 @@
 			<bodyType>Medium</bodyType>
 			<apparels>
 				<li>CryptosleepBodysuit</li>
+				<li>Apparel_Scrubs</li>
 			</apparels>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
@@ -507,6 +510,121 @@
 			<bodyType>Small</bodyType>
 			<apparels>
 				<li>CryptosleepBodysuit</li>
+				<li>Apparel_Scrubs</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<!-- Inner Clothing Shoulder -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-l-suspenders</defName>
+		<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/HSK-l-Basket</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Large</bodyType>
+			<apparels>
+				<li>Apparello_Suspender</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-m-suspenders</defName>
+		<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/HSK-m-Basket</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Medium</bodyType>
+			<apparels>
+				<li>Apparello_Suspender</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-s-suspenders</defName>
+		<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/HSK-s-Basket</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Small</bodyType>
+			<apparels>
+				<li>Apparello_Suspender</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-xl-suspenders</defName>
+		<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/HSK-xl-Basket</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>ExtraLarge</bodyType>
+			<apparels>
+				<li>Apparello_Suspender</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-l-Backpack</defName>
+		<portraitLayer>PR_InnerClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingShoulder/VEAccessories-l-Backpack</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Large</bodyType>
+			<apparels>
+				<li>CE_Apparel_Backpack</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-m-Backpack</defName>
+		<portraitLayer>PR_InnerClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingShoulder/VEAccessories-m-Backpack</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Medium</bodyType>
+			<apparels>
+				<li>CE_Apparel_Backpack</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-s-Backpack</defName>
+		<portraitLayer>PR_InnerClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingShoulder/VEAccessories-s-Backpack</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Small</bodyType>
+			<apparels>
+				<li>CE_Apparel_Backpack</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerClothingShoulder_HSK-xl-Backpack</defName>
+		<portraitLayer>PR_InnerClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>InnerClothingShoulder/VEAccessories-xl-Backpack</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>ExtraLarge</bodyType>
+			<apparels>
+				<li>CE_Apparel_Backpack</li>
 			</apparels>
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
@@ -558,4 +676,19 @@
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 -->
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterHeadgear_HSK_Apparello_Sandtrader</defName>
+		<portraitLayer>PR_OuterHeadgear</portraitLayer>
+		<graphicData>
+			<texPath>OuterHeadgear/HSK-an-Apparel_Caravaneer</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<apparels>
+				<li>Apparello_Sandtrader</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
 </Defs>
