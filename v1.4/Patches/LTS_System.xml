@@ -9,11 +9,14 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 			
-			 <li Class="PatchOperationReplace">
-				<xpath>Defs/WorkGiverDef/workType[text()="LTS_Tasks"]</xpath>
-				<value>
-					<workType>BasicWorker</workType>
-				</value>
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/WorkGiverDef/workType[text()="LTS_Tasks"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/WorkGiverDef/workType[text()="LTS_Tasks"]</xpath>
+					<value>
+						<workType>BasicWorker</workType>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="PatchOperationAdd">
