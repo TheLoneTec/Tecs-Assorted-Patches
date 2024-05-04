@@ -70,7 +70,7 @@
 					<!-- Middle Clothing Shoulder -->
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-l-packBasket</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-l-packBasket</defName>
 						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/HSK-l-Basket</texPath>
@@ -85,7 +85,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-m-packBasket</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-m-packBasket</defName>
 						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/HSK-m-Basket</texPath>
@@ -100,7 +100,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-s-packBasket</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-s-packBasket</defName>
 						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/HSK-s-Basket</texPath>
@@ -115,7 +115,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-xl-packBasket</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-xl-packBasket</defName>
 						<portraitLayer>PR_MiddleClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/HSK-xl-Basket</texPath>
@@ -130,7 +130,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 				
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_OuterHeadgear_Pre_Industrial-Coif</defName>
+						<defName>PR_OuterHeadgear_VilePreIndus-Coif</defName>
 						<portraitLayer>PR_OuterHeadgear</portraitLayer>
 						<graphicData>
 							<texPath>OuterHeadgear/Pre-Industrial-Coif</texPath>
@@ -146,7 +146,7 @@
 					<!-- Middle Clothing -->
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_HSK-l-Tunic</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-l-Tunic</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>InnerClothingTorso/VEApparel-l-Tunic</texPath>
@@ -160,7 +160,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_HSK-m-Tunic</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-m-Tunic</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>InnerClothingTorso/VEApparel-m-Tunic</texPath>
@@ -174,7 +174,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_HSK-s-Tunic</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-s-Tunic</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>InnerClothingTorso/VEApparel-s-Tunic</texPath>
@@ -188,7 +188,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_HSK-xl-Tunic</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-xl-Tunic</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>InnerClothingTorso/VEApparel-xl-Tunic</texPath>
@@ -202,7 +202,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 				
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_HSK-l-Doublet</defName>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-l-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-l-eltexvest</texPath>
@@ -216,7 +216,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_HSK-m-Doublet</defName>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-m-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-m-eltexvest</texPath>
@@ -230,7 +230,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_HSK-s-Doublet</defName>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-s-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-s-eltexvest</texPath>
@@ -244,7 +244,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_HSK-xl-Doublet</defName>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-xl-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-xl-eltexvest</texPath>
@@ -260,7 +260,7 @@
 					<!-- Cloak -->
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-l-RHApparel_DFCloak_Poncho</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-l-RHApparel_DFCloak_Poncho</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/RH2FactionVOID-l-RHApparel_DFCloak_Poncho</texPath>
@@ -274,7 +274,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-m-RHApparel_DFCloak_Poncho</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-m-RHApparel_DFCloak_Poncho</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/RH2FactionVOID-m-RHApparel_DFCloak_Poncho</texPath>
@@ -288,7 +288,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-s-RHApparel_DFCloak_Poncho</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-s-RHApparel_DFCloak_Poncho</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/RH2FactionVOID-s-RHApparel_DFCloak_Poncho</texPath>
@@ -302,7 +302,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingShoulder_HSK-xl-RHApparel_DFCloak_Poncho</defName>
+						<defName>PR_MiddleClothingShoulder_VilePreIndus-xl-RHApparel_DFCloak_Poncho</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingShoulder/RH2FactionVOID-xl-RHApparel_DFCloak_Poncho</texPath>
@@ -315,6 +315,122 @@
 						</requirements>
 					</PortraitsOfTheRim.PortraitElementDef>
 				
+					<!-- Scrap Mail Armor -->
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_OuterClothingTorso_VilePreIndus-l-Guardianarmor</defName>
+						<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>OuterClothingTorso/VEVikings-l-Guardianarmor</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Large</bodyType>
+							<apparels>
+								<li>Slag_Plate_Improved</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_OuterClothingTorso_VilePreIndus-m-Guardianarmor</defName>
+						<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>OuterClothingTorso/VEVikings-m-Guardianarmor</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>Slag_Plate_Improved</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_OuterClothingTorso_VilePreIndus-s-Guardianarmor</defName>
+						<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>OuterClothingTorso/VEVikings-s-Guardianarmor</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>Slag_Plate_Improved</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_OuterClothingTorso_VilePreIndus-xl-Guardianarmor</defName>
+						<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>OuterClothingTorso/VEVikings-xl-Guardianarmor</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>Slag_Plate_Improved</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+	
+					<!-- Archer Lamalar -->
+
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-xl-Quiltedvest</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/VEArmour-xl-Quiltedvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>ViTech_HordeArcher</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-m-Quiltedvest</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/VEArmour-m-Quiltedvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Medium</bodyType>
+							<apparels>
+								<li>ViTech_HordeArcher</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-s-Quiltedvest</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/VEArmour-s-Quiltedvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>Small</bodyType>
+							<apparels>
+								<li>ViTech_HordeArcher</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
+					<PortraitsOfTheRim.PortraitElementDef>
+						<defName>PR_MiddleClothingTorso_VilePreIndus-xl-Quiltedvest</defName>
+						<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+						<graphicData>
+							<texPath>MiddleClothingTorso/VEArmour-xl-Quiltedvest</texPath>
+						</graphicData>
+						<requirements>
+							<bodyType>ExtraLarge</bodyType>
+							<apparels>
+								<li>ViTech_HordeArcher</li>
+							</apparels>
+						</requirements>
+					</PortraitsOfTheRim.PortraitElementDef>
+					
 				</value>
 			</li>
 
@@ -401,6 +517,22 @@
 				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_MiddleClothingTorso_Vanilla-xl-flakvest"]/requirements/apparels</xpath>
 				<value>
 					<li>Apparel_RagDress</li>
+				</value>
+			</li>
+
+			<!-- Bonnet -->
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterHeadgear_Vanilla-an-Apparel_BowlerHat"]/requirements/apparels</xpath>
+				<value>
+					<li>Apparel_Bonnet</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterHeadgear_Vanilla-cn-Apparel_BowlerHat"]/requirements/apparels</xpath>
+				<value>
+					<li>Apparel_Bonnet</li>
 				</value>
 			</li>
 
