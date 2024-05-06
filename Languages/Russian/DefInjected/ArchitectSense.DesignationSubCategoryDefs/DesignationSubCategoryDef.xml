@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Walls-->
+  <Walls.label>Стены</Walls.label>
+  <!--All the main walls from HSK.-->
+  <Walls.description>Все основные стены из HSK.</Walls.description>
+  <!--Doors-->
+  <Doors.label>Двери</Doors.label>
+  <!--All the main doors from HSK.-->
+  <Doors.description>Все основные двери из HSK.</Doors.description>
+  <!--AutoDoors-->
+  <AutoDoors.label>Автодвери</AutoDoors.label>
+  <!--All the main autoDoors from HSK.-->
+  <AutoDoors.description>Все основные автодвери от HSK.</AutoDoors.description>
+  <!--Columns-->
+  <Columns.label>Колонны</Columns.label>
+  <!--Various Columns.-->
+  <Columns.description>Разные колонны.</Columns.description>
+</LanguageData>

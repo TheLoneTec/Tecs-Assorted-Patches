@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Viles Fences and Floors-->
+  <VilesFencesAndFloors.label>Ограждения и полы Viles</VilesFencesAndFloors.label>
+  <!--Passable Fences (Chainlink)-->
+  <VilesFencesAndFloors.settings.0.label>Проходимые заборы (Chainlink)</VilesFencesAndFloors.settings.0.label>
+  <!--Passable Fences (High Security Fence)-->
+  <VilesFencesAndFloors.settings.1.label>Проходимые заборы (Ограждение повышенной безопасности)</VilesFencesAndFloors.settings.1.label>
+  <!--Viles Hardcore Renovation-->
+  <VilesHardcoreRenovation.label>Viles Hardcore Renovation</VilesHardcoreRenovation.label>
+  <!--Passable Fences (Wattle)-->
+  <VilesHardcoreRenovation.settings.0.label>Проходимые заборы (Плетень)</VilesHardcoreRenovation.settings.0.label>
+  <!--Passable Fences (DryStone)-->
+  <VilesHardcoreRenovation.settings.1.label>Проходимые заборы (Сухой камень)</VilesHardcoreRenovation.settings.1.label>
+  <!--Passable Fences (Fence)-->
+  <VilesHardcoreRenovation.settings.2.label>Проходимые заборы (Забор)</VilesHardcoreRenovation.settings.2.label>
+</LanguageData>

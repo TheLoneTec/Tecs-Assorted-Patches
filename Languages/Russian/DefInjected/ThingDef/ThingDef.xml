@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Left Eye Patch-->
+  <Apparel_EyePatchL.label>Повязка на левый глаз</Apparel_EyePatchL.label>
+  <!--An eye patch that covers the left eye. if the person still has their eye, they flip it up when doing any important task.-->
+  <Apparel_EyePatchL.description>Повязка на глаз, закрывающая левый глаз. Если у человека все еще есть глаз, он поднимает её, когда выполняет какое-либо важное задание.</Apparel_EyePatchL.description>
+  <!--Right Eye Patch-->
+  <Apparel_EyePatchR.label>Повязка на правый глаз</Apparel_EyePatchR.label>
+  <!--An eye patch that covers the right eye. if the person still has their eye, they flip it up when doing any important task.-->
+  <Apparel_EyePatchR.description>Повязка на глаз, закрывающая правый глаз. Если у человека все еще есть глаз, он поднимает ее, когда выполняет какое-либо важное задание.</Apparel_EyePatchR.description>
+</LanguageData>
