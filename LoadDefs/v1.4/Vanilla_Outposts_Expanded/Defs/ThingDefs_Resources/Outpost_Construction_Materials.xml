@@ -238,7 +238,7 @@
 		<techLevel>Medieval</techLevel>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<MarketValue>300</MarketValue>
+			<MarketValue>16</MarketValue>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>1</DeteriorationRate>
 			<Mass>1.0</Mass>
