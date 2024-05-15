@@ -8,18 +8,49 @@
 	<match Class="PatchOperationSequence">
 		<operations>
 
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewX</xpath>
-                <value>
-                    <researchViewX>4.00</researchViewX>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewY</xpath>
-                <value>
-                    <researchViewY>26.00</researchViewY>
-                </value>
-            </li><!--
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Metallurgy</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewX</xpath>
+						<value>
+							<researchViewX>4.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewX</xpath>
+						<value>
+							<researchViewX>5.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					
+				</operations>
+			</nomatch>
+			</li>
+			
+			<!--
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/tab</xpath>
                 <value>
