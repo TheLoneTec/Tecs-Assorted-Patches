@@ -136,7 +136,43 @@
 					<li>
 						<name>healroot tincture</name>
 						<type>None</type>
-					</li>	
+					</li>
+					<li>
+						<name>mushroom tincture</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>activated сarbon</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>methadone</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>antibiotics</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>simple antidote</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>safe antidote</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>potassium iodide</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>painstopper</name>
+						<type>None</type>
+					</li>
+					<li>
+						<name>penoxycyline</name>
+						<type>None</type>
+					</li>
 					
 				</Meals>
 			</li>
