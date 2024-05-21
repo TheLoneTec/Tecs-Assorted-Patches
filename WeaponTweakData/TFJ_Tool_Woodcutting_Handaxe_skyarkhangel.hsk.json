@@ -3,10 +3,10 @@
   "ItemDefName": "TFJ_Tool_Woodcutting_Handaxe",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.156405985,
+  "OffX": 0.07392608,
+  "OffY": -0.0219780225,
   "Rotation": 90.0,
-  "HandsMode": 1,
-  "BladeStart": 0.2762063,
-  "BladeEnd": 0.562396,
-  "MeleeWeaponType": 48
+  "BladeStart": 0.217782214,
+  "BladeEnd": 0.481518477,
+  "MeleeWeaponType": 6
 }

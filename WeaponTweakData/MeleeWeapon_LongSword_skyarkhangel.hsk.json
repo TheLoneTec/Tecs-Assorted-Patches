@@ -3,9 +3,9 @@
   "ItemDefName": "MeleeWeapon_LongSword",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.3006012,
-  "OffY": -0.028056113,
-  "BladeStart": 0.05210421,
-  "BladeEnd": 0.7174349,
+  "OffX": 0.3136863,
+  "OffY": -0.0259740259,
+  "BladeStart": 0.117882118,
+  "BladeEnd": 0.7372627,
   "MeleeWeaponType": 6
 }

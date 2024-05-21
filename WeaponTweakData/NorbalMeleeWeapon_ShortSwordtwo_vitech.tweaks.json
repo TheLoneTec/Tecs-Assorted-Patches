@@ -1,12 +1,12 @@
 {
-  "TextureModID": "skyarkhangel.hsk",
+  "TextureModID": "vitech.tweaks",
   "ItemDefName": "NorbalMeleeWeapon_ShortSwordtwo",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.32967034,
+  "OffX": 0.257742256,
   "Rotation": 45.0,
   "HandsMode": 1,
-  "BladeStart": 0.221778229,
-  "BladeEnd": 0.8011988,
+  "BladeStart": 0.169830173,
+  "BladeEnd": 0.7172827,
   "MeleeWeaponType": 48
 }

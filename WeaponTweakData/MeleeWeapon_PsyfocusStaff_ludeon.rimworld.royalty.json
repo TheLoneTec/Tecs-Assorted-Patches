@@ -3,8 +3,9 @@
   "ItemDefName": "MeleeWeapon_PsyfocusStaff",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.2102911,
-  "BladeStart": 0.0939597338,
-  "BladeEnd": 0.693512559,
-  "MeleeWeaponType": 9
+  "OffX": 0.169830173,
+  "OffY": -0.0139860138,
+  "BladeStart": 0.349650353,
+  "BladeEnd": 0.6573427,
+  "MeleeWeaponType": 1
 }

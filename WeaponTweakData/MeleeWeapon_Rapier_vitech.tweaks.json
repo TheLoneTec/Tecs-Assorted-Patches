@@ -1,0 +1,11 @@
+{
+  "TextureModID": "vitech.tweaks",
+  "ItemDefName": "MeleeWeapon_Rapier",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.445554435,
+  "HandsMode": 1,
+  "BladeStart": 0.277722269,
+  "BladeEnd": 0.941058934,
+  "MeleeWeaponType": 54
+}

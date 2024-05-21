@@ -3,9 +3,9 @@
   "ItemDefName": "MeleeWeapon_Mace",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.252505,
+  "OffX": 0.249750257,
   "HandsMode": 1,
-  "BladeStart": 0.308617234,
-  "BladeEnd": 0.661322653,
+  "BladeStart": 0.3016983,
+  "BladeEnd": 0.653346658,
   "MeleeWeaponType": 8
 }

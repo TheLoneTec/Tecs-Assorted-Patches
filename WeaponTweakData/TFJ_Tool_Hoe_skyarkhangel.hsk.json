@@ -3,10 +3,9 @@
   "ItemDefName": "TFJ_Tool_Hoe",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.249584019,
+  "OffX": 0.289710283,
   "Rotation": 45.0,
-  "HandsMode": 1,
-  "BladeStart": 0.4359401,
-  "BladeEnd": 0.5890183,
-  "MeleeWeaponType": 48
+  "BladeStart": 0.433566421,
+  "BladeEnd": 0.6213786,
+  "MeleeWeaponType": 6
 }

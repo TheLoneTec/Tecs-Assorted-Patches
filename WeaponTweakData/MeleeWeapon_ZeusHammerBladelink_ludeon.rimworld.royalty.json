@@ -3,11 +3,8 @@
   "ItemDefName": "MeleeWeapon_ZeusHammerBladelink",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.241610765,
-  "OffY": -0.0223716386,
-  "ScaleX": 1.2,
-  "ScaleY": 1.2,
-  "BladeStart": 0.4250562,
-  "BladeEnd": 0.8411636,
+  "OffX": 0.169830173,
+  "BladeStart": 0.341658354,
+  "BladeEnd": 0.669330657,
   "MeleeWeaponType": 1
 }

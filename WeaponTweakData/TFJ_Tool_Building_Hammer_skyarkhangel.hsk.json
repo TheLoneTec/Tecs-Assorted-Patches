@@ -3,10 +3,10 @@
   "ItemDefName": "TFJ_Tool_Building_Hammer",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.08985025,
+  "OffX": 0.145854145,
   "Rotation": 90.0,
   "HandsMode": 1,
-  "BladeStart": 0.08319467,
-  "BladeEnd": 0.269550741,
+  "BladeStart": 0.149850145,
+  "BladeEnd": 0.317682326,
   "MeleeWeaponType": 8
 }

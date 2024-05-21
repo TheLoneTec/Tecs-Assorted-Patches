@@ -3,10 +3,9 @@
   "ItemDefName": "MeleeWeapon_PlasmaSword",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.313198835,
-  "ScaleX": 1.1,
-  "ScaleY": 1.1,
-  "BladeStart": 0.15659982,
-  "BladeEnd": 0.800895154,
-  "MeleeWeaponType": 6
+  "OffX": 0.3216783,
+  "HandsMode": 1,
+  "BladeStart": 0.221778229,
+  "BladeEnd": 0.7732268,
+  "MeleeWeaponType": 48
 }

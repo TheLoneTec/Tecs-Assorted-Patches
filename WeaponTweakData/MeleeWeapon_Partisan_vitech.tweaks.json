@@ -1,12 +1,12 @@
 {
-  "TextureModID": "skyarkhangel.hsk",
+  "TextureModID": "vitech.tweaks",
   "ItemDefName": "MeleeWeapon_Partisan",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.233766228,
+  "OffX": 0.3096903,
   "OffY": -0.0139860138,
   "Rotation": 45.0,
-  "BladeStart": 0.429570436,
-  "BladeEnd": 0.857142866,
+  "BladeStart": 0.425574422,
+  "BladeEnd": 0.9330669,
   "MeleeWeaponType": 6
 }

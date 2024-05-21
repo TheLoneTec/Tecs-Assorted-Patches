@@ -1,12 +1,12 @@
 {
-  "TextureModID": "skyarkhangel.hsk",
+  "TextureModID": "vitech.tweaks",
   "ItemDefName": "MeleeWeapon_Gladius",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.245754242,
-  "OffY": -0.0219780225,
+  "OffX": 0.3016983,
+  "OffY": -0.0179820172,
   "HandsMode": 1,
-  "BladeStart": 0.149850145,
-  "BladeEnd": 0.6093906,
+  "BladeStart": 0.173826173,
+  "BladeEnd": 0.74125874,
   "MeleeWeaponType": 48
 }

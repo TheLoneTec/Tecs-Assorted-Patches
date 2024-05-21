@@ -1,0 +1,10 @@
+{
+  "TextureModID": "ludeon.rimworld",
+  "ItemDefName": "ThrumboHorn",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.209790215,
+  "BladeStart": 0.11388611,
+  "BladeEnd": 0.6293706,
+  "MeleeWeaponType": 6
+}

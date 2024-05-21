@@ -1,0 +1,12 @@
+{
+  "TextureModID": "vitech.tweaks",
+  "ItemDefName": "NorbalMeleeWeapon_Ax",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2017982,
+  "OffY": -0.161838159,
+  "Rotation": 90.0,
+  "BladeStart": 0.253746241,
+  "BladeEnd": 0.6853147,
+  "MeleeWeaponType": 6
+}

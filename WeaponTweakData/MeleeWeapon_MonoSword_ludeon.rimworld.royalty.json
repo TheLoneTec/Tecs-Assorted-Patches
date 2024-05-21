@@ -3,8 +3,9 @@
   "ItemDefName": "MeleeWeapon_MonoSword",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.308724821,
-  "BladeStart": 0.0894857347,
-  "BladeEnd": 0.765100658,
-  "MeleeWeaponType": 6
+  "OffX": 0.333666325,
+  "HandsMode": 1,
+  "BladeStart": 0.165834159,
+  "BladeEnd": 0.781218767,
+  "MeleeWeaponType": 54
 }

@@ -3,10 +3,10 @@
   "ItemDefName": "MeleeWeapon_Monkeywrench",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.292585164,
+  "OffX": 0.289710283,
   "Rotation": 45.0,
   "HandsMode": 1,
-  "BladeStart": 0.196392789,
-  "BladeEnd": 0.7174349,
-  "MeleeWeaponType": 8
+  "BladeStart": 0.365634352,
+  "BladeEnd": 0.7012987,
+  "MeleeWeaponType": 1
 }

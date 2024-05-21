@@ -3,9 +3,9 @@
   "ItemDefName": "MeleeWeapon_Tsurugi",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.4529058,
+  "OffX": 0.457542449,
   "Rotation": 45.0,
-  "BladeStart": 0.14028056,
-  "BladeEnd": 1.01402807,
+  "BladeStart": 0.349650353,
+  "BladeEnd": 1.02897108,
   "MeleeWeaponType": 6
 }

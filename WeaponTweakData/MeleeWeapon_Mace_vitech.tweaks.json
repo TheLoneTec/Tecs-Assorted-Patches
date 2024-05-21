@@ -1,0 +1,11 @@
+{
+  "TextureModID": "vitech.tweaks",
+  "ItemDefName": "MeleeWeapon_Mace",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.3016983,
+  "HandsMode": 1,
+  "BladeStart": 0.4775225,
+  "BladeEnd": 0.781218767,
+  "MeleeWeaponType": 40
+}

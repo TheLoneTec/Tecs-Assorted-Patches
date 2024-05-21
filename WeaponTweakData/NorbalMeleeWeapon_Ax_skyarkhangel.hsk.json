@@ -3,11 +3,11 @@
   "ItemDefName": "NorbalMeleeWeapon_Ax",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.244488984,
-  "OffY": -0.1002004,
+  "OffX": 0.229770228,
+  "OffY": -0.11388611,
   "Rotation": 90.0,
   "HandsMode": 1,
-  "BladeStart": 0.1242485,
-  "BladeEnd": 0.7254509,
-  "MeleeWeaponType": 2
+  "BladeStart": 0.169830173,
+  "BladeEnd": 0.6933067,
+  "MeleeWeaponType": 50
 }

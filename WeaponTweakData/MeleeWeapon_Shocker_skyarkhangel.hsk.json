@@ -3,10 +3,10 @@
   "ItemDefName": "MeleeWeapon_Shocker",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.1002004,
+  "OffX": 0.145854145,
   "Rotation": 45.0,
   "HandsMode": 1,
-  "BladeStart": 0.220440879,
-  "BladeEnd": 0.372745484,
+  "BladeStart": 0.217782214,
+  "BladeEnd": 0.417582422,
   "MeleeWeaponType": 8
 }

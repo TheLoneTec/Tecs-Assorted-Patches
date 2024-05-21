@@ -3,10 +3,9 @@
   "ItemDefName": "MeleeWeapon_Sledgehammer",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.220440879,
-  "OffY": 0.02004008,
-  "Rotation": 44.0,
-  "BladeStart": 0.541082144,
-  "BladeEnd": 0.7735471,
-  "MeleeWeaponType": 6
+  "OffX": 0.233766228,
+  "Rotation": 45.0,
+  "BladeStart": 0.5654346,
+  "BladeEnd": 0.761238754,
+  "MeleeWeaponType": 1
 }

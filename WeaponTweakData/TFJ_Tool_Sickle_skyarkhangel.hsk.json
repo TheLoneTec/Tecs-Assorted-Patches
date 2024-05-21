@@ -3,10 +3,10 @@
   "ItemDefName": "TFJ_Tool_Sickle",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.3826955,
+  "OffX": 0.38961038,
   "Rotation": 45.0,
   "HandsMode": 1,
-  "BladeStart": 0.143094838,
-  "BladeEnd": 0.7088186,
-  "MeleeWeaponType": 16
+  "BladeStart": 0.1978022,
+  "BladeEnd": 0.6933067,
+  "MeleeWeaponType": 6
 }

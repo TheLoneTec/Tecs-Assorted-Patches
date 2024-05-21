@@ -3,10 +3,10 @@
   "ItemDefName": "Sunderer",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.284569144,
-  "OffY": -0.14028056,
+  "OffX": 0.26973027,
+  "OffY": -0.129870132,
   "Rotation": 45.0,
-  "BladeStart": -0.260521054,
-  "BladeEnd": 0.9659319,
-  "MeleeWeaponType": 6
+  "BladeStart": 0.0979021,
+  "BladeEnd": 0.9050949,
+  "MeleeWeaponType": 7
 }

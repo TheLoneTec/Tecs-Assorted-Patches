@@ -3,11 +3,8 @@
   "ItemDefName": "MeleeWeapon_Zeushammer",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.241610765,
-  "OffY": -0.0223716386,
-  "ScaleX": 1.2,
-  "ScaleY": 1.2,
-  "BladeStart": 0.4250562,
-  "BladeEnd": 0.8411636,
+  "OffX": 0.173826173,
+  "BladeStart": 0.333666325,
+  "BladeEnd": 0.665334642,
   "MeleeWeaponType": 1
 }

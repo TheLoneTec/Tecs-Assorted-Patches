@@ -1,11 +1,11 @@
 {
-  "TextureModID": "skyarkhangel.hsk",
+  "TextureModID": "vitech.tweaks",
   "ItemDefName": "MeleeWeapon_Glaive",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.273726285,
+  "OffX": 0.277722269,
   "Rotation": 45.0,
-  "BladeStart": 0.433566421,
-  "BladeEnd": 0.9210789,
+  "BladeStart": 0.445554435,
+  "BladeEnd": 0.941058934,
   "MeleeWeaponType": 6
 }

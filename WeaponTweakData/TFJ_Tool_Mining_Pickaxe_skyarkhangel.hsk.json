@@ -3,10 +3,9 @@
   "ItemDefName": "TFJ_Tool_Mining_Pickaxe",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.12978369,
+  "OffX": 0.04195804,
   "Rotation": 90.0,
-  "HandsMode": 1,
-  "BladeStart": 0.3028286,
-  "BladeEnd": 0.542429268,
-  "MeleeWeaponType": 48
+  "BladeStart": 0.225774229,
+  "BladeEnd": 0.433566421,
+  "MeleeWeaponType": 6
 }

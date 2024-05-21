@@ -1,0 +1,14 @@
+{
+  "TextureModID": "ludeon.rimworld",
+  "ItemDefName": "ElephantTusk",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.295566469,
+  "OffY": -0.045977205,
+  "Rotation": 10.0,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "BladeStart": 0.08538668,
+  "BladeEnd": 0.8144507,
+  "MeleeWeaponType": 44
+}

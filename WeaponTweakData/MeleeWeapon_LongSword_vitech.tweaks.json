@@ -1,0 +1,13 @@
+{
+  "TextureModID": "vitech.tweaks",
+  "ItemDefName": "MeleeWeapon_LongSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.4215784,
+  "OffY": -0.0139860138,
+  "ScaleX": 1.2,
+  "ScaleY": 1.2,
+  "BladeStart": 0.237762243,
+  "BladeEnd": 1.016983,
+  "MeleeWeaponType": 6
+}

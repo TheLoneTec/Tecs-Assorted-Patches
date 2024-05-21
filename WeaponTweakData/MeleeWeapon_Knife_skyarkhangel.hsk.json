@@ -3,10 +3,9 @@
   "ItemDefName": "MeleeWeapon_Knife",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.164328665,
-  "OffY": -0.0120240478,
+  "OffX": 0.217782214,
   "HandsMode": 1,
-  "BladeStart": 0.08416834,
-  "BladeEnd": 0.501002,
+  "BladeStart": 0.149850145,
+  "BladeEnd": 0.545454562,
   "MeleeWeaponType": 48
 }

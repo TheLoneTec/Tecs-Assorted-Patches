@@ -3,10 +3,10 @@
   "ItemDefName": "MeleeWeapon_ElectricBaton",
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
-  "OffX": 0.3006012,
+  "OffX": 0.277722269,
   "Rotation": 45.0,
   "HandsMode": 1,
-  "BladeStart": 0.4288577,
-  "BladeEnd": 0.765531063,
-  "MeleeWeaponType": 8
+  "BladeStart": 0.3936064,
+  "BladeEnd": 0.7212787,
+  "MeleeWeaponType": 1
 }

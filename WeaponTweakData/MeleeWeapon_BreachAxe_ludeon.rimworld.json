@@ -1,0 +1,13 @@
+{
+  "TextureModID": "ludeon.rimworld",
+  "ItemDefName": "MeleeWeapon_BreachAxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.144498765,
+  "OffY": -0.0394088663,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "BladeStart": 0.328407615,
+  "BladeEnd": 0.6765197,
+  "MeleeWeaponType": 18
+}
