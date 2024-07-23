@@ -151,7 +151,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/modExtensions/li[@Class="SurvivalToolsLite.SurvivalToolProperties"]/baseWorkStatFactors</xpath>
 				<value>
-					<PlantHarvestingSpeed>0.5</PlantHarvestingSpeed>
+					<PlantHarvestingSpeed>0.75</PlantHarvestingSpeed>
 				</value>
 			</li>
 
