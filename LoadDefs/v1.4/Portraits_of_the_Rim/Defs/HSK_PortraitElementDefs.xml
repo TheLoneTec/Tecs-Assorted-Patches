@@ -395,6 +395,68 @@
 
 	<!-- Apparel -->
 	
+	<!-- Cloak -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingShoulder_HSK-l-RHApparel_DFCloak_Poncho</defName>
+		<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/RH2FactionVOID-l-RHApparel_DFCloak_Poncho</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Large</bodyType>
+			<apparels>
+				<li>Apparello_PonPon</li>
+				<li>Apparel_FSDesertRobe</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingShoulder_HSK-m-RHApparel_DFCloak_Poncho</defName>
+		<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/RH2FactionVOID-m-RHApparel_DFCloak_Poncho</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Medium</bodyType>
+			<apparels>
+				<li>Apparello_PonPon</li>
+				<li>Apparel_FSDesertRobe</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingShoulder_HSK-s-RHApparel_DFCloak_Poncho</defName>
+		<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/RH2FactionVOID-s-RHApparel_DFCloak_Poncho</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Small</bodyType>
+			<apparels>
+				<li>Apparello_PonPon</li>
+				<li>Apparel_FSDesertRobe</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingShoulder_HSK-xl-RHApparel_DFCloak_Poncho</defName>
+		<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingShoulder/RH2FactionVOID-xl-RHApparel_DFCloak_Poncho</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>ExtraLarge</bodyType>
+			<apparels>
+				<li>Apparello_PonPon</li>
+				<li>Apparel_FSDesertRobe</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+	
 	<!-- Inner Clothing -->
 	
 	<PortraitsOfTheRim.PortraitElementDef>

@@ -21,7 +21,7 @@
                 <xpath>Defs/ThingDef[@Name="WeaponRack_BaseRack"]/researchPrerequisites</xpath>
                 <value>
 					<researchPrerequisites Inherit="False">
-					  <li>Storage_C4</li>
+					  <li>Storage_C1</li>
 					</researchPrerequisites>
                 </value>
             </li>
