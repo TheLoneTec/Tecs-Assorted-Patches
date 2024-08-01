@@ -132,6 +132,12 @@
                     <tab>Plants_SK</tab>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MSOpiumPoppy"]/baseCost</xpath>
+                <value>
+                    <baseCost>100</baseCost>
+                </value>
+            </li>
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ResearchProjectDef[defName="MSOpiumPoppy"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
 				<nomatch Class="PatchOperationConditional">
@@ -571,6 +577,12 @@
                 <xpath>Defs/ResearchProjectDef[defName="MSOpium"]/tab</xpath>
                 <value>
                     <tab>Medicine_SK</tab>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MSOpium"]/baseCost</xpath>
+                <value>
+                    <baseCost>150</baseCost>
                 </value>
             </li>
 			<li Class="PatchOperationConditional">
