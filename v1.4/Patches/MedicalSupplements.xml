@@ -218,6 +218,13 @@
 			</nomatch>
 			</li>
 	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MSOpiumLatex"]</xpath>
+				<value>
+					<uiIconPath>Things/Item/MSOpiumLatex/MSOpiumLatex_c</uiIconPath>
+				</value>
+			</li>
+	
 			<li Class="PatchOperationFindMod">
 			<mods>
 				<li>Flora reskin [Reupload]</li>
