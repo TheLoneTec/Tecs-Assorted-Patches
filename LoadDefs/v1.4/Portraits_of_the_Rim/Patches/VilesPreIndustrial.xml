@@ -12,7 +12,7 @@
 				<xpath>Defs</xpath>
 				<value>
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-l-strawcape</defName>
+						<defName>PR_OuterClothingShoulder_VilePreIndus-l-strawcape</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>OuterClothingShoulder/Straw-l-cape</texPath>
@@ -26,7 +26,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-m-strawcape</defName>
+						<defName>PR_OuterClothingShoulder_VilePreIndus-m-strawcape</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>OuterClothingShoulder/Straw-m-cape</texPath>
@@ -40,7 +40,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-s-strawcape</defName>
+						<defName>PR_OuterClothingShoulder_VilePreIndus-s-strawcape</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>OuterClothingShoulder/Straw-s-cape</texPath>
@@ -54,7 +54,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-xl-strawcape</defName>
+						<defName>PR_OuterClothingShoulder_VilePreIndus-xl-strawcape</defName>
 						<portraitLayer>PR_OuterClothingShoulder</portraitLayer>
 						<graphicData>
 							<texPath>OuterClothingShoulder/Straw-xl-cape</texPath>
@@ -144,65 +144,9 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 				
 					<!-- Middle Clothing -->
-					
-					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-l-Tunic</defName>
-						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
-						<graphicData>
-							<texPath>InnerClothingTorso/VEApparel-l-Tunic</texPath>
-						</graphicData>
-						<requirements>
-							<bodyType>Large</bodyType>
-							<apparels>
-								<li>Apparel_TunicFine</li>
-							</apparels>
-						</requirements>
-					</PortraitsOfTheRim.PortraitElementDef>
-					
-					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-m-Tunic</defName>
-						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
-						<graphicData>
-							<texPath>InnerClothingTorso/VEApparel-m-Tunic</texPath>
-						</graphicData>
-						<requirements>
-							<bodyType>Medium</bodyType>
-							<apparels>
-								<li>Apparel_TunicFine</li>
-							</apparels>
-						</requirements>
-					</PortraitsOfTheRim.PortraitElementDef>
-					
-					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-s-Tunic</defName>
-						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
-						<graphicData>
-							<texPath>InnerClothingTorso/VEApparel-s-Tunic</texPath>
-						</graphicData>
-						<requirements>
-							<bodyType>Small</bodyType>
-							<apparels>
-								<li>Apparel_TunicFine</li>
-							</apparels>
-						</requirements>
-					</PortraitsOfTheRim.PortraitElementDef>
-					
-					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_InnerClothingTorso_VilePreIndus-xl-Tunic</defName>
-						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
-						<graphicData>
-							<texPath>InnerClothingTorso/VEApparel-xl-Tunic</texPath>
-						</graphicData>
-						<requirements>
-							<bodyType>ExtraLarge</bodyType>
-							<apparels>
-								<li>Apparel_TunicFine</li>
-							</apparels>
-						</requirements>
-					</PortraitsOfTheRim.PortraitElementDef>
 				
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_VilePreIndus-l-Doublet</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-l-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-l-eltexvest</texPath>
@@ -216,7 +160,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_VilePreIndus-m-Doublet</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-m-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-m-eltexvest</texPath>
@@ -230,7 +174,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_VilePreIndus-s-Doublet</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-s-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-s-eltexvest</texPath>
@@ -244,7 +188,7 @@
 					</PortraitsOfTheRim.PortraitElementDef>
 					
 					<PortraitsOfTheRim.PortraitElementDef>
-						<defName>PR_MiddleClothingTorso_VilePreIndus-xl-Doublet</defName>
+						<defName>PR_InnerClothingTorso_VilePreIndus-xl-Doublet</defName>
 						<portraitLayer>PR_InnerClothingTorso</portraitLayer>
 						<graphicData>
 							<texPath>MiddleClothingTorso/Royalty-xl-eltexvest</texPath>

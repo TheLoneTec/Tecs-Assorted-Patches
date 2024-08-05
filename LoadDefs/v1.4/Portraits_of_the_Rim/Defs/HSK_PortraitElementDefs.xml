@@ -753,4 +753,208 @@
 		</requirements>
 	</PortraitsOfTheRim.PortraitElementDef>
 
+	<!-- Tunic Style -->
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-l-Tunic</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingTorso/VEApparel-l-Tunic</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Large</bodyType>
+			<apparels>
+				<li>Apparel_TunicFine</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-m-Tunic</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingTorso/VEApparel-m-Tunic</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Medium</bodyType>
+			<apparels>
+				<li>Apparel_TunicFine</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-s-Tunic</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingTorso/VEApparel-s-Tunic</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Small</bodyType>
+			<apparels>
+				<li>Apparel_TunicFine</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-xl-Tunic</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>MiddleClothingTorso/VEApparel-xl-Tunic</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>ExtraLarge</bodyType>
+			<apparels>
+				<li>Apparel_TunicFine</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<!-- Work Tunic -->
+	
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-l-tabard</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEMedieval-l-tabard</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Large</bodyType>
+			<apparels>
+				<li>Apparel_TunicPoor</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-m-tabard</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEMedieval-m-tabard</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Medium</bodyType>
+			<apparels>
+				<li>Apparel_TunicPoor</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-s-tabard</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEMedieval-s-tabard</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Small</bodyType>
+			<apparels>
+				<li>Apparel_TunicPoor</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_MiddleClothingTorso_HSK-xl-tabard</defName>
+		<portraitLayer>PR_MiddleClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEMedieval-xl-tabard</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>ExtraLarge</bodyType>
+			<apparels>
+				<li>Apparel_TunicPoor</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<!-- Overtunic -->
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterClothingTorso_HSK-l-Overtunic</defName>
+		<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEVikings-l-Cryptoheavyarmor</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Large</bodyType>
+			<apparels>
+				<li>Apparello_Tunic</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterClothingTorso_HSK-m-Overtunic</defName>
+		<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEVikings-m-Cryptoheavyarmor</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Medium</bodyType>
+			<apparels>
+				<li>Apparello_Tunic</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterClothingTorso_HSK-s-Overtunic</defName>
+		<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEVikings-s-Cryptoheavyarmor</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>Small</bodyType>
+			<apparels>
+				<li>Apparello_Tunic</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_OuterClothingTorso_HSK-xl-Overtunic</defName>
+		<portraitLayer>PR_OuterClothingTorso</portraitLayer>
+		<graphicData>
+			<texPath>OuterClothingTorso/VEVikings-xl-Cryptoheavyarmor</texPath>
+		</graphicData>
+		<requirements>
+			<bodyType>ExtraLarge</bodyType>
+			<apparels>
+				<li>Apparello_Tunic</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<!-- Inner Headgear -->
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerHeadgear_HSK-an-bandana</defName>
+		<portraitLayer>PR_InnerHeadgear</portraitLayer>
+		<graphicData>
+			<texPath>InnerHeadgear/VESettlers-an-bandana</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>13~999</ageRange>
+			<apparels>
+				<li>Apparello_Bandit</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
+	<PortraitsOfTheRim.PortraitElementDef>
+		<defName>PR_InnerHeadgear_HSK-cn-bandana</defName>
+		<portraitLayer>PR_InnerHeadgear</portraitLayer>
+		<graphicData>
+			<texPath>InnerHeadgear/VESettlers-cn-bandana</texPath>
+		</graphicData>
+		<requirements>
+			<ageRange>7~13</ageRange>
+			<apparels>
+				<li>Apparello_Bandit</li>
+			</apparels>
+		</requirements>
+	</PortraitsOfTheRim.PortraitElementDef>
+
 </Defs>

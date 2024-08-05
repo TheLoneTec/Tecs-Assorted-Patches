@@ -15,7 +15,7 @@
 				<match Class="PatchOperationSequence">
 					<operations>
 
-					<!-- Underwhere Long Johns -->
+					<!-- Baret -->
 
 					<li Class="PatchOperationAdd">
 						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterHeadgear_Royalty-an-Apparel_Beret"]/requirements/apparels</xpath>
@@ -28,6 +28,36 @@
 						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterHeadgear_Royalty-cn-Apparel_Beret"]/requirements/apparels</xpath>
 						<value>
 							<li>RBPApparel_CreativeBeret</li>
+						</value>
+					</li>
+
+					<!-- Smock -->
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-l-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-m-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-s-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-xl-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
 						</value>
 					</li>
 
