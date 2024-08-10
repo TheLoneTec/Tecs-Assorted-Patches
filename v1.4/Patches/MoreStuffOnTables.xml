@@ -8,21 +8,21 @@
 		<operations>
 		
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="DMicrowave"]</xpath>
+			    <xpath>Defs/ThingDef[defName="DMicrowave"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-			    <xpath>/Defs/ThingDef[defName="DMicrowave"]/altitudeLayer</xpath>
+			    <xpath>Defs/ThingDef[defName="DMicrowave"]/altitudeLayer</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="DMicrowave"]/building</xpath>
+			    <xpath>Defs/ThingDef[defName="DMicrowave"]/building</xpath>
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
@@ -37,7 +37,7 @@
 				<operations>
 				
 					<li Class="PatchOperationAdd"> 
-						<xpath>/Defs/ThingDef[defName="DMicrowave"]/placeWorkers</xpath>
+						<xpath>Defs/ThingDef[defName="DMicrowave"]/placeWorkers</xpath>
 						<value>
 							<li>LTS_Systems.PlaceWorkers.PlaceWorker_Tabletop</li>
 						</value>
@@ -59,21 +59,21 @@
 		<operations>
 		
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+			    <xpath>Defs/ThingDef[defName="Marimba"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+			    <xpath>Defs/ThingDef[defName="Marimba"]</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+			    <xpath>Defs/ThingDef[defName="Marimba"]</xpath>
 		        <value>
 				<building>
 	            	<isEdifice>false</isEdifice>
@@ -90,7 +90,7 @@
 				<operations>
 				
 					<li Class="PatchOperationAdd"> 
-						<xpath>/Defs/ThingDef[defName="Marimba"]</xpath>
+						<xpath>Defs/ThingDef[defName="Marimba"]</xpath>
 						<value>
 						<placeWorkers>
 							<li>LTS_Systems.PlaceWorkers.PlaceWorker_Tabletop</li>
@@ -113,16 +113,16 @@
 		<operations>
 		
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+			    <xpath>Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[defName="GameOfUrBoard"]/altitudeLayer</xpath>
+				<xpath>Defs/ThingDef[defName="GameOfUrBoard"]/altitudeLayer</xpath>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+					<xpath>Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
 					<value>
 						<altitudeLayer>BuildingOnTop</altitudeLayer>
 					</value>
@@ -130,7 +130,7 @@
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="GameOfUrBoard"]/building</xpath>
+			    <xpath>Defs/ThingDef[defName="GameOfUrBoard"]/building</xpath>
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
@@ -138,21 +138,21 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="Candle"]</xpath>
+			    <xpath>Defs/ThingDef[defName="Candle"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="Candle"]</xpath>
+			    <xpath>Defs/ThingDef[defName="Candle"]</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="Candle"]/building</xpath>
+			    <xpath>Defs/ThingDef[defName="Candle"]/building</xpath>
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
@@ -160,7 +160,7 @@
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="Candle"]</xpath>
+			    <xpath>Defs/ThingDef[defName="Candle"]</xpath>
 		        <value>
 					<placeWorkers>
 						<li>SK.PlaceWorker_NotOnWall</li>
@@ -169,21 +169,21 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
+			    <xpath>Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
+			    <xpath>Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]/building</xpath>
+			    <xpath>Defs/ThingDef[defName="GlowstoneLamp"]/building</xpath>
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
@@ -191,7 +191,7 @@
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
+			    <xpath>Defs/ThingDef[defName="GlowstoneLamp"]</xpath>
 		        <value>
 					<placeWorkers>
 						<li>SK.PlaceWorker_NotOnWall</li>
@@ -200,21 +200,21 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLamp"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLamp"]</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLamp"]/building</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLamp"]/building</xpath>
 		        <value>
 	            	<isEdifice>false</isEdifice>
 					<canPlaceOverWall>false</canPlaceOverWall>				
@@ -222,7 +222,7 @@
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLamp"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLamp"]</xpath>
 		        <value>
 					<placeWorkers>
 						<li>SK.PlaceWorker_NotOnWall</li>
@@ -231,21 +231,21 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
 		        <value>
 				<building>
 	            	<isEdifice>false</isEdifice>
@@ -255,7 +255,7 @@
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDsmall"]</xpath>
 		        <value>
 					<placeWorkers>
 						<li>SK.PlaceWorker_NotOnWall</li>
@@ -264,21 +264,21 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
 		        <value>
 				<building>
 	            	<isEdifice>false</isEdifice>
@@ -288,7 +288,7 @@
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDnormal"]</xpath>
 		        <value>
 					<placeWorkers>
 						<li>SK.PlaceWorker_NotOnWall</li>
@@ -297,21 +297,21 @@
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
 		        <value>
 				    <clearBuildingArea>false</clearBuildingArea>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
 		        <value>
 					<altitudeLayer>BuildingOnTop</altitudeLayer>
 	        	</value>
 			</li>
 			
 			<li Class="PatchOperationAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
 		        <value>
 				<building>
 	            	<isEdifice>false</isEdifice>
@@ -321,7 +321,7 @@
 			</li>
 	
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
-			    <xpath>/Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
+			    <xpath>Defs/ThingDef[defName="StandingLampLEDlarge"]</xpath>
 		        <value>
 					<placeWorkers>
 						<li>SK.PlaceWorker_NotOnWall</li>
@@ -337,7 +337,7 @@
 				<operations>
 				
 					<li Class="PatchOperationAdd"> 
-						<xpath>/Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
+						<xpath>Defs/ThingDef[defName="GameOfUrBoard"]</xpath>
 						<value>
 						<placeWorkers>
 							<li>LTS_Systems.PlaceWorkers.PlaceWorker_Tabletop</li>
