@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>FAE-Facial Animations Expanded</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/GeneDef/renderNodeProperties</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/GeneDef/renderNodeProperties</xpath>
+				</match>
+			</li>
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
