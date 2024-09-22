@@ -54,8 +54,8 @@
 				</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-			   <xpath>Defs/ThingDef[defName="RimNauts2_PodLauncher"]</xpath>
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_PodLauncher"]/costList</xpath>
 			   <value>
 					<costList Inherit="False">
 						<Plastic>80</Plastic>
@@ -114,8 +114,8 @@
 				</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-			   <xpath>Defs/ThingDef[defName="RimNauts2_SatelliteDish"]</xpath>
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_SatelliteDish"]/costList</xpath>
 			   <value>
 					<costList Inherit="False">
 						<Plastic>40</Plastic>
@@ -153,8 +153,8 @@
 				</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Cargo"]</xpath>
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Cargo"]/costList</xpath>
 			   <value>
 					<costList Inherit="False">
 						<Plastic>30</Plastic>
@@ -187,8 +187,8 @@
 				</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Satellite"]</xpath>
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Satellite"]/costList</xpath>
 			   <value>
 					<costList Inherit="False">
 						<Plastic>15</Plastic>
@@ -221,8 +221,8 @@
 				</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_SpaceStation"]</xpath>
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_SpaceStation"]/costList</xpath>
 			   <value>
 					<costList Inherit="False">
 						<Plastic>100</Plastic>
@@ -264,6 +264,20 @@
 						<ComponentSpacer>3</ComponentSpacer>
 						<AdvMechanism>6</AdvMechanism>
 						<Microchips>1</Microchips>
+					</costList>
+			   </value>
+			</li>
+
+			<!-- Delivery Cannon Shell -->
+
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="RimNauts2_TransportPod_Shell"]/costList</xpath>
+			   <value>
+					<costList Inherit="False">
+						<Plastic>20</Plastic>
+						<Rubber>15</Rubber>
+						<ComponentIndustrial>4</ComponentIndustrial>
+						<Mechanism>1</Mechanism>
 					</costList>
 			   </value>
 			</li>
@@ -501,9 +515,198 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationReplace"> 
+					<xpath>Defs/RecipeDef[defName="RimNauts2_Make_Module_Station"]</xpath>
+					<value>
+						<RecipeDef ParentName="RimNauts2_Make_Module">
+							<defName>RimNauts2_Make_Module_Station</defName>
+							<label>make station module</label>
+							<unfinishedThingDef>RimNauts2_Unifinished_Module_Station</unfinishedThingDef>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Metallic</li>
+										</categories>
+									</filter>
+									<count>360</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentSpacer</li>
+										</thingDefs>
+									</filter>
+									<count>6</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>AdvMechanism</li>
+										</thingDefs>
+									</filter>
+									<count>8</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Microchips</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Electronics</li>
+										</thingDefs>
+									</filter>
+									<count>12</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Plastic</li>
+										</thingDefs>
+									</filter>
+									<count>50</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Rubber</li>
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ReinforcedGlass</li>
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+									<li>AdvMechanism</li>
+									<li>Microchips</li>
+									<li>Electronics</li>
+									<li>Plastic</li>
+									<li>Rubber</li>
+									<li>ReinforcedGlass</li>
+								</thingDefs>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</fixedIngredientFilter>
+							<products>
+								<RimNauts2_Module_Station>1</RimNauts2_Module_Station>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace"> 
+					<xpath>Defs/RecipeDef[defName="RimNauts2_Make_Module_Satellite"]</xpath>
+					<value>
+						<RecipeDef ParentName="RimNauts2_Make_Module">
+							<defName>RimNauts2_Make_Module_Satellite</defName>
+							<label>Make Relay Satellite module</label>
+							<unfinishedThingDef>RimNauts2_Unifinished_Module_Satellite</unfinishedThingDef>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>Metallic</li>
+										</categories>
+									</filter>
+									<count>30</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentSpacer</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>AdvMechanism</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Microchips</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Electronics</li>
+										</thingDefs>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Plastic</li>
+										</thingDefs>
+									</filter>
+									<count>15</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Rubber</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ReinforcedGlass</li>
+										</thingDefs>
+									</filter>
+									<count>5</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>ComponentSpacer</li>
+									<li>AdvMechanism</li>
+									<li>Microchips</li>
+									<li>Electronics</li>
+									<li>Plastic</li>
+									<li>Rubber</li>
+									<li>ReinforcedGlass</li>
+								</thingDefs>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</fixedIngredientFilter>
+							<products>
+								<RimNauts2_Module_Satellite>1</RimNauts2_Module_Satellite>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+
 			</operations>
 		</match>
     </Operation>
+	
 	<!--
 	<Operation Class="PatchOperationFindMod">
 	<mods>

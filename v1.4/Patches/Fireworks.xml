@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Fireworks</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FireworkLauncher"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>2</ComponentIndustrial>
+							<Chemfuel>20</Chemfuel>
+						</costList>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+</Patch>

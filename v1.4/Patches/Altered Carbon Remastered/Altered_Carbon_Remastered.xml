@@ -70,8 +70,8 @@
 				<value>SK_BuildingBase</value>
 			</li>
 	
-			<li Class="PatchOperationAdd">
-			   <xpath>Defs/ThingDef[defName="VFEU_SleeveIncubator"]</xpath>
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="VFEU_SleeveIncubator"]/costList</xpath>
 			   <value>
 					<costStuffCount>250</costStuffCount>
 					<stuffCategories>
@@ -1288,6 +1288,20 @@
 						<li>CraftingSpot</li>
 					</recipeUsers>
 				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="AC_CuirassierBelt"]/costList</xpath>
+			   <value>
+					<stuffCategories>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>40</costStuffCount>
+					<costList>
+						<Electronics>4</Electronics>
+						<ComponentSpacer>2</ComponentSpacer>
+					</costList>
+			   </value>
 			</li>
 
 			</operations>

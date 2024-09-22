@@ -288,6 +288,54 @@
 			   </value>
 			</li>
 	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="Spaceports_ShuttleInert"]/killedLeavings</xpath>
+			   <value>
+					<killedLeavings Inherit="False">
+						<ChunkSlagSteel>4</ChunkSlagSteel>
+						<Wire>20</Wire>
+						<Plastic>25</Plastic>
+						<ComponentSpacer>4</ComponentSpacer>
+						<ReinforcedGlass>20</ReinforcedGlass>
+						<ElectronicComponents>5</ElectronicComponents>
+						<Electronics>4</Electronics>
+						<Microchips>1</Microchips>
+					</killedLeavings>
+			   </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="Spaceports_ShuttleInert"]/costList</xpath>
+			   <value>
+					<costList>
+						<ChunkSlagSteel>6</ChunkSlagSteel>
+						<Wire>30</Wire>
+						<Plastic>35</Plastic>
+						<ComponentSpacer>6</ComponentSpacer>
+						<ReinforcedGlass>35</ReinforcedGlass>
+						<ElectronicComponents>8</ElectronicComponents>
+						<Electronics>6</Electronics>
+						<Microchips>2</Microchips>
+					</costList>
+			   </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			   <xpath>Defs/ThingDef[defName="Spaceports_SurpriseShuttle"]/costList</xpath>
+			   <value>
+					<costList>
+						<ChunkSlagSteel>6</ChunkSlagSteel>
+						<Wire>30</Wire>
+						<Plastic>35</Plastic>
+						<ComponentSpacer>6</ComponentSpacer>
+						<ReinforcedGlass>35</ReinforcedGlass>
+						<ElectronicComponents>8</ElectronicComponents>
+						<Electronics>6</Electronics>
+						<Microchips>2</Microchips>
+					</costList>
+			   </value>
+			</li>
+	
 			</operations>
 		</match>
     </Operation>

@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>HologramsAndProjectors</li>
+		<li>Holograms And Projectors</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
@@ -65,13 +65,6 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="SmallProjector"]/comps/li[@Class="HologramsAndProjectors.CompProperties_DynamicGlower"]</xpath>
-				<value>
-					<darklightToggle>true</darklightToggle>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="SmallProjector"]/recipeMaker/recipeUsers</xpath>
 				<value>
 					<li>AdvToolBench</li>
@@ -114,13 +107,6 @@
 						<Microchips>1</Microchips>
 					</costList>
 			   </value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="LargeProjector"]/comps/li[@Class="HologramsAndProjectors.CompProperties_DynamicGlower"]</xpath>
-				<value>
-					<darklightToggle>true</darklightToggle>
-				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
@@ -168,13 +154,6 @@
 						<Microchips>2</Microchips>
 					</costList>
 			   </value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="GrandProjector"]/comps/li[@Class="HologramsAndProjectors.CompProperties_DynamicGlower"]</xpath>
-				<value>
-					<darklightToggle>true</darklightToggle>
-				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">

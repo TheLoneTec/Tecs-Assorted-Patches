@@ -160,6 +160,10 @@
 				or @Name="PrimitiveHornInstrumentBase" or @Name="StringInstrumentBase"]/recipeMaker</xpath>
 			</li>
 
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="BassGuitar"]/costList</xpath>
+			</li>
+
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="PrimitiveInstrumentBase"]</xpath>
 				<value>

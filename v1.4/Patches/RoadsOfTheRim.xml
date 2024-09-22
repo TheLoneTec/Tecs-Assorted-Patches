@@ -40,6 +40,10 @@
 					<xpath>Defs/ThingDef[defName="RotR_AISR2G"]/designationCategory</xpath>
 				</li>
 
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="RotR_AISR2G"]/costList</xpath>
+				</li>
+
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "RotR_ISR2GNew"]</xpath>
 					<value>

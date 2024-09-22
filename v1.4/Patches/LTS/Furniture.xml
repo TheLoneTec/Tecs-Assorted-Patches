@@ -490,6 +490,26 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_WallTelevision"]/costList</xpath>
+				<value>
+				<costList>
+					<Glass>20</Glass>
+					<Rubber>12</Rubber>
+					<Plastic>40</Plastic>
+					<Electronics>5</Electronics>
+					<ComponentIndustrial>5</ComponentIndustrial>
+				</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_TV"]/defNames</xpath>
+				<value>
+					<li>LTS_WallTelevision</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/ThingDef[defName="LTS_laptop"]/costList</xpath>
 				<value>
 				<costList>

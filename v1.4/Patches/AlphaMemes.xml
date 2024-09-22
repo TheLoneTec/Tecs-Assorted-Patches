@@ -52,6 +52,38 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_RumBurialSpot"]/costList</xpath>
+				<value>
+					<costList>
+					  <Mechanism>2</Mechanism>
+					  <ComponentIndustrial>6</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_AncientOperatingTable"]/costList</xpath>
+				<value>
+					<costList>
+					  <Plasteel>40</Plasteel>
+					  <Mechanism>2</Mechanism>
+					  <ComponentIndustrial>5</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AM_AnimalDatabase"]/costList</xpath>
+				<value>
+					<costList>
+					  <ElectronicComponents>7</ElectronicComponents>
+					  <ComponentIndustrial>5</ComponentIndustrial>
+					  <Microchips>2</Microchips>
+					</costList>
+				</value>
+			</li>
+
 			</operations>
 		</match>
     </Operation>
