@@ -513,6 +513,15 @@
 			</li>
 	
 			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/TerrainDef[@Name="LTS_IndustrialBase"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Metal_floor_B2</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/TerrainDef[@Name="LTS_FineStoneBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites Inherit="False">
