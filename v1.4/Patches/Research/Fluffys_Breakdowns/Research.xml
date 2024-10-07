@@ -4,6 +4,8 @@
 	<Operation Class="PatchOperationFindMod">
 	<mods>
 		<li>Fluffy Breakdowns (1.4 Update)</li>
+		<li>Fluffy Breakdowns (1.5 Update)</li>
+		<li>Fluffy Breakdowns</li>
 	</mods>
 	<match Class="PatchOperationSequence">
 		<operations>
