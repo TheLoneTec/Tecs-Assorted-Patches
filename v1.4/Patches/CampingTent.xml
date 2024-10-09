@@ -50,6 +50,13 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThoughtDef[defName = "Canopybuff"]/stages/li[1]/baseMoodEffect</xpath>
+				<value>
+					<baseMoodEffect>-8</baseMoodEffect>
+				</value>
+			</li>
+			
 			<!-- =========== WoodenCanopy ============== -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "WoodenCanopy"]/costList</xpath>
@@ -67,6 +74,13 @@
 					<costList>
 						<WoodPlank>20</WoodPlank>
 					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThoughtDef[defName = "Teepeebuff"]/stages/li[1]/baseMoodEffect</xpath>
+				<value>
+					<baseMoodEffect>-7</baseMoodEffect>
 				</value>
 			</li>
 			
@@ -100,6 +114,13 @@
 				</nomatch>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThoughtDef[defName = "Tentbuff"]/stages/li[1]/baseMoodEffect</xpath>
+				<value>
+					<baseMoodEffect>-6</baseMoodEffect>
+				</value>
+			</li>
+
 			<!-- =========== VikingTent ============== -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "VikingTent"]/costList</xpath>
@@ -128,6 +149,13 @@
 					</researchPrerequisites>
 					</value>
 				</nomatch>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThoughtDef[defName = "VikingTentbuff"]/stages/li[1]/baseMoodEffect</xpath>
+				<value>
+					<baseMoodEffect>-5</baseMoodEffect>
+				</value>
 			</li>
 
 			<!-- =========== ModernTent ============== -->
@@ -162,6 +190,13 @@
 					</researchPrerequisites>
 					</value>
 				</match>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThoughtDef[defName = "ModernTentbuff"]/stages/li[1]/baseMoodEffect</xpath>
+				<value>
+					<baseMoodEffect>-4</baseMoodEffect>
+				</value>
 			</li>
 			
 			<!-- =========== CampingLuggages ============== -->
