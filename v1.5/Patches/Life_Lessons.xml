@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Life Lessons</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- ========== Music Spot ========== -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Spots"]/defNames</xpath>
+					<value>
+						<li>TeachingSpot</li>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+</Patch>

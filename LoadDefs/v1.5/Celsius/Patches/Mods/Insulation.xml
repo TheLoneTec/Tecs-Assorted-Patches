@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- INSULATION -->
+
+	<!-- Buildings (walls & doors) -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSWall_Biomass"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>9</heatCapacity>
+				<insulation>6</insulation>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSWall_Fibre"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>10</heatCapacity>
+				<insulation>7</insulation>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSWall_Polymer"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>11</heatCapacity>
+				<insulation>8</insulation>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSWall_Hyper"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>12</heatCapacity>
+				<insulation>9</insulation>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSDoorSimple_Biomass"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>7</heatCapacity>
+				<insulation>6</insulation>
+				<airflowWhenOpen>0.75</airflowWhenOpen>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSDoorSimple_Fibre"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>8</heatCapacity>
+				<insulation>7</insulation>
+				<airflowWhenOpen>0.75</airflowWhenOpen>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSDoorSimple_Polymer"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>9</heatCapacity>
+				<insulation>8</insulation>
+				<airflowWhenOpen>0.75</airflowWhenOpen>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSDoorSimple_Hyper"]</xpath>
+		<value>
+			<li Class="Celsius.ThingThermalProperties">
+				<heatCapacity>10</heatCapacity>
+				<insulation>9</insulation>
+				<airflowWhenOpen>0.75</airflowWhenOpen>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Stuff -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSSlab_Biomass"]</xpath>
+		<value>
+			<li Class="Celsius.StuffThermalProperties">
+				<volumetricHeatCapacity>550</volumetricHeatCapacity>
+				<insulationFactor>1.5</insulationFactor>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSSlab_Fibre"]</xpath>
+		<value>
+			<li Class="Celsius.StuffThermalProperties">
+				<volumetricHeatCapacity>600</volumetricHeatCapacity>
+				<insulationFactor>1.6</insulationFactor>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSSlab_Polymer"]</xpath>
+		<value>
+			<li Class="Celsius.StuffThermalProperties">
+				<volumetricHeatCapacity>650</volumetricHeatCapacity>
+				<insulationFactor>1.7</insulationFactor>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSSlab_Hyper"]</xpath>
+		<value>
+			<li Class="Celsius.StuffThermalProperties">
+				<volumetricHeatCapacity>700</volumetricHeatCapacity>
+				<insulationFactor>1.8</insulationFactor>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Ignition data: stuff -->
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSSlab_Biomass"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>120</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>120</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSSlab_Fibre"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>200</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>200</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="INSSlab_Polymer"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>270</Celsius_IgnitionTemperature>
+			</statBases>
+			<stuffProps>
+				<statOffsets>
+					<Celsius_IgnitionTemperature>270</Celsius_IgnitionTemperature>
+				</statOffsets>
+			</stuffProps>
+		</value>
+	</Operation>
+
+</Patch>

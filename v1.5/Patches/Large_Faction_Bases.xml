@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Large Faction Bases</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="TrapIED_AntigrainWarhead_Large"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[@Name="TrapIEDBase_Large"]</xpath>
+			</li>
+
+			<li Class="PatchOperationAttributeAdd">
+			<xpath>Defs/ThingDef[defName = "TrapIED_AntigrainWarhead"]</xpath>
+				<value>SK_IED_AntigrainWarhead</value>
+				<attribute>Name</attribute>
+			</li>
+
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef ParentName="SK_IED_AntigrainWarhead">
+						<defName>TrapIED_AntigrainWarhead_Large</defName>
+						<label>IED antigrain warhead trap</label>
+						<specialDisplayRadius>14.9</specialDisplayRadius>
+						<designationCategory isNull="True"/>
+					</ThingDef>
+				</value>
+			</li>
+
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

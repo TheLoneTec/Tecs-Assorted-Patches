@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[LTS]Systems</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/WorkGiverDef/workType[text()="LTS_Tasks"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/WorkGiverDef/workType[text()="LTS_Tasks"]</xpath>
+					<value>
+						<workType>BasicWorker</workType>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/WorkTypeDef[defName="LTS_Tasks"]</xpath>
+				<value>
+					<visible>false</visible>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

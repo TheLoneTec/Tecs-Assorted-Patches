@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>[LTS]Furnishing</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		
+			<!-- ======== Deco ======== -->
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[@Name="LTS_PathBase"]</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[@Name="LTS_BorderBase"]</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_AtlasWoodCover"]</xpath>
+				<value>
+					<designationCategory>Accessories</designationCategory>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[defName="LTS_AtlasWoodCover"]/designatorDropdown</xpath>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Deco_Small</defName>
+						<label>Path Decorations</label>
+						<description>Various path decoration items.</description>
+						<defNames>
+							<li>LTS_PathA</li>
+							<li>LTS_PathB</li>
+							<li>LTS_PathC</li>
+							<li>LTS_AtlasWoodCover</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>Deco_Border</defName>
+						<label>Border Decorations</label>
+						<description>Various border decoration items.</description>
+						<defNames>
+							<li>LTS_StoneBorderCorner</li>
+							<li>LTS_StoneBorderEdge</li>
+							<li>LTS_LumberBorderCorner</li>
+							<li>LTS_LumberBorderEdge</li>
+							<li>LTS_WarningBorderCorner</li>
+							<li>LTS_WarningBorderEdge</li>
+							<li>FloorAddonA</li>
+							<li>LTS_TilesBorderCorner</li>
+							<li>LTS_TilesBorderEdge</li>
+							<li>LTS_TilesBorderInvertedEdge</li>
+						</defNames>
+						<designationCategory>Accessories</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "LTS_PathBase"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_PathB"]/stuffCategories</xpath>
+				<value>
+				<stuffCategories>
+					<li>Stony</li>
+				</stuffCategories>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>3</costStuffCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LTS_AtlasWoodCover"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>1</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+			
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

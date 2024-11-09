@@ -30,4 +30,20 @@
 	<li IfModActive="twopenny.portraitsoftherim">LoadDefs/v1.4/Portraits_of_the_Rim</li>
 	<li IfModActive="xenomacabre.HCSKwallsandfloorsreduxeno">LoadDefs/v1.4/Viles_Hardcore_Renovation</li>
   </v1.4>
+  <v1.5>
+    <li>/</li>
+	<li>v1.5</li>
+    <li IfModActive="mlie.dthermodynamicshotmeals">LoadDefs/v1.5/HotMeals</li>
+	<li IfModActive="garwel.celsius">LoadDefs/v1.5/Celsius</li>
+	<li IfModActive="nals.facialanimation">LoadDefs/v1.5/FacialAnimation</li>
+    <!--<li IfModActive="Gloomy.DecorPack.SK">ResearchFixes/v1.5/GloomDecoPack</li>-->
+	<li IfModActive="limetreesnake.tenants">LoadDefs/v1.5/LTSTenant</li>
+	<li IfModActive="vanillaexpanded.ideo.dryads">LoadDefs/v1.5/VIE_Dryads</li>
+	<li IfModActive="vanillaexpanded.outposts">LoadDefs/v1.5/Vanilla_Outposts_Expanded</li>
+	<li IfModActive="kikohi.jewelry">LoadDefs/v1.5/Jewelery</li>
+	<li IfModActive="ltbob.preemptivestrike.Rimworld">LoadDefs/v1.5/Preemptive_Strike</li>
+	<li IfModActive="petetimessix.researchreinvented">LoadDefs/v1.5/Research_Reinvented</li>
+	<li IfModActive="twopenny.portraitsoftherim">LoadDefs/v1.5/Portraits_of_the_Rim</li>
+	<li IfModActive="xenomacabre.HCSKwallsandfloorsreduxeno">LoadDefs/v1.5/Viles_Hardcore_Renovation</li>
+  </v1.5>
 </loadFolders>

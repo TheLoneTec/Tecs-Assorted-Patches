@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<!-- Universal Research Patch to give every research missing a <requiredResearchBuilding> or parent with it a research building restriction -->
+
+			<!--and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")-->
+
+			<!-- not(@ParentName) and  -->
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Neolithic' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<match Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/ResearchProjectDef[techLevel/text()='Neolithic' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+					or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+					<safetyDepth>3</safetyDepth>
+					<compare>Both</compare>
+					<checkAttributes>True</checkAttributes>
+					<value>
+						<modExtensions>
+						  <li Class="SK.AdvancedResearchExtension">
+							<requiredResearchBuildings>
+							  <li>PrimitiveResearchBench</li>
+							  <li>SimpleResearchBench</li>
+							  <li>HiTechResearchBench</li>
+							</requiredResearchBuildings>
+						  </li>
+						</modExtensions>
+						<tags>
+						  <li>ClassicStart</li>
+						</tags>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Medieval' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<match Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/ResearchProjectDef[techLevel/text()='Medieval' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+					or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+					<safetyDepth>3</safetyDepth>
+					<compare>Both</compare>
+					<checkAttributes>True</checkAttributes>
+					<value>
+						<modExtensions>
+						  <li Class="SK.AdvancedResearchExtension">
+							<requiredResearchBuildings>
+							  <li>SimpleResearchBench</li>
+							  <li>HiTechResearchBench</li>
+							</requiredResearchBuildings>
+						  </li>
+						</modExtensions>
+					</value>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Industrial' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<match Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/ResearchProjectDef[techLevel/text()='Industrial' and not(modExtensions) and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+					or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+					<safetyDepth>3</safetyDepth>
+					<compare>Both</compare>
+					<checkAttributes>True</checkAttributes>
+					<value>
+						<modExtensions>
+						  <li Class="SK.AdvancedResearchExtension">
+							<requiredResearchBuildings>
+							  <li>SimpleResearchBench</li>
+							  <li>HiTechResearchBench</li>
+							</requiredResearchBuildings>
+						  </li>
+						</modExtensions>
+						<requiredResearchFacilities>
+						  <li>LabTerminal</li>
+						</requiredResearchFacilities>
+					</value>
+				</match>
+			</li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Spacer' and '1550' > baseCost and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<match Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/ResearchProjectDef[techLevel/text()='Spacer' and '1550' > baseCost and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+					or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+					<safetyDepth>3</safetyDepth>
+					<compare>Both</compare>
+					<checkAttributes>True</checkAttributes>
+					<value>
+						<requiredResearchFacilities>
+						  <li>LabTerminal</li>
+						</requiredResearchFacilities>
+					</value>
+					<!-- HitechMultiBase -->
+				</match>
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Spacer' and baseCost > '1549' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<safetyDepth>3</safetyDepth>
+				<compare>Both</compare>
+				<checkAttributes>True</checkAttributes>
+                <value>
+					<requiredResearchFacilities>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+				<!-- HitechBase -->
+			</li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Ultra' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<match Class="XmlExtensions.PatchOperationSafeAdd">
+					<xpath>Defs/ResearchProjectDef[techLevel/text()='Ultra' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+					or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+					<safetyDepth>3</safetyDepth>
+					<compare>Both</compare>
+					<checkAttributes>True</checkAttributes>
+					<value>
+						<requiredResearchFacilities>
+						  <li>LabStation</li>
+						</requiredResearchFacilities>
+					</value>
+					<!-- HitechMultiBase -->
+				</match>
+			</li>
+	
+			<!-- requiredResearchBuilding -->
+	
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Neolithic' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<safetyDepth>1</safetyDepth>
+                <value>
+					<requiredResearchBuilding>PrimitiveResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+			
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Medieval' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<safetyDepth>1</safetyDepth>
+				<value>
+					<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Industrial' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<safetyDepth>1</safetyDepth>
+                <value>
+					<requiredResearchBuilding>SimpleResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Spacer' and '1550' > baseCost and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<match Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+					<xpath>Defs/ResearchProjectDef[techLevel/text()='Spacer' and '1550' > baseCost and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+					or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+					<safetyDepth>1</safetyDepth>
+					<value>
+						<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+					</value>
+					<!-- HitechMultiBase -->
+				</match>
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Spacer' and baseCost > '1549' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<safetyDepth>1</safetyDepth>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				</value>
+				<!-- HitechBase -->
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+				<xpath>Defs/ResearchProjectDef[techLevel/text()='Ultra' and not(@ParentName = "PrimitiveBase" or @ParentName = "MedievalBase" or @ParentName = "IndustrialBase" 
+				or @ParentName = "HitechBase" or @ParentName = "HitechMultiBase" or @ParentName = "HitechLabStationBase")]</xpath>
+				<safetyDepth>1</safetyDepth>
+                <value>
+					<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Gloomy Decor Pack</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+						<li Class="XmlExtensions.PatchOperationSafeAdd">
+							<xpath>Defs/ResearchProjectDef/modExtensions/li[@Class="SK.AdvancedResearchExtension"]/requiredResearchBuildings[li[text()="SimpleResearchBench"]]</xpath>
+							<safetyDepth>1</safetyDepth>
+							<value>
+								<li>RGK_SimpleResearchBench</li>
+							</value>
+						</li>
+			
+					</operations>
+				</match>
+			</li>
+	
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

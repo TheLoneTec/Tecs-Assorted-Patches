@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Animal Equipment</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<li Class="PatchOperationRemove">
+				  <xpath>Defs/ThingDef[@Name="AnimalScarfBase"]/recipeMaker/recipeUsers/li[text()="CraftingSpot"]</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+				  <xpath>Defs/ThingDef[@Name="AnimalRidingBase"]/recipeMaker/recipeUsers/li[text()="CraftingSpot"]</xpath>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Expanded Framework</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="Apparel_AnimalReins"]/costList</xpath>
+							<value>
+								<costList>
+									<ComponentMedieval>4</ComponentMedieval>
+								</costList>
+							</value>
+						</li>
+							
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ThingDef[defName="Apparel_AnimalFlakArmor"]/costList</xpath>
+							<value>
+								<costList>
+									<ComponentIndustrial>5</ComponentIndustrial>
+									<Compaste>12</Compaste>
+								</costList>
+							</value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="Apparel_AnimalFlakArmor"]</xpath>
+							<value>
+								<costStuffCount>75</costStuffCount>
+								<stuffCategories>
+									<li>HF</li>
+								</stuffCategories>
+							</value>
+						</li>
+							
+						</operations>
+					</match>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Apparel_bridle"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>4</ComponentMedieval>
+						</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Apparel_SmallAnimalFlakArmor"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>4</ComponentIndustrial>
+							<Compaste>8</Compaste>
+						</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_SmallAnimalFlakArmor"]</xpath>
+					<value>
+						<costStuffCount>45</costStuffCount>
+						<stuffCategories>
+							<li>HF</li>
+						</stuffCategories>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Apparel_LargeAnimalFlakArmor"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>6</ComponentIndustrial>
+							<Compaste>14</Compaste>
+						</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Apparel_LargeAnimalFlakArmor"]</xpath>
+					<value>
+						<costStuffCount>85</costStuffCount>
+						<stuffCategories>
+							<li>HF</li>
+						</stuffCategories>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

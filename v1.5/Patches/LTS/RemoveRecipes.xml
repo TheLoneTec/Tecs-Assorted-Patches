@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>[LTS]Furnishing</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="LTS_StoneStove"]/recipes/li[text()="CookMealFine_Veg"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="LTS_StoneStove"]/recipes/li[text()="CookMealFine_Veg" or 
+					text()="CookMealFine_Meat" or text()="CookMealLavish_Veg" or text()="CookMealLavish_Meat" or 
+					text()="CookMealFineBulk_Veg" or text()="CookMealFineBulk_Meat" or text()="CookMealLavishBulk_Veg" or 
+					text()="CookMealLavishBulk_Meat"]</xpath>
+				</match>
+			</li>
+		
+			<li Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]/recipes/li[text()="CookMealFine_Veg"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]/recipes/li[text()="CookMealFine_Veg" or 
+					text()="CookMealFine_Meat" or text()="CookMealLavish_Veg" or text()="CookMealLavish_Meat" or 
+					text()="CookMealFineBulk_Veg" or text()="CookMealFineBulk_Meat" or text()="CookMealLavishBulk_Veg" or 
+					text()="CookMealLavishBulk_Meat"]</xpath>
+				</match>
+			</li>
+		
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

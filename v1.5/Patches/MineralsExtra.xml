@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MineralsExtra</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksAnorthosite"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
+							<MiningSpeed>0.8</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksChalk"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.4</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.6</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.6</PlantWorkSpeed>
+							<MiningSpeed>0.6</MiningSpeed>
+							<MiningYieldDigging>0.6</MiningYieldDigging>
+							<ConstructionSpeed>0.6</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksBlueMarble" or defName="ZF_BlocksPinkMarble"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.7</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.7</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.7</PlantWorkSpeed>
+							<MiningSpeed>0.7</MiningSpeed>
+							<MiningYieldDigging>0.85</MiningYieldDigging>
+							<ConstructionSpeed>0.7</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksDiorite" or defName="ZF_BlocksAndesite" or defName="ZF_BlocksGabbro"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
+							<MiningSpeed>0.8</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksBrownMarble"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.75</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.75</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.7</PlantWorkSpeed>
+							<MiningSpeed>0.75</MiningSpeed>
+							<MiningYieldDigging>0.85</MiningYieldDigging>
+							<ConstructionSpeed>0.75</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksSchist"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.75</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
+							<MiningSpeed>0.7</MiningSpeed>
+							<MiningYieldDigging>0.8</MiningYieldDigging>
+							<ConstructionSpeed>0.7</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.4</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksGneiss"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.85</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.85</PlantWorkSpeed>
+							<MiningSpeed>0.8</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.2</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksPeridotite"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.85</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
+							<MiningSpeed>0.85</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.85</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.1</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksLignite"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.3</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.4</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.4</PlantWorkSpeed>
+							<MiningSpeed>0.4</MiningSpeed>
+							<MiningYieldDigging>0.4</MiningYieldDigging>
+							<ConstructionSpeed>0.4</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.5</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksRhyolite"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
+							<MiningSpeed>0.8</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksScoria"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.4</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.6</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.55</PlantWorkSpeed>
+							<MiningSpeed>0.5</MiningSpeed>
+							<MiningYieldDigging>0.7</MiningYieldDigging>
+							<ConstructionSpeed>0.6</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksSerpentinite"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.85</PlantWorkSpeed>
+							<MiningSpeed>0.7</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.7</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksTuff"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.3</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.4</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.4</PlantWorkSpeed>
+							<MiningSpeed>0.4</MiningSpeed>
+							<MiningYieldDigging>0.4</MiningYieldDigging>
+							<ConstructionSpeed>0.4</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.5</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_AnorthositeThickStoneRoof</defName>
+						<label>anorthosite thick stone roof</label>
+						<description>anorthosite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_ChalkThickStoneRoof</defName>
+						<label>chalk thick stone roof</label>
+						<description>chalk thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_BlueMarbleThickStoneRoof</defName>
+						<label>blue marble thick stone roof</label>
+						<description>blue marble thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_DioriteThickStoneRoof</defName>
+						<label>diorite thick stone roof</label>
+						<description>diorite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_AndesiteThickStoneRoof</defName>
+						<label>andesite thick stone roof</label>
+						<description>andesite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_BrownMarbleThickStoneRoof</defName>
+						<label>brown marble thick stone roof</label>
+						<description>brown marble thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_PinkMarbleThickStoneRoof</defName>
+						<label>pink marble thick stone roof</label>
+						<description>pink marble thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_GabbroThickStoneRoof</defName>
+						<label>gabbro thick stone roof</label>
+						<description>gabbro thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_SchistThickStoneRoof</defName>
+						<label>schist thick stone roof</label>
+						<description>schist thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_GneissThickStoneRoof</defName>
+						<label>gneiss thick stone roof</label>
+						<description>gneiss thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_PeridotiteThickStoneRoof</defName>
+						<label>peridote thick stone roof</label>
+						<description>peridote thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_LigniteThickStoneRoof</defName>
+						<label>lignite thick stone roof</label>
+						<description>lignite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_RhyoliteThickStoneRoof</defName>
+						<label>rhyolite thick stone roof</label>
+						<description>rhyolite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_ScoriaThickStoneRoof</defName>
+						<label>scoria thick stone roof</label>
+						<description>scoria thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_SerpentiniteThickStoneRoof</defName>
+						<label>serpentinite thick stone roof</label>
+						<description>serpentinite thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_TuffThickStoneRoof</defName>
+						<label>tuff thick stone roof</label>
+						<description>tuff thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

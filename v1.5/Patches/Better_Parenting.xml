@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Better parenting (Biotech)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>ChildrenRecreation</defName>
+						<label>Children Toys</label>
+						<description>Various type of toys and thing for children to interact with and help their growth.</description>
+						<defNames>
+							<li>ToyBoxTribal</li>
+							<li>ToyBox</li>
+							<li>BabyDecoration</li>
+							<li>Rego</li>
+						</defNames>
+						<designationCategory>Joy</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+			
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ToyBoxTribal" or defName="ToyBox"]</xpath>
+				<value>
+					<thingClass>BetterParenting.Building_toybox</thingClass>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "ToyBoxTribal" or defName="ToyBox"]/building</xpath>
+				<value>
+					<watchBuildingStandDistanceRange>1</watchBuildingStandDistanceRange>
+					<watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+					<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_HospitalBeds"]/defNames</xpath>
+				<value>
+					<li>HospitalCrib</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "HospitalCrib"]/statBases</xpath>
+				<value>
+					<statBases>
+						<WorkToBuild>1550</WorkToBuild>
+						<Comfort>0.6</Comfort>
+						<BedRestEffectiveness>0.9</BedRestEffectiveness>
+						<SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+						<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+						<MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+						<Bulk>35</Bulk>
+						<Mass>15</Mass>
+						<BabyPlayGainFactor>1.0</BabyPlayGainFactor>
+						<JoyGainFactor>1.0</JoyGainFactor>
+						<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">0</BirthRitualQualityOffset>
+					</statBases>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "HospitalCrib"]/stuffCategories</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+						<li>Plastic</li>
+					</stuffCategories>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "HospitalCrib"]/costList</xpath>
+				<value>
+					<costList>
+						<Cloth>30</Cloth>
+						<MedicineIndustrial>6</MedicineIndustrial>
+						<ComponentIndustrial>2</ComponentIndustrial>
+						<Mechanism>1</Mechanism>
+					</costList>
+				</value>
+			</li>
+
+			<!-- Rego patches -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Rego"]</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>6</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Rego"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>Harp</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Rego"]</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</li>
+
+			<!-- vitals monitor -->
+			
+			<li Class="PatchOperationAttributeSet">
+			<xpath>Defs/ThingDef[defName = "CribVitalsMonitor"]</xpath>
+				<value>FacilitiesBase</value>
+				<attribute>ParentName</attribute>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "CribVitalsMonitor"]/costList</xpath>
+				<value>
+					<costList>
+						<Plastic>20</Plastic>
+						<Glass>15</Glass>
+						<ComponentIndustrial>4</ComponentIndustrial>
+						<Electronics>2</Electronics>
+					</costList>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="CribVitalsMonitor"]</xpath>
+				<value>
+					<stuffCategories>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>30</costStuffCount>
+				</value>
+			</li>
+
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName="CribVitalsMonitor"]/thingCategories</xpath>
+            </li>
+
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

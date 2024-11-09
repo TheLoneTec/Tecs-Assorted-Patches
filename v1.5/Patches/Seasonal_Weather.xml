@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Seasonal Weather (Continued)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/IncidentDef[defName="Earthquake"]</xpath>
+				</li>
+	
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GameConditionDef[defName="Earthquake"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<GameConditionDef>
+							<defName>Earthquake</defName>
+							<conditionClass>SK.Events.GameCondition_SeismicActivity</conditionClass>
+							<label>Seismic activity</label>
+							<description>Underground shocks of a certain intensity.</description>
+							<endMessage>The seismic activity has ended.</endMessage>
+						</GameConditionDef>
+					
+						<IncidentDef>
+							<defName>Earthquake</defName>
+							<label>earthquake</label>
+							<targetTags>
+								<li>Map_PlayerHome</li>
+							</targetTags>
+							<category>ThreatSmall</category>
+							<workerClass>SK.Events.IncidentWorker_Earthquake</workerClass>
+							<earliestDay>13</earliestDay>
+							<baseChance>1.4</baseChance>
+							<minRefireDays>27</minRefireDays>
+						</IncidentDef>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

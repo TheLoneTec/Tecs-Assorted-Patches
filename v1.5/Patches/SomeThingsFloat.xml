@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Some Things Float</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="STF_Bars"]</xpath>
+					<value>
+						<researchPrerequisites>
+						  <li>Construction_B1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="STF_Net"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+						  <li>Construction_B2</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="STF_Net"]</xpath>
+					<value>
+						<costList>
+							<Wire>4</Wire>
+						</costList>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Bridges"]/defNames</xpath>
+					<value>
+						<li>STF_Net</li>
+						<li>STF_Bars</li>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

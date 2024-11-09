@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Vanilla Books Expanded Expanded (Continued)</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_VBE"]/defNames</xpath>
+				<value>
+					<li>VanillaBooksExpandedExpanded_PrintingPressManual</li>
+					<li>VanillaBooksExpandedExpanded_PrintingPressElectric</li>
+				</value>
+			</li>
+
+			<!-- =========== Manual Printing Press ============== -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressManual"]/costList</xpath>
+				<value>
+					<costList>
+						<Mechanism>2</Mechanism>
+						<ComponentMedieval>6</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressManual"]/stuffCategories</xpath>
+				<value>
+					<li>RuggedMetallic</li>
+				</value>
+			</li>
+			
+			<!-- =========== Electric Printing Press ============== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressElectric"]/costList/Steel</xpath>
+				<value>
+					<Mechanism>4</Mechanism>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "VanillaBooksExpandedExpanded_PrintingPressElectric"]/stuffCategories</xpath>
+				<value>
+					<li>SolidMetallic</li>
+				</value>
+			</li>
+			<!--
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[@ParentName="BenchBase"]</xpath>
+				<match Class="PatchOperationAttributeSet">
+					<xpath>/Defs/ThingDef[@ParentName = "BenchBase"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_BenchBase</value>
+				</match>
+			</li>
+			-->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressElectric"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressElectric"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				</match>
+			</li>
+			
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressManual"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
+	
+			<li Class="PatchOperationAttributeSet">
+				<xpath>/Defs/ThingDef[defName="VanillaBooksExpandedExpanded_PrintingPressElectric"]</xpath>
+				<attribute>ParentName</attribute>
+				<value>SK_BenchBase</value>
+			</li>
+			
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="VBE_TypewritersTable"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="VBE_TypewritersTable"]/researchPrerequisites/li[text()="Electricity"]</xpath>
+				</match>
+			</li>
+			
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

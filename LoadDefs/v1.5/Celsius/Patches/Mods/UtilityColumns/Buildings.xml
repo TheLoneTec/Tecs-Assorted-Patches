@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Note: Heat capacity in J/C, conductivity in W/C, volume in liters. Figures can be taken e.g. here: https://www.engineeringtoolbox.com/specific-heat-solids-d_154.html -->
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Utility Columns SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="LightColumnMod" or defName="DarkColumnMod" or defName="OrbitalTradeColumnMod" or defName="SunColumnMod" or defName="IceColumnMod" or defName="EMPColumnMod"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>6</heatCapacity>
+						<insulation>3.5</insulation>
+						<volume>0.005</volume>
+						<airflow>0.8</airflow>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="GraveColumnMod"]</xpath>
+				<value>
+					<li Class="Celsius.ThingThermalProperties">
+						<heatCapacity>9</heatCapacity>
+						<insulation>4</insulation>
+						<volume>0.02</volume>
+						<airflow>0.2</airflow>
+					</li>
+				</value>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>

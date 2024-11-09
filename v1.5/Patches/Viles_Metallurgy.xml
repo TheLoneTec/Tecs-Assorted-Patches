@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Core SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+	
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Metallurgy</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+				<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "Cast_CannonParts"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>CastBar</li>
+							</categories>
+							<thingDefs>
+								<li>SandResource</li>
+								<li>SoftClay</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Milling"]/defNames</xpath>
+					<value>
+						<li>SK_Windmill</li>
+					</value>
+				</li>
+
+				</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ArchitectSense.DesignationSubCategoryDef>
+								<defName>SubCategory_Milling</defName>
+								<label>Milling</label>
+								<description>Grinding and smashing stuff into smaller bits.</description>
+								<defNames>
+									<li>SK_Windmill</li>
+								</defNames>
+								<designationCategory>Production</designationCategory>
+								<debug>false</debug>
+							</ArchitectSense.DesignationSubCategoryDef>
+						</value>
+					</li>
+				
+					</operations>
+				</nomatch>
+			</li>
+	
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

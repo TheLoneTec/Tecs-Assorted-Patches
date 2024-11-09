@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Trading Expanded</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+<!--
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/FactionDef/modExtensions/li[@Class = "VanillaTradingExpanded.BankExtension"]</xpath>
+		</li>
+-->
+
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/FactionDef/modExtensions/li[@Class = "VanillaTradingExpanded.BankExtension"]/feesByGoodwill</xpath>
+			<value>
+				<feesByGoodwill>
+					<points>
+						<li>(-100, 0.6)</li>
+						<li>(-50, 0.45)</li>
+						<li>(0, 0.35)</li>
+						<li>(50, 0.3)</li>
+						<li>(100, 0.2)</li>
+					</points>
+				</feesByGoodwill>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "VTE_TradingTerminal"]/costList</xpath>
+			<value>
+				<costList>
+					<Plastic>20</Plastic>
+					<Glass>25</Glass>
+					<ComponentIndustrial>8</ComponentIndustrial>
+					<ElectronicComponents>4</ElectronicComponents>
+					<Electronics>6</Electronics>
+				</costList>
+			</value>
+		</li>
+
+		<li Class="PatchOperationInsert">
+			<xpath>/Defs/ThingDef[defName = "VTE_TradingTerminal"]/graphicData</xpath>
+			<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>140</costStuffCount>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "VTE_TradingTerminal"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+				  <li>Telecommunications_C1</li>
+				</researchPrerequisites>
+			</value>
+		</li>
+
+		</operations>
+		</match>
+    </Operation>
+	
+</Patch>

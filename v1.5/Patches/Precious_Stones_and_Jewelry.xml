@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Precious Stones and Jewelry Enhanced</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DoctorStupid_Apparel_Necklace"]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>Apparel_A1</researchPrerequisite>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DoctorStupid_Apparel_Amulet"]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>Apparel_B1</researchPrerequisite>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

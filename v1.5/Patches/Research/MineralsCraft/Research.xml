@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>MineralsCraft_SK</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>8.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>26.00</researchViewY>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/tab</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingIII"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>-->
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>6.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>29.00</researchViewY>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/tab</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_RoyalWeapons"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+-->
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

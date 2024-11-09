@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ResearchProjectDef ParentName="MedievalBase">
+		<defName>Medieval_Tower</defName>
+		<label>Medieval Tower</label>
+		<description>A stronger tower, that can see a little further, but is made from stone.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>PES_PrimitiveTower</li>
+			<li>Stonecutting</li>
+		</prerequisites>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>32.00</researchViewY>
+		<tab>Buildings_SK</tab>
+	</ResearchProjectDef>
+	
+</Defs>

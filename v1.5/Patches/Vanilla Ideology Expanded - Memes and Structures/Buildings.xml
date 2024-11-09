@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Ideology Expanded - Memes and Structures</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="VME_MechanoidEffigy"]/costList</xpath>
+        <value>
+			<costList>
+				<Plasteel>25</Plasteel>
+				<ComponentSpacer>1</ComponentSpacer>
+				<ElectronicComponents>2</ElectronicComponents>
+			</costList>
+        </value>
+      </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

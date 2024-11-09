@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[1.5-1.4] CAI 5000 - Advanced AI + Fog Of War</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="SK_BasePawn" or @Name="BasePawnSkynet" or @Name="BaseAnimalPawn"]/comps</xpath>
+					<value>
+						<li Class="CombatAI.Comps.CompProperties_CombatAI"/>
+						<li Class="CombatAI.Comps.CompProperties_Statistics"/>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/CombatAI.RaidTargetCollectionDef[defName="CombatAI_RT_Rimefeller"]/targets/li[text()="SynthyleneRefiner" or text()="SynthamideRefiner"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatAI.RaidTargetCollectionDef[defName="CombatAI_RT_Rimefeller"]/targets</xpath>
+					<value>
+						<li>PolymerRefiner</li>
+						<li>HyperweaveRefiner</li>
+						<li>NeutroamineRefiner</li>
+						<li>ParaffinRefiner</li>
+						<li>SulphateRefiner</li>
+						<li>SyntheticAmmoniaRefiner</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

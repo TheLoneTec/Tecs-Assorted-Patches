@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Roads of the Rim (Continued)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+		
+				<!-- ========== Concrete Bridge ========== -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/TerrainDef[defName="ConcreteBridge"]/costList</xpath>
+					<value>
+						<costList>
+							<ReinforcedConcrete>4</ReinforcedConcrete>
+						</costList>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TerrainDef[defName="ConcreteBridge"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Concrete_C1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Bridges"]/defNames</xpath>
+					<value>
+						<li>ConcreteBridge</li>
+					</value>
+				</li>
+
+				<!-- ========== ISR2G and AISR2G ========== -->
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="RotR_AISR2G"]/designationCategory</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="RotR_AISR2G"]/costList</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "RotR_ISR2GNew"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+							<li>Metallic</li>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RotR_ISR2GNew"]/costList</xpath>
+					<value>
+					<costList>
+						<Wire>5</Wire>
+						<Glass>35</Glass>
+						<ElectronicComponents>2</ElectronicComponents>
+						<Mechanism>2</Mechanism>
+						<ComponentIndustrial>10</ComponentIndustrial>
+					</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "RotR_AISR2GNew"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>SolidMetallic</li>
+							<li>Metallic</li>
+							<li>RuggedMetallic</li>
+						</stuffCategories>
+						<costStuffCount>120</costStuffCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RotR_AISR2GNew"]/costList</xpath>
+					<value>
+					<costList>
+						<Wire>10</Wire>
+						<Glass>70</Glass>
+						<Titanium>70</Titanium>
+						<ElectronicComponents>4</ElectronicComponents>
+						<AdvMechanism>2</AdvMechanism>
+						<ComponentIndustrial>8</ComponentIndustrial>
+						<ComponentSpacer>5</ComponentSpacer>
+					</costList>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

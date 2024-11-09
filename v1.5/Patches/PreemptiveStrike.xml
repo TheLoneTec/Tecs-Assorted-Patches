@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Preemptive Strike (v1.4 Fork)</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+			
+			<!-- ========== Architect ========== -->
+	
+			<li Class="PatchOperationReplace"> 
+			    <xpath>/Defs/ThingDef[defName="PES_PremitiveWatchtower_new" or defName="PES_MedievalWatchtower" or defName="PES_watchtower_new" or defName="PES_Radar" or defName="PES_SentryDroneArray" or defName="PES_SpySatellite"]/designationCategory</xpath>
+		        <value>
+					<designationCategory>Security</designationCategory>
+	        	</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_Recon</defName>
+						<label>Recon</label>
+						<description>Things for recconaissance, detecting danger outside of this colony.</description>
+						<defNames>
+							<li>PES_PremitiveWatchtower_new</li>
+							<li>PES_MedievalWatchtower</li>
+							<li>PES_watchtower_new</li>
+							<li>PES_Radar</li>
+							<li>PES_SentryDroneArray</li>
+							<li>PES_SpySatellite</li>
+						</defNames>
+						<designationCategory>Security</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+			    <xpath>/Defs/DesignationCategoryDef[defName="PES_Reconnaissance"]</xpath>
+			</li>
+			
+			<!-- ========== Material Conversion ========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_PremitiveWatchtower_new"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentMedieval>8</ComponentMedieval>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName = "PES_PremitiveWatchtower_new"]/graphicData</xpath>
+				<value>
+					<stuffCategories>
+						<li>Woody</li>
+					</stuffCategories>
+					<costStuffCount>300</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_MedievalWatchtower"]/costList</xpath>
+				<value>
+					<costList>
+						<WoodPlank>100</WoodPlank>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_watchtower_new"]/costList</xpath>
+				<value>
+					<costList>
+						<ComponentIndustrial>2</ComponentIndustrial>
+						<ElectronicComponents>2</ElectronicComponents>
+						<ReinforcedConcrete>50</ReinforcedConcrete>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName = "PES_watchtower_new"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>Metallic</li>
+					</stuffCategories>
+					<costStuffCount>250</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_watchtower_new"]/comps/li[name="Radio"]/costList</xpath>
+				<value>
+					<costList>
+						<Plastic>5</Plastic>
+						<Wire>15</Wire>
+						<Electronics>1</Electronics>
+						<ComponentIndustrial>2</ComponentIndustrial>
+						<ElectronicComponents>2</ElectronicComponents>
+						<Plasteel>10</Plasteel>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_watchtower_new"]/comps/li[name="Searchlight"]/costList</xpath>
+				<value>
+					<costList>
+						<Glass>5</Glass>
+						<ComponentIndustrial>3</ComponentIndustrial>
+						<ElectronicComponents>1</ElectronicComponents>
+						<Plasteel>50</Plasteel>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_Radar"]/costList</xpath>
+				<value>
+					<costList>
+						<Plastic>20</Plastic>
+						<Glass>15</Glass>
+						<ComponentIndustrial>4</ComponentIndustrial>
+						<Electronics>4</Electronics>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName = "PES_Radar"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>StrongMetallic</li>
+					</stuffCategories>
+					<costStuffCount>110</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_SentryDroneArray"]/costList</xpath>
+				<value>
+					<costList>
+						<Glass>75</Glass>
+						<AdvMechanism>4</AdvMechanism>
+						<ComponentIndustrial>5</ComponentIndustrial>
+						<ComponentSpacer>5</ComponentSpacer>
+						<Microchips>2</Microchips>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName = "PES_SentryDroneArray"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>500</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_SentryDroneArray"]/comps/li[name="Radio"]/costList</xpath>
+				<value>
+					<costList>
+						<Plastic>5</Plastic>
+						<Wire>15</Wire>
+						<Electronics>1</Electronics>
+						<ComponentIndustrial>2</ComponentIndustrial>
+						<ElectronicComponents>2</ElectronicComponents>
+						<Plasteel>10</Plasteel>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "PES_SpySatellite"]/costList</xpath>
+				<value>
+					<costList>
+						<Plastic>20</Plastic>
+						<Glass>15</Glass>
+						<ComponentIndustrial>4</ComponentIndustrial>
+						<Electronics>4</Electronics>
+						<ComponentSpacer>5</ComponentSpacer>
+						<Microchips>2</Microchips>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/ThingDef[defName = "PES_SpySatellite"]/costList</xpath>
+				<value>
+					<stuffCategories>
+						<li>RuggedMetallic</li>
+					</stuffCategories>
+					<costStuffCount>300</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName = "PES_ModernTower"]/prerequisites</xpath>
+				<value>
+					<prerequisites>
+					  <li>Medieval_Tower</li>
+					  <li>MicroelectronicsBasics</li>
+					  <li>Firefoam</li>
+					</prerequisites>
+				</value>
+			</li>
+			
+		</operations>
+		</match>
+	</Operation>
+</Patch>

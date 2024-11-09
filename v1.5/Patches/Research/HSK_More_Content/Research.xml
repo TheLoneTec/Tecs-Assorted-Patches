@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>HSK more content</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+<!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MicroTurretsThree_HMC"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MicroTurretsThree_HMC"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>35.00</researchViewY>
+                </value>
+            </li>
+-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Armor_F1_HMC"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>28.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="Armor_F1_HMC"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>35.00</researchViewY>
+                </value>
+            </li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

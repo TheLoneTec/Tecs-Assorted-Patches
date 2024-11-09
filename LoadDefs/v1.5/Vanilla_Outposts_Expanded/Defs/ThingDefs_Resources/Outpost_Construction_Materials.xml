@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>SeedCultivator</defName>
+		<label>seed cultivator</label>
+		<description>a machine capable of cultivating different kinds of seeds that have been researched.</description>
+		<graphicData>
+			<texPath>Things/Resources/OutpostCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>30</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>35.0</Mass>
+			<Bulk>5.0</Bulk>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffCategories>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Plastic>30</Plastic>
+			<Biomatter>25</Biomatter>
+			<BioMicrochips>1</BioMicrochips>
+		</costList>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>EPOEAssembling</soundWorking>
+		  <recipeUsers>
+			<li>FabricationBench</li>
+			<li>AdvToolBench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>Hydroponics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>ArtillaryOutpostSupplies</defName>
+		<label>artillary outpost equipment</label>
+		<description>equipment capable of constructing an outpost capable of artillary strikes as well as the machines to manufacture shells.</description>
+		<graphicData>
+			<texPath>Things/Resources/OutpostCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>300</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>55.0</Mass>
+			<Bulk>10.0</Bulk>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffCategories>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>400</costStuffCount>
+		<costList>
+			<Cannon_Component>4</Cannon_Component>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Rubber>30</Rubber>
+			<ElectronicComponents>5</ElectronicComponents>
+			<Electronics>5</Electronics>
+			<AdvMechanism>3</AdvMechanism>
+		</costList>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>EPOEAssembling</soundWorking>
+		  <recipeUsers>
+			<li>FabricationBench</li>
+			<li>AdvToolBench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>Artillery_C2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+<!--
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>FactoryAssemblyKit</defName>
+		<label>factory assembly kit</label>
+		<description>contains all the parts needed for an assembling bench, as well as power and anything else you need for a ready to put together factory.</description>
+		<graphicData>
+			<texPath>Things/Resources/OutpostCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>30</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>85.0</Mass>
+			<Bulk>10.0</Bulk>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffCategories>
+			<li>SolidMetallic</li>
+		</stuffCategories>
+		<costStuffCount>220</costStuffCount>
+		<costList>
+			<Battery>2</Battery>
+			<AdvToolBench>1</AdvToolBench>
+			<Glass>85</Glass>
+			<ReinforcedConcrete>8</ReinforcedConcrete>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ElectronicComponents>8</ElectronicComponents>
+		</costList>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>EPOEAssembling</soundWorking>
+		  <recipeUsers>
+			<li>FabricationBench</li>
+			<li>AdvToolBench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>Components_D1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+-->
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>HiTechResearchBenchAssemblyKit</defName>
+		<label>Hi-Tech Research Bench assembly kit</label>
+		<description>contains all the parts needed for a hi-tech research bench and anything else you need for a ready to put together research outpost.</description>
+		<graphicData>
+			<texPath>Things/Resources/OutpostCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>30</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>85.0</Mass>
+			<Bulk>10.0</Bulk>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>180</costStuffCount>
+		<costList>
+			<Plastic>80</Plastic>
+			<Rubber>50</Rubber>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<Electronics>5</Electronics>
+		</costList>
+		<recipeMaker>
+		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>EPOEAssembling</soundWorking>
+		  <recipeUsers>
+			<li>FabricationBench</li>
+			<li>AdvToolBench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>Research_table_C2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>BatteryGeneratorAssemblyKit</defName>
+		<label>Battery and Generator assembly kit</label>
+		<description>contains all the parts needed for a portable generator and battery, will be able to power your outpost.</description>
+		<graphicData>
+			<texPath>Things/Resources/OutpostCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>30</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>85.0</Mass>
+			<Bulk>10.0</Bulk>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>OutpostMaterials</defName>
+		<label>outpost construction materials</label>
+		<description>Various base materials needed to establish an outpost.</description>
+		<graphicData>
+			<texPath>Things/Resources/OutpostCrate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>50</stackLimit>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>16</MarketValue>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Mass>1.0</Mass>
+			<Bulk>1.0</Bulk>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+		<defName>Make_Outpost_Materials</defName>
+		<label>make outpost construction materials</label>
+		<description>Craft 50 outpost construction materials.</description>
+		<jobString>Making construction materials.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>MakeWoodPlanks_Electric</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>FabricationBench</li>
+			<li>AdvToolBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneBlocks</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Woody</li>
+				<li>StoneBlocks</li>
+				<li>Metallic</li>
+			</categories>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<OutpostMaterials>50</OutpostMaterials>
+		</products>
+	    <researchPrerequisite>Construction_B2</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+		<defName>Make_BatteryGeneratorAssemblyKit</defName>
+		<label>make Battery and Generator assembly kit</label>
+		<description>Craft Battery and Generator assembly kit.</description>
+		<jobString>Making Battery and Generator assembly kit.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>MakeWoodPlanks_Electric</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li>AdvToolBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>55</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Glass</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>11</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElectronicComponents</li>
+					</thingDefs>
+				</filter>
+				<count>11</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>HeavyBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Glass</li>
+				<li>ComponentIndustrial</li>
+				<li>ElectronicComponents</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BatteryGeneratorAssemblyKit>1</BatteryGeneratorAssemblyKit>
+		</products>
+	    <researchPrerequisite>Batteries</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

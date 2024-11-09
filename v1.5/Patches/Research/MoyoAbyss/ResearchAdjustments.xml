@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Moyo-Light in the Abyss</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoProduction"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoProduction"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>49.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="RedMoyoProduction"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="RedMoyoProduction"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoProduction"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoProduction"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT1"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT1"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT1"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT1"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT1"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT1"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT2"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>21.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT2"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT2"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT2"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT2"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT2"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT3"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT3"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>48.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT3"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT3"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT3"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT3"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="RedMoyoWeaponT3"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabStation</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+	
+		</operations>
+		</match>
+	</Operation>
+
+</Patch>

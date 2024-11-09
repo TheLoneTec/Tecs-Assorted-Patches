@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- VANILLA FURNITURE EXPANDED - SECURITY -->
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFES_ChemfuelBarrel"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFES_Landmine"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFES_AmmoCrate"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>250</Celsius_IgnitionTemperature>
+			</statBases>
+		</value>
+	</Operation>
+
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFES_CavalrySpikes"]</xpath>
+		<value>
+			<statBases>
+				<Celsius_IgnitionTemperature>300</Celsius_IgnitionTemperature>
+			</statBases>
+		</value>
+	</Operation>
+
+</Patch>

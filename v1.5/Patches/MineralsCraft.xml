@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MineralsCraft_SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Woodcutting_Handaxe"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Mining_Pickaxe"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Building_Hammer"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Sickle"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TFJ_Tool_Hoe"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Craft_B1</researchPrerequisite>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ZF_NeolithicToolsI"]</xpath>
+				<value>
+					<tags>
+						<li>TribalStart</li>
+					</tags>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa" or defName="MeleeWeapon_Spear" or defName="MeleeWeapon_Mace" or defName="MeleeWeapon_BreachAxe"]</xpath>
+				<value>
+					<recipeMaker>
+						<researchPrerequisite>Craft_B1</researchPrerequisite>
+					</recipeMaker>
+				</value>
+			</li>
+	
+<!--
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_Flagstone"]/defNames</xpath>
+			  <value>
+					<li>FlagstoneAdamant</li>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="MedBrickAdamant"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Stone_floor_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="HerrBrickAdamant"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Stone_floor_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TerrainDef[defName="TileAdamant"]</xpath>
+				<value>
+					<researchPrerequisites Inherit="false">
+						<li>Stone_floor_B4</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		-->
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksFlint"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.85</PlantWorkSpeed>
+							<MiningSpeed>0.7</MiningSpeed>
+							<MiningYieldDigging>0.75</MiningYieldDigging>
+							<ConstructionSpeed>0.7</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.3</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="ZF_BlocksObsidian"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.85</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.85</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.85</PlantWorkSpeed>
+							<MiningSpeed>0.8</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.1</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="BlocksAdamant"]</xpath>
+				<value>
+					<li Class="SurvivalToolsLite.StuffPropsTool">
+						<toolStatFactors>
+							<TreeFellingSpeed>0.8</TreeFellingSpeed>
+							<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+							<PlantWorkSpeed>0.8</PlantWorkSpeed>
+							<MiningSpeed>0.8</MiningSpeed>
+							<MiningYieldDigging>0.9</MiningYieldDigging>
+							<ConstructionSpeed>0.8</ConstructionSpeed>
+						</toolStatFactors>
+						<wearFactorMultiplier>1.1</wearFactorMultiplier>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_TribalAxe"]/modExtensions/li[@Class="SurvivalToolsLite.SurvivalToolProperties"]/baseWorkStatFactors</xpath>
+				<value>
+					<PlantHarvestingSpeed>0.75</PlantHarvestingSpeed>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_FlintThickStoneRoof</defName>
+						<label>flint thick stone roof</label>
+						<description>flint thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>AdamantThickStoneRoof</defName>
+						<label>adamant thick stone roof</label>
+						<description>adamant thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<RoofDef ParentName="ThickStoneRoofBase">
+						<defName>ZF_ObsidianThickStoneRoof</defName>
+						<label>obsidian thick stone roof</label>
+						<description>obsidian thick stone roof</description>
+					</RoofDef>
+				</value>	
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

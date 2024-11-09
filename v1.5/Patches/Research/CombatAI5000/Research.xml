@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[1.5-1.4] CAI 5000 - Advanced AI + Fog Of War</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>4.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>33.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="TribalCCTV"]</xpath>
+                <value>
+                    <prerequisites>
+						<li>Craft_0</li>
+						<li>Animal_A1</li>
+					</prerequisites>
+                </value>
+            </li>
+
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>8.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>33.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="IndustrialCCTV"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+						<li>MicroelectronicsBasics</li>
+						<li>Glass_B1</li>
+					</prerequisites>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>17.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>29.00</researchViewY>
+                </value>
+            </li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/tab</xpath>
+                <value>
+                    <tab>Buildings_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="SpacerCCTV"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+						<li>Telecommunications_C1</li>
+						<li>Electronics_C2</li>
+					</prerequisites>
+                </value>
+            </li>
+
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

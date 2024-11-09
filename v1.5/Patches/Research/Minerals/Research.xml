@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Minerals</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Vile's Metallurgy</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewX</xpath>
+						<value>
+							<researchViewX>4.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					
+				</operations>
+			</match>
+			<nomatch Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewX</xpath>
+						<value>
+							<researchViewX>5.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/researchViewY</xpath>
+						<value>
+							<researchViewY>26.00</researchViewY>
+						</value>
+					</li>
+					
+				</operations>
+			</nomatch>
+			</li>
+			
+			<!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/tab</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingI"]</xpath>
+                <value>
+                    <prerequisites>
+						<li>Craft_0</li>
+					</prerequisites>
+                </value>
+            </li>
+-->
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>HMC Vile's Pre-Industrial Overhaul</li>
+			</mods>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewX</xpath>
+							<value>
+								<researchViewX>6.00</researchViewX>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewY</xpath>
+							<value>
+								<researchViewY>27.00</researchViewY>
+							</value>
+						</li>
+
+					</operations>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>6.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>26.00</researchViewY>
+                </value>
+            </li><!--
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/tab</xpath>
+                <value>
+                    <tab>Craft_SK</tab>
+                </value>
+            </li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ZF_HardStoneCuttingII"]/prerequisites</xpath>
+                <value>
+                    <prerequisites>
+						<li>ZF_HardStoneCuttingI</li>
+						<li>Stonecutting</li>
+					</prerequisites>
+                </value>
+            </li>
+-->
+		</operations>
+		</match>
+    </Operation>	
+</Patch>	

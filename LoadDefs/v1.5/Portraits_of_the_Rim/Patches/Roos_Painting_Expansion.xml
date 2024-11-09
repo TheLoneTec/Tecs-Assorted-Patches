@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Roo's Painting Expansion</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+			<mods>
+				<li>Royalty</li>
+			</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<!-- Baret -->
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterHeadgear_Royalty-an-Apparel_Beret"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_CreativeBeret</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterHeadgear_Royalty-cn-Apparel_Beret"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_CreativeBeret</li>
+						</value>
+					</li>
+
+					<!-- Smock -->
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-l-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-m-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
+						</value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-s-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/PortraitsOfTheRim.PortraitElementDef[defName="PR_OuterClothingTorso_HSK-xl-Overtunic"]/requirements/apparels</xpath>
+						<value>
+							<li>RBPApparel_Smock</li>
+						</value>
+					</li>
+
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+
+						<PortraitsOfTheRim.PortraitElementDef>
+							<defName>PR_OuterHeadgear_RPE-an-Apparel_Beret</defName>
+							<portraitLayer>PR_OuterHeadgear</portraitLayer>
+							<graphicData>
+								<texPath>OuterHeadgear/Royalty-an-Apparel_Beret</texPath>
+							</graphicData>
+							<requirements>
+								<ageRange>13~999</ageRange>
+								<apparels>
+									<li>RBPApparel_CreativeBeret</li>
+								</apparels>
+							</requirements>
+						</PortraitsOfTheRim.PortraitElementDef>
+						
+						<PortraitsOfTheRim.PortraitElementDef>
+							<defName>PR_OuterHeadgear_RPE-cn-Apparel_Beret</defName>
+							<portraitLayer>PR_OuterHeadgear</portraitLayer>
+							<graphicData>
+								<texPath>OuterHeadgear/Royalty-cn-Apparel_Beret</texPath>
+							</graphicData>
+							<requirements>
+								<ageRange>7~13</ageRange>
+								<apparels>
+									<li>RBPApparel_CreativeBeret</li>
+								</apparels>
+							</requirements>
+						</PortraitsOfTheRim.PortraitElementDef>
+						
+						</value>
+					</li>
+			
+					</operations>
+				</nomatch>
+			</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

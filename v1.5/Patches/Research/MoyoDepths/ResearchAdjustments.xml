@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Moyo-From the depth</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MoyoProduction"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MoyoProduction"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>48.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="MoyoProduction"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="MoyoProduction"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="MoyoProduction"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="MoyoProduction"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+		
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepBlue_MedResearch"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>18.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepBlue_MedResearch"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+		
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="DeepBlue_MedResearch"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="DeepBlue_MedResearch"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepBlue_MedResearch"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepBlue_MedResearch"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepBlue_Research"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>12.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepBlue_Research"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>48.00</researchViewY>
+                </value>
+            </li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Research"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Research"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Research"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Research"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DBS_Research"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DBS_Research"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="DBS_Research"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="DBS_Research"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DBS_Research"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DBS_Research"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MoyoChargedBolt"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>19.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MoyoChargedBolt"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>48.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="MoyoChargedBolt"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="MoyoChargedBolt"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="MoyoChargedBolt"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="MoyoChargedBolt"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>20.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>48.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="MoyoCryoBlaster"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShallowSeaProtection"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>24.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="ShallowSeaProtection"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="ShallowSeaProtection"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="ShallowSeaProtection"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="ShallowSeaProtection"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="ShallowSeaProtection"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+		
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="ShallowSeaProtection"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabStation</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+		
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepSeaProtection"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>25.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepSeaProtection"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+		
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="DeepSeaProtection"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="DeepSeaProtection"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepSeaProtection"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepSeaProtection"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="DeepSeaProtection"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabStation</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="GurdianAdvisorResearch"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>26.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="GurdianAdvisorResearch"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="GurdianAdvisorResearch"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GurdianAdvisorResearch"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GurdianAdvisorResearch"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GurdianAdvisorResearch"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+			<li Class="XmlExtensions.PatchOperationSafeAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GurdianAdvisorResearch"]</xpath>
+				<safetyDepth>2</safetyDepth>
+				<compare>Both</compare>
+                <value>
+					<requiredResearchFacilities>
+					  <li>LabStation</li>
+					  <li>MultiAnalyzer</li>
+					</requiredResearchFacilities>
+				</value>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="GuardianModule"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>27.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="GuardianModule"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>47.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="GuardianModule"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GuardianModule"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GuardianModule"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GuardianModule"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepBlue_Manipulation"]/researchViewX</xpath>
+                <value>
+                    <researchViewX>27.00</researchViewX>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ResearchProjectDef[defName="DeepBlue_Manipulation"]/researchViewY</xpath>
+                <value>
+                    <researchViewY>48.00</researchViewY>
+                </value>
+            </li>
+	
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Manipulation"]/modExtensions/li[@Class="ResearchTreeSK.ResearchTreeSKModExtension"]</xpath>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Manipulation"]/modExtensions</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Manipulation"]/modExtensions</xpath>
+						<value>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="DeepBlue_Manipulation"]</xpath>
+						<value>
+						<modExtensions>
+							<li Class="ResearchTreeSK.ResearchTreeSKModExtension"></li>
+						</modExtensions>
+						</value>
+					</nomatch>
+				</nomatch>
+			</li>
+	
+		</operations>
+		</match>
+	</Operation>
+
+</Patch>

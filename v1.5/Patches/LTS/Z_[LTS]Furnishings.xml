@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>[LTS]Systems</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="LTS_Furniture"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Furniture</designationCategory>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[@Name="LTS_Furniture"]/researchPrerequisites</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="LTS_Buildings"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Structure</designationCategory>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/ThingDef[@Name="LTS_Buildings"]/researchPrerequisites</xpath>
+			</li>
+<!--
+			<li Class="PatchOperationAttributeAdd">
+				<xpath>Defs/DesignationCategoryDef[defName="LTSFurniture"]</xpath>
+				<attribute>Abstract</attribute>
+				<value>True</value>
+			</li>
+
+			<li Class="PatchOperationAttributeAdd">
+				<xpath>Defs/DesignationCategoryDef[defName="LTSStructure"]</xpath>
+				<attribute>Abstract</attribute>
+				<value>True</value>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/DesignationCategoryDef[defName="LTSFurniture"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove"> 
+				<xpath>Defs/DesignationCategoryDef[defName="LTSStructure"]</xpath>
+			</li>
+-->
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

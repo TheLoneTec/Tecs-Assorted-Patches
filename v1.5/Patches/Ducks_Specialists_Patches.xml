@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Specialists Can Work!</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PreceptDef[contains(defName,"IdeoRole_")]/roleDisabledWorkTags[li]</xpath>
+				<value>
+					<roleDisabledWorkTags></roleDisabledWorkTags>
+				</value>
+			</li>
+	
+		</operations>
+	</match>
+	</Operation>
+</Patch>

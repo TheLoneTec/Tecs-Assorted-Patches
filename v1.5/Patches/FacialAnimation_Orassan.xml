@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Facial Animation HSK Patch</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FacialAnimation.HeadTypeDef[defName="OrassanHeadNormal"]/texPath</xpath>
+				<value>
+					<texPath>Things/FAHeads/Orassan</texPath>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<FacialAnimation.FaceAdjustmentDef>
+						<defName>OrassanFaceSizeAndPositionDef</defName>
+						<RaceName>Alien_Orassan</RaceName>
+						<Size>(1.2,1.2)</Size>    
+					</FacialAnimation.FaceAdjustmentDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/FacialAnimation.HeadTypeDef[defName="OrassanHeadPointy" or defName="OrassanHeadSquare"]</xpath>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nals Facial Animation for HAR</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/FacialAnimation.FaceAdjustmentDef[defName="OrassanFaceSizeAndPositionDef"]/Size</xpath>
+				<value>
+					<Size>(1.3,1.3)</Size>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+<!--
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[NL] Facial Animation - WIP</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Tail"]</xpath>
+				<value>
+					<li>
+						<drawSize>.75</drawSize>
+						<path>Things/Pawn/Humanlike/OrassanTails/OTail</path>
+						<bodyPart>Tail</bodyPart>
+						<defaultOffset>Tail</defaultOffset>
+						<backstoryGraphics>
+							<Orassan_GeneWarrior>Things/Pawn/Humanlike/OrassanTails/OTailG</Orassan_GeneWarrior>
+						</backstoryGraphics>
+						<inFrontOfBody>true</inFrontOfBody>
+						<colorChannel>skin</colorChannel>
+						<drawnInBed>false</drawnInBed>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Tail_Orassan</geneRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.25,-0.2)</Male>
+									<Female>(-.1,-0.2)</Female>
+									<Thin>(-.1,-0.2)</Thin>
+									<Hulk>(-.1,-0.2)</Hulk>
+									<Child>(-.1,-0.2)</Child>
+									<Baby>(-.1,-0.2)</Baby>
+								</bodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,-0.05)</Male>
+									<Female>(0,-0.05)</Female>
+									<Thin>(0,-0.05)</Thin>
+									<Hulk>(0,-0.05)</Hulk>
+									<Child>(0,-0.05)</Child>
+									<Baby>(0,0.064)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(-0.0286,0.0571)</Male>
+									<Female>(-0.0429,0.1286)</Female>
+									<Thin>(-0.0286,0.0571)</Thin>
+									<Hulk>(-0.0286,-0.0286)</Hulk>
+									<Child>(-0.0286,0.0571)</Child>
+									<Baby>(-0.0286,0.0571)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+								<layerOffset>-0.35</layerOffset>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(0.1,-0.2)</Male>
+									<Female>(0.1,-0.2)</Female>
+									<Thin>(0.05,-0.2)</Thin>
+									<Hulk>(0.2,-0.25)</Hulk>
+									<Child>(0.098,-0.2)</Child>
+									<Baby>(0.1,-0.14)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(0.0571,-0.1857)</Male>
+									<Female>(0.0429,-0.1429)</Female>
+									<Thin>(0.0143,-0.1429)</Thin>
+									<Hulk>(0.1429,-0.2714)</Hulk>
+									<Child>(0.01,-0.2)</Child>
+									<Baby>(0.01,-0.14)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+							</east>
+						</offsets>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="left ear"]</xpath>
+				<value>
+					<li>
+						<drawnDesiccated>false</drawnDesiccated>
+						<drawSize>0.9</drawSize>
+						<path>Things/Pawn/Humanlike/OrassanEars/EarLeft</path>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+						<inFrontOfBody>true</inFrontOfBody>
+						<colorChannel>skin</colorChannel>
+						<defaultOffset>Tail</defaultOffset>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Orassan</geneRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.475,.67)</Male>
+									<Female>(-0.475,.67)</Female>
+									<Thin>(-0.475,.67)</Thin>
+									<Hulk>(-0.475,.67)</Hulk>
+									<Child>(-0.45,0.67)</Child>
+									<Baby>(-0.45,0.67)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(-0.45,.67)</Male>
+									<Female>(-0.45,.67)</Female>
+									<Thin>(-0.45,.67)</Thin>
+									<Hulk>(-0.45,.67)</Hulk>
+									<Child>(-0.45,0.67)</Child>
+									<Baby>(-0.45,0.67)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0.05,1)</Male>
+									<Female>(0.05,1)</Female>
+									<Thin>(0.05,1)</Thin>
+									<Hulk>(0.05,1)</Hulk>
+									<Child>(0.01,1)</Child>
+									<Baby>(0.01,1)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(-0.04,.89)</Male>
+									<Female>(-0.04,.89)</Female>
+									<Thin>(-0.04,.89)</Thin>
+									<Hulk>(-0.04,.89)</Hulk>
+									<Child>(-0.04,0.89)</Child>
+									<Baby>(-0.04,0.89)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+								<layerOffset>-0.35</layerOffset>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+							</east>
+						</offsets>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPartLabel="right ear"]</xpath>
+				<value>
+					<li>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<drawnDesiccated>false</drawnDesiccated>
+						<drawSize>0.9</drawSize>
+						<path>Things/Pawn/Humanlike/OrassanEars/EarRight</path>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+						<inFrontOfBody>true</inFrontOfBody>
+						<colorChannel>skin</colorChannel>
+						<defaultOffset>Tail</defaultOffset>
+						<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Orassan</geneRequirement>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.4,.67)</Male>
+									<Female>(-0.4,.67)</Female>
+									<Thin>(-0.4,.67)</Thin>
+									<Hulk>(-0.4,.67)</Hulk>
+									<Child>(-0.4,0.67)</Child>
+									<Baby>(-0.4,0.67)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(-0.4,.67)</Male>
+									<Female>(-0.4,.67)</Female>
+									<Thin>(-0.4,.67)</Thin>
+									<Hulk>(-0.4,.67)</Hulk>
+									<Child>(-0.4,0.67)</Child>
+									<Baby>(-0.4,0.67)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(-0.038,.98)</Male>
+									<Female>(-0.038,.98)</Female>
+									<Thin>(-0.038,.98)</Thin>
+									<Hulk>(-0.038,.98)</Hulk>
+									<Child>(-0.038,0.98)</Child>
+									<Baby>(-0.038,0.98)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(-0.01,1)</Male>
+									<Female>(-0.01,1)</Female>
+									<Thin>(-0.01,1)</Thin>
+									<Hulk>(-0.01,1)</Hulk>
+									<Child>(-0.03,1)</Child>
+									<Baby>(-0.03,1)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+								<layerOffset>-0.35</layerOffset>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<Male>(-0.44,.75)</Male>
+									<Female>(-0.44,.75)</Female>
+									<Thin>(-0.44,.75)</Thin>
+									<Hulk>(-0.44,.75)</Hulk>
+									<Child>(-0.44,0.75)</Child>
+									<Baby>(-0.44,0.75)</Baby>
+								</portraitBodyTypes>
+								<headTypes>
+									<Male_AverageNormal>(0,0)</Male_AverageNormal>
+									<Female_AverageNormal>(0,0)</Female_AverageNormal>
+								</headTypes>
+							</east>
+						</offsets>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</value>
+			</li>
+-->
+					<!--<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>--><!--
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator</xpath>
+				<value>
+					<customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.9, 0.9)</customPortraitHeadDrawSize>
+				</value>
+			</li>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Dubs Apparel Tweaks</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan" or defName="Alien_OrassanHumanHybrid"]/alienRace/generalSettings/alienPartGenerator/customDrawSize</xpath>
+						<value>
+							<customDrawSize>(1.0, 1.0)</customDrawSize>
+						</value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/customPortraitDrawSize</xpath>
+						<value>
+							<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+						</value>
+					</li>
+
+					</operations>
+				</match>
+			</li>
+		-->	
+			<!-- Facial Animation Support 
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/comps</xpath>
+				<value>
+					<comps>
+						<li>
+							<compClass>FacialAnimation.DrawFaceGraphicsComp</compClass>
+						</li>
+						<li>
+							<compClass>FacialAnimation.HeadControllerComp</compClass>
+						</li>
+						<li>
+							<compClass>FacialAnimation.EyeballControllerComp</compClass>
+						</li>
+						<li>
+							<compClass>FacialAnimation.LidControllerComp</compClass>
+						</li>
+						<li>
+							<compClass>FacialAnimation.BrowControllerComp</compClass>
+						</li>
+						<li>
+							<compClass>FacialAnimation.MouthControllerComp</compClass>
+						</li>
+						<li>
+							<compClass>FacialAnimation.FacialAnimationControllerComp</compClass>
+						</li>
+						<li>
+							<compClass>CombatExtended.CompPawnGizmo</compClass>
+						</li>
+					</comps>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+			<!-- Add more cat colours -->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/generalSettings/alienPartGenerator/colorChannels</xpath>
+					<value>
+					<colorChannels>
+						<li>
+						  <name>skin</name>
+						  <first Class="ColorGenerator_Options">
+							<options>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(1.0,1.0,1.0,1)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.5,0.5,0.5,1)</only>
+							</li>
+							<li>
+								<weight>8</weight>
+								<only>RGBA(0.3,0.3,0.3,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.81,0.74,0.57,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.72,0.72,0.72,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.52,0.32,0.25,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.29,0.24,0.13,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.73,0.63,0.40,1)</only>
+							</li>
+							<li>
+								<weight>5</weight>
+								<only>RGBA(0.74,0.53,0.37,1)</only>
+							</li>
+							</options>
+						  </first><!--
+						  <second Class="ColorGenerator_Options">
+							<options>
+							  <li>
+								<weight>10</weight>
+								<only>RGBA(0.2988,0.2988,.2966,1)</only>
+							  </li>
+							  <li>
+								<weight>10</weight>
+								<only>RGBA(0.2688,0.2688,.2566,1)</only>
+							  </li>
+							  <li>
+								<weight>10</weight>
+								<only>RGBA(0.2388,0.2388,.2366,1)</only>
+							  </li>
+							  <li>
+								<weight>10</weight>
+								<only>RGBA(0.21388,0.2188,.2166,1)</only>
+							  </li>
+							</options>
+						  </second>-->
+							<second Class="AlienRace.ColorGenerator_CustomAlienChannel">
+							  <colorChannel>skin_1</colorChannel>
+							</second>
+						</li>
+					</colorChannels>
+				</value>
+			</li>
+	
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

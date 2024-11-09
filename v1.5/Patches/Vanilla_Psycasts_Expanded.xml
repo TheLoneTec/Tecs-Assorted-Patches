@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Vanilla Psycasts Expanded</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "VPE_ConstructBase"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Human</useMeatFrom>
+					</value>
+				</li>
+					
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name = "VPE_UndeadBase"]/race/useMeatFrom</xpath>
+					<value>
+						<useMeatFrom>Human</useMeatFrom>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationAttributeSet">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Caster_Wildspeaker" or defName="Tribal_Caster_Conflagrator" or defName="Tribal_Caster_Frostshaper" or defName="Tribal_Caster_Staticlord"]</xpath>
+					<attribute>ParentName</attribute>
+					<value>SK_TribalBase</value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/stuffCategories</xpath>
+				   <value>
+						<stuffCategories>
+							<li>StrongMetallic</li>
+						</stuffCategories>
+				   </value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/costList</xpath>
+				   <value>
+						<costList>
+						  <VPE_Eltex>1</VPE_Eltex>
+						  <ComponentIndustrial>4</ComponentIndustrial>
+						  <GoldBar>6</GoldBar>
+						</costList>
+				   </value>
+				</li>
+	
+				<li Class="PatchOperationFindMod">
+				<mods>
+					<li>HMC Vile's Pre-Industrial Overhaul</li>
+				</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+	
+						<li Class="PatchOperationReplace">
+						   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/thingCategories</xpath>
+						   <value>
+								<thingCategories>
+									<li>ShellFullArmorCat</li>
+									<li>SetMedieval</li>
+								</thingCategories>
+						   </value>
+						</li>
+				
+						</operations>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+	
+						<li Class="PatchOperationReplace">
+						   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/thingCategories</xpath>
+						   <value>
+								<thingCategories>
+									<li>SetMedieval</li>
+								</thingCategories>
+						   </value>
+						</li>
+				
+						</operations>
+					</nomatch>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+				   <xpath>Defs/ThingDef[defName="VPE_Apparel_PlateArmorPrestige"]/recipeMaker/researchPrerequisite</xpath>
+				   <value>
+						<researchPrerequisite>Armor_B2</researchPrerequisite>
+				   </value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "VPE_MeleeWeapon_EltexDagger"]/costList</xpath>
+					<value>
+						<costList>
+							<MeleeWeapon_Dagger>1</MeleeWeapon_Dagger>
+							<VPE_Eltex>4</VPE_Eltex>
+						</costList>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "VPE_MeleeWeapon_EltexMace"]/costList</xpath>
+					<value>
+						<costList>
+							<MeleeWeapon_Morningstar>1</MeleeWeapon_Morningstar>
+							<VPE_Eltex>4</VPE_Eltex>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "VPE_MeleeWeapon_EltexSword"]/costList</xpath>
+					<value>
+						<costList>
+							<MeleeWeapon_Gladius>1</MeleeWeapon_Gladius>
+							<VPE_Eltex>4</VPE_Eltex>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "VPE_Make_EltexHelmet"]/ingredients/li/filter/thingDefs[li/text()="Steel"]</xpath>
+					<value>
+					  <categories>
+						<li>Metallic</li>
+					  </categories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName = "VPE_Make_EltexHelmet"]/fixedIngredientFilter/thingDefs/li[text()="Steel"]</xpath>
+				</li>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "VPE_Make_EltexHelmet"]/fixedIngredientFilter</xpath>
+					<value>
+					  <categories>
+						<li>Metallic</li>
+					  </categories>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "VPE_Make_EltexSkullcap"]/ingredients/li/filter/thingDefs[li/text()="Steel"]</xpath>
+					<value>
+					  <categories>
+						<li>Metallic</li>
+					  </categories>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/RecipeDef[defName = "VPE_Make_EltexSkullcap"]/fixedIngredientFilter/thingDefs/li[text()="Steel"]</xpath>
+				</li>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName = "VPE_Make_EltexSkullcap"]/fixedIngredientFilter</xpath>
+					<value>
+					  <categories>
+						<li>Metallic</li>
+					  </categories>
+					</value>
+				</li>
+	
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>
