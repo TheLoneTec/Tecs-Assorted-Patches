@@ -180,8 +180,8 @@
 					  <xpath>Defs/ThingDef[defName="SkynetInfiltrator"]/alienRace/generalSettings/alienPartGenerator</xpath>
 					  <value>
 						<headOffsetDirectional>
-							<east>(-0.025, 0.00)</east>
-							<west>(0.025, 0.00)</west>
+							<east><offset>(-0.025, 0.00)</offset></east>
+							<west><offset>(0.025, 0.00)</offset></west>
 						</headOffsetDirectional>
 					  </value>
 					</nomatch>
@@ -189,8 +189,8 @@
 					  <xpath>Defs/ThingDef[defName="SkynetInfiltrator"]/alienRace/generalSettings/alienPartGenerator/headOffsetDirectional</xpath>
 					  <value>
 						<headOffsetDirectional>
-							<east>(-0.025, 0.00)</east>
-							<west>(0.025, 0.00)</west>
+							<east><offset>(-0.025, 0.00)</offset></east>
+							<west><offset>(0.025, 0.00)</offset></west>
 						</headOffsetDirectional>
 					  </value>
 					</match>
