@@ -322,11 +322,12 @@
 			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames</xpath>
 				<value>
 					<li>LTS_FuturisticWall</li>
+					<li>LTS_FuturisticReinforcedWall</li>
 				</value>
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_PoweredWallBase"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Fortification_C2</li>
@@ -335,7 +336,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace"> 
-				<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]/stuffCategories</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_PoweredWallBase"]/stuffCategories</xpath>
 				<value>
 					<stuffCategories>
 						<li>StrongMetallic</li>
@@ -352,6 +353,23 @@
 			
 			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/ThingDef[defName="LTS_FuturisticWall"]/costList</xpath>
+				<value>
+					<costList>
+						<Wire>3</Wire>
+						<ConcreteResource>2</ConcreteResource>
+					</costList>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd"> 
+				<xpath>Defs/ThingDef[defName="LTS_FuturisticReinforcedWall"]</xpath>
+				<value>
+					<costStuffCount>12</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace"> 
+				<xpath>Defs/ThingDef[defName="LTS_FuturisticReinforcedWall"]/costList</xpath>
 				<value>
 					<costList>
 						<Wire>3</Wire>
