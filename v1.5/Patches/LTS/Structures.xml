@@ -356,23 +356,6 @@
 				<value>
 					<costList>
 						<Wire>3</Wire>
-						<ConcreteResource>2</ConcreteResource>
-					</costList>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd"> 
-				<xpath>Defs/ThingDef[defName="LTS_FuturisticReinforcedWall"]</xpath>
-				<value>
-					<costStuffCount>12</costStuffCount>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationReplace"> 
-				<xpath>Defs/ThingDef[defName="LTS_FuturisticReinforcedWall"]/costList</xpath>
-				<value>
-					<costList>
-						<Wire>3</Wire>
 						<ReinforcedConcrete>2</ReinforcedConcrete>
 					</costList>
 				</value>
