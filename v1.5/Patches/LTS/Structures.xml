@@ -106,9 +106,11 @@
 					</li>
 
 					<li Class="PatchOperationAdd"> 
-						<xpath>Defs/ThingDef[defName="LTS_StoneBrickWall" or defName="LTS_BrickWall"]/stuffCategories</xpath>
+						<xpath>Defs/ThingDef[defName="LTS_StoneBrickWall" or defName="LTS_BrickWall"]</xpath>
 						<value>
-							<li>Bricks</li>
+							<stuffCategories Inherit="false">
+								<li>Bricks</li>
+							</stuffCategories>
 						</value>
 					</li>
 

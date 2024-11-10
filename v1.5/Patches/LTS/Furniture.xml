@@ -811,7 +811,7 @@
 			</li>
 
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="LTS_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="LTS_Fridge"]</xpath>
+				<xpath>Defs/ThingDef[@Name="LTS_StoveBenchBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="LTS_Fridge"]</xpath>
 			</li>
 
 			<li Class="PatchOperationRemove">

@@ -511,7 +511,7 @@
 					<filthLeaving>Filth_BrokenGlass</filthLeaving>
 				</value>
 			</li>
-
+<!--
 			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/ThingDef[defName="LTS_WallLightBase"]/researchPrerequisites</xpath>
 				<value>
@@ -547,7 +547,7 @@
 					<filthLeaving>Filth_BrokenGlass</filthLeaving>
 				</value>
 			</li>
-
+-->
 			<li Class="PatchOperationReplace"> 
 				<xpath>Defs/ThingDef[@Name="LTS_GardenLights"]/researchPrerequisites</xpath>
 				<value>
