@@ -21,24 +21,6 @@
 							</mods>
 							<match Class="PatchOperationSequence">
 								<operations>
-					
-								<li Class="PatchOperationFindMod">
-									<mods>
-										<li>Ideology</li>
-									</mods>
-									<match Class="PatchOperationSequence">
-										<operations>
-							
-										<li Class="PatchOperationReplace">
-											<xpath>Defs/TerrainDef[defName = "AB_Tile_OcularMudstone"]/costList/AB_BlocksMudstone</xpath>
-											<value>
-												<ZF_BlocksMudstone>20</ZF_BlocksMudstone>
-											</value>
-										</li>
-										
-										</operations>
-									</match>
-								</li>
 								
 								<li Class="PatchOperationRemove">
 									<xpath>Defs/ThingDef[defName = "AA_CrystalMit"]/comps/li[@Class="AnimalBehaviours.CompProperties_EatWeirdFood"]/customThingToEat/li[text()="AB_ChunkMudstone"]</xpath>

@@ -84,6 +84,42 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Ideology</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+		
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Alpha Biomes</li>
+						</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+							
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/TerrainDef[defName = "AB_Tile_OcularMudstone"]/costList/AB_BlocksMudstone</xpath>
+								<value>
+									<ZF_BlocksMudstone>20</ZF_BlocksMudstone>
+								</value>
+							</li>
+							
+							</operations>
+						</match>
+					</li>
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "AM_Dryad_Tumorous"]/comps/li[@Class="CompProperties_Spawner"]/thingToSpawn</xpath>
+						<value>
+							<thingToSpawn>Meat_Elephant</thingToSpawn>
+						</value>
+					</li>
+
+					</operations>
+				</match>
+			</li>
+
 			</operations>
 		</match>
     </Operation>
