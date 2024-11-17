@@ -336,16 +336,16 @@
 				</match>
 			</li>
 
-			<!-- ====== RS_GeneCentrifuge ====== -->
+			<!-- ====== AC_GeneCentrifuge ====== -->
 	
 			<li Class="PatchOperationAttributeSet">
-				<xpath>Defs/ThingDef[defName = "RS_GeneCentrifuge"]</xpath>
+				<xpath>Defs/ThingDef[defName = "AC_GeneCentrifuge"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BenchBase</value>
 			</li>
 	
 			<li Class="PatchOperationReplace">
-			   <xpath>Defs/ThingDef[defName="RS_GeneCentrifuge"]/costList</xpath>
+			   <xpath>Defs/ThingDef[defName="AC_GeneCentrifuge"]/costList</xpath>
 			   <value>
 					<costStuffCount>100</costStuffCount>
 					<stuffCategories>
@@ -366,7 +366,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
 				<value>
-					<li>RS_GeneCentrifuge</li>
+					<li>AC_GeneCentrifuge</li>
 				</value>
 			</li>
 
