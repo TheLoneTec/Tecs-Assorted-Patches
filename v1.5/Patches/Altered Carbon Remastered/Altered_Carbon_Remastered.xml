@@ -370,10 +370,10 @@
 				</value>
 			</li>
 
-			<!-- ====== AC_GeneVault ====== -->
+			<!-- ====== RS_GeneVault ====== -->
 	
 			<li Class="PatchOperationReplace">
-			   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/costList</xpath>
+			   <xpath>Defs/ThingDef[defName="RS_GeneVault"]/costList</xpath>
 			   <value>
 					<costStuffCount>200</costStuffCount>
 					<stuffCategories>
@@ -394,7 +394,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace">
-			   <xpath>Defs/ThingDef[defName="AC_GeneVault"]/researchPrerequisites</xpath>
+			   <xpath>Defs/ThingDef[defName="RS_GeneVault"]/researchPrerequisites</xpath>
 			   <value>
 					<researchPrerequisites Inherit="False">
 						<li>GeneProcessor</li>
@@ -405,20 +405,20 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
 				<value>
-					<li>AC_GeneVault</li>
+					<li>RS_GeneVault</li>
 				</value>
 			</li>
 
-			<!-- ====== AC_XenoGermDuplicator ====== -->
+			<!-- ====== RS_XenoGermDuplicator ====== -->
 	
 			<li Class="PatchOperationAttributeSet">
-				<xpath>Defs/ThingDef[defName = "AC_XenoGermDuplicator"]</xpath>
+				<xpath>Defs/ThingDef[defName = "RS_XenoGermDuplicator"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BenchBase</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
-			   <xpath>Defs/ThingDef[defName="AC_XenoGermDuplicator"]/costList</xpath>
+			   <xpath>Defs/ThingDef[defName="RS_XenoGermDuplicator"]/costList</xpath>
 			   <value>
 					<costStuffCount>120</costStuffCount>
 					<stuffCategories>
@@ -441,7 +441,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Sleeve_Technology"]/defNames</xpath>
 				<value>
-					<li>AC_XenoGermDuplicator</li>
+					<li>RS_XenoGermDuplicator</li>
 				</value>
 			</li>
 
