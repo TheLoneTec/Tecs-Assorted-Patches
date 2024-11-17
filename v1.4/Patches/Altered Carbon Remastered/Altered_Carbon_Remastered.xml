@@ -3,7 +3,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Altered Carbon: Ultratech Unleashed</li>
+		<li>Altered Carbon 2: ReSleeved</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
