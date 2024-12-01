@@ -87,14 +87,14 @@
 	-->
 	
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Doors"]/designationCategory</xpath>
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Doors"]/designationCategory</xpath>
 				<value>
 					<designationCategory>DoorsWindows</designationCategory>
 				</value>
 			</li>
 
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="AutoDoors"]/designationCategory</xpath>
+				<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_AutoDoors"]/designationCategory</xpath>
 				<value>
 					<designationCategory>DoorsWindows</designationCategory>
 				</value>

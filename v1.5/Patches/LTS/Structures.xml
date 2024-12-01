@@ -95,7 +95,7 @@
 								</li>
 								
 								<li Class="PatchOperationInsert">
-								<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames/li[text()="Wall"]</xpath>
+								<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Walls"]/defNames/li[text()="Wall"]</xpath>
 								<value>
 									<li>LTS_RusticWall</li>
 								</value>
@@ -295,7 +295,7 @@
 			</li>
 		
 			<li Class="PatchOperationInsert">
-			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Columns"]/defNames/li[text()="Column"]</xpath>
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Columns"]/defNames/li[text()="Column"]</xpath>
 				<value>
 					<li>LTS_Pillar</li>
 				</value>
@@ -319,7 +319,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd">
-			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames</xpath>
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Walls"]/defNames</xpath>
 				<value>
 					<li>LTS_FuturisticWall</li>
 					<li>LTS_FuturisticReinforcedWall</li>

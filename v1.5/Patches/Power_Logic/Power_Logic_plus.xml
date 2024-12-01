@@ -104,7 +104,7 @@
 		</li>
 
 		<li Class="PatchOperationAdd">
-		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="AutoDoors"]/defNames</xpath>
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_AutoDoors"]/defNames</xpath>
 			<value>
 				<li>SupesRemoteDoor</li>
 			</value>
