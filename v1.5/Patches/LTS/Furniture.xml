@@ -531,7 +531,7 @@
 			<!-- ======== Malsjo ======== -->
 	
 			<li Class="PatchOperationRemove"> 
-				<xpath>Defs/ThingDef/building/maxItemsInCell</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_Malsjo" or defName="LTS_HyllisS" or defName="LTS_HyllisL"]/building/maxItemsInCell</xpath>
 			</li>
 	
 			<li Class="PatchOperationAdd">
