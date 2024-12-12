@@ -4,6 +4,7 @@
 	<Operation Class="PatchOperationFindMod">
 	<mods>
 		<li>Colony Manager</li>
+		<li>Colony Manager Fork</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
