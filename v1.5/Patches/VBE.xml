@@ -43,7 +43,7 @@
 				<match Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]/stuffCategories</xpath>
+							<xpath>Defs/ThingDef[defName = "VBE_WritersTable"]/stuffCategories</xpath>
 							<value>
 								<li>RuggedMetallic</li>
 							</value>
@@ -53,7 +53,7 @@
 				<nomatch Class="PatchOperationSequence">
 					<operations>	
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]</xpath>
+							<xpath>Defs/ThingDef[defName = "VBE_WritersTable"]</xpath>
 							<value>
 								<stuffCategories>
 									<li>Woody</li>
@@ -66,7 +66,7 @@
 						</li>
 						
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]/graphicData</xpath>
+							<xpath>Defs/ThingDef[defName = "VBE_WritersTable"]/graphicData</xpath>
 							<value>
 								<shaderType>CutoutComplex</shaderType>
 							</value>
@@ -78,7 +78,7 @@
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="VBE_WritersTable"]/constructEffect</xpath>
 				<match Class="PatchOperationRemove">
-						<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]/constructEffect</xpath>
+						<xpath>Defs/ThingDef[defName = "VBE_WritersTable"]/constructEffect</xpath>
 				</match>
 			</li>
 			
@@ -101,7 +101,7 @@
 				<match Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]/stuffCategories</xpath>
+							<xpath>Defs/ThingDef[defName = "VBE_TypewritersTable"]/stuffCategories</xpath>
 							<value>
 								<li>RuggedMetallic</li>
 							</value>
@@ -111,7 +111,7 @@
 				<nomatch Class="PatchOperationSequence">
 					<operations>	
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]</xpath>
+							<xpath>Defs/ThingDef[defName = "VBE_TypewritersTable"]</xpath>
 							<value>
 								<stuffCategories>
 									<li>Woody</li>
@@ -124,16 +124,16 @@
 						</li>
 						
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]/graphicData</xpath>
+							<xpath>Defs/ThingDef[defName = "VBE_TypewritersTable"]/graphicData</xpath>
 							<value>
 								<shaderType>CutoutComplex</shaderType>
 							</value>
 						</li>
 						<!--
 						<li Class="PatchOperationConditional">
-							<xpath>/Defs/ThingDef[@ParentName="BenchBase"]</xpath>
+							<xpath>Defs/ThingDef[@ParentName="BenchBase"]</xpath>
 							<match Class="PatchOperationAttributeSet">
-								<xpath>/Defs/ThingDef[@ParentName = "BenchBase"]</xpath>
+								<xpath>Defs/ThingDef[@ParentName = "BenchBase"]</xpath>
 								<attribute>ParentName</attribute>
 								<value>SK_BenchBase</value>
 							</match>
@@ -144,26 +144,26 @@
 			</li>
 
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName="VBE_WritersTable"]</xpath>
+				<xpath>Defs/ThingDef[defName="VBE_WritersTable"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BenchBase</value>
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "VBE_WritersTable"]</xpath>
+				<xpath>Defs/ThingDef[defName = "VBE_WritersTable"]</xpath>
 				<value>
 					<staticSunShadowHeight>0</staticSunShadowHeight>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAttributeSet">
-				<xpath>/Defs/ThingDef[defName="VBE_TypewritersTable"]</xpath>
+				<xpath>Defs/ThingDef[defName="VBE_TypewritersTable"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_BenchBase</value>
 			</li>
 		
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]</xpath>
+				<xpath>Defs/ThingDef[defName = "VBE_TypewritersTable"]</xpath>
 				<value>
 					<staticSunShadowHeight>0</staticSunShadowHeight>
 				</value>
@@ -172,7 +172,7 @@
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="VBE_TypewritersTable"]/constructEffect</xpath>
 				<match Class="PatchOperationRemove">
-						<xpath>/Defs/ThingDef[defName = "VBE_TypewritersTable"]/constructEffect</xpath>
+						<xpath>Defs/ThingDef[defName = "VBE_TypewritersTable"]/constructEffect</xpath>
 				</match>
 			</li>
 		
@@ -230,7 +230,7 @@
 							<priority>Important</priority>
 							<filter>
 								<categories>
-									<li>VBE_Books</li>
+									<li>Books</li>
 								</categories>
 								<thingDefs>
 									<li>PileOfBooks</li>
@@ -272,9 +272,9 @@
 				<match Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "JDS_File_Shelf"]/building/fixedStorageSettings/filter/categories</xpath>
+							<xpath>Defs/ThingDef[defName = "JDS_File_Shelf"]/building/fixedStorageSettings/filter/categories</xpath>
 							<value>
-								<li>VBE_Books</li>
+								<li>Books</li>
 							</value>
 						</li>
 					</operations>
@@ -289,7 +289,7 @@
 					<operations>
 						
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
+							<xpath>Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
 							<value>
 							<comps>
 								<li Class="LWM.DeepStorage.Properties">
@@ -304,13 +304,13 @@
 						</li>
 						
 						<li Class="PatchOperationAttributeSet">
-							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
+							<xpath>Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
 							<attribute>ParentName</attribute>
 							<value>LWM_DeepStorage</value>
 						</li>
 						
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
+							<xpath>Defs/ThingDef[defName = "GL_Bookshelf"]</xpath>
 							<value>
 							<building>
 								<preventDeteriorationInside>true</preventDeteriorationInside>
@@ -320,7 +320,7 @@
 									<priority>Normal</priority>
 									<filter>
 										<categories>
-											<li>VBE_Books</li>
+											<li>Books</li>
 										</categories>
 									</filter>
 								</fixedStorageSettings>
