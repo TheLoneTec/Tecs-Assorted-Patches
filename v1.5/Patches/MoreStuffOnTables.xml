@@ -127,6 +127,12 @@
 						<altitudeLayer>BuildingOnTop</altitudeLayer>
 					</value>
 				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="GameOfUrBoard"]/altitudeLayer</xpath>
+					<value>
+						<altitudeLayer>BuildingOnTop</altitudeLayer>
+					</value>
+				</match>
 			</li>
 			
 			<li Class="XmlExtensions.PatchOperationSafeAdd"> 
