@@ -122,7 +122,7 @@
 					<!--<TicksToSetUp>360000</TicksToSetUp>-->
 				</value>
 			</li>
-
+<!--
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ResultOptions</xpath>
 				<value>
@@ -134,7 +134,7 @@
 					</ResultOptions>
 				</value>
 			</li>
-
+-->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/WorldObjectDef[defName="Outpost_Drilling"]/description</xpath>
 				<value>
