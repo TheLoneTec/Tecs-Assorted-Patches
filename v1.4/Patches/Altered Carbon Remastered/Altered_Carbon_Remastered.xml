@@ -62,6 +62,14 @@
 				</match>
 			</li>
 			
+			<li Class="PatchOperationAdd">
+			   <xpath>Defs/RecipeDef[defName="AC_InstallEmptyArchoStack" or defName="AC_InstallArchoStack" or defName="AC_RemoveArchoStack"]</xpath>
+			   <value>
+					<researchPrerequisite>Prosthesis_install_E1</researchPrerequisite>
+			   </value>
+			</li>
+
+			
 			<!-- ====== Sleeve Incubator ====== -->
 	
 			<li Class="PatchOperationAttributeSet">
