@@ -106,6 +106,20 @@
 							</value>
 						</li>
 						
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/RecipeDef[defName = "GU_MakeStoneBlocksMudstone"]/ingredients/li/filter/thingDefs/li[text()="AB_ChunkMudstone"]</xpath>
+							<value>
+								<li>ZF_BlocksMudstone</li>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationReplace">
+							<xpath>Defs/RecipeDef[defName = "GU_MakeStoneBlocksMudstone"]/fixedIngredientFilter/thingDefs/li[text()="AB_ChunkMudstone"]</xpath>
+							<value>
+								<li>ZF_BlocksMudstone</li>
+							</value>
+						</li>
+						
 <!--
 						<li Class="PatchOperationRemove">
 							<xpath>/Defs/ThingDef[defName = "AB_Mudstone" or defName="AB_SmoothedMudstone" or defName="AB_ChunkMudstone" or defName="AB_BlocksMudstone"]</xpath>
