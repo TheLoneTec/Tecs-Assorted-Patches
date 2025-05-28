@@ -650,6 +650,13 @@
 				</value>
 			</li>
 		
+			<li Class="SK.PatchOperationReplaceExtended">
+				<xpath>Defs/ThingDef[@Name="SoftwoodLogBase" or Name="HardwoodLogBase"]</xpath>
+				<value>
+					<burnableByRecipe>True</burnableByRecipe>
+				</value>
+			</li>
+		
 		</operations>
 	</match>
 	</Operation>
