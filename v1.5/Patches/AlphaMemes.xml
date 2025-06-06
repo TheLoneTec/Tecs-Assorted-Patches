@@ -124,7 +124,7 @@
 				<mods>
 					<li>Alpha Animals</li>
 				</mods>
-				<match Class="PatchOperationSequence">
+				<nomatch Class="PatchOperationSequence">
 					<operations>
 					
 					<li Class="PatchOperationReplace">
@@ -135,7 +135,7 @@
 					</li>
 					
 					</operations>
-				</match>
+				</nomatch>
 			</li>
 
 			</operations>
