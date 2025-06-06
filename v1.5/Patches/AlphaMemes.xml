@@ -120,6 +120,24 @@
 				</match>
 			</li>
 
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Alpha Animals</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "AA_Eyeling"]/race/useMeatFrom</xpath>
+						<value>
+							<useMeatFrom>Elephant</useMeatFrom>
+						</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+
 			</operations>
 		</match>
     </Operation>
