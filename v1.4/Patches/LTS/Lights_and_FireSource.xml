@@ -137,7 +137,7 @@
 								<fireDrawScale>0.4</fireDrawScale>
 								<fuelDrawOffset>(0,0.1,-0.05)</fuelDrawOffset>
 								<fuelDrawScale>0.75</fuelDrawScale> -->
-								<fuelCapacity>10</fuelCapacity>
+								<fuelCapacity>15</fuelCapacity>
 								<burnFuelMultiplier>2</burnFuelMultiplier>
 								<canAutoBurn>true</canAutoBurn>
 								<smokeEnabled>false</smokeEnabled>
@@ -168,7 +168,7 @@
 								<fireDrawScale>0.4</fireDrawScale>
 								<fuelDrawOffset>(0,0.1,-0.05)</fuelDrawOffset>
 								<fuelDrawScale>0.75</fuelDrawScale> -->
-								<fuelCapacity>10</fuelCapacity>
+								<fuelCapacity>15</fuelCapacity>
 								<burnFuelMultiplier>2</burnFuelMultiplier>
 								<canAutoBurn>true</canAutoBurn>
 								<smokeEnabled>false</smokeEnabled>
@@ -199,7 +199,7 @@
 								<fireDrawScale>0.4</fireDrawScale>
 								<fuelDrawOffset>(0,0.1,-0.05)</fuelDrawOffset>
 								<fuelDrawScale>0.75</fuelDrawScale> -->
-								<fuelCapacity>30</fuelCapacity>
+								<fuelCapacity>20</fuelCapacity>
 								<burnFuelMultiplier>4</burnFuelMultiplier>
 								<canAutoBurn>true</canAutoBurn>
 								<smokeEnabled>false</smokeEnabled>
