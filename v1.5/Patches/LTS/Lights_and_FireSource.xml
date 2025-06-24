@@ -23,7 +23,7 @@
 					<li>LTS_FloorLight</li>
 					<li>LTS_WallLightOne</li>
 					<li>LTS_WallLightTwo</li>
-					<li>LTS_WallLightBase</li>
+					<li>LTS_WallLightThree</li>
 				</value>
 			</li>
 		
@@ -630,7 +630,7 @@
 			</li>
 
 			<li Class="PatchOperationReplace"> 
-				<xpath>Defs/ThingDef[defName="LTS_WallLightBase"]/researchPrerequisites</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]/researchPrerequisites</xpath>
 				<value>
 					<researchPrerequisites>
 						<li>Light_C2</li>
@@ -639,15 +639,15 @@
 			</li>
 			
 			<li Class="PatchOperationRemove"> 
-				<xpath>Defs/ThingDef[defName="LTS_WallLightBase"]/costStuffCount</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]/costStuffCount</xpath>
 			</li>
 	
 			<li Class="PatchOperationRemove"> 
-				<xpath>Defs/ThingDef[defName="LTS_WallLightBase"]/stuffCategories</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]/stuffCategories</xpath>
 			</li>
 	
 			<li Class="PatchOperationAdd"> 
-				<xpath>Defs/ThingDef[defName="LTS_WallLightBase"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]</xpath>
 				<value>
 					<costList>
 						<Glass>5</Glass>
@@ -659,7 +659,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd"> 
-				<xpath>Defs/ThingDef[defName="LTS_WallLightBase"]</xpath>
+				<xpath>Defs/ThingDef[defName="LTS_WallLightThree"]</xpath>
 				<value>
 					<filthLeaving>Filth_BrokenGlass</filthLeaving>
 				</value>
