@@ -69,7 +69,7 @@ Other 1.5 Additions:
 - [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
 - [Extinguish Refuelables](https://steamcommunity.com/sharedfiles/filedetails/?id=2864470385) - (Added HSK Fuelable lights)
 - [Research Reinvented](https://steamcommunity.com/sharedfiles/filedetails/?id=2868392160) (Material Conversion, Research Patch, New Research kits for HSK)
-- [Alpha Memes (untested)](https://steamcommunity.com/sharedfiles/filedetails/?id=2661356814)
+- [Alpha Memes (untested)](https://github.com/juanosarg/AlphaMemes/tree/45aa71016fed4f52544daac11888809bde2d7ba0)
 - [Vanilla Ideology Expanded - Dyrads](https://steamcommunity.com/sharedfiles/filedetails/?id=2720631512) - (untested)
 - [Vanilla Ideology Expanded - Memes and Structures](https://steamcommunity.com/sharedfiles/filedetails/?id=2636329500) - (untested)
 - [Vanilla Psycasts Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659)
