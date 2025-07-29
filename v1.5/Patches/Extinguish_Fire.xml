@@ -106,7 +106,7 @@
 
 						<li Class="PatchOperationAdd">
 						<order>Prepend</order>
-						<xpath>Defs/ThingDef[defName="WallTorch"]/comps</xpath>
+						<xpath>Defs/ThingDef[defName="TorchWallLamp"]/comps</xpath>
 							<value>
 								<li Class="CompProperties_Flickable" />
 							</value>
