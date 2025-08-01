@@ -5,8 +5,6 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=BP26RP8BC6AWJ"><img src="GithubTextures/blue.svg" height="40"></a>  
 
-<a href="https://boosty.to/thelonetec/donate"><img src="GithubTextures/Boosty_logo.png" height="80"></a>  
-
 # 1.5 Patches for:
 - Orassan Facial Animations Corrective patch (head texture and skin colour)(requires [Facial Animations - WIP](https://steamcommunity.com/sharedfiles/filedetails/?id=1635901197), [Nals Facial Animation for HAR](https://steamcommunity.com/sharedfiles/filedetails/?id=2280607572), [Facial Animation HSK Patch](https://discord.com/channels/272340793174392832/875750742684749844/981930986470277180) (Might not be needed anymore))
 - [Perspective: Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=2567126933) (Added Textures for Viles Doors, corrective patches for base HSK + missing textures. Merge Viles fence gate textures into one category, fixed missing palisade gate east perspective)
