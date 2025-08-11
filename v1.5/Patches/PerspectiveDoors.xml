@@ -2,7 +2,7 @@
 <Patch>	
 	<Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Perspective: Doors</li>
+		<li>Perspective: Doors (continued)</li>
 	</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
