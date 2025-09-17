@@ -18,7 +18,7 @@
 				</li>
 -->
 				<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Brazier"]/comps/li[@Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable"]</xpath>
+				<xpath>Defs/ThingDef[defName="Brazier"]/comps/li[@Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable" or @Class="SK.CompProperties_FireOverlayMod"]</xpath>
 					<value>
 						<li Class="MaliExtinguishRefuelables.CompProperties_FireOverlayExtinguishable">
 							<fireSize>0.7</fireSize>
