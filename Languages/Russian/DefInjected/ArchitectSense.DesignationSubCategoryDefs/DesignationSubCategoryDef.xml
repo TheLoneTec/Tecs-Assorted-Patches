@@ -16,4 +16,8 @@
   <Columns.label>Колонны</Columns.label>
   <!--Various Columns.-->
   <Columns.description>Разные колонны.</Columns.description>
+  
+  <Diagonal_Walls.label>Диагональные стены</Diagonal_Walls.label>
+  <Diagonal_Walls.description>Диагональные стены, которые могут быть обращены внутрь или наружу, в зависимости от ориентации.</Diagonal_Walls.description>
+  
 </LanguageData>
