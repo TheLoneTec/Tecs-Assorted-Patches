@@ -14,6 +14,7 @@ various workshop mod patches for HSK. I play with all of these mods enabled and 
 - [Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990) - Added HSK Trees.
 - [[LTS] Furnishings](https://steamcommunity.com/sharedfiles/filedetails/?id=2567438519), requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
 - [[LTS] Tenants](https://steamcommunity.com/sharedfiles/filedetails/?id=2850306027) (HSK + CE Patch),  requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
+- [Loft Bed](https://steamcommunity.com/workshop/filedetails/?id=2854967442) - (Material Conversion + Research)
 - [Minerals Craft](https://discord.com/channels/272340793174392832/1089988326104244285) - Fixed Terrain Reserach Slightly
 - [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
 - [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
@@ -65,6 +66,7 @@ Other 1.5 Additions:
 - [Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990) - Added HSK Trees.
 - [[LTS] Furnishings](https://steamcommunity.com/sharedfiles/filedetails/?id=2567438519), requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
 - [[LTS] Tenants](https://steamcommunity.com/sharedfiles/filedetails/?id=2850306027) (HSK + CE Patch),  requires [[LTS] Systems](https://steamcommunity.com/workshop/filedetails/?id=2812826451)
+- [Loft Bed](https://steamcommunity.com/workshop/filedetails/?id=2854967442) - (Material Conversion + Research)
 - [Minerals Craft](https://discord.com/channels/272340793174392832/1089988326104244285) - Fixed Terrain Reserach Slightly
 - [Weapon Racks](https://steamcommunity.com/sharedfiles/filedetails/?id=2788630748) - (Material Conversion and Architect Menus Assignment)
 - [[D] Arcane Technology](https://steamcommunity.com/sharedfiles/filedetails/?id=2554469600) - (Added starter items to ignore lists)
